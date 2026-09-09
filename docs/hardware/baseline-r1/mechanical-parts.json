@@ -1,0 +1,558 @@
+[
+  {
+    "id": "M01",
+    "name": "AIO adapter",
+    "w": 55,
+    "h": 55,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -15.25,
+        -15.25,
+        3.2
+      ],
+      [
+        -15.25,
+        15.25,
+        3.2
+      ],
+      [
+        15.25,
+        -15.25,
+        3.2
+      ],
+      [
+        15.25,
+        15.25,
+        3.2
+      ],
+      [
+        18.031222920256962,
+        0,
+        3.2
+      ],
+      [
+        -18.031222920256962,
+        0,
+        3.2
+      ],
+      [
+        0,
+        18.031222920256962,
+        3.2
+      ],
+      [
+        0,
+        -18.031222920256962,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Frame 30.5 square; AIO 25.5 square rotated 45deg. Arrow FORWARD, not board edge. HOLD H01.",
+    "net_mass_g": 8.7636
+  },
+  {
+    "id": "M02",
+    "name": "Bus carrier",
+    "w": 80,
+    "h": 35,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -34,
+        -12,
+        3.2
+      ],
+      [
+        -34,
+        12,
+        3.2
+      ],
+      [
+        34,
+        -12,
+        3.2
+      ],
+      [
+        34,
+        12,
+        3.2
+      ]
+    ],
+    "slots": [
+      [
+        -10,
+        0,
+        3,
+        7
+      ],
+      [
+        10,
+        0,
+        3,
+        7
+      ],
+      [
+        -10,
+        -15,
+        3,
+        2
+      ],
+      [
+        -10,
+        15,
+        3,
+        2
+      ],
+      [
+        10,
+        -15,
+        3,
+        2
+      ],
+      [
+        10,
+        15,
+        3,
+        2
+      ]
+    ],
+    "note": "Rail centres y=+/-8.7625; gap8.0. Strap lanes x=+/-10 clear solder zones. Edge strength HOLD H02.",
+    "net_mass_g": 8.019
+  },
+  {
+    "id": "M03",
+    "name": "Bus top guard",
+    "w": 85,
+    "h": 40,
+    "t": 1.0,
+    "material": "PC",
+    "qty": 1,
+    "holes": [
+      [
+        -34,
+        -12,
+        3.2
+      ],
+      [
+        -34,
+        12,
+        3.2
+      ],
+      [
+        34,
+        -12,
+        3.2
+      ],
+      [
+        34,
+        12,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "12mm nylon spacers; side skirts and protected wire exits still required by H02. This top sheet is NOT a complete guard.",
+    "net_mass_g": 4.0414
+  },
+  {
+    "id": "M04",
+    "name": "C110 bus rail",
+    "w": 50.8,
+    "h": 9.525,
+    "t": 3.175,
+    "material": "C110",
+    "qty": 2,
+    "holes": [],
+    "slots": [],
+    "note": "No drilled current joints; deburr R0.3; solder zones x=+/-16..25.4. Polarity permanently marked. HOLD H02.",
+    "net_mass_g": 13.7651
+  },
+  {
+    "id": "M05",
+    "name": "Battery cradle blank",
+    "w": 55,
+    "h": 170,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [],
+    "slots": [
+      [
+        -22,
+        -55,
+        3,
+        22
+      ],
+      [
+        -22,
+        0,
+        3,
+        22
+      ],
+      [
+        -22,
+        55,
+        3,
+        22
+      ],
+      [
+        22,
+        -55,
+        3,
+        22
+      ],
+      [
+        22,
+        0,
+        3,
+        22
+      ],
+      [
+        22,
+        55,
+        3,
+        22
+      ]
+    ],
+    "note": "Three20mm straps through paired22mm slots. Slider/frame mount holes OMITTED: H03, not a completed cradle.",
+    "net_mass_g": 26.5381
+  },
+  {
+    "id": "M06",
+    "name": "Battery end stop",
+    "w": 55,
+    "h": 15,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 2,
+    "holes": [
+      [
+        -18,
+        0,
+        3.2
+      ],
+      [
+        18,
+        0,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Vertical stop; bolt to cradle via insulating angles, not unsupported adhesive. HOLD H03.",
+    "net_mass_g": 2.3944
+  },
+  {
+    "id": "M07",
+    "name": "Pi insulating base",
+    "w": 100,
+    "h": 65,
+    "t": 0.6,
+    "material": "PC",
+    "qty": 1,
+    "holes": [
+      [
+        -39,
+        -24.5,
+        2.7
+      ],
+      [
+        -39,
+        24.5,
+        2.7
+      ],
+      [
+        19,
+        -24.5,
+        2.7
+      ],
+      [
+        19,
+        24.5,
+        2.7
+      ]
+    ],
+    "slots": [],
+    "note": "Pi PCB centred;58x49 holes offset x=-10 from PCB centre. Exact connector/part overlay HOLD H04.",
+    "net_mass_g": 4.6635
+  },
+  {
+    "id": "M08",
+    "name": "Pi longitudinal rail",
+    "w": 80,
+    "h": 8,
+    "t": 1.2,
+    "material": "PC",
+    "qty": 2,
+    "holes": [
+      [
+        -29,
+        0,
+        2.7
+      ],
+      [
+        29,
+        0,
+        2.7
+      ]
+    ],
+    "slots": [],
+    "note": "Rail centres on base x=-10,y=+/-24.5. Clamp through Pi posts. HOLD H04.",
+    "net_mass_g": 0.9051
+  },
+  {
+    "id": "M09",
+    "name": "Fan bridge",
+    "w": 40,
+    "h": 30,
+    "t": 0.8,
+    "material": "PC",
+    "qty": 1,
+    "holes": [],
+    "slots": [
+      [
+        -16,
+        0,
+        2.7,
+        20
+      ],
+      [
+        16,
+        0,
+        2.7,
+        20
+      ]
+    ],
+    "note": "Fan opening and mounting pattern TRANSFER after exact3368 drawing/part. Do not obstruct blades. HOLD H04.",
+    "net_mass_g": 1.0513
+  },
+  {
+    "id": "M10",
+    "name": "Camera adapter blank",
+    "w": 38,
+    "h": 36,
+    "t": 0.8,
+    "material": "PC",
+    "qty": 1,
+    "holes": [],
+    "slots": [],
+    "note": "Camera3 and pan/tilt fastening patterns OMITTED pending authoritative overlay; not a finished adapter. HOLD H05.",
+    "net_mass_g": 1.3133
+  },
+  {
+    "id": "M11",
+    "name": "Front accessory shelf",
+    "w": 65,
+    "h": 35,
+    "t": 1.0,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -27,
+        -11,
+        3.2
+      ],
+      [
+        -27,
+        11,
+        3.2
+      ],
+      [
+        27,
+        -11,
+        3.2
+      ],
+      [
+        27,
+        11,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "IR/light and pan/tilt mount holes TRANSFER; separate optics from hot IR boards. HOLD H05.",
+    "net_mass_g": 4.1492
+  },
+  {
+    "id": "M12",
+    "name": "D500 base",
+    "w": 60,
+    "h": 55,
+    "t": 1.0,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -24,
+        -21,
+        3.2
+      ],
+      [
+        -24,
+        21,
+        3.2
+      ],
+      [
+        24,
+        -21,
+        3.2
+      ],
+      [
+        24,
+        21,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Mast support holes only; sensor mounting holes omitted pending dimensioned vendor drawing. HOLD H06.",
+    "net_mass_g": 6.0455
+  },
+  {
+    "id": "M13",
+    "name": "GNSS platform",
+    "w": 45,
+    "h": 45,
+    "t": 1.0,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -16,
+        -16,
+        3.2
+      ],
+      [
+        -16,
+        16,
+        3.2
+      ],
+      [
+        16,
+        -16,
+        3.2
+      ],
+      [
+        16,
+        16,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Nonmagnetic restraint; exact12044 base attachment TRANSFER. HOLD H06.",
+    "net_mass_g": 3.6867
+  },
+  {
+    "id": "M14",
+    "name": "TFmini base",
+    "w": 48,
+    "h": 25,
+    "t": 1.0,
+    "material": "FR4",
+    "qty": 1,
+    "holes": [
+      [
+        -19,
+        0,
+        3.2
+      ],
+      [
+        19,
+        0,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Sensor mounting holes omitted pending vendor overlay. Downward optical aperture unobstructed. HOLD H07.",
+    "net_mass_g": 2.1902
+  },
+  {
+    "id": "M15",
+    "name": "Landing strut study",
+    "w": 12,
+    "h": 170,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 4,
+    "holes": [
+      [
+        0,
+        -78,
+        3.2
+      ],
+      [
+        0,
+        78,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Requires bracing and frame/foot joints; flat strips alone NOT released as landing gear. HOLD H08.",
+    "net_mass_g": 5.9908
+  },
+  {
+    "id": "M16",
+    "name": "Landing foot",
+    "w": 40,
+    "h": 15,
+    "t": 1.6,
+    "material": "FR4",
+    "qty": 4,
+    "holes": [
+      [
+        -6,
+        0,
+        3.2
+      ],
+      [
+        6,
+        0,
+        3.2
+      ]
+    ],
+    "slots": [],
+    "note": "Foot pads/strut angles/bracing require resolved joint drawing H08.",
+    "net_mass_g": 1.7284
+  },
+  {
+    "id": "M17",
+    "name": "Cargo lid/base",
+    "w": 100,
+    "h": 70,
+    "t": 1.0,
+    "material": "PC",
+    "qty": 2,
+    "holes": [],
+    "slots": [],
+    "note": "Outside planning envelope100x70x60. Joints/strike/hinge NOT released. HOLD H09.",
+    "net_mass_g": 8.4
+  },
+  {
+    "id": "M18",
+    "name": "Cargo long wall",
+    "w": 100,
+    "h": 58,
+    "t": 1.0,
+    "material": "PC",
+    "qty": 2,
+    "holes": [],
+    "slots": [],
+    "note": "Wall between lid and base; captive internal fasteners; no exterior hand-release. HOLD H09.",
+    "net_mass_g": 6.96
+  },
+  {
+    "id": "M19",
+    "name": "Cargo end wall",
+    "w": 68,
+    "h": 58,
+    "t": 1.0,
+    "material": "PC",
+    "qty": 2,
+    "holes": [],
+    "slots": [],
+    "note": "Ends between long walls; corner joints and latch detail NOT released. HOLD H09.",
+    "net_mass_g": 4.7328
+  }
+]

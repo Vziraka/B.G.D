@@ -1,0 +1,304 @@
+{
+  "generated_utc": "2026-09-06T00:22:18.849513+00:00",
+  "fusion_version": "2704.1.53",
+  "status": "UNRELEASED_REFERENCE_AND_ADAPTER_STUDY",
+  "document": "BGD_MASTER",
+  "source_sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "axes": "right-handed FLU; rotor-centroid XY; arm-underside Z assumed",
+  "visible_solid_interference_count": 0,
+  "visible_bodies": [
+    {
+      "component": "01_TOP_INFERRED_Draw13",
+      "min_mm": [
+        -24.43286157666514,
+        -21.249999999997975,
+        30.0
+      ],
+      "max_mm": [
+        135.83187828601297,
+        21.25000000000112,
+        32.0
+      ],
+      "volume_mm3": 7825.924527060919
+    },
+    {
+      "component": "02_BOTTOM_INFERRED_Draw14",
+      "min_mm": [
+        -24.432861576666227,
+        -24.249999999996703,
+        -2.5
+      ],
+      "max_mm": [
+        83.19609721476944,
+        24.250000000002156,
+        0.0
+      ],
+      "volume_mm3": 7204.668172912342
+    },
+    {
+      "component": "03_MIDDLE_INFERRED_Draw3",
+      "min_mm": [
+        35.79373846124141,
+        -24.250030484679677,
+        6.0
+      ],
+      "max_mm": [
+        142.92884086330815,
+        24.250030484682014,
+        8.0
+      ],
+      "volume_mm3": 6237.614897840864
+    },
+    {
+      "component": "04_FRONT_LEFT_ARM",
+      "min_mm": [
+        65.60445800694842,
+        -1.1368683772161603e-12,
+        0.0
+      ],
+      "max_mm": [
+        106.18977432346864,
+        160.79949278471688,
+        6.000000000000001
+      ],
+      "volume_mm3": 15249.181362645926
+    },
+    {
+      "component": "05_FRONT_RIGHT_ARM",
+      "min_mm": [
+        65.6044580069488,
+        -160.7994927847179,
+        0.0
+      ],
+      "max_mm": [
+        106.18977432346915,
+        -1.1368683772161603e-12,
+        6.000000000000001
+      ],
+      "volume_mm3": 15249.181362797131
+    },
+    {
+      "component": "06_REAR_RIGHT_ARM",
+      "min_mm": [
+        -108.6955073734937,
+        -114.10427224209025,
+        0.0
+      ],
+      "max_mm": [
+        55.33923454691647,
+        -1.1368683772161603e-12,
+        6.000000000000001
+      ],
+      "volume_mm3": 17697.86448522993
+    },
+    {
+      "component": "07_REAR_LEFT_ARM",
+      "min_mm": [
+        -108.6955073734937,
+        -1.1368683772161603e-12,
+        0.0
+      ],
+      "max_mm": [
+        55.33923454691683,
+        114.10427224208891,
+        6.000000000000001
+      ],
+      "volume_mm3": 17697.864485260743
+    },
+    {
+      "component": "08_STANDOFF_1_POSITION_INFERRED",
+      "min_mm": [
+        110.85531491010124,
+        -17.099999999996953,
+        8.0
+      ],
+      "max_mm": [
+        115.85531491010124,
+        -12.099999999996953,
+        30.0
+      ],
+      "volume_mm3": 276.46015351589006
+    },
+    {
+      "component": "08_STANDOFF_2_POSITION_INFERRED",
+      "min_mm": [
+        85.85531491010124,
+        -17.09999999999809,
+        8.0
+      ],
+      "max_mm": [
+        90.85531491010124,
+        -12.09999999999809,
+        30.0
+      ],
+      "volume_mm3": 276.46015351589006
+    },
+    {
+      "component": "08_STANDOFF_3_POSITION_INFERRED",
+      "min_mm": [
+        30.088377643792,
+        -17.09999999999809,
+        0.0
+      ],
+      "max_mm": [
+        35.088377643792,
+        -12.09999999999809,
+        30.0
+      ],
+      "volume_mm3": 376.9911184307591
+    },
+    {
+      "component": "08_STANDOFF_4_POSITION_INFERRED",
+      "min_mm": [
+        110.85531491010124,
+        12.100000000001955,
+        8.0
+      ],
+      "max_mm": [
+        115.85531491010124,
+        17.100000000001955,
+        30.0
+      ],
+      "volume_mm3": 276.46015351589006
+    },
+    {
+      "component": "08_STANDOFF_5_POSITION_INFERRED",
+      "min_mm": [
+        85.85531491010124,
+        12.100000000001955,
+        8.0
+      ],
+      "max_mm": [
+        90.85531491010124,
+        17.100000000001955,
+        30.0
+      ],
+      "volume_mm3": 276.46015351589006
+    },
+    {
+      "component": "08_STANDOFF_6_POSITION_INFERRED",
+      "min_mm": [
+        30.088377643792,
+        12.100000000001955,
+        0.0
+      ],
+      "max_mm": [
+        35.088377643792,
+        17.100000000001955,
+        30.0
+      ],
+      "volume_mm3": 376.9911184307591
+    },
+    {
+      "component": "08_STANDOFF_7_POSITION_INFERRED",
+      "min_mm": [
+        -22.782410576794064,
+        -13.49999999999909,
+        0.0
+      ],
+      "max_mm": [
+        -17.782410576794064,
+        -8.49999999999909,
+        30.0
+      ],
+      "volume_mm3": 376.9911184307591
+    },
+    {
+      "component": "08_STANDOFF_8_POSITION_INFERRED",
+      "min_mm": [
+        -22.782410576794064,
+        8.500000000003183,
+        0.0
+      ],
+      "max_mm": [
+        -17.782410576794064,
+        13.500000000003183,
+        30.0
+      ],
+      "volume_mm3": 376.9911184307591
+    },
+    {
+      "component": "M01_48_MM_ADAPTER_STUDY",
+      "min_mm": [
+        36.47200200000001,
+        -24.0,
+        10.0
+      ],
+      "max_mm": [
+        84.472002,
+        24.0,
+        11.600000000000001
+      ],
+      "volume_mm3": 3583.456291927165
+    }
+  ],
+  "omissions": [
+    "brace",
+    "arm spacer",
+    "camera plates/mount",
+    "screws/nuts/grommets",
+    "other aircraft systems"
+  ],
+  "warnings": [
+    "Not a complete aircraft or released frame assembly",
+    "Hidden raw layout and rejected 55mm study retained in F3D",
+    "STEP is one unreleased adapter blank only",
+    "Default Fusion material masses are invalid; use engineering ledger",
+    "Manufacturer bottom-thickness discrepancy unresolved"
+  ],
+  "artifacts": [
+    {
+      "path": "cad/exports/reference-r1/BGD_MASTER_reference-r1.f3d",
+      "bytes": 2319392,
+      "sha256": "5e1ea3d2db1f6c342e910491038f75ac437636d2299e4224914ade8aa7cec78d"
+    },
+    {
+      "path": "cad/exports/reference-r1/M01_48mm_STUDY_NOT_FOR_FABRICATION.step",
+      "bytes": 21552,
+      "sha256": "334794ce45d07ed577dd600123a7f1d75bac8b4fa88b7c07bf71afbac6fe336f"
+    },
+    {
+      "path": "cad/exports/reference-r1/BGD_MASTER_reference-r1.png",
+      "bytes": 272460,
+      "sha256": "9790f244b2d47e6cbc3316766adfea46bbd00c43f42a3636c7062da654d0b4b7"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "cad/scripts/fusion/build_frame_reference.py",
+      "sha256": "b4ec4f68b245a50aa4bf2be036dbc862a6dc1626d0e5e72f2ee761a6839c53d0"
+    },
+    {
+      "path": "cad/scripts/fusion/commission_units.py",
+      "sha256": "7525bd9f08d7091549301b9c923bbbbccc38354b609e0ecc92d7912b1b5130a7"
+    },
+    {
+      "path": "cad/scripts/fusion/finalize_reference_snapshot.py",
+      "sha256": "ac65ec3e167c7c2436241a340e531ad1488614cdc8a46c16c250ea0eaa24f476"
+    },
+    {
+      "path": "cad/scripts/fusion/import_source_one.py",
+      "sha256": "d434a96ed63ab1baacf1ca930cb9d08f3c3ccdbcd9e5f32ed84d7377f3faf7c1"
+    },
+    {
+      "path": "cad/scripts/fusion/inspect_frame_profiles.py",
+      "sha256": "9c04553f7c8a7418242e87572d650a9ca524890b50dbf9fa8cbe9b44f8d733d0"
+    },
+    {
+      "path": "cad/scripts/fusion/inspect_interferences.py",
+      "sha256": "f3e0e5a2dbc49905933d296d49615bfb01345e42e07bd4e1ac78011555099327"
+    },
+    {
+      "path": "cad/scripts/fusion/inspect_remaining_frame_layers.py",
+      "sha256": "2c0733db0dbfcb9605715c856d85bcaf3dba92b3301092d6310a9846d1275465"
+    },
+    {
+      "path": "cad/scripts/fusion/revise_frame_stack.py",
+      "sha256": "39e7f3ff2f4ce9f07e88d3fe0f2cf99b3043145bd6c46abfcfaaca527e7339ec"
+    },
+    {
+      "path": "cad/scripts/fusion/screen_aio_mount.py",
+      "sha256": "ba05b948639005b59544a5d97a86acf63223fac0a87e775c112e939d143a9050"
+    }
+  ]
+}

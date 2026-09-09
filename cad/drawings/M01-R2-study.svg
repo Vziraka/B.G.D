@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+<rect width="297" height="210" fill="white"/><g font-family="Arial" fill="#17212b">
+<text x="10" y="15" font-size="6">M01-R2 / 48 mm AIO adapter blank</text>
+<text x="10" y="25" font-size="4">ENGINEERING STUDY — NOT RELEASED FOR FABRICATION</text>
+<rect x="51" y="71" width="48" height="48" stroke="black" stroke-width="0.2" fill="#eef3f7"/>
+<circle cx="59.75" cy="110.25" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="82" font-size="3.2">1: -15.25000, -15.25000, diameter 3.2 THRU</text>
+<circle cx="59.75" cy="79.75" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="88" font-size="3.2">2: -15.25000, +15.25000, diameter 3.2 THRU</text>
+<circle cx="90.25" cy="110.25" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="94" font-size="3.2">3: +15.25000, -15.25000, diameter 3.2 THRU</text>
+<circle cx="90.25" cy="79.75" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="100" font-size="3.2">4: +15.25000, +15.25000, diameter 3.2 THRU</text>
+<circle cx="93.03122292025697" cy="95" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="106" font-size="3.2">5: +18.03122, +0.00000, diameter 3.2 THRU</text>
+<circle cx="56.968777079743035" cy="95" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="112" font-size="3.2">6: -18.03122, +0.00000, diameter 3.2 THRU</text>
+<circle cx="75" cy="76.96877707974303" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="118" font-size="3.2">7: +0.00000, +18.03122, diameter 3.2 THRU</text>
+<circle cx="75" cy="113.03122292025697" r="1.6" fill="white" stroke="black" stroke-width="0.2"/>
+<text x="150" y="124" font-size="3.2">8: +0.00000, -18.03122, diameter 3.2 THRU</text>
+<text x="51" y="65" font-size="3.2">48 mm</text>
+<text x="103" y="96" font-size="3.2">48 mm</text>
+<text x="150" y="48" font-size="3.2">Material: FR4, thickness 1.6 mm. Quantity 1.</text>
+<text x="150" y="56" font-size="3.2">All dimensions mm; part-centre datum.</text>
+<text x="150" y="64" font-size="3.2">Table: local X, local Y, hole diameter.</text>
+<text x="10" y="145" font-size="3.2">Frame pattern: 30.5 x 30.5. AIO pattern: 25.5 x 25.5, rotated 45 degrees.</text>
+<text x="10" y="154" font-size="3.2">Nominal standoff clearance: 1.3833 mm. Tolerance stack and mount loads NOT qualified.</text>
+<text x="10" y="163" font-size="3.2">Calculated FR4 blank mass: 6.6294 g at assumed density 1.85 g/cm3; no hardware included.</text>
+<text x="10" y="172" font-size="3.2">Hole locations match the R1 study. The 55 mm outer blank is reduced to resolve four modeled collisions.</text>
+<text x="10" y="181" font-size="3.2">No carbon-frame drilling. No fabrication tolerance or screw length released by this drawing.</text>
+<text x="10" y="190" font-size="3.2">STUDY ONLY: H01 remains. Fasteners, dampers, services and frame revision unresolved.</text>
+</g></svg>

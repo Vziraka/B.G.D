@@ -1,0 +1,2677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\zvent\Downloads\B.G.D\electronics\schematics\bgd-master\bgd-master.kicad_sch</source>
+    <date>2026-09-05T21:37:47</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>bgd-master.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/">
+      <title_block>
+        <title>BGD electrical / group 10</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>10-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/10-2 Pack and distribution/" tstamps="/411e8d65-77b6-50b4-ae7b-d65c728e21b9/">
+      <title_block>
+        <title>BGD electrical / group 10</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>10-2.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/">
+      <title_block>
+        <title>BGD electrical / group 20</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>20-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/20-2 Regulated rails/" tstamps="/c542d891-1db4-5e98-b7e6-cf1a2979da1d/">
+      <title_block>
+        <title>BGD electrical / group 20</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>20-2.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/30-1 FC / radio / sensors/" tstamps="/8b5a52ca-5bb6-52df-b633-dea6f014343d/">
+      <title_block>
+        <title>BGD electrical / group 30</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>30-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/30-2 FC / radio / sensors/" tstamps="/e1fa6076-e266-5bf0-9e6b-d075a2b0f850/">
+      <title_block>
+        <title>BGD electrical / group 30</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>30-2.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/40-1 Compute / switches/" tstamps="/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde/">
+      <title_block>
+        <title>BGD electrical / group 40</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>40-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/">
+      <title_block>
+        <title>BGD electrical / group 40</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>40-2.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/40-3 Compute / switches/" tstamps="/feac1ec8-614c-53fc-bc17-6f5484a10a06/">
+      <title_block>
+        <title>BGD electrical / group 40</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>40-3.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/50-1 PWM / lights / release/" tstamps="/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea/">
+      <title_block>
+        <title>BGD electrical / group 50</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>50-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="12" name="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/">
+      <title_block>
+        <title>BGD electrical / group 50</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>50-2.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="13" name="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/">
+      <title_block>
+        <title>BGD electrical / group 50</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>50-3.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="14" name="/50-4 PWM / lights / release/" tstamps="/7669d863-985e-502a-8d03-c3b9b7e505f4/">
+      <title_block>
+        <title>BGD electrical / group 50</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>50-4.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="15" name="/60-1 Charge / cable holds/" tstamps="/2439fc6e-2d2d-56fd-ba6f-62739666af5f/">
+      <title_block>
+        <title>BGD electrical / group 60</title>
+        <company/>
+        <rev>E1 LOGICAL DRAFT</rev>
+        <date>2026-09-05</date>
+        <source>60-1.kicad_sch</source>
+        <comment number="1" value="NO FABRICATION / POWER RELEASE"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BAT1">
+      <value>Nexus 6S2P P50B / factory QS8F</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">PACK-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_BAT1" description="Functional terminal model; PACK-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="PACK-001"/>
+      <property name="Sheetname" value="10-1 Pack and distribution"/>
+      <property name="Sheetfile" value="10-1.kicad_sch"/>
+      <sheetpath names="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/"/>
+      <tstamps>b0b0af85-e005-5742-89cb-e0be682b1577</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CM1">
+      <value>1000uF 35V EEU-FR1V102B</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">CAP-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_CM1" description="Functional terminal model; CAP-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="CAP-001"/>
+      <property name="Sheetname" value="10-1 Pack and distribution"/>
+      <property name="Sheetfile" value="10-1.kicad_sch"/>
+      <sheetpath names="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/"/>
+      <tstamps>41ce8558-bb37-51e5-bbd0-b6da151218b0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JBAT1">
+      <value>Genuine QS8 male / single pack</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">CONN-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_JBAT1" description="Functional terminal model; CONN-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="CONN-001"/>
+      <property name="Sheetname" value="10-1 Pack and distribution"/>
+      <property name="Sheetfile" value="10-1.kicad_sch"/>
+      <sheetpath names="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/"/>
+      <tstamps>231096f2-d426-5d47-8408-1175650c9cd8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M1">
+      <value>XING-E2809 800KV / motor1</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">MOTOR-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_M1" description="Functional terminal model; MOTOR-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="MOTOR-001"/>
+      <property name="Sheetname" value="10-1 Pack and distribution"/>
+      <property name="Sheetfile" value="10-1.kicad_sch"/>
+      <sheetpath names="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/"/>
+      <tstamps>b297cf22-925e-5b67-994f-2c88eda3c19c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MON1">
+      <value>Matek I2C-INA-BM</value>
+      <datasheet>https://www.mateksys.com/?portfolio=i2c-ina-bm</datasheet>
+      <fields>
+        <field name="Inventory_ID">MON-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.mateksys.com/?portfolio=i2c-ina-bm</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_MON1" description="Functional terminal model; MON-001; evidence S2; physical release held"/>
+      <property name="Inventory_ID" value="MON-001"/>
+      <property name="Sheetname" value="10-1 Pack and distribution"/>
+      <property name="Sheetfile" value="10-1.kicad_sch"/>
+      <sheetpath names="/10-1 Pack and distribution/" tstamps="/93c38c47-42c4-53b3-b58e-06ecc51cb772/"/>
+      <tstamps>7301c511-b172-5245-8ffd-e8878185c0e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="GND"/>
+            <pin num="SCL"/>
+            <pin num="SDA"/>
+            <pin num="BAT+"/>
+            <pin num="ESC+"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M2">
+      <value>XING-E2809 800KV / motor2</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">MOTOR-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_M2" description="Functional terminal model; MOTOR-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="MOTOR-001"/>
+      <property name="Sheetname" value="10-2 Pack and distribution"/>
+      <property name="Sheetfile" value="10-2.kicad_sch"/>
+      <sheetpath names="/10-2 Pack and distribution/" tstamps="/411e8d65-77b6-50b4-ae7b-d65c728e21b9/"/>
+      <tstamps>d5eccaca-7f31-5623-9319-a5c548ce1b23</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M3">
+      <value>XING-E2809 800KV / motor3</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">MOTOR-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_M3" description="Functional terminal model; MOTOR-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="MOTOR-001"/>
+      <property name="Sheetname" value="10-2 Pack and distribution"/>
+      <property name="Sheetfile" value="10-2.kicad_sch"/>
+      <sheetpath names="/10-2 Pack and distribution/" tstamps="/411e8d65-77b6-50b4-ae7b-d65c728e21b9/"/>
+      <tstamps>3703d089-8beb-522b-b135-bda33f2332a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="M4">
+      <value>XING-E2809 800KV / motor4</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">MOTOR-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_M4" description="Functional terminal model; MOTOR-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="MOTOR-001"/>
+      <property name="Sheetname" value="10-2 Pack and distribution"/>
+      <property name="Sheetfile" value="10-2.kicad_sch"/>
+      <sheetpath names="/10-2 Pack and distribution/" tstamps="/411e8d65-77b6-50b4-ae7b-d65c728e21b9/"/>
+      <tstamps>10e38078-b180-5881-b24c-91a4cfbf552c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A"/>
+            <pin num="B"/>
+            <pin num="C"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F1">
+      <value>5A 32V 0297005.WXNV</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">FUSE-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_F1" description="Functional terminal model; FUSE-002; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="FUSE-002"/>
+      <property name="Sheetname" value="20-1 Regulated rails"/>
+      <property name="Sheetfile" value="20-1.kicad_sch"/>
+      <sheetpath names="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/"/>
+      <tstamps>9ffae05c-c7a2-5fa1-bf4e-e724d892744f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="IN"/>
+            <pin num="OUT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="F2">
+      <value>5A 32V 0297005.WXNV</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">FUSE-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_F2" description="Functional terminal model; FUSE-002; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="FUSE-002"/>
+      <property name="Sheetname" value="20-1 Regulated rails"/>
+      <property name="Sheetfile" value="20-1.kicad_sch"/>
+      <sheetpath names="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/"/>
+      <tstamps>a3277ad1-5a94-5a63-9265-da5c3d806fb6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="IN"/>
+            <pin num="OUT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="REG1">
+      <value>BEC12S-PRO / 5.2V</value>
+      <datasheet>https://www.mateksys.com/?portfolio=bec12s-pro</datasheet>
+      <fields>
+        <field name="Inventory_ID">BEC-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.mateksys.com/?portfolio=bec12s-pro</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_REG1" description="Functional terminal model; BEC-001; evidence S2; physical release held"/>
+      <property name="Inventory_ID" value="BEC-001"/>
+      <property name="Sheetname" value="20-1 Regulated rails"/>
+      <property name="Sheetfile" value="20-1.kicad_sch"/>
+      <sheetpath names="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/"/>
+      <tstamps>763c3eca-c88f-56b1-b070-a52a158b2bf4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="VIN+"/>
+            <pin num="VIN-"/>
+            <pin num="VOUT+"/>
+            <pin num="VOUT-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="REG2">
+      <value>Hobbywing 30607000 / 5.0V</value>
+      <datasheet>https://www.hobbywing.com/en/products/ubec-5a93</datasheet>
+      <fields>
+        <field name="Inventory_ID">BEC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.hobbywing.com/en/products/ubec-5a93</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_REG2" description="Functional terminal model; BEC-002; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="BEC-002"/>
+      <property name="Sheetname" value="20-1 Regulated rails"/>
+      <property name="Sheetfile" value="20-1.kicad_sch"/>
+      <sheetpath names="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/"/>
+      <tstamps>0463ccd5-04bf-588b-9b78-e23c4b8dce15</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="VIN+"/>
+            <pin num="VIN-"/>
+            <pin num="VOUT+"/>
+            <pin num="VOUT-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="REG3">
+      <value>DFR1015 / 3.3V only</value>
+      <datasheet>https://www.dfrobot.com/product-2599.html</datasheet>
+      <fields>
+        <field name="Inventory_ID">BEC-003</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.dfrobot.com/product-2599.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_REG3" description="Functional terminal model; BEC-003; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="BEC-003"/>
+      <property name="Sheetname" value="20-1 Regulated rails"/>
+      <property name="Sheetfile" value="20-1.kicad_sch"/>
+      <sheetpath names="/20-1 Regulated rails/" tstamps="/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542/"/>
+      <tstamps>ad906069-3b59-557f-bf78-d2921a3b9e14</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="IN+"/>
+            <pin num="IN-"/>
+            <pin num="OUT+"/>
+            <pin num="OUT-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IR1">
+      <value>Waveshare IR Board B / left</value>
+      <datasheet>https://www.waveshare.com/product/infrared-led-board-b.htm</datasheet>
+      <fields>
+        <field name="Inventory_ID">LIGHT-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.waveshare.com/product/infrared-led-board-b.htm</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_IR1" description="Functional terminal model; LIGHT-001; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="LIGHT-001"/>
+      <property name="Sheetname" value="20-2 Regulated rails"/>
+      <property name="Sheetfile" value="20-2.kicad_sch"/>
+      <sheetpath names="/20-2 Regulated rails/" tstamps="/c542d891-1db4-5e98-b7e6-cf1a2979da1d/"/>
+      <tstamps>b27f72a6-2bf7-5bd7-a2ba-eed59f5df850</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="IR2">
+      <value>Waveshare IR Board B / right</value>
+      <datasheet>https://www.waveshare.com/product/infrared-led-board-b.htm</datasheet>
+      <fields>
+        <field name="Inventory_ID">LIGHT-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.waveshare.com/product/infrared-led-board-b.htm</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_IR2" description="Functional terminal model; LIGHT-001; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="LIGHT-001"/>
+      <property name="Sheetname" value="20-2 Regulated rails"/>
+      <property name="Sheetfile" value="20-2.kicad_sch"/>
+      <sheetpath names="/20-2 Regulated rails/" tstamps="/c542d891-1db4-5e98-b7e6-cf1a2979da1d/"/>
+      <tstamps>080abd58-6297-58e7-b328-893278b40e92</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FC1">
+      <value>MicoAir743v2-AIO45A</value>
+      <datasheet>https://micoair.cn/zh/docs/flight-controller/micoair743-aio-series/micoair743v2-aio-45a-manual</datasheet>
+      <fields>
+        <field name="Inventory_ID">FC-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://micoair.cn/zh/docs/flight-controller/micoair743-aio-series/micoair743v2-aio-45a-manual</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_FC1" description="Functional terminal model; FC-001; evidence S1; physical release held"/>
+      <property name="Inventory_ID" value="FC-001"/>
+      <property name="Sheetname" value="30-1 FC / radio / sensors"/>
+      <property name="Sheetfile" value="30-1.kicad_sch"/>
+      <sheetpath names="/30-1 FC / radio / sensors/" tstamps="/8b5a52ca-5bb6-52df-b633-dea6f014343d/"/>
+      <tstamps>ed4bc28b-a1a9-5330-8353-0f0369876249</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="M5"/>
+            <pin num="M6"/>
+            <pin num="M7"/>
+            <pin num="M8"/>
+            <pin num="12V"/>
+            <pin num="BZ-"/>
+            <pin num="GND"/>
+            <pin num="LED"/>
+            <pin num="RX1"/>
+            <pin num="RX2"/>
+            <pin num="RX3"/>
+            <pin num="RX4"/>
+            <pin num="RX5"/>
+            <pin num="RX6"/>
+            <pin num="RX8"/>
+            <pin num="SCL"/>
+            <pin num="SDA"/>
+            <pin num="TX1"/>
+            <pin num="TX2"/>
+            <pin num="TX3"/>
+            <pin num="TX4"/>
+            <pin num="TX5"/>
+            <pin num="TX6"/>
+            <pin num="TX8"/>
+            <pin num="VBAT"/>
+            <pin num="ESC1_A"/>
+            <pin num="ESC1_B"/>
+            <pin num="ESC1_C"/>
+            <pin num="ESC2_A"/>
+            <pin num="ESC2_B"/>
+            <pin num="ESC2_C"/>
+            <pin num="ESC3_A"/>
+            <pin num="ESC3_B"/>
+            <pin num="ESC3_C"/>
+            <pin num="ESC4_A"/>
+            <pin num="ESC4_B"/>
+            <pin num="ESC4_C"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="GPS1">
+      <value>Micro M10 case IST8310 / 12044</value>
+      <datasheet>https://holybro.com/products/micro-m10-gps</datasheet>
+      <fields>
+        <field name="Inventory_ID">GNSS-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://holybro.com/products/micro-m10-gps</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_GPS1" description="Functional terminal model; GNSS-001; evidence S6; physical release held"/>
+      <property name="Inventory_ID" value="GNSS-001"/>
+      <property name="Sheetname" value="30-1 FC / radio / sensors"/>
+      <property name="Sheetfile" value="30-1.kicad_sch"/>
+      <sheetpath names="/30-1 FC / radio / sensors/" tstamps="/8b5a52ca-5bb6-52df-b633-dea6f014343d/"/>
+      <tstamps>994ed90f-42c6-50c1-9f0b-0a487e4a8452</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="RX"/>
+            <pin num="TX"/>
+            <pin num="GND"/>
+            <pin num="SCL"/>
+            <pin num="SDA"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="BZ1">
+      <value>VIFLY Finder2</value>
+      <datasheet>https://viflydrone.com/collections/drone-buzzer/products/vifly-finder-v2-fpv-racing-drone-buzzer</datasheet>
+      <fields>
+        <field name="Inventory_ID">BUZZ-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://viflydrone.com/collections/drone-buzzer/products/vifly-finder-v2-fpv-racing-drone-buzzer</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_BZ1" description="Functional terminal model; BUZZ-001; evidence S8; physical release held"/>
+      <property name="Inventory_ID" value="BUZZ-001"/>
+      <property name="Sheetname" value="30-2 FC / radio / sensors"/>
+      <property name="Sheetfile" value="30-2.kicad_sch"/>
+      <sheetpath names="/30-2 FC / radio / sensors/" tstamps="/e1fa6076-e266-5bf0-9e6b-d075a2b0f850/"/>
+      <tstamps>7ccdf94c-6909-5aac-ba93-996b40299bd4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="BZ-"/>
+            <pin num="GND"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RANGE1">
+      <value>TFmini-S / UART</value>
+      <datasheet>https://en.benewake.com/uploadfiles/2023/03/20230331102010281.pdf</datasheet>
+      <fields>
+        <field name="Inventory_ID">SENSE-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://en.benewake.com/uploadfiles/2023/03/20230331102010281.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_RANGE1" description="Functional terminal model; SENSE-002; evidence S7; physical release held"/>
+      <property name="Inventory_ID" value="SENSE-002"/>
+      <property name="Sheetname" value="30-2 FC / radio / sensors"/>
+      <property name="Sheetfile" value="30-2.kicad_sch"/>
+      <sheetpath names="/30-2 FC / radio / sensors/" tstamps="/e1fa6076-e266-5bf0-9e6b-d075a2b0f850/"/>
+      <tstamps>0ba01124-b9f5-534f-b8ec-236f9fc2b48e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="RX"/>
+            <pin num="TX"/>
+            <pin num="GND"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RX1">
+      <value>RadioMaster RP1 V2</value>
+      <datasheet>https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver</datasheet>
+      <fields>
+        <field name="Inventory_ID">RX-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_RX1" description="Functional terminal model; RX-001; evidence S8; physical release held"/>
+      <property name="Inventory_ID" value="RX-001"/>
+      <property name="Sheetname" value="30-2 FC / radio / sensors"/>
+      <property name="Sheetfile" value="30-2.kicad_sch"/>
+      <sheetpath names="/30-2 FC / radio / sensors/" tstamps="/e1fa6076-e266-5bf0-9e6b-d075a2b0f850/"/>
+      <tstamps>762f9533-8910-511f-9d7b-318b0b5b8352</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="RX"/>
+            <pin num="TX"/>
+            <pin num="GND"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FAN1">
+      <value>Adafruit 3368 / always on</value>
+      <datasheet>https://www.adafruit.com/product/3368</datasheet>
+      <fields>
+        <field name="Inventory_ID">COOL-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/3368</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_FAN1" description="Functional terminal model; COOL-001; evidence S3; physical release held"/>
+      <property name="Inventory_ID" value="COOL-001"/>
+      <property name="Sheetname" value="40-1 Compute / switches"/>
+      <property name="Sheetfile" value="40-1.kicad_sch"/>
+      <sheetpath names="/40-1 Compute / switches/" tstamps="/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde/"/>
+      <tstamps>2f5d9b1a-e676-56db-a03f-418dc357713f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="PI1">
+      <value>Pi4 J8 used pins / physical numbering</value>
+      <datasheet>https://www.raspberrypi.com/documentation/computers/raspberry-pi.html</datasheet>
+      <fields>
+        <field name="Inventory_ID">PI-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.raspberrypi.com/documentation/computers/raspberry-pi.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_PI1" description="Functional terminal model; PI-001; evidence S3; physical release held"/>
+      <property name="Inventory_ID" value="PI-001"/>
+      <property name="Sheetname" value="40-1 Compute / switches"/>
+      <property name="Sheetfile" value="40-1.kicad_sch"/>
+      <sheetpath names="/40-1 Compute / switches/" tstamps="/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde/"/>
+      <tstamps>9a2f71a4-45ed-5e92-916c-b34c84de80a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="14"/>
+            <pin num="16"/>
+            <pin num="18"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>Pololu1402 / seated AND lid closed</value>
+      <datasheet>https://www.pololu.com/product/1402</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-003</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/1402</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_SW1" description="Functional terminal model; ACT-003; evidence S5; physical release held"/>
+      <property name="Inventory_ID" value="ACT-003"/>
+      <property name="Sheetname" value="40-1 Compute / switches"/>
+      <property name="Sheetfile" value="40-1.kicad_sch"/>
+      <sheetpath names="/40-1 Compute / switches/" tstamps="/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde/"/>
+      <tstamps>6b2b8cbb-139a-52d4-9eb5-de19c42bace5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="NC"/>
+            <pin num="NO"/>
+            <pin num="COM"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>Pololu1402 / bolt through strike</value>
+      <datasheet>https://www.pololu.com/product/1402</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-004</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/1402</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_SW2" description="Functional terminal model; ACT-004; evidence S5; physical release held"/>
+      <property name="Inventory_ID" value="ACT-004"/>
+      <property name="Sheetname" value="40-1 Compute / switches"/>
+      <property name="Sheetfile" value="40-1.kicad_sch"/>
+      <sheetpath names="/40-1 Compute / switches/" tstamps="/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde/"/>
+      <tstamps>64ec65d1-a9f8-53ac-aef7-1a6527605405</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="NC"/>
+            <pin num="NO"/>
+            <pin num="COM"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100nF 16V</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_C2" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-2 Compute / switches"/>
+      <property name="Sheetfile" value="40-2.kicad_sch"/>
+      <sheetpath names="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/"/>
+      <tstamps>87faafb1-241b-54fe-b5f8-11a100a6f671</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R6" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-2 Compute / switches"/>
+      <property name="Sheetfile" value="40-2.kicad_sch"/>
+      <sheetpath names="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/"/>
+      <tstamps>ccefa621-1bec-5097-a2df-b0d22fa9f594</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>4.7k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R7" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-2 Compute / switches"/>
+      <property name="Sheetfile" value="40-2.kicad_sch"/>
+      <sheetpath names="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/"/>
+      <tstamps>d8523d1e-83ec-5a48-81af-65a6d8d307b9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>330</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R8" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-2 Compute / switches"/>
+      <property name="Sheetfile" value="40-2.kicad_sch"/>
+      <sheetpath names="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/"/>
+      <tstamps>04e63a58-1f64-5ceb-9530-ff12790dd74e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>330</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R9" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-2 Compute / switches"/>
+      <property name="Sheetfile" value="40-2.kicad_sch"/>
+      <sheetpath names="/40-2 Compute / switches/" tstamps="/ee52378e-ec9a-5931-a236-f520daa7e76f/"/>
+      <tstamps>5f3fd282-b5f5-588c-b2cf-628c82c1c8f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 16V</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_C3" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="40-3 Compute / switches"/>
+      <property name="Sheetfile" value="40-3.kicad_sch"/>
+      <sheetpath names="/40-3 Compute / switches/" tstamps="/feac1ec8-614c-53fc-bc17-6f5484a10a06/"/>
+      <tstamps>d0dde3a9-f36c-5b02-8d59-9eeef12e3643</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DRV1">
+      <value>Pololu 2802 / bridges OPEN</value>
+      <datasheet>https://www.pololu.com/docs/0J60/all</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/docs/0J60/all</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_DRV1" description="Functional terminal model; ACT-002; evidence S5; physical release held"/>
+      <property name="Inventory_ID" value="ACT-002"/>
+      <property name="Sheetname" value="50-1 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-1.kicad_sch"/>
+      <sheetpath names="/50-1 PWM / lights / release/" tstamps="/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea/"/>
+      <tstamps>8be9e499-5305-5490-b458-268d5457a51f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="GND"/>
+            <pin num="LRN"/>
+            <pin num="OUT"/>
+            <pin num="VCC"/>
+            <pin num="VRC"/>
+            <pin num="GOOD"/>
+            <pin num="RC_IN"/>
+            <pin num="LOAD_LOW"/>
+            <pin num="LOAD_HIGH"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SERVO1">
+      <value>Pan servo / Adafruit1967 kit</value>
+      <datasheet>https://www.adafruit.com/product/1967</datasheet>
+      <fields>
+        <field name="Inventory_ID">GIM-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/1967</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_SERVO1" description="Functional terminal model; GIM-001; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="GIM-001"/>
+      <property name="Sheetname" value="50-1 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-1.kicad_sch"/>
+      <sheetpath names="/50-1 PWM / lights / release/" tstamps="/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea/"/>
+      <tstamps>f9eed9e8-80b8-50ba-9452-f96bd0b2b3c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="GND"/>
+            <pin num="SIG"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SERVO2">
+      <value>Tilt servo / Adafruit1967 kit</value>
+      <datasheet>https://www.adafruit.com/product/1967</datasheet>
+      <fields>
+        <field name="Inventory_ID">GIM-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/1967</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_SERVO2" description="Functional terminal model; GIM-001; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="GIM-001"/>
+      <property name="Sheetname" value="50-1 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-1.kicad_sch"/>
+      <sheetpath names="/50-1 PWM / lights / release/" tstamps="/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea/"/>
+      <tstamps>401583f7-6485-5318-bf0f-1ba3c5b44abd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="GND"/>
+            <pin num="SIG"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>SN74AHCT125N / PDIP14</value>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_U1" description="Functional terminal model; LOGIC-001; evidence S4; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-001"/>
+      <property name="Sheetname" value="50-1 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-1.kicad_sch"/>
+      <sheetpath names="/50-1 PWM / lights / release/" tstamps="/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea/"/>
+      <tstamps>5dad0ab7-2f19-5338-841d-1f5e7111febc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JH1">
+      <value>Pololu2180 / aircraft source</value>
+      <datasheet>https://www.pololu.com/product/2180</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-005</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/2180</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_JH1" description="Functional terminal model; ACT-005; evidence S11; physical release held"/>
+      <property name="Inventory_ID" value="ACT-005"/>
+      <property name="Sheetname" value="50-2 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-2.kicad_sch"/>
+      <sheetpath names="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/"/>
+      <tstamps>ffa8c038-80da-54d4-a13d-9ac4e3701146</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JH2">
+      <value>Pololu2181 / removable holder</value>
+      <datasheet>https://www.pololu.com/product/2181</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-005</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/2181</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_JH2" description="Functional terminal model; ACT-005; evidence S11; physical release held"/>
+      <property name="Inventory_ID" value="ACT-005"/>
+      <property name="Sheetname" value="50-2 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-2.kicad_sch"/>
+      <sheetpath names="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/"/>
+      <tstamps>2c8a8adf-27e0-5e53-9fe0-1c88d3683662</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="LED1">
+      <value>Adafruit5162 RGBW / first</value>
+      <datasheet>https://www.adafruit.com/product/5162</datasheet>
+      <fields>
+        <field name="Inventory_ID">LIGHT-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/5162</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_LED1" description="Functional terminal model; LIGHT-002; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="LIGHT-002"/>
+      <property name="Sheetname" value="50-2 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-2.kicad_sch"/>
+      <sheetpath names="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/"/>
+      <tstamps>6fb193b7-6468-5ae1-9001-40fa98ae62b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="DIN"/>
+            <pin num="GND"/>
+            <pin num="DOUT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="LED2">
+      <value>Adafruit5162 RGBW / second</value>
+      <datasheet>https://www.adafruit.com/product/5162</datasheet>
+      <fields>
+        <field name="Inventory_ID">LIGHT-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/5162</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_LED2" description="Functional terminal model; LIGHT-002; evidence S9; physical release held"/>
+      <property name="Inventory_ID" value="LIGHT-002"/>
+      <property name="Sheetname" value="50-2 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-2.kicad_sch"/>
+      <sheetpath names="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/"/>
+      <tstamps>c02c5ca4-571f-5422-96c5-006eb010232f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5V"/>
+            <pin num="DIN"/>
+            <pin num="GND"/>
+            <pin num="DOUT"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SOL1">
+      <value>Adafruit2776 / 5V nominal1.1A</value>
+      <datasheet>https://www.adafruit.com/product/2776</datasheet>
+      <fields>
+        <field name="Inventory_ID">ACT-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/2776</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_SOL1" description="Functional terminal model; ACT-001; evidence S5; physical release held"/>
+      <property name="Inventory_ID" value="ACT-001"/>
+      <property name="Sheetname" value="50-2 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-2.kicad_sch"/>
+      <sheetpath names="/50-2 PWM / lights / release/" tstamps="/620f0ea7-a663-5944-bf30-e4b4a90d58bb/"/>
+      <tstamps>db440de1-3099-598d-8d9f-cde7a8e091f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R1" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-3 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-3.kicad_sch"/>
+      <sheetpath names="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/"/>
+      <tstamps>12b507d3-05ba-55ed-88a8-aa47f1f7876c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R2" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-3 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-3.kicad_sch"/>
+      <sheetpath names="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/"/>
+      <tstamps>ca037185-bf4e-5ab7-a94c-abeb069c465b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R3" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-3 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-3.kicad_sch"/>
+      <sheetpath names="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/"/>
+      <tstamps>01adccb9-1c3d-5226-90b1-e65756c74dcd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R4" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-3 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-3.kicad_sch"/>
+      <sheetpath names="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/"/>
+      <tstamps>ba1d1e06-b116-532e-a76b-f75c2a3fa33a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>330</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_R5" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-3 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-3.kicad_sch"/>
+      <sheetpath names="/50-3 PWM / lights / release/" tstamps="/6cf945ce-2d61-53c2-affe-2cd4cdab05a9/"/>
+      <tstamps>0be6b2b3-aff8-5bd7-96d5-05471aecfb3a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>100nF 16V</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_C1" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-4 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-4.kicad_sch"/>
+      <sheetpath names="/50-4 PWM / lights / release/" tstamps="/7669d863-985e-502a-8d03-c3b9b7e505f4/"/>
+      <tstamps>dcd902fa-8e0e-5961-95bc-86a9eb227532</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>1000uF 10V</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">LOGIC-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_C4" description="Functional terminal model; LOGIC-002; evidence D1; physical release held"/>
+      <property name="Inventory_ID" value="LOGIC-002"/>
+      <property name="Sheetname" value="50-4 PWM / lights / release"/>
+      <property name="Sheetfile" value="50-4.kicad_sch"/>
+      <sheetpath names="/50-4 PWM / lights / release/" tstamps="/7669d863-985e-502a-8d03-c3b9b7e505f4/"/>
+      <tstamps>092fc7cf-411c-53c1-9d5f-f5319c29f3cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CHG1">
+      <value>ToolkitRC M6AC / ground only</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">CHG-001</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_CHG1" description="Functional terminal model; CHG-001; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="CHG-001"/>
+      <property name="Sheetname" value="60-1 Charge / cable holds"/>
+      <property name="Sheetfile" value="60-1.kicad_sch"/>
+      <sheetpath names="/60-1 Charge / cable holds/" tstamps="/2439fc6e-2d2d-56fd-ba6f-62739666af5f/"/>
+      <tstamps>7a4f5a75-a27b-5ea5-846b-c3827115375d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JCHG1">
+      <value>Separate QS8 male / CHARGE ONLY 5A</value>
+      <datasheet>../../../docs/hardware/baseline-r1/electrical-build.md</datasheet>
+      <fields>
+        <field name="Inventory_ID">CHG-002</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="BGD" part="BGD_JCHG1" description="Functional terminal model; CHG-002; evidence S10; physical release held"/>
+      <property name="Inventory_ID" value="CHG-002"/>
+      <property name="Sheetname" value="60-1 Charge / cable holds"/>
+      <property name="Sheetfile" value="60-1.kicad_sch"/>
+      <sheetpath names="/60-1 Charge / cable holds/" tstamps="/2439fc6e-2d2d-56fd-ba6f-62739666af5f/"/>
+      <tstamps>d3c2e732-d297-5584-b537-b55486f7e075</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BGD" part="BGD_BAT1">
+      <description>Functional terminal model; PACK-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">BAT1</field>
+        <field name="Value">Nexus 6S2P P50B / factory QS8F</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; PACK-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="power_out"/>
+        <pin num="-" name="-" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_BZ1">
+      <description>Functional terminal model; BUZZ-001; evidence S8; physical release held</description>
+      <docs>https://viflydrone.com/collections/drone-buzzer/products/vifly-finder-v2-fpv-racing-drone-buzzer</docs>
+      <fields>
+        <field name="Reference">BZ1</field>
+        <field name="Value">VIFLY Finder2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://viflydrone.com/collections/drone-buzzer/products/vifly-finder-v2-fpv-racing-drone-buzzer</field>
+        <field name="Description">Functional terminal model; BUZZ-001; evidence S8; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="BZ-" name="BZ-" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_C1">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100nF 16V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_C2">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">100nF 16V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_C3">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">100nF 16V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_C4">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">C4</field>
+        <field name="Value">1000uF 10V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_CHG1">
+      <description>Functional terminal model; CHG-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">CHG1</field>
+        <field name="Value">ToolkitRC M6AC / ground only</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; CHG-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="power_out"/>
+        <pin num="-" name="-" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_CM1">
+      <description>Functional terminal model; CAP-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">CM1</field>
+        <field name="Value">1000uF 35V EEU-FR1V102B</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; CAP-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_DRV1">
+      <description>Functional terminal model; ACT-002; evidence S5; physical release held</description>
+      <docs>https://www.pololu.com/docs/0J60/all</docs>
+      <fields>
+        <field name="Reference">DRV1</field>
+        <field name="Value">Pololu 2802 / bridges OPEN</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/docs/0J60/all</field>
+        <field name="Description">Functional terminal model; ACT-002; evidence S5; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="GOOD" name="GOOD" type="output"/>
+        <pin num="LOAD_HIGH" name="LOAD_HIGH" type="passive"/>
+        <pin num="LOAD_LOW" name="LOAD_LOW" type="open_collector"/>
+        <pin num="LRN" name="LRN" type="input"/>
+        <pin num="OUT" name="OUT" type="output"/>
+        <pin num="RC_IN" name="RC_IN" type="input"/>
+        <pin num="VCC" name="VCC" type="power_in"/>
+        <pin num="VRC" name="VRC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_F1">
+      <description>Functional terminal model; FUSE-002; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">F1</field>
+        <field name="Value">5A 32V 0297005.WXNV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; FUSE-002; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="IN" name="IN" type="passive"/>
+        <pin num="OUT" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_F2">
+      <description>Functional terminal model; FUSE-002; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">F2</field>
+        <field name="Value">5A 32V 0297005.WXNV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; FUSE-002; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="IN" name="IN" type="passive"/>
+        <pin num="OUT" name="OUT" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_FAN1">
+      <description>Functional terminal model; COOL-001; evidence S3; physical release held</description>
+      <docs>https://www.adafruit.com/product/3368</docs>
+      <fields>
+        <field name="Reference">FAN1</field>
+        <field name="Value">Adafruit 3368 / always on</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/3368</field>
+        <field name="Description">Functional terminal model; COOL-001; evidence S3; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="power_in"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_FC1">
+      <description>Functional terminal model; FC-001; evidence S1; physical release held</description>
+      <docs>https://micoair.cn/zh/docs/flight-controller/micoair743-aio-series/micoair743v2-aio-45a-manual</docs>
+      <fields>
+        <field name="Reference">FC1</field>
+        <field name="Value">MicoAir743v2-AIO45A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://micoair.cn/zh/docs/flight-controller/micoair743-aio-series/micoair743v2-aio-45a-manual</field>
+        <field name="Description">Functional terminal model; FC-001; evidence S1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_out"/>
+        <pin num="12V" name="12V" type="power_out"/>
+        <pin num="BZ-" name="BZ-" type="open_collector"/>
+        <pin num="ESC1_A" name="ESC1_A" type="output"/>
+        <pin num="ESC1_B" name="ESC1_B" type="output"/>
+        <pin num="ESC1_C" name="ESC1_C" type="output"/>
+        <pin num="ESC2_A" name="ESC2_A" type="output"/>
+        <pin num="ESC2_B" name="ESC2_B" type="output"/>
+        <pin num="ESC2_C" name="ESC2_C" type="output"/>
+        <pin num="ESC3_A" name="ESC3_A" type="output"/>
+        <pin num="ESC3_B" name="ESC3_B" type="output"/>
+        <pin num="ESC3_C" name="ESC3_C" type="output"/>
+        <pin num="ESC4_A" name="ESC4_A" type="output"/>
+        <pin num="ESC4_B" name="ESC4_B" type="output"/>
+        <pin num="ESC4_C" name="ESC4_C" type="output"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="LED" name="LED" type="output"/>
+        <pin num="M5" name="M5" type="output"/>
+        <pin num="M6" name="M6" type="output"/>
+        <pin num="M7" name="M7" type="output"/>
+        <pin num="M8" name="M8" type="output"/>
+        <pin num="RX1" name="RX1" type="input"/>
+        <pin num="RX2" name="RX2" type="input"/>
+        <pin num="RX3" name="RX3" type="input"/>
+        <pin num="RX4" name="RX4" type="input"/>
+        <pin num="RX5" name="RX5" type="input"/>
+        <pin num="RX6" name="RX6" type="input"/>
+        <pin num="RX8" name="RX8" type="input"/>
+        <pin num="SCL" name="SCL" type="bidirectional"/>
+        <pin num="SDA" name="SDA" type="bidirectional"/>
+        <pin num="TX1" name="TX1" type="output"/>
+        <pin num="TX2" name="TX2" type="output"/>
+        <pin num="TX3" name="TX3" type="output"/>
+        <pin num="TX4" name="TX4" type="output"/>
+        <pin num="TX5" name="TX5" type="output"/>
+        <pin num="TX6" name="TX6" type="output"/>
+        <pin num="TX8" name="TX8" type="output"/>
+        <pin num="VBAT" name="VBAT" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_GPS1">
+      <description>Functional terminal model; GNSS-001; evidence S6; physical release held</description>
+      <docs>https://holybro.com/products/micro-m10-gps</docs>
+      <fields>
+        <field name="Reference">GPS1</field>
+        <field name="Value">Micro M10 case IST8310 / 12044</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://holybro.com/products/micro-m10-gps</field>
+        <field name="Description">Functional terminal model; GNSS-001; evidence S6; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="RX" name="RX" type="input"/>
+        <pin num="SCL" name="SCL" type="bidirectional"/>
+        <pin num="SDA" name="SDA" type="bidirectional"/>
+        <pin num="TX" name="TX" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_IR1">
+      <description>Functional terminal model; LIGHT-001; evidence S9; physical release held</description>
+      <docs>https://www.waveshare.com/product/infrared-led-board-b.htm</docs>
+      <fields>
+        <field name="Reference">IR1</field>
+        <field name="Value">Waveshare IR Board B / left</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.waveshare.com/product/infrared-led-board-b.htm</field>
+        <field name="Description">Functional terminal model; LIGHT-001; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="power_in"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_IR2">
+      <description>Functional terminal model; LIGHT-001; evidence S9; physical release held</description>
+      <docs>https://www.waveshare.com/product/infrared-led-board-b.htm</docs>
+      <fields>
+        <field name="Reference">IR2</field>
+        <field name="Value">Waveshare IR Board B / right</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.waveshare.com/product/infrared-led-board-b.htm</field>
+        <field name="Description">Functional terminal model; LIGHT-001; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="power_in"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_JBAT1">
+      <description>Functional terminal model; CONN-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">JBAT1</field>
+        <field name="Value">Genuine QS8 male / single pack</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; CONN-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_JCHG1">
+      <description>Functional terminal model; CHG-002; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">JCHG1</field>
+        <field name="Value">Separate QS8 male / CHARGE ONLY 5A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; CHG-002; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_JH1">
+      <description>Functional terminal model; ACT-005; evidence S11; physical release held</description>
+      <docs>https://www.pololu.com/product/2180</docs>
+      <fields>
+        <field name="Reference">JH1</field>
+        <field name="Value">Pololu2180 / aircraft source</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/2180</field>
+        <field name="Description">Functional terminal model; ACT-005; evidence S11; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_JH2">
+      <description>Functional terminal model; ACT-005; evidence S11; physical release held</description>
+      <docs>https://www.pololu.com/product/2181</docs>
+      <fields>
+        <field name="Reference">JH2</field>
+        <field name="Value">Pololu2181 / removable holder</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/2181</field>
+        <field name="Description">Functional terminal model; ACT-005; evidence S11; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_LED1">
+      <description>Functional terminal model; LIGHT-002; evidence S9; physical release held</description>
+      <docs>https://www.adafruit.com/product/5162</docs>
+      <fields>
+        <field name="Reference">LED1</field>
+        <field name="Value">Adafruit5162 RGBW / first</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/5162</field>
+        <field name="Description">Functional terminal model; LIGHT-002; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="DIN" name="DIN" type="input"/>
+        <pin num="DOUT" name="DOUT" type="output"/>
+        <pin num="GND" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_LED2">
+      <description>Functional terminal model; LIGHT-002; evidence S9; physical release held</description>
+      <docs>https://www.adafruit.com/product/5162</docs>
+      <fields>
+        <field name="Reference">LED2</field>
+        <field name="Value">Adafruit5162 RGBW / second</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/5162</field>
+        <field name="Description">Functional terminal model; LIGHT-002; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="DIN" name="DIN" type="input"/>
+        <pin num="DOUT" name="DOUT" type="output"/>
+        <pin num="GND" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_M1">
+      <description>Functional terminal model; MOTOR-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">M1</field>
+        <field name="Value">XING-E2809 800KV / motor1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; MOTOR-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_M2">
+      <description>Functional terminal model; MOTOR-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">M2</field>
+        <field name="Value">XING-E2809 800KV / motor2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; MOTOR-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_M3">
+      <description>Functional terminal model; MOTOR-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">M3</field>
+        <field name="Value">XING-E2809 800KV / motor3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; MOTOR-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_M4">
+      <description>Functional terminal model; MOTOR-001; evidence S10; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">M4</field>
+        <field name="Value">XING-E2809 800KV / motor4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; MOTOR-001; evidence S10; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_MON1">
+      <description>Functional terminal model; MON-001; evidence S2; physical release held</description>
+      <docs>https://www.mateksys.com/?portfolio=i2c-ina-bm</docs>
+      <fields>
+        <field name="Reference">MON1</field>
+        <field name="Value">Matek I2C-INA-BM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.mateksys.com/?portfolio=i2c-ina-bm</field>
+        <field name="Description">Functional terminal model; MON-001; evidence S2; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="BAT+" name="BAT+" type="passive"/>
+        <pin num="ESC+" name="ESC+" type="passive"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="SCL" name="SCL" type="bidirectional"/>
+        <pin num="SDA" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_PI1">
+      <description>Functional terminal model; PI-001; evidence S3; physical release held</description>
+      <docs>https://www.raspberrypi.com/documentation/computers/raspberry-pi.html</docs>
+      <fields>
+        <field name="Reference">PI1</field>
+        <field name="Value">Pi4 J8 used pins / physical numbering</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.raspberrypi.com/documentation/computers/raspberry-pi.html</field>
+        <field name="Description">Functional terminal model; PI-001; evidence S3; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_out"/>
+        <pin num="2" name="5V_A" type="power_in"/>
+        <pin num="4" name="5V_B" type="power_in"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="8" name="GPIO14_TX" type="output"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="GPIO15_RX" type="input"/>
+        <pin num="12" name="GPIO18" type="output"/>
+        <pin num="14" name="14" type="passive"/>
+        <pin num="16" name="GPIO23" type="input"/>
+        <pin num="18" name="GPIO24" type="input"/>
+        <pin num="20" name="20" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R1">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R2">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R2</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R3">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R4">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R4</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R5">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R5</field>
+        <field name="Value">330</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R6">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R6</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R7">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R7</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R8">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R8</field>
+        <field name="Value">330</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_R9">
+      <description>Functional terminal model; LOGIC-002; evidence D1; physical release held</description>
+      <docs>../../../docs/hardware/baseline-r1/electrical-build.md</docs>
+      <fields>
+        <field name="Reference">R9</field>
+        <field name="Value">330</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">../../../docs/hardware/baseline-r1/electrical-build.md</field>
+        <field name="Description">Functional terminal model; LOGIC-002; evidence D1; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_RANGE1">
+      <description>Functional terminal model; SENSE-002; evidence S7; physical release held</description>
+      <docs>https://en.benewake.com/uploadfiles/2023/03/20230331102010281.pdf</docs>
+      <fields>
+        <field name="Reference">RANGE1</field>
+        <field name="Value">TFmini-S / UART</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://en.benewake.com/uploadfiles/2023/03/20230331102010281.pdf</field>
+        <field name="Description">Functional terminal model; SENSE-002; evidence S7; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="RX" name="RX" type="input"/>
+        <pin num="TX" name="TX" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_REG1">
+      <description>Functional terminal model; BEC-001; evidence S2; physical release held</description>
+      <docs>https://www.mateksys.com/?portfolio=bec12s-pro</docs>
+      <fields>
+        <field name="Reference">REG1</field>
+        <field name="Value">BEC12S-PRO / 5.2V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.mateksys.com/?portfolio=bec12s-pro</field>
+        <field name="Description">Functional terminal model; BEC-001; evidence S2; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="VIN+" name="VIN+" type="power_in"/>
+        <pin num="VIN-" name="VIN-" type="passive"/>
+        <pin num="VOUT+" name="VOUT+" type="power_out"/>
+        <pin num="VOUT-" name="VOUT-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_REG2">
+      <description>Functional terminal model; BEC-002; evidence S9; physical release held</description>
+      <docs>https://www.hobbywing.com/en/products/ubec-5a93</docs>
+      <fields>
+        <field name="Reference">REG2</field>
+        <field name="Value">Hobbywing 30607000 / 5.0V</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.hobbywing.com/en/products/ubec-5a93</field>
+        <field name="Description">Functional terminal model; BEC-002; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="VIN+" name="VIN+" type="power_in"/>
+        <pin num="VIN-" name="VIN-" type="passive"/>
+        <pin num="VOUT+" name="VOUT+" type="power_out"/>
+        <pin num="VOUT-" name="VOUT-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_REG3">
+      <description>Functional terminal model; BEC-003; evidence S9; physical release held</description>
+      <docs>https://www.dfrobot.com/product-2599.html</docs>
+      <fields>
+        <field name="Reference">REG3</field>
+        <field name="Value">DFR1015 / 3.3V only</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.dfrobot.com/product-2599.html</field>
+        <field name="Description">Functional terminal model; BEC-003; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="IN+" name="IN+" type="power_in"/>
+        <pin num="IN-" name="IN-" type="passive"/>
+        <pin num="OUT+" name="OUT+" type="power_out"/>
+        <pin num="OUT-" name="OUT-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_RX1">
+      <description>Functional terminal model; RX-001; evidence S8; physical release held</description>
+      <docs>https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver</docs>
+      <fields>
+        <field name="Reference">RX1</field>
+        <field name="Value">RadioMaster RP1 V2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://radiomasterrc.com/products/rp1-expresslrs-2-4ghz-nano-receiver</field>
+        <field name="Description">Functional terminal model; RX-001; evidence S8; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="RX" name="RX" type="input"/>
+        <pin num="TX" name="TX" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_SERVO1">
+      <description>Functional terminal model; GIM-001; evidence S9; physical release held</description>
+      <docs>https://www.adafruit.com/product/1967</docs>
+      <fields>
+        <field name="Reference">SERVO1</field>
+        <field name="Value">Pan servo / Adafruit1967 kit</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/1967</field>
+        <field name="Description">Functional terminal model; GIM-001; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="SIG" name="SIG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_SERVO2">
+      <description>Functional terminal model; GIM-001; evidence S9; physical release held</description>
+      <docs>https://www.adafruit.com/product/1967</docs>
+      <fields>
+        <field name="Reference">SERVO2</field>
+        <field name="Value">Tilt servo / Adafruit1967 kit</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/1967</field>
+        <field name="Description">Functional terminal model; GIM-001; evidence S9; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="GND" name="GND" type="passive"/>
+        <pin num="SIG" name="SIG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_SOL1">
+      <description>Functional terminal model; ACT-001; evidence S5; physical release held</description>
+      <docs>https://www.adafruit.com/product/2776</docs>
+      <fields>
+        <field name="Reference">SOL1</field>
+        <field name="Value">Adafruit2776 / 5V nominal1.1A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.adafruit.com/product/2776</field>
+        <field name="Description">Functional terminal model; ACT-001; evidence S5; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_SW1">
+      <description>Functional terminal model; ACT-003; evidence S5; physical release held</description>
+      <docs>https://www.pololu.com/product/1402</docs>
+      <fields>
+        <field name="Reference">SW1</field>
+        <field name="Value">Pololu1402 / seated AND lid closed</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/1402</field>
+        <field name="Description">Functional terminal model; ACT-003; evidence S5; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="COM" name="COM" type="passive"/>
+        <pin num="NC" name="NC" type="passive"/>
+        <pin num="NO" name="NO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_SW2">
+      <description>Functional terminal model; ACT-004; evidence S5; physical release held</description>
+      <docs>https://www.pololu.com/product/1402</docs>
+      <fields>
+        <field name="Reference">SW2</field>
+        <field name="Value">Pololu1402 / bolt through strike</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.pololu.com/product/1402</field>
+        <field name="Description">Functional terminal model; ACT-004; evidence S5; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="COM" name="COM" type="passive"/>
+        <pin num="NC" name="NC" type="passive"/>
+        <pin num="NO" name="NO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BGD" part="BGD_U1">
+      <description>Functional terminal model; LOGIC-001; evidence S4; physical release held</description>
+      <docs>https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf</docs>
+      <fields>
+        <field name="Reference">U1</field>
+        <field name="Value">SN74AHCT125N / PDIP14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74ahct125.pdf</field>
+        <field name="Description">Functional terminal model; LOGIC-001; evidence S4; physical release held</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE_n" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="tri_state"/>
+        <pin num="4" name="2OE_n" type="input"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2Y" type="tri_state"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="tri_state"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3OE_n" type="input"/>
+        <pin num="11" name="4Y" type="tri_state"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4OE_n" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BGD">
+      <uri>${KIPRJMOD}/bgd.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="AIO_5V" class="Default">
+      <node ref="BZ1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="FC1" pin="5V" pinfunction="5V_5V" pintype="power_out"/>
+      <node ref="GPS1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="MON1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="RANGE1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="RX1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+    </net>
+    <net code="2" name="AIO_12V" class="Default">
+      <node ref="FC1" pin="12V" pinfunction="12V_12V" pintype="power_out"/>
+      <node ref="REG3" pin="IN+" pinfunction="IN+_IN+" pintype="power_in"/>
+    </net>
+    <net code="3" name="BUS_POS" class="Default">
+      <node ref="CM1" pin="+" pinfunction="+_+" pintype="passive"/>
+      <node ref="F1" pin="IN" pinfunction="IN_IN" pintype="passive"/>
+      <node ref="F2" pin="IN" pinfunction="IN_IN" pintype="passive"/>
+      <node ref="FC1" pin="VBAT" pinfunction="VBAT_VBAT" pintype="power_in"/>
+      <node ref="MON1" pin="ESC+" pinfunction="ESC+_ESC+" pintype="passive"/>
+    </net>
+    <net code="4" name="BUZZER_LOW" class="Default">
+      <node ref="BZ1" pin="BZ-" pinfunction="BZ-_BZ-" pintype="passive"/>
+      <node ref="FC1" pin="BZ-" pinfunction="BZ-_BZ-" pintype="open_collector"/>
+    </net>
+    <net code="5" name="CHARGE_NEG" class="Default">
+      <node ref="CHG1" pin="-" pinfunction="-_-" pintype="power_out"/>
+      <node ref="JCHG1" pin="-" pinfunction="-_-" pintype="passive"/>
+    </net>
+    <net code="6" name="CHARGE_POS" class="Default">
+      <node ref="CHG1" pin="+" pinfunction="+_+" pintype="power_out"/>
+      <node ref="JCHG1" pin="+" pinfunction="+_+" pintype="passive"/>
+    </net>
+    <net code="7" name="CRSF_RX" class="Default">
+      <node ref="FC1" pin="TX6" pinfunction="TX6_TX6" pintype="output"/>
+      <node ref="RX1" pin="RX" pinfunction="RX_RX" pintype="input"/>
+    </net>
+    <net code="8" name="CRSF_TX" class="Default">
+      <node ref="FC1" pin="RX6" pinfunction="RX6_RX6" pintype="input"/>
+      <node ref="RX1" pin="TX" pinfunction="TX_TX" pintype="output"/>
+    </net>
+    <net code="9" name="FC_TX_PI_RX" class="Default">
+      <node ref="FC1" pin="TX1" pinfunction="TX1_TX1" pintype="output"/>
+      <node ref="PI1" pin="10" pinfunction="GPIO15_RX_10" pintype="input"/>
+    </net>
+    <net code="10" name="FUSED_F1" class="Default">
+      <node ref="F1" pin="OUT" pinfunction="OUT_OUT" pintype="passive"/>
+      <node ref="REG1" pin="VIN+" pinfunction="VIN+_VIN+" pintype="power_in"/>
+    </net>
+    <net code="11" name="FUSED_F2" class="Default">
+      <node ref="F2" pin="OUT" pinfunction="OUT_OUT" pintype="passive"/>
+      <node ref="REG2" pin="VIN+" pinfunction="VIN+_VIN+" pintype="power_in"/>
+    </net>
+    <net code="12" name="GND" class="Default">
+      <node ref="BAT1" pin="-" pinfunction="-_-" pintype="power_out"/>
+      <node ref="BZ1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="C1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CM1" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="DRV1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="FAN1" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="FC1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="GPS1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="IR1" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="IR2" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="JBAT1" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="LED1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="LED2" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="MON1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="PI1" pin="14" pinfunction="14_14" pintype="passive"/>
+      <node ref="PI1" pin="20" pinfunction="20_20" pintype="passive"/>
+      <node ref="PI1" pin="6" pinfunction="6_6" pintype="passive"/>
+      <node ref="PI1" pin="9" pinfunction="9_9" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RANGE1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="REG1" pin="VIN-" pinfunction="VIN-_VIN-" pintype="passive"/>
+      <node ref="REG1" pin="VOUT-" pinfunction="VOUT-_VOUT-" pintype="passive"/>
+      <node ref="REG2" pin="VIN-" pinfunction="VIN-_VIN-" pintype="passive"/>
+      <node ref="REG2" pin="VOUT-" pinfunction="VOUT-_VOUT-" pintype="passive"/>
+      <node ref="REG3" pin="IN-" pinfunction="IN-_IN-" pintype="passive"/>
+      <node ref="REG3" pin="OUT-" pinfunction="OUT-_OUT-" pintype="passive"/>
+      <node ref="RX1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="SERVO1" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="SERVO2" pin="GND" pinfunction="GND_GND" pintype="passive"/>
+      <node ref="SW1" pin="COM" pinfunction="COM_COM" pintype="passive"/>
+      <node ref="SW2" pin="COM" pinfunction="COM_COM" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="1OE_n_1" pintype="input"/>
+      <node ref="U1" pin="10" pinfunction="3OE_n_10" pintype="input"/>
+      <node ref="U1" pin="13" pinfunction="4OE_n_13" pintype="input"/>
+      <node ref="U1" pin="4" pinfunction="2OE_n_4" pintype="input"/>
+      <node ref="U1" pin="7" pinfunction="GND_7" pintype="power_in"/>
+    </net>
+    <net code="13" name="GPS_RX" class="Default">
+      <node ref="FC1" pin="TX3" pinfunction="TX3_TX3" pintype="output"/>
+      <node ref="GPS1" pin="RX" pinfunction="RX_RX" pintype="input"/>
+    </net>
+    <net code="14" name="GPS_TX" class="Default">
+      <node ref="FC1" pin="RX3" pinfunction="RX3_RX3" pintype="input"/>
+      <node ref="GPS1" pin="TX" pinfunction="TX_TX" pintype="output"/>
+    </net>
+    <net code="15" name="HOLDER_CLOSED" class="Default">
+      <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PI1" pin="16" pinfunction="GPIO23_16" pintype="input"/>
+      <node ref="R6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="16" name="I2C1_SCL" class="Default">
+      <node ref="FC1" pin="SCL" pinfunction="SCL_SCL" pintype="bidirectional"/>
+      <node ref="GPS1" pin="SCL" pinfunction="SCL_SCL" pintype="bidirectional"/>
+      <node ref="MON1" pin="SCL" pinfunction="SCL_SCL" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="I2C1_SDA" class="Default">
+      <node ref="FC1" pin="SDA" pinfunction="SDA_SDA" pintype="bidirectional"/>
+      <node ref="GPS1" pin="SDA" pinfunction="SDA_SDA" pintype="bidirectional"/>
+      <node ref="MON1" pin="SDA" pinfunction="SDA_SDA" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="IR_3V3" class="Default">
+      <node ref="IR1" pin="+" pinfunction="+_+" pintype="power_in"/>
+      <node ref="IR2" pin="+" pinfunction="+_+" pintype="power_in"/>
+      <node ref="REG3" pin="OUT+" pinfunction="OUT+_OUT+" pintype="power_out"/>
+    </net>
+    <net code="19" name="LATCH_ENGAGED" class="Default">
+      <node ref="C3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="PI1" pin="18" pinfunction="GPIO24_18" pintype="input"/>
+      <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="20" name="LED_CHAIN_DATA" class="Default">
+      <node ref="LED1" pin="DOUT" pinfunction="DOUT_DOUT" pintype="output"/>
+      <node ref="LED2" pin="DIN" pinfunction="DIN_DIN" pintype="input"/>
+    </net>
+    <net code="21" name="LED_DIN" class="Default">
+      <node ref="LED1" pin="DIN" pinfunction="DIN_DIN" pintype="input"/>
+      <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="22" name="M1_A" class="Default">
+      <node ref="FC1" pin="ESC1_A" pinfunction="ESC1_A_ESC1_A" pintype="output"/>
+      <node ref="M1" pin="A" pinfunction="A_A" pintype="passive"/>
+    </net>
+    <net code="23" name="M1_B" class="Default">
+      <node ref="FC1" pin="ESC1_B" pinfunction="ESC1_B_ESC1_B" pintype="output"/>
+      <node ref="M1" pin="B" pinfunction="B_B" pintype="passive"/>
+    </net>
+    <net code="24" name="M1_C" class="Default">
+      <node ref="FC1" pin="ESC1_C" pinfunction="ESC1_C_ESC1_C" pintype="output"/>
+      <node ref="M1" pin="C" pinfunction="C_C" pintype="passive"/>
+    </net>
+    <net code="25" name="M2_A" class="Default">
+      <node ref="FC1" pin="ESC2_A" pinfunction="ESC2_A_ESC2_A" pintype="output"/>
+      <node ref="M2" pin="A" pinfunction="A_A" pintype="passive"/>
+    </net>
+    <net code="26" name="M2_B" class="Default">
+      <node ref="FC1" pin="ESC2_B" pinfunction="ESC2_B_ESC2_B" pintype="output"/>
+      <node ref="M2" pin="B" pinfunction="B_B" pintype="passive"/>
+    </net>
+    <net code="27" name="M2_C" class="Default">
+      <node ref="FC1" pin="ESC2_C" pinfunction="ESC2_C_ESC2_C" pintype="output"/>
+      <node ref="M2" pin="C" pinfunction="C_C" pintype="passive"/>
+    </net>
+    <net code="28" name="M3_A" class="Default">
+      <node ref="FC1" pin="ESC3_A" pinfunction="ESC3_A_ESC3_A" pintype="output"/>
+      <node ref="M3" pin="A" pinfunction="A_A" pintype="passive"/>
+    </net>
+    <net code="29" name="M3_B" class="Default">
+      <node ref="FC1" pin="ESC3_B" pinfunction="ESC3_B_ESC3_B" pintype="output"/>
+      <node ref="M3" pin="B" pinfunction="B_B" pintype="passive"/>
+    </net>
+    <net code="30" name="M3_C" class="Default">
+      <node ref="FC1" pin="ESC3_C" pinfunction="ESC3_C_ESC3_C" pintype="output"/>
+      <node ref="M3" pin="C" pinfunction="C_C" pintype="passive"/>
+    </net>
+    <net code="31" name="M4_A" class="Default">
+      <node ref="FC1" pin="ESC4_A" pinfunction="ESC4_A_ESC4_A" pintype="output"/>
+      <node ref="M4" pin="A" pinfunction="A_A" pintype="passive"/>
+    </net>
+    <net code="32" name="M4_B" class="Default">
+      <node ref="FC1" pin="ESC4_B" pinfunction="ESC4_B_ESC4_B" pintype="output"/>
+      <node ref="M4" pin="B" pinfunction="B_B" pintype="passive"/>
+    </net>
+    <net code="33" name="M4_C" class="Default">
+      <node ref="FC1" pin="ESC4_C" pinfunction="ESC4_C_ESC4_C" pintype="output"/>
+      <node ref="M4" pin="C" pinfunction="C_C" pintype="passive"/>
+    </net>
+    <net code="34" name="PACK_POS" class="Default">
+      <node ref="BAT1" pin="+" pinfunction="+_+" pintype="power_out"/>
+      <node ref="JBAT1" pin="+" pinfunction="+_+" pintype="passive"/>
+      <node ref="MON1" pin="BAT+" pinfunction="BAT+_BAT+" pintype="passive"/>
+    </net>
+    <net code="35" name="PAN_PWM3V3" class="Default">
+      <node ref="FC1" pin="M5" pinfunction="M5_M5" pintype="output"/>
+      <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="3A_9" pintype="input"/>
+    </net>
+    <net code="36" name="PAN_PWM5V" class="Default">
+      <node ref="SERVO1" pin="SIG" pinfunction="SIG_SIG" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="3Y_8" pintype="tri_state"/>
+    </net>
+    <net code="37" name="PER_5V" class="Default">
+      <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="DRV1" pin="LOAD_HIGH" pinfunction="LOAD_HIGH_LOAD_HIGH" pintype="passive"/>
+      <node ref="DRV1" pin="VCC" pinfunction="VCC_VCC" pintype="power_in"/>
+      <node ref="JH1" pin="+" pinfunction="+_+" pintype="passive"/>
+      <node ref="JH2" pin="+" pinfunction="+_+" pintype="passive"/>
+      <node ref="LED1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="LED2" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="REG2" pin="VOUT+" pinfunction="VOUT+_VOUT+" pintype="power_out"/>
+      <node ref="SERVO1" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="SERVO2" pin="5V" pinfunction="5V_5V" pintype="power_in"/>
+      <node ref="SOL1" pin="+" pinfunction="+_+" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+    </net>
+    <net code="38" name="PIXEL_DATA3V3" class="Default">
+      <node ref="PI1" pin="12" pinfunction="GPIO18_12" pintype="output"/>
+      <node ref="R1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="1A_2" pintype="input"/>
+    </net>
+    <net code="39" name="PIXEL_DATA5V" class="Default">
+      <node ref="R5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="1Y_3" pintype="tri_state"/>
+    </net>
+    <net code="40" name="PI_3V3" class="Default">
+      <node ref="PI1" pin="1" pinfunction="3V3_1" pintype="power_out"/>
+      <node ref="R6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="41" name="PI_5V2" class="Default">
+      <node ref="FAN1" pin="+" pinfunction="+_+" pintype="power_in"/>
+      <node ref="PI1" pin="2" pinfunction="5V_A_2" pintype="power_in"/>
+      <node ref="PI1" pin="4" pinfunction="5V_B_4" pintype="power_in"/>
+      <node ref="REG1" pin="VOUT+" pinfunction="VOUT+_VOUT+" pintype="power_out"/>
+    </net>
+    <net code="42" name="PI_TX_FC_RX" class="Default">
+      <node ref="FC1" pin="RX1" pinfunction="RX1_RX1" pintype="input"/>
+      <node ref="PI1" pin="8" pinfunction="GPIO14_TX_8" pintype="output"/>
+    </net>
+    <net code="43" name="RANGE_RX" class="Default">
+      <node ref="FC1" pin="TX4" pinfunction="TX4_TX4" pintype="output"/>
+      <node ref="RANGE1" pin="RX" pinfunction="RX_RX" pintype="input"/>
+    </net>
+    <net code="44" name="RANGE_TX" class="Default">
+      <node ref="FC1" pin="RX4" pinfunction="RX4_RX4" pintype="input"/>
+      <node ref="RANGE1" pin="TX" pinfunction="TX_TX" pintype="output"/>
+    </net>
+    <net code="45" name="RELEASE_PWM3V3" class="Default">
+      <node ref="FC1" pin="M7" pinfunction="M7_M7" pintype="output"/>
+      <node ref="R2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="2A_5" pintype="input"/>
+    </net>
+    <net code="46" name="RELEASE_PWM5V" class="Default">
+      <node ref="DRV1" pin="RC_IN" pinfunction="RC_IN_RC_IN" pintype="input"/>
+      <node ref="U1" pin="6" pinfunction="2Y_6" pintype="tri_state"/>
+    </net>
+    <net code="47" name="SOLENOID_LOW" class="Default">
+      <node ref="DRV1" pin="LOAD_LOW" pinfunction="LOAD_LOW_LOAD_LOW" pintype="open_collector"/>
+      <node ref="JH1" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="JH2" pin="-" pinfunction="-_-" pintype="passive"/>
+      <node ref="SOL1" pin="-" pinfunction="-_-" pintype="passive"/>
+    </net>
+    <net code="48" name="SW_A_RAW" class="Default">
+      <node ref="R8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW1" pin="NO" pinfunction="NO_NO" pintype="passive"/>
+    </net>
+    <net code="49" name="SW_B_RAW" class="Default">
+      <node ref="R9" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW2" pin="NO" pinfunction="NO_NO" pintype="passive"/>
+    </net>
+    <net code="50" name="TILT_PWM3V3" class="Default">
+      <node ref="FC1" pin="M6" pinfunction="M6_M6" pintype="output"/>
+      <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="4A_12" pintype="input"/>
+    </net>
+    <net code="51" name="TILT_PWM5V" class="Default">
+      <node ref="SERVO2" pin="SIG" pinfunction="SIG_SIG" pintype="input"/>
+      <node ref="U1" pin="11" pinfunction="4Y_11" pintype="tri_state"/>
+    </net>
+    <net code="52" name="unconnected-(DRV1-PadGOOD)" class="Default">
+      <node ref="DRV1" pin="GOOD" pinfunction="GOOD_GOOD" pintype="output+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(DRV1-PadLRN)" class="Default">
+      <node ref="DRV1" pin="LRN" pinfunction="LRN_LRN" pintype="input+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(DRV1-PadOUT)" class="Default">
+      <node ref="DRV1" pin="OUT" pinfunction="OUT_OUT" pintype="output+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(DRV1-PadVRC)" class="Default">
+      <node ref="DRV1" pin="VRC" pinfunction="VRC_VRC" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(FC1-PadLED)" class="Default">
+      <node ref="FC1" pin="LED" pinfunction="LED_LED" pintype="output+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(FC1-PadM8)" class="Default">
+      <node ref="FC1" pin="M8" pinfunction="M8_M8" pintype="output+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(FC1-PadRX2)" class="Default">
+      <node ref="FC1" pin="RX2" pinfunction="RX2_RX2" pintype="input+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(FC1-PadRX5)" class="Default">
+      <node ref="FC1" pin="RX5" pinfunction="RX5_RX5" pintype="input+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(FC1-PadRX8)" class="Default">
+      <node ref="FC1" pin="RX8" pinfunction="RX8_RX8" pintype="input+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(FC1-PadTX2)" class="Default">
+      <node ref="FC1" pin="TX2" pinfunction="TX2_TX2" pintype="output+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(FC1-PadTX5)" class="Default">
+      <node ref="FC1" pin="TX5" pinfunction="TX5_TX5" pintype="output+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(FC1-PadTX8)" class="Default">
+      <node ref="FC1" pin="TX8" pinfunction="TX8_TX8" pintype="output+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(LED2-PadDOUT)" class="Default">
+      <node ref="LED2" pin="DOUT" pinfunction="DOUT_DOUT" pintype="output+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(SW1-PadNC)" class="Default">
+      <node ref="SW1" pin="NC" pinfunction="NC_NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(SW2-PadNC)" class="Default">
+      <node ref="SW2" pin="NC" pinfunction="NC_NC" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

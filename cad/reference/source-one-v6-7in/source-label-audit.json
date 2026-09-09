@@ -1,0 +1,444 @@
+{
+  "source_sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "drawing_identity": [
+    "Source One V6 - 7 in DC",
+    "2025-JUL-07"
+  ],
+  "header_THICKNESS": "0.0",
+  "header_INSUNITS": "4",
+  "labels": [
+    {
+      "entity_type": "TEXT",
+      "handle": "4A5",
+      "layer": "Draw",
+      "text": "2mm",
+      "insert_raw_mm": [
+        279.3163437620855,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "4A6",
+      "layer": "Draw",
+      "text": "6mm",
+      "insert_raw_mm": [
+        980.6237925385035,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "4DB",
+      "layer": "Draw",
+      "text": "2mm",
+      "insert_raw_mm": [
+        620.9555355989755,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "559C",
+      "layer": "3",
+      "text": "2025-JUL-07",
+      "insert_raw_mm": [
+        400.759645091871,
+        1806.122104206743,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "559D",
+      "layer": "3",
+      "text": "Source One V6 - 7 in DC",
+      "insert_raw_mm": [
+        400.759645091871,
+        1725.801503933893,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "6951",
+      "layer": "9",
+      "text": "M3 Press nuts pre-install",
+      "insert_raw_mm": [
+        667.1452649983466,
+        1463.524906746997,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B21",
+      "layer": "2",
+      "text": "BOM ( 2025-JUL-07)",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1724.760088931714,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B22",
+      "layer": "2",
+      "text": "Standoffs ( black colour)",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1638.013840637034,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B23",
+      "layer": "2",
+      "text": "M3x30mm = 4pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1594.640716489694,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B25",
+      "layer": "2",
+      "text": "M3x22mm = 4pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1548.633873415727,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B26",
+      "layer": "2",
+      "text": "Screws Steel 10.9 grade black",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1432.948553523949,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B27",
+      "layer": "2",
+      "text": "M3x14mm = 4pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1389.575429376609,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B28",
+      "layer": "2",
+      "text": "M3x12mm = 4pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1346.20230522927,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "7B29",
+      "layer": "2",
+      "text": "M3x10mm = 16pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1302.82918108193,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "B149",
+      "layer": "2",
+      "text": "SO1 V6 7 in DC",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1765.62900700066,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "B14C",
+      "layer": "2",
+      "text": "M2x6mm = 4pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1259.45605693459,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "1058C",
+      "layer": "2",
+      "text": "M3x20mm = 2pcs",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1501.538949682941,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "1076E",
+      "layer": "Draw",
+      "text": "2mm",
+      "insert_raw_mm": [
+        510.8880690652291,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "10799",
+      "layer": "Draw",
+      "text": "2mm",
+      "insert_raw_mm": [
+        412.3438025982445,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "1079A",
+      "layer": "Draw",
+      "text": "6mm",
+      "insert_raw_mm": [
+        834.0466173130376,
+        1365.406704551222,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "109E2",
+      "layer": "Draw",
+      "text": "\u00b2\u00d5\u00b8\u00cb\u00a4\u00bd\u00aet",
+      "insert_raw_mm": [
+        823.2899812415505,
+        1413.330518831011,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "1521E",
+      "layer": "Draw2",
+      "text": "TPU 102A-Black",
+      "insert_raw_mm": [
+        528.4297284400063,
+        1179.741329436768,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "16143",
+      "layer": "Draw2",
+      "text": "DIA3.0mm",
+      "insert_raw_mm": [
+        1047.748714771669,
+        1371.520298816814,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "165B8",
+      "layer": "2",
+      "text": "TPU 102A 3d printed camera mount",
+      "insert_raw_mm": [
+        -505.9163870953329,
+        1178.020952395683,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "169A6",
+      "layer": "Draw",
+      "text": "6mm",
+      "insert_raw_mm": [
+        2075.72546971552,
+        1436.588102230868,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "169A7",
+      "layer": "2",
+      "text": "SO1 V6 7 in DC",
+      "insert_raw_mm": [
+        2035.507695861765,
+        1759.851695929169,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "169A8",
+      "layer": "Draw2",
+      "text": "DIA3.0mm",
+      "insert_raw_mm": [
+        2142.850391948686,
+        1469.687340722859,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "169DB",
+      "layer": "2",
+      "text": "Spare Arms pack",
+      "insert_raw_mm": [
+        2035.507695861765,
+        1742.08007389638,
+        0.0
+      ]
+    },
+    {
+      "entity_type": "TEXT",
+      "handle": "169DC",
+      "layer": "2",
+      "text": "4pcs /pack",
+      "insert_raw_mm": [
+        2035.507695861765,
+        1722.567329761734,
+        0.0
+      ]
+    }
+  ],
+  "manufacturing_layout_associations": [
+    {
+      "layer": "Draw13",
+      "vertex_bounds_raw_mm": [
+        275.7426797625797,
+        1398.293336916955,
+        318.2426797625788,
+        1558.556942349319
+      ],
+      "nearby_thickness_text": [
+        {
+          "entity_type": "TEXT",
+          "handle": "4A5",
+          "layer": "Draw",
+          "text": "2mm",
+          "insert_raw_mm": [
+            279.3163437620855,
+            1365.406704551222,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "Draw3",
+      "vertex_bounds_raw_mm": [
+        407.2015953065322,
+        1427.02976341403,
+        455.7015953065326,
+        1533.616467468015
+      ],
+      "nearby_thickness_text": [
+        {
+          "entity_type": "TEXT",
+          "handle": "10799",
+          "layer": "Draw",
+          "text": "2mm",
+          "insert_raw_mm": [
+            412.3438025982445,
+            1365.406704551222,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "Draw14",
+      "vertex_bounds_raw_mm": [
+        609.5620587546794,
+        1442.129912377645,
+        658.0620587546794,
+        1549.748390315737
+      ],
+      "nearby_thickness_text": [
+        {
+          "entity_type": "TEXT",
+          "handle": "4DB",
+          "layer": "Draw",
+          "text": "2mm",
+          "insert_raw_mm": [
+            620.9555355989755,
+            1365.406704551222,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "Camera-Holder",
+      "vertex_bounds_raw_mm": [
+        494.3318408109305,
+        1446.935072339991,
+        528.3318408109305,
+        1495.81320830224
+      ],
+      "nearby_thickness_text": [
+        {
+          "entity_type": "TEXT",
+          "handle": "1076E",
+          "layer": "Draw",
+          "text": "2mm",
+          "insert_raw_mm": [
+            510.8880690652291,
+            1365.406704551222,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "layer": "Draw2",
+      "vertex_bounds_raw_mm": [
+        837.507947520946,
+        1449.532851753827,
+        867.907947520946,
+        1479.932851753827
+      ],
+      "nearby_thickness_text": [
+        {
+          "entity_type": "TEXT",
+          "handle": "1079A",
+          "layer": "Draw",
+          "text": "6mm",
+          "insert_raw_mm": [
+            834.0466173130376,
+            1365.406704551222,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "2mm is explicit drawing text, not a 2mm DXF default extrusion: header $THICKNESS=0.0. Spatial layer/label association is derived from drawing layout, not a supplier-confirmed current part-role mapping.",
+  "discrepancy_outcome": "documentation conflict remains unresolved"
+}

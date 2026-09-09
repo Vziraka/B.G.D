@@ -1,0 +1,5 @@
+# Per-user KiCad state and Python caches; engineering sources remain visible.
+*.kicad_prl
+*.lck
+*-backups/
+__pycache__/

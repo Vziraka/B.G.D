@@ -1,0 +1,54 @@
+{
+  "status": "LOGICAL_DRAFT_NOT_RELEASED",
+  "base_commit": "68e00796f56d1975b05efa8e8f3c5c5fd504b6ac",
+  "inputs": {
+    "docs/hardware/baseline-r1/harness-netlist.csv": "6198de86385349f74dcdf2b960599a3dbef84609919ba4ffa3978621f6c55692",
+    "docs/hardware/baseline-r1/pin-allocation.csv": "8adfed09dcfcc6acd3e9f67a4a1731fd2727c14bc5005b657771b7a6353da23c",
+    "docs/hardware/baseline-r1/electrical-build.md": "26aa99202584c33d2a06907a7bdd1fd005823df09fb4908925b71cdb58b3ae8f",
+    "docs/hardware/baseline-r1/firmware-manifest.json": "e9538ac3e41c5cf98d6e7ba3fed8cfe4abec920f3cbfb28331dc50571fd8b170",
+    "docs/hardware/baseline-r1/safety-state-tables.md": "520e53e84c3edd81a2643ad7bb95a840829644e228b3e86dfc58e0b5bb8046b4",
+    "cad/component-inventory.csv": "6c460b52d7f96ca9a1a4bfbce5f951b2c055a4f07ba42e7dc64a076327570501",
+    "cad/engineering-progress-2026-09-05.md": "52988e047befb576eb17e4b36b79f9a69a85922badff2583e32ad7c51b420f54",
+    "docs/hardware/baseline-r1/firmware-manifest.md": "2392694f85c726b42a56a336d980b1aae58e59deb7659277d52c73d057e00b39",
+    "cad/robust-aio-review.md": "7af2a75442b5086149b4d37fba183fa4fcb3c8af2e6db19052e7dbfebbc5c40b",
+    "cad/received-frame-inspection-gate.md": "db2772a71f16ee44ed0d064c84bae29be61190bb279bc608f0a0f74dac68359e",
+    "electronics/build_schematic.py": "6bb5e3afa12937a8c75809736766ed211e580f4aef45830f7382acd0e8e59bfa",
+    "electronics/pinouts/sources.md": "5e78297a113a1fe3d3d24f935bdb1f2b426829294e904941808c3dfc78d9e687"
+  },
+  "components": 48,
+  "erc_source_assertions": 3,
+  "pins": 192,
+  "harness_records": 135,
+  "sheets": 15,
+  "net_aliases": {
+    "PI_FAN5V2": "PI_5V2",
+    "SOLENOID_POS": "PER_5V"
+  },
+  "held_factory_records": {
+    "W100": "15-pin CSI factory cable; retain; internal pin mapping not modeled",
+    "W101": "USB A-MicroB factory cable;5V/data cable budget and route held",
+    "W102": "D500 kit sensor lead; internal mapping and received variant held",
+    "W103": "RP1 factory RF/coax mate; no scalar signal-net equivalence",
+    "W106": "6S balance B0..B6 order requires exact delivered connector view"
+  },
+  "schematic_sources": {
+    "electronics/schematics/bgd-master/10-1.kicad_sch": "dbfcbb09a48bb66ff142782462f5acf97b8bb52e6593ec2210935389108104cc",
+    "electronics/schematics/bgd-master/10-2.kicad_sch": "fe2002ef8791b748c6219176e2a4c4052eae74f65b33c26248706b60097bd2f9",
+    "electronics/schematics/bgd-master/20-1.kicad_sch": "95f3a380ba17495f2736d00564a4080ec2fa82a9dbbc8de253a54836f07d3691",
+    "electronics/schematics/bgd-master/20-2.kicad_sch": "87f40f10fc6773101b25a7903754cf18d75d5105d081ce3a37c00f1123e86876",
+    "electronics/schematics/bgd-master/30-1.kicad_sch": "b52606a314e8ec6e3501107253e48080b37b71ea110edbc4e5bd610ae729cd9a",
+    "electronics/schematics/bgd-master/30-2.kicad_sch": "0897300a1b6313b30814c0b79996dc9169a60769ec9d51da528a40f769487f27",
+    "electronics/schematics/bgd-master/40-1.kicad_sch": "a1a0f94c0ba7d21a3612583559e76a2f2d8dcb11e99e96990ba85f8dcb01fab5",
+    "electronics/schematics/bgd-master/40-2.kicad_sch": "e0dcd3dc9112f741b8d869d14c3755654132df11509d7fda875234ff7fa42abc",
+    "electronics/schematics/bgd-master/40-3.kicad_sch": "29b2cc2ca6ceb6ab4e0c7c309830a58645dc2533c4f8c616f829591bd8ee0387",
+    "electronics/schematics/bgd-master/50-1.kicad_sch": "cfc43ea630d5cf53f1b5acd02bbd6b4013d1fe3455b4bccac191591c3257c9cf",
+    "electronics/schematics/bgd-master/50-2.kicad_sch": "06cdf83b15511342dbf46f66655a70b28440368436b5cfd5a1bd0279d02ba33d",
+    "electronics/schematics/bgd-master/50-3.kicad_sch": "391b51773dddae501bc1f3f004b920636705708872c49a72a0088f07cc311c4d",
+    "electronics/schematics/bgd-master/50-4.kicad_sch": "14ffac6990687d97e2bdb5f96b61287728f7ac3229394633f9032979490a4447",
+    "electronics/schematics/bgd-master/60-1.kicad_sch": "2bc4222eac48b924c38693c5d413fa23cc6af09924b2aa42368a7cc54e14d8d7",
+    "electronics/schematics/bgd-master/bgd-master.kicad_pro": "939a6250e7d4b9817a2b88e58eafb9abc59c5f81830073d2d0f77cb3728ba75f",
+    "electronics/schematics/bgd-master/bgd-master.kicad_sch": "042deabb0b2f5bebf118da79bf823aa21d0f12573b35a2f308fa28701c4c6a32",
+    "electronics/schematics/bgd-master/bgd.kicad_sym": "543de79d337beb4a663c0bd598e25cf9c0096e0e0a60ce4d0003804b8018fe03",
+    "electronics/schematics/bgd-master/sym-lib-table": "9d94c87c427046657771e655e9e3b3a70d7c1b65222dbbf2f031ccdfec6ad351"
+  }
+}

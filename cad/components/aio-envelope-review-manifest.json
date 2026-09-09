@@ -1,0 +1,49 @@
+{
+  "generated_utc": "2026-09-06T01:56:10.334487+00:00",
+  "status": "PARTIAL_ROBUST_DESIGN_NOT_FABRICATION_RELEASE",
+  "checks": {
+    "previous_source_review_hashes": 7,
+    "new_fusion_exports_hashes": 2,
+    "study_objects": 27,
+    "z_endpoint_cases": 32,
+    "current_input_result_provenance": "PASS",
+    "original_snapshot_workspace_validator": "PASS: 12 original snapshot/script hashes",
+    "python_syntax": "PASS",
+    "full_mount_qualified": false
+  },
+  "archive_input_note": {
+    "current_input_sha256": "7ce0f5b023d71288f6ee4ad2c6610f73d478ed0888cdc1c63d6ea24194d3157c",
+    "change_after_export": "Added unused unassigned20mm support acceptance interval and explicit unknown-placement warning. No geometry-driving value changed; original export/input_sha256 retained.",
+    "archive_regenerated": false
+  },
+  "evidence": [
+    {
+      "path": "cad/components/aio-envelope-inputs.json",
+      "sha256": "7ce0f5b023d71288f6ee4ad2c6610f73d478ed0888cdc1c63d6ea24194d3157c"
+    },
+    {
+      "path": "cad/components/aio-envelope-results.json",
+      "sha256": "b98b870be9c3ca25f8753221123e0288847c8ff9812b6d11cfec826cbcacfa3e"
+    },
+    {
+      "path": "cad/components/aio-envelope-fusion-manifest.json",
+      "sha256": "ee14712bcdf2fd00cba587aba893f84f9da69f4b661259d5dd8f0e5a0d01f807"
+    },
+    {
+      "path": "cad/scripts/analyze_aio_envelope.py",
+      "sha256": "0e202cec38253efd5b241b555d5b8d32f1119612a4e4060dcea4a3999c2f73ac"
+    },
+    {
+      "path": "cad/scripts/fusion/build_aio_envelope_study.py",
+      "sha256": "0f2d8fc92650dcc730ce3e238d42120190a505e9b5776fc5c4623fee7f764b6e"
+    },
+    {
+      "path": "cad/robust-aio-review.md",
+      "sha256": "7af2a75442b5086149b4d37fba183fa4fcb3c8af2e6db19052e7dbfebbc5c40b"
+    },
+    {
+      "path": "cad/received-frame-inspection-gate.md",
+      "sha256": "db2772a71f16ee44ed0d064c84bae29be61190bb279bc608f0a0f74dac68359e"
+    }
+  ]
+}

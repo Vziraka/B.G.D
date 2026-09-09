@@ -1,0 +1,113 @@
+{
+  "source_sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "document": "BGD_MASTER",
+  "release": "REFERENCE_ONLY_NOT_COMPLETE_FRAME",
+  "raw_origin_mm": [
+    1518.565263306285,
+    1493.8850402200592,
+    0
+  ],
+  "transform": "X=raw_origin_y-DXF_Y; Y=DXF_X-raw_origin_x; Z=assumed arm underside",
+  "front_evidence": "TBS A7303021.JPG and A7303026.JPG: camera end at wide pair; visual identity, not dimensional measurement",
+  "parts": [
+    {
+      "component": "01_TOP_INFERRED_Draw13",
+      "layer": "Draw13",
+      "profile_index": 47,
+      "area_mm2": 3912.9622635305864,
+      "loops": 27,
+      "thickness_mm": 2,
+      "z_bottom_mm": 30,
+      "volume_mm3": 7825.924527060919,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "02_MIDDLE_INFERRED_Draw14",
+      "layer": "Draw14",
+      "profile_index": 23,
+      "area_mm2": 2881.8672691649613,
+      "loops": 21,
+      "thickness_mm": 2,
+      "z_bottom_mm": 6,
+      "volume_mm3": 5763.7345383298725,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "03_BOTTOM_INFERRED_Draw3",
+      "layer": "Draw3",
+      "profile_index": 26,
+      "area_mm2": 3118.8074489203314,
+      "loops": 26,
+      "thickness_mm": 2.5,
+      "z_bottom_mm": -2.5,
+      "volume_mm3": 7797.0186223010805,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "04_FRONT_LEFT_ARM",
+      "layer": "Frame-Arms",
+      "profile_index": 74,
+      "area_mm2": 2541.5302278814033,
+      "loops": 9,
+      "thickness_mm": 6,
+      "z_bottom_mm": 0,
+      "volume_mm3": 15249.181362645926,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "05_FRONT_RIGHT_ARM",
+      "layer": "Frame-Arms",
+      "profile_index": 75,
+      "area_mm2": 2541.5302268716173,
+      "loops": 9,
+      "thickness_mm": 6,
+      "z_bottom_mm": 0,
+      "volume_mm3": 15249.181362797131,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "06_REAR_RIGHT_ARM",
+      "layer": "Frame-Arms",
+      "profile_index": 103,
+      "area_mm2": 2949.6440823285966,
+      "loops": 10,
+      "thickness_mm": 6,
+      "z_bottom_mm": 0,
+      "volume_mm3": 17697.86448522993,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    },
+    {
+      "component": "07_REAR_LEFT_ARM",
+      "layer": "Frame-Arms",
+      "profile_index": 104,
+      "area_mm2": 2949.6440823907988,
+      "loops": 10,
+      "thickness_mm": 6,
+      "z_bottom_mm": 0,
+      "volume_mm3": 17697.864485260743,
+      "area_and_volume_check": "PASS",
+      "thickness_evidence": "TBS product specification; plate role inferred from photos",
+      "z_evidence": "ASSEMBLY ASSUMPTION: 30mm front standoffs = 6mm arms + 2mm middle + 22mm rear standoffs"
+    }
+  ],
+  "omissions": [
+    "brace",
+    "arm spacer",
+    "camera plates/mount",
+    "standoffs and fasteners",
+    "tolerances",
+    "physical stack confirmation"
+  ]
+}

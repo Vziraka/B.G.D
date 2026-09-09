@@ -1,0 +1,54 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_RELEASE_HOLDS",
+  "kicad_version": "10.0.6",
+  "native_erc_violations": 0,
+  "native_erc_ignored_default_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "exported_components": 48,
+  "exported_pins": 192,
+  "exported_nets": 66,
+  "independent_node_expectations": 147,
+  "rejected_fault_mutations": 7,
+  "rejected_shared_record_mutations": 3,
+  "shared_record_corrections": {
+    "E01": "resolved documentation",
+    "E05": "nominal tail corrected; physical route held"
+  },
+  "harness_records": 135,
+  "harness_treatments": {
+    "factory-cable-expanded": 1,
+    "factory-cable-hold": 5,
+    "intentional-isolation": 12,
+    "passive-component": 13,
+    "wire": 104
+  },
+  "pin_allocation_rows": 43,
+  "source_hashes_checked": 12,
+  "explicit_limits": [
+    "Module-level connectivity only",
+    "Five factory cables lack scalar internal pin coverage",
+    "ERC power assertions after shunt/fuses are not new hardware or physical evidence",
+    "E05 80mm fan tails do not establish usable routed reach or voltage compatibility",
+    "No route, thermal, current, runtime, physical connector or aircraft release"
+  ],
+  "output_hashes": {
+    "electronics/exports/bgd-master.net.xml": "7bcfda7661c6cd5f13370d17898eff83d5a5fb19384b3671895bf58a0a3575dc",
+    "electronics/exports/erc.json": "5d6219e19668e5d8879961d690e3d419d823b12a6a0bc6f86e6dbed5e2a38438"
+  }
+}

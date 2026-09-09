@@ -1,0 +1,612 @@
+{
+  "source_sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "scope": "READ_ONLY_CHECK_OF_EXISTING_HYPOTHESIS_B_NOT_CORRECTED_AUTHORITATIVE_STACK",
+  "geometry_matches_reference_r1": true,
+  "interference_count_partial_model": 0,
+  "adapter_distances": [
+    {
+      "peer": "01_TOP_INFERRED_Draw13",
+      "minimum_distance_mm": 18.4
+    },
+    {
+      "peer": "02_BOTTOM_INFERRED_Draw14",
+      "minimum_distance_mm": 10.0
+    },
+    {
+      "peer": "03_MIDDLE_INFERRED_Draw3",
+      "minimum_distance_mm": 1.9999999999999996
+    },
+    {
+      "peer": "04_FRONT_LEFT_ARM",
+      "minimum_distance_mm": 3.999999999999999
+    },
+    {
+      "peer": "05_FRONT_RIGHT_ARM",
+      "minimum_distance_mm": 3.999999999999999
+    },
+    {
+      "peer": "06_REAR_RIGHT_ARM",
+      "minimum_distance_mm": 3.999999999999999
+    },
+    {
+      "peer": "07_REAR_LEFT_ARM",
+      "minimum_distance_mm": 3.999999999999999
+    },
+    {
+      "peer": "08_STANDOFF_1_POSITION_INFERRED",
+      "minimum_distance_mm": 26.383312910101235
+    },
+    {
+      "peer": "08_STANDOFF_2_POSITION_INFERRED",
+      "minimum_distance_mm": 1.3833129101012354
+    },
+    {
+      "peer": "08_STANDOFF_3_POSITION_INFERRED",
+      "minimum_distance_mm": 1.3836243562080064
+    },
+    {
+      "peer": "08_STANDOFF_4_POSITION_INFERRED",
+      "minimum_distance_mm": 26.383312910101235
+    },
+    {
+      "peer": "08_STANDOFF_5_POSITION_INFERRED",
+      "minimum_distance_mm": 1.3833129101012354
+    },
+    {
+      "peer": "08_STANDOFF_6_POSITION_INFERRED",
+      "minimum_distance_mm": 1.3836243562080064
+    },
+    {
+      "peer": "08_STANDOFF_7_POSITION_INFERRED",
+      "minimum_distance_mm": 54.25441257679408
+    },
+    {
+      "peer": "08_STANDOFF_8_POSITION_INFERRED",
+      "minimum_distance_mm": 54.25441257679408
+    }
+  ],
+  "motor_mount_inner_loops": [
+    {
+      "arm": "04_FRONT_LEFT_ARM",
+      "min_xy_mm": [
+        82.48169502963265,
+        149.21700317331346
+      ],
+      "max_xy_mm": [
+        87.67827095115179,
+        154.5902014130371
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            85.56431609057626,
+            151.33095803388898
+          ],
+          "radius_mm": 1.4999999999997413,
+          "sweep_radians": 3.141592653589938
+        },
+        {
+          "center_mm": [
+            84.59564988985562,
+            152.47624655281413
+          ],
+          "radius_mm": 1.4999999999997589,
+          "sweep_radians": 3.1415926277802293
+        }
+      ]
+    },
+    {
+      "arm": "04_FRONT_LEFT_ARM",
+      "min_xy_mm": [
+        87.23053572775004,
+        141.72275249961902
+      ],
+      "max_xy_mm": [
+        94.23053592775004,
+        148.722752699619
+      ],
+      "curve_count": 1,
+      "arcs": []
+    },
+    {
+      "arm": "04_FRONT_LEFT_ARM",
+      "min_xy_mm": [
+        93.78280070434684,
+        135.85530378584977
+      ],
+      "max_xy_mm": [
+        98.97937662621914,
+        141.22850202592772
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            95.89675556492352,
+            139.11454716535104
+          ],
+          "radius_mm": 1.5000000000005087,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            96.86542176564359,
+            137.96925864642532
+          ],
+          "radius_mm": 1.4999999999997746,
+          "sweep_radians": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "arm": "04_FRONT_LEFT_ARM",
+      "min_xy_mm": [
+        81.3630870152939,
+        136.97391180246586
+      ],
+      "max_xy_mm": [
+        86.73628525331233,
+        142.1704877222781
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            83.47704187455406,
+            139.08786666172603
+          ],
+          "radius_mm": 1.5000000000002087,
+          "sweep_radians": 3.1415926386886297
+        },
+        {
+          "center_mm": [
+            84.62233039348035,
+            140.0565328624461
+          ],
+          "radius_mm": 1.4999999999998517,
+          "sweep_radians": 3.1415926237874747
+        }
+      ]
+    },
+    {
+      "arm": "04_FRONT_LEFT_ARM",
+      "min_xy_mm": [
+        94.7247864027595,
+        148.27501747753286
+      ],
+      "max_xy_mm": [
+        100.09798464151956,
+        153.4715933980887
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            96.83874126201914,
+            150.3889723367925
+          ],
+          "radius_mm": 1.4999999999997589,
+          "sweep_radians": 3.1415926386886297
+        },
+        {
+          "center_mm": [
+            97.9840297809443,
+            151.35763853751342
+          ],
+          "radius_mm": 1.4999999999995242,
+          "sweep_radians": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "arm": "05_FRONT_RIGHT_ARM",
+      "min_xy_mm": [
+        82.48169502963265,
+        -154.5902014130388
+      ],
+      "max_xy_mm": [
+        87.67827095246716,
+        -149.21700317199918
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            84.59564988985562,
+            -152.47624655281584
+          ],
+          "radius_mm": 1.4999999999997589,
+          "sweep_radians": 3.1415926277802293
+        },
+        {
+          "center_mm": [
+            85.56431609057597,
+            -151.3309580338904
+          ],
+          "radius_mm": 1.499999999999591,
+          "sweep_radians": 3.1415926386886297
+        }
+      ]
+    },
+    {
+      "arm": "05_FRONT_RIGHT_ARM",
+      "min_xy_mm": [
+        87.23053572775004,
+        -148.722752699621
+      ],
+      "max_xy_mm": [
+        94.23053592775004,
+        -141.722752499621
+      ],
+      "curve_count": 1,
+      "arcs": []
+    },
+    {
+      "arm": "05_FRONT_RIGHT_ARM",
+      "min_xy_mm": [
+        93.78280070566363,
+        -141.2285020246115
+      ],
+      "max_xy_mm": [
+        98.97937662621942,
+        -135.85530378585005
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            96.86542176564359,
+            -137.96925864642589
+          ],
+          "radius_mm": 1.499999999999958,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            95.89675556492324,
+            -139.1145471653519
+          ],
+          "radius_mm": 1.4999999999997413,
+          "sweep_radians": 3.1415926684909565
+        }
+      ]
+    },
+    {
+      "arm": "05_FRONT_RIGHT_ARM",
+      "min_xy_mm": [
+        81.36308701529418,
+        -142.17048772168772
+      ],
+      "max_xy_mm": [
+        86.7362852527211,
+        -136.973911802467
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            84.62233039348007,
+            -140.05653286244666
+          ],
+          "radius_mm": 1.5000000000002522,
+          "sweep_radians": 3.1415926170895507
+        },
+        {
+          "center_mm": [
+            83.47704187455435,
+            -139.08786666172716
+          ],
+          "radius_mm": 1.500000000000175,
+          "sweep_radians": 3.1415926386885253
+        }
+      ]
+    },
+    {
+      "arm": "05_FRONT_RIGHT_ARM",
+      "min_xy_mm": [
+        94.72478640407516,
+        -153.4715933980901
+      ],
+      "max_xy_mm": [
+        100.09798464151984,
+        -148.27501747884966
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            97.98402978094401,
+            -151.35763853751428
+          ],
+          "radius_mm": 1.4999999999999913,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            96.83874126201914,
+            -150.38897233679364
+          ],
+          "radius_mm": 1.4999999999999758,
+          "sweep_radians": 3.141592653589793
+        }
+      ]
+    },
+    {
+      "arm": "06_REAR_RIGHT_ARM",
+      "min_xy_mm": [
+        -94.08616869814017,
+        -107.26497648473675
+      ],
+      "max_xy_mm": [
+        -90.36206851924844,
+        -102.3189332407196
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -92.09609722330839,
+            -104.05296194477955
+          ],
+          "radius_mm": 1.499999999999412,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            -92.35213998497528,
+            -105.53094777157185
+          ],
+          "radius_mm": 1.4999999999997924,
+          "sweep_radians": 3.1415926386884827
+        }
+      ]
+    },
+    {
+      "arm": "06_REAR_RIGHT_ARM",
+      "min_xy_mm": [
+        -94.23053592775003,
+        -99.6703709685559
+      ],
+      "max_xy_mm": [
+        -87.23053572775002,
+        -92.6703707685559
+      ],
+      "curve_count": 1,
+      "arcs": []
+    },
+    {
+      "arm": "06_REAR_RIGHT_ARM",
+      "min_xy_mm": [
+        -91.09900313625369,
+        -90.02180849639254
+      ],
+      "max_xy_mm": [
+        -87.37490297556901,
+        -85.07576527058303
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -89.10893167052592,
+            -86.80979396553994
+          ],
+          "radius_mm": 1.5000000000000693,
+          "sweep_radians": 3.141592638688637
+        },
+        {
+          "center_mm": [
+            -89.36497443219281,
+            -88.28777979233166
+          ],
+          "radius_mm": 1.5000000000000693,
+          "sweep_radians": 3.1415926535894196
+        }
+      ]
+    },
+    {
+      "arm": "06_REAR_RIGHT_ARM",
+      "min_xy_mm": [
+        -84.58197346482405,
+        -99.52600373894641
+      ],
+      "max_xy_mm": [
+        -79.63593021156852,
+        -95.80190355081515
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -81.36995892473465,
+            -97.79197502578029
+          ],
+          "radius_mm": 1.5000000000009095,
+          "sweep_radians": 3.141592638688637
+        },
+        {
+          "center_mm": [
+            -82.84794475152609,
+            -97.53593226411311
+          ],
+          "radius_mm": 1.5000000000000284,
+          "sweep_radians": 3.1415926170895525
+        }
+      ]
+    },
+    {
+      "arm": "06_REAR_RIGHT_ARM",
+      "min_xy_mm": [
+        -101.82514143482707,
+        -96.53883818616328
+      ],
+      "max_xy_mm": [
+        -96.8790981908085,
+        -92.81473800726955
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -100.0911127307657,
+            -94.54876671133093
+          ],
+          "radius_mm": 1.5000000000003495,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            -98.61312690397398,
+            -94.80480947299782
+          ],
+          "radius_mm": 1.5000000000003524,
+          "sweep_radians": 3.1415926386884827
+        }
+      ]
+    },
+    {
+      "arm": "07_REAR_LEFT_ARM",
+      "min_xy_mm": [
+        -94.08616869813942,
+        102.31893324982293
+      ],
+      "max_xy_mm": [
+        -90.36206852835205,
+        107.26497648473485
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -92.09609722330839,
+            104.05296194477927
+          ],
+          "radius_mm": 1.4999999999995093,
+          "sweep_radians": 3.141592638688637
+        },
+        {
+          "center_mm": [
+            -92.352139984975,
+            105.53094777157042
+          ],
+          "radius_mm": 1.4999999999994638,
+          "sweep_radians": 3.141592638688637
+        }
+      ]
+    },
+    {
+      "arm": "07_REAR_LEFT_ARM",
+      "min_xy_mm": [
+        -94.23053592775003,
+        92.6703707685539
+      ],
+      "max_xy_mm": [
+        -87.23053572775002,
+        99.6703709685539
+      ],
+      "curve_count": 1,
+      "arcs": []
+    },
+    {
+      "arm": "07_REAR_LEFT_ARM",
+      "min_xy_mm": [
+        -91.09900312714971,
+        85.07576527058218
+      ],
+      "max_xy_mm": [
+        -87.37490297556901,
+        90.02180848728771
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -89.10893167052592,
+            86.80979396553909
+          ],
+          "radius_mm": 1.5000000000000693,
+          "sweep_radians": 3.141592638688637
+        },
+        {
+          "center_mm": [
+            -89.36497443219281,
+            88.28777979233081
+          ],
+          "radius_mm": 1.5000000000000693,
+          "sweep_radians": 3.141592638688637
+        }
+      ]
+    },
+    {
+      "arm": "07_REAR_LEFT_ARM",
+      "min_xy_mm": [
+        -84.58197346482433,
+        95.8019035508143
+      ],
+      "max_xy_mm": [
+        -79.63593021156821,
+        99.5260037389456
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -82.84794475152609,
+            97.53593226411255
+          ],
+          "radius_mm": 1.5000000000003086,
+          "sweep_radians": 3.1415926170895525
+        },
+        {
+          "center_mm": [
+            -81.36995892473465,
+            97.79197502577915
+          ],
+          "radius_mm": 1.5000000000011895,
+          "sweep_radians": 3.141592638688572
+        }
+      ]
+    },
+    {
+      "arm": "07_REAR_LEFT_ARM",
+      "min_xy_mm": [
+        -101.82514143482679,
+        92.81473800726984
+      ],
+      "max_xy_mm": [
+        -96.87909818170509,
+        96.53883819526472
+      ],
+      "curve_count": 4,
+      "arcs": [
+        {
+          "center_mm": [
+            -98.6131269039737,
+            94.80480947299611
+          ],
+          "radius_mm": 1.4999999999994638,
+          "sweep_radians": 3.141592653589793
+        },
+        {
+          "center_mm": [
+            -100.09111273076627,
+            94.54876671133036
+          ],
+          "radius_mm": 1.4999999999999722,
+          "sweep_radians": 3.141592653589793
+        }
+      ]
+    }
+  ],
+  "not_verified": [
+    "actual plate identity/Z stack",
+    "damper/mount clearance",
+    "USB/SD plug/card access",
+    "power-wire bends",
+    "bus/harness routes",
+    "screw depths/engagement",
+    "airflow/servicing"
+  ],
+  "reason": "Only the frozen partial reference is present. No absent component is counted as clearance evidence."
+}

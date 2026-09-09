@@ -1,0 +1,17 @@
+{
+  "component_id": "FRAME-001",
+  "manufacturer": "Team BlackSheep",
+  "model": "Source One V6 7-inch DC",
+  "repository": "https://github.com/tbs-trappy/source_one",
+  "commit": "232ccff173c556d23cc857f0c07a6eaa66ddbc41",
+  "path": "So1-V6-7inDC-2025-JUL-07.dxf",
+  "git_blob_sha1": "4722157f17719f98f91fd8f8c8c960c33fb45bee",
+  "bytes": 72083544,
+  "sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "units": "mm",
+  "retrieved": "2026-09-03",
+  "reverified": "2026-09-04",
+  "representation_class": 3,
+  "confidence": "HIGH for published 2D profiles and hole centres; NONE for assembled Z stack",
+  "local_cache": ".scratch/hardware-artifacts/frame.dxf"
+}

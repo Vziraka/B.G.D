@@ -1,0 +1,130 @@
+{
+  "status": "PARTIAL_CALCULATIONS_NOT_HARDWARE_QUALIFICATION",
+  "pack_full_charge_v": 25.200000000000003,
+  "compute_capacity_allocation_a": 3.2,
+  "compute_capacity_allocation_w": 16.64,
+  "compute_source_unallocated_a": 1.8,
+  "pi4_usb_aggregate_limit_a": 1.2,
+  "sensor_known_partial_a": 0.401,
+  "sensor_unallocated_ceiling_a": 1.5990000000000002,
+  "solenoid_at_exact_5v_min_specified_resistance_a": 1.169590643274854,
+  "lamp_investigation_scenario_a_NOT_maximum": 1.6,
+  "peripheral_left_for_servos_control_in_scenario_a": 2.230409356725146,
+  "ir_inherited_nominal_allowance_a_NOT_maximum": 1.8181818181818183,
+  "ir_rating_minus_nominal_allowance_a": 1.1818181818181817,
+  "shunt_loss_at_85_9232a_w": 1.4765592596479997,
+  "shunt_loss_at_107_404a_w": 2.3071238432,
+  "switch_closed_nominal_v": 0.2165009940357853,
+  "two_switches_closed_nominal_a": 0.0013121272365805169,
+  "switch_rising_tau_us": 470.0,
+  "switch_closing_tau_us": 30.83499005964215,
+  "compute_full_5a_output_input_at_18v_eta88_a_excludes_iq": 1.6414141414141414,
+  "compute_full_5a_output_input_at_25_2v_eta88_a_excludes_iq": 1.1724386724386726,
+  "unknowns": [
+    "Full lamp module current",
+    "Coincident servo/stall currents",
+    "RP1 and Finder peak demand",
+    "Pi/camera/scanner measured aggregate and USB inrush",
+    "Fan allowed5.2V tolerance",
+    "IR module curve and actual regulator efficiency",
+    "Protection coordination and thermal derating"
+  ],
+  "continuation_2026_09_06": {
+    "sources": {
+      "fuse_family": "https://www.littelfuse.com/assetdocs/fuse-selection-guide?assetguid=1d99e3a6-f314-48d7-b124-9d5d56955f09",
+      "compute_regulator": "https://www.mateksys.com/?portfolio=bec12s-pro",
+      "i2c": "https://www.ti.com/lit/pdf/slva689",
+      "scanner": "https://www.waveshare.com/wiki/D500_LiDAR_Kit"
+    },
+    "fuse_5a_family_opening_cases": [
+      {
+        "input_current_a": 5.5,
+        "minimum_seconds": 360000,
+        "maximum_seconds": null
+      },
+      {
+        "input_current_a": 6.75,
+        "minimum_seconds": 0.75,
+        "maximum_seconds": 600
+      },
+      {
+        "input_current_a": 10,
+        "minimum_seconds": 0.15,
+        "maximum_seconds": 5
+      },
+      {
+        "input_current_a": 17.5,
+        "minimum_seconds": 0.08,
+        "maximum_seconds": 0.5
+      },
+      {
+        "input_current_a": 30,
+        "minimum_seconds": 0.03,
+        "maximum_seconds": 0.1
+      }
+    ],
+    "compute_documented_short_tolerance_seconds": 2,
+    "output_fault_guaranteed_cleared_by_input_fuse": false,
+    "note": "False means not established; no measured fault result or failure-time prediction.",
+    "scanner_sensor_published_operating_a_NOT_peak": 0.29,
+    "pi_usb_limit_minus_scanner_operating_a_before_adapter_others": 0.9099999999999999,
+    "tfmini_loop_resistance_ceiling_scenarios_ohm": {
+      "4.9": 0.0,
+      "4.95": 0.2499999999999991,
+      "5.0": 0.4999999999999982,
+      "5.1": 0.9999999999999964
+    },
+    "tfmini_note": "Includes both conductors/joints. Source voltages are conditional worst-case terminal values; no noise allowance or installed-wire qualification.",
+    "i2c_assumed_device_sink_ma_NOT_verified": 3,
+    "i2c_windows": {
+      "50pF_1000ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 23604.390416617494,
+        "feasible_in_scenario": true
+      },
+      "50pF_300ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 7081.3171249852485,
+        "feasible_in_scenario": true
+      },
+      "100pF_1000ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 11802.195208308747,
+        "feasible_in_scenario": true
+      },
+      "100pF_300ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 3540.6585624926242,
+        "feasible_in_scenario": true
+      },
+      "200pF_1000ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 5901.097604154374,
+        "feasible_in_scenario": true
+      },
+      "200pF_300ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 1770.3292812463121,
+        "feasible_in_scenario": true
+      },
+      "400pF_1000ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 2950.548802077187,
+        "feasible_in_scenario": true
+      },
+      "400pF_300ns": {
+        "minimum_ohm": 966.6666666666666,
+        "maximum_ohm": 885.1646406231561,
+        "feasible_in_scenario": false
+      }
+    },
+    "i2c_4700ohm_100pf_rise_ns": 398.23100000000005,
+    "i2c_two_4700_parallel_100pf_rise_ns": 199.11550000000003,
+    "c4_ideal_1a_deficit_time_to_0_1v_droop_ms": 0.1,
+    "c4_note": "Nominal ideal capacitor only; ESR/ESL, tolerance and supply response excluded. Not sustained-load capacity."
+  },
+  "calculation_source_hashes": {
+    "electronics/power_checks.py": "6f90b9c0a44de386d9eb824e5f97d0aac62cdf30df92c8a38998c17e06024a6d",
+    "electronics/component-evidence-review.md": "e492e2e262314f95f64d88561d1c46335436e0d3e9e2e40e755b6a1bc84d1d81"
+  }
+}

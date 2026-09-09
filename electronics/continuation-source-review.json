@@ -1,0 +1,48 @@
+{
+  "status": "REVIEWED_SOURCE_UPDATE_CIRCUIT_UNCHANGED",
+  "date_utc": "2026-09-06",
+  "reviewed_input_changes": [
+    {
+      "path": "docs/hardware/baseline-r1/harness-netlist.csv",
+      "before_sha256": "a56a8ccf4286317484dfc1049375392bc9bc888b720cd667be086871634fabe8",
+      "after_sha256": "6198de86385349f74dcdf2b960599a3dbef84609919ba4ffa3978621f6c55692"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/pin-allocation.csv",
+      "before_sha256": "75dd92e75a541b78b5432b5cd6bd4712cc94359e75d39ff210349637d4caf66d",
+      "after_sha256": "8adfed09dcfcc6acd3e9f67a4a1731fd2727c14bc5005b657771b7a6353da23c"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.json",
+      "before_sha256": "5e3d93acebd563635cd5253a68580f50bfcfc137e50074f7fab47142a8aa3c6e",
+      "after_sha256": "e9538ac3e41c5cf98d6e7ba3fed8cfe4abec920f3cbfb28331dc50571fd8b170"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.md",
+      "before_sha256": null,
+      "after_sha256": "2392694f85c726b42a56a336d980b1aae58e59deb7659277d52c73d057e00b39"
+    },
+    {
+      "path": "cad/robust-aio-review.md",
+      "before_sha256": null,
+      "after_sha256": "7af2a75442b5086149b4d37fba183fa4fcb3c8af2e6db19052e7dbfebbc5c40b"
+    },
+    {
+      "path": "cad/received-frame-inspection-gate.md",
+      "before_sha256": null,
+      "after_sha256": "db2772a71f16ee44ed0d064c84bae29be61190bb279bc608f0a0f74dac68359e"
+    },
+    {
+      "path": "electronics/build_schematic.py",
+      "before_sha256": "365ee775b8225188189d9298e69851c96c27b2cbd721b88f29bb43ead7835227",
+      "after_sha256": "6bb5e3afa12937a8c75809736766ed211e580f4aef45830f7382acd0e8e59bfa"
+    },
+    {
+      "path": "electronics/pinouts/sources.md",
+      "before_sha256": "c8b7372fc596d646420cd5f073cd1327815d84ba5bec3e0b0eee1406bd82db98",
+      "after_sha256": "5e78297a113a1fe3d3d24f935bdb1f2b426829294e904941808c3dfc78d9e687"
+    }
+  ],
+  "native_sources_changed": [],
+  "scope": "Three shared corrections, two electrical authoring/evidence updates and three additional context inputs. No changed native source bytes."
+}

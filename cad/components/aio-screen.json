@@ -1,0 +1,83 @@
+{
+  "release": "STUDY_ONLY",
+  "frame_z_assumed": true,
+  "adapter_bottom_z_mm": 10,
+  "adapter_center_x_mm": 60.472002,
+  "standoff_centers_xy_mm": [
+    [
+      113.35531491010124,
+      -14.599999999996953
+    ],
+    [
+      88.35531491010124,
+      -14.59999999999809
+    ],
+    [
+      32.588377643792,
+      -14.59999999999809
+    ],
+    [
+      113.35531491010124,
+      14.600000000001955
+    ],
+    [
+      88.35531491010124,
+      14.600000000001955
+    ],
+    [
+      32.588377643792,
+      14.600000000001955
+    ],
+    [
+      -20.282410576794064,
+      -10.99999999999909
+    ],
+    [
+      -20.282410576794064,
+      11.000000000003183
+    ]
+  ],
+  "adapter_candidates": [
+    {
+      "side_mm": 55,
+      "interferences_with_standoffs": 4,
+      "volume_mm3": 4737.056291927165,
+      "mass_g_at_assumed_FR4_1_85": 8.763554140065256,
+      "minimum_nominal_edge_gap_mm": -2.116687089898761
+    },
+    {
+      "side_mm": 48,
+      "interferences_with_standoffs": 0,
+      "volume_mm3": 3583.456291927165,
+      "mass_g_at_assumed_FR4_1_85": 6.629394140065255,
+      "minimum_nominal_edge_gap_mm": 1.383312910101239
+    }
+  ],
+  "frame_mount_axis_middle_plate_screen": [
+    {
+      "x_mm": 45.222002,
+      "y_mm": -15.25,
+      "inside_middle_plate": true
+    },
+    {
+      "x_mm": 45.222002,
+      "y_mm": 15.25,
+      "inside_middle_plate": true
+    },
+    {
+      "x_mm": 75.722002,
+      "y_mm": -15.25,
+      "inside_middle_plate": true
+    },
+    {
+      "x_mm": 75.722002,
+      "y_mm": 15.25,
+      "inside_middle_plate": true
+    }
+  ],
+  "limits": [
+    "No fastener heads, screw engagement or rubber grommets modeled",
+    "AIO pad/USB/SD service volumes not yet modeled",
+    "Not complete structural or thermal qualification"
+  ]
+}

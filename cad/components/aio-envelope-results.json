@@ -1,0 +1,363 @@
+{
+  "status": "PARTIAL_ROBUST_BOUNDS_NOT_COMPLETE_ADAPTER_QUALIFICATION",
+  "input_sha256": "7ce0f5b023d71288f6ee4ad2c6610f73d478ed0888cdc1c63d6ea24194d3157c",
+  "method": "Continuum translation/rotation distance lower bounds; monotonic Z interval extrema. Finite XY cases provide adverse witnesses only.",
+  "candidate_results": [
+    {
+      "side_mm": 48.0,
+      "guaranteed_planar_gap_lower_bound_mm": -0.4978094309000376,
+      "adverse_case_gap_mm": 0.13628593630954233,
+      "adverse_case": [
+        [
+          27.88331291010124,
+          14.600000000001955
+        ],
+        -0.75,
+        0.75,
+        -1.0
+      ],
+      "meets_1mm_bound": false
+    },
+    {
+      "side_mm": 46.0,
+      "guaranteed_planar_gap_lower_bound_mm": 0.5268729388086237,
+      "adverse_case_gap_mm": 1.1362859363095423,
+      "adverse_case": [
+        [
+          27.88331291010124,
+          14.600000000001955
+        ],
+        -0.75,
+        0.75,
+        -1.0
+      ],
+      "meets_1mm_bound": false
+    },
+    {
+      "side_mm": 45.0,
+      "guaranteed_planar_gap_lower_bound_mm": 1.0392141236629544,
+      "adverse_case_gap_mm": 1.6362859363095423,
+      "adverse_case": [
+        [
+          27.88331291010124,
+          14.600000000001955
+        ],
+        -0.75,
+        0.75,
+        -1.0
+      ],
+      "meets_1mm_bound": true
+    }
+  ],
+  "recommended_outer_side_mm": 45.0,
+  "aio_body_standoff_gap_lower_mm": 7.422954634611183,
+  "trial_service_envelope_standoff_gap_lower_mm": -4.413472447893993,
+  "trial_wire_bend_outer_radius_mm": 41.0,
+  "z_results": {
+    "topology_B_ceiling_above_P_lower_mm": 21.250000000000004,
+    "adapter_underside_to_P_lower_mm": 2.3415826489728317,
+    "under_fastener_to_P_lower_mm": 0.34158264897283175,
+    "aio_to_adapter_lower_mm": 2.0433935472264038,
+    "aio_top_to_ceiling_lower_mm": 2.9849761961992387,
+    "top_fastener_to_ceiling_lower_mm": 0.4849761961992387
+  },
+  "z_endpoint_cases": [
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.7499999999999964
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.95,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 22.0,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.4499999999999993
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.650000000000002,
+      "support_height_mismatch_mm": 0.34999999999999787
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 22.0,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.55,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.55,
+      "support_height_mismatch_mm": 0.4499999999999993
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.95,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.250000000000004,
+      "support_height_mismatch_mm": 0.34999999999999787
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.250000000000004,
+      "support_height_mismatch_mm": 0.7499999999999964
+    },
+    {
+      "bottom_mm": 1.85,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.650000000000002,
+      "support_height_mismatch_mm": 0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.7499999999999964
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.95,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 22.0,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.4499999999999993
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.650000000000002,
+      "support_height_mismatch_mm": 0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 5.8,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 22.0,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.55,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.55,
+      "support_height_mismatch_mm": 0.4499999999999993
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 1.85,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.95,
+      "support_height_mismatch_mm": 0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.250000000000004,
+      "support_height_mismatch_mm": 0.34999999999999787
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 21.8,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.6,
+      "support_height_mismatch_mm": -0.05000000000000071
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 29.8,
+      "ceiling_above_P_mm": 21.250000000000004,
+      "support_height_mismatch_mm": 0.7499999999999964
+    },
+    {
+      "bottom_mm": 2.65,
+      "arm_mm": 6.2,
+      "plate_mm": 2.15,
+      "front_mm": 22.2,
+      "rear_mm": 30.2,
+      "ceiling_above_P_mm": 21.650000000000002,
+      "support_height_mismatch_mm": 0.34999999999999787
+    }
+  ],
+  "topology_A_result": "MOUNT_COLUMNS_BLOCKED_BY_INTERVENING_DRAW14; no robustness across unresolved topology claimed",
+  "unknown_minima": [
+    "actual USB/SD and connector access",
+    "actual wire bend/route clearance",
+    "bus/harness and guard clearance",
+    "thread engagement and load capacity",
+    "airflow/thermal suitability"
+  ],
+  "fabrication_release": false
+}

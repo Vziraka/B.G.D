@@ -1,2 +1,24 @@
-.scratch/
+# Keep temporary scratch work private; expose only this effort's decision records.
+/.scratch/*
+!/.scratch/biometric-guard-drone/
+/.scratch/biometric-guard-drone/*
+!/.scratch/biometric-guard-drone/map.md
+!/.scratch/biometric-guard-drone/map-history-2026-09-09.md
+!/.scratch/biometric-guard-drone/issues/
+/.scratch/biometric-guard-drone/issues/*
+!/.scratch/biometric-guard-drone/issues/*.md
+
+# Approved PC planning records only; prototypes and runtime data remain ignored.
+!/.scratch/pc-biometric-desk/
+/.scratch/pc-biometric-desk/*
+!/.scratch/pc-biometric-desk/spec.md
+!/.scratch/pc-biometric-desk/review.md
+!/.scratch/pc-biometric-desk/issues/
+/.scratch/pc-biometric-desk/issues/*
+!/.scratch/pc-biometric-desk/issues/*.md
+
+# Worktrees have their own Git state; retained research belongs in docs/research.
+/.claude/worktrees/
 node_modules/
+__pycache__/
+*.py[cod]

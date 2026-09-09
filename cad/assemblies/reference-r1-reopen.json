@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "verified_bodies": [
+    "01_TOP_INFERRED_Draw13",
+    "02_BOTTOM_INFERRED_Draw14",
+    "03_MIDDLE_INFERRED_Draw3",
+    "04_FRONT_LEFT_ARM",
+    "05_FRONT_RIGHT_ARM",
+    "06_REAR_RIGHT_ARM",
+    "07_REAR_LEFT_ARM",
+    "08_STANDOFF_1_POSITION_INFERRED",
+    "08_STANDOFF_2_POSITION_INFERRED",
+    "08_STANDOFF_3_POSITION_INFERRED",
+    "08_STANDOFF_4_POSITION_INFERRED",
+    "08_STANDOFF_5_POSITION_INFERRED",
+    "08_STANDOFF_6_POSITION_INFERRED",
+    "08_STANDOFF_7_POSITION_INFERRED",
+    "08_STANDOFF_8_POSITION_INFERRED",
+    "M01_48_MM_ADAPTER_STUDY"
+  ],
+  "archive_sha256": "5e1ea3d2db1f6c342e910491038f75ac437636d2299e4224914ade8aa7cec78d",
+  "checks": [
+    "Fusion native reopen",
+    "source provenance attribute",
+    "16 body volumes within0.02mm3",
+    "assembly bounds within0.001mm"
+  ],
+  "limits": "Confirms export round trip only, not frame identity or physical compatibility"
+}

@@ -1,0 +1,10 @@
+*
+!.gitignore
+!README.md
+!reference-r1/
+!reference-r1/BGD_MASTER_reference-r1.f3d
+!reference-r1/BGD_MASTER_reference-r1.png
+!reference-r1/M01_48mm_STUDY_NOT_FOR_FABRICATION.step
+!aio-envelope-r3/
+!aio-envelope-r3/BGD_AIO_ENVELOPE_R3_NOT_FOR_FABRICATION.f3d
+!aio-envelope-r3/aio-envelope-r3.png

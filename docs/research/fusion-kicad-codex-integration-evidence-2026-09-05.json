@@ -1,0 +1,552 @@
+{
+  "checked_at_utc": "2026-09-05T19:03:22.059817+00:00",
+  "scope": "Read-only application/configuration investigation; report files only written",
+  "repository_base_commit": "68e00796f56d1975b05efa8e8f3c5c5fd504b6ac",
+  "report": {
+    "path": "docs\\research\\fusion-kicad-codex-integration-2026-09-05.md",
+    "sha256": "3666ad02adad79acc72823695ccfe1fcac0661ab1fb78b23a4c00c91307e615c",
+    "git_status": "uncommitted working-tree artifact"
+  },
+  "installed": {
+    "fusion": "2704.1.53",
+    "kicad_cli": "10.0.6",
+    "codex_cli": "0.148.0"
+  },
+  "config_inspection": {
+    "user_config": "C:/Users/zvent/.codex/config.toml",
+    "explicit_mcp_server_names": [
+      "node_repl"
+    ],
+    "bgd_project_config_present": false,
+    "bgd_explicit_trust_entry_found": false,
+    "secrets_recorded": false
+  },
+  "local_mcp_evidence": [
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\NsMCP10.dll",
+      "bytes": 894528,
+      "sha256": "35d9833ce6e33d6336e92f6cf3cb52682171d2e7814850ef99983a0e6c0d7a8a"
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\CreateSchema.json",
+      "bytes": 39245,
+      "sha256": "736c41436e1174b4f3d7723ad6b6a3b42c1fde920f8cafae3454f30c194a4d49",
+      "top_level_enums": {
+        "featureType": [
+          "appearance",
+          "box",
+          "circularPattern",
+          "coil",
+          "cylinder",
+          "chamfer",
+          "constructionPlane",
+          "extrude",
+          "fillet",
+          "hole",
+          "material",
+          "projectToSketch",
+          "revolve",
+          "shell",
+          "sketch",
+          "sketchEntity",
+          "sphere",
+          "rectangularPattern",
+          "sketchCircularPattern",
+          "sketchRectangularPattern",
+          "split",
+          "selectionSet",
+          "torus",
+          "userParameter"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\DeleteSchema.json",
+      "bytes": 2470,
+      "sha256": "f2ae665653ed3ea23d2546f797a9bba1e78d3eae88a44614fac50263fe17f4af",
+      "top_level_enums": {
+        "featureType": [
+          "extrude",
+          "revolve",
+          "sweep",
+          "loft",
+          "fillet",
+          "chamfer",
+          "shell",
+          "rectangularpattern",
+          "circularpattern",
+          "pathpattern",
+          "mirror",
+          "hole",
+          "thread",
+          "combine",
+          "splitBody",
+          "splitFace",
+          "thicken",
+          "move",
+          "scale",
+          "box",
+          "cylinder",
+          "sphere",
+          "torus",
+          "coil",
+          "draft",
+          "replaceFace",
+          "offset",
+          "extend",
+          "stitch",
+          "unstitch",
+          "boundaryFill",
+          "trim",
+          "rib",
+          "web",
+          "patch",
+          "pipe",
+          "deleteFace",
+          "offsetFaces",
+          "ruledSurface",
+          "reverseNormal",
+          "emboss",
+          "silhouetteSplit",
+          "remove",
+          "baseFeature",
+          "form",
+          "surfaceDeleteFace",
+          "copyPaste",
+          "cutPaste",
+          "untrim",
+          "boss",
+          "derive",
+          "custom",
+          "sketch",
+          "userParameter",
+          "constructionPlane",
+          "constructionAxis",
+          "constructionPoint"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ExecuteSchema.json",
+      "bytes": 1458,
+      "sha256": "9736eeaf31c0965e634a9376830b93054fd9ae0554015bb1ce4aeee076509924",
+      "top_level_enums": {
+        "featureType": [
+          "script",
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ExecuteSchema_t2c.json",
+      "bytes": 1282,
+      "sha256": "17ce36fa08a003f36e10959065ef74378704f1de129f72ee61f3a6f9c8d6d68e",
+      "top_level_enums": {
+        "featureType": [
+          "document"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ReadSchema.json",
+      "bytes": 14468,
+      "sha256": "7e85a2ebc71ad7fb2c8ed8ffe576baeef297dbbd57e58ebb04b89a0a80ebf987",
+      "top_level_enums": {
+        "apiCategory": [
+          "class",
+          "member",
+          "description",
+          "all"
+        ],
+        "direction": [
+          "current",
+          "front",
+          "back",
+          "bottom",
+          "top",
+          "left",
+          "right",
+          "iso-bottom-left",
+          "iso-bottom-right",
+          "iso-top-left",
+          "iso-top-right"
+        ],
+        "edgeType": [
+          "concave",
+          "convex",
+          "all"
+        ],
+        "featureType": [
+          "all",
+          "fillet",
+          "extrude",
+          "revolve",
+          "sweep",
+          "loft",
+          "chamfer",
+          "shell",
+          "rectangularPattern",
+          "circularPattern",
+          "mirror",
+          "hole",
+          "thread",
+          "combine",
+          "splitBody",
+          "thicken",
+          "move",
+          "scale"
+        ],
+        "healthStateFilter": [
+          "Healthy",
+          "Warning",
+          "Error",
+          "Suppressed",
+          "RolledBack"
+        ],
+        "queryType": [
+          "volume",
+          "area",
+          "length",
+          "edges",
+          "centroid",
+          "similar",
+          "faces",
+          "bodies",
+          "selection",
+          "edgesByType",
+          "materialAppearance",
+          "materialLibraries",
+          "selectionSets",
+          "selectionSet",
+          "userParameters",
+          "circularPattern",
+          "feature",
+          "modelParameters",
+          "rectangularPattern",
+          "revolve",
+          "sketchCircularPattern",
+          "sketchRectangularPattern",
+          "sketches",
+          "sketchProfiles",
+          "apiDocumentation",
+          "screenshot",
+          "document",
+          "projects",
+          "timeline",
+          "timelineStatus",
+          "activeCommand"
+        ],
+        "sortOrder": [
+          "ascending",
+          "descending"
+        ],
+        "operation": [
+          "search",
+          "open",
+          "recent"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ReadSchema_ext.json",
+      "bytes": 14036,
+      "sha256": "c5417aa8faf32caa51f52780e6137c00024566616a20652010f7efd846b62648",
+      "top_level_enums": {
+        "apiCategory": [
+          "class",
+          "member",
+          "description",
+          "all"
+        ],
+        "direction": [
+          "current",
+          "front",
+          "back",
+          "bottom",
+          "top",
+          "left",
+          "right",
+          "iso-bottom-left",
+          "iso-bottom-right",
+          "iso-top-left",
+          "iso-top-right"
+        ],
+        "edgeType": [
+          "concave",
+          "convex",
+          "all"
+        ],
+        "featureType": [
+          "all",
+          "fillet",
+          "extrude",
+          "revolve",
+          "sweep",
+          "loft",
+          "chamfer",
+          "shell",
+          "rectangularPattern",
+          "circularPattern",
+          "mirror",
+          "hole",
+          "thread",
+          "combine",
+          "splitBody",
+          "thicken",
+          "move",
+          "scale"
+        ],
+        "healthStateFilter": [
+          "Healthy",
+          "Warning",
+          "Error",
+          "Suppressed",
+          "RolledBack"
+        ],
+        "queryType": [
+          "volume",
+          "area",
+          "length",
+          "edges",
+          "centroid",
+          "similar",
+          "faces",
+          "bodies",
+          "selection",
+          "edgesByType",
+          "materialAppearance",
+          "materialLibraries",
+          "selectionSets",
+          "selectionSet",
+          "userParameters",
+          "circularPattern",
+          "feature",
+          "modelParameters",
+          "rectangularPattern",
+          "revolve",
+          "sketchCircularPattern",
+          "sketchRectangularPattern",
+          "sketches",
+          "sketchProfiles",
+          "apiDocumentation",
+          "screenshot",
+          "document",
+          "projects",
+          "timeline",
+          "timelineStatus",
+          "activeCommand"
+        ],
+        "sortOrder": [
+          "ascending",
+          "descending"
+        ],
+        "operation": [
+          "search",
+          "open",
+          "recent"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ReadSchema_ext_script.json",
+      "bytes": 3809,
+      "sha256": "7413ff154b91f11912a825fbeb9879940c88de02144bbf48d647704a72dcf54a",
+      "top_level_enums": {
+        "apiCategory": [
+          "class",
+          "member",
+          "description",
+          "all"
+        ],
+        "direction": [
+          "current",
+          "front",
+          "back",
+          "bottom",
+          "top",
+          "left",
+          "right",
+          "iso-bottom-left",
+          "iso-bottom-right",
+          "iso-top-left",
+          "iso-top-right"
+        ],
+        "queryType": [
+          "apiDocumentation",
+          "screenshot",
+          "document",
+          "projects",
+          "activeCommand"
+        ],
+        "operation": [
+          "search",
+          "open",
+          "recent"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\ReadSchema_script.json",
+      "bytes": 4241,
+      "sha256": "fa7210532cec222ddc1e5440a7c9a2eb38e40a9f94d9adaf82b162d1b90b496f",
+      "top_level_enums": {
+        "apiCategory": [
+          "class",
+          "member",
+          "description",
+          "all"
+        ],
+        "direction": [
+          "current",
+          "front",
+          "back",
+          "bottom",
+          "top",
+          "left",
+          "right",
+          "iso-bottom-left",
+          "iso-bottom-right",
+          "iso-top-left",
+          "iso-top-right"
+        ],
+        "queryType": [
+          "apiDocumentation",
+          "screenshot",
+          "document",
+          "projects",
+          "activeCommand"
+        ],
+        "operation": [
+          "search",
+          "open",
+          "recent"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\UpdateSchema.json",
+      "bytes": 27218,
+      "sha256": "2400aa5148416585fedf34aef0151e2b4d02781695727bf92946fe4f8011ee5c",
+      "top_level_enums": {
+        "featureType": [
+          "chamfer",
+          "circularPattern",
+          "replaceComponent",
+          "componentDelete",
+          "componentInsert",
+          "constructionPlane",
+          "extrude",
+          "hole",
+          "materialAppearance",
+          "modelParameter",
+          "fillet",
+          "rectangularPattern",
+          "revolve",
+          "visibility",
+          "highlight",
+          "shell",
+          "sketchEntity",
+          "userParameter",
+          "selectionSet",
+          "activeSelection",
+          "timeline",
+          "undo",
+          "redo"
+        ]
+      }
+    },
+    {
+      "path": "C:\\Users\\zvent\\AppData\\Local\\Autodesk\\webdeploy\\production\\61bf25b220a2d0307c84c301e65a59ac225d9a1e\\Fusion\\Server\\Fusion\\Resources\\MCP\\Schema\\UpdateSchema_script.json",
+      "bytes": 306,
+      "sha256": "06ce9e70a3e41e1da71980420d082a0b28bbdbf459a903ac8ad6e54ba01b1a8e",
+      "top_level_enums": {
+        "featureType": [
+          "undo",
+          "redo"
+        ]
+      }
+    }
+  ],
+  "listener_check": {
+    "ports_checked": [
+      27182,
+      3000,
+      3001,
+      9876
+    ],
+    "listeners_observed": [],
+    "limitation": "Point-in-time operating-system table; no network probe or MCP handshake"
+  },
+  "third_party_revisions": [
+    {
+      "repository": "faust-machines/fusion360-mcp-server",
+      "commit": "0372f142385e582230bc6e68446df4f4d42ac829",
+      "commit_date": "2026-08-03",
+      "inspected": [
+        "README.md",
+        "pyproject.toml",
+        "addon/server/socket_server.py",
+        "src/fusion360_mcp/server.py"
+      ],
+      "execution": "none"
+    },
+    {
+      "repository": "Joe-Spencer/fusion-mcp-server",
+      "commit": "4dce1f696c20b4b9a40a0a5c4e168ec55b84d77f",
+      "commit_date": "2025-04-22",
+      "inspected": [
+        "README.md"
+      ],
+      "execution": "none"
+    },
+    {
+      "repository": "oaslananka/kicad-mcp-pro",
+      "commit": "2b18efabaa9230114ffb286ca0831dc517bb8b90",
+      "commit_date": "2026-09-05",
+      "inspected": [
+        "pyproject.toml",
+        ".codex/config.example.toml",
+        "docs/client-configuration.md",
+        "docs/compatibility/capability-parity.generated.md",
+        "docs/deployment/security.md",
+        "docs/security/threat-model.md",
+        "docs/submission/safety-and-permissions.md",
+        "src/kicad_mcp/config.py",
+        "src/kicad_mcp/path_safety.py",
+        "src/kicad_mcp/operating_modes.py"
+      ],
+      "execution": "none"
+    },
+    {
+      "repository": "mixelpixx/KiCAD-MCP-Server",
+      "commit": "aa53d52c2e37a13cb3574a6e0acf2c728b4d6bfb",
+      "commit_date": "2026-08-20",
+      "inspected": [
+        "README.md",
+        "package.json",
+        "pyproject.toml",
+        "requirements.txt",
+        "docs/CLIENT_CONFIGURATION.md"
+      ],
+      "execution": "none"
+    },
+    {
+      "repository": "obhox/kicad-mcp",
+      "commit": "1b4872b7566afe1c18aa3a88867e0df28ab63db8",
+      "commit_date": "2026-07-16",
+      "inspection": "README/metadata screening only",
+      "execution": "none"
+    }
+  ],
+  "not_demonstrated": [
+    "Fusion preference UI availability",
+    "Fusion account entitlement",
+    "MCP handshake",
+    "live tools/list",
+    "active script schema",
+    "Codex per-tool approval enforcement on this host",
+    "Fusion geometry import or creation",
+    "B.G.D. ERC/DRC pass",
+    "third-party runtime security or correctness"
+  ]
+}

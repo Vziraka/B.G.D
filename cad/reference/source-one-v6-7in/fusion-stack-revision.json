@@ -1,0 +1,61 @@
+{
+  "status": "PROVISIONAL_ASSEMBLY_HYPOTHESIS_B_NOT_MANUFACTURER_VERIFIED",
+  "supersedes": "fusion-solid-verification.json initial Z/plate-role hypothesis A; areas and copied profiles remain valid",
+  "reason": "Hypothesis A places solid Draw14 over all four 30.5mm mounting axes; B puts the perforated Draw3 above arms and the press-nut Draw14 below arms",
+  "stack_mm": {
+    "Draw14_bottom": [
+      -2.5,
+      0
+    ],
+    "arms": [
+      0,
+      6
+    ],
+    "Draw3_middle": [
+      6,
+      8
+    ],
+    "Draw13_top": [
+      30,
+      32
+    ],
+    "front_standoffs": [
+      8,
+      30
+    ],
+    "rear_standoffs": [
+      0,
+      30
+    ]
+  },
+  "checks": [
+    {
+      "mount_x_mm": 45.222002,
+      "mount_y_mm": -15.25,
+      "nominal_axis_through_middle_hole": "PASS"
+    },
+    {
+      "mount_x_mm": 45.222002,
+      "mount_y_mm": 15.25,
+      "nominal_axis_through_middle_hole": "PASS"
+    },
+    {
+      "mount_x_mm": 75.722002,
+      "mount_y_mm": -15.25,
+      "nominal_axis_through_middle_hole": "PASS"
+    },
+    {
+      "mount_x_mm": 75.722002,
+      "mount_y_mm": 15.25,
+      "nominal_axis_through_middle_hole": "PASS"
+    }
+  ],
+  "solid_interferences_excluding_rejected_adapter_and_raw_references": 8,
+  "new_source_discrepancy": "Pinned July DXF labels both middle/bottom layouts 2mm; current TBS product specifies bottom 2.5mm. Product thickness used as provisional installed input; supplier confirmation required.",
+  "unresolved": [
+    "Manufacturer-approved layer/assembly identification",
+    "Complete brace, spacer, camera and fastener stack",
+    "Received frame revision and thickness",
+    "Fastener/grommet and connector service paths"
+  ]
+}

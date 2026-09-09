@@ -1,0 +1,136 @@
+id,kind,source_net,schematic_net,from_node,to_node,note
+W001,wire,PACK_POS,PACK_POS,BAT1.+,JBAT1.+,Logical continuity only; physical release held
+W002,wire,GND,GND,BAT1.-,JBAT1.-,Logical continuity only; physical release held
+W003,wire,PACK_POS,PACK_POS,JBAT1.+,MON1.BAT+,Logical continuity only; physical release held
+W004,wire,GND,GND,JBAT1.-,junction,Logical continuity only; physical release held
+W005,wire,BUS_POS,BUS_POS,MON1.ESC+,junction,Logical continuity only; physical release held
+W006,wire,BUS_POS,BUS_POS,junction,FC1.VBAT,Logical continuity only; physical release held
+W007,wire,GND,GND,junction,FC1.GND,Logical continuity only; physical release held
+W008,wire,BUS_POS,BUS_POS,FC1.VBAT,CM1.+,Logical continuity only; physical release held
+W009,wire,GND,GND,FC1.GND,CM1.-,Logical continuity only; physical release held
+W010,wire,BUS_POS,BUS_POS,junction,F1.IN,Logical continuity only; physical release held
+W011,wire,FUSED_F1,FUSED_F1,F1.OUT,REG1.VIN+,Logical continuity only; physical release held
+W012,wire,GND,GND,junction,REG1.VIN-,Logical continuity only; physical release held
+W013,wire,BUS_POS,BUS_POS,junction,F2.IN,Logical continuity only; physical release held
+W014,wire,FUSED_F2,FUSED_F2,F2.OUT,REG2.VIN+,Logical continuity only; physical release held
+W015,wire,GND,GND,junction,REG2.VIN-,Logical continuity only; physical release held
+W016,wire,PI_5V2,PI_5V2,REG1.VOUT+,junction,Logical continuity only; physical release held
+W017,wire,GND,GND,REG1.VOUT-,junction,Logical continuity only; physical release held
+W018,wire,PI_5V2,PI_5V2,junction,PI1.2,Logical continuity only; physical release held
+W019,wire,PI_5V2,PI_5V2,junction,PI1.4,Logical continuity only; physical release held
+W020,wire,GND,GND,junction,PI1.6,Logical continuity only; physical release held
+W021,wire,GND,GND,junction,PI1.9,Logical continuity only; physical release held
+W022,wire,PER_5V,PER_5V,REG2.VOUT+,junction,Logical continuity only; physical release held
+W023,wire,GND,GND,REG2.VOUT-,junction,Logical continuity only; physical release held
+W024,wire,PER_5V,PER_5V,junction,SERVO1.5V,Logical continuity only; physical release held
+W025,wire,GND,GND,junction,SERVO1.GND,Logical continuity only; physical release held
+W026,wire,PER_5V,PER_5V,junction,SERVO2.5V,Logical continuity only; physical release held
+W027,wire,GND,GND,junction,SERVO2.GND,Logical continuity only; physical release held
+W028,wire,PER_5V,PER_5V,junction,LED1.5V,Logical continuity only; physical release held
+W029,wire,GND,GND,junction,LED1.GND,Logical continuity only; physical release held
+W030,factory-cable-expanded,LED_CHAIN,PER_5V;GND;LED_CHAIN_DATA,LED1.DOUT;LED1.5V;LED1.GND,LED2.DIN;LED2.5V;LED2.GND,Three conductors; never one equipotential node
+W031,wire,PER_5V,PER_5V,junction,U1.14,Logical continuity only; physical release held
+W032,wire,GND,GND,junction,U1.7,Logical continuity only; physical release held
+W033,wire,PER_5V,PER_5V,junction,DRV1.VCC,Logical continuity only; physical release held
+W034,wire,PER_5V,PER_5V,junction,DRV1.LOAD_HIGH,Logical continuity only; physical release held
+W035,wire,GND,GND,junction,DRV1.GND,Logical continuity only; physical release held
+W036,wire,SOLENOID_POS,PER_5V,DRV1.LOAD_HIGH,JH1.+,Logical continuity only; physical release held
+W037,wire,SOLENOID_LOW,SOLENOID_LOW,DRV1.LOAD_LOW,JH1.-,Logical continuity only; physical release held
+W038,wire,SOLENOID_POS,PER_5V,JH1.+,JH2.+,Logical continuity only; physical release held
+W039,wire,SOLENOID_LOW,SOLENOID_LOW,JH1.-,JH2.-,Logical continuity only; physical release held
+W040,wire,SOLENOID_POS,PER_5V,JH2.+,SOL1.+,Logical continuity only; physical release held
+W041,wire,SOLENOID_LOW,SOLENOID_LOW,JH2.-,SOL1.-,Logical continuity only; physical release held
+W042,wire,AIO_5V,AIO_5V,FC1.5V,junction,Logical continuity only; physical release held
+W043,wire,GND,GND,FC1.GND,junction,Logical continuity only; physical release held
+W044,wire,AIO_5V,AIO_5V,junction,GPS1.5V,Logical continuity only; physical release held
+W045,wire,GND,GND,junction,GPS1.GND,Logical continuity only; physical release held
+W046,wire,AIO_5V,AIO_5V,junction,MON1.5V,Logical continuity only; physical release held
+W047,wire,GND,GND,junction,MON1.GND,Logical continuity only; physical release held
+W048,wire,AIO_5V,AIO_5V,junction,RX1.5V,Logical continuity only; physical release held
+W049,wire,GND,GND,junction,RX1.GND,Logical continuity only; physical release held
+W050,wire,AIO_5V,AIO_5V,junction,RANGE1.5V,Logical continuity only; physical release held
+W051,wire,GND,GND,junction,RANGE1.GND,Logical continuity only; physical release held
+W052,wire,AIO_5V,AIO_5V,junction,BZ1.5V,Logical continuity only; physical release held
+W053,wire,GND,GND,junction,BZ1.GND,Logical continuity only; physical release held
+W054,wire,AIO_12V,AIO_12V,FC1.12V,REG3.IN+,Logical continuity only; physical release held
+W055,wire,GND,GND,FC1.GND,REG3.IN-,Logical continuity only; physical release held
+W056,wire,IR_3V3,IR_3V3,REG3.OUT+,IR1.+,Logical continuity only; physical release held
+W057,wire,GND,GND,REG3.OUT-,IR1.-,Logical continuity only; physical release held
+W058,wire,IR_3V3,IR_3V3,REG3.OUT+,IR2.+,Logical continuity only; physical release held
+W059,wire,GND,GND,REG3.OUT-,IR2.-,Logical continuity only; physical release held
+W060,wire,PI_FAN5V2,PI_5V2,junction,FAN1.+,Logical continuity only; physical release held
+W061,wire,GND,GND,junction,FAN1.-,Logical continuity only; physical release held
+W062,wire,PI_TX_FC_RX,PI_TX_FC_RX,PI1.8,FC1.RX1,Logical continuity only; physical release held
+W063,wire,FC_TX_PI_RX,FC_TX_PI_RX,FC1.TX1,PI1.10,Logical continuity only; physical release held
+W064,wire,GND,GND,FC1.GND,PI1.14,Logical continuity only; physical release held
+W065,wire,GPS_TX,GPS_TX,GPS1.TX,FC1.RX3,Logical continuity only; physical release held
+W066,wire,GPS_RX,GPS_RX,FC1.TX3,GPS1.RX,Logical continuity only; physical release held
+W067,wire,I2C1_SCL,I2C1_SCL,FC1.SCL,GPS1.SCL,Logical continuity only; physical release held
+W068,wire,I2C1_SDA,I2C1_SDA,FC1.SDA,GPS1.SDA,Logical continuity only; physical release held
+W069,wire,I2C1_SCL,I2C1_SCL,FC1.SCL,MON1.SCL,Logical continuity only; physical release held
+W070,wire,I2C1_SDA,I2C1_SDA,FC1.SDA,MON1.SDA,Logical continuity only; physical release held
+W071,wire,CRSF_TX,CRSF_TX,RX1.TX,FC1.RX6,Logical continuity only; physical release held
+W072,wire,CRSF_RX,CRSF_RX,FC1.TX6,RX1.RX,Logical continuity only; physical release held
+W073,wire,RANGE_TX,RANGE_TX,RANGE1.TX,FC1.RX4,Logical continuity only; physical release held
+W074,wire,RANGE_RX,RANGE_RX,FC1.TX4,RANGE1.RX,Logical continuity only; physical release held
+W075,wire,BUZZER_LOW,BUZZER_LOW,FC1.BZ-,BZ1.BZ-,Logical continuity only; physical release held
+W076,wire,PIXEL_DATA3V3,PIXEL_DATA3V3,PI1.12,U1.2,Logical continuity only; physical release held
+W077,wire,RELEASE_PWM3V3,RELEASE_PWM3V3,FC1.M7,U1.5,Logical continuity only; physical release held
+W078,wire,PAN_PWM3V3,PAN_PWM3V3,FC1.M5,U1.9,Logical continuity only; physical release held
+W079,wire,TILT_PWM3V3,TILT_PWM3V3,FC1.M6,U1.12,Logical continuity only; physical release held
+W080,wire,PIXEL_DATA5V,PIXEL_DATA5V,U1.3,R5.1,Logical continuity only; physical release held
+W081,wire,RELEASE_PWM5V,RELEASE_PWM5V,U1.6,DRV1.RC_IN,Logical continuity only; physical release held
+W082,wire,PAN_PWM5V,PAN_PWM5V,U1.8,SERVO1.SIG,Logical continuity only; physical release held
+W083,wire,TILT_PWM5V,TILT_PWM5V,U1.11,SERVO2.SIG,Logical continuity only; physical release held
+W084,wire,SW_A_RAW,SW_A_RAW,SW1.NO,R8.1,Logical continuity only; physical release held
+W085,wire,GND,GND,SW1.COM,PI1.20,Logical continuity only; physical release held
+W086,wire,SW_B_RAW,SW_B_RAW,SW2.NO,R9.1,Logical continuity only; physical release held
+W087,wire,GND,GND,SW2.COM,PI1.20,Logical continuity only; physical release held
+W088,wire,M1_A,M1_A,FC1.ESC1_A,M1.A,Logical continuity only; physical release held
+W089,wire,M1_B,M1_B,FC1.ESC1_B,M1.B,Logical continuity only; physical release held
+W090,wire,M1_C,M1_C,FC1.ESC1_C,M1.C,Logical continuity only; physical release held
+W091,wire,M2_A,M2_A,FC1.ESC2_A,M2.A,Logical continuity only; physical release held
+W092,wire,M2_B,M2_B,FC1.ESC2_B,M2.B,Logical continuity only; physical release held
+W093,wire,M2_C,M2_C,FC1.ESC2_C,M2.C,Logical continuity only; physical release held
+W094,wire,M3_A,M3_A,FC1.ESC3_A,M3.A,Logical continuity only; physical release held
+W095,wire,M3_B,M3_B,FC1.ESC3_B,M3.B,Logical continuity only; physical release held
+W096,wire,M3_C,M3_C,FC1.ESC3_C,M3.C,Logical continuity only; physical release held
+W097,wire,M4_A,M4_A,FC1.ESC4_A,M4.A,Logical continuity only; physical release held
+W098,wire,M4_B,M4_B,FC1.ESC4_B,M4.B,Logical continuity only; physical release held
+W099,wire,M4_C,M4_C,FC1.ESC4_C,M4.C,Logical continuity only; physical release held
+W100,factory-cable-hold,CSI_FACTORY,,junction,junction,15-pin CSI factory cable; retain; internal pin mapping not modeled
+W101,factory-cable-hold,USB_FACTORY,,junction,junction,USB A-MicroB factory cable;5V/data cable budget and route held
+W102,factory-cable-hold,D500_SENSOR_FACTORY,,junction,junction,D500 kit sensor lead; internal mapping and received variant held
+W103,factory-cable-hold,RF_FACTORY,,junction,junction,RP1 factory RF/coax mate; no scalar signal-net equivalence
+W104,wire,CHARGE_POS,CHARGE_POS,CHG1.+,JCHG1.+,Logical continuity only; physical release held
+W105,wire,CHARGE_NEG,CHARGE_NEG,CHG1.-,JCHG1.-,Logical continuity only; physical release held
+W106,factory-cable-hold,BALANCE_6S,,junction,junction,6S balance B0..B6 order requires exact delivered connector view
+C001,wire,GND,GND,U1.1,U1.7,Logical continuity only; physical release held
+C002,wire,GND,GND,U1.4,U1.7,Logical continuity only; physical release held
+C003,wire,GND,GND,U1.10,U1.7,Logical continuity only; physical release held
+C004,wire,GND,GND,U1.13,U1.7,Logical continuity only; physical release held
+C005,passive-component,INPUT_PULLDOWN1,PIXEL_DATA3V3;GND,R1.1,R1.2,10k; separate electrical nodes across component
+C006,passive-component,INPUT_PULLDOWN2,RELEASE_PWM3V3;GND,R2.1,R2.2,10k; separate electrical nodes across component
+C007,passive-component,INPUT_PULLDOWN3,PAN_PWM3V3;GND,R3.1,R3.2,10k; separate electrical nodes across component
+C008,passive-component,INPUT_PULLDOWN4,TILT_PWM3V3;GND,R4.1,R4.2,10k; separate electrical nodes across component
+C009,passive-component,PIXEL_DATA5V,PIXEL_DATA5V;LED_DIN,R5.1,R5.2,330; separate electrical nodes across component
+C010,passive-component,SW_A_PULLUP,PI_3V3;HOLDER_CLOSED,R6.1,R6.2,4.7k; separate electrical nodes across component
+C011,passive-component,SW_B_PULLUP,PI_3V3;LATCH_ENGAGED,R7.1,R7.2,4.7k; separate electrical nodes across component
+C012,passive-component,SW_A_SERIES,SW_A_RAW;HOLDER_CLOSED,R8.1,R8.2,330; separate electrical nodes across component
+C013,passive-component,SW_B_SERIES,SW_B_RAW;LATCH_ENGAGED,R9.1,R9.2,330; separate electrical nodes across component
+C014,passive-component,PER_5V_DECOUPLE,PER_5V;GND,C1.1,C1.2,100nF 16V; separate electrical nodes across component
+C015,passive-component,SW_A_FILTER,HOLDER_CLOSED;GND,C2.1,C2.2,100nF 16V; separate electrical nodes across component
+C016,passive-component,SW_B_FILTER,LATCH_ENGAGED;GND,C3.1,C3.2,100nF 16V; separate electrical nodes across component
+C017,passive-component,LED_BULK,PER_5V;GND,C4.1,C4.2,1000uF 10V; separate electrical nodes across component
+NC123,intentional-isolation,NO_CONNECT,,junction,junction,RELEASE.VRC: Leave isolated; no bridge toVCC
+NC124,intentional-isolation,NO_CONNECT,,junction,junction,RELEASE.GOOD/OUT: 5Vstatus outputs notconnected toPi
+NC125,intentional-isolation,NO_CONNECT,,junction,junction,RELEASE.VCC=VRC bridge: Open
+NC126,intentional-isolation,NO_CONNECT,,junction,junction,RELEASE.VCC=LOAD bridge: Open; VCC andLOAD independently sourced bynetlist
+NC127,intentional-isolation,NO_CONNECT,,junction,junction,RELEASE.LRN: Open inoperation
+NC128,intentional-isolation,NO_CONNECT,,junction,junction,SW_A.NC/SW_B.NC: Insulate; do not tie toNO
+NC129,intentional-isolation,NO_CONNECT,,junction,junction,AIO.M8/LED/TX2/RX2/TX5/RX5/TX8/RX8: Reservedunconnected
+NC130,intentional-isolation,NO_CONNECT,,junction,junction,INA.secondGHsocket: Unused;capped
+NC131,intentional-isolation,NO_CONNECT,,junction,junction,LED2.OUT: Unused;cap5Vconductors
+NC132,intentional-isolation,NO_CONNECT,,junction,junction,PI.USB-CPOWER: No concurrent externalpowersource
+NC133,intentional-isolation,NO_CONNECT,,junction,junction,AIO.USB: Groundcommissioningonly; poweringsequencequalify
+NC134,intentional-isolation,NO_CONNECT,,junction,junction,PI.otherGPIO: Unallocated; no automatic sharing

@@ -1,0 +1,44 @@
+net,controller,physical_pin_or_pad,mcu_or_bcm_pin,logical_resource,direction_at_controller,peer,interface,signal_voltage,power_domain,status,qualification
+MOTOR_FR,FC,M1,PE14,SERVO1 TIM1_CH4,out,Front-right motor phases via integrated ESC,DShot300 to ESC internal; three phase to motor,internal logic; switched 6S,VBAT,VERIFIED,Intentional Motor1 wiring; direction CCW viewed above; props-off identity/direction still required
+MOTOR_RL,FC,M2,PE13,SERVO2 TIM1_CH3,out,Rear-left motor phases via integrated ESC,DShot300 to ESC internal; three phase to motor,internal logic; switched 6S,VBAT,VERIFIED,Intentional Motor2 wiring; direction CCW viewed above; props-off identity/direction still required
+MOTOR_FL,FC,M3,PE11,SERVO3 TIM1_CH2,out,Front-left motor phases via integrated ESC,DShot300 to ESC internal; three phase to motor,internal logic; switched 6S,VBAT,VERIFIED,Intentional Motor3 wiring; direction CW viewed above; props-off identity/direction still required
+MOTOR_RR,FC,M4,PE9,SERVO4 TIM1_CH1,out,Rear-right motor phases via integrated ESC,DShot300 to ESC internal; three phase to motor,internal logic; switched 6S,VBAT,VERIFIED,Intentional Motor4 wiring; direction CW viewed above; props-off identity/direction still required
+PAN_PWM,FC,M5,PB1,SERVO5 TIM3_CH4,out,U1.9 input to U1.8 output to pan servo signal,Ordinary servo PWM via SN74AHCT125N,3.3V input translated to5V output,Peripheral5V buffer and servo power; FC rail separate,REQUIRES PHYSICAL VALIDATION,FUNCTION6; no direct3.3V servo assumption; neutral/endpoints/frame rate and power sequence verified before use
+TILT_PWM,FC,M6,PB0,SERVO6 TIM3_CH3,out,U1.12 input to U1.11 output to tilt servo signal,Ordinary servo PWM via SN74AHCT125N,3.3V input translated to5V output,Peripheral5V buffer and servo power; FC rail separate,REQUIRES PHYSICAL VALIDATION,FUNCTION7; no direct3.3V servo assumption; neutral/endpoints/frame rate and power sequence verified before use
+RELEASE_PWM,FC,M7,PD12,SERVO7 TIM4_CH1,out,U1.5 input to U1.6 output to Pololu2802 RC signal,Ordinary RC pulse via SN74AHCT125N,3.3V input translated to5V output,Peripheral5V buffer and actuator supply; FC rail separate,REQUIRES PHYSICAL VALIDATION,Exclusive mandatory FC supervisor; design50Hz1000usOFF2000usON; bounded lease and actual Pololu threshold to prove
+RESERVED_PWM8,FC,M8,PD13,SERVO8 TIM4_CH2,none,Unconnected,Reserved ordinary PWM timer group,n/a,None,VERIFIED,No pin use without reviewed allocation change
+RESERVED_LED,FC,LED,PD14,SERVO11 TIM4_CH3,none,Unconnected,Do not use serial LED,n/a,None,VERIFIED,Shared timer with cargo output; visible lamps use Pi
+UNEXPOSED_PWM9,FC,Not exposed,PE5,SERVO9 TIM15_CH1,none,No AIO pad,Target-only resource,n/a,None,VERIFIED,Do not wire
+UNEXPOSED_PWM10,FC,Not exposed,PE6,SERVO10 TIM15_CH2,none,No AIO pad,Target-only resource,n/a,None,VERIFIED,Do not wire
+FC_TO_PI,FC,TX1,PA9,SERIAL1 USART1_TX,out,Pi J8 pin10 GPIO15 RXD0,MAVLink2 UART115200 8N1,3.3V,Independent regulated rails; common GND,VERIFIED,Full duplex uninverted; crossed TX/RX; physical continuity and power-off backfeed test
+PI_TO_FC,FC,RX1,PA10,SERIAL1 USART1_RX,in,Pi J8 pin8 GPIO14 TXD0,MAVLink2 UART115200 8N1,3.3V,Independent regulated rails; common GND,VERIFIED,UART0 PL011 via disable-bt; no serial console
+GNSS_CONFIG,FC,TX3,PD8,SERIAL3 USART3_TX,out,Holybro MicroM10 RX,UBX UART115200,3.3V,AIO5V GNSS supply,VERIFIED,Use verified received cable pinout; do not assume same connector pin order
+GNSS_DATA,FC,RX3,PD9,SERIAL3 USART3_RX,in,Holybro MicroM10 TX,UBX UART115200,3.3V,AIO5V GNSS supply,VERIFIED,Receiver configuration and discovery readback required
+RANGE_CONFIG,FC,TX4,PA0,SERIAL4 UART4_TX,out,TFmini-S RX,Serial115200 configuration,3.3V,AIO5V subject to 4.9-5.1V connector test,VERIFIED,No I2C mode; configuration commands only supported manufacturer format
+RANGE_DATA,FC,RX4,PA1,SERIAL4 UART4_RX,in,TFmini-S TX,Serial115200 data,3.3V,AIO5V subject to 4.9-5.1V connector test,VERIFIED,RNGFND1_TYPE20 ORIENT25; ground clearance measured
+RC_TELEMETRY,FC,TX6,PC6,SERIAL6 USART6_TX,out,RP1 RX,CRSF ELRS420000 full duplex,3.3V,AIO5V receiver supply,VERIFIED,SERIAL6_PROTOCOL23 OPTIONS0; RC_OPTIONS bit13
+RC_INPUT,FC,RX6,PC7,SERIAL6 USART6_RX,in,RP1 TX,CRSF ELRS420000 full duplex,3.3V,AIO5V receiver supply,VERIFIED,Independent RC path; failsafe and binding physical tests
+I2C_CLOCK,FC,SCL,PB8,Physical I2C1 logical bus1,bidirectional,INA-BM SCL and MicroM10 IST8310 SCL,I2C open drain,3.3V pull-ups required,AIO5V device power; verify bus high level,REQUIRES PHYSICAL VALIDATION,Two devices address0x45 and0x0E; pull-up/load/revision checks
+I2C_DATA,FC,SDA,PB9,Physical I2C1 logical bus1,bidirectional,INA-BM SDA and MicroM10 IST8310 SDA,I2C open drain,3.3V pull-ups required,AIO5V device power; verify bus high level,REQUIRES PHYSICAL VALIDATION,No Pi I2C connection; retain separate signal ground
+INTERNAL_BARO_CLOCK,FC,Internal,PB10,Physical I2C2 logical bus0,internal,SPL060x77,I2C,Internal,None,VERIFIED,Not external connector
+INTERNAL_BARO_DATA,FC,Internal,PB11,Physical I2C2 logical bus0,internal,SPL060x77,I2C,Internal,None,VERIFIED,Not external connector
+SPARE_UART2_TX,FC,TX2,PA2,SERIAL2 USART2_TX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL2_PROTOCOL minus1; DJI connector12V not a5V rail
+SPARE_UART2_RX,FC,RX2,PA3,SERIAL2 USART2_RX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL2_PROTOCOL minus1
+SPARE_UART5_TX,FC,TX5,PB6,SERIAL5 UART5_TX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL5_PROTOCOL minus1
+SPARE_UART5_RX,FC,RX5,PB5,SERIAL5 UART5_RX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL5_PROTOCOL minus1
+SPARE_UART8_TX,FC,TX8,PE1,SERIAL8 UART8_TX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL8_PROTOCOL minus1
+SPARE_UART8_RX,FC,RX8,PE0,SERIAL8 UART8_RX,none,Unconnected,Disabled,n/a,None,VERIFIED,SERIAL8_PROTOCOL minus1
+UNEXPOSED_UART7_TX,FC,Not exposed,PE8,SERIAL7 UART7_TX,none,No AIO pad,Target-only resource,n/a,None,VERIFIED,SERIAL7_PROTOCOL minus1; not counted as spare connector
+UNEXPOSED_UART7_RX,FC,Not exposed,PE7,SERIAL7 UART7_RX,none,No AIO pad,Target-only resource,n/a,None,VERIFIED,SERIAL7_PROTOCOL minus1
+SERVICE_USB,FC,USB-C D-plus/D-minus,PA12/PA11,SERIAL0 OTG1,bidirectional,Authorized service host,USB2 data,USB signalling,Service power isolation required,REQUIRES PHYSICAL VALIDATION,Channel0 signing exception; mandatory arming gate must still cover it
+BUZZER,FC,Beeper-minus,PD15,GPIO61 HAL_BUZZER_PIN,out,Selected self-powered buzzer signal,Board buzzer interface,Board interface,AIO5V per received buzzer manual,REQUIRES PHYSICAL VALIDATION,Confirm exact buzzer model/pinout before attachment
+LED_DATA,Pi,J8 pin12,GPIO18,Single LED data output,out,U1.2 input to U1.3 output through330ohm to first lamp DIN,NeoPixel RGBW serial via SN74AHCT125N,3.3V input translated to5V output,Compute logic separate from Peripheral5V buffer and lamps,REQUIRES PHYSICAL VALIDATION,No competing PWM/audio owner; input10kpulldown; verify independent rail power sequence; pixels can retain last color on crash
+HOLDER_CLOSED,Pi,J8 pin16,GPIO23,Digital input,in,Holder switch NO; COM GND,Contact closure active low,3.3V via external4.7k pull-up,Pi3.3V,REQUIRES PHYSICAL VALIDATION,Positive safe cam; NC unused insulated; open wire unsafe; short-to-GND not inherently detected
+LATCH_ENGAGED,Pi,J8 pin18,GPIO24,Digital input,in,Latch switch NO; COM GND,Contact closure active low,3.3V via external4.7k pull-up,Pi3.3V,REQUIRES PHYSICAL VALIDATION,Independent cam/input; transitions and plausibility tested
+PI_POWER_A,Pi,J8 pin2,5V,Power,in,Compute BEC carrier path,DC supply,5.2V nominal,Compute5.2V,REQUIRES PHYSICAL VALIDATION,Use together with pin4; measure current sharing and drop
+PI_POWER_B,Pi,J8 pin4,5V,Power,in,Compute BEC carrier path,DC supply,5.2V nominal,Compute5.2V,REQUIRES PHYSICAL VALIDATION,No simultaneous USB-C power
+PI_GROUND_A,Pi,J8 pin6,GND,Power and signal ground,return,Compute BEC negative/common ground,DC return,0V,Common ground,REQUIRES PHYSICAL VALIDATION,Separate adequately sized return conductor
+PI_GROUND_B,Pi,J8 pin9,GND,Power and signal ground,return,Compute BEC negative/common ground,DC return,0V,Common ground,REQUIRES PHYSICAL VALIDATION,Second adequately sized return conductor
+PI_LOGIC_PULLUP,Pi,J8 pin1,3V3,Logic power,out,Two switch4.7k pull-ups,DC logic supply,3.3V,Pi3.3V,VERIFIED,Not external peripheral5V
+CAMERA_CSI,Pi,CSI camera15-pin connector,CSI0,Camera,bidirectional,Camera3 NoIR with Adafruit1648 cable,MIPI CSI2 and camera control,Native cable domains,Pi camera supply,REQUIRES PHYSICAL VALIDATION,Not DSI; ribbon orientation and moving cable endurance checked
+D500_USB,Pi,One USB host port,USB host,Scanner,bidirectional,Waveshare D500 kit adapter,USB adapter to230400 serial,Native USB; raw device3.3V UART,Pi USB5V,REQUIRES PHYSICAL VALIDATION,Persistent identity; no FC UART used; enumeration and full-load brownout test

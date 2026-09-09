@@ -1,0 +1,47 @@
+{
+  "generated_utc": "2026-09-06T01:13:19.466812+00:00",
+  "status": "DOCUMENTATION_CONFLICT_UNRESOLVED_NOT_FABRICATION_SAFE",
+  "source_sha256": "398556cd5f8720ac1a39b79bd1a0d1c083c6c57def55920bc17b212061b6d099",
+  "fusion_geometry_changed": false,
+  "old_exports_unchanged": true,
+  "manufacturer_inquiry_sent": false,
+  "checks": {
+    "dimension_register_rows": 26,
+    "motor_slots_measured": 16,
+    "slot_capsule_geometry": "PASS",
+    "fourfold_motor_slot_spacing": "PASS",
+    "partial_model_intersections": 0,
+    "corrected_authoritative_stack_available": false,
+    "complete_adapter_qualified": false
+  },
+  "evidence": [
+    {
+      "path": "cad/scripts/audit_frame_revision_source.py",
+      "sha256": "5819ded656fe2d1408f20d8b428b14ea911d0493e90449cf95d7e676ceb181c7"
+    },
+    {
+      "path": "cad/scripts/fusion/audit_frame_revision_checkpoint.py",
+      "sha256": "4d6ebd65adc204e28cab8f515ecb0b90556a08009df22f64da7a99e83fd037a1"
+    },
+    {
+      "path": "docs/research/source-one-v6-revision-audit-2026-09-05.md",
+      "sha256": "b5fdad5c2eabfbf997b11ec107bd2c4cf738aab19276226040f5226dffe216a3"
+    },
+    {
+      "path": "cad/reference/source-one-v6-7in/source-label-audit.json",
+      "sha256": "e7dc3912ff598a123d8316eae11b58beb3daf0ad92f12f340f0bb4744e082e65"
+    },
+    {
+      "path": "cad/reference/source-one-v6-7in/revision-checkpoint-cad-audit.json",
+      "sha256": "78d14b0aefbece90c2f8eead7398f42c45f1f91dfbcf7641255661b104c6c366"
+    },
+    {
+      "path": "cad/reference/source-one-v6-7in/dimension-register.csv",
+      "sha256": "e3e187aaf067556bbfb564b52d8011e5de413dfa284e5dd8781942d43650eb7e"
+    },
+    {
+      "path": "cad/reference/source-one-v6-7in/revision-resolution.md",
+      "sha256": "d6aa0b570fbac71586e1356f303db8762d69d6714064c8b4a05b88077b29c336"
+    }
+  ]
+}

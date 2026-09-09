@@ -1,0 +1,322 @@
+{
+  "status": "PARTIAL_ROBUST_DESIGN_STUDY_FULL_MOUNT_NOT_QUALIFIED",
+  "input_sha256": "729c02644fabf0622f90b56b87bef25aeaa32b9f48d04e390db5fa06e67327c8",
+  "original_master_unchanged": true,
+  "parameters": "JSON inputs plus reproducible regeneration; sketches are not claimed as fully constrained native parameters",
+  "nominal_board_to_max_od_support_gap_mm": 8.940238646001236,
+  "all_side_service_trial_collisions": 4,
+  "objects": [
+    {
+      "component": "R3_45mm_ADAPTER_NOMINAL_DRILLING_HOLD",
+      "visible": true,
+      "envelope_mm": [
+        45,
+        45,
+        1.6
+      ],
+      "z_bottom_mm": 3.3,
+      "rotation_deg": 0
+    },
+    {
+      "component": "AIO_MAX_37x37x9_CLASS4_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        37,
+        37,
+        9
+      ],
+      "z_bottom_mm": 7.9,
+      "rotation_deg": 45
+    },
+    {
+      "component": "ISOLATOR_0_OD6_RISE3_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        6,
+        6,
+        3
+      ],
+      "z_bottom_mm": 4.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_TOP_0_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2.5
+      ],
+      "z_bottom_mm": 16.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_UNDER_0_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2
+      ],
+      "z_bottom_mm": 1.2999999999999998,
+      "rotation_deg": 0
+    },
+    {
+      "component": "ISOLATOR_1_OD6_RISE3_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        6,
+        6,
+        3
+      ],
+      "z_bottom_mm": 4.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_TOP_1_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2.5
+      ],
+      "z_bottom_mm": 16.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_UNDER_1_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2
+      ],
+      "z_bottom_mm": 1.2999999999999998,
+      "rotation_deg": 0
+    },
+    {
+      "component": "ISOLATOR_2_OD6_RISE3_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        6,
+        6,
+        3
+      ],
+      "z_bottom_mm": 4.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_TOP_2_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2.5
+      ],
+      "z_bottom_mm": 16.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_UNDER_2_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2
+      ],
+      "z_bottom_mm": 1.2999999999999998,
+      "rotation_deg": 0
+    },
+    {
+      "component": "ISOLATOR_3_OD6_RISE3_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        6,
+        6,
+        3
+      ],
+      "z_bottom_mm": 4.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_TOP_3_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2.5
+      ],
+      "z_bottom_mm": 16.9,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FASTENER_UNDER_3_PROJECTION_CONTRACT_ONLY",
+      "visible": true,
+      "envelope_mm": [
+        7,
+        7,
+        2
+      ],
+      "z_bottom_mm": 1.2999999999999998,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_0_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_1_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_2_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_3_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_4_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_5_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_6_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "FRAME_SUPPORT_7_OD5_2_ENVELOPE",
+      "visible": true,
+      "envelope_mm": [
+        5.2,
+        5.2,
+        33
+      ],
+      "z_bottom_mm": -2.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "LOCAL_P_PLANE_REFERENCE_NOT_FULL_FRAME",
+      "visible": false,
+      "envelope_mm": [
+        50,
+        50,
+        0.2
+      ],
+      "z_bottom_mm": -0.2,
+      "rotation_deg": 0
+    },
+    {
+      "component": "BOTTOM_CONFLICT_THICKNESS_SWEEP_1_85_TO_2_65_NOT_PLACEMENT",
+      "visible": false,
+      "envelope_mm": [
+        50,
+        50,
+        0.8
+      ],
+      "z_bottom_mm": -10.65,
+      "rotation_deg": 0
+    },
+    {
+      "component": "BAY_CEILING_MIN21_25_CONDITIONAL_TOPOLOGY_B",
+      "visible": false,
+      "envelope_mm": [
+        70,
+        60,
+        0.2
+      ],
+      "z_bottom_mm": 21.25,
+      "rotation_deg": 0
+    },
+    {
+      "component": "USB_SD_ALL_SIDE12_TRIAL_KEEP_OUT_NOT_REAL_CONNECTOR",
+      "visible": false,
+      "envelope_mm": [
+        61,
+        61,
+        12
+      ],
+      "z_bottom_mm": 7.9,
+      "rotation_deg": 45
+    },
+    {
+      "component": "WIRE_BEND_R36_OD6_PLUS2_KEEP_OUT_NO_ROUTE",
+      "visible": false,
+      "envelope_mm": [
+        82,
+        82,
+        6
+      ],
+      "z_bottom_mm": -45,
+      "rotation_deg": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "cad/exports/aio-envelope-r3/BGD_AIO_ENVELOPE_R3_NOT_FOR_FABRICATION.f3d",
+      "sha256": "9d7e9d22a9f1eb8da1e013f9a7a854c055d85e04f70dcab66bf72086a30a8d0f"
+    },
+    {
+      "path": "cad/exports/aio-envelope-r3/aio-envelope-r3.png",
+      "sha256": "7f5b96b2d29baa387b9291175ef903f2048fb79de7395d3af3484f312c5cc62c"
+    }
+  ],
+  "input_revision_note": {
+    "current_input_sha256": "7ce0f5b023d71288f6ee4ad2c6610f73d478ed0888cdc1c63d6ea24194d3157c",
+    "change_after_export": "Added unused unassigned20mm support acceptance interval and explicit unknown-placement warning. No geometry-driving value changed; original export/input_sha256 retained.",
+    "archive_regenerated": false
+  }
+}

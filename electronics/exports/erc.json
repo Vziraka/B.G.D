@@ -1,0 +1,107 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-05T21:37:46",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357",
+            "violations": []
+        },
+        {
+            "path": "/10-1 Pack and distribution/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/93c38c47-42c4-53b3-b58e-06ecc51cb772",
+            "violations": []
+        },
+        {
+            "path": "/10-2 Pack and distribution/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/411e8d65-77b6-50b4-ae7b-d65c728e21b9",
+            "violations": []
+        },
+        {
+            "path": "/20-1 Regulated rails/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/9c6ddc3c-bfd6-51ad-8d86-785c9b8ee542",
+            "violations": []
+        },
+        {
+            "path": "/20-2 Regulated rails/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/c542d891-1db4-5e98-b7e6-cf1a2979da1d",
+            "violations": []
+        },
+        {
+            "path": "/30-1 FC / radio / sensors/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/8b5a52ca-5bb6-52df-b633-dea6f014343d",
+            "violations": []
+        },
+        {
+            "path": "/30-2 FC / radio / sensors/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/e1fa6076-e266-5bf0-9e6b-d075a2b0f850",
+            "violations": []
+        },
+        {
+            "path": "/40-1 Compute / switches/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/b3fe343e-1599-5b7e-bfd1-3aaba90c3bde",
+            "violations": []
+        },
+        {
+            "path": "/40-2 Compute / switches/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/ee52378e-ec9a-5931-a236-f520daa7e76f",
+            "violations": []
+        },
+        {
+            "path": "/40-3 Compute / switches/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/feac1ec8-614c-53fc-bc17-6f5484a10a06",
+            "violations": []
+        },
+        {
+            "path": "/50-1 PWM / lights / release/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/896d0e2b-bf9e-5f3b-a47f-8ed67db19bea",
+            "violations": []
+        },
+        {
+            "path": "/50-2 PWM / lights / release/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/620f0ea7-a663-5944-bf30-e4b4a90d58bb",
+            "violations": []
+        },
+        {
+            "path": "/50-3 PWM / lights / release/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/6cf945ce-2d61-53c2-affe-2cd4cdab05a9",
+            "violations": []
+        },
+        {
+            "path": "/50-4 PWM / lights / release/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/7669d863-985e-502a-8d03-c3b9b7e505f4",
+            "violations": []
+        },
+        {
+            "path": "/60-1 Charge / cable holds/",
+            "uuid_path": "/7d786a96-6ca4-5c3b-90c9-d50c934c5357/2439fc6e-2d2d-56fd-ba6f-62739666af5f",
+            "violations": []
+        }
+    ],
+    "source": "bgd-master.kicad_sch"
+}

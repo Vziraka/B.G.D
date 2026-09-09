@@ -1,0 +1,27 @@
+id,dimension,value,units,configuration,classification,source,qualification
+F01,Top plate nominal thickness,2,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Nominal specification only; current layer mapping and actual tolerance unconfirmed
+F02,Middle plate nominal thickness,2,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Nominal specification only; current layer mapping and actual tolerance unconfirmed
+F03,Bottom plate product-page thickness,2.5,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Published value conflicts with drawing labels; not an accepted installed dimension
+F04,Draw14 layout thickness annotation,2,mm,Pinned July07 7-inch drawing,derived from verified geometry,source-label-audit.json,TEXT handle4DB; spatial layout association; not a confirmed current retail bottom-plate identity
+F05,Draw3 layout thickness annotation,2,mm,Pinned July07 7-inch drawing,derived from verified geometry,source-label-audit.json,TEXT handle10799; current retail part-role mapping unconfirmed
+F06,Draw13 layout thickness annotation,2,mm,Pinned July07 7-inch drawing,derived from verified geometry,source-label-audit.json,TEXT handle4A5; current retail part-role mapping unconfirmed
+F07,Arm thickness,6,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Agrees with drawing6mm annotations; actual tolerance not specified
+F08,Arm-spacer thickness,6,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Location and bearing faces unconfirmed
+F09,Camera plate thickness,2,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Installation not completed in model
+F10,Brace thickness,UNRESOLVED,mm,Current TBS V6 7-inch DC,provisional,revision-resolution.md,No value inferred from appearance
+F11,Standoff set,4x30;4x22;2x20,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Inventory lengths do not establish attachment positions
+F12,Standoff OD and thread,5;M3,mm;thread,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Tolerances and head envelopes not provided
+F13,Advertised wheelbase,313,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Nominal designation; not the opposite motor chord
+F14,Common motor-circle diameter,312.830419,mm,Pinned July07 7-inch drawing,derived from verified geometry,frame-2d-verification.json,Do not scale301.991326mm opposite-motor chord to313mm
+F15,Forward central pitches,30.5;20,mm,Current TBS V6 7-inch DC,manufacturer verified,https://www.team-blacksheep.com/products/prod:source1v6,Nominal pitches corroborated by source; actual drilling still unconfirmed
+F16,Forward mounting hole diameters,3,mm,Pinned July07 Draw3,derived from verified geometry,fusion-import-raw.json,Both30.5mm and20mm patterns; no received tolerance claim
+F17,Rear20mm mounting hole diameter,2.2,mm,Pinned July07 Draw14,derived from verified geometry,fusion-import-raw.json,Separate pattern; do not substitute its diameter for forward20mm pattern
+F18,Motor center opening diameter,7,mm,Pinned July07 Frame-Arms,derived from verified geometry,revision-checkpoint-cad-audit.json,Source nominal only
+F19,Motor slot width and total length,3;4.5,mm,Pinned July07 Frame-Arms,derived from verified geometry,revision-checkpoint-cad-audit.json,Four radial slots; semicircle R1.5 with end centers1.5mm apart
+F20,Motor opposing slot-end-center diameters,16;19,mm,Pinned July07 Frame-Arms,derived from verified geometry,revision-checkpoint-cad-audit.json,Not16mm or19mm square-side pitches; exact motor mapping still required
+F21,Verified plate-to-plate Z and electronics bay,UNRESOLVED,mm,Current TBS V6 7-inch DC,provisional,revision-resolution.md,No verified stack can be loaded yet
+F22,Existing hypothesis B main-plate exterior span,34.5,mm,Partial CAD hypothesis B only,provisional,../../assemblies/reference-r1-manifest.json,Does not include camera/brace/fastener protrusions; not a manufacturer dimension
+F23,Physical thickness and hole tolerances,UNMEASURED,mm,Future received selected kit,received-part validation required,revision-resolution.md,Compare supplier-confirmed revision with received parts before dependent fabrication release
+F24,Screw engagement and winding clearance,UNRESOLVED,mm,Future frame and selected motor,received-part validation required,revision-resolution.md,Nominal screw length does not prove safe protrusion or engagement
+F25,Adapter nearest nominal standoff gap,1.3833129101,mm,Partial CAD hypothesis B only,provisional,revision-checkpoint-cad-audit.json,Repeatable calculation but conditional on unverified frame stack and support positions
+F26,Adapter nominal middle-plate gap,2,mm,Partial CAD hypothesis B only,provisional,revision-checkpoint-cad-audit.json,Bare blank only; no damper or fastener clearance proof

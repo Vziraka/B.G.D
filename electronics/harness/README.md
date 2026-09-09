@@ -1,0 +1,7 @@
+# Harness source and reconciliation
+
+The current wire-level source is [`docs/hardware/baseline-r1/harness-netlist.csv`](../../docs/hardware/baseline-r1/harness-netlist.csv), supported by the [electrical build definition](../../docs/hardware/baseline-r1/electrical-build.md). Do not duplicate it here before a KiCad exporter/reconciliation format exists.
+
+[reconciliation.csv](reconciliation.csv) now accounts for every source record by ID and states its logical treatment and corresponding nodes. It deliberately references rather than duplicates gauge/max-cut/connector/termination/evidence fields from the controlling source CSV; [source hashes](../source-manifest.json) detect changes to those fields. [schematic-pins.csv](../pinouts/schematic-pins.csv) records electrical pin type and domain. [validation-report.json](../validation-report.json) compares the actual exported netlist and fixed safety expectations. Physical Fusion routes can replace allocations only after bend/service/strain checks.
+
+`net` is not an equipotential name for every source row: R/C rows must contain real components between distinct nodes. W030 expands into power/return/data; W100–103 and W106 remain explicit factory-interface holds. C009 becomes PIXEL_DATA5V -> R5 -> LED_DIN. PI_FAN5V2 aliases PI_5V2, and SOLENOID_POS aliases PER_5V through the RC switch's LOAD HIGH copper. The latter never joins SOLENOID_LOW toGND.
