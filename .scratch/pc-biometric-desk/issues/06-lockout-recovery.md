@@ -1,11 +1,11 @@
 # 06 — Lockout recovery and durable code rotation
 
-**Product scope: retired from active delivery, September 9.** The standalone PC app and voice-identity check are removed from the finished product by the [scope amendment](../spec.md#current-product-scope-standalone-pc-app-retired). The status, dependencies, checkpoints and completion instructions below are historical, not an active PC-product work queue. Preserve code, tests, results and data protections; retirement neither passes unresolved acceptance nor authorizes capture, data deletion or uninstalling anything.
+**Controlling disposition: retired and dormant.** The standalone PC app and voice-identity check are removed from the finished product by the [scope clarification](../spec.md#controlling-disposition-retired-and-dormant). All content below is dated history. It creates no implementation, testing, validation, packaging, evidence-refresh or reporting task. Repository files, installed software and profiles remain untouched pending any separate removal decision.
 
-Status: claimed
+Status: wontfix
 Blocked by: 02
 
-## Current checkpoint — September 9
+## Historical checkpoint — September 9
 
 The confirmed completion plan authorizes this independent implementation. `Maintenance` and the UI B Recovery page now require fresh designated-owner Windows verification plus the current recovery code, collect replacement references and require copying/saving a new code before conditional generation publication. The old committed profile/code pair remains authoritative before publication. Recovery uses a separate protected retry counter and never grants a desktop action. Synthetic workflow and native Tk tests cover wrong prerequisites, interruption, code acknowledgement and uncertain replies; production recovery has not been exercised and no existing profile or code has been replaced. Installed-helper validation and independent review remain in progress; formal real acceptance is deferred by the owner.
 

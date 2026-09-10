@@ -1,10 +1,12 @@
-# M1 PC biometric desk application
+# Archived M1 PC biometric desk application
 
 Continue new-product planning at the [phone/onboard entry point](../../docs/phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
 
-## Current product scope: standalone PC app retired
+## Controlling disposition: retired and dormant
 
-The owner's later September 9 decision removes this Windows app from the finished product and supersedes the completion direction below. Existing implementation, tests and records remain development/reference material; unfinished PC-product tickets are no longer the delivery queue and are not declared accepted. The PC still supports simulation, engineering and testing. Preserve profiles and installed software; retirement is not deletion or uninstall authorization.
+The owner removes this Windows app from the finished product and from current engineering work. Existing implementation, tests and records are dated history, not tooling to finish, a delivery queue, an acceptance gate or a source of status-refresh work. The PC hosts the new phone/drone simulator and engineering tools without using this retired application. Everything below this section is historical and cannot reactivate work. A new explicit owner direction is required before implementing, validating, packaging or completing this product.
+
+Repository files, installed software and profiles remain untouched by this disposition; deleting or uninstalling them is a separate action. No unresolved PC requirement is treated as passed.
 
 The replacement phone/controller and onboard face/liveness direction is recorded in [the controlling product decision](../biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). Pairing, enrollment and the revised flight/command authorization contract remain under design. Sections below retain the former Windows-product specification and history.
 

@@ -1,12 +1,14 @@
-# PC Biometric Desk — development build 0.1.0
+# PC Biometric Desk — archived development record
 
 Continue new-product planning at the [phone/onboard entry point](../phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
 
-**Current product status, September 9:** the owner has retired the standalone Windows app from the finished product, superseding the earlier completion direction below. Preserve this implementation, its tests and evidence for development/reference use. Its unfinished product acceptance is not a delivery requirement or a claimed pass. PC simulation and engineering continue to have a role. See the [latest product decision](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). The remaining content records the former app and its development history.
+**Controlling status:** retired and dormant. This application, its source, tests, packaging, acceptance campaign and evidence-refresh work are outside the active product. The PC remains the host for new simulation and engineering, but this application is not the simulator. Everything below is a dated implementation record and does not authorize more PC-product work. See the [latest clarification](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-10-pc-retirement-clarified-as-dormant-not-a-reference-workstream).
+
+## Archived implementation snapshot
 
 Offline Windows desktop development app for owner enrollment and fresh face-and-voice verification of one harmless desktop action. UI B is selected. It does not authorize an aircraft.
 
-**Current — September 9:** Tickets01/02 are complete for their stated boundaries. The owner approved completion of the PC implementation with hardware paused, UI B retained, PC/headset microphone support and a protected Windows helper. Retry/generation state, native service transport, Account/Recovery workflows, microphone selection and offline packaging are implemented in the working tree and undergoing integration. See the [installed boundary](installed-boundary.md) for evidence and unfinished checks. This is not yet an implementation-complete or security-accepted release.
+**Historical snapshot — September 9:** Tickets01/02 were complete for their stated boundaries. A superseded direction had approved further PC implementation with hardware paused. The remaining description records that snapshot; it is not current work and is not an implementation-complete or security-accepted release.
 
 **Recognition:** [Ticket03](../../.scratch/pc-biometric-desk/issues/03-single-action-verification.md#current-checkpoint) remains unresolved: a prior real take passed face, audio quality and words but failed speaker identity. The owner authorized a short development study on September 9; results are being collected. Checks preserve the profile. [Spoof-defense qualification](security-matrix.md) is separate from identity matching and final attack acceptance. The formal five-day usability and attack campaign are deferred until after implementation, not waived.
 

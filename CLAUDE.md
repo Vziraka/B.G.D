@@ -4,6 +4,10 @@
 
 Start with the [project map](.scratch/biometric-guard-drone/map.md) and the relevant ticket's current checkpoint. Consult its latest comments and linked requirements/evidence for the work at hand; read older history when resolving a conflict or recovering a decision's reason. Tickets hold the authoritative detail.
 
+## Current delivery boundary
+
+Build the current product through [Issue11 hardware engineering](.scratch/biometric-guard-drone/issues/11-hardware-build-package.md) and [Issue12 phone/onboard interaction](.scratch/biometric-guard-drone/issues/12-phone-onboard-interaction.md). The Windows PC is the development host, but the standalone PC biometric product is retired and has no active ticket, acceptance gate or cleanup requirement. Treat `.scratch/pc-biometric-desk/`, `docs/pc-biometric/`, `pc_biometric/`, `packaging/` and PC-only tests as dormant historical material; consult them only for a specifically relevant precedent. Reactivating, extending, validating or packaging that product requires a new explicit owner direction.
+
 For context handoff, research, worktrees or skill maintenance, use [the shared workflow](docs/agents/workflow.md).
 
 ## Working with the owner

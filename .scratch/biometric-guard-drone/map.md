@@ -4,7 +4,7 @@ Label: wayfinder:map
 
 ## Destination
 
-Build the approved self-built 7-inch quad with a phone/controller interface and onboard owner face/liveness verification. The standalone PC app is removed from the finished product by the [September 9 direction](issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). The revised interaction remains under design; Q75 is historical planning closure, not qualification of this revision.
+Build the approved self-built 7-inch quad with a phone/controller interface and onboard owner face/liveness verification. The standalone PC app is removed from the finished product by the [September 9 direction](issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired) and has no active development, validation, packaging or evidence-refresh work. The v1 phone/onboard design is approved but its simulator is not implemented; Q75 is historical planning closure, not qualification of this revision.
 
 ## Start here
 
@@ -21,7 +21,7 @@ Build the approved self-built 7-inch quad with a phone/controller interface and 
 - The later September 9 instruction puts repository alignment before the agreed feasibility assessment. Detailed printed redesign remains unselected. The old frame thickness/assembly conflict and [inspection gate](../../cad/received-frame-inspection-gate.md) remain evidence for that baseline; the TBS inquiry stays withdrawn.
 - Hardware has no fixed maximum budget. Minimize fully itemized cost while preserving approved requirements; the former $600/$800/$900 ceilings are historical. Spending remains unauthorized.
 - Preserve Q71's 250 g initial cargo target with a separate holder allocation and Q74's fully equipped 20 useful flight minutes plus independent reserve. Model predictions and CAD clearances do not establish flight or fabrication readiness. Full acceptance definitions remain in Issue10 and the [validation register](../../docs/research/issue10-validation-register-2026-08-30.md).
-- The former [PC spec](../pc-biometric-desk/spec.md) and Ticket02/03 results remain historical development evidence. UI B, Windows-specific product work and voice-identity acceptance no longer gate the finished product. Existing biometric data protections remain; neither retirement nor reuse authorizes profile deletion or claims real acceptance.
+- The former [PC spec](../pc-biometric-desk/spec.md), source, tests and results are dormant historical material, not reference tooling to finish. They supply no current task, dependency or acceptance evidence. The Windows machine remains the host for new simulation and engineering work; existing biometric data remains protected unless the owner separately directs its removal.
 
 ## Decisions so far
 
@@ -31,7 +31,7 @@ Current detail and later amendments are in [Issue10](issues/10-milestone-ladder.
 - [02: Windows environment](issues/02-windows-dev-environment.md): native Windows desk phase; WSL2/ROS deferred.
 - [03: Radio and command link](issues/03-radio-and-command-link.md): ELRS/EdgeTX direction; integration remains to be qualified.
 - [04: Onboard compute](issues/04-onboard-compute-path.md): research history; current hardware is governed by Q75 and documented affected-subsystem corrections.
-- [05: Face verification](issues/05-face-verification-stack.md), [06: Voice and speech](issues/06-voice-verification-and-stt-stack.md): research origins; current PC implementation/evidence is in its tickets.
+- [05: Face verification](issues/05-face-verification-stack.md), [06: Voice and speech](issues/06-voice-verification-and-stt-stack.md): research origins only; current product behavior is controlled by Issue12 and the phone/onboard contract.
 - [07: Regulations](issues/07-regulations-checklist.md): country-agnostic checklist; owner applies jurisdiction privately.
 - [08: Practice](issues/08-simulator-and-radio-choice.md): RadioMaster Pocket ELRS and FPV Freerider direction; purchases unapproved.
 - [09: Original BOM](issues/09-milestone-1-bom.md): historical component/cost baseline.

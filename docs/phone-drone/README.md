@@ -4,11 +4,11 @@ Status: product direction and the [v1 interaction contract](interaction-contract
 
 ## Confirmed product direction
 
-- The phone and independent radio controller are the user interfaces. Retire the standalone Windows biometric app from product delivery; retain useful code, tests and engineering tools. The PC remains the development/simulation machine.
+- The phone and independent radio controller are the user interfaces. The standalone Windows biometric app, its source, tests, packaging and acceptance queue are dormant history rather than an active tool or workstream. The PC remains the host for the new simulator and engineering software.
 - A deliberate phone/controller launch request precedes automatic takeoff/approach. The drone then verifies the enrolled owner's face and liveness at a validated separation before enabling spoken commands.
 - Spoken commands enter through the phone/USB-C EarPods. Speaker-identity verification is removed. This does not make every voice near the microphone an authorized command.
 - On verification failure, return to a designated landing point, subject to navigation/energy conditions and defined fallback behavior. Independent manual takeover remains available. Loss of biometric authorization does not shut down airborne motors.
-- The owner prefers the easiest practical locating method. A fixed verification area and approach position is the first proposal; geometry, separation and operating limits are not yet qualified.
+- The fixed verification zone and approach position are the settled initial locating method. Their physical geometry, separation and operating limits are not yet qualified.
 - Preserve offline operation and the existing iPhone 17 Pro direction. [Q72 build/signing research](../research/issue10-phone-build-options-2026-08-30.md) remains a dated evaluation path, not proof of an installed app. Existing account, deployment and spending boundaries remain.
 
 ## Proposed sequence

@@ -10,7 +10,7 @@ Blocked by: 02, 05, 06, 07, 09
 
 **Resolved: planning complete, Q75 approved.** The [approved closure](#2026-09-03--q75-approved-planning-closed-and-artifact-stage-authorized) freezes the conditional architecture and preserves Q1–Q74, including twenty useful minutes plus independent reserve. The former $800–$900 ceiling is superseded; minimize complete cost without weakening requirements.
 
-**Continue in [Issue11](11-hardware-build-package.md#current-checkpoint).** Detailed digital engineering is authorized there; physical acceptance, fabrication release and procurement remain separate gates. The [hardware package](../../../docs/hardware/baseline-r1/README.md) controls later corrections and current mass/cost limitations. PC implementation has its own tickets and scope.
+**Continue only in [Issue11](11-hardware-build-package.md#current-checkpoint) and [Issue12](12-phone-onboard-interaction.md#current-checkpoint).** Detailed hardware engineering and the actuator-free phone/onboard simulation are active; physical acceptance, fabrication release and procurement remain separate gates. The [hardware package](../../../docs/hardware/baseline-r1/README.md) controls later corrections and current mass/cost limitations. The PC product has no active implementation scope.
 
 ## Historical planning context
 
@@ -1015,3 +1015,7 @@ This intentionally revises the old requirement for both owner biometrics before 
 ### 2026-09-09 Delivery sequencing and pre-purchase assessment
 
 The owner agrees to source-backed feasibility calculations, CAD/structural checks, software/flight simulation and staged evidence before buying the complete aircraft, then requests repo alignment before continuing. The [phone/onboard entry point](../../../docs/phone-drone/README.md) records confirmed product choices separately from the proposed schedule. Issue12 owns a small interface and simulated first slice; Issue11 retains hardware feasibility/engineering. Neither a completed Windows product nor a completed phone app is a prerequisite for aircraft feasibility work. Physical qualification and procurement authorization remain separate; no printed manufacturing choice is implied.
+
+### 2026-09-10 PC retirement clarified as dormant, not a reference workstream
+
+The owner confirms that the standalone PC biometric application is no longer needed and must not cause further roadmap drift. Its source, tests, packaging, tickets and reports may remain as dated history, but they are not active reference tooling, a completion dependency, a cleanup task or evidence that advances the aircraft. Do not refresh PC test counts, finish its unresolved tickets or include PC work in goal-completion lists. Current delivery work proceeds through Issue11 hardware engineering and Issue12 phone/onboard interaction. Any future PC-product reactivation requires a new explicit owner direction; this clarification does not itself delete installed software, profiles or repository files.

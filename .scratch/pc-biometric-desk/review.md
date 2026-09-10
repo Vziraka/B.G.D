@@ -1,8 +1,8 @@
-# PC biometric software — specification and ticket review
+# PC biometric software — archived specification and ticket review
 
 Continue new-product planning at the [phone/onboard entry point](../../docs/phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
 
-**Current product status, September 9:** the owner has retired the standalone Windows app from the finished product, superseding the earlier completion direction below. Preserve this implementation, its tests and evidence for development/reference use. Its unfinished product acceptance is not a delivery requirement or a claimed pass. PC simulation and engineering continue to have a role. See the [latest product decision](../biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). The remaining content records the former app and its development history.
+**Controlling status:** retired and dormant. The app, ticket queue, tests, packaging, acceptance campaign and evidence-refresh work are outside the active product. The PC hosts new simulation and engineering without using this application as a product or prerequisite. Everything below is dated history. See the [latest clarification](../biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-10-pc-retirement-clarified-as-dormant-not-a-reference-workstream).
 
 ## Voice failure follow-up — 2026-09-06
 
