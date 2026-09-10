@@ -1,7 +1,13 @@
 # 04 — Retry, cancellation and restart protection
 
-Status: ready-for-agent
+**Product scope: retired from active delivery, September 9.** The standalone PC app and voice-identity check are removed from the finished product by the [scope amendment](../spec.md#current-product-scope-standalone-pc-app-retired). The status, dependencies, checkpoints and completion instructions below are historical, not an active PC-product work queue. Preserve code, tests, results and data protections; retirement neither passes unresolved acceptance nor authorizes capture, data deletion or uninstalling anything.
+
+Status: claimed
 Blocked by: 03
+
+## Current checkpoint
+
+September 9: the owner confirmed the full PC completion plan, including a protected local helper service and implementation before formal acceptance. Foundational protected-state and retry work is active. Ticket03 real verification evidence remains unresolved; this parallel preparation does not resolve its dependency or claim integrated acceptance. The main agent owns integration; bounded agents own the broker state machine and capture-device selection.
 
 **Specification:** [M1 PC biometric desk application](../spec.md)
 

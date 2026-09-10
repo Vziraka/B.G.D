@@ -6,6 +6,8 @@ Blocked by: 02, 05, 06, 07, 09
 
 ## Current checkpoint
 
+**Product-scope amendment, September 9:** the standalone PC app is retired from the finished product; the phone/onboard direction and unresolved design choices are recorded in the [latest decision](#2026-09-09-phone-and-onboard-direction-pc-product-retired). Q75 remains historical planning closure, subject to this later scope amendment.
+
 **Resolved: planning complete, Q75 approved.** The [approved closure](#2026-09-03--q75-approved-planning-closed-and-artifact-stage-authorized) freezes the conditional architecture and preserves Q1–Q74, including twenty useful minutes plus independent reserve. The former $800–$900 ceiling is superseded; minimize complete cost without weakening requirements.
 
 **Continue in [Issue11](11-hardware-build-package.md#current-checkpoint).** Detailed digital engineering is authorized there; physical acceptance, fabrication release and procurement remain separate gates. The [hardware package](../../../docs/hardware/baseline-r1/README.md) controls later corrections and current mass/cost limitations. PC implementation has its own tickets and scope.
@@ -1001,3 +1003,15 @@ The next stage is [issue 11: hardware build package](11-hardware-build-package.m
 ### Post-closure engineering note — 2026-09-03
 
 Issue11 found a genuine selected-interface error: the QS8-S item is a two-pack series adapter. The user's Q75 affected-subsystem authorization permits the [R1.1 correction](../../../docs/hardware/baseline-r1/README.md) to a single bareQS8 male and existing8AWG stock, without reopening the remaining hardware architecture. The new harness/pin/firmware/safety artifacts and19 drawing studies expose unfinished mechanical release details and mass/cost overruns. Those remain issue11 engineering, not a reversal of Q75, an endurance waiver, or a claim that physical testing has passed. No purchase or PC implementation occurred.
+
+### 2026-09-09 Phone and onboard direction; PC product retired
+
+The owner explicitly removes the standalone PC biometric app from the finished B.G.D product. Preserve existing code, tests and evidence as development/reference material; no code deletion, installed-service removal or biometric/profile deletion is requested. This later decision supersedes the earlier September 9 direction to finish the Windows product and its acceptance campaign. Unfinished PC-product tickets leave the active delivery plan; they are not deemed accepted or successfully validated. The PC remains available for engineering, configuration, simulation and testing.
+
+Confirmed design direction: use the phone and radio controller; spoken commands enter through phone/earbuds, without speaker-identity verification. After a deliberate launch request through the phone/controller, the desired interaction is automatic takeoff/approach, onboard owner face and liveness verification at a validated separation, then command access. The owner accepts return to a designated landing point on verification failure with independent manual takeover retained, and asks for the easiest practical way to locate the person. A fixed verification area/position is the current proposal, not a proven operating procedure.
+
+This intentionally revises the old requirement for both owner biometrics before every arming request. Pairing, initial owner enrollment, launch authorization, command-session security, verification geometry and approach/failure behavior still need design and validation. Existing flight-controller contracts must be reconciled before implementation; their historical all-path biometric gate is not silently declared implemented or applicable unchanged. The existing hardware pause for a possible printed redesign remains. Platform, payload, endurance/reserve and other requirements are unchanged except where explicitly amended above. No purchasing, paid-tool installation, fabrication or physical flight is authorized here.
+
+### 2026-09-09 Delivery sequencing and pre-purchase assessment
+
+The owner agrees to source-backed feasibility calculations, CAD/structural checks, software/flight simulation and staged evidence before buying the complete aircraft, then requests repo alignment before continuing. The [phone/onboard entry point](../../../docs/phone-drone/README.md) records confirmed product choices separately from the proposed schedule. Issue12 owns a small interface and simulated first slice; Issue11 retains hardware feasibility/engineering. Neither a completed Windows product nor a completed phone app is a prerequisite for aircraft feasibility work. Physical qualification and procurement authorization remain separate; no printed manufacturing choice is implied.

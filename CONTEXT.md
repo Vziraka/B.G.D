@@ -40,21 +40,25 @@ _Avoid_: Unresolved scope, assumed pass, waived requirement
 An enrolled person's facial reference used to compare later face captures for identity verification. A match is not by itself proof of liveness or permission to command the drone.
 _Avoid_: Uploaded photo, proof of liveness, 3D face model
 
-**Biometric command gate**:
-The authorization boundary combining verification of an enrolled person's face and voice with permission for the requested action. It is not a claim of perfect recognition or immunity to spoofing.
-_Avoid_: Impenetrable biometric lock, perfect match
+**Launch authority**:
+Permission for one paired phone or paired radio to request one prepared launch and verification approach. It is request-bound, short-lived and distinct from permission to issue spoken mission commands.
+_Avoid_: Biometric approval, reusable arm token, command session
 
-**Arming authorization**:
-Permission to enable the motors for a new flight. Once the biometric command gate is enabled, every new arming request requires verification of the owner's face and voice, including guest flights and requests from the radio or voice control.
-_Avoid_: Radio bypass, voice-only arming gate
+**Owner command session**:
+A permission created by onboard owner face and liveness verification for accepting new spoken mission commands during one flight session. Speech recognition identifies the requested action; it does not establish who spoke.
+_Avoid_: Voice identity, biometric arming token, permanent unlock
 
-**Emergency manual override**:
-The pilot's independent ability to take control and land safely during flight without another biometric check. It is not permission to bypass the biometric command gate when starting a new flight.
-_Avoid_: Biometric bypass, emergency unlock
+**Independent manual authority**:
+The paired radio pilot's ability to take control and land safely without another biometric check. It neither authorizes phone commands nor bypasses normal flight-controller safety checks.
+_Avoid_: Biometric bypass, phone permission, emergency unlock
+
+**Verification zone**:
+The preflight-defined place where the owner stands while the aircraft occupies its validated verification pose. It avoids searching for or following an unverified person before the owner check.
+_Avoid_: Dynamic owner tracking, arbitrary meeting point
 
 **Handheld voice controller**:
-The off-aircraft interface for an authorized person's voice commands and flight-status feedback. It is distinct from the aircraft's flight controller and the radio used for independent emergency manual control.
-_Avoid_: Flight controller, radio transmitter, onboard companion computer
+The phone and connected EarPods used for deliberate speech input and flight-status feedback during an owner command session. It is distinct from the aircraft's flight controller and the independent radio.
+_Avoid_: Flight controller, radio transmitter, speaker verifier
 
 **Useful flight time**:
 Time available for the drone's intended activity before using the separate energy reserved for reaching its landing destination and landing safely. It is not the total time until the battery is exhausted.

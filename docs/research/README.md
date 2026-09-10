@@ -1,10 +1,14 @@
 # B.G.D research index
 
+Continue new-product planning at the [phone/onboard entry point](../phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
+
+**Latest scope amendment, September 9:** the [phone/onboard product direction](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired) retires the standalone PC app. PC reports below remain development evidence, not an active Windows-product completion plan. Hardware remains paused for the proposed manufacturing change; simulation and feasibility investigation can inform that design discussion.
+
 Evidence library, not a work queue. Start with the [project map](../../.scratch/biometric-guard-drone/map.md), [PC app](../pc-biometric/README.md) or [hardware package](../hardware/baseline-r1/README.md). Read the report relevant to the current decision; a report's historical task boundary does not govern every later task.
 
 **Current decisions:** [Q75 closes Issue10](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#current-checkpoint) as planning complete. There is no fixed maximum hardware budget; minimize itemized complete cost without weakening approved features, safety, performance or validation. [Issue11](../../.scratch/biometric-guard-drone/issues/11-hardware-build-package.md#current-checkpoint) owns digital engineering and later corrections. Physical proof remains deferred to named tests; known design failures remain engineering work. Purchases are not authorized.
 
-**PC work is separate:** Q69/Q70 approved its [specification](../../.scratch/pc-biometric-desk/spec.md), test boundaries, eight-ticket breakdown and narrow tracking exception; UI B remains selected. Subsequent implementation and diagnostic work is recorded in [Ticket03](../../.scratch/pc-biometric-desk/issues/03-single-action-verification.md#current-checkpoint). The old planning-task exclusions do not prohibit separately authorized PC work; capture still needs its session terms.
+**PC work is historical:** Q69/Q70 and the former [specification](../../.scratch/pc-biometric-desk/spec.md) explain the preserved Windows implementation and evidence. The September 9 amendment removes its ticket queue, UI and acceptance campaign from current product delivery. Existing profiles and installed software remain protected; retirement authorizes neither capture nor deletion.
 
 Reports consolidated on 2026-08-30 retain source branch/commit or uncommitted-source hashes and dated status notes. Original evidence is preserved; consolidation does not revalidate changing claims. New reports state their own check dates and sources. Former $600/$800/$900 ceilings are historical policy.
 
@@ -25,6 +29,8 @@ Reports consolidated on 2026-08-30 retain source branch/commit or uncommitted-so
 | [Final compatibility audit, September3](final-compatibility-audit-2026-09-03.md) | Detailed component/interface evidence and rejected combinations. Its audit-time missing-artifact classifications are superseded where the final decision packet now supplies the paper design; received fit, fabrication and operation remain physical validation. |
 
 ## Historical research
+
+[Preserved propulsion sources](archive/propulsion-2026-09-03/README.md) retain the original numerical inputs and obsolete scripts as reference material; a current executable model remains to be reconstructed.
 
 Preserved evidence and decision history. Earlier budgets, candidates, proposed stops and task-specific implementation exclusions are not current instructions. Consult the current workstream ticket before acting.
 

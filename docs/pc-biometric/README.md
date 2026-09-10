@@ -1,10 +1,14 @@
 # PC Biometric Desk — development build 0.1.0
 
+Continue new-product planning at the [phone/onboard entry point](../phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
+
+**Current product status, September 9:** the owner has retired the standalone Windows app from the finished product, superseding the earlier completion direction below. Preserve this implementation, its tests and evidence for development/reference use. Its unfinished product acceptance is not a delivery requirement or a claimed pass. PC simulation and engineering continue to have a role. See the [latest product decision](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). The remaining content records the former app and its development history.
+
 Offline Windows desktop development app for owner enrollment and fresh face-and-voice verification of one harmless desktop action. UI B is selected. It does not authorize an aircraft.
 
-**Current:** Tickets01/02 are complete for their stated boundaries. [Ticket03](../../.scratch/pc-biometric-desk/issues/03-single-action-verification.md#current-checkpoint) remains unresolved and ready-for-human: a real take passed face, audio quality and words but failed speaker identity. The recording-readiness fix and opt-in voice consistency study are implemented; recognition improvement is unproven.
+**Current — September 9:** Tickets01/02 are complete for their stated boundaries. The owner approved completion of the PC implementation with hardware paused, UI B retained, PC/headset microphone support and a protected Windows helper. Retry/generation state, native service transport, Account/Recovery workflows, microphone selection and offline packaging are implemented in the working tree and undergoing integration. See the [installed boundary](installed-boundary.md) for evidence and unfinished checks. This is not yet an implementation-complete or security-accepted release.
 
-**Next:** use the [verification boundary](verification-boundary.md#recording-readiness-and-voice-consistency-study--2026-09-06) for the pending, separately consented study and continue diagnosis from its evidence. Ordinary verification must preserve the enrolled profile, model and thresholds unless a subsequent change is justified and authorized. Capture is blocked by default; participant, access, retention and deletion terms remain session-specific.
+**Recognition:** [Ticket03](../../.scratch/pc-biometric-desk/issues/03-single-action-verification.md#current-checkpoint) remains unresolved: a prior real take passed face, audio quality and words but failed speaker identity. The owner authorized a short development study on September 9; results are being collected. Checks preserve the profile. [Spoof-defense qualification](security-matrix.md) is separate from identity matching and final attack acceptance. The formal five-day usability and attack campaign are deferred until after implementation, not waived.
 
 The approved [spec](../../.scratch/pc-biometric-desk/spec.md) and [ticket graph](../../.scratch/pc-biometric-desk/review.md#published-tickets) define requirements and dependencies. [Enrollment evidence](enrollment-boundary.md) and [verification evidence](verification-boundary.md) hold the detailed results.
 

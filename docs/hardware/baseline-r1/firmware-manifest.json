@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "baseline": "BGD-hardware-r1-Q75",
   "prepared_date": "2026-09-03",
   "purpose": "Implementation design and commissioning contract; not a directly loadable parameter file",
@@ -38,12 +38,12 @@
       "url": "https://firmware.ardupilot.org/Copter/stable/MicoAir743v2/features.txt",
       "sha256": "924ae19d313f3ed30fb232af8d61e8260db68807db7db0dad67e1b124edc4cc7"
     },
-    "mandatory_bgd_gate": {
+    "mandatory_bgd_authority": {
       "status": "IMPLEMENTATION_REQUIRED",
-      "source_demonstrated_gap": "Stock auxiliary scripting authorization is outside force-arm mandatory checks; a script can be absent or leave a stale passed authorizer",
+      "source_demonstrated_gap": "Stock auxiliary scripting authorization does not supply paired-sender, launch-request, boot/session, one-use command-session or force-path enforcement",
       "production_source_commit": null,
       "production_binary_sha256": null,
-      "required_properties": ["deny from startup", "all disarmed-to-armed entry paths", "fresh owner face-and-voice action grant", "aircraft and boot and request binding", "atomic one-use consumption", "normal flight checks additive", "authorization loss must not shut motors off in flight", "independent emergency RC and safe landing retained"]
+      "required_properties": ["M1 manual profile separately qualified", "paired radio launch edge", "paired phone response to aircraft-local 15-second launch challenge", "aircraft and configuration and boot and flight-session and request binding", "atomic one-use launch consumption", "onboard owner face and liveness grants spoken-command session only", "normal flight checks additive", "phone or biometric loss must not shut motors off in flight", "independent manual radio and safe landing retained"]
     }
   },
   "design_parameters_not_for_bulk_upload": {
@@ -176,7 +176,7 @@
     "status": "SOURCE_TARGET_PINNED_DEVICE_BINARY_PROVISIONING_PENDING"
   },
   "release_holds": [
-    "Mandatory FC all-arming gate implemented and negative-tested; stock upstream auxiliary scripting is insufficient",
+    "FC paired-launch and owner-command authority implemented and negative-tested; stock upstream auxiliary scripting is insufficient",
     "FC cargo supervisor implemented with independent bounded lease and no alternate writer bypass",
     "Exact reviewed application/firmware binaries and complete parameter/model readbacks hashed",
     "Received SKU/revision/bootloader/AM32/radio/sensor/charger identities and rollback backups archived",

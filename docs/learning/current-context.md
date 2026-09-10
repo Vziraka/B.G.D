@@ -22,3 +22,7 @@ The owner is new to hardware and is building B.G.D with other AI agents. This le
 ## Source hierarchy
 
 Project issues and their current comments are authoritative for project decisions. Research reports provide evidence and may be historical. These learning notes are explanatory only.
+
+## Current product direction
+
+Use the [current project map](../../.scratch/biometric-guard-drone/map.md) for the latest phone/onboard direction and proposed work sequence. The standalone PC app is retired from the finished product; the PC remains useful for engineering, development and simulation. Preserve its existing implementation and evidence as references without teaching the former Windows product or its acceptance queue as mandatory prerequisites. Learning supports the current work and does not gate routine engineering progress.

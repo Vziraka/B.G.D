@@ -33,6 +33,6 @@ Could-not-verify items (community size comparisons, some release-version history
 
 ### 2026-08-30 — Shared research and current scope
 
-The ArduPilot research direction is retained. The board choice is reopened; compatibility and enforcement of the confirmed biometric gate on every new arming request still need validation. Confirmed scope is recorded in [Lock the milestone ladder](10-milestone-ladder.md#comments).
+The ArduPilot research direction is retained. The later Q75 hardware selection and R1.1 corrections control the board path. The September 9 product amendment replaces biometric approval before every arm with the [v1 phone/onboard interaction contract](../../../docs/phone-drone/interaction-contract.md): paired-device launch authority, onboard face/liveness before spoken commands, and independent radio takeover. Flight-controller compatibility and enforcement remain implementation and validation work.
 
 The original question and answer are retained as history. The report is now available in the main checkout with source provenance; consolidation did not revalidate its external claims or change this research ticket's resolved status.

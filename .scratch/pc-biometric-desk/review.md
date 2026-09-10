@@ -1,5 +1,9 @@
 # PC biometric software — specification and ticket review
 
+Continue new-product planning at the [phone/onboard entry point](../../docs/phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
+
+**Current product status, September 9:** the owner has retired the standalone Windows app from the finished product, superseding the earlier completion direction below. Preserve this implementation, its tests and evidence for development/reference use. Its unfinished product acceptance is not a delivery requirement or a claimed pass. PC simulation and engineering continue to have a role. See the [latest product decision](../biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). The remaining content records the former app and its development history.
+
 ## Voice failure follow-up — 2026-09-06
 
 The latest pasted diagnostic report isolates speaker matching as the failed stage: face,
@@ -493,4 +497,4 @@ Preserve the existing eight-ticket graph. Implementation and actual acceptance r
 5. **Finish UI B and offline installation/handoff.** Complete Account/Recovery screens, explicit device selection, cooldown and failure guidance, keyboard/accessibility work, privacy cleanup and the protected app/helper installation/update/removal lifecycle. Provide an offline bundle and reproducible launch/check instructions. Code signing, new dependencies or paid services are not silently assumed.
 6. **Verify and hand off the implementation.** Run meaningful integrated tests, strict typing and fresh regression checks; document known limitations and frozen version/configuration. Hand off as implementation-complete only when its stated checks pass. Keep Ticket08's five-day/100-attempt, timing, nonowner, attack and remaining state evidence visibly pending until separately performed.
 
-Grilling decisions above are confirmed individually; the assembled execution plan awaits the user's shared-understanding confirmation. This record performs no installation, new capture, profile mutation or application implementation.
+The user confirmed the assembled execution plan with "yes" on September 9. Implementation is authorized across the approved PC scope. Begin protected recurring-state handling, device selection and early security/recognition feasibility work. Real capture and retained test assets still require concrete session consent; the formal acceptance campaign remains later. Hardware stays paused.

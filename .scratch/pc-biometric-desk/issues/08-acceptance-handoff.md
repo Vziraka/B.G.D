@@ -1,7 +1,13 @@
 # 08 — Acceptance evaluation and local handoff
 
+**Product scope: retired from active delivery, September 9.** The standalone PC app and voice-identity check are removed from the finished product by the [scope amendment](../spec.md#current-product-scope-standalone-pc-app-retired). The status, dependencies, checkpoints and completion instructions below are historical, not an active PC-product work queue. Preserve code, tests, results and data protections; retirement neither passes unresolved acceptance nor authorizes capture, data deletion or uninstalling anything.
+
 Status: ready-for-agent
 Blocked by: 05, 06, 07
+
+## Current checkpoint — September 9
+
+The owner chose implementation first and formal trials later. Offline snapshot packaging and the protected service installation/update/removal lifecycle are being built and tested. This does not mark the five-day trial or any attack/state acceptance criterion passed. The current local Git checkpoint is `9805c67`; subsequent implementation remains uncommitted. Hardware work is paused for the separately planned 3D-printing change.
 
 **Specification:** [M1 PC biometric desk application](../spec.md)
 

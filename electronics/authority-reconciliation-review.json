@@ -1,0 +1,25 @@
+{
+  "status": "REVIEWED_PRODUCT_AUTHORITY_UPDATE_CIRCUIT_UNCHANGED",
+  "date_local": "2026-09-10",
+  "controlling_contract": "docs/phone-drone/interaction-contract.md",
+  "reviewed_input_changes": [
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.json",
+      "before_sha256": "e9538ac3e41c5cf98d6e7ba3fed8cfe4abec920f3cbfb28331dc50571fd8b170",
+      "after_sha256": "7c21a7930929facbf29bbf0925beb0b2bbfc9e7b16675010eb72e40fe12d2343"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.md",
+      "before_sha256": "2392694f85c726b42a56a336d980b1aae58e59deb7659277d52c73d057e00b39",
+      "after_sha256": "5a496182804c619e93dc4c38729db934acb0974ed22f064727400d6d7f1bfff7"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/safety-state-tables.md",
+      "before_sha256": "520e53e84c3edd81a2643ad7bb95a840829644e228b3e86dfc58e0b5bb8046b4",
+      "after_sha256": "92e24cba9ef37dcd8738f85bb3089528f56da5fa4ffd65cab6c02dd4ec5dc8b5"
+    }
+  ],
+  "electrical_assessment": "The product authority changed from face-plus-voice before every arm to paired launch plus onboard face/liveness command sessions. No selected part, net, pin, rail, connector, harness record or native KiCad source changed. The FC/Pi communication and independent-radio topology still supports the revised contract; software implementation and validation remain held.",
+  "native_sources_changed": [],
+  "physical_qualification": "NONE"
+}

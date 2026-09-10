@@ -1,5 +1,13 @@
 # M1 PC biometric desk application
 
+Continue new-product planning at the [phone/onboard entry point](../../docs/phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
+
+## Current product scope: standalone PC app retired
+
+The owner's later September 9 decision removes this Windows app from the finished product and supersedes the completion direction below. Existing implementation, tests and records remain development/reference material; unfinished PC-product tickets are no longer the delivery queue and are not declared accepted. The PC still supports simulation, engineering and testing. Preserve profiles and installed software; retirement is not deletion or uninstall authorization.
+
+The replacement phone/controller and onboard face/liveness direction is recorded in [the controlling product decision](../biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-09-phone-and-onboard-direction-pc-product-retired). Pairing, enrollment and the revised flight/command authorization contract remain under design. Sections below retain the former Windows-product specification and history.
+
 ## Approved completion direction — 2026-09-09
 
 The owner requests completion of the PC application while hardware work is paused for a future change involving 3D printing. Preserve the existing owner-only, offline Windows scope and security requirements.
@@ -12,7 +20,7 @@ The owner requests completion of the PC application while hardware work is pause
 - Include a protected local Windows helper service for recurring retry state and profile/recovery publication, subject to security testing. Administrator approval belongs to installation/update/removal; ordinary use stays unelevated. Start the helper when needed, expose no network endpoint and protect the installed verifier/runtime. An owner account identity or client-supplied success flag alone must not authorize a state transition.
 - The owner authorizes a reviewed local Git checkpoint of current project work. This supersedes historical no-commit restrictions for that checkpoint; it does not authorize a push or change biometric-data handling.
 
-The requested grilling session is in progress; unresolved user choices belong in the current review record. This amendment records confirmed decisions only.
+The owner confirmed the assembled execution plan on September 9. The [review record](review.md#pc-completion-grilling--2026-09-09) records all six design decisions and the authorized implementation sequence. Formal acceptance remains a later phase.
 
 ## Approved Ticket 02 amendment — 2026-09-03
 

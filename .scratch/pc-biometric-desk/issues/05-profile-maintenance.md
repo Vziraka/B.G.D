@@ -1,7 +1,13 @@
 # 05 — Profile maintenance and lost-code replacement
 
-Status: ready-for-agent
+**Product scope: retired from active delivery, September 9.** The standalone PC app and voice-identity check are removed from the finished product by the [scope amendment](../spec.md#current-product-scope-standalone-pc-app-retired). The status, dependencies, checkpoints and completion instructions below are historical, not an active PC-product work queue. Preserve code, tests, results and data protections; retirement neither passes unresolved acceptance nor authorizes capture, data deletion or uninstalling anything.
+
+Status: claimed
 Blocked by: 03
+
+## Current checkpoint — September 9
+
+The confirmed PC completion plan authorizes implementation while formal acceptance waits. `Maintenance` and the UI B Account page now implement reference updates and lost-code replacement through the protected helper generation writer. Both existing biometrics and fresh owner Windows verification are required; pending reference/code changes do not grant a desktop action. Synthetic workflow tests cover prerequisites, cancellation, account changes, expiry and uncertain publication replies; native Tk tests cover the separate reference confirmation and code-copy/save paths. An independent security review and installed-helper integration remain in progress. Ticket 03's real speaker mismatch is unresolved, so this checkpoint does not close that dependency or establish real maintenance acceptance.
 
 **Specification:** [M1 PC biometric desk application](../spec.md)
 

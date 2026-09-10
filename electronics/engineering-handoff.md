@@ -3,6 +3,10 @@
 Status: **E1 logical circuit with September 6 UTC evidence continuation delivered; Issue 11 remains claimed and incomplete. No fabrication, procurement or power release.**
 Local date: 2026-09-05 (UTC work continues September 6).
 
+## Product-authority reconciliation — September 10
+
+The [phone/onboard v1 contract](../docs/phone-drone/interaction-contract.md) supersedes the face-plus-voice all-arming policy. The firmware and safety inputs now distinguish paired-device launch, onboard face/liveness command sessions and independent manual radio authority. The [review record](authority-reconciliation-review.json) confirms that this changes no selected electrical part, net, pin, rail, connector, harness record or native KiCad source. `source-manifest.json` carries the new input hashes. Logical-circuit evidence remains scoped to connectivity; the revised software authority still requires implementation and simulated/bench validation.
+
 ## Latest continuation — September 6 UTC
 
 - Coordinated with both existing tasks. Mechanical continues conservative design without TBS correspondence, using its 45 mm partial study and RF-GATE-01. PC Ticket 02 has no new aircraft interface requirements and remains independent. Earlier mechanical review-stop statements are superseded.
@@ -38,7 +42,7 @@ Source checkout: main at `68e00796f56d1975b05efa8e8f3c5c5fd504b6ac`, with extens
 ## Software dependencies
 
 - Existing PC Ticket02 has no aircraft electrical interface and blocks none of this logical wiring work. Do not request PC enrollment code changes for electrical progress.
-- Future onboard/FC work owns startup-denied all-path arming, authenticated one-use grants and independent in-flight manual landing; stock ArduPilot is not the approved gate.
+- Future onboard/FC work owns paired-radio and one-use paired-phone launch enforcement, onboard face/liveness command sessions and independent in-flight manual landing; stock ArduPilot does not implement the [v1 authority contract](../docs/phone-drone/interaction-contract.md).
 - FC owns exclusive M7 release output, bounded coil energization and timeout-to-OFF even with stale companion output. Exact maximum pulse/lease and servo endpoints remain unresolved.
 - Pi owns GPIO18 exclusive waveform use, UART0/no serial console, switch debounce/plausibility and persistent scanner identity. These are future hardware-software contracts, not completed PC features.
 

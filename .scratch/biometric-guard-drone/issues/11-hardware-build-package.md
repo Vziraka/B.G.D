@@ -6,11 +6,13 @@ Blocked by: 10
 
 ## Current checkpoint
 
-**Claimed and unreleased; hardware paused by the owner on September 9.** The owner requests PC application completion first and anticipates a substantial hardware change involving 3D printing. Preserve the current baseline and holds; no printed redesign or manufacturing decision has been approved. Earlier digital-execution permissions do not override this pause.
+**Claimed and unreleased.** The owner's later September 9 decision retires the standalone PC product; completing it is no longer a prerequisite for hardware work. The owner agreed to a pre-purchase feasibility process, then requested repository/roadmap alignment before further investigation. Detailed printed redesign remains unselected while manufacturing scope is clarified.
 
-**On resumption:** settle the 3D-printing design scope and assess affected interfaces before continuing the isolator/fastener joint, AIO service corridor and [electrical evidence holds](../../../electronics/engineering-handoff.md). H01–H12, electrical protection/rating evidence and mass/cost reconciliation remain unfinished. [Received-frame measurements](../../../cad/received-frame-inspection-gate.md) still gate sensitive fabrication of the preserved design.
+**Next:** repository authority alignment is complete. Resume component-evidence and mass/endurance feasibility work; compare manufacturing options when the print scope is settled. The [parallel sequence](../../../docs/phone-drone/README.md) lets this proceed alongside Issue12's simulated phone/onboard work. Preserve the existing baseline as evidence, without treating it as a qualified revised aircraft.
 
-Q75/Q74 and all approved requirements remain. This ticket does not authorize purchases, physical fabrication/operation, firmware upload or PC-ticket implementation; the PC workstream has its own authorization. Historical checkpoints below retain their evidence but do not reinstate superseded stops.
+H01–H12, electrical protection/rating evidence and mass/cost reconciliation remain unfinished. [Received-frame measurements](../../../cad/received-frame-inspection-gate.md) still gate sensitive fabrication of the preserved frame. The revised launch/face-verification contract is now reconciled in the [v1 interaction contract](../../../docs/phone-drone/interaction-contract.md), firmware manifest, safety tables and validation register; implementation and physical validation remain future work.
+
+No procurement, fabrication, physical operation or firmware upload is authorized by this repository alignment. Payload, endurance/reserve and unrelated requirements remain.
 
 ## Scope
 
@@ -23,7 +25,7 @@ No hardware purchase without explicit procurement authorization. No physical ope
 - Every custom assembly in the buildability gate has a drawing or an explicit evidence-based design-release hold; never substitute an unmeasured dimension with an invented fact.
 - Every electrical interface has source/destination pins, power domain, gauge, length, connector/termination, protection and supporting hardware.
 - Firmware is tied to an immutable release/commit and artifact hash; measured commissioning values remain distinct from paper-fixed values.
-- Safety/state tables preserve M1 manual learning, later biometric-enabled arming, independent in-flight takeover, protected reserve and recipient-only landed/disarmed release.
+- Safety/state tables preserve M1 manual learning, later paired-device launch plus onboard face/liveness command sessions, independent in-flight takeover, protected reserve and recipient-only landed/disarmed release.
 - Cross-check geometry, source provenance, net/resource conflicts, quantities, mass/cost impact and requirement traceability. A package with unresolved design holds is not marked released for fabrication or flight.
 
 ## Comments
@@ -141,3 +143,9 @@ Mechanical route constraint: include all supplied 14 AWG FHM holder pigtail and 
 ### 2026-09-09 — Hardware paused; current work preserved
 
 The owner requests a reviewed Git checkpoint, completion of the PC application, and a grilling session for its plan/design. Hardware work is paused for a future substantial change involving 3D printing. Preserve the existing engineering and open holds. No printer, material, printed component, altered geometry or manufacturing method has been selected by this request. The hardware pause supersedes earlier directions to continue digital engineering until the owner resumes it.
+
+### 2026-09-09 Repository alignment before pre-purchase review
+
+The owner agreed to staged pre-purchase assessment using source-backed calculations, CAD/structural checks, flight/software simulation and targeted component tests before full procurement. The owner then requested updating the repo first and asked whether phone development should precede hardware work. The proposed schedule in the phone/onboard entry point defines a small shared interface and simulated first slice, with phone software and hardware feasibility proceeding as parallel workstreams. This is sequencing, not approval of a printed airframe, purchases, physical tests or a new hardware selection.
+
+Initial read-only review reproduced the historical endurance arithmetic and located original numerical inputs/scripts in Windows Temp; the preserved sources are not yet a runnable current-aircraft model. The 146 Wh moderate-case twenty-minute power ceiling is 366 W with the stated 4 Wh pre-reference allowance and 20 Wh reserve floor, correcting the old report's roughly 370 W statement. Current mass is still unreconciled. Further feasibility investigation was paused for this repo update; preserve these findings for resumption without treating them as new flight predictions.
