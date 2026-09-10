@@ -27,6 +27,7 @@ No authority implies another. A launch request does not enable spoken commands; 
 ### Owner enrollment
 
 - Owner face enrollment occurs in a dedicated, landed, disarmed, motor-inhibited service session using the aircraft's actual camera and onboard model path. The phone guides the session but never supplies a client-asserted success result.
+- During enrollment, the phone provides a temporary live guidance preview from that camera with framing guides and plain-language cues such as move left, step back, improve lighting and hold still. Preview overlays and cues are advisory; only the onboard model may accept identity and liveness evidence.
 - Enrollment begins only from an authenticated paired phone after the physical radio maintenance gesture. It records an encrypted face reference and model/version metadata, not an ordinary raw-photo archive.
 - Updating the face reference requires a fresh successful check against the current reference or the recovery secret plus the radio maintenance gesture. The old reference remains active until the replacement is fully validated and committed.
 - Recovery can authorize re-enrollment but never launch, commands, arming or cargo release. Missing, corrupt, rolled-back or incomplete ownership state fails closed.
@@ -34,6 +35,7 @@ No authority implies another. A launch request does not enable spoken commands; 
 ### Offline transport
 
 - The aircraft hosts a private local Wi-Fi network for command, status and later video. Flight operation must not require internet or a cloud service.
+- Enrollment and verification video uses a separate mutually authenticated, encrypted media channel. It is displayed only for the active guidance session, is not recorded by default on either endpoint and stops on completion, cancellation, disconnect, app termination or session expiry. Loss of video cannot be interpreted as biometric success.
 - The protocol uses mutually authenticated encrypted sessions above the local network. Device keys, aircraft ID, configuration ID and boot epoch bind every connection. Bluetooth may later assist discovery but is never an authority path.
 - Pairing credentials and biometric/recovery material are excluded from hosted builds, telemetry and source control. Actual iPhone networking, background behavior, range, coexistence and power remain device-validation gates.
 
@@ -47,6 +49,7 @@ No authority implies another. A launch request does not enable spoken commands; 
 ### Verification pose and owner check
 
 - The initial locating method is a fixed verification zone defined relative to the confirmed launch/return point. The phone tells the owner where to stand; the aircraft approaches the configured pose rather than searching for or following an unverified person.
+- While the aircraft is stably occupying the verification pose, the phone shows the live guidance preview with a face-framing target and non-authoritative alignment/liveness cues. The UI distinguishes camera connectivity, usable framing and onboard verification progress; it never depicts a phone-generated match as aircraft approval.
 - Physical distance, altitude, camera angle, lighting, wind and exclusion limits remain disabled configuration until validated. Simulator defaults are illustrative and must be labelled as such.
 - At the pose, the aircraft performs onboard face identity and liveness together. A client-supplied boolean, still photo, recorded video or stale prior result cannot satisfy the check.
 - One explicit retry may be requested within **30 seconds** while the aircraft remains in a validated stable pose. A second failure, timeout, disconnect or invalid pose ends verification and grants no command session.
@@ -76,7 +79,7 @@ The external message kinds are deliberately small:
 | --- | --- |
 | `launch_challenge` / `launch_request` / `launch_result` | Issue a locally timed challenge, then request and accept/reject one launch/approach attempt |
 | `flight_status` | Report simulator/real origin, readiness, armed/airborne/approach/landed state and relevant fault |
-| `verification_status` | Report pending/pass/fail/timeout without exposing biometric material |
+| `verification_status` | Report pending/pass/fail/timeout plus non-sensitive framing guidance without exposing biometric material |
 | `command_session` | Report granted/denied/expired/revoked owner command permission |
 | `command_request` / `command_result` | Request and acknowledge one bounded command |
 | `cancel_request` | Cancel one still-pending request; cancellation is not a flight mode |
@@ -89,8 +92,8 @@ Pairing, enrollment and recovery use a separate maintenance interface and cannot
 
 Rejection returns to `GROUND_READY`. Verification failure, timeout or disconnect while airborne enters `PROTECTIVE_RECOVERY`, then `LANDED`. Cancellation affects only a named pending request. Restart creates a new boot epoch and invalidates every prior request and permission.
 
-The simulator must demonstrate success, launch rejection, verification failure, retry exhaustion, stale/replayed result rejection, disconnect and restart. It must expose no actuator adapter and must label every state and face result `SIMULATED`.
+The simulator must demonstrate success, launch rejection, verification failure, retry exhaustion, stale/replayed result rejection, disconnect and restart. It must also demonstrate a clearly labelled simulated guidance preview, advisory alignment cues and preview loss without turning any of them into biometric success. It must expose no actuator adapter and must label every state, preview and face result `SIMULATED`.
 
 ## Deferred evidence and later decisions
 
-The following remain explicit gates rather than assumed facts: actual iPhone build/signing; EarPods control delivery while locked/backgrounded; local-Wi-Fi range and coexistence; verified physical approach geometry; real face/liveness accuracy and spoof resistance; onboard storage and rollback resistance; flight-controller integration; safe return/degraded recovery; power, thermal and endurance impact; guest command policy; and recipient enrollment/release behavior.
+The following remain explicit gates rather than assumed facts: actual iPhone build/signing; real-camera preview latency, quality, privacy and app lifecycle behavior; EarPods control delivery while locked/backgrounded; local-Wi-Fi range, video capacity and coexistence; verified physical approach geometry; real face/liveness accuracy and spoof resistance; onboard storage and rollback resistance; flight-controller integration; safe return/degraded recovery; power, thermal and endurance impact; guest command policy; and recipient enrollment/release behavior.

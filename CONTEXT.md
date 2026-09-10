@@ -56,6 +56,10 @@ _Avoid_: Biometric bypass, phone permission, emergency unlock
 The preflight-defined place where the owner stands while the aircraft occupies its validated verification pose. It avoids searching for or following an unverified person before the owner check.
 _Avoid_: Dynamic owner tracking, arbitrary meeting point
 
+**Live guidance preview**:
+A temporary, encrypted view from the aircraft's actual camera that helps the owner frame their face and follow enrollment or verification instructions. It may carry non-authoritative alignment guidance, but it never supplies identity, liveness or command permission and is not recorded by default.
+_Avoid_: Phone-side verification, biometric result, pilot video recorder
+
 **Handheld voice controller**:
 The phone and connected EarPods used for deliberate speech input and flight-status feedback during an owner command session. It is distinct from the aircraft's flight controller and the independent radio.
 _Avoid_: Flight controller, radio transmitter, speaker verifier
