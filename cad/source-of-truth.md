@@ -2,8 +2,8 @@
 
 ## Authority order
 
-1. Approved project requirements and the issue10/Q75 record define required behavior, capability, safety and acceptance. Q74's 20 useful minutes plus independent reserve cannot be relaxed by CAD or convenience.
-2. Q75 plus the narrowly authorized R1.1 interface corrections define the conditional hardware baseline. Missing CAD is never permission to substitute a component.
+1. [Issue10 current requirements](../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#current-checkpoint) define the revised product. Older Q75, cargo, endurance and manufacturing restrictions are historical where superseded.
+2. Architecture, components and manufacturing methods are open for evidence-based comparison. R1/R2 and X650 records are configuration-specific candidate evidence; current acceptance requires a newly reconciled selected configuration.
 3. The inspected Fusion master assembly will become the mechanical and physical-integration source of truth: installed position, orientation, mounting, motion, keep-outs, routing volumes, preliminary mass properties and custom part geometry.
 4. KiCad source schematics will become the electrical connectivity source of truth. The reviewed harness CSV remains the wire-level cut/termination source until it is generated from or reconciled with KiCad. Any disagreement is a release blocker.
 5. This repository is the engineering record for scripts, source metadata, interchange models, drawings, KiCad sources, harness definitions, pinouts, manifests and reviews. The [first local native snapshot](assemblies/reference-r1-manifest.json) is a partial reference/adapter study, not a released aircraft. The September 9 user-authorized Git checkpoint preserves the named reference-r1 and AIO R3 native snapshots/previews and the reviewed electrical netlist, PDF and ERC result through exact export ignore exceptions. Other generated exports remain ignored. A local commit does not establish remote backup or engineering release.
@@ -16,7 +16,7 @@
 - Every model directory carries source URL, immutable revision/hash when available, retrieval date, units, transformation history, confidence and known omissions.
 - Generated/exported artifacts carry source path/revision and generation time in a sibling manifest. Cache, autosave and temporary files are ignored.
 - Fusion fit can support `VERIFIED DIGITALLY` only for the modeled static geometry and stated tolerances. It cannot prove stiffness, vibration, thermal behavior, connector seating, dynamic blade flex, endurance, flight control or workmanship.
-- A received-part discrepancy, genuine interface incompatibility or failed requirement reopens only the affected subsystem. Approved behavior remains fixed and cost is minimized within it.
+- Select the design that meets current goals at credible complete cost; changes may cross subsystem boundaries when justified. Preserve interface traceability and revise affected evidence. Product-goal changes follow CLAUDE.md; historical hardware freezes do not constrain the reopened architecture.
 - No fabrication file is released until its source model, dimensioned drawing, material, manufacturing method and validation gates pass review.
 
 ## Required release reconciliation

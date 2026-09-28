@@ -1,5 +1,9 @@
 # Issue 11 electrical engineering handoff
 
+**Superseded for current-product requirements — September 10 product reset.** The [current requirements](../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#current-checkpoint) reopen architecture, remove cargo and require ten useful minutes excluding takeoff/landing. This document and its linked configuration files preserve earlier design evidence, not current component mandates or revised acceptance. Historical pass/fail results remain unchanged for their original inputs. Reconcile retained interfaces and validation principles against the new configuration before reuse.
+
+**September10 R2 continuation:** the [selected local corrections, native carrier layouts and verification](../docs/hardware/engineering-r2-2026-09-10/electrical-selection.md) now govern the affected electrical interfaces. E1 below remains the preserved logical reference; carrier design does not release the full harness. The [integrated decision report](../docs/prepurchase-decision-2026-09-10.md) supersedes older mass/energy conclusions. The retired PC product has no current engineering dependency.
+
 Status: **E1 logical circuit with September 6 UTC evidence continuation delivered; Issue 11 remains claimed and incomplete. No fabrication, procurement or power release.**
 Local date: 2026-09-05 (UTC work continues September 6).
 
@@ -155,7 +159,7 @@ Work that must wait:
 
 1. Physical harness drawings, cut lengths, connector facing and strain relief await confirmed mechanical datums/routes, travel envelopes and exact terminal evidence.
 2. Final release behavior awaits future FC/onboard timing, startup and fault contracts plus solenoid duty evidence. **PC Ticket 02 does not block this electrical work and requires no change.**
-3. Any release, manufacturing package or power qualification awaits the listed physical acceptance evidence. Q74 still requires 20 useful minutes plus reserve; this package does not establish that result.
+3. Any release, manufacturing package or power qualification awaits the listed physical acceptance evidence. Q74 now requires 11 useful minutes plus unchanged independent reserve under the September 10 owner amendment; this package does not establish that result.
 
 ## Integration warnings for the other owners
 

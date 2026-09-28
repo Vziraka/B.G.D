@@ -5,11 +5,11 @@
     "docs/hardware/baseline-r1/harness-netlist.csv": "6198de86385349f74dcdf2b960599a3dbef84609919ba4ffa3978621f6c55692",
     "docs/hardware/baseline-r1/pin-allocation.csv": "8adfed09dcfcc6acd3e9f67a4a1731fd2727c14bc5005b657771b7a6353da23c",
     "docs/hardware/baseline-r1/electrical-build.md": "26aa99202584c33d2a06907a7bdd1fd005823df09fb4908925b71cdb58b3ae8f",
-    "docs/hardware/baseline-r1/firmware-manifest.json": "7c21a7930929facbf29bbf0925beb0b2bbfc9e7b16675010eb72e40fe12d2343",
-    "docs/hardware/baseline-r1/safety-state-tables.md": "92e24cba9ef37dcd8738f85bb3089528f56da5fa4ffd65cab6c02dd4ec5dc8b5",
+    "docs/hardware/baseline-r1/firmware-manifest.json": "9d8a5dbcae1b1abf0dc6480b4c68cf2d415b4bc28aa73ece6be2db02f8cc5c82",
+    "docs/hardware/baseline-r1/safety-state-tables.md": "8459c2d5aadbd99251c5962750799dcc3e9485cd70c6b418073d927e9b670537",
     "cad/component-inventory.csv": "6c460b52d7f96ca9a1a4bfbce5f951b2c055a4f07ba42e7dc64a076327570501",
     "cad/engineering-progress-2026-09-05.md": "52988e047befb576eb17e4b36b79f9a69a85922badff2583e32ad7c51b420f54",
-    "docs/hardware/baseline-r1/firmware-manifest.md": "5a496182804c619e93dc4c38729db934acb0974ed22f064727400d6d7f1bfff7",
+    "docs/hardware/baseline-r1/firmware-manifest.md": "3672531f4b1393fa2d26c055f36d4d576b6a7fe42f888dc5c8fe07e5dca8ac7e",
     "cad/robust-aio-review.md": "7af2a75442b5086149b4d37fba183fa4fcb3c8af2e6db19052e7dbfebbc5c40b",
     "cad/received-frame-inspection-gate.md": "db2772a71f16ee44ed0d064c84bae29be61190bb279bc608f0a0f74dac68359e",
     "electronics/build_schematic.py": "6bb5e3afa12937a8c75809736766ed211e580f4aef45830f7382acd0e8e59bfa",
@@ -50,5 +50,31 @@
     "electronics/schematics/bgd-master/bgd-master.kicad_sch": "042deabb0b2f5bebf118da79bf823aa21d0f12573b35a2f308fa28701c4c6a32",
     "electronics/schematics/bgd-master/bgd.kicad_sym": "543de79d337beb4a663c0bd598e25cf9c0096e0e0a60ce4d0003804b8018fe03",
     "electronics/schematics/bgd-master/sym-lib-table": "9d94c87c427046657771e655e9e3b3a70d7c1b65222dbbf2f031ccdfec6ad351"
+  },
+  "product_reset_review": {
+    "date": "2026-09-10",
+    "applicability": "HISTORICAL_CONFIGURATION_ONLY",
+    "current_product_acceptance": false,
+    "reviewed_inputs": [
+      {
+        "path": "docs/hardware/baseline-r1/firmware-manifest.json",
+        "previous_sha256": "63b1d04b0a2a97747c8f6ef2da69a56616883003437225ed2f35e70687ac0015",
+        "current_sha256": "9d8a5dbcae1b1abf0dc6480b4c68cf2d415b4bc28aa73ece6be2db02f8cc5c82",
+        "review": "Only applicability notice/metadata and line-ending normalization; historical engineering values unchanged."
+      },
+      {
+        "path": "docs/hardware/baseline-r1/firmware-manifest.md",
+        "previous_sha256": "959edb624d52476de7c7ce616681a87688ca205f2d63ccb0ac717401a664a4d0",
+        "current_sha256": "3672531f4b1393fa2d26c055f36d4d576b6a7fe42f888dc5c8fe07e5dca8ac7e",
+        "review": "Only applicability notice/metadata and line-ending normalization; historical engineering values unchanged."
+      },
+      {
+        "path": "docs/hardware/baseline-r1/safety-state-tables.md",
+        "previous_sha256": "0f79caf4d448ee4fae0941a02e73716098a047e41fbdcbcfa44d466c83c81388",
+        "current_sha256": "8459c2d5aadbd99251c5962750799dcc3e9485cd70c6b418073d927e9b670537",
+        "review": "Only applicability notice/metadata and line-ending normalization; historical engineering values unchanged."
+      }
+    ],
+    "native_schematic_hashes": "unchanged and verified"
   }
 }

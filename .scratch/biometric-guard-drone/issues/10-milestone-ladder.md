@@ -6,13 +6,37 @@ Blocked by: 02, 05, 06, 07, 09
 
 ## Current checkpoint
 
-**Product-scope amendment, September 9:** the standalone PC app is retired from the finished product; the phone/onboard direction and unresolved design choices are recorded in the [latest decision](#2026-09-09-phone-and-onboard-direction-pc-product-retired). Q75 remains historical planning closure, subject to this later scope amendment.
+**September 25 owner deadline requirement:** the full project is due **Wednesday September 30, 2026 at 12:00 p.m. ET (America/New_York, EDT/UTC-04:00)**. This is mandatory and supersedes later planning dates; all product requirements below remain required. A deadline does not establish feasibility or qualify unfinished work. Issue12 tracks actual progress, dependencies and completion risk.
 
-**Resolved: planning complete, Q75 approved.** The [approved closure](#2026-09-03--q75-approved-planning-closed-and-artifact-stage-authorized) freezes the conditional architecture and preserves Q1–Q74, including twenty useful minutes plus independent reserve. The former $800–$900 ceiling is superseded; minimize complete cost without weakening requirements.
+**September 20 owner amendment:** complete-system ceiling is now **$1,100**, including the $288.22 already paid, all remaining parts, tax and shipping. The extra $100 applies to the whole build, not a shipping-only allowance. Still prefer less. Prioritize reasonable delivery and avoid selected items requiring three to four weeks; some less critical items may arrive later than assembly-critical parts. All mission and performance requirements below remain unchanged. This supersedes the earlier $1,000 amount wherever repeated.
 
-**Continue only in [Issue11](11-hardware-build-package.md#current-checkpoint) and [Issue12](12-phone-onboard-interaction.md#current-checkpoint).** Detailed hardware engineering and the actuator-free phone/onboard simulation are active; physical acceptance, fabrication release and procurement remain separate gates. The [hardware package](../../../docs/hardware/baseline-r1/README.md) controls later corrections and current mass/cost limitations. The PC product has no active implementation scope.
+**September 11 budget amendment: $1,000 maximum delivered usable system; architecture reopened.** The September10 product requirements remain unchanged except for the explicit budget amendment below. This checkpoint supersedes Q75's architecture freeze, cargo obligations, earlier endurance targets and the previous no-cap/$1,000-feasibility-target wording. Issue10 remains resolved for these product choices; revised engineering belongs to Issue11 and phone/onboard integration to Issue12. Historical evidence does not qualify this revision.
+
+| Area | Current requirement or preference |
+| --- | --- |
+| Product | Self-built personal autonomous drone; natural phone language expresses goals and compositions of supported actions. Unsupported or ambiguous requests require an explanation or clarification, not invented capability. |
+| Missions | Follow a selected person (including description-based selection); search for the owner or another person using a face reference; find described objects; scout an area and report counts/other supported metrics. Define measurable recognition, search and counting cases during engineering. |
+| Optional extensions | Watch, orbit and patrol only where they reuse core capabilities without substantial extra work; they are not completion blockers. |
+| Access | Face and liveness verification before command access. Simple trusted enrollment/removal via unlocked paired phone while landed; enrolled people have the same command abilities. No per-guest command permissions or expiry system. Device authentication, recovery and independent manual takeover remain. |
+| Voice and video | Speak through the phone; live aircraft video; fixed-lens camera with digital zoom. Reposition for detail when a clear route, separation and energy allow; report uncertainty when sufficient detail is unavailable. Optical zoom is not required. |
+| Environment | Outdoor areas with trees/buildings and large open interiors such as warehouses, including darkness and eventual out-of-sight missions. These are design goals requiring bounded, validated operating cases, not universal all-environment capability. |
+| Connectivity | Essential aircraft operation independent of internet, with optional online language assistance. Phone/aircraft link range is a separate engineering question. |
+| Endurance | At least **10 useful minutes**, excluding takeoff and landing. Monitor battery and interrupt tasks early enough to reach a suitable landing spot and descend. Predicting completion of every mission is not required. Early recovery takes priority but does not pass the useful-duration target. |
+| Energy evidence | Size takeoff/recovery/landing allowances from credible revised conditions. The old 20 Wh floor, 120-second recovery model, fixed-return workload and 12.1-minute paper target are historical assumptions to reassess, not new proven limits. Physical evidence, uncertainty margin and repeatability remain required; use retained evaluation principles where applicable. |
+| Range and speed | Initial working-distance target **100 m from the user**, not total path length or a permanent maximum. Track landing destination separately. Max speed means fastest task execution allowed by surroundings, sensing and tested capability, with slowing when needed. Report estimated and demonstrated final speed/altitude separately. |
+| Structure and portability | Prefer backpack portability; size/layout are engineering choices. Compare printed, purchased, machined and hybrid structures. Previous nonprinted-primary restriction is reopened for investigation, not automatic structural print qualification. |
+| Cost and resources | **Hard maximum $1,100 for a usable system (September 20 amendment)**, strongly prefer less: aircraft, onboard equipment, one flight battery, controller, charger, required accessories, tax and shipping included. Credit the existing iPhone, computer and free lab access. Optional spares and development allowances are separate; required installed equipment, adapters and usable-app delivery cannot be hidden as optional. Actual tax/shipping remain quote-dependent and must fit inside the cap. Free lab access provides no staff guidance or operator training; use novice-feasible processes. |
+| Removed | Cargo, holder/lock/release equipment, recipient verification and delivery acceptance. Preserve reusable historical artifacts; the standalone PC product remains dormant. |
+
+No current airframe, propulsion, battery, compute or sensing selection is mandatory. Existing seven-inch and X650 designs are candidates/evidence. Recalculate integrated mass, power, cost and performance for a selected revision before asserting acceptance.
+
+Next: pause further detailed engineering of the over-budget configuration. Issue11 owns a focused affordability review using preserved evidence, including simpler fabricated/hybrid designs and combined functions. Establish a credible within-budget design or explicitly identify unresolved conflicts and decision options. No capability may be silently weakened and estimates alone do not establish feasibility. Issue12's completed v1 simulator remains evidence only for its original slice. Procurement, fabrication, powered operation and physical qualification remain separate.
 
 ## Historical planning context
+
+Everything below predating the final product-reset comment records the earlier revision. Earlier Answer, freeze, cargo, guest-policy and acceptance wording is retained for provenance and does not override the current checkpoint.
+
+The twenty-, fifteen- and eleven-minute endurance targets below belong to earlier revisions. The current checkpoint requires ten useful minutes excluding takeoff and landing. Historical numerical results remain evidence for their original inputs and do not qualify the current aircraft.
 
 The dated notes below preserve the decisions leading to closure. Their earlier budgets, open status and task-specific stops do not override Q75 or later Issue11/PC authorizations.
 
@@ -38,6 +62,10 @@ Decisions the research has already surfaced for this session:
 Run `/grilling` + `/domain-modeling`. Closing this ticket clears the map: the destination is reached and the effort hands off to `/to-spec` for the milestone-1 spec.
 
 ## Comments
+
+### 2026-09-25 — full-project deadline reaffirmed
+
+Owner explicitly reaffirmed September30 at noon ET as a requirement in the context-handoff task after "New parts ongoing project." Preserve this requirement in subsequent scheduling and handoffs; no scope reduction was approved.
 
 ### 2026-08-30 — Confirmed decisions through Q8
 
@@ -1019,3 +1047,54 @@ The owner agrees to source-backed feasibility calculations, CAD/structural check
 ### 2026-09-10 PC retirement clarified as dormant, not a reference workstream
 
 The owner confirms that the standalone PC biometric application is no longer needed and must not cause further roadmap drift. Its source, tests, packaging, tickets and reports may remain as dated history, but they are not active reference tooling, a completion dependency, a cleanup task or evidence that advances the aircraft. Do not refresh PC test counts, finish its unresolved tickets or include PC work in goal-completion lists. Current delivery work proceeds through Issue11 hardware engineering and Issue12 phone/onboard interaction. Any future PC-product reactivation requires a new explicit owner direction; this clarification does not itself delete installed software, profiles or repository files.
+
+### 2026-09-10 — Owner changes Q74 to fifteen useful minutes
+
+The owner explicitly replaces Q74's minimum of 20 useful flight minutes with **15 useful flight minutes**, preserving the separate independent return-and-landing reserve. This later owner decision supersedes every earlier twenty-minute requirement; it is not an agent waiver based on a failed model. Keep the same fully equipped, no-extra-cargo reference configuration, operating envelope, active equipment, repeated-evaluation evidence and reserve methodology. The loaded cargo mission retains its own validated operating envelope and is not automatically required to fly for fifteen useful minutes.
+
+To make the representative workload total fifteen minutes while retaining its approved 60%/30%/10% proportions, the engineering implementation is **9 minutes following at 1–2 m/s, 4.5 minutes hover/stops and 1.5 minutes gentle transitions**, distributed across the segment. This arithmetic adjustment changes duration only; it is not a new easier mission or equipment reduction. Keep dry daylight, 15–30°C, mean wind ≤2 m/s, gust ≤3 m/s, distance ≤100 m and height ≤10 m, subject to stricter qualified site/component limits.
+
+The reserve remains `max(20 Wh, 1.5 × recovery energy)` with the initial 120-second recovery model and independent validation; observed demand/uncertainty may increase protection. It is never part of useful flight time. Retain at least three successful complete evaluations over at least two days, qualifying evidence for each released pack and a record of every attempt. Early recovery or insufficient reserve at fifteen minutes fails the endurance test; safety still takes priority. No two-pack purchase, procurement, fabrication, powered operation or qualification is authorized by this amendment.
+
+Issue11 recalculates current mass/propulsion/energy and affected traceability against fifteen minutes. Issue12's authority/preview simulator behavior is unchanged. Current results are integrated in the [pre-purchase decision report](../../../docs/prepurchase-decision-2026-09-10.md); historical numerical benchmarks remain preserved as original-input evidence.
+
+
+### 2026-09-10 — Later owner decision replaces fifteen with eleven useful minutes
+
+The owner explicitly replaces the previous 15-minute Q74 minimum (itself superseding twenty) with **at least 11 useful flight minutes**. This is the acceptance minimum, not a model-based waiver. Keep the fully equipped no-extra-cargo reference, separate independent return-and-landing reserve and mandatory physical validation. The loaded cargo mission retains its separate validated operating envelope and has no automatic eleven-minute duration requirement.
+
+Preserve the representative workload's 60%/30%/10% proportions: **6.6 minutes following at 1–2 m/s, 3.3 minutes hover/stops and 1.1 minutes gentle transitions**, distributed through the eleven-minute segment. Preserve dry daylight, 15–30°C, mean wind ≤2 m/s, gust ≤3 m/s, distance ≤100 m and height ≤10 m, subject to stricter qualified limits. Reserve remains `max(20 Wh, 1.5 × recovery energy)`, with the initial 120-second recovery model and independent validation; it is never useful time. Keep the 4 Wh pre-reference allowance in paper calculations, three successful evaluations over at least two days, qualifying evidence per released pack and every attempt logged. Early safe recovery remains a failed endurance attempt; safety takes priority.
+
+The owner also requires reasonable paper-design margin. The engineering implementation adopts a **provisional 12.1-useful-minute target under moderate modeled losses**, 10% above eleven and still separate from reserve. This is not a new acceptance minimum or a statistical uncertainty guarantee. Retain sensitivity tests and increase margin where evidence warrants it. The unchanged planning model's 11.15 minutes barely clears eleven but misses this target; [Issue11](11-hardware-build-package.md) records the current calculation and supported mass-reduction work. No component, purchase, fabrication, operation or flight is approved by changing the threshold.
+
+### 2026-09-10 — Available printers and final physical performance report
+
+The owner identifies access to **Creality Ender 3, Voron 0, Voron 2.4, Creality Ender 5 Plus, Creality CR-10 S5, Creality Ender 3 S1, UltiMaker S5, UltiMaker S3, Bambu Lab X1 Carbon and Bambu Lab A1**. Access does not imply ownership, modifications, calibration, accessories or free consumables/machine time. Issue11 reassesses the existing secondary printed-part recommendation, candidate materials and appropriate machines against standard capabilities. No structural flight part is released without strength and process validation; no printer purchase or physical fabrication is authorized here.
+
+The owner's third item, clarified as “what it is once everything is finalized,” requires the final aircraft's maximum physical speed and altitude capability to be reported once its configuration is stable. No numerical maximum is chosen now. Issue11 owns that report and its evidence, distinguishing estimates from demonstrated limits, reference conditions from physical capability, and physical capability from legal/site operating limits. Document mass/cargo, pack state, environment, uncertainty and the speed/altitude reference frames. This does not expand Q74's reference envelope or authorize physical limit-seeking tests.
+
+### 2026-09-10 — Product reset and autonomous engineering direction
+
+The owner reviewed the project step by step and authorized reconciling the audit findings. The current checkpoint records the settled product: ten useful minutes excluding takeoff/landing, battery-triggered suitable-site recovery, no cargo, phone natural-language missions, trusted face/liveness enrollment, live digital-zoom video, darkness/warehouse goals, initial 100 m from the user, task-dependent speed and backpack preference. Watch/orbit/patrol are optional. These later choices supersede conflicting earlier requirements and Q75's implementation freeze.
+
+The owner delegates engineering methods and routine selections with no fixed spending ceiling but lowest credible complete-project cost. Free access to the listed printers, scanning, electronics tools and fabrication/wood/media labs expands design options; no machine guidance is available, resin printing is inactive, and access is not qualification or a materials budget. Structural printing is open to evidence-based comparison. Preserve prior CAD, models and test results as configuration-specific evidence; do not relabel the old 10.17-minute prediction as acceptance for the revised aircraft.
+
+This reconciliation authorizes repository requirement/instruction/model-applicability updates. It does not itself launch a new sustained hardware execution run, select a final aircraft, authorize purchases or establish physical performance. Independent digital work and proportional analysis should not stop merely because one result requires a physical test.
+
+#### Available lab resources supplied by the owner
+
+Free access; no guidance/training supplied. Names are owner-reported, not verified specifications or proof of materials/tooling availability.
+
+| Category | Reported resources |
+| --- | --- |
+| FDM printers | Creality Ender 3, Ender 5 Plus, CR-10 S5, Ender 3 S1; Voron 0 and 2.4; UltiMaker S5 and S3; Bambu Lab X1 Carbon and A1. |
+| Scanning | EinScan turntable and handheld scanners. |
+| Electronics | Soldering irons, hot air gun, hot plate, microscope, multimeters, oscilloscope; UNO-compatible kits (reported as Arduino Leils), Adafruit Feather M0 Bluetooth boards, Raspberry Pi 3 and Zero W. Exact variants/availability need checking before selection. |
+| Fabrication | Small/large Boss laser cutters; LMS 6550 vertical mill; LittleMachineShop HiTorque 8.5x20 Deluxe bench lathe; PCB mill; horizontal band saw; Genmitsu CNC for metals; bench grinder; AVID CNC Pro 4896; injection molding machine; vacuum former. Resin printing inactive. |
+| Wood shop | Wen 8-inch drill press; scroll, miter and track saws; belt sander; Laguna 14-inch band saw; DeWalt cordless oscillating saw and sanders; handheld tools. |
+| Textiles/software | Brother embroidery machine, sewing machine and lock serger; Inkscape/Inkstitch; UltiMaker Cura. |
+| Media | Studio lights, overhead/roving box lights and panel lights; VR headset; podcast booth with RODECaster Pro II and four-person PodMic station. |
+
+### 2026-09-10 — Approved engineering-freedom instruction audit
+
+The owner approved the instruction audit with a concise authority rule and a clarification that accepted engineering recommendations do not automatically become fixed product requirements. The agent owns architecture, engineering methods, development order and routine selections; delegated details remain revisable when they preserve agreed requirements and deliberately required user experience. Recover decision provenance when uncertain. Only the owner may approve requirement changes; difficulty or faster completion does not justify reducing scope, and unmet requirements remain unfinished. Complete-project cost and novice effort govern routine tradeoffs as described in CLAUDE.md. This audit changes no product capability and does not authorize sustained product implementation, purchases or physical operation.

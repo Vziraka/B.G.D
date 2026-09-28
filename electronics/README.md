@@ -1,5 +1,9 @@
 # B.G.D electrical engineering workspace
 
+**Superseded for current-product requirements — September 10 product reset.** The [current requirements](../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#current-checkpoint) reopen architecture, remove cargo and require ten useful minutes excluding takeoff/landing. This document and its linked configuration files preserve earlier design evidence, not current component mandates or revised acceptance. Historical pass/fail results remain unchanged for their original inputs. Reconcile retained interfaces and validation principles against the new configuration before reuse.
+
+**September10 R2 amendment:** the [current electrical corrections and native carrier evidence](../docs/hardware/engineering-r2-2026-09-10/electrical-selection.md) supersede the named fan/sensor/protection/connector/bus selections below. E1 remains the preserved logical reference; R2 carrier boards are draft and do not release the whole harness or qualify fault behavior. The [integrated report](../docs/prepurchase-decision-2026-09-10.md) controls current mass/energy and architecture holds. Historical PC coordination is not active product scope.
+
 Status: **E1 native KiCad logical draft with release holds**. Open [bgd-master.kicad_pro](schematics/bgd-master/bgd-master.kicad_pro). The15-sheet hierarchy contains48 component/module symbols and192 terminal nodes; [validation](validation-report.json) records nativeERC and independent exported-netlist checks. No PCB, physical connector layout, released harness or powered qualification exists.
 
 - `schematics/bgd-master/`: planned hierarchical source project

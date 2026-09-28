@@ -1,0 +1,4 @@
+interface:
+  display_name: "B.G.D build coach"
+  short_description: "Resume the drone build and record each verified step"
+  default_prompt: "Use $build-coach to read the B.G.D checkpoint and guide me through the next available build or test step."

@@ -2,29 +2,41 @@
 
 ## Project context
 
-Start with the [project map](.scratch/biometric-guard-drone/map.md) and the relevant ticket's current checkpoint. Consult its latest comments and linked requirements/evidence for the work at hand; read older history when resolving a conflict or recovering a decision's reason. Tickets hold the authoritative detail.
+These rules apply to **Claude Code**, **Codex** (via `AGENTS.md`), and **Cursor**.
+
+Start at [docs/CURRENT.md](docs/CURRENT.md) and the [increment 1+2 BOM](docs/increment-1-2-bom.md). Then the [project map](.scratch/biometric-guard-drone/map.md) for workstream status. Tickets hold dated decisions; open a ticket when the live map is not enough.
+
+Reach `cad/`, `electronics/`, `docs/research/`, and `Gemini_recommendation_and_how.md` only when the task is recovering a **named dated** historical decision. They are not the live design. Fusion MCP is for a later Pi-plate print, not C1 regeneration.
 
 ## Current delivery boundary
 
-Build the current product through [Issue11 hardware engineering](.scratch/biometric-guard-drone/issues/11-hardware-build-package.md) and [Issue12 phone/onboard interaction](.scratch/biometric-guard-drone/issues/12-phone-onboard-interaction.md). The Windows PC is the development host, but the standalone PC biometric product is retired and has no active ticket, acceptance gate or cleanup requirement. Treat `.scratch/pc-biometric-desk/`, `docs/pc-biometric/`, `pc_biometric/`, `packaging/` and PC-only tests as dormant historical material; consult them only for a specifically relevant precedent. Reactivating, extending, validating or packaging that product requires a new explicit owner direction.
+Live path: [docs/CURRENT.md](docs/CURRENT.md) and [increment 1+2 BOM](docs/increment-1-2-bom.md). Issue10 remains the product requirements. Issue11/C1 (Pixel, LD19, lamp, Fusion/KiCad package) is **abandoned** — do not continue it. Issue12’s v1 simulator is historical evidence; native phone work waits until after a hovering increment-1 quad.
+
+The Windows PC is the development host. The standalone PC biometric product is deleted from this checkout; on-disk profiles under `%LOCALAPPDATA%\BGD\` stay untouched. Do not revive that app.
 
 For context handoff, research, worktrees or skill maintenance, use [the shared workflow](docs/agents/workflow.md).
 
 ## Working with the owner
 
-The owner is learning hardware and software through this project. Explain results and consequential decisions in plain language, defining unfamiliar terms when needed. Own routine engineering decisions and execution within the authorized scope. Teach what the owner needs for an upcoming decision or physical step, without making routine development wait for lessons or code review. Provide deeper lessons and quizzes when requested.
+The owner is learning hardware and software through this project. Keep updates concise without omitting consequential information. Explain decisions in plain language, defining unfamiliar terms when needed. Own routine engineering decisions and execution within the authorized scope. Teach what the owner needs for an upcoming decision or physical step, without making routine development wait for lessons or code review. Provide deeper lessons and quizzes when requested.
 
 ## Execution
 
 Carry the authorized outcome through investigation, implementation, verification and repair. Resolve routine design choices, build missing prerequisites within scope, and try another supported approach when one fails. Continue useful independent work while awaiting an input. Stop only at a genuine dependency or authorization boundary, identifying what would unblock it.
 
-Use available files, manufacturer documentation, CAD and measurements before asking the owner to find information. Separate documented facts, calculated results, assumptions and physical evidence. Simulation or synthetic tests do not establish real biometric accuracy, mechanical fit or flight readiness.
+Explore existing products and designs, purchased components, custom work and hybrid solutions against the current requirements. Apply Issue10's current budget: maximum $1,000 for the usable system including aircraft, onboard equipment, one flight battery, controller, charger, required accessories, tax and shipping; strongly prefer less. Credit the existing phone, computer and free lab access. Show optional spares and development allowances separately; do not hide required system costs in those categories. Detailed work on over-budget configurations is paused pending the focused affordability review. Explain consequential tradeoffs and own routine selections. Available fabrication equipment expands the options rather than prescribing a process. Record sources, licenses and versions, and verify compatibility and important interfaces. Familiarity, source availability or a lower purchase price alone does not establish the best design.
 
-Preserve approved requirements. Escalate a consequential cost/scope tradeoff, unresolved user intent or a required physical action; explain the evidence and recommend a concrete path. Existing task authorization carries forward. A restriction from an old task applies to that scope unless a later decision supersedes it.
+Use available documentation and measurements before asking the owner to find information. Separate documented facts, calculated results, assumptions and physical evidence. Simulation or synthetic tests do not establish real biometric accuracy, mechanical fit or flight readiness.
+
+Own architecture, components, engineering methods, implementation and development order. Revise engineering choices independently while preserving agreed product requirements and the user experience the owner deliberately required. Delegated details and accepted engineering recommendations remain revisable when they preserve those outcomes; recover decision provenance when uncertain. Difficulty or faster completion does not justify weakening requirements. Investigate alternatives and bring proposed requirement changes to the owner; until approved, unmet requirements remain required and unfinished.
+
+Involve the owner when information only they can provide or authorization for spending, external commitments or physical action is needed. Existing authorization carries forward; historical architecture freezes and stage stops do not govern a later authorized revision. Current requirements live in Issue10's checkpoint; dated calculations remain evidence for their original configurations. Distinguish intermediate-stage completion from completion of the whole product.
+
+Reduce uncertainty and the cost of physical validation using methods proportionate to the question. Select useful research, analysis, simulation or established-design evidence rather than exhausting a fixed checklist. When physical evidence is necessary, prepare the smallest decisive test with acceptance criteria and continue independent work. Machine access does not establish operator training; plan novice-feasible fabrication and identify tasks requiring qualified assistance.
 
 ## Skills and verification
 
-Use skills when they help the current work and grilling when requested or needed to settle consequential ambiguity. For B.G.D, a skill's default approval cadence or one-ticket/session limit does not require stopping an already authorized outcome. Do not require a full skill pipeline or repeated approval of routine test cases.
+Use skills when they help the current work and grilling when requested or needed to settle consequential ambiguity. For B.G.D, a skill's default approval cadence or one-ticket/session limit does not require stopping an already authorized outcome. Do not require a full skill pipeline or repeated approval of routine test cases. Grilling is for unresolved product choices, not decisions already delegated to engineering. Skill preferences for minimal changes do not freeze an architecture that the owner has reopened.
 
 Choose tests for observable requirements, credible failures and security boundaries. Run focused checks while changing code and the relevant full suite before handoff. Keep costly repetition opt-in; avoid tests for incidental implementation details or more documentation without a maintenance purpose. Preserve meaningful regression and acceptance coverage.
 

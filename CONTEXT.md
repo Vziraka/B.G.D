@@ -1,35 +1,24 @@
 # Biometric Guard Drone
 
-Language for the project's identity, flight authorization, endurance, and observation and flight commands.
+Language for the current product. The September 10 product reset in [Issue10](.scratch/biometric-guard-drone/issues/10-milestone-ladder.md) supersedes older cargo, guest-role and endurance definitions; [the interaction contract](docs/phone-drone/interaction-contract.md) defines current command behavior.
+
+The September11 budget amendment in Issue10 sets a hard **$1,000 delivered usable-system maximum**, including one flight battery, control/charging equipment and all required accessories, tax and shipping. Existing phone/computer/free lab access are credited; optional spares and development allowances are separate. Detailed work on the over-budget aircraft is paused for affordability review; capabilities remain required.
 
 ## Language
 
 **Owner**:
-The enrolled person who retains ownership and recovery authority and alone grants or revokes guest access.
-_Avoid_: Guest, selected subject, current speaker
+The person directing the project and deciding who may use the unlocked paired phone for enrollment. The product does not require a separate administrator role for routine enrollment/removal.
+_Avoid_: Sole authorized speaker, selected subject
 
-**Guest**:
-A person other than the owner, using their own enrolled identity with command access explicitly granted by the owner. Guest status does not confer ownership, recovery control or independent arming authority.
-_Avoid_: Co-owner, selected subject, recovery administrator
+**Enrolled user**:
+A person whose onboard face reference is enrolled through the unlocked paired phone while landed/disarmed. Every enrolled user has the same spoken-command abilities after face/liveness verification. Enrollment does not grant independent radio authority or change device pairing/recovery.
+_Avoid_: Guest permission tier, selected subject, verified speaker
 
-**Recipient**:
-The person designated to receive a delivery, whose identity is verified before cargo release. Being a recipient is distinct from having permission to command the aircraft.
-_Avoid_: Owner, guest, selected subject
-
-**Cargo holder**:
-The aircraft component that retains delivery cargo and controls its removal.
-_Avoid_: Cargo, arming gate
-
-**Cargo**:
-The item carried for delivery, excluding the cargo holder and the aircraft's own required equipment. Cargo mass is additional to both aircraft mass and holder mass.
-_Avoid_: Cargo holder, onboard computer, total takeoff mass
-
-**Validated cargo limit**:
-The maximum cargo mass permitted for a defined aircraft configuration and operating conditions after its required tests pass. An estimated carrying capability is not a validated cargo limit.
-_Avoid_: Peak lifting thrust, predicted payload, unrestricted carrying capacity
+**Retired delivery terms**:
+Guest permission tiers, recipient, cargo holder, cargo and validated cargo limit belong to historical delivery designs, not current product requirements. Aircraft equipment mass still belongs in the selected design's full mass accounting.
 
 **Conditional planning baseline**:
-The exact component, interface, cost and acceptance package selected for specifications and build work before empirical acceptance. It preserves every requirement as a release gate; it does not claim that the aircraft has passed endurance, payload, security or flight tests.
+The exact component, interface, cost and acceptance package selected for specifications and build work before empirical acceptance. It preserves every requirement as a release gate; it does not claim that the aircraft has passed endurance, security or flight tests.
 _Avoid_: Qualified aircraft, proven build, purchase authorization
 
 **Pending physical validation**:
@@ -44,8 +33,8 @@ _Avoid_: Uploaded photo, proof of liveness, 3D face model
 Permission for one paired phone or paired radio to request one prepared launch and verification approach. It is request-bound, short-lived and distinct from permission to issue spoken mission commands.
 _Avoid_: Biometric approval, reusable arm token, command session
 
-**Owner command session**:
-A permission created by onboard owner face and liveness verification for accepting new spoken mission commands during one flight session. Speech recognition identifies the requested action; it does not establish who spoke.
+**Enrolled-user command session**:
+A permission created by onboard enrolled-user face and liveness verification for accepting new spoken mission commands during one flight session. Speech recognition identifies the requested action; it does not establish who spoke.
 _Avoid_: Voice identity, biometric arming token, permanent unlock
 
 **Independent manual authority**:
@@ -53,24 +42,36 @@ The paired radio pilot's ability to take control and land safely without another
 _Avoid_: Biometric bypass, phone permission, emergency unlock
 
 **Verification zone**:
-The preflight-defined place where the owner stands while the aircraft occupies its validated verification pose. It avoids searching for or following an unverified person before the owner check.
+The preflight-defined place where the enrolled user stands while the aircraft occupies its validated verification pose. It avoids searching for or following an unverified person before the enrolled-user check.
 _Avoid_: Dynamic owner tracking, arbitrary meeting point
 
 **Live guidance preview**:
-A temporary, encrypted view from the aircraft's actual camera that helps the owner frame their face and follow enrollment or verification instructions. It may carry non-authoritative alignment guidance, but it never supplies identity, liveness or command permission and is not recorded by default.
+A temporary, encrypted view from the aircraft's actual camera that helps the enrolled user frame their face and follow enrollment or verification instructions. It may carry non-authoritative alignment guidance, but it never supplies identity, liveness or command permission and is not recorded by default.
 _Avoid_: Phone-side verification, biometric result, pilot video recorder
 
 **Handheld voice controller**:
-The phone and connected EarPods used for deliberate speech input and flight-status feedback during an owner command session. It is distinct from the aircraft's flight controller and the independent radio.
+The phone, optionally with EarPods, used for deliberate speech input and flight-status feedback during an enrolled-user command session. It is distinct from the aircraft's flight controller and the independent radio.
 _Avoid_: Flight controller, radio transmitter, speaker verifier
 
 **Useful flight time**:
-Time available for the drone's intended activity before using the separate energy reserved for reaching its landing destination and landing safely. It is not the total time until the battery is exhausted.
-_Avoid_: Battery-to-empty airtime
+Time performing intended activity, excluding takeoff and landing. The current target is 10 minutes in the engineered operating envelope, with energy for takeoff and recovery/landing additional. An early battery-triggered recovery is necessary behavior but does not meet that flight's usefulness target.
+_Avoid_: Total airtime, battery-to-empty airtime
 
-**Return-and-landing reserve**:
-Battery energy held back for returning to the fixed return point and landing safely, including the landing reserve. It is additional to the useful-flight allowance, not time counted toward it.
-_Avoid_: Extra mission time
+**Recovery and landing energy**:
+Energy needed to interrupt a task, reach a suitable landing spot and descend with margin. Battery monitoring must trigger early enough for this; whole-mission completion prediction is not required. Historical fixed-return reserve formulas are evidence for their original designs, not the current mandated calculation method.
+_Avoid_: Optional landing energy, extra mission time, battery-to-empty trigger
+
+**Working distance**:
+Distance from the user to the aircraft. The initial design/test target is 100 m; this is neither total route length nor a qualified or permanent maximum. Movement of the user does not redefine a fixed landing destination.
+_Avoid_: Total travel, distance from takeoff, proven radio range
+
+**Natural-language mission**:
+A request in ordinary phone speech expressing one or more supported actions. Interpretation must resolve necessary ambiguity and produce a checked executable plan; language breadth does not establish unlimited physical ability.
+_Avoid_: Arbitrary instruction execution, memorized phrase list
+
+**Digital zoom**:
+Cropping and enlarging captured video. Additional distant detail requires a better capture, potentially by repositioning where conditions permit; enlargement itself supplies no new evidence.
+_Avoid_: Optical magnification, guaranteed identification
 
 **Selected subject**:
 A person or object designated as the focus of an observation or movement command. Selection does not grant command authorization.
@@ -80,15 +81,15 @@ _Avoid_: Authorized subject, enrolled subject
 Aircraft movement that accompanies the selected subject as it moves.
 _Avoid_: Camera-only tracking
 
-**Orbiting**:
+**Orbiting** (optional extension):
 Aircraft movement around a selected subject for observation.
 _Avoid_: Area patrol
 
-**Watching**:
+**Watching** (optional extension):
 Camera observation of a selected subject without a request for aircraft movement to follow it.
 _Avoid_: Following
 
-**Area patrol**:
+**Area patrol** (optional extension):
 Repeated observation along an approved route or within an approved area.
 _Avoid_: Orbiting a subject
 
