@@ -1,0 +1,24 @@
+{
+    "purpose":  "Provenance recorded on 28 September 2026 for rejected local language candidates deleted to reclaim disk. No download repository or revision was captured for these three at acquisition time, so only the measured file hash identifies the exact artifact used. Any future comparison should treat a re-downloaded file as a new artifact unless its SHA-256 matches below.",
+    "recorded":  "2026-09-28",
+    "status":  "rejected candidates, files deleted from tmp/language-candidate-20260922/",
+    "evaluation_context":  "22 September round. The official Qwen3-4B Q4_K_M profile scored 21/30 on the 30-case development corpus and was rejected; the 1.7B and 0.6B checkpoints were screening artifacts and never became candidates. See docs/research/pi-conversation-acceptance-2026-09-26.md.",
+    "source_repository":  "not recorded at download time",
+    "artifacts":  [
+                      {
+                          "file":  "Qwen3-4B-Q4_K_M.gguf",
+                          "bytes":  2497280256,
+                          "sha256":  "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+                      },
+                      {
+                          "file":  "Qwen3-1.7B-Q8_0.gguf",
+                          "bytes":  1834426016,
+                          "sha256":  "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a"
+                      },
+                      {
+                          "file":  "Qwen3-0.6B-Q8_0.gguf",
+                          "bytes":  639446688,
+                          "sha256":  "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
+                      }
+                  ]
+}
