@@ -1,0 +1,13 @@
+# Fusion MCP: optional later for a Pi-plate print (increment 1+2).
+# Do not regenerate C1 / Issue11 CAD. Live path is docs/CURRENT.md.
+# Official Autodesk Fusion MCP. Historical Issue 11 approval 2026-09-05.
+sandbox_mode = "danger-full-access"
+web_search = "live"
+[mcp_servers.bgd_fusion]
+url = "http://127.0.0.1:27182/mcp"
+enabled = true
+enabled_tools = ["fusion_mcp_read", "fusion_mcp_execute"]
+disabled_tools = ["fusion_mcp_update", "fusion_mcp_electronics_read"]
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+default_tools_approval_mode = "prompt"

@@ -1,0 +1,6 @@
+---
+description: B.G.D live path. Start at CURRENT.md. Open C1 or research only to recover a dated decision.
+alwaysApply: true
+---
+
+Follow repo-root `CLAUDE.md` (shared with Claude Code and Codex). Live work starts at `docs/CURRENT.md` and `docs/increment-1-2-bom.md`. Open `cad/`, `electronics/`, `docs/research/`, or `Gemini_recommendation_and_how.md` only when recovering a named dated historical decision.

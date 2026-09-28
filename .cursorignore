@@ -1,0 +1,7 @@
+﻿# Historical C1 / research — still on disk, not live work. Git keeps history.
+cad/
+electronics/
+docs/research/
+Gemini_recommendation_and_how.md
+.agents/skills/last30days/
+.mypy_cache/

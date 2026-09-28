@@ -22,3 +22,30 @@
 node_modules/
 __pycache__/
 *.py[cod]
+
+# Model weights are large and re-downloadable from the SHA-256 pins in their manifests.
+# The evaluation evidence stored beside them is small and stays versioned.
+*.gguf
+
+# Vendored third-party tool binaries and bulk reference copies under tmp/.
+/tmp/slicer-tools/
+/tmp/cad-tools/
+/tmp/pdfs/
+
+# Pinned llama.cpp runtime archives and binaries; version and SHA-256 live in the
+# run manifests beside the evidence, so the runtime is reproducible without storing it.
+/tmp/language-candidate-*/windows/
+/tmp/language-candidate-*/*.zip
+/tmp/language-candidate-*/*.tar.gz
+
+# Third-party skill bundled media; the skill itself is installed, not authored here.
+/.agents/skills/last30days/
+/.claude/skills/last30days/
+
+# Tool caches.
+.mypy_cache/
+
+# Stray Bambu Studio CLI output written to the repository root.
+/00000.log
+/result.json
+/effective-settings.json
