@@ -1,6 +1,0 @@
-# Initial CPU-only native Windows x64 integration stack; not needed for readiness UI.
-opencv-python==4.13.0.92
-vosk==0.3.45
-sounddevice==0.5.6
-winrt-runtime==3.2.1
-winrt-Windows.Security.Credentials.UI==3.2.1
