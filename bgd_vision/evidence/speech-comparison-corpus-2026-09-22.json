@@ -1,0 +1,19 @@
+{
+  "purpose": "Local synthetic speech-to-text comparison only; never submit transcripts to mission endpoints",
+  "audio": "Generate after the active performance run: one installed offline Windows voice, 16000 Hz, mono, PCM signed16 WAV",
+  "cases": [
+    {"id": "stop", "text": "Stop", "critical_words": ["stop"]},
+    {"id": "confirm", "text": "Yes please", "critical_words": ["yes"]},
+    {"id": "follow_owner", "text": "Follow me", "critical_words": ["follow", "me"]},
+    {"id": "natural_count", "text": "Could you tell me how many people you can see", "critical_words": ["how many", "people"]},
+    {"id": "described_object", "text": "Find the white bottle beside the book", "critical_words": ["white", "bottle", "beside", "book"]},
+    {"id": "correction", "text": "Actually follow the other person wearing blue", "critical_words": ["other", "person", "blue"]},
+    {"id": "negation", "text": "Do not follow that person", "critical_words": ["not", "follow", "person"]},
+    {"id": "stop_negation", "text": "Do not stop tracking the bottle", "critical_words": ["not", "stop", "bottle"]},
+    {"id": "paused_correction", "text": "Find the bottle do not follow it count people instead", "parts": ["Find the bottle", "do not follow it", "count people instead"], "between_parts_silence_seconds": 2, "critical_words": ["not", "instead"]},
+    {"id": "relational", "text": "Track the cup on the left rather than the bottle on the right", "critical_words": ["cup", "left", "rather than", "bottle", "right"]},
+    {"id": "silence", "text": "", "generated_signal": "3 seconds digital silence", "require_empty": true},
+    {"id": "noise", "text": "", "generated_signal": "3 seconds seeded low amplitude white noise", "require_empty": true}
+  ],
+  "limits": "Synthetic articulation does not establish owner accent, microphone noise, outdoor robustness or speaker identity. This file is a predeclared corpus, not executed accuracy evidence."
+}

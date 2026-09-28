@@ -1,0 +1,72 @@
+{
+  "captured_utc": "2026-09-22T06:50:13.2748574Z",
+  "remote_root": "/home/bgd-pi/bgd-vision",
+  "service": {
+    "pid": 55479,
+    "command": "/home/bgd-pi/bgd-vision/.venv/bin/python -m bgd_vision --model /home/bgd-pi/bgd-vision/models/yolo26n_ncnn_model",
+    "restarted_after_core_deployment": true,
+    "language_mode": "limited_commands",
+    "experimental_language_enabled": false,
+    "actuator_output": false
+  },
+  "backups": [
+    "/home/bgd-pi/bgd-vision/backups/pre-conversation-final-20260922",
+    "/home/bgd-pi/bgd-vision/backups/pre-manual-intent-ui-20260922"
+  ],
+  "files": {
+    "bgd_vision/__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "bgd_vision/__main__.py": "ddd60a1df996b2b744c45953165711e5afe2711f5f0249f4e98875e1342411df",
+    "bgd_vision/appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "bgd_vision/benchmark_open_vocabulary.py": "bddfb2020b558696baa8830c34b2fecf0c9637fda6284aec4717e06680d5e9e9",
+    "bgd_vision/benchmark_visual_prompt.py": "d07b62707d7c3c1fa82ad98c37d6823b9fff80cc15385f73c3dd9061ca5009ab",
+    "bgd_vision/benchmark_workload.py": "231bf31a7d01574dbabbbac2082c9e9a22364b61342ba6f04c4814e5557e2d97",
+    "bgd_vision/commands.py": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+    "bgd_vision/conversation.py": "7c22dbf860ee9c79c02b3a27881dabb9cc86f664a952e81a824c4d3212563b88",
+    "bgd_vision/detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "bgd_vision/enrollment.py": "586decb4b223196991ad30eac8734c92be2245e34e33fc741e87de99d4c82288",
+    "bgd_vision/evaluate_language.py": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+    "bgd_vision/evaluate_tracking.py": "ef35097dd6e8c04dd7ea3a1e79a8d00280f10fcbcf5869fba79c0699e34040ba",
+    "bgd_vision/face.py": "f2c1ae802c404fdb2856d412bac120c012b48528157962107a31eff586829301",
+    "bgd_vision/generic_object.py": "4110eb2a7c8631b396fed975d55d062d87d53a03063f3aa3e2546487a08190f1",
+    "bgd_vision/liveness.py": "6faa914e5a094fbcc5c45abbe52d5c7c484260c95d5476f43cff70e9b22dd3eb",
+    "bgd_vision/mavlink_monitor.py": "209036f03bffa5286bf1afedbef6bd9628b24f9a7952d12eb16dc64e414bbe00",
+    "bgd_vision/open_vocabulary.py": "c41e256496177a3dceb2ab03b0d40347a14fe76eff077d34e0d1c31acc0bb996",
+    "bgd_vision/probe_boxmot.py": "93bfaf2b5902a2b84799779572ef52d29ba2b3cb6734ee5c014eb0670ca15afb",
+    "bgd_vision/selection.py": "8e067198beba30b9cb6635cd9a95f00f5f382d584ae464610cd0bca3836f35e4",
+    "bgd_vision/server.py": "c82c9e4ce59d22442d641a2691b1c0ec94b4265e82af9bf6db9ec1af43c9dd91",
+    "bgd_vision/speech_prototype.py": "7ca818615757b3511d452689bbdce1c482c7a942bcc5a6719b54bcf42ebc85b0",
+    "bgd_vision/tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "bgd_vision/app.js": "885945c15c8bb1db7d8eba206716b0d08cb1b94b8536744550105f6d9ffdcc9c",
+    "bgd_vision/index.html": "e0bd722ad49f177bc3ea0bde80dcc976cc50be2e3aef8de77a4af01bd3deb6df",
+    "bgd_vision/style.css": "858dbdb91fd548a91250835ea6365452cd8f081c684b6c501fa1bc3dcc6e55dc",
+    "tests/vision/test_server.py": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+    "tests/vision/test_speech.py": "8da8eda3dd15c161d624a072ebf80ec6f0ccafba29698d6085f2d6a4d6281875"
+  },
+  "verification": [
+    {
+      "command": "python -m unittest discover -s tests\\vision -v",
+      "environment": "Windows development host",
+      "result": "147 tests run; 142 passed, 5 skipped, 4.250 seconds"
+    },
+    {
+      "command": ".venv/bin/python -m unittest discover -s tests/vision -v",
+      "environment": "Raspberry Pi 5",
+      "result": "147 tests run; 144 passed, 3 skipped, 3.745 seconds"
+    },
+    {
+      "command": "python -m unittest discover -s tests\\phone_drone_sim -v",
+      "environment": "Windows development host",
+      "result": "35 passed, 0.045 seconds"
+    },
+    {
+      "command": "node tests\\vision\\test_preview_loop.cjs",
+      "environment": "Windows development host after final app.js change",
+      "result": "passed normal, stale and interrupted preview assertions"
+    },
+    {
+      "command": "node tests\\vision\\test_conversation_ui.cjs",
+      "environment": "Windows development host after final app.js change",
+      "result": "passed permission, audio abort, exact confirmation, response ordering, manual intent retirement, safe text and overlay race assertions"
+    }
+  ]
+}

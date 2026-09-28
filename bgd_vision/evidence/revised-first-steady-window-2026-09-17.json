@@ -1,0 +1,4304 @@
+{
+  "summary": {
+    "window": "First ten-minute steady window after startup (uptime60\u2013665seconds)",
+    "span_s": 603,
+    "samples": 121,
+    "visible_samples": 121,
+    "display_fps": [
+      26.68914173348529,
+      30.20113958973967
+    ],
+    "vision_fps": [
+      21.5,
+      30.3
+    ],
+    "delay_p95_ms": [
+      74.49999998213025,
+      137.90000000596046
+    ],
+    "temperature_c": [
+      58.7,
+      63.1
+    ],
+    "flags": [
+      "0x0"
+    ],
+    "errors": [],
+    "qualification": "Sampled runtime pass, not measured person identity accuracy or physical latency."
+  },
+  "samples": [
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 39.2,
+      "vision_age_ms": 105.9,
+      "capture_fps": 30.0,
+      "vision_fps": 23.3,
+      "inference_ms": 39.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 4.98346,
+        "memory_mb": 465.1
+      },
+      "client": {
+        "display_fps": 29.601184047291316,
+        "latency_upper_p95_ms": 107.90000000000146,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 57
+      },
+      "uptime_s": 60,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:55:59Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.3,
+      "vision_age_ms": 78.6,
+      "capture_fps": 30.1,
+      "vision_fps": 25.8,
+      "inference_ms": 38.4,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 29.795686719672773,
+        "latency_upper_p95_ms": 106.30000001192093,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 62
+      },
+      "uptime_s": 65,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:04Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.9,
+      "vision_age_ms": 79.2,
+      "capture_fps": 30.0,
+      "vision_fps": 26.5,
+      "inference_ms": 38.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 63.1,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 105.30000001192093,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 67
+      },
+      "uptime_s": 70,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:09Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 43.6,
+      "vision_age_ms": 143.5,
+      "capture_fps": 30.0,
+      "vision_fps": 25.8,
+      "inference_ms": 46.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 29.698599349805953,
+        "latency_upper_p95_ms": 104.80000000000291,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 72
+      },
+      "uptime_s": 75,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:14Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 51.8,
+      "vision_age_ms": 51.8,
+      "capture_fps": 30.1,
+      "vision_fps": 26.9,
+      "inference_ms": 22.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 463.1
+      },
+      "client": {
+        "display_fps": 26.68914173348529,
+        "latency_upper_p95_ms": 137.90000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 77
+      },
+      "uptime_s": 80,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:19Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 27.1,
+      "vision_age_ms": 60.4,
+      "capture_fps": 30.1,
+      "vision_fps": 29.8,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05448,
+        "memory_mb": 462.8
+      },
+      "client": {
+        "display_fps": 28.992510268111133,
+        "latency_upper_p95_ms": 124.0000000178843,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 82
+      },
+      "uptime_s": 85,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:24Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 60.3,
+      "vision_age_ms": 93.6,
+      "capture_fps": 29.9,
+      "vision_fps": 29.7,
+      "inference_ms": 34.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.03706,
+        "memory_mb": 463.5
+      },
+      "client": {
+        "display_fps": 30.0006000121433,
+        "latency_upper_p95_ms": 100,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 87
+      },
+      "uptime_s": 91,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:29Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 62.6,
+      "vision_age_ms": 95.9,
+      "capture_fps": 30.0,
+      "vision_fps": 25.1,
+      "inference_ms": 37.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 4.9848,
+        "memory_mb": 467.2
+      },
+      "client": {
+        "display_fps": 29.499709016510973,
+        "latency_upper_p95_ms": 100.40000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 92
+      },
+      "uptime_s": 96,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:34Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 51.3,
+      "vision_age_ms": 51.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 465.4
+      },
+      "client": {
+        "display_fps": 29.796657942419973,
+        "latency_upper_p95_ms": 101.5,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 97
+      },
+      "uptime_s": 101,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:39Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 51.8,
+      "vision_age_ms": 118.5,
+      "capture_fps": 29.9,
+      "vision_fps": 25.2,
+      "inference_ms": 36.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 4.98212,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 30.10053578946505,
+        "latency_upper_p95_ms": 97.69999998212006,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 102
+      },
+      "uptime_s": 106,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:44Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 42.7,
+      "vision_age_ms": 76.0,
+      "capture_fps": 30.1,
+      "vision_fps": 21.6,
+      "inference_ms": 36.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.02634,
+        "memory_mb": 466.2
+      },
+      "client": {
+        "display_fps": 29.900465564367565,
+        "latency_upper_p95_ms": 101.50000000596629,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 107
+      },
+      "uptime_s": 111,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:49Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 51.2,
+      "vision_age_ms": 51.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 462.3
+      },
+      "client": {
+        "display_fps": 29.899265561628965,
+        "latency_upper_p95_ms": 107.5,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 112
+      },
+      "uptime_s": 116,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:54Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 44.9,
+      "vision_age_ms": 78.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.04912,
+        "memory_mb": 464.1
+      },
+      "client": {
+        "display_fps": 29.99859067020097,
+        "latency_upper_p95_ms": 94.59999997615523,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 117
+      },
+      "uptime_s": 121,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:56:59Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 53.3,
+      "vision_age_ms": 53.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 462.3
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 94.09999998807325,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 122
+      },
+      "uptime_s": 126,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:04Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.0,
+      "vision_age_ms": 78.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04912,
+        "memory_mb": 464.2
+      },
+      "client": {
+        "display_fps": 30.10113982990023,
+        "latency_upper_p95_ms": 93.40000001192675,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 127
+      },
+      "uptime_s": 131,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:09Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 53.3,
+      "vision_age_ms": 53.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04778,
+        "memory_mb": 462.5
+      },
+      "client": {
+        "display_fps": 30.001006745192793,
+        "latency_upper_p95_ms": 90.20000002384768,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 132
+      },
+      "uptime_s": 136,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:14Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.2,
+      "vision_age_ms": 78.5,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 4.95264,
+        "memory_mb": 463.8
+      },
+      "client": {
+        "display_fps": 30.000402689824977,
+        "latency_upper_p95_ms": 75.30000000000291,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 137
+      },
+      "uptime_s": 141,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:19Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 55.5,
+      "vision_age_ms": 55.5,
+      "capture_fps": 30.0,
+      "vision_fps": 29.0,
+      "inference_ms": 22.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04912,
+        "memory_mb": 463.9
+      },
+      "client": {
+        "display_fps": 29.900465564188742,
+        "latency_upper_p95_ms": 94.40000002384477,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 142
+      },
+      "uptime_s": 146,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:24Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 50.2,
+      "vision_age_ms": 50.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.3,
+      "inference_ms": 22.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.05716,
+        "memory_mb": 464.0
+      },
+      "client": {
+        "display_fps": 30.09932778167954,
+        "latency_upper_p95_ms": 99.49999999403371,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 147
+      },
+      "uptime_s": 151,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:29Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 25.7,
+      "vision_age_ms": 59.0,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 464.1
+      },
+      "client": {
+        "display_fps": 29.99859067020097,
+        "latency_upper_p95_ms": 89.49999999403371,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 152
+      },
+      "uptime_s": 156,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:34Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 54.2,
+      "vision_age_ms": 120.8,
+      "capture_fps": 29.9,
+      "vision_fps": 25.6,
+      "inference_ms": 47.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.03304,
+        "memory_mb": 464.0
+      },
+      "client": {
+        "display_fps": 29.900465564367565,
+        "latency_upper_p95_ms": 98.50000000596629,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 157
+      },
+      "uptime_s": 161,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:39Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 57.7,
+      "vision_age_ms": 124.4,
+      "capture_fps": 30.0,
+      "vision_fps": 26.8,
+      "inference_ms": 37.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 63.1,
+        "throttled": "0x0",
+        "voltage_v": 5.04912,
+        "memory_mb": 467.3
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 105.5,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 162
+      },
+      "uptime_s": 166,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:44Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 44.2,
+      "vision_age_ms": 110.8,
+      "capture_fps": 29.9,
+      "vision_fps": 27.9,
+      "inference_ms": 34.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.00758,
+        "memory_mb": 465.0
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 98.59999998212152,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 167
+      },
+      "uptime_s": 171,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:49Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 52.8,
+      "vision_age_ms": 52.8,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 464.9
+      },
+      "client": {
+        "display_fps": 30.10053578946505,
+        "latency_upper_p95_ms": 98.50000000596629,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 172
+      },
+      "uptime_s": 176,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:54Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.2,
+      "vision_age_ms": 78.6,
+      "capture_fps": 30.0,
+      "vision_fps": 29.9,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.9781,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 29.99919465242055,
+        "latency_upper_p95_ms": 85.70000000594882,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 177
+      },
+      "uptime_s": 181,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:57:59Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 53.5,
+      "vision_age_ms": 53.5,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 462.2
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 91.40000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 182
+      },
+      "uptime_s": 186,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:04Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 52.1,
+      "vision_age_ms": 118.8,
+      "capture_fps": 30.0,
+      "vision_fps": 27.0,
+      "inference_ms": 38.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 30.1010101010101,
+        "latency_upper_p95_ms": 83.5,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 187
+      },
+      "uptime_s": 191,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:09Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 45.5,
+      "vision_age_ms": 78.9,
+      "capture_fps": 30.1,
+      "vision_fps": 25.3,
+      "inference_ms": 22.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.03706,
+        "memory_mb": 464.3
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 102.60000001190929,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 192
+      },
+      "uptime_s": 196,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:14Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 54.3,
+      "vision_age_ms": 54.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04778,
+        "memory_mb": 462.7
+      },
+      "client": {
+        "display_fps": 30.10113982972021,
+        "latency_upper_p95_ms": 108.09999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 198
+      },
+      "uptime_s": 201,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:19Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 48.0,
+      "vision_age_ms": 114.7,
+      "capture_fps": 30.2,
+      "vision_fps": 25.7,
+      "inference_ms": 46.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 467.7
+      },
+      "client": {
+        "display_fps": 29.899265561807773,
+        "latency_upper_p95_ms": 99.69999998807907,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 203
+      },
+      "uptime_s": 206,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:24Z"
+    },
+    {
+      "status": "No target selected",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 40.9,
+      "vision_age_ms": 140.8,
+      "capture_fps": 30.0,
+      "vision_fps": 23.6,
+      "inference_ms": 40.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.03572,
+        "memory_mb": 466.5
+      },
+      "client": {
+        "display_fps": 29.999194652600554,
+        "latency_upper_p95_ms": 108.79999999998836,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 208
+      },
+      "uptime_s": 211,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:29Z"
+    },
+    {
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: appearance mismatch",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.813,
+        "margin": null,
+        "elapsed_ms": 566,
+        "visible_people": 1,
+        "remembered_margin": 1.813
+      },
+      "capture_age_ms": 60.8,
+      "vision_age_ms": 127.5,
+      "capture_fps": 29.9,
+      "vision_fps": 23.9,
+      "inference_ms": 45.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.04242,
+        "memory_mb": 466.6
+      },
+      "client": {
+        "display_fps": 30.000402690004996,
+        "latency_upper_p95_ms": 111.09999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 213
+      },
+      "uptime_s": 216,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:34Z"
+    },
+    {
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: appearance mismatch",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.882,
+        "margin": null,
+        "elapsed_ms": 500,
+        "visible_people": 1,
+        "remembered_margin": 1.882
+      },
+      "capture_age_ms": 34.3,
+      "vision_age_ms": 134.3,
+      "capture_fps": 30.1,
+      "vision_fps": 22.9,
+      "inference_ms": 44.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0183,
+        "memory_mb": 466.2
+      },
+      "client": {
+        "display_fps": 29.900465564188742,
+        "latency_upper_p95_ms": 110.39999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 218
+      },
+      "uptime_s": 221,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:39Z"
+    },
+    {
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: waiting for both people to separate",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.696,
+        "margin": null,
+        "elapsed_ms": 766,
+        "visible_people": 1,
+        "remembered_margin": 1.696
+      },
+      "capture_age_ms": 54.5,
+      "vision_age_ms": 121.1,
+      "capture_fps": 30.0,
+      "vision_fps": 23.5,
+      "inference_ms": 40.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0049,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 104.70000000594882,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 223
+      },
+      "uptime_s": 226,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:44Z"
+    },
+    {
+      "status": "Tracking",
+      "reason": "",
+      "recovery_diagnostics": {},
+      "capture_age_ms": 41.8,
+      "vision_age_ms": 141.7,
+      "capture_fps": 30.0,
+      "vision_fps": 23.8,
+      "inference_ms": 40.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 4.99016,
+        "memory_mb": 467.1
+      },
+      "client": {
+        "display_fps": 30.10053578964506,
+        "latency_upper_p95_ms": 105.6000000059721,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 228
+      },
+      "uptime_s": 231,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:49Z"
+    },
+    {
+      "status": "Tracking",
+      "reason": "Selected person recovered after a brief interruption",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "confirmed",
+        "outcome": "recovered",
+        "similarity": 0.924,
+        "margin": null,
+        "elapsed_ms": 766,
+        "visible_people": 1,
+        "remembered_margin": 1.924
+      },
+      "capture_age_ms": 60.0,
+      "vision_age_ms": 126.6,
+      "capture_fps": 30.0,
+      "vision_fps": 24.8,
+      "inference_ms": 40.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.79845772854314,
+        "latency_upper_p95_ms": 106.39999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 233
+      },
+      "uptime_s": 236,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:58:54Z"
+    },
+    {
+      "status": "Tracking",
+      "reason": "Selected person recovered after a brief interruption",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "confirmed",
+        "outcome": "recovered",
+        "similarity": 0.923,
+        "margin": null,
+        "elapsed_ms": 966,
+        "visible_people": 1,
+        "remembered_margin": 1.923
+      },
+      "capture_age_ms": 62.2,
+      "vision_age_ms": 128.8,
+      "capture_fps": 30.0,
+      "vision_fps": 24.2,
+      "inference_ms": 43.4,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 4.96202,
+        "memory_mb": 468.8
+      },
+      "client": {
+        "display_fps": 29.89986555104743,
+        "latency_upper_p95_ms": 104.7999999821186,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 238
+      },
+      "uptime_s": 241,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:00Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 38.1,
+      "vision_age_ms": 104.8,
+      "capture_fps": 30.0,
+      "vision_fps": 29.8,
+      "inference_ms": 23.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 467.1
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 105.20000000001164,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 243
+      },
+      "uptime_s": 246,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:05Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 54.9,
+      "vision_age_ms": 121.5,
+      "capture_fps": 30.0,
+      "vision_fps": 24.4,
+      "inference_ms": 40.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.00758,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 102.39999999999418,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 248
+      },
+      "uptime_s": 251,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:10Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 41.3,
+      "vision_age_ms": 141.3,
+      "capture_fps": 30.0,
+      "vision_fps": 22.2,
+      "inference_ms": 47.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 467.2
+      },
+      "client": {
+        "display_fps": 28.791753075379056,
+        "latency_upper_p95_ms": 101.59999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 253
+      },
+      "uptime_s": 256,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:15Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.7,
+      "vision_age_ms": 51.7,
+      "capture_fps": 30.1,
+      "vision_fps": 29.0,
+      "inference_ms": 22.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 464.4
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 105.3999999940279,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 258
+      },
+      "uptime_s": 261,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:20Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.2,
+      "vision_age_ms": 117.9,
+      "capture_fps": 30.0,
+      "vision_fps": 26.2,
+      "inference_ms": 39.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.97408,
+        "memory_mb": 469.0
+      },
+      "client": {
+        "display_fps": 30.19870749535544,
+        "latency_upper_p95_ms": 101.30000001788721,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 263
+      },
+      "uptime_s": 266,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:25Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.3,
+      "vision_age_ms": 117.0,
+      "capture_fps": 30.1,
+      "vision_fps": 28.1,
+      "inference_ms": 39.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.02768,
+        "memory_mb": 469.0
+      },
+      "client": {
+        "display_fps": 29.800596011884714,
+        "latency_upper_p95_ms": 102.09999998807325,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 268
+      },
+      "uptime_s": 271,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:30Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 26.2,
+      "vision_age_ms": 59.5,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.03706,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 30.09932778167954,
+        "latency_upper_p95_ms": 105.20000002384768,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 273
+      },
+      "uptime_s": 276,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:35Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.0,
+      "vision_age_ms": 51.0,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 464.1
+      },
+      "client": {
+        "display_fps": 29.999194652600554,
+        "latency_upper_p95_ms": 104.40000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 278
+      },
+      "uptime_s": 281,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:40Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.0,
+      "vision_age_ms": 78.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.03036,
+        "memory_mb": 466.0
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 93.90000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 283
+      },
+      "uptime_s": 286,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:45Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 53.2,
+      "vision_age_ms": 53.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0585,
+        "memory_mb": 464.2
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 94.19999998807907,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 288
+      },
+      "uptime_s": 291,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:50Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 47.9,
+      "vision_age_ms": 47.9,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 22.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05314,
+        "memory_mb": 463.1
+      },
+      "client": {
+        "display_fps": 29.699195312449795,
+        "latency_upper_p95_ms": 93.50000000596629,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 293
+      },
+      "uptime_s": 296,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T22:59:55Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.1,
+      "vision_age_ms": 111.7,
+      "capture_fps": 29.9,
+      "vision_fps": 23.9,
+      "inference_ms": 41.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.99016,
+        "memory_mb": 468.2
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 95.39999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 298
+      },
+      "uptime_s": 301,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:00Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 43.2,
+      "vision_age_ms": 109.8,
+      "capture_fps": 30.0,
+      "vision_fps": 25.6,
+      "inference_ms": 36.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 466.5
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 105.20000000594882,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 303
+      },
+      "uptime_s": 306,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:05Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 54.9,
+      "vision_age_ms": 121.6,
+      "capture_fps": 30.1,
+      "vision_fps": 26.3,
+      "inference_ms": 47.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 63.1,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 466.6
+      },
+      "client": {
+        "display_fps": 29.797857775737462,
+        "latency_upper_p95_ms": 106.40000000596046,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 308
+      },
+      "uptime_s": 311,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:10Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.1,
+      "vision_age_ms": 118.7,
+      "capture_fps": 30.0,
+      "vision_fps": 27.0,
+      "inference_ms": 36.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 63.1,
+        "throttled": "0x0",
+        "voltage_v": 4.91914,
+        "memory_mb": 468.3
+      },
+      "client": {
+        "display_fps": 28.495745705638885,
+        "latency_upper_p95_ms": 111.59999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 313
+      },
+      "uptime_s": 316,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:15Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.6,
+      "vision_age_ms": 78.9,
+      "capture_fps": 30.0,
+      "vision_fps": 28.5,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.97944,
+        "memory_mb": 468.5
+      },
+      "client": {
+        "display_fps": 30.09328919650918,
+        "latency_upper_p95_ms": 108.09999998210697,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 318
+      },
+      "uptime_s": 322,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:20Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.6,
+      "vision_age_ms": 117.2,
+      "capture_fps": 30.0,
+      "vision_fps": 27.9,
+      "inference_ms": 37.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 468.5
+      },
+      "client": {
+        "display_fps": 30.10113982972021,
+        "latency_upper_p95_ms": 106.49999998213025,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 323
+      },
+      "uptime_s": 327,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:25Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.9,
+      "vision_age_ms": 85.2,
+      "capture_fps": 29.9,
+      "vision_fps": 26.1,
+      "inference_ms": 37.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05716,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.899265561628965,
+        "latency_upper_p95_ms": 97.80000001192093,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 328
+      },
+      "uptime_s": 332,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:30Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.1,
+      "vision_age_ms": 78.4,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.02768,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 99.50000000593718,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 333
+      },
+      "uptime_s": 337,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:35Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 53.3,
+      "vision_age_ms": 53.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.05448,
+        "memory_mb": 464.2
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 84.09999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 338
+      },
+      "uptime_s": 342,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:40Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.4,
+      "vision_age_ms": 117.0,
+      "capture_fps": 30.0,
+      "vision_fps": 26.4,
+      "inference_ms": 36.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.03572,
+        "memory_mb": 468.8
+      },
+      "client": {
+        "display_fps": 30.10113982990023,
+        "latency_upper_p95_ms": 75.00000001193257,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 343
+      },
+      "uptime_s": 347,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:45Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 38.1,
+      "vision_age_ms": 138.0,
+      "capture_fps": 30.0,
+      "vision_fps": 28.7,
+      "inference_ms": 36.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.06788,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.897781907693705,
+        "latency_upper_p95_ms": 95.40000001189765,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 348
+      },
+      "uptime_s": 352,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:50Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 62.3,
+      "vision_age_ms": 129.0,
+      "capture_fps": 30.0,
+      "vision_fps": 22.6,
+      "inference_ms": 40.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.00624,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 30.20113958955845,
+        "latency_upper_p95_ms": 98.19999999401625,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 353
+      },
+      "uptime_s": 357,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:00:55Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 59.1,
+      "vision_age_ms": 125.7,
+      "capture_fps": 30.1,
+      "vision_fps": 25.6,
+      "inference_ms": 39.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 4.96202,
+        "memory_mb": 468.5
+      },
+      "client": {
+        "display_fps": 29.899865550868615,
+        "latency_upper_p95_ms": 101.70000001194421,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 358
+      },
+      "uptime_s": 362,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:00Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.1,
+      "vision_age_ms": 118.8,
+      "capture_fps": 30.1,
+      "vision_fps": 25.4,
+      "inference_ms": 40.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 468.5
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 101.20000001194421,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 363
+      },
+      "uptime_s": 367,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:05Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.1,
+      "vision_age_ms": 117.7,
+      "capture_fps": 30.0,
+      "vision_fps": 22.9,
+      "inference_ms": 42.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 29.89986555104743,
+        "latency_upper_p95_ms": 101.20000002381857,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 368
+      },
+      "uptime_s": 372,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:10Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 26.8,
+      "vision_age_ms": 60.1,
+      "capture_fps": 30.1,
+      "vision_fps": 27.0,
+      "inference_ms": 22.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.04912,
+        "memory_mb": 467.1
+      },
+      "client": {
+        "display_fps": 30.09932778167954,
+        "latency_upper_p95_ms": 103.59999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 373
+      },
+      "uptime_s": 377,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:15Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.5,
+      "vision_age_ms": 52.5,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.02768,
+        "memory_mb": 466.5
+      },
+      "client": {
+        "display_fps": 29.99919465242055,
+        "latency_upper_p95_ms": 100.50000001786975,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 378
+      },
+      "uptime_s": 382,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:20Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 56.2,
+      "vision_age_ms": 122.9,
+      "capture_fps": 30.0,
+      "vision_fps": 24.9,
+      "inference_ms": 48.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.97408,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 29.79845772854314,
+        "latency_upper_p95_ms": 90.90000001189765,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 383
+      },
+      "uptime_s": 387,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:25Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 49.9,
+      "vision_age_ms": 49.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.07056,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 28.590412144953554,
+        "latency_upper_p95_ms": 106.5,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 388
+      },
+      "uptime_s": 392,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:30Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 25.8,
+      "vision_age_ms": 59.1,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.05314,
+        "memory_mb": 465.9
+      },
+      "client": {
+        "display_fps": 30.099931773631987,
+        "latency_upper_p95_ms": 90.59999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 393
+      },
+      "uptime_s": 397,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:35Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 57.5,
+      "vision_age_ms": 124.1,
+      "capture_fps": 29.9,
+      "vision_fps": 29.2,
+      "inference_ms": 47.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.93254,
+        "memory_mb": 467.7
+      },
+      "client": {
+        "display_fps": 29.99919465242055,
+        "latency_upper_p95_ms": 93.59999998210697,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 398
+      },
+      "uptime_s": 402,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:40Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 42.4,
+      "vision_age_ms": 142.3,
+      "capture_fps": 30.0,
+      "vision_fps": 23.3,
+      "inference_ms": 47.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 29.89986555104743,
+        "latency_upper_p95_ms": 94.20000000594882,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 403
+      },
+      "uptime_s": 407,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:45Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.8,
+      "vision_age_ms": 112.4,
+      "capture_fps": 30.0,
+      "vision_fps": 29.5,
+      "inference_ms": 34.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0183,
+        "memory_mb": 466.7
+      },
+      "client": {
+        "display_fps": 30.10053578946505,
+        "latency_upper_p95_ms": 102.09999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 408
+      },
+      "uptime_s": 412,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:50Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 35.6,
+      "vision_age_ms": 135.6,
+      "capture_fps": 30.0,
+      "vision_fps": 25.3,
+      "inference_ms": 46.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 4.98614,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 28.38907121435529,
+        "latency_upper_p95_ms": 94.90000000002328,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 414
+      },
+      "uptime_s": 417,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:01:55Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 71.8,
+      "vision_age_ms": 105.1,
+      "capture_fps": 30.0,
+      "vision_fps": 26.1,
+      "inference_ms": 37.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 468.1
+      },
+      "client": {
+        "display_fps": 30.10053578946505,
+        "latency_upper_p95_ms": 103.19999999401625,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 419
+      },
+      "uptime_s": 422,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:00Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.8,
+      "vision_age_ms": 50.8,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.03706,
+        "memory_mb": 463.8
+      },
+      "client": {
+        "display_fps": 29.09090909090909,
+        "latency_upper_p95_ms": 116.69999998807907,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 424
+      },
+      "uptime_s": 427,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:05Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 43.4,
+      "vision_age_ms": 110.1,
+      "capture_fps": 29.9,
+      "vision_fps": 28.2,
+      "inference_ms": 35.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 4.9513,
+        "memory_mb": 466.7
+      },
+      "client": {
+        "display_fps": 30.09932778167954,
+        "latency_upper_p95_ms": 93.8000000238535,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 429
+      },
+      "uptime_s": 432,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:10Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 42.2,
+      "vision_age_ms": 175.4,
+      "capture_fps": 30.1,
+      "vision_fps": 24.7,
+      "inference_ms": 70.4,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 29.899865550868615,
+        "latency_upper_p95_ms": 103.10000001790468,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 434
+      },
+      "uptime_s": 437,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:15Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.4,
+      "vision_age_ms": 51.4,
+      "capture_fps": 30.0,
+      "vision_fps": 29.4,
+      "inference_ms": 22.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0652,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 30.10053578946505,
+        "latency_upper_p95_ms": 108,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 439
+      },
+      "uptime_s": 442,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:20Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 37.5,
+      "vision_age_ms": 104.2,
+      "capture_fps": 29.9,
+      "vision_fps": 25.4,
+      "inference_ms": 41.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.7
+      },
+      "client": {
+        "display_fps": 30.10053578964506,
+        "latency_upper_p95_ms": 95.39999998209532,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 444
+      },
+      "uptime_s": 447,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:25Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.9,
+      "vision_age_ms": 50.9,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.8,
+        "throttled": "0x0",
+        "voltage_v": 5.05314,
+        "memory_mb": 464.0
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 98.2999999821186,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 449
+      },
+      "uptime_s": 452,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:30Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.6,
+      "vision_age_ms": 77.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 4.96202,
+        "memory_mb": 465.8
+      },
+      "client": {
+        "display_fps": 30.000402689824977,
+        "latency_upper_p95_ms": 75.20000000001164,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 454
+      },
+      "uptime_s": 457,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:36Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.8,
+      "vision_age_ms": 52.8,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04778,
+        "memory_mb": 464.0
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 74.89999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 459
+      },
+      "uptime_s": 462,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:41Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.6,
+      "vision_age_ms": 78.0,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.8,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 465.8
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 74.7000000178814,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 464
+      },
+      "uptime_s": 467,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:46Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.9,
+      "vision_age_ms": 52.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 462.3
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 75.30000001192093,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 469
+      },
+      "uptime_s": 472,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:51Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.9,
+      "vision_age_ms": 78.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 4.97408,
+        "memory_mb": 464.6
+      },
+      "client": {
+        "display_fps": 30.00120004793039,
+        "latency_upper_p95_ms": 74.89999998209532,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 474
+      },
+      "uptime_s": 477,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:02:56Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 25.2,
+      "vision_age_ms": 58.5,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.02098,
+        "memory_mb": 462.8
+      },
+      "client": {
+        "display_fps": 30.001610824886296,
+        "latency_upper_p95_ms": 86.39999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 479
+      },
+      "uptime_s": 482,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:01Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 55.7,
+      "vision_age_ms": 55.7,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 462.8
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 75.20000000001164,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 484
+      },
+      "uptime_s": 487,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:06Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 55.1,
+      "vision_age_ms": 121.7,
+      "capture_fps": 29.9,
+      "vision_fps": 23.1,
+      "inference_ms": 39.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 4.99418,
+        "memory_mb": 468.2
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 74.69999998807907,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 489
+      },
+      "uptime_s": 492,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:11Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 41.9,
+      "vision_age_ms": 75.3,
+      "capture_fps": 30.0,
+      "vision_fps": 25.4,
+      "inference_ms": 38.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.02768,
+        "memory_mb": 465.5
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 95.7000000178814,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 494
+      },
+      "uptime_s": 497,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:16Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.3,
+      "vision_age_ms": 51.3,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.07056,
+        "memory_mb": 462.2
+      },
+      "client": {
+        "display_fps": 30.001800108078015,
+        "latency_upper_p95_ms": 95.79999999998836,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 499
+      },
+      "uptime_s": 502,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:21Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.3,
+      "vision_age_ms": 77.7,
+      "capture_fps": 30.1,
+      "vision_fps": 30.0,
+      "inference_ms": 21.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 4.98614,
+        "memory_mb": 467.6
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 95.6000000059721,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 504
+      },
+      "uptime_s": 507,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:26Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 47.3,
+      "vision_age_ms": 114.0,
+      "capture_fps": 29.8,
+      "vision_fps": 27.1,
+      "inference_ms": 50.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 5.03572,
+        "memory_mb": 467.6
+      },
+      "client": {
+        "display_fps": 30.097969902030098,
+        "latency_upper_p95_ms": 95.00000000593718,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 509
+      },
+      "uptime_s": 512,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:31Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 42.6,
+      "vision_age_ms": 109.2,
+      "capture_fps": 29.9,
+      "vision_fps": 21.5,
+      "inference_ms": 47.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.0,
+        "throttled": "0x0",
+        "voltage_v": 5.0585,
+        "memory_mb": 466.0
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 93.59999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 514
+      },
+      "uptime_s": 517,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:36Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 36.8,
+      "vision_age_ms": 103.5,
+      "capture_fps": 29.9,
+      "vision_fps": 29.1,
+      "inference_ms": 47.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.03304,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 30.0006000121433,
+        "latency_upper_p95_ms": 108.79999999405118,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 519
+      },
+      "uptime_s": 522,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:41Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 61.6,
+      "vision_age_ms": 61.6,
+      "capture_fps": 30.1,
+      "vision_fps": 25.1,
+      "inference_ms": 35.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 62.6,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 466.7
+      },
+      "client": {
+        "display_fps": 29.99859067020097,
+        "latency_upper_p95_ms": 93.6000000059721,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 524
+      },
+      "uptime_s": 528,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:46Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.2,
+      "vision_age_ms": 51.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.4,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 465.0
+      },
+      "client": {
+        "display_fps": 27.090482210518545,
+        "latency_upper_p95_ms": 128.90000000002328,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 529
+      },
+      "uptime_s": 533,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:51Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.6,
+      "vision_age_ms": 77.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.01026,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 30.20113958973967,
+        "latency_upper_p95_ms": 93.49999998213025,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 534
+      },
+      "uptime_s": 538,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:03:56Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.9,
+      "vision_age_ms": 52.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.01696,
+        "memory_mb": 465.1
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 74.89999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 539
+      },
+      "uptime_s": 543,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:01Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.8,
+      "vision_age_ms": 78.1,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 466.8
+      },
+      "client": {
+        "display_fps": 30.0006000121433,
+        "latency_upper_p95_ms": 74.49999998213025,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 544
+      },
+      "uptime_s": 548,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:06Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 53.2,
+      "vision_age_ms": 53.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.07592,
+        "memory_mb": 465.2
+      },
+      "client": {
+        "display_fps": 30.000402690004996,
+        "latency_upper_p95_ms": 74.49999998213025,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 549
+      },
+      "uptime_s": 553,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:11Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 45.1,
+      "vision_age_ms": 78.4,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.1,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 4.95934,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 74.80000001785811,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 554
+      },
+      "uptime_s": 558,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:16Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 53.9,
+      "vision_age_ms": 53.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.8,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.8,
+        "throttled": "0x0",
+        "voltage_v": 5.0585,
+        "memory_mb": 465.2
+      },
+      "client": {
+        "display_fps": 29.899265561628965,
+        "latency_upper_p95_ms": 93.89999998809071,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 559
+      },
+      "uptime_s": 563,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:21Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 48.5,
+      "vision_age_ms": 48.5,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.092,
+        "memory_mb": 465.5
+      },
+      "client": {
+        "display_fps": 29.99859067020097,
+        "latency_upper_p95_ms": 93.90000001189765,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 564
+      },
+      "uptime_s": 568,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:26Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 57.4,
+      "vision_age_ms": 57.4,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.05448,
+        "memory_mb": 465.6
+      },
+      "client": {
+        "display_fps": 30.000402690004996,
+        "latency_upper_p95_ms": 93.90000002388842,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 569
+      },
+      "uptime_s": 573,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:31Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.7,
+      "vision_age_ms": 50.7,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.0585,
+        "memory_mb": 465.6
+      },
+      "client": {
+        "display_fps": 30.000402690004996,
+        "latency_upper_p95_ms": 94.29999997618143,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 574
+      },
+      "uptime_s": 578,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:36Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 26.5,
+      "vision_age_ms": 59.8,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.0049,
+        "memory_mb": 467.4
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 74.99999999406282,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 579
+      },
+      "uptime_s": 583,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:41Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.0,
+      "vision_age_ms": 51.0,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.04778,
+        "memory_mb": 465.6
+      },
+      "client": {
+        "display_fps": 30.002214928546874,
+        "latency_upper_p95_ms": 75.1000000059139,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 584
+      },
+      "uptime_s": 588,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:46Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 26.9,
+      "vision_age_ms": 60.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.03706,
+        "memory_mb": 465.7
+      },
+      "client": {
+        "display_fps": 29.99979865914141,
+        "latency_upper_p95_ms": 75.00000001187436,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 589
+      },
+      "uptime_s": 593,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:51Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.1,
+      "vision_age_ms": 51.1,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.8,
+        "throttled": "0x0",
+        "voltage_v": 5.05984,
+        "memory_mb": 465.6
+      },
+      "client": {
+        "display_fps": 29.999798658961396,
+        "latency_upper_p95_ms": 93.80000000598375,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 594
+      },
+      "uptime_s": 598,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:04:56Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 26.5,
+      "vision_age_ms": 59.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 4.97274,
+        "memory_mb": 467.4
+      },
+      "client": {
+        "display_fps": 30.00120004810922,
+        "latency_upper_p95_ms": 74.59999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 599
+      },
+      "uptime_s": 603,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:01Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 54.9,
+      "vision_age_ms": 54.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 465.6
+      },
+      "client": {
+        "display_fps": 29.99859067020097,
+        "latency_upper_p95_ms": 74.7999999821186,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 604
+      },
+      "uptime_s": 608,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:06Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 48.6,
+      "vision_age_ms": 48.6,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.9,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.0585,
+        "memory_mb": 465.7
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 74.59999999997672,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 609
+      },
+      "uptime_s": 613,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:11Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 57.5,
+      "vision_age_ms": 57.5,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.04376,
+        "memory_mb": 465.7
+      },
+      "client": {
+        "display_fps": 29.698599349805953,
+        "latency_upper_p95_ms": 93.80000000598375,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 614
+      },
+      "uptime_s": 618,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:16Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 51.0,
+      "vision_age_ms": 51.0,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 22.2,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.02768,
+        "memory_mb": 465.7
+      },
+      "client": {
+        "display_fps": 30.200531529282433,
+        "latency_upper_p95_ms": 94.49999999406282,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 619
+      },
+      "uptime_s": 623,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:21Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.9,
+      "vision_age_ms": 78.2,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.02232,
+        "memory_mb": 467.0
+      },
+      "client": {
+        "display_fps": 29.997382778719736,
+        "latency_upper_p95_ms": 74.99999998207204,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 624
+      },
+      "uptime_s": 628,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:26Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 37.8,
+      "vision_age_ms": 137.8,
+      "capture_fps": 29.9,
+      "vision_fps": 28.3,
+      "inference_ms": 40.7,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 5.01026,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 30.00780202859898,
+        "latency_upper_p95_ms": 74.80000002379529,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 630
+      },
+      "uptime_s": 633,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:31Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 50.8,
+      "vision_age_ms": 50.8,
+      "capture_fps": 30.1,
+      "vision_fps": 30.3,
+      "inference_ms": 22.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.8,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.4
+      },
+      "client": {
+        "display_fps": 29.899865550868615,
+        "latency_upper_p95_ms": 93.99999999406282,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 635
+      },
+      "uptime_s": 638,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:36Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.4,
+      "vision_age_ms": 77.7,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.4,
+      "error": null,
+      "hardware": {
+        "temperature_c": 58.7,
+        "throttled": "0x0",
+        "voltage_v": 4.97274,
+        "memory_mb": 468.2
+      },
+      "client": {
+        "display_fps": 30.099931773631987,
+        "latency_upper_p95_ms": 100.30000001192093,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 640
+      },
+      "uptime_s": 643,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:41Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 52.9,
+      "vision_age_ms": 52.9,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.6,
+      "error": null,
+      "hardware": {
+        "temperature_c": 59.3,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 466.4
+      },
+      "client": {
+        "display_fps": 30.001006745192793,
+        "latency_upper_p95_ms": 74.60000002384186,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 645
+      },
+      "uptime_s": 648,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:46Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.7,
+      "vision_age_ms": 78.0,
+      "capture_fps": 30.0,
+      "vision_fps": 30.0,
+      "inference_ms": 21.3,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.4,
+        "throttled": "0x0",
+        "voltage_v": 4.99552,
+        "memory_mb": 468.2
+      },
+      "client": {
+        "display_fps": 29.99919465242055,
+        "latency_upper_p95_ms": 74.59999999403954,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 650
+      },
+      "uptime_s": 653,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:51Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 44.9,
+      "vision_age_ms": 111.6,
+      "capture_fps": 29.9,
+      "vision_fps": 28.0,
+      "inference_ms": 39.5,
+      "error": null,
+      "hardware": {
+        "temperature_c": 61.5,
+        "throttled": "0x0",
+        "voltage_v": 5.01562,
+        "memory_mb": 467.4
+      },
+      "client": {
+        "display_fps": 30.000600011964476,
+        "latency_upper_p95_ms": 75.00000001187436,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 655
+      },
+      "uptime_s": 658,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:05:56Z"
+    },
+    {
+      "status": "Lost",
+      "reason": "Recovery timed out: no candidate; select again",
+      "recovery_diagnostics": {
+        "trigger": "isolated appearance change",
+        "gate": "no candidate",
+        "outcome": "lost",
+        "similarity": -1,
+        "margin": null,
+        "elapsed_ms": 2966,
+        "visible_people": 0,
+        "remembered_margin": 0,
+        "loss_reason": "Recovery timed out: no candidate; select again"
+      },
+      "capture_age_ms": 31.4,
+      "vision_age_ms": 131.4,
+      "capture_fps": 30.1,
+      "vision_fps": 25.4,
+      "inference_ms": 46.0,
+      "error": null,
+      "hardware": {
+        "temperature_c": 60.9,
+        "throttled": "0x0",
+        "voltage_v": 5.0384,
+        "memory_mb": 466.3
+      },
+      "client": {
+        "display_fps": 29.999194652600554,
+        "latency_upper_p95_ms": 101.6000000119675,
+        "samples": 150,
+        "visible": true,
+        "received_uptime_s": 660
+      },
+      "uptime_s": 663,
+      "model": "yolo26n_ncnn_model",
+      "image_size": 320,
+      "utc": "2026-09-17T23:06:02Z"
+    }
+  ]
+}

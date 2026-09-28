@@ -1,0 +1,35 @@
+{
+  "context": "Public CAVIAR firstframe, live service concurrently active;12timed calls after3warmups; no camera capture by probe",
+  "settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "valid_results": [
+    {
+      "torch_threads": 3,
+      "ncnn_load_threads": 4,
+      "median_ms": 323.610152,
+      "p95_ms": 466.383224
+    },
+    {
+      "torch_threads": 2,
+      "ncnn_load_threads": 4,
+      "median_ms": 263.791896,
+      "p95_ms": 293.294485
+    },
+    {
+      "torch_threads": 2,
+      "ncnn_load_threads": 1,
+      "median_ms": 33.2376905,
+      "p95_ms": 38.97380665
+    },
+    {
+      "torch_threads": 2,
+      "ncnn_load_threads": 2,
+      "median_ms": 22.570534,
+      "p95_ms": 26.63604035
+    }
+  ],
+  "finding": "NCNN num_threads must be set before load_param/load_model; changing afterward retains load-time threads in convolution kernels and produces warnings."
+}

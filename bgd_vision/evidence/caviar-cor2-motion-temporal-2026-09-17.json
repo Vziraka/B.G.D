@@ -1,0 +1,117 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 482,
+  "video_fps": 25.0,
+  "wall_seconds": 30.000017602999833,
+  "target_gt": 2,
+  "candidate_backend": "boxmot.trackers.box.deepocsort.tracker.DeepOcSort",
+  "source_hashes_before_run": {
+    "selection.py": "a15e4c7e53b525d09adbada6c033809ea4ac0c43cfb6fb154f5240a28e7db5ff",
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "evaluate_tracking.py": "ef35097dd6e8c04dd7ea3a1e79a8d00280f10fcbcf5869fba79c0699e34040ba"
+  },
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "combined_offline_fps": 16.066657239287842,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": true,
+    "wrong_appearance_same_position_keeps_id": true,
+    "invalid_descriptors_filtered_with_aligned_indices": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "2,3": [
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 748,
+      "matches": 666,
+      "missing": 82
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 748,
+      "matches": 661,
+      "missing": 87
+    }
+  },
+  "selector": {
+    "selected_frame": 0,
+    "Tracking": 213,
+    "eligible_target_frames": 236,
+    "correct_tracking_frames": 213,
+    "Temporarily hidden": 93,
+    "recoveries": 1,
+    "Lost": 176,
+    "wrong_tracking_frames": 0
+  },
+  "selector_transitions": [
+    {
+      "frame": 0,
+      "status": "Tracking",
+      "reason": ""
+    },
+    {
+      "frame": 208,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 226,
+      "status": "Tracking",
+      "reason": "Selected person recovered after a brief interruption"
+    },
+    {
+      "frame": 231,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 306,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again"
+    }
+  ],
+  "public_frame_trace": [],
+  "milliseconds": {
+    "detect": {
+      "median": 24.523813500081815,
+      "p95": 53.37507485016883
+    },
+    "bytetrack": {
+      "median": 0.9631960001570405,
+      "p95": 1.237957099851883
+    },
+    "deepocsort_osnet": {
+      "median": 24.044539999977133,
+      "p95": 53.566549999868585
+    }
+  },
+  "selector_exercised": true,
+  "selector_correct_coverage": 0.902542372881356,
+  "selector_wrong_fraction": 0.0,
+  "source": {
+    "video": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths2cor/EnterExitCrossingPaths2cor.mpg",
+    "annotations": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths2cor/ceecp2gt.xml"
+  },
+  "runtime_limit": "Public offline replay with live service concurrently active; not measured livecombined performance.",
+  "interpretation": "One correct bounded recovery, no observed wrong-person proxy matches. Physical acceptance still pending."
+}

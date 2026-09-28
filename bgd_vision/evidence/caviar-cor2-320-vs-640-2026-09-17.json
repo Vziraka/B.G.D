@@ -1,0 +1,508 @@
+[
+  {
+    "imgsz": 320,
+    "median_ms": 23.90148099993894,
+    "p95_ms": 28.384405999986484,
+    "frames": [
+      {
+        "frame": 205,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 5
+      },
+      {
+        "frame": 206,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 207,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 4
+      },
+      {
+        "frame": 208,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 4
+      },
+      {
+        "frame": 209,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 210,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 211,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 212,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 213,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 214,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 215,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 216,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 3
+      },
+      {
+        "frame": 217,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 3
+      },
+      {
+        "frame": 218,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 3
+      },
+      {
+        "frame": 219,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 220,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 221,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 222,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 223,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 224,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 225,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 226,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 227,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 228,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 229,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 230,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 231,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 232,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 233,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 234,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 235,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 236,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 237,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 238,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 239,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 240,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 241,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 242,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 243,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 244,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 245,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      }
+    ]
+  },
+  {
+    "imgsz": 640,
+    "median_ms": 96.60576900023443,
+    "p95_ms": 108.94505299984303,
+    "frames": [
+      {
+        "frame": 205,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 206,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 207,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 208,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 209,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 3
+      },
+      {
+        "frame": 210,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 211,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 212,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 213,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 214,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 1
+      },
+      {
+        "frame": 215,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 216,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 217,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 3
+      },
+      {
+        "frame": 218,
+        "GT2_matched": false,
+        "GT2_ambiguous": true,
+        "detections": 2
+      },
+      {
+        "frame": 219,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 220,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 221,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 222,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 223,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 224,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 225,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 226,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 227,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 228,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 229,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 230,
+        "GT2_matched": true,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 231,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 232,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 233,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 234,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 235,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 236,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 237,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 238,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 239,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 240,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 241,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 242,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      },
+      {
+        "frame": 243,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 3
+      },
+      {
+        "frame": 244,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 1
+      },
+      {
+        "frame": 245,
+        "GT2_matched": false,
+        "GT2_ambiguous": false,
+        "detections": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "all_sources_match": true,
+  "sha256": {
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "selection.py": "a15e4c7e53b525d09adbada6c033809ea4ac0c43cfb6fb154f5240a28e7db5ff",
+    "server.py": "c4877b3f2ae0d9ba2792889275f7b6022989f399814a6346b8fd03708657735b",
+    "index.html": "8aa8e460f5274984bcc3917ffd2ebb987c5ad18fbb08da6b9eb32d3176a003a5",
+    "app.js": "7f3dc9f12eab1445d905dc411629407e90706acb6945d69a18ef51dca96eeb56",
+    "style.css": "3d6e941d8f34144570adea82b0648eb93864b173fd28b69a50961652327e057f"
+  },
+  "qualification": "Source deployment verification only; live physical crossing pending"
+}

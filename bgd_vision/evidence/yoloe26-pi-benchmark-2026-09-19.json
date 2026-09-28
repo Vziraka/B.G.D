@@ -1,0 +1,156 @@
+{
+  "date": "2026-09-19",
+  "host": {
+    "architecture": "aarch64",
+    "kernel": "6.18.50+rpt-rpi-2712",
+    "memory_gib": 7.9,
+    "available_memory_gib_before": 6.9,
+    "free_storage_gib_before": 46,
+    "python": "3.13.5",
+    "ultralytics": "8.4.154",
+    "torch": "2.14.0+cpu",
+    "torchvision": "0.29.0+cpu"
+  },
+  "artifacts": {
+    "prompt_free": {
+      "file": "yoloe-26n-seg-pf.pt",
+      "bytes": 16271345,
+      "sha256": "ae805a9ac11c85214588b32da8248d68a516e1d071465e1e86a03cbfadb66ba7"
+    },
+    "text_visual": {
+      "file": "yoloe-26n-seg.pt",
+      "bytes": 11710443,
+      "sha256": "1741c1f8da3cea47e2c01829c334a50dc0b9bbd05e685b90a3ce84fae32c8c1b"
+    },
+    "text_encoder": {
+      "file": "mobileclip2_b.ts",
+      "bytes": 253794476,
+      "sha256": "35d7f213e4d75f38514e4656ad3cb91158bd33e3805d8ac349f23b186f66982f"
+    },
+    "prompt_profile": {
+      "file": "bgd-targets-yoloe26n.npz",
+      "bytes": 15970,
+      "sha256": "8d3445698d90ce80986b7853617a1da82ea171c0032c013599065d0ebd518894",
+      "classes": ["book", "cell phone", "smartphone", "lotion bottle", "coin", "bicycle", "sports ball", "glasses case"]
+    }
+  },
+  "camera_baseline": {
+    "capture_fps": 30.0,
+    "vision_fps": 30.0,
+    "display_fps_range": [29.9, 30.0],
+    "latency_upper_p95_ms_range": [95.2, 98.8],
+    "temperature_c_range": [59.8, 60.9],
+    "throttle": "0x0",
+    "error": null
+  },
+  "prompt_free": {
+    "vocabulary": 4585,
+    "320": {
+      "iterations": 30,
+      "wall_median_ms": 407.8,
+      "wall_p95_ms": 509.6,
+      "sustained_fps": 2.45,
+      "rss_peak_mb": 542.5,
+      "temperature_c_end": 65.0,
+      "observed_service_capture_fps_min": 22.6,
+      "observed_service_vision_fps_min": 23.5,
+      "observed_service_display_fps_min": 22.8,
+      "observed_service_latency_upper_p95_ms_max": 243.9
+    },
+    "640": {
+      "iterations": 15,
+      "wall_median_ms": 1091.7,
+      "wall_p95_ms": 1174.9,
+      "sustained_fps": 0.94,
+      "rss_peak_mb": 820.3,
+      "temperature_c_end": 64.45,
+      "observed_service_capture_fps_min": 18.2,
+      "observed_service_vision_fps_min": 17.6,
+      "observed_service_display_fps_min": 17.49,
+      "observed_service_latency_upper_p95_ms_max": 354.6
+    },
+    "quality_note": "The unannotated room view produced multiple implausible prompt-free labels; prompt-free mode is not accepted on this evidence."
+  },
+  "targeted_text_profile": {
+    "first_connected_prompt_setup_ms": 31564.8,
+    "later_profile_generation_s": 7.11,
+    "saved_profile_load_ms_range": [2.1, 2.4],
+    "320": {
+      "iterations": 30,
+      "wall_median_ms": 357.2,
+      "wall_p95_ms": 432.5,
+      "sustained_fps": 2.83,
+      "rss_peak_mb": 441.5,
+      "temperature_c_end": 67.2,
+      "observed_service_capture_fps_min": 28.8,
+      "observed_service_vision_fps_min": 28.3,
+      "observed_service_display_fps_min": 26.29,
+      "observed_service_latency_upper_p95_ms_max": 152.4
+    },
+    "640": {
+      "iterations": 15,
+      "wall_median_ms": 746.6,
+      "wall_p95_ms": 852.0,
+      "sustained_fps": 1.32,
+      "rss_peak_mb": 438.9,
+      "temperature_c_end": 67.2,
+      "observed_service_capture_fps_min": 22.6,
+      "observed_service_vision_fps_min": 22.8,
+      "observed_service_display_fps_min": 22.3,
+      "observed_service_latency_upper_p95_ms_max": 263.5
+    }
+  },
+  "physical_book_text_prompt": {
+    "owner_state": "White book held still with front cover facing the camera.",
+    "eight_class_profile": {
+      "classes": ["book", "cell phone", "smartphone", "lotion bottle", "coin", "bicycle", "sports ball", "glasses case"],
+      "320": {"frames": 10, "book_detection_frames": 1, "best_confidence": 0.123},
+      "640": {"frames": 10, "book_detection_frames": 3, "best_confidence": 0.107}
+    },
+    "book_only_profile": {
+      "profile_sha256": "8bc9768c3d175aa686f5c514b62234742a239abea9bb70f71c6b6891f9db841d",
+      "320": {"frames": 10, "book_detection_frames": 0, "confidence_threshold": 0.05},
+      "640": {"frames": 10, "book_detection_frames": 10, "best_confidence": 0.111, "confidence_threshold": 0.05}
+    },
+    "interpretation": "The targeted model continuously emitted a book candidate at 640 with a single prompt, but localization was not verified and the confidence was low. This is not yet an accepted book detector."
+  },
+  "physical_book_visual_prompt": {
+    "owner_state": "Owner drew a snug box around the stationary white book and held it still.",
+    "image_size": 640,
+    "frames": 10,
+    "frames_with_detection": 10,
+    "best_confidence": 0.969,
+    "reference_box": [43, 168, 241, 382],
+    "iou_median": 0.828,
+    "iou_best": 0.83,
+    "prompt_ms": 5423.2,
+    "wall_median_ms": 800.3,
+    "sustained_fps": 1.23,
+    "rss_peak_mb": 480.1,
+    "images_retained": false,
+    "interpretation": "Stationary visual-prompt localization passed this one scene. Motion, exit/return, distractors and camera motion remain untested."
+  },
+  "service_result": {
+    "crash": false,
+    "throttle_seen": false,
+    "application_error_seen": false,
+    "returned_capture_fps": 30.0,
+    "returned_vision_fps": 30.0,
+    "post_visual_prompt_display_fps": 28.6,
+    "post_visual_prompt_latency_upper_p95_ms": 97.8,
+    "post_visual_prompt_temperature_c": 64.2
+  },
+  "retention": {
+    "camera_images_saved": false,
+    "aggregate_detections_only": true
+  },
+  "environment_cleanup": {
+    "note": "The official loader auto-installed clip, ftfy, regex and wcwidth into the application venv during first text setup. They were copied to candidates/yoloe26/deps and removed from the application venv. Normal detector imports, isolated prompt-profile loading and the live service were rechecked successfully."
+  },
+  "limits": [
+    "These are compatibility and coexistence measurements, not target-detection accuracy.",
+    "The room view was not annotated and no target presence was asserted.",
+    "Continuous, periodic and one-shot scheduling remain candidates pending physical quality measurements.",
+    "No image was retained."
+  ]
+}

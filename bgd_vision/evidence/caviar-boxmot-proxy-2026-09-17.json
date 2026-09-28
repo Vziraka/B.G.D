@@ -1,0 +1,114 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 383,
+  "video_fps": 25.0,
+  "wall_seconds": 26.036795886999926,
+  "candidate_backend": "boxmot.trackers.box.deepocsort.tracker.DeepOcSort",
+  "source_hashes_before_run": {
+    "selection.py": "c8c01e48b0aab09595d4548205153164cdfbd06e326d89ff76e75cf5d5789609",
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "2ba982d261ded08a8527eecf92ee1e390f76af290809cb9c703930dfc7ff5675",
+    "__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "evaluate_tracking.py": "2b87055be874721223ec8186c8e10b1030d8d16b1593a4c6858943b3b59199ec"
+  },
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "combined_offline_fps": 14.709951318980476,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": true,
+    "wrong_appearance_same_position_keeps_id": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "1,2": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ],
+    "0,2": [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 1335,
+      "matches": 1075,
+      "missing": 260,
+      "matched_id_changes": 1
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 1335,
+      "matches": 1021,
+      "missing": 314,
+      "matched_id_changes": 3
+    }
+  },
+  "selector": {
+    "selected_frame": 0,
+    "Tracking": 105,
+    "eligible_target_frames": 373,
+    "correct_tracking_frames": 105,
+    "Checking target": 23,
+    "Lost": 255
+  },
+  "selector_transitions": [
+    {
+      "frame": 0,
+      "status": "Tracking",
+      "reason": ""
+    },
+    {
+      "frame": 105,
+      "status": "Checking target",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 128,
+      "status": "Lost",
+      "reason": "Recovery timed out: tracker has not restored the selected ID; select again"
+    }
+  ],
+  "milliseconds": {
+    "detect": {
+      "median": 24.994036999942182,
+      "p95": 36.226040300039124
+    },
+    "bytetrack": {
+      "median": 1.0122329999830981,
+      "p95": 1.3789320999421757
+    },
+    "deepocsort_osnet": {
+      "median": 36.937781000006,
+      "p95": 49.17678299993894
+    }
+  },
+  "selector_correct_coverage": 0.28150134048257375,
+  "selector_wrong_fraction": 0.0
+}

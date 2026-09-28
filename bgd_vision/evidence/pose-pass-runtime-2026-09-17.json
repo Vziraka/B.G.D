@@ -1,0 +1,27 @@
+{
+  "uptime_s": 266,
+  "sample_span_s": 266,
+  "samples": 54,
+  "visible_samples": 45,
+  "display_fps": [
+    26.68914173348529,
+    30.19870749535544
+  ],
+  "display_below15": 0,
+  "vision_fps": [
+    0,
+    30.3
+  ],
+  "delay_p95_ms": [
+    75.30000000000291,
+    137.90000000596046
+  ],
+  "temperature_c": [
+    57.6,
+    63.1
+  ],
+  "flags": [
+    "0x0"
+  ],
+  "errors": []
+}

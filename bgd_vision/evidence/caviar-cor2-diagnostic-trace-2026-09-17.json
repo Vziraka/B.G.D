@@ -1,0 +1,1037 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 246,
+  "video_fps": 25.0,
+  "wall_seconds": 16.900108070999977,
+  "target_gt": 2,
+  "candidate_backend": "boxmot.trackers.box.deepocsort.tracker.DeepOcSort",
+  "source_hashes_before_run": {
+    "selection.py": "8e58757562ebe478bb9953179dc723ddc54476e75f0131ebde2905e80b613742",
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "evaluate_tracking.py": "ef35097dd6e8c04dd7ea3a1e79a8d00280f10fcbcf5869fba79c0699e34040ba"
+  },
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "combined_offline_fps": 14.556119935240403,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": true,
+    "wrong_appearance_same_position_keeps_id": true,
+    "invalid_descriptors_filtered_with_aligned_indices": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "2,3": [
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 519,
+      "matches": 443,
+      "missing": 76
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 519,
+      "matches": 440,
+      "missing": 79
+    }
+  },
+  "selector": {
+    "selected_frame": 0,
+    "Tracking": 208,
+    "eligible_target_frames": 236,
+    "correct_tracking_frames": 208,
+    "Temporarily hidden": 38
+  },
+  "selector_transitions": [
+    {
+      "frame": 0,
+      "status": "Tracking",
+      "reason": ""
+    },
+    {
+      "frame": 208,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    }
+  ],
+  "public_frame_trace": [
+    {
+      "frame": 205,
+      "detection_count": 5,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "2": 2
+      },
+      "candidate_count": 1,
+      "status": "Tracking",
+      "diagnostics": {},
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.9639417561719994
+    },
+    {
+      "frame": 206,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "2": 2
+      },
+      "candidate_count": 1,
+      "status": "Tracking",
+      "diagnostics": {},
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.9370730531222375
+    },
+    {
+      "frame": 207,
+      "detection_count": 4,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "2": 2
+      },
+      "candidate_count": 1,
+      "status": "Tracking",
+      "diagnostics": {},
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8962511656485083
+    },
+    {
+      "frame": 208,
+      "detection_count": 4,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "2": 2,
+        "3": 4
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for a clear match",
+        "outcome": "checking"
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8925592258925593
+    },
+    {
+      "frame": 209,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.897,
+        "margin": null,
+        "elapsed_ms": 40,
+        "visible_people": 1,
+        "remembered_margin": 0.431
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.7769371133561798
+    },
+    {
+      "frame": 210,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.893,
+        "margin": null,
+        "elapsed_ms": 80,
+        "visible_people": 1,
+        "remembered_margin": 0.377
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8366030758129257
+    },
+    {
+      "frame": 211,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.827,
+        "margin": null,
+        "elapsed_ms": 120,
+        "visible_people": 1,
+        "remembered_margin": 0.33
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8575258875739645
+    },
+    {
+      "frame": 212,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.912,
+        "margin": null,
+        "elapsed_ms": 160,
+        "visible_people": 1,
+        "remembered_margin": 0.473
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.8597368353465916
+    },
+    {
+      "frame": 213,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.851,
+        "margin": null,
+        "elapsed_ms": 200,
+        "visible_people": 1,
+        "remembered_margin": 0.423
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.8600276613327968
+    },
+    {
+      "frame": 214,
+      "detection_count": 1,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.808,
+        "margin": null,
+        "elapsed_ms": 240,
+        "visible_people": 1,
+        "remembered_margin": 0.294
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.8275154004106775
+    },
+    {
+      "frame": 215,
+      "detection_count": 2,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.915,
+        "margin": null,
+        "elapsed_ms": 280,
+        "visible_people": 1,
+        "remembered_margin": 0.456
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.7915485648129664
+    },
+    {
+      "frame": 216,
+      "detection_count": 3,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.912,
+        "margin": null,
+        "elapsed_ms": 320,
+        "visible_people": 1,
+        "remembered_margin": 0.451
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.7635139007138645
+    },
+    {
+      "frame": 217,
+      "detection_count": 3,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.866,
+        "margin": 0.312,
+        "elapsed_ms": 360,
+        "visible_people": 2,
+        "remembered_margin": 0.422
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8318094202540404
+    },
+    {
+      "frame": 218,
+      "detection_count": 3,
+      "detector_gt_matches": [],
+      "candidate_gt_matches": {},
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.844,
+        "margin": 0.21,
+        "elapsed_ms": 400,
+        "visible_people": 2,
+        "remembered_margin": 0.406
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8724004550625712
+    },
+    {
+      "frame": 219,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "2": 2,
+        "3": 4
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.856,
+        "margin": 0.263,
+        "elapsed_ms": 440,
+        "visible_people": 2,
+        "remembered_margin": 0.429
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.9150229076113073
+    },
+    {
+      "frame": 220,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.884,
+        "margin": 0.259,
+        "elapsed_ms": 480,
+        "visible_people": 2,
+        "remembered_margin": 0.406
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8136451806472321
+    },
+    {
+      "frame": 221,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.874,
+        "margin": 0.286,
+        "elapsed_ms": 520,
+        "visible_people": 2,
+        "remembered_margin": 0.364
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8910947840133394
+    },
+    {
+      "frame": 222,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "confirming stable match",
+        "outcome": "checking",
+        "similarity": 0.912,
+        "margin": 0.347,
+        "elapsed_ms": 560,
+        "visible_people": 2,
+        "remembered_margin": 0.48
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8263888888888891
+    },
+    {
+      "frame": 223,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "confirming stable match",
+        "outcome": "checking",
+        "similarity": 0.903,
+        "margin": 0.342,
+        "elapsed_ms": 600,
+        "visible_people": 2,
+        "remembered_margin": 0.454
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.8206241793758204
+    },
+    {
+      "frame": 224,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "candidate too far away",
+        "outcome": "checking",
+        "similarity": 0.905,
+        "margin": 0.319,
+        "elapsed_ms": 640,
+        "visible_people": 2,
+        "remembered_margin": 0.458
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.7511194568828542
+    },
+    {
+      "frame": 225,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.88,
+        "margin": 0.348,
+        "elapsed_ms": 680,
+        "visible_people": 2,
+        "remembered_margin": 0.41
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.6942458924145114
+    },
+    {
+      "frame": 226,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "candidate too far away",
+        "outcome": "checking",
+        "similarity": 0.917,
+        "margin": 0.328,
+        "elapsed_ms": 720,
+        "visible_people": 2,
+        "remembered_margin": 0.471
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.7093579681062019
+    },
+    {
+      "frame": 227,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.895,
+        "margin": 0.352,
+        "elapsed_ms": 760,
+        "visible_people": 2,
+        "remembered_margin": 0.455
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.6358024691358025
+    },
+    {
+      "frame": 228,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.894,
+        "margin": 0.348,
+        "elapsed_ms": 800,
+        "visible_people": 2,
+        "remembered_margin": 0.45
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.629746572859757
+    },
+    {
+      "frame": 229,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.845,
+        "margin": 0.264,
+        "elapsed_ms": 840,
+        "visible_people": 2,
+        "remembered_margin": 0.362
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.5212234074853754
+    },
+    {
+      "frame": 230,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.818,
+        "margin": 0.243,
+        "elapsed_ms": 880,
+        "visible_people": 2,
+        "remembered_margin": 0.334
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.5372660130641469
+    },
+    {
+      "frame": 231,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        2,
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4,
+        "2": 2
+      },
+      "candidate_count": 2,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "appearance mismatch",
+        "outcome": "checking",
+        "similarity": 0.758,
+        "margin": 0.232,
+        "elapsed_ms": 920,
+        "visible_people": 2,
+        "remembered_margin": 0.215
+      },
+      "top_candidate_gt": 2,
+      "top_candidate_gt_iou": 0.502115819019843
+    },
+    {
+      "frame": 232,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.52,
+        "margin": null,
+        "elapsed_ms": 960,
+        "visible_people": 1,
+        "remembered_margin": 0.038
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.932143488248807
+    },
+    {
+      "frame": 233,
+      "detection_count": 3,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.601,
+        "margin": null,
+        "elapsed_ms": 1000,
+        "visible_people": 1,
+        "remembered_margin": 0.046
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.954102366039193
+    },
+    {
+      "frame": 234,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.633,
+        "margin": null,
+        "elapsed_ms": 1040,
+        "visible_people": 1,
+        "remembered_margin": 0.101
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9760889519925119
+    },
+    {
+      "frame": 235,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.618,
+        "margin": null,
+        "elapsed_ms": 1080,
+        "visible_people": 1,
+        "remembered_margin": 0.06
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9654729266620976
+    },
+    {
+      "frame": 236,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.638,
+        "margin": null,
+        "elapsed_ms": 1120,
+        "visible_people": 1,
+        "remembered_margin": 0.094
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9664028395926374
+    },
+    {
+      "frame": 237,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.626,
+        "margin": null,
+        "elapsed_ms": 1160,
+        "visible_people": 1,
+        "remembered_margin": 0.094
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9336246604464389
+    },
+    {
+      "frame": 238,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.612,
+        "margin": null,
+        "elapsed_ms": 1200,
+        "visible_people": 1,
+        "remembered_margin": 0.085
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9371612303744077
+    },
+    {
+      "frame": 239,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.616,
+        "margin": null,
+        "elapsed_ms": 1240,
+        "visible_people": 1,
+        "remembered_margin": 0.088
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9314097376761752
+    },
+    {
+      "frame": 240,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.581,
+        "margin": null,
+        "elapsed_ms": 1280,
+        "visible_people": 1,
+        "remembered_margin": 0.035
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9243192634781927
+    },
+    {
+      "frame": 241,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.575,
+        "margin": null,
+        "elapsed_ms": 1320,
+        "visible_people": 1,
+        "remembered_margin": 0.046
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9097711117913136
+    },
+    {
+      "frame": 242,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.595,
+        "margin": null,
+        "elapsed_ms": 1360,
+        "visible_people": 1,
+        "remembered_margin": 0.069
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9390714360767947
+    },
+    {
+      "frame": 243,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.555,
+        "margin": null,
+        "elapsed_ms": 1400,
+        "visible_people": 1,
+        "remembered_margin": 0.027
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9264755088086825
+    },
+    {
+      "frame": 244,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.564,
+        "margin": null,
+        "elapsed_ms": 1440,
+        "visible_people": 1,
+        "remembered_margin": 0.034
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9291842610713131
+    },
+    {
+      "frame": 245,
+      "detection_count": 2,
+      "detector_gt_matches": [
+        3
+      ],
+      "candidate_gt_matches": {
+        "3": 4
+      },
+      "candidate_count": 1,
+      "status": "Temporarily hidden",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.557,
+        "margin": null,
+        "elapsed_ms": 1480,
+        "visible_people": 1,
+        "remembered_margin": 0.049
+      },
+      "top_candidate_gt": 3,
+      "top_candidate_gt_iou": 0.9038869362756004
+    }
+  ],
+  "milliseconds": {
+    "detect": {
+      "median": 23.876254500009964,
+      "p95": 39.02784825004346
+    },
+    "bytetrack": {
+      "median": 1.0377870000866096,
+      "p95": 1.3216830002420465
+    },
+    "deepocsort_osnet": {
+      "median": 33.51113350004198,
+      "p95": 54.509832499888944
+    }
+  },
+  "selector_exercised": true,
+  "selector_correct_coverage": 0.8813559322033898,
+  "selector_wrong_fraction": 0.0
+}

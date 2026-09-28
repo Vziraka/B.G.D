@@ -1,0 +1,404 @@
+{
+  "criteria": {
+    "minimum_fps": 15,
+    "maximum_delay_ms": 300,
+    "maximum_temperature_c": 80
+  },
+  "elapsed_s": 23.28,
+  "sample_interval_s": 1,
+  "workload_returncode": 0,
+  "timed_out": false,
+  "benchmark": {
+    "classes": null,
+    "confidence_threshold": 0.1,
+    "detection_frames": {},
+    "detections": {},
+    "end_to_end_fps": 1.93,
+    "image_size": 640,
+    "images_retained": false,
+    "iterations": 30,
+    "load_ms": 187.9,
+    "loop_seconds": 15.56,
+    "model": "candidates/yoloe26/yoloe-26n-seg.pt",
+    "model_inference_ms": {
+      "median": 500.9,
+      "p95": 519.6
+    },
+    "prompt_ms": 3.0,
+    "prompt_profile": "candidates/yoloe26/bgd-targets-yoloe26n.npz",
+    "requested_torch_threads": 1,
+    "rss_mb": {
+      "first": 464.1,
+      "peak": 468.0
+    },
+    "sustained_fps": 1.97,
+    "temperature_c": 67.2,
+    "torch_threads": 1,
+    "vocabulary": 8,
+    "wall_ms": {
+      "max": 539.5,
+      "median": 508.1,
+      "min": 473.8,
+      "p95": 529.0
+    },
+    "warmup_ms": 2902.1
+  },
+  "samples": [
+    {
+      "elapsed_s": 0.001,
+      "capture_fps": 25.2,
+      "vision_fps": 29.3,
+      "inference_ms": 27.4,
+      "temperature_c": 67.0,
+      "memory_mb": 464.2,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 21.734318085665777,
+      "browser_delay_p95_ms": 220.29999999998836,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 1.04,
+      "capture_fps": 26.8,
+      "vision_fps": 29.5,
+      "inference_ms": 24.6,
+      "temperature_c": 67.0,
+      "memory_mb": 464.2,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 21.734318085665777,
+      "browser_delay_p95_ms": 220.29999999998836,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 2.041,
+      "capture_fps": 29.3,
+      "vision_fps": 29.6,
+      "inference_ms": 23.5,
+      "temperature_c": 67.0,
+      "memory_mb": 464.2,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 21.734318085665777,
+      "browser_delay_p95_ms": 220.29999999998836,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 3.043,
+      "capture_fps": 29.8,
+      "vision_fps": 30.0,
+      "inference_ms": 25.7,
+      "temperature_c": 65.3,
+      "memory_mb": 463.9,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 27.094831911690918,
+      "browser_delay_p95_ms": 190.29999992845114,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 4.045,
+      "capture_fps": 29.8,
+      "vision_fps": 30.0,
+      "inference_ms": 24.7,
+      "temperature_c": 65.3,
+      "memory_mb": 463.9,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 27.094831911690918,
+      "browser_delay_p95_ms": 190.29999992845114,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 5.048,
+      "capture_fps": 29.7,
+      "vision_fps": 29.4,
+      "inference_ms": 25.8,
+      "temperature_c": 65.3,
+      "memory_mb": 463.9,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 27.094831911690918,
+      "browser_delay_p95_ms": 190.29999992845114,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 6.054,
+      "capture_fps": 28.8,
+      "vision_fps": 27.6,
+      "inference_ms": 31.6,
+      "temperature_c": 65.3,
+      "memory_mb": 463.9,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 27.094831911690918,
+      "browser_delay_p95_ms": 190.29999992845114,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 7.079,
+      "capture_fps": 28.5,
+      "vision_fps": 27.3,
+      "inference_ms": 30.5,
+      "temperature_c": 65.3,
+      "memory_mb": 463.9,
+      "voltage_v": 5.01696,
+      "throttled": "0x0",
+      "display_fps": 27.094831911690918,
+      "browser_delay_p95_ms": 190.29999992845114,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 8.104,
+      "capture_fps": 28.0,
+      "vision_fps": 27.3,
+      "inference_ms": 29.1,
+      "temperature_c": 65.3,
+      "memory_mb": 465.7,
+      "voltage_v": 5.0049,
+      "throttled": "0x0",
+      "display_fps": 28.201128045390764,
+      "browser_delay_p95_ms": 135.6999999761465,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 9.11,
+      "capture_fps": 27.8,
+      "vision_fps": 27.9,
+      "inference_ms": 30.0,
+      "temperature_c": 65.3,
+      "memory_mb": 465.7,
+      "voltage_v": 5.0049,
+      "throttled": "0x0",
+      "display_fps": 28.201128045390764,
+      "browser_delay_p95_ms": 135.6999999761465,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 10.121,
+      "capture_fps": 28.3,
+      "vision_fps": 28.7,
+      "inference_ms": 30.2,
+      "temperature_c": 65.3,
+      "memory_mb": 465.7,
+      "voltage_v": 5.0049,
+      "throttled": "0x0",
+      "display_fps": 28.201128045390764,
+      "browser_delay_p95_ms": 135.6999999761465,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 11.126,
+      "capture_fps": 28.1,
+      "vision_fps": 28.0,
+      "inference_ms": 30.0,
+      "temperature_c": 65.3,
+      "memory_mb": 465.7,
+      "voltage_v": 5.0049,
+      "throttled": "0x0",
+      "display_fps": 28.201128045390764,
+      "browser_delay_p95_ms": 135.6999999761465,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 12.129,
+      "capture_fps": 28.6,
+      "vision_fps": 28.8,
+      "inference_ms": 30.1,
+      "temperature_c": 65.3,
+      "memory_mb": 465.7,
+      "voltage_v": 5.0049,
+      "throttled": "0x0",
+      "display_fps": 27.893163165237905,
+      "browser_delay_p95_ms": 141.40000002383022,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 13.15,
+      "capture_fps": 28.6,
+      "vision_fps": 29.4,
+      "inference_ms": 30.9,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.893163165237905,
+      "browser_delay_p95_ms": 141.40000002383022,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 14.164,
+      "capture_fps": 28.8,
+      "vision_fps": 28.4,
+      "inference_ms": 34.5,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.893163165237905,
+      "browser_delay_p95_ms": 141.40000002383022,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 15.186,
+      "capture_fps": 28.9,
+      "vision_fps": 27.8,
+      "inference_ms": 33.7,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.893163165237905,
+      "browser_delay_p95_ms": 141.40000002383022,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 16.188,
+      "capture_fps": 28.5,
+      "vision_fps": 27.9,
+      "inference_ms": 30.6,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.893163165237905,
+      "browser_delay_p95_ms": 141.40000002383022,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 17.191,
+      "capture_fps": 28.6,
+      "vision_fps": 28.4,
+      "inference_ms": 34.9,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.98582588413757,
+      "browser_delay_p95_ms": 138.09999997616978,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 18.193,
+      "capture_fps": 28.6,
+      "vision_fps": 28.3,
+      "inference_ms": 32.6,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.98582588413757,
+      "browser_delay_p95_ms": 138.09999997616978,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 19.216,
+      "capture_fps": 29.0,
+      "vision_fps": 28.7,
+      "inference_ms": 29.0,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.98582588413757,
+      "browser_delay_p95_ms": 138.09999997616978,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 20.243,
+      "capture_fps": 29.2,
+      "vision_fps": 29.3,
+      "inference_ms": 32.0,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.98582588413757,
+      "browser_delay_p95_ms": 138.09999997616978,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 21.263,
+      "capture_fps": 29.6,
+      "vision_fps": 29.5,
+      "inference_ms": 29.1,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 27.98582588413757,
+      "browser_delay_p95_ms": 138.09999997616978,
+      "application_error": false
+    },
+    {
+      "elapsed_s": 22.274,
+      "capture_fps": 29.8,
+      "vision_fps": 30.1,
+      "inference_ms": 23.7,
+      "temperature_c": 67.0,
+      "memory_mb": 465.7,
+      "voltage_v": 4.98882,
+      "throttled": "0x0",
+      "display_fps": 20.6669609531927,
+      "browser_delay_p95_ms": 171.600000047707,
+      "application_error": false
+    }
+  ],
+  "assessment": {
+    "verdict": "pass",
+    "failures": [],
+    "unavailable": [],
+    "metrics": {
+      "capture_fps": {
+        "minimum": 25.2,
+        "maximum": 29.8,
+        "mean": 28.62,
+        "samples": 23
+      },
+      "vision_fps": {
+        "minimum": 27.3,
+        "maximum": 30.1,
+        "mean": 28.75,
+        "samples": 23
+      },
+      "display_fps": {
+        "minimum": 20.6669609531927,
+        "maximum": 28.201128045390764,
+        "mean": 26.68,
+        "samples": 23
+      },
+      "browser_delay_p95_ms": {
+        "minimum": 135.6999999761465,
+        "maximum": 220.29999999998836,
+        "mean": 161.93,
+        "samples": 23
+      },
+      "temperature_c": {
+        "minimum": 65.3,
+        "maximum": 67.0,
+        "mean": 66.26,
+        "samples": 23
+      },
+      "memory_mb": {
+        "minimum": 463.9,
+        "maximum": 465.7,
+        "mean": 465.11,
+        "samples": 23
+      },
+      "voltage_v": {
+        "minimum": 4.98882,
+        "maximum": 5.01696,
+        "mean": 5.0,
+        "samples": 23
+      },
+      "inference_ms": {
+        "minimum": 23.5,
+        "maximum": 34.9,
+        "mean": 29.31,
+        "samples": 23
+      }
+    },
+    "memory_note": "Range only; inspect time series for growth. Not an automatic memory qualification."
+  },
+  "images_retained": false
+}

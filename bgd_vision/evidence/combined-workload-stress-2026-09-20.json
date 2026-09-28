@@ -1,0 +1,90 @@
+{
+  "test": "Pi 5 targeted open-vocabulary and live camera/person-pipeline coexistence",
+  "date_utc": "2026-09-20",
+  "configuration": {
+    "model": "yoloe-26n-seg.pt",
+    "prompt_profile": "bgd-targets-yoloe26n.npz",
+    "image_size": 320,
+    "confidence_threshold": 0.1,
+    "iterations": 1800,
+    "fresh_live_camera_frame_per_iteration": true,
+    "images_retained": false,
+    "concurrent_service": "YOLO26n NCNN camera/person pipeline and visible private browser"
+  },
+  "acceptance_criteria_fixed_before_run": {
+    "benchmark_and_service_complete_without_error": true,
+    "temperature_below_c": 80,
+    "throttle_flags": "0x0",
+    "minimum_sampled_capture_fps": 15,
+    "minimum_sampled_vision_fps": 15,
+    "minimum_sampled_display_fps_when_available": 15,
+    "maximum_sampled_browser_delay_p95_ms": 300,
+    "no_runaway_memory_growth": true
+  },
+  "benchmark": {
+    "sustained_fps": 2.97,
+    "model_inference_ms": {
+      "median": 336.7,
+      "p95": 426.9
+    },
+    "wall_ms": {
+      "minimum": 139.5,
+      "median": 341.5,
+      "p95": 431.6,
+      "maximum": 499.9
+    },
+    "rss_mb": {
+      "first": 435.1,
+      "peak": 446.2
+    },
+    "ending_temperature_c": 65.55,
+    "torch_threads": 3,
+    "completed_without_error": true
+  },
+  "service_window": {
+    "start_utc": "2026-09-20T06:17:01Z",
+    "end_utc": "2026-09-20T06:28:17Z",
+    "duration_seconds": 676,
+    "sample_count": 135,
+    "capture_fps": {"minimum": 25.7, "maximum": 30.2, "average": 27.9},
+    "vision_fps": {"minimum": 14.2, "maximum": 30.0, "average": 26.17},
+    "display_fps": {"minimum": 14.5, "maximum": 30.0, "average": 25.89},
+    "browser_delay_p95_ms": {"minimum": 93.7, "maximum": 242.1, "average": 168.65},
+    "temperature_c": {"minimum": 59.3, "maximum": 67.5, "average": 65.61},
+    "service_rss_mb": {"minimum": 458.4, "maximum": 472.7, "average": 467.89},
+    "voltage_v": {"minimum": 4.94, "maximum": 5.1, "average": 5.04},
+    "throttle_flags_observed": ["0x0"],
+    "application_errors": [],
+    "samples_below_15_capture_fps": 0,
+    "samples_below_15_vision_fps": 1,
+    "samples_below_15_display_fps": 1,
+    "samples_above_300_ms_browser_delay_p95": 0
+  },
+  "post_run_recovery": {
+    "capture_fps": 30.0,
+    "vision_fps": 30.0,
+    "display_fps": 30.0,
+    "browser_delay_p95_ms": 95.2,
+    "temperature_c": 60.9,
+    "service_rss_mb": 467.2,
+    "throttle_flags": "0x0",
+    "application_error": null
+  },
+  "result": {
+    "overall": "partial_pass",
+    "passed": [
+      "continuous completion",
+      "camera capture floor",
+      "thermal limit",
+      "power and throttle state",
+      "browser delay limit",
+      "memory stability",
+      "clean post-run recovery"
+    ],
+    "missed": [
+      "one five-second vision sample was 14.2 fps",
+      "one five-second display sample was 14.5 fps"
+    ],
+    "interpretation": "The Pi safely sustains this combined workload for longer than ten minutes and returns to its 30 fps baseline, but the deliberately strict 15 fps real-time floor was missed transiently. This is compute and coexistence evidence, not face/object accuracy, range, moving-camera, or flight qualification."
+  }
+}

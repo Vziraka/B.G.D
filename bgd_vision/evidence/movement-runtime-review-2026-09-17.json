@@ -1,0 +1,183 @@
+{
+  "sampled_runtime_minutes": 69.63333333333334,
+  "last_10min_samples": 120,
+  "errors": [],
+  "vision_fps": [
+    20.8,
+    30.6
+  ],
+  "display_fps": [
+    10.337069542091161,
+    27.47419244058984
+  ],
+  "display_samples_below15": 83,
+  "visible_client_samples": 120,
+  "delay_p95_ms": [
+    98.49999998230487,
+    186.10000000009313
+  ],
+  "temperature_c": [
+    58.2,
+    62.0
+  ],
+  "flags": [
+    "0x0"
+  ],
+  "recent_transitions": [
+    {
+      "utc": "2026-09-17T22:43:31Z",
+      "uptime_s": 3937,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "lost",
+        "similarity": 0.868,
+        "margin": null,
+        "elapsed_ms": 2899,
+        "visible_people": 1,
+        "remembered_margin": 1.868,
+        "loss_reason": "Recovery timed out: waiting for both people to separate; select again"
+      }
+    },
+    {
+      "utc": "2026-09-17T22:43:36Z",
+      "uptime_s": 3942,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for a clear match",
+        "outcome": "checking"
+      }
+    },
+    {
+      "utc": "2026-09-17T22:43:41Z",
+      "uptime_s": 3947,
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: waiting for both people to separate",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.96,
+        "margin": null,
+        "elapsed_ms": 2599,
+        "visible_people": 1,
+        "remembered_margin": 1.96
+      }
+    },
+    {
+      "utc": "2026-09-17T22:43:46Z",
+      "uptime_s": 3952,
+      "status": "Tracking",
+      "reason": "",
+      "diagnostics": {}
+    },
+    {
+      "utc": "2026-09-17T22:44:21Z",
+      "uptime_s": 3988,
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: waiting for both people to separate",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.971,
+        "margin": null,
+        "elapsed_ms": 1599,
+        "visible_people": 1,
+        "remembered_margin": 1.971
+      }
+    },
+    {
+      "utc": "2026-09-17T22:44:26Z",
+      "uptime_s": 3993,
+      "status": "Tracking",
+      "reason": "",
+      "diagnostics": {}
+    },
+    {
+      "utc": "2026-09-17T22:44:36Z",
+      "uptime_s": 4003,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "lost",
+        "similarity": 0.925,
+        "margin": null,
+        "elapsed_ms": 2899,
+        "visible_people": 1,
+        "remembered_margin": 1.925,
+        "loss_reason": "Recovery timed out: waiting for both people to separate; select again"
+      }
+    },
+    {
+      "utc": "2026-09-17T22:44:41Z",
+      "uptime_s": 4008,
+      "status": "Tracking",
+      "reason": "",
+      "diagnostics": {}
+    },
+    {
+      "utc": "2026-09-17T22:44:46Z",
+      "uptime_s": 4013,
+      "status": "Temporarily hidden",
+      "reason": "Temporarily hidden: waiting for both people to separate",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "checking",
+        "similarity": 0.698,
+        "margin": null,
+        "elapsed_ms": 1499,
+        "visible_people": 1,
+        "remembered_margin": 1.698
+      }
+    },
+    {
+      "utc": "2026-09-17T22:44:51Z",
+      "uptime_s": 4018,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "lost",
+        "similarity": 0.623,
+        "margin": null,
+        "elapsed_ms": 2932,
+        "visible_people": 1,
+        "remembered_margin": 1.623,
+        "loss_reason": "Recovery timed out: waiting for both people to separate; select again"
+      }
+    },
+    {
+      "utc": "2026-09-17T22:46:37Z",
+      "uptime_s": 4123,
+      "status": "Tracking",
+      "reason": "",
+      "diagnostics": {}
+    },
+    {
+      "utc": "2026-09-17T22:46:47Z",
+      "uptime_s": 4133,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again",
+      "diagnostics": {
+        "trigger": "overlap or appearance change",
+        "gate": "waiting for both people to separate",
+        "outcome": "lost",
+        "similarity": 0.684,
+        "margin": null,
+        "elapsed_ms": 2932,
+        "visible_people": 1,
+        "remembered_margin": 1.684,
+        "loss_reason": "Recovery timed out: waiting for both people to separate; select again"
+      }
+    }
+  ]
+}

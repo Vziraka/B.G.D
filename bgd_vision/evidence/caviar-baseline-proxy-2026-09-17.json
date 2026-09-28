@@ -1,0 +1,134 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 383,
+  "video_fps": 25.0,
+  "wall_seconds": 120.54513050399987,
+  "combined_offline_fps": 3.1772332768538623,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": false,
+    "wrong_appearance_same_position_keeps_id": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "1,2": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101
+    ],
+    "0,2": [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 1335,
+      "matches": 1075,
+      "missing": 260,
+      "matched_id_changes": 1
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 1335,
+      "matches": 1012,
+      "missing": 323,
+      "matched_id_changes": 2
+    }
+  },
+  "selector": {
+    "selected_frame": 0,
+    "Tracking": 363,
+    "eligible_target_frames": 373,
+    "correct_tracking_frames": 363,
+    "Checking target": 20,
+    "recoveries": 1,
+    "wrong_tracking_frames": 0,
+    "unmatched_tracking_frames": 0,
+    "Lost": 0
+  },
+  "selector_transitions": [
+    {
+      "frame": 0,
+      "status": "Tracking",
+      "reason": ""
+    },
+    {
+      "frame": 106,
+      "status": "Checking target",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 126,
+      "status": "Tracking",
+      "reason": "Selected person recovered after a brief interruption"
+    }
+  ],
+  "milliseconds": {
+    "detect": {
+      "median": 272.4065969998719,
+      "p95": 319.8949175001644
+    },
+    "bytetrack": {
+      "median": 1.0170840000682801,
+      "p95": 1.3417232999472617
+    },
+    "deepocsort_osnet": {
+      "median": 39.81637900005808,
+      "p95": 46.12214709991349
+    }
+  },
+  "selector_correct_coverage": 0.9731903485254692,
+  "selector_wrong_fraction": 0.0,
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.1,
+    "max_det": 300,
+    "note": "Initial run differs from live conf0.15,max_det10; revised evaluator defaults now match live."
+  },
+  "source": {
+    "video": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/EnterExitCrossingPaths1cor.mpg",
+    "annotations": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/ceecp1gt.xml"
+  },
+  "runtime_limit": "Concurrent live service active; detector NCNN default thread count; offline throughput is not isolated/live rate.",
+  "overlap_episodes": [
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "start_frame": 87,
+      "end_frame": 101,
+      "duration_seconds": 0.6
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "start_frame": 108,
+      "end_frame": 117,
+      "duration_seconds": 0.4
+    }
+  ]
+}

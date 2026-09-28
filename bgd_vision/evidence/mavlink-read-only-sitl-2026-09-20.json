@@ -1,0 +1,46 @@
+{
+  "date": "2026-09-20",
+  "result": "pass",
+  "scope": "Real Raspberry Pi read-only MAVLink monitor receiving disarmed ArduCopter SITL telemetry over local UDP",
+  "authority": "READ_ONLY",
+  "actuator_output": false,
+  "pi": {
+    "address": "192.168.1.191",
+    "endpoint": "udpin:0.0.0.0:14551",
+    "pymavlink": "2.4.49",
+    "isolated_environment": "/home/bgd-pi/bgd-vision/.venv-mavlink"
+  },
+  "sitl": {
+    "binary": "/home/zvent/issue11-sitl/arducopter",
+    "sha256": "011627d41dd95640c3aca02d45283474be48721c8b1bb7a4b234d38b69063482",
+    "armed": false,
+    "movement_commands_sent": 0
+  },
+  "observed": {
+    "system_id": 1,
+    "component_id": 1,
+    "message_types": ["HEARTBEAT", "ATTITUDE", "GLOBAL_POSITION_INT", "SYS_STATUS"],
+    "home_position_deg": [38.9, -77.0],
+    "battery_path": "SYS_STATUS received; voltage was 0.0 because the retained SITL fixture had no battery model configured",
+    "link_loss_threshold_s": 3.0,
+    "first_link_lost_observation_s": 3.03
+  },
+  "only_outbound_packets": [
+    "Fixed 1 Hz GCS HEARTBEAT",
+    "Fixed MAV_CMD_SET_MESSAGE_INTERVAL requests for SYS_STATUS, ATTITUDE and GLOBAL_POSITION_INT"
+  ],
+  "coexistence_after_test": {
+    "camera_fps": 30.0,
+    "vision_fps": 30.0,
+    "inference_ms": 24.2,
+    "temperature_c": 59.8,
+    "voltage_v": 5.04912,
+    "throttled": "0x0",
+    "application_error": null
+  },
+  "limits": [
+    "This proves a Pi-to-SITL telemetry interface, not physical UART or USB compatibility.",
+    "No arming, flight-mode, parameter-write, position-target, velocity-target or actuator command exists in this monitor.",
+    "Simulated telemetry does not qualify flight, recovery behavior or a real battery monitor."
+  ]
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 46.1,
+    "vision_age_ms": 112.7,
+    "capture_fps": 30.0,
+    "vision_fps": 23.5,
+    "inference_ms": 42.4,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.0,
+      "throttled": "0x0",
+      "voltage_v": 5.0384,
+      "memory_mb": 463.2
+    },
+    "client": {
+      "display_fps": 23.23279258164034,
+      "latency_upper_p95_ms": 119.1000000119202,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 25
+    },
+    "uptime_s": 29,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 62.1,
+    "vision_age_ms": 128.8,
+    "capture_fps": 30.1,
+    "vision_fps": 23.5,
+    "inference_ms": 43.7,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.0,
+      "throttled": "0x0",
+      "voltage_v": 4.97408,
+      "memory_mb": 465.0
+    },
+    "client": {
+      "display_fps": 25.56978336161255,
+      "latency_upper_p95_ms": 118.19999999403808,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 30
+    },
+    "uptime_s": 34,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 44.0,
+    "vision_age_ms": 77.3,
+    "capture_fps": 30.0,
+    "vision_fps": 23.6,
+    "inference_ms": 42.7,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.6,
+      "throttled": "0x0",
+      "voltage_v": 5.04912,
+      "memory_mb": 463.4
+    },
+    "client": {
+      "display_fps": 26.086607536991714,
+      "latency_upper_p95_ms": 121.80000000596192,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 35
+    },
+    "uptime_s": 39,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 73.0,
+    "vision_age_ms": 106.3,
+    "capture_fps": 29.9,
+    "vision_fps": 23.8,
+    "inference_ms": 42.0,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.0,
+      "throttled": "0x0",
+      "voltage_v": 5.03572,
+      "memory_mb": 463.5
+    },
+    "client": {
+      "display_fps": 25.974025974025974,
+      "latency_upper_p95_ms": 117.69999999999709,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 40
+    },
+    "uptime_s": 44,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 65.9,
+    "vision_age_ms": 99.2,
+    "capture_fps": 30.0,
+    "vision_fps": 23.7,
+    "inference_ms": 41.4,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.6,
+      "throttled": "0x0",
+      "voltage_v": 4.99552,
+      "memory_mb": 465.5
+    },
+    "client": {
+      "display_fps": 24.68243934736134,
+      "latency_upper_p95_ms": 114.80000001192093,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 45
+    },
+    "uptime_s": 49,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 66.3,
+    "vision_age_ms": 133.0,
+    "capture_fps": 30.0,
+    "vision_fps": 20.2,
+    "inference_ms": 51.0,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.6,
+      "throttled": "0x0",
+      "voltage_v": 5.0384,
+      "memory_mb": 463.8
+    },
+    "client": {
+      "display_fps": 24.96677807758805,
+      "latency_upper_p95_ms": 118.80000000000291,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 50
+    },
+    "uptime_s": 54,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  },
+  {
+    "status": "No target selected",
+    "reason": "",
+    "recovery_diagnostics": {},
+    "capture_age_ms": 58.0,
+    "vision_age_ms": 158.0,
+    "capture_fps": 30.0,
+    "vision_fps": 19.2,
+    "inference_ms": 51.6,
+    "error": null,
+    "hardware": {
+      "temperature_c": 62.0,
+      "throttled": "0x0",
+      "voltage_v": 5.02768,
+      "memory_mb": 462.5
+    },
+    "client": {
+      "display_fps": 25.28394268969966,
+      "latency_upper_p95_ms": 116.40000000000146,
+      "samples": 150,
+      "visible": true,
+      "received_uptime_s": 55
+    },
+    "uptime_s": 59,
+    "model": "yolo26n_ncnn_model",
+    "image_size": 320
+  }
+]

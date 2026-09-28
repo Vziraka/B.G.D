@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="session-token" content="__TOKEN__">
+  <title>B.G.D · Camera workspace</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a class="skip-link" href="#command-text">Skip to conversation</a>
+<main>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">B</span><div><p class="eyebrow">B.G.D</p><h1>Camera workspace</h1></div></div>
+    <div class="header-actions"><span class="desk-label">Desk test · No aircraft control</span><button id="stop-all" class="stop-button" type="button">■ Stop</button></div>
+  </header>
+
+  <div class="workspace-intro"><div><p class="eyebrow">SEE IT. SAY IT. TEST IT.</p><h2>Your camera, in conversation.</h2><p>Ask for a task. Review what the Pi understood. Then confirm.</p></div><span id="connection-status" class="connection-state" role="status">Connecting…</span></div>
+  <div class="dashboard">
+    <section class="camera-zone" aria-label="Live camera workspace">
+      <div class="view" id="view">
+        <button id="expand" class="view-toggle" aria-expanded="false" aria-controls="view">Expand video</button>
+        <canvas id="camera" width="960" height="540" aria-label="Live Pi camera. Select a detected person using the tracking controls."></canvas>
+        <div class="camera-badge" id="camera-badge"><span class="live-dot" aria-hidden="true"></span><span id="camera-live-label">CONNECTING</span></div>
+        <p id="notice" role="status">Connecting to the Pi camera…</p>
+      </div>
+      <div class="target-summary"><div><p class="eyebrow">TRACKING NOW</p><h3 id="state" aria-live="polite">No target selected</h3><p id="reason">Select a person or describe a target in the conversation.</p></div><button id="clear" class="secondary">Clear person</button></div>
+      <details class="performance-details"><summary>Performance &amp; connection details</summary><section class="metrics" aria-label="Live performance">
+        <div><small>Video</small><strong id="display">—</strong></div>
+        <div><small>Vision</small><strong id="vision">—</strong></div>
+        <div><small>Delay p95</small><strong id="delay">—</strong></div>
+        <div><small>Temperature</small><strong id="temp">—</strong></div>
+        <div><small>Power</small><strong id="power">—</strong></div>
+      </section><p class="hint" id="detail">Camera performance will appear here.</p></details>
+    </section>
+
+    <aside class="control-deck">
+      <div class="control-intro"><div><p class="eyebrow">YOUR ASSISTANT</p><h2 id="task-title">Conversation</h2></div><label class="voice-toggle"><input type="checkbox" id="spoken-feedback" checked> Spoken replies</label></div>
+      <nav class="task-tabs" aria-label="Camera tasks" role="tablist">
+        <button id="tab-command" class="task-tab active" role="tab" aria-selected="true" aria-controls="panel-command">Conversation</button>
+        <button id="tab-verify" class="task-tab" role="tab" aria-selected="false" aria-controls="panel-verify">Face setup</button>
+        <button id="tab-track" class="task-tab" role="tab" aria-selected="false" aria-controls="panel-track">Test tools</button>
+      </nav>
+
+      <section id="panel-track" class="task-panel" role="tabpanel" aria-labelledby="tab-track" hidden>
+        <div class="section-heading"><h3>People in view</h3><span class="soft-label">Live detections</span></div>
+        <div id="people" class="people-list"><p>Waiting for detection…</p></div>
+        <div class="section-heading"><div><h3>Track any object</h3><p id="object-select-state" class="hint">No object selected.</p></div><span id="object-recovery-state" class="soft-label">No target</span></div>
+        <div class="button-row"><button id="object-select">Draw a box around it</button><button id="object-clear" class="secondary" disabled>Clear object</button></div>
+        <p class="hint">Use a snug box around one clear object. Temporary visual views stay in memory only and are discarded when you clear or replace the target.</p>
+        <details><summary>How tracking recovery works</summary><p class="hint">The desk learns up to four trusted views. After loss it checks nearby first, then the full camera view, and requires two matching detections before restoring the box. Ambiguity remains Lost instead of guessing.</p></details>
+        <details><summary>Advanced range tests</summary><div class="section-heading"><div><h3>Live face range guide</h3><p class="hint">Walk backward and watch recognition quality change. Distance is an estimate, not a depth-sensor reading.</p></div><span class="soft-label">No tape needed</span></div>
+        <div id="face-range-card" class="range-guide idle" role="status" aria-live="polite">
+          <span id="face-range-light" aria-hidden="true"></span>
+          <div><strong id="face-range-state">Guide stopped</strong><p id="face-range-detail">Start after temporary face enrollment.</p></div>
+          <b id="face-range-distance">—</b>
+        </div>
+        <div class="button-row"><button id="face-range-start">Start live guide</button><button id="face-range-stop" class="secondary" disabled>Stop guide</button></div>
+        <p class="hint">Green means the enrolled face is reliable now; yellow is marginal; red means move closer or face the camera. The estimate assumes a 145 mm face width and the standard Camera Module 3 field of view.</p>
+        <div class="section-heading"><div><h3>Live object range guide</h3><p class="hint">Select one object, hold it beside your enrolled face, then calibrate before walking backward.</p></div><span class="soft-label">No tape needed</span></div>
+        <div id="object-range-card" class="range-guide idle" role="status" aria-live="polite">
+          <span aria-hidden="true"></span>
+          <div><strong id="object-range-state">Guide stopped</strong><p id="object-range-detail">Use one opaque, high-contrast object facing the camera.</p></div>
+          <b id="object-range-distance">—</b>
+        </div>
+        <div class="button-row"><button id="object-range-start">Calibrate beside face</button><button id="object-range-stop" class="secondary" disabled>Stop object guide</button></div>
+        <p class="hint">Keep the same face of the object toward the camera. Turning it changes its pixel size and makes the distance estimate inaccurate.</p>
+        </details>
+      </section>
+
+      <section id="panel-verify" class="task-panel" role="tabpanel" aria-labelledby="tab-verify" hidden>
+        <div id="enrollment-panel">
+          <div class="section-heading"><div><p class="eyebrow">FACE VERIFICATION</p><h3 id="enrollment-state" aria-live="polite">Not started</h3></div><span class="soft-label">Temporary</span></div>
+          <p id="enrollment-prompt">Start when one face is clearly visible.</p>
+          <progress id="enrollment-progress" value="0" max="5">0 of 5</progress>
+          <div class="button-row"><button id="enrollment-start">Start guided enrollment</button><button id="enrollment-cancel" class="secondary">Cancel and discard</button></div>
+          <div class="verify-actions"><button id="face-check" class="verify-button">Verify face</button><button id="liveness-check" class="verify-button">Check liveness</button></div>
+          <div class="verification-grid" aria-label="Biometric verification status">
+            <div id="face-status" class="verification-card pending"><span>Face match</span><strong id="face-state">Not checked</strong></div>
+            <div id="liveness-status" class="verification-card pending"><span>Liveness</span><strong id="liveness-state">Not tested</strong></div>
+            <div id="verification-status" class="verification-card blocked" role="status" aria-live="polite"><span>Combined result</span><strong>Verification incomplete</strong></div>
+          </div>
+          <p id="face-result" role="status">Run Verify face after enrollment.</p>
+          <p id="liveness-result" role="status">Liveness has not been checked.</p>
+          <details><summary>Privacy and test limits</summary><p class="hint">Five faceprints stay only in memory until canceled or the service stops. Diagnostic checks grant no command permission.</p></details>
+        </div>
+      </section>
+
+      <section id="panel-command" class="task-panel" role="tabpanel" aria-labelledby="tab-command">
+        <div id="conversation-log" class="conversation-log" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions">
+          <article class="message assistant"><span class="message-author">B.G.D</span><p>What would you like to test?</p><p class="hint">I can help find or count things in view, or track one selected target. I’ll explain what is possible before starting.</p></article>
+        </div>
+        <div class="suggestions" aria-label="Example requests"><button class="suggestion" data-command="count people">Count people</button><button class="suggestion" data-command="follow me">Follow me</button><button class="suggestion" data-command="follow this object">Track an object</button></div>
+        <p id="language-mode" class="hint">Basic commands available · Natural-language model under evaluation</p>
+        <section id="proposal-card" class="proposal-card" aria-label="Review proposed task" hidden>
+          <p class="eyebrow">REVIEW BEFORE STARTING</p><h3 id="proposal-title">Proposed task</h3><p id="proposal-detail">This runs a camera test only.</p>
+          <div class="button-row"><button id="confirm-mission" type="button">Confirm task</button><button id="cancel-mission" class="secondary" type="button">Cancel</button></div>
+          <p class="hint" id="proposal-expiry">You can also speak a correction or say yes.</p>
+        </section>
+        <section id="object-capture-guide" class="capture-guide" aria-live="polite" hidden>
+          <div class="capture-guide-heading"><span id="object-guide-step">OBJECT CAPTURE</span><strong id="object-guide-title">Center one object</strong></div>
+          <p id="object-guide-detail">Put the complete object inside the blue guide.</p>
+          <ol class="capture-steps" aria-label="Object capture progress">
+            <li id="capture-center">Center</li><li id="capture-hold">Hold still</li><li id="capture-learn">Learn views</li>
+          </ol>
+        </section>
+        <form id="command-form" class="composer"><label for="command-text">Tell the Pi what you need</label><textarea id="command-text" name="command" maxlength="500" rows="2" placeholder="Ask, describe a target, or correct a request…"></textarea><div class="composer-actions"><button id="speech-record" class="secondary" type="button">Start speaking</button><button id="send-command" type="submit">Send request ↗</button></div><p id="speech-status" class="hint" role="status">Microphone off. Audio is processed on the Pi and discarded.</p></form>
+        <details id="object-category-details"><summary>Show installed object categories</summary><p id="object-category-list" class="hint">Open to load the model's categories.</p></details>
+        <details class="command-output"><summary>Last result details</summary><p id="command-result" role="status">No command interpreted yet.</p><ol id="command-steps"></ol><div id="command-observation-block" hidden><strong>Current desk observations</strong><ul id="command-observations"></ul></div></details>
+        <p class="privacy-note">Private desk session · No video recording · No aircraft control. Speech is not speaker identity.</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer><p>Camera tests stay separate from flight readiness.</p><p>Need a manual control? Open Test tools.</p></footer>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

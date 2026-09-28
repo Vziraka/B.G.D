@@ -1,0 +1,2 @@
+# Simulator-only telemetry rates for the passive Pi MAVLink monitor.
+SERIAL1_PROTOCOL 2

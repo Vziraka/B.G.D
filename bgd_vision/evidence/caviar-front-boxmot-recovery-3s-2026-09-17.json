@@ -1,0 +1,93 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 383,
+  "video_fps": 25.0,
+  "wall_seconds": 22.635823773000084,
+  "candidate_backend": "boxmot.trackers.box.deepocsort.tracker.DeepOcSort",
+  "source_hashes_before_run": {
+    "selection.py": "8e58757562ebe478bb9953179dc723ddc54476e75f0131ebde2905e80b613742",
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "evaluate_tracking.py": "b12f9f371756b29864918519e4f7c65a8d2a2416443fab4f91a556d24f63eb48"
+  },
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "combined_offline_fps": 16.920082248424322,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": true,
+    "wrong_appearance_same_position_keeps_id": true,
+    "invalid_descriptors_filtered_with_aligned_indices": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "0,1": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 493,
+      "matches": 174,
+      "missing": 319,
+      "matched_id_changes": 3
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 493,
+      "matches": 169,
+      "missing": 324,
+      "matched_id_changes": 2
+    }
+  },
+  "selector": {},
+  "selector_transitions": [],
+  "milliseconds": {
+    "detect": {
+      "median": 24.02235399995334,
+      "p95": 37.56729789984091
+    },
+    "bytetrack": {
+      "median": 0.4307549997975002,
+      "p95": 1.130972100281724
+    },
+    "deepocsort_osnet": {
+      "median": 24.850418999903923,
+      "p95": 62.8118830002677
+    }
+  },
+  "selector_correct_coverage": null,
+  "selector_wrong_fraction": null,
+  "selector_exercised": false,
+  "interpretation": "GT0 never selected; selector recovery/wrong-target test not exercised. Only GT0 overlap is initialframes0-20.",
+  "source": {
+    "video": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1front/EnterExitCrossingPaths1front.mpg",
+    "annotations": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1front/feecp1gt.xml"
+  },
+  "interval": "Fixed first400frames requested; decoded all383. No threshold tuning."
+}

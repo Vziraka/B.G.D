@@ -1,0 +1,13 @@
+{
+  "candidate": "EnterExitCrossingPaths2cor",
+  "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths2cor/ceecp2gt.xml",
+  "annotation_frames": 482,
+  "GT0_first_clear_frame": 0,
+  "GT0_overlap_frames_IoU_ge_0_3": 0,
+  "inference_run": true,
+  "reason": "GT0 absence of overlap was arbitrary; expanded preselection to any GT identity before inference, yieldingGT2.",
+  "selected_target_gt": 2,
+  "first_clear_frame": 0,
+  "first_overlap_frame": 209,
+  "result_report": "caviar-cor2-boxmot-recovery-3s-2026-09-17.json"
+}

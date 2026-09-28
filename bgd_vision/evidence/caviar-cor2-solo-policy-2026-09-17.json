@@ -1,0 +1,110 @@
+{
+  "qualification": "Proxy IoU association on one public clip, not MOT-standard or live acceptance",
+  "frames": 482,
+  "video_fps": 25.0,
+  "wall_seconds": 37.22278615999949,
+  "target_gt": 2,
+  "candidate_backend": "boxmot.trackers.box.deepocsort.tracker.DeepOcSort",
+  "source_hashes_before_run": {
+    "selection.py": "5be6cddf91290d27174d6e64568320fa08ed934bad16b69eba90c664ca0829d9",
+    "appearance.py": "088f6f797c89c1dbbb86bd94a79a9c5bd87780336915272db607d3618d0a7364",
+    "detector.py": "1abf52a848a5daba2ed14411dbe2966166b91e46d40e6caa7cc6fcb2c1399d1b",
+    "tracking.py": "6d401efc3432bce23872a7b60ad0af2aa1a2dfca76e1c755af6f74f229f74dfd",
+    "__init__.py": "5546a33ac20de2a10f961a8435d8369329d15ad6686f13892c4ae5bf988f26e6",
+    "evaluate_tracking.py": "ef35097dd6e8c04dd7ea3a1e79a8d00280f10fcbcf5869fba79c0699e34040ba"
+  },
+  "detector_settings": {
+    "imgsz": 320,
+    "conf": 0.15,
+    "max_det": 10
+  },
+  "combined_offline_fps": 12.949057545777402,
+  "association_probe": {
+    "three_empty_frames_same_person_recovers": true,
+    "synthetic_crossing_ids_consistent": true,
+    "wrong_appearance_same_position_keeps_id": true,
+    "invalid_descriptors_filtered_with_aligned_indices": true,
+    "qualification": "Synthetic association only; wrong-ID reuse requires separate target veto."
+  },
+  "matching": "Greedy one-to-one IoU>=0.5; GT pair overlaps>=0.3 excluded; ID changes persist across gaps",
+  "overlap_frames": {
+    "2,3": [
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218
+    ]
+  },
+  "association": {
+    "bytetrack": {
+      "eligible_gt_observations": 748,
+      "matches": 666,
+      "missing": 82
+    },
+    "deepocsort_osnet": {
+      "eligible_gt_observations": 748,
+      "matches": 661,
+      "missing": 87
+    }
+  },
+  "selector": {
+    "selected_frame": 0,
+    "Tracking": 213,
+    "eligible_target_frames": 236,
+    "correct_tracking_frames": 213,
+    "Temporarily hidden": 93,
+    "recoveries": 1,
+    "Lost": 176
+  },
+  "selector_transitions": [
+    {
+      "frame": 0,
+      "status": "Tracking",
+      "reason": ""
+    },
+    {
+      "frame": 208,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 226,
+      "status": "Tracking",
+      "reason": "Selected person recovered after a brief interruption"
+    },
+    {
+      "frame": 231,
+      "status": "Temporarily hidden",
+      "reason": "Brief overlap or appearance change; checking the selected person"
+    },
+    {
+      "frame": 306,
+      "status": "Lost",
+      "reason": "Recovery timed out: waiting for both people to separate; select again"
+    }
+  ],
+  "public_frame_trace": [],
+  "milliseconds": {
+    "detect": {
+      "median": 33.20389749978858,
+      "p95": 42.363951849984005
+    },
+    "bytetrack": {
+      "median": 1.2035155004923581,
+      "p95": 2.0163890503681614
+    },
+    "deepocsort_osnet": {
+      "median": 33.44159949983805,
+      "p95": 71.32893634998254
+    }
+  },
+  "selector_exercised": true,
+  "selector_correct_coverage": 0.902542372881356,
+  "selector_wrong_fraction": 0.0
+}
