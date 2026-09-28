@@ -1,0 +1,100 @@
+{
+  "trial_id": "qwen35-clause-accountable-rev11-current-prompt",
+  "source_revision": "rev11 referent-relation/survey guard fixes; current prompt retained unchanged",
+  "active_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+      "bytes": 75053
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "bgd_vision/commands.py": {
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+      "bytes": 3519
+    },
+    "bgd_vision/server.py": {
+      "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+      "bytes": 77178
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "26c09be40d871ac81edeab3ae83946ce0268d88f0a6ada0e6ebbfe5f19a7d191",
+      "bytes": 90846
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11.json": {
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+      "bytes": 9044
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+      "bytes": 7144
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/evaluate.py": {
+      "sha256": "8d62303f7c0cdadb6e51f6ef191da7fdc8962f491d9614427d4224b7403592af",
+      "bytes": 14617
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/start_server.py": {
+      "sha256": "3c5c429cece747acad8fc973ad52282925a874ae564fa6127a091b7edd313bd8",
+      "bytes": 2152
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/stop_server.ps1": {
+      "sha256": "f2d19cdd7eba31eea1bbd3cfb4ee0551c18a6d57c2ec9ec8d3f1bf2f0fb147f2",
+      "bytes": 1317
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/prepare_artifacts.py": {
+      "sha256": "b0371fa3c0e6b41b55256c86bd4d288527a42920f9d300b7b9c10ed7837f8113",
+      "bytes": 7049
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/conversation-revision11.py": {
+      "sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+      "bytes": 75053
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/evaluate-language-revision11.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/test-conversation-revision11.py": {
+      "sha256": "26c09be40d871ac81edeab3ae83946ce0268d88f0a6ada0e6ebbfe5f19a7d191",
+      "bytes": 90846
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/system-prompt.txt": {
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+      "bytes": 2813
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/schema.json": {
+      "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+      "bytes": 964
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/profile.json": {
+      "sha256": "30e3ff85a16251284060abd8cf1bc92fec97470fbbb53e77f620a3cfa16a9c60",
+      "bytes": 3055
+    }
+  }
+}

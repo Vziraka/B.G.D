@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-09-27 10:23:26 UTC",
+  "purpose": "One newly sealed PC text-meaning trial; no tuning on this corpus",
+  "candidate": "qwen35-clause-accountable-rev7",
+  "fixture": "tests/vision/fixtures/conversation-heldout-20260927-v3.json",
+  "fixture_sha256": "02befce4589624c66d5fcead0fae5aa53c1a07fb84ffcf4c7ed76fb2fe9c6574",
+  "fixture_cases": 100,
+  "consequential_cases": 50,
+  "ordinary_cases": 50,
+  "novel_ordinary_cases": 30,
+  "minimum_model_fallback_ordinary_cases": 20,
+  "required_consequential_correct": 50,
+  "required_ordinary_correct": 48,
+  "runner_sha256": "504ecff3c706d6098e2e1afa402286c6551bc8a89e170f117184cec21456ba1b",
+  "candidate_source_sha256": "f471605b09b2af77476db890de5dce6311deb589946c64310aec47610b5fb297",
+  "candidate_run_lock_sha256": "3d3a613c0833be14a83db9faff0066fb7ee17698d895e2ee911c44338baceeed",
+  "note": "A PC text score cannot qualify production cold latency, Pi camera/ASR coexistence, spoken input, or aircraft authority."
+}

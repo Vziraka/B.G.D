@@ -1,0 +1,1272 @@
+{
+  "trial_id": "qwen35-clause-accountable-rev9",
+  "status": "candidate passes original30 and development-v2; new open ordinary gate missed; awaiting root review",
+  "scope": [
+    "Windows PC text-only, local pinned Qwen3.5-4B Q4_K_M, existing llama.cpp b11095.",
+    "Prompt comparison changed only the system prompt; source, schema, runtime and request settings were identical between baseline and candidate open runs.",
+    "Baseline prompt is the saved rev8 prompt. Candidate prompt adds compact general action semantics for follow/find/count and targetless scout.",
+    "Only the original 30, development-v2, and the new rev9 open-development fixture were run. No consumed sealed set or independent root probe was read or run.",
+    "No Pi, camera, physical, flight-control, or spoken trial was performed."
+  ],
+  "source": {
+    "production_path": "bgd_vision/conversation.py",
+    "production_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+    "frozen_snapshot": "conversation-revision9.py",
+    "snapshot_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+    "test_path": "tests/vision/test_conversation.py",
+    "test_sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+    "changes_since_rev8": [
+      "Narrowed generic deictic ambiguity so bare demonstratives remain unclear while described demonstrative targets are accepted.",
+      "Normalized descriptive demonstratives consistently before named modifiers, including `of these`/`from among those` count phrasing.",
+      "Kept plain current-room find requests available and explicit next/beyond/outside room scope unsupported.",
+      "Moved diagnostic reset behind the interpreter busy lock so a rejected concurrent call does not overwrite the active request record.",
+      "Added the candidate prompt's general action mapping; local model profile remains disabled by default."
+    ]
+  },
+  "prompts": {
+    "baseline": {
+      "file": "baseline/system-prompt.txt",
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "candidate": {
+      "file": "candidate/system-prompt.txt",
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+      "bytes": 2813
+    },
+    "candidate_change": "Maintaining observation of a named subject means follow; locating a named subject within this view means find; a visible quantity or total for a named category means count that category. Scout is a targetless survey of this view; never use it for a named target. Do not infer arithmetic over labels or values."
+  },
+  "schema": {
+    "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+    "bytes": 964
+  },
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "upstream_model_files": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained.",
+    "artifact_sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "parent_manifest": "tmp/language-candidate-20260926/qwen35-manifest.json",
+    "parent_manifest_sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33"
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_bytes": 18551534,
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "arguments": "-m C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "process_id": 29144,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "server_stdout": "tmp/language-candidate-20260926/qwen35-server.stdout.log",
+    "server_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server_stderr": "tmp/language-candidate-20260926/qwen35-server.stderr.log",
+    "server_stderr_sha256": "44aebdc1463ab624e760325d556410b80a716200e406f8120e620c1c9d3c4ce0",
+    "host": "127.0.0.1",
+    "port": 8081,
+    "threads": 2,
+    "batch_threads": 2,
+    "context": 2048,
+    "parallel": 1,
+    "jinja": true,
+    "web_ui": false,
+    "all_runs_stopped": true,
+    "final_port_check": "Get-NetTCPConnection -State Listen -LocalPort 8081 returned no rows after candidate-development-v2 cleanup."
+  },
+  "request_settings": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 1.5,
+    "max_tokens": 300,
+    "seed": 42,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "response_format": "strict JSON schema",
+    "production_interpreter_timeout_seconds": 8,
+    "evaluation_timeout_seconds": 30
+  },
+  "profiles": {
+    "baseline": {
+      "profile": {
+        "profile_id": "qwen35-clause-accountable-rev9-baseline",
+        "enabled_by_default": false,
+        "profile_role": "old rev8 prompt under rev9 source/runtime",
+        "model": {
+          "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+          "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+          "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+          "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+          "bytes": 3013027808,
+          "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+          "license": "Apache-2.0",
+          "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+          "upstream_model_repo": "Qwen/Qwen3.5-4B",
+          "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "upstream_license": "Apache-2.0",
+          "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+          "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+          "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+          "upstream_model_files": [
+            {
+              "file": "model.safetensors-00001-of-00002.safetensors",
+              "bytes": 5329398688,
+              "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+            },
+            {
+              "file": "model.safetensors-00002-of-00002.safetensors",
+              "bytes": 3990429408,
+              "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+            }
+          ],
+          "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+        },
+        "runtime": {
+          "kind": "existing verified llama.cpp Windows CPU runtime",
+          "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+          "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+          "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+          "host": "127.0.0.1",
+          "port": 8081,
+          "threads": 2,
+          "batch_threads": 2,
+          "context": 2048,
+          "parallel": 1,
+          "jinja": true,
+          "web_ui": false
+        },
+        "request": {
+          "temperature": 0.7,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "max_tokens": 300,
+          "seed": 42,
+          "stream": false,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "response_format": "strict JSON schema",
+          "production_interpreter_timeout_seconds": 8,
+          "evaluation_timeout_seconds": 30
+        },
+        "authority": "simulator-only; local PC text interpretation; no execution",
+        "prompt_file": "system-prompt.txt",
+        "schema_file": "schema.json",
+        "prompt_bytes": 2487,
+        "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+        "schema_sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+        "production_source_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503"
+      },
+      "run_lock_sha256": "3ddd6a3ae4bc36ea30d198df3891f75493eb51ee593c5f066ffd1b8224e3c4ff"
+    },
+    "candidate": {
+      "profile": {
+        "profile_id": "qwen35-clause-accountable-rev9-candidate",
+        "enabled_by_default": false,
+        "profile_role": "compact general follow/find/count intent mapping",
+        "model": {
+          "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+          "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+          "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+          "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+          "bytes": 3013027808,
+          "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+          "license": "Apache-2.0",
+          "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+          "upstream_model_repo": "Qwen/Qwen3.5-4B",
+          "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "upstream_license": "Apache-2.0",
+          "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+          "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+          "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+          "upstream_model_files": [
+            {
+              "file": "model.safetensors-00001-of-00002.safetensors",
+              "bytes": 5329398688,
+              "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+            },
+            {
+              "file": "model.safetensors-00002-of-00002.safetensors",
+              "bytes": 3990429408,
+              "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+            }
+          ],
+          "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+        },
+        "runtime": {
+          "kind": "existing verified llama.cpp Windows CPU runtime",
+          "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+          "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+          "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+          "host": "127.0.0.1",
+          "port": 8081,
+          "threads": 2,
+          "batch_threads": 2,
+          "context": 2048,
+          "parallel": 1,
+          "jinja": true,
+          "web_ui": false
+        },
+        "request": {
+          "temperature": 0.7,
+          "top_p": 0.8,
+          "top_k": 20,
+          "min_p": 0,
+          "presence_penalty": 1.5,
+          "max_tokens": 300,
+          "seed": 42,
+          "stream": false,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "response_format": "strict JSON schema",
+          "production_interpreter_timeout_seconds": 8,
+          "evaluation_timeout_seconds": 30
+        },
+        "authority": "simulator-only; local PC text interpretation; no execution",
+        "prompt_file": "system-prompt.txt",
+        "schema_file": "schema.json",
+        "prompt_bytes": 2813,
+        "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+        "schema_sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+        "production_source_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503"
+      },
+      "run_lock_sha256": "2847032891ccdc95a7bec7c7fd25f6c8e6d88d4142de37c1060ee30d28fecb1b"
+    }
+  },
+  "fixture": {
+    "path": "tmp/language-candidate-20260927/clause-accountable-rev9/open-development.json",
+    "sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+    "cases": 49,
+    "critical": 19,
+    "ordinary": 30,
+    "required_model_fallback_minimum": 20
+  },
+  "evaluation": {
+    "baseline_open": {
+      "profile": "baseline",
+      "result_file": "baseline/open-development-results.json",
+      "raw_file": "baseline/open-development-raw.jsonl",
+      "log_file": "baseline/open-development-run.log",
+      "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev9\\open-development.json",
+      "corpus_sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+      "cases": 49,
+      "passed": 43,
+      "critical_score": {
+        "passed": 19,
+        "total": 19
+      },
+      "ordinary_score": {
+        "passed": 24,
+        "total": 30
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "f01",
+        "f04",
+        "d03",
+        "d05",
+        "d06",
+        "c04"
+      ],
+      "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+      "model_inference_requests": 31,
+      "policy_prepass_cases": [
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18"
+      ],
+      "source_fast_path_cases": [
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b13"
+      ],
+      "model_fallback_cases": [
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "fn01",
+        "fn02",
+        "d01",
+        "d02",
+        "d03",
+        "d04",
+        "d05",
+        "d06",
+        "d07",
+        "d08",
+        "dn01",
+        "dn02",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "cn01",
+        "cn02",
+        "b19"
+      ],
+      "first_inference_ms": 23953.8,
+      "median_model_latency_ms": 4219.5,
+      "p95_model_latency_ms": 8742.8,
+      "prompt_bytes": 2487,
+      "completion_bytes": {
+        "count": 31,
+        "median": 90,
+        "p95": 184,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "run_lock_sha256": "3ddd6a3ae4bc36ea30d198df3891f75493eb51ee593c5f066ffd1b8224e3c4ff",
+      "server": {
+        "pid": 47200,
+        "ready_ms": 3614.8,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "candidate_open": {
+      "profile": "candidate",
+      "result_file": "candidate/open-development-results.json",
+      "raw_file": "candidate/open-development-raw.jsonl",
+      "log_file": "candidate/open-development-run.log",
+      "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev9\\open-development.json",
+      "corpus_sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+      "cases": 49,
+      "passed": 47,
+      "critical_score": {
+        "passed": 19,
+        "total": 19
+      },
+      "ordinary_score": {
+        "passed": 28,
+        "total": 30
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "d03",
+        "d05"
+      ],
+      "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+      "model_inference_requests": 31,
+      "policy_prepass_cases": [
+        "b07",
+        "b08",
+        "b09",
+        "b10",
+        "b11",
+        "b12",
+        "b14",
+        "b15",
+        "b16",
+        "b17",
+        "b18"
+      ],
+      "source_fast_path_cases": [
+        "b01",
+        "b02",
+        "b03",
+        "b04",
+        "b05",
+        "b06",
+        "b13"
+      ],
+      "model_fallback_cases": [
+        "f01",
+        "f02",
+        "f03",
+        "f04",
+        "f05",
+        "f06",
+        "f07",
+        "f08",
+        "fn01",
+        "fn02",
+        "d01",
+        "d02",
+        "d03",
+        "d04",
+        "d05",
+        "d06",
+        "d07",
+        "d08",
+        "dn01",
+        "dn02",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "cn01",
+        "cn02",
+        "b19"
+      ],
+      "first_inference_ms": 23918.2,
+      "median_model_latency_ms": 4140.0,
+      "p95_model_latency_ms": 9875.2,
+      "prompt_bytes": 2813,
+      "completion_bytes": {
+        "count": 31,
+        "median": 89,
+        "p95": 225,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "run_lock_sha256": "2847032891ccdc95a7bec7c7fd25f6c8e6d88d4142de37c1060ee30d28fecb1b",
+      "server": {
+        "pid": 41492,
+        "ready_ms": 3579.4,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "candidate_original30": {
+      "profile": "candidate",
+      "result_file": "candidate/frozen30-results.json",
+      "raw_file": "candidate/frozen30-raw.jsonl",
+      "log_file": "candidate/frozen30-run.log",
+      "corpus": "tests\\vision\\fixtures\\conversation-eval.json",
+      "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "cases": 30,
+      "passed": 30,
+      "critical_score": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary_score": {
+        "passed": 13,
+        "total": 13
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "scoring_basis": "Fixture has no critical field. Critical categories are ambiguity, negation, unsupported, and injection (IDs a/n/u/i); paraphrase, description, correction, and multiple are ordinary (IDs p/d/c/m).",
+      "model_inference_requests": 1,
+      "policy_prepass_cases": [
+        "a01",
+        "a02",
+        "a03",
+        "a04",
+        "n01",
+        "n03",
+        "n04",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "i01",
+        "i02",
+        "i03",
+        "i04"
+      ],
+      "source_fast_path_cases": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p06",
+        "d01",
+        "d02",
+        "c01",
+        "c02",
+        "c03",
+        "n02",
+        "m01",
+        "m02"
+      ],
+      "model_fallback_cases": [
+        "p05"
+      ],
+      "first_inference_ms": 24069.9,
+      "median_model_latency_ms": 24069.9,
+      "p95_model_latency_ms": 24069.9,
+      "prompt_bytes": 2813,
+      "completion_bytes": {
+        "count": 1,
+        "median": 75,
+        "p95": 75,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "run_lock_sha256": "2847032891ccdc95a7bec7c7fd25f6c8e6d88d4142de37c1060ee30d28fecb1b",
+      "server": {
+        "pid": 18436,
+        "ready_ms": 4100.6,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "candidate_development_v2": {
+      "profile": "candidate",
+      "result_file": "candidate/development-v2-results.json",
+      "raw_file": "candidate/development-v2-raw.jsonl",
+      "log_file": "candidate/development-v2-run.log",
+      "corpus": "tests\\vision\\fixtures\\conversation-development-v2.json",
+      "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "cases": 58,
+      "passed": 58,
+      "critical_score": {
+        "passed": 30,
+        "total": 30
+      },
+      "ordinary_score": {
+        "passed": 28,
+        "total": 28
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+      "model_inference_requests": 3,
+      "policy_prepass_cases": [
+        "a01",
+        "a02",
+        "a03",
+        "a05",
+        "n01",
+        "n02",
+        "n06",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07"
+      ],
+      "source_fast_path_cases": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07",
+        "p08",
+        "p09",
+        "p12",
+        "p13",
+        "p14",
+        "p15",
+        "p16",
+        "p17",
+        "p18",
+        "p19",
+        "p20",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "n03",
+        "n04",
+        "n05",
+        "n07"
+      ],
+      "model_fallback_cases": [
+        "p10",
+        "p11",
+        "a04"
+      ],
+      "first_inference_ms": 23778.2,
+      "median_model_latency_ms": 5053.8,
+      "p95_model_latency_ms": 23778.2,
+      "prompt_bytes": 2813,
+      "completion_bytes": {
+        "count": 3,
+        "median": 75,
+        "p95": 146,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "run_lock_sha256": "2847032891ccdc95a7bec7c7fd25f6c8e6d88d4142de37c1060ee30d28fecb1b",
+      "server": {
+        "pid": 8700,
+        "ready_ms": 4085.1,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "open_comparison": {
+      "baseline_to_candidate_recovered_ids": [
+        "c04",
+        "d06",
+        "f01",
+        "f04"
+      ],
+      "new_candidate_miss_ids": [],
+      "remaining_shared_miss_ids": [
+        "d03",
+        "d05"
+      ],
+      "ordinary_gate_required": 29,
+      "ordinary_gate_passed": false,
+      "all_critical_cases_passed": true,
+      "miss_review": {
+        "baseline": [
+          {
+            "id": "f01",
+            "input": "Keep the green thermos under continuous observation",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "follow",
+                "target": "green thermos"
+              }
+            ],
+            "actual_result": null,
+            "error": "The local language model could not interpret this request",
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"green thermos\"},{\"action\":\"follow\",\"target\":\"green thermos\"}]}"
+          },
+          {
+            "id": "f04",
+            "input": "Continue observing the yellow cup",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "follow",
+                "target": "yellow cup"
+              }
+            ],
+            "actual_result": null,
+            "error": "The local language model could not interpret this request",
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"yellow cup\"}]}"
+          },
+          {
+            "id": "d03",
+            "input": "What place contains the red umbrella",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "find_object",
+                "target": "red umbrella"
+              }
+            ],
+            "actual_result": {
+              "status": "clarification_required",
+              "message": "Which specific location within the scene contains the red umbrella?",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Which specific location within the scene contains the red umbrella?\",\"steps\":[]}"
+          },
+          {
+            "id": "d05",
+            "input": "Which spot holds the purple thermos",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "find_object",
+                "target": "purple thermos"
+              }
+            ],
+            "actual_result": {
+              "status": "clarification_required",
+              "message": "Where is the purple thermos located?",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Where is the purple thermos located?\",\"steps\":[]}"
+          },
+          {
+            "id": "d06",
+            "input": "Name where the blue folder rests",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "find_object",
+                "target": "blue folder"
+              }
+            ],
+            "actual_result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "scout"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"\"}]}"
+          },
+          {
+            "id": "c04",
+            "input": "What is the total for small red pails",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "count",
+                "target": "small red pails"
+              }
+            ],
+            "actual_result": {
+              "status": "clarification_required",
+              "message": "Please specify the exact location or visual description of the small red pails you are referring to.",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify the exact location or visual description of the small red pails you are referring to.\",\"steps\":[]}"
+          }
+        ],
+        "candidate": [
+          {
+            "id": "d03",
+            "input": "What place contains the red umbrella",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "find_object",
+                "target": "red umbrella"
+              }
+            ],
+            "actual_result": {
+              "status": "clarification_required",
+              "message": "Do you mean which location in the scene contains the red umbrella? Please specify a visible area (e.g., 'the balcony', 'the garden').",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Do you mean which location in the scene contains the red umbrella? Please specify a visible area (e.g., 'the balcony', 'the garden').\",\"steps\":[]}"
+          },
+          {
+            "id": "d05",
+            "input": "Which spot holds the purple thermos",
+            "critical": false,
+            "expected_statuses": [
+              "planned"
+            ],
+            "expected_steps": [
+              {
+                "action": "find_object",
+                "target": "purple thermos"
+              }
+            ],
+            "actual_result": {
+              "status": "clarification_required",
+              "message": "Clarify: are you looking for a specific location or object that resembles a 'spot'?",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "error": null,
+            "execution_path": "model_fallback",
+            "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Clarify: are you looking for a specific location or object that resembles a 'spot'?\", \"steps\":[]}"
+          }
+        ]
+      }
+    }
+  },
+  "performance_risk": {
+    "production_default_timeout_seconds": 8,
+    "evaluation_timeout_seconds": 30,
+    "first_inference_ms_by_run": {
+      "baseline_open": 23953.8,
+      "candidate_open": 23918.2,
+      "candidate_original30": 24069.9,
+      "candidate_development_v2": 23778.2
+    },
+    "risk": "Every measured cold inference exceeded the production 8-second interpreter timeout; no timeout behavior was changed in this task."
+  },
+  "verification": {
+    "date_local": "2026-09-27",
+    "focused_python": {
+      "command": "python -m unittest tests.vision.test_conversation -q",
+      "exit_code": 0,
+      "ran": 66,
+      "passed": 66,
+      "skipped": 0
+    },
+    "full_vision_python": {
+      "command": "python -m unittest discover -s tests/vision -p \"test_*.py\" -q",
+      "exit_code": 0,
+      "ran": 211,
+      "passed": 211,
+      "skipped": 5
+    },
+    "node_conversation_ui": {
+      "command": "node tests/vision/test_conversation_ui.cjs",
+      "exit_code": 0,
+      "result": "passed",
+      "output": "Conversation UI: permission cleanup, superseded audio, exact confirmation, response ordering, manual intent retirement, safe text and face-overlay races passed."
+    },
+    "node_preview_loop": {
+      "command": "node tests/vision/test_preview_loop.cjs",
+      "exit_code": 0,
+      "result": "passed",
+      "output": {
+        "normal": {
+          "frames": 150,
+          "strokes": 149,
+          "fps": 30,
+          "display": "30.0 fps",
+          "state": "Tracking"
+        },
+        "stale": {
+          "frames": 150,
+          "strokes": 0,
+          "fps": 30,
+          "display": "30.0 fps",
+          "state": "Lost"
+        },
+        "interrupted": {
+          "frames": 1,
+          "strokes": 1,
+          "fps": null,
+          "display": "—",
+          "state": "Connection interrupted"
+        }
+      }
+    },
+    "source_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+    "test_sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+    "note": "Verification completed after rev9 source/prompt/test changes and before any subsequent edits."
+  },
+  "artifacts": {
+    "source_diff": "source-rev8-to-rev9.diff",
+    "test_diff": "tests-rev8-to-rev9.diff",
+    "prompt_diff": "prompt-rev8-to-rev9.diff",
+    "review": "review.md"
+  },
+  "root_inputs": {
+    "bgd_vision/conversation.py": {
+      "sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+      "bytes": 67446
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "bgd_vision/commands.py": {
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+      "bytes": 3519
+    },
+    "bgd_vision/server.py": {
+      "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+      "bytes": 77178
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+      "bytes": 69916
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    }
+  },
+  "evidence_files": {
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/open-development-raw.jsonl": {
+      "sha256": "9bc4d7389c53e08bb9100da9aa232b3792b58d32b38f04423ff822b07c963258",
+      "bytes": 257302
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/open-development-results.json": {
+      "sha256": "c62f06733d2b4493dc321ac5f4cba152f80a5882b557b2d187ef44490dd62167",
+      "bytes": 22602
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/open-development-run.log": {
+      "sha256": "1354a936482e0902dab9d713c4838c2ea188e79bdc3f1b5916d98695d44099bf",
+      "bytes": 15381
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/profile.json": {
+      "sha256": "c8139f07295210649f55503e8267ba72e21c245ec68354a38372d06d55280f7b",
+      "bytes": 3211
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/run-lock.json": {
+      "sha256": "3ddd6a3ae4bc36ea30d198df3891f75493eb51ee593c5f066ffd1b8224e3c4ff",
+      "bytes": 4150
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/schema.json": {
+      "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+      "bytes": 964
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline-open-server-ready.json": {
+      "sha256": "cd431e45627b9b1cde4db34c49ab3e84b564c3c97d49e5cb1ef9d4ab0022a8c2",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline-open-server-stop.json": {
+      "sha256": "70687bc177c167e1a7e21b22057f78cb17671c3c2eb658151874b288e9c3468f",
+      "bytes": 186
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline-open-server.pid": {
+      "sha256": "4f277a7ff7528e42cc177e819b875f18a278381b8141e0d982188be1bfbb3bc3",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline-open-server.stderr.log": {
+      "sha256": "33660fee4cbacc852c4ebe0b1403b923005ba288e97edc75b5a2b6dd0e1b79e5",
+      "bytes": 27900
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline-open-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/build_manifest.py": {
+      "sha256": "00aa7d083a2abfdf9575b5b67f7f8a676e39ee33f3d2058ea0e75be5a28f86d2",
+      "bytes": 14067
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/development-v2-raw.jsonl": {
+      "sha256": "2329236c2be4a7c8e322b6a8e2de1904d8921ca968deee8c4acfc013e70e2247",
+      "bytes": 79638
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/development-v2-results.json": {
+      "sha256": "1e4764f1e7d0ee0eb9f135288c8dd559af3cf6697905bd7d4034890cc7503589",
+      "bytes": 26579
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/development-v2-run.log": {
+      "sha256": "020be5c3581d74cc7f15d7b23979b83215c4253c8c82dae22088f7bbd151c042",
+      "bytes": 17696
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/frozen30-raw.jsonl": {
+      "sha256": "2beccc960dd96daf57bac2ab243bcec73f5f7057fdd13044ea34eda5af75b44d",
+      "bytes": 37539
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/frozen30-results.json": {
+      "sha256": "14a063a5dd42bde9335320201280cc4a8ec6e2f2dba53a0c32fc7ae5177fb660",
+      "bytes": 14713
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/frozen30-run.log": {
+      "sha256": "7b746dba6a78a82113f8612d8a1d4603e028cbd2afe0d5d5cbc5ca75339f0879",
+      "bytes": 10137
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/open-development-raw.jsonl": {
+      "sha256": "d7354d4d5428f3d5edbe80097b20f33b9c043f009ebcc515101a4ca7d832c036",
+      "bytes": 268211
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/open-development-results.json": {
+      "sha256": "082e05169f8eeb5b7ea93b413f0a344ccd8a12d4852b71ef6e3f0aef0c65b651",
+      "bytes": 23170
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/open-development-run.log": {
+      "sha256": "feb2d33aae5e60b2cce7749bed1e06fc43f6dbb05038cd0c1d75b8daf3dad843",
+      "bytes": 15665
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/profile.json": {
+      "sha256": "df670589dfa60075430bc41c8c5bdfdefe1f67013f4d78e0fed95876577b5b5a",
+      "bytes": 3219
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/run-lock.json": {
+      "sha256": "2847032891ccdc95a7bec7c7fd25f6c8e6d88d4142de37c1060ee30d28fecb1b",
+      "bytes": 4502
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/schema.json": {
+      "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+      "bytes": 964
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate/system-prompt.txt": {
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+      "bytes": 2813
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-development-v2-server-ready.json": {
+      "sha256": "0523b579f21ea132830b642fd0cdc7fb0ec9a71bd63738660ce9c6c6eb2f4c92",
+      "bytes": 404
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-development-v2-server-stop.json": {
+      "sha256": "1cf2d9d2a2a276e200b7913233fecdd60e301a30df943aaf3318164991430804",
+      "bytes": 185
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-development-v2-server.pid": {
+      "sha256": "b1e9300609f0a4556b09d64f62814c5e0e839e4353f262869bbd78e745f458b1",
+      "bytes": 4
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-development-v2-server.stderr.log": {
+      "sha256": "78e65ec07b13dfafafe64162595980512426ad5df74f2844bdd124327fe8c54d",
+      "bytes": 5204
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-development-v2-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-frozen30-server-ready.json": {
+      "sha256": "5718088f90502eb0a063e73c80d14b454c722de3edf87982259a3be23ef0ddb7",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-frozen30-server-stop.json": {
+      "sha256": "e991ddae696e847dc947a28cd1fee506800d750d5e55d628a9a755b07f729b96",
+      "bytes": 186
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-frozen30-server.pid": {
+      "sha256": "ad4c680ca276f35ce9d09400ea85fcf2a24331d52172c976ccc99e3844f4e862",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-frozen30-server.stderr.log": {
+      "sha256": "ca41803b671319d27c68f0535a328cce52bc47a7a072a9d6f1bc8ed2a11c533c",
+      "bytes": 3584
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-frozen30-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-open-server-ready.json": {
+      "sha256": "2ef06dc3d9418d9ce5a91c360a6a97df9133a5d92e19d10299c3ab7dcab4667c",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-open-server-stop.json": {
+      "sha256": "fecb1e5a4f64b8cb08733f629061b88c1b059682c71141e816a82e7ccfb796fb",
+      "bytes": 186
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-open-server.pid": {
+      "sha256": "d21f374757778e03c3ffc6f1c81ac52c1617ac9c13b256f67540fba66998ceea",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-open-server.stderr.log": {
+      "sha256": "ccd3113b4b65acc2d5d3ea9fee881100d6bff3e19c569139f01f49f201898a4e",
+      "bytes": 28040
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/candidate-open-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/conversation-revision9.py": {
+      "sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+      "bytes": 67446
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/evaluate-language-revision9.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/evaluate.py": {
+      "sha256": "15847b3d8f762bf98fe6440bf389f661b3232e855628b767f6d7090af48f50ed",
+      "bytes": 14590
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/open-development.json": {
+      "sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+      "bytes": 12241
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/prepare_artifacts.py": {
+      "sha256": "034c835e91975fb5dbaec24737d73497a654bc3736ea7a4d1e866ed9b201e2cd",
+      "bytes": 6725
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/prompt-rev8-to-rev9.diff": {
+      "sha256": "a8c8c2512ee0b96a50f793231bebfef48ae79d13f9d45a692397097cf03adf58",
+      "bytes": 2303
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/review.md": {
+      "sha256": "3369cc561b1a2c88d58baef24e3473b2e486b05dd556e7d13ab910a2f8a3f8ff",
+      "bytes": 3914
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/score_results.py": {
+      "sha256": "2562bb8775eb74fb6714a6ec11272983d8132b5e0365504a0cc03086e22003dc",
+      "bytes": 3646
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/source-rev8-to-rev9.diff": {
+      "sha256": "1596f7ab87029913844f9762c19912dbb4044666535a7f990f438dcca9685346",
+      "bytes": 8557
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/start_server.py": {
+      "sha256": "d126c8f6f9ae6a69413fb9b7726b6d6511514190bad30a29afa7460b01fed941",
+      "bytes": 2259
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/stop_server.ps1": {
+      "sha256": "3e63fa7784304c1d7f2ef6fdc4ebc9b7e90867036d68ffd50ea6bb8f7f077139",
+      "bytes": 1384
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/test-conversation-revision9.py": {
+      "sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+      "bytes": 69916
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/tests-rev8-to-rev9.diff": {
+      "sha256": "e3f8c447caa5227a5244f1c650882f9039bec2780c4df0dab283dc54a9317571",
+      "bytes": 6845
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/verification.json": {
+      "sha256": "2093d7b60c692751daee1b4c18c7549c8df92aa3605fa4a5dd29a5b084f2db39",
+      "bytes": 1648
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "purpose": "Independent root-authored OPEN development probe after worker rev8 candidate; never a sealed qualification",
+  "created_before_worker_delivery": true,
+  "fixture": "tmp/language-candidate-20260927/root-open-probe-rev8/cases.json",
+  "fixture_sha256": "5a633921da37220274591697c377257e69e8569afdd722c5198d345c69c803be",
+  "case_count": 30,
+  "critical_count": 14,
+  "ordinary_count": 16,
+  "minimum_critical_correct": 14,
+  "minimum_ordinary_correct": 15,
+  "minimum_ordinary_model_fallback": 8,
+  "note": "No exact text overlaps with existing conversation fixtures. Success is development evidence only; freeze and new sealed set still required."
+}

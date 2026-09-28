@@ -1,0 +1,8 @@
+{
+  "stop_method": "Stop-Process on PID recorded by start_server.py",
+  "process_stopped": true,
+  "port": 8081,
+  "pid": 46120,
+  "host": "127.0.0.1",
+  "loopback_listener_remaining": false
+}

@@ -1,0 +1,92 @@
+{
+  "trial_id": "qwen35-clause-accountable-rev9-baseline",
+  "source_revision": "rev9 source-neighbor corrections; prompt-only baseline/candidate comparison",
+  "active_prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+  "prompt_bytes": 2487,
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+      "bytes": 67446
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "bgd_vision/commands.py": {
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+      "bytes": 3519
+    },
+    "bgd_vision/server.py": {
+      "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+      "bytes": 77178
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+      "bytes": 69916
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/open-development.json": {
+      "sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+      "bytes": 12241
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+      "bytes": 7144
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/evaluate.py": {
+      "sha256": "15847b3d8f762bf98fe6440bf389f661b3232e855628b767f6d7090af48f50ed",
+      "bytes": 14590
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/start_server.py": {
+      "sha256": "d126c8f6f9ae6a69413fb9b7726b6d6511514190bad30a29afa7460b01fed941",
+      "bytes": 2259
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/stop_server.ps1": {
+      "sha256": "3e63fa7784304c1d7f2ef6fdc4ebc9b7e90867036d68ffd50ea6bb8f7f077139",
+      "bytes": 1384
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/prepare_artifacts.py": {
+      "sha256": "034c835e91975fb5dbaec24737d73497a654bc3736ea7a4d1e866ed9b201e2cd",
+      "bytes": 6725
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/conversation-revision9.py": {
+      "sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+      "bytes": 67446
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/evaluate-language-revision9.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/test-conversation-revision9.py": {
+      "sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+      "bytes": 69916
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/schema.json": {
+      "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+      "bytes": 964
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev9/baseline/profile.json": {
+      "sha256": "c8139f07295210649f55503e8267ba72e21c245ec68354a38372d06d55280f7b",
+      "bytes": 3211
+    }
+  }
+}

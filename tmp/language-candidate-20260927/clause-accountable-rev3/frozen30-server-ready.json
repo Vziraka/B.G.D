@@ -1,0 +1,24 @@
+{
+  "pid": 36312,
+  "host": "127.0.0.1",
+  "port": 8081,
+  "ready_ms": 4083.3,
+  "arguments": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8081",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ]
+}

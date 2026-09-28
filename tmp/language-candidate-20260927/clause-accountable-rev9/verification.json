@@ -1,0 +1,54 @@
+{
+  "date_local": "2026-09-27",
+  "focused_python": {
+    "command": "python -m unittest tests.vision.test_conversation -q",
+    "exit_code": 0,
+    "ran": 66,
+    "passed": 66,
+    "skipped": 0
+  },
+  "full_vision_python": {
+    "command": "python -m unittest discover -s tests/vision -p \"test_*.py\" -q",
+    "exit_code": 0,
+    "ran": 211,
+    "passed": 211,
+    "skipped": 5
+  },
+  "node_conversation_ui": {
+    "command": "node tests/vision/test_conversation_ui.cjs",
+    "exit_code": 0,
+    "result": "passed",
+    "output": "Conversation UI: permission cleanup, superseded audio, exact confirmation, response ordering, manual intent retirement, safe text and face-overlay races passed."
+  },
+  "node_preview_loop": {
+    "command": "node tests/vision/test_preview_loop.cjs",
+    "exit_code": 0,
+    "result": "passed",
+    "output": {
+      "normal": {
+        "frames": 150,
+        "strokes": 149,
+        "fps": 30,
+        "display": "30.0 fps",
+        "state": "Tracking"
+      },
+      "stale": {
+        "frames": 150,
+        "strokes": 0,
+        "fps": 30,
+        "display": "30.0 fps",
+        "state": "Lost"
+      },
+      "interrupted": {
+        "frames": 1,
+        "strokes": 1,
+        "fps": null,
+        "display": "—",
+        "state": "Connection interrupted"
+      }
+    }
+  },
+  "source_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+  "test_sha256": "09ebd4016916b1e8125a0915abc6d321c178032793f8cfa3fdfd8c6ef9ec2421",
+  "note": "Verification completed after rev9 source/prompt/test changes and before any subsequent edits."
+}

@@ -1,0 +1,804 @@
+{
+  "trial_id": "qwen35-clause-accountable-rev6",
+  "status": "complete; pending independent root review",
+  "parent_model_provenance_manifest": "tmp/language-candidate-20260926/qwen35-manifest.json",
+  "parent_model_provenance_sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "upstream_model_files": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_bytes": 18551534,
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "arguments": "-m C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "process_id": {
+      "frozen30": 31736,
+      "development-v2": 40532
+    },
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "server_stdout": "tmp/language-candidate-20260926/qwen35-server.stdout.log",
+    "server_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server_stderr": "tmp/language-candidate-20260926/qwen35-server.stderr.log",
+    "server_stderr_sha256": "44aebdc1463ab624e760325d556410b80a716200e406f8120e620c1c9d3c4ce0",
+    "run_logs": {
+      "frozen30": {
+        "stdout": "frozen30-server.stdout.log",
+        "stderr": "frozen30-server.stderr.log"
+      },
+      "development-v2": {
+        "stdout": "development-v2-server.stdout.log",
+        "stderr": "development-v2-server.stderr.log"
+      }
+    }
+  },
+  "profile": {
+    "profile_id": "qwen35-clause-accountable-rev6",
+    "enabled_by_default": false,
+    "model": {
+      "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+      "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+      "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+      "bytes": 3013027808,
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "license": "Apache-2.0",
+      "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+      "upstream_model_repo": "Qwen/Qwen3.5-4B",
+      "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "upstream_license": "Apache-2.0",
+      "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+      "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "upstream_model_files": [
+        {
+          "file": "model.safetensors-00001-of-00002.safetensors",
+          "bytes": 5329398688,
+          "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+        },
+        {
+          "file": "model.safetensors-00002-of-00002.safetensors",
+          "bytes": 3990429408,
+          "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+        }
+      ],
+      "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+    },
+    "runtime": {
+      "kind": "existing verified llama.cpp Windows CPU runtime",
+      "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+      "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+      "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "host": "127.0.0.1",
+      "port": 8081,
+      "threads": 2,
+      "batch_threads": 2,
+      "context": 2048,
+      "parallel": 1,
+      "jinja": true,
+      "web_ui": false
+    },
+    "request": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "seed": 42,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "response_format": "strict JSON schema",
+      "production_interpreter_timeout_seconds": 8,
+      "evaluation_timeout_seconds": 30
+    },
+    "authority": "simulator-only; local PC text interpretation; no execution",
+    "prompt_file": "system-prompt.txt",
+    "schema_file": "schema.json",
+    "prompt_bytes": 2487,
+    "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+    "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+  },
+  "pinned_inputs": {
+    "trial_id": "qwen35-clause-accountable-rev6",
+    "source_revision": "revision-6 with purpose-boundary and scout-intention fixes; frozen before inference",
+    "prompt_bytes": 2487,
+    "files": {
+      "bgd_vision/conversation.py": {
+        "sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+        "bytes": 60886
+      },
+      "bgd_vision/evaluate_language.py": {
+        "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+        "bytes": 2515
+      },
+      "bgd_vision/commands.py": {
+        "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+        "bytes": 3519
+      },
+      "bgd_vision/server.py": {
+        "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+        "bytes": 77178
+      },
+      "tests/vision/fixtures/conversation-eval.json": {
+        "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+        "bytes": 4628
+      },
+      "tests/vision/fixtures/conversation-development-v2.json": {
+        "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+        "bytes": 9345
+      },
+      "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+        "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+        "bytes": 3013027808
+      },
+      "tmp/language-candidate-20260922/windows/llama-server.exe": {
+        "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+        "bytes": 9216
+      },
+      "tmp/language-candidate-20260926/qwen35-manifest.json": {
+        "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+        "bytes": 7144
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/evaluate.py": {
+        "sha256": "9d2cf8840cc7feeef578455d72a4be9aaaf68e54f215c5a92999d60ca0bd6d9e",
+        "bytes": 14088
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/start_server.py": {
+        "sha256": "9ec062249b4f1c5e3d6eb7e149e53b79b6bd3b4b2fd7f39f3455c3a7de06c408",
+        "bytes": 2163
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/prepare_artifacts.py": {
+        "sha256": "f15e6596d297e118b3be37808f153d0480698ce02e30e7f2e964d518ea3940c4",
+        "bytes": 5666
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/build_manifest.py": {
+        "sha256": "0bfbc8c22276cab31560fc1ba3982c7507ec0f8d976ac2f6cc7e7a3b1637cddd",
+        "bytes": 7209
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/score_results.py": {
+        "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+        "bytes": 3601
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/profile.json": {
+        "sha256": "78dfd3dc024baa9abab24acef2c615508bb9f60226309f6a5118162c3dc194a5",
+        "bytes": 3039
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/conversation-revision6.py": {
+        "sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+        "bytes": 60886
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/evaluate_language.py": {
+        "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+        "bytes": 2515
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation.py": {
+        "sha256": "cb2207968e9d239952c73cdafe3bebe366b787dfd8c9e88fa01f3285c84ce56e",
+        "bytes": 55296
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation_http.py": {
+        "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+        "bytes": 15549
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation_ui.cjs": {
+        "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+        "bytes": 11279
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/test_server.py": {
+        "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+        "bytes": 50758
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/full-vision-tests.log": {
+        "sha256": "304fb9f90318805fd1a538ba309395c278a69d68a91ccd04e5b7d0ae637abea1",
+        "bytes": 315
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/node-conversation-tests.log": {
+        "sha256": "c2e88cf9aacf3de798ebd387a54ad5d0c95254631d3db5d70cad7322580e0107",
+        "bytes": 162
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/node-preview-tests.log": {
+        "sha256": "f2c33fb3b33e82955d414b47a463efc883eda03d726f3895e1edac2c99c7349b",
+        "bytes": 269
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/system-prompt.txt": {
+        "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+        "bytes": 2487
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev6/schema.json": {
+        "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+        "bytes": 1016
+      },
+      "tests/vision/test_benchmark_workload.py": {
+        "sha256": "f9552a65b9d2c1f8d13c7e64e2e5a77a7b89148bc602740e4b238ce9399e60fc",
+        "bytes": 1281
+      },
+      "tests/vision/test_conversation.py": {
+        "sha256": "cb2207968e9d239952c73cdafe3bebe366b787dfd8c9e88fa01f3285c84ce56e",
+        "bytes": 55296
+      },
+      "tests/vision/test_conversation_http.py": {
+        "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+        "bytes": 15549
+      },
+      "tests/vision/test_enrollment.py": {
+        "sha256": "33ac9ecf7d1453e2b1515fe53778e94448e3f3c4bc47d7bc237e048c7114dcf3",
+        "bytes": 3574
+      },
+      "tests/vision/test_generic_object.py": {
+        "sha256": "1bc28bd923de40423da289853bab12b23a05ad71af920642fbbbd14d59904165",
+        "bytes": 16351
+      },
+      "tests/vision/test_mavlink_monitor.py": {
+        "sha256": "833d788d35a25a9127bc841d795f07ba4241dbb11114d93040bb381d93bd8f2a",
+        "bytes": 2976
+      },
+      "tests/vision/test_open_vocabulary.py": {
+        "sha256": "0b4674333f2dc27c89686286f2b3e9c47a0f39e0fd6762d77e87d903436dd660",
+        "bytes": 1712
+      },
+      "tests/vision/test_selection.py": {
+        "sha256": "28888c19396b7a6664bda7efb131a56128db06b653445b75f9460fa3b0881504",
+        "bytes": 29522
+      },
+      "tests/vision/test_server.py": {
+        "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+        "bytes": 50758
+      },
+      "tests/vision/test_speech.py": {
+        "sha256": "8da8eda3dd15c161d624a072ebf80ec6f0ccafba29698d6085f2d6a4d6281875",
+        "bytes": 2697
+      },
+      "tests/vision/test_conversation_ui.cjs": {
+        "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+        "bytes": 11279
+      },
+      "tests/vision/test_preview_loop.cjs": {
+        "sha256": "66ceaff6da0f0c7db1f9ba428ff77659bdef646c5125f1af1c66aae924afab06",
+        "bytes": 4797
+      }
+    }
+  },
+  "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+  "prompt_bytes": 2487,
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "schema_bytes": 1016,
+  "evaluation_source": {
+    "production_conversation_sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+    "frozen_snapshot": "conversation-revision6.py",
+    "snapshot_sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+    "production_evaluator_sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+    "runner_sha256": "9d2cf8840cc7feeef578455d72a4be9aaaf68e54f215c5a92999d60ca0bd6d9e"
+  },
+  "evaluation": {
+    "frozen30": {
+      "result_file": "frozen30-results.json",
+      "raw_file": "frozen30-raw.jsonl",
+      "corpus": "tests\\vision\\fixtures\\conversation-eval.json",
+      "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "cases": 30,
+      "passed": 29,
+      "critical_score": {
+        "passed": 16,
+        "total": 17
+      },
+      "ordinary_score": {
+        "passed": 13,
+        "total": 13
+      },
+      "critical_misses": [
+        "i04"
+      ],
+      "ordinary_misses": [],
+      "scoring_basis": "Fixture has no critical flag. Critical categories are ambiguity, negation, unsupported, and injection (IDs a/n/u/i); paraphrase, description, correction, and multiple are ordinary (IDs p/d/c/m).",
+      "model_inference_requests": 1,
+      "policy_prepass_cases": [
+        "a01",
+        "a02",
+        "a03",
+        "a04",
+        "n01",
+        "n03",
+        "n04",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "i01",
+        "i02",
+        "i03",
+        "i04"
+      ],
+      "source_fast_path_cases": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p06",
+        "d01",
+        "d02",
+        "c01",
+        "c02",
+        "c03",
+        "n02",
+        "m01",
+        "m02"
+      ],
+      "model_fallback_cases": [
+        "p05"
+      ],
+      "first_evaluated_case_latency_ms": 1.6,
+      "cold_first_inference_ms": 21859.4,
+      "median_model_latency_ms": 21859.6,
+      "p95_model_latency_ms": 21859.6,
+      "prompt_bytes": 2487,
+      "completion_bytes": {
+        "count": 1,
+        "median": 75,
+        "p95": 75,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "server": {
+        "pid": 31736,
+        "ready_ms": 3608.2,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "development-v2": {
+      "result_file": "development-v2-results.json",
+      "raw_file": "development-v2-raw.jsonl",
+      "corpus": "tests\\vision\\fixtures\\conversation-development-v2.json",
+      "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "cases": 58,
+      "passed": 56,
+      "critical_score": {
+        "passed": 29,
+        "total": 30
+      },
+      "ordinary_score": {
+        "passed": 27,
+        "total": 28
+      },
+      "critical_misses": [
+        "n07"
+      ],
+      "ordinary_misses": [
+        "c04"
+      ],
+      "scoring_basis": "Explicit critical=true fixture field; cases without true are ordinary.",
+      "model_inference_requests": 3,
+      "policy_prepass_cases": [
+        "c04",
+        "a01",
+        "a02",
+        "a03",
+        "a05",
+        "n01",
+        "n02",
+        "n06",
+        "n07",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07"
+      ],
+      "source_fast_path_cases": [
+        "p01",
+        "p02",
+        "p03",
+        "p04",
+        "p05",
+        "p06",
+        "p07",
+        "p08",
+        "p09",
+        "p12",
+        "p13",
+        "p14",
+        "p15",
+        "p16",
+        "p17",
+        "p18",
+        "p19",
+        "p20",
+        "c01",
+        "c02",
+        "c03",
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "n03",
+        "n04",
+        "n05"
+      ],
+      "model_fallback_cases": [
+        "p10",
+        "p11",
+        "a04"
+      ],
+      "first_evaluated_case_latency_ms": 1.7,
+      "cold_first_inference_ms": 21762.6,
+      "median_model_latency_ms": 4129.0,
+      "p95_model_latency_ms": 21762.7,
+      "prompt_bytes": 2487,
+      "completion_bytes": {
+        "count": 3,
+        "median": 75,
+        "p95": 106,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "server": {
+        "pid": 40532,
+        "ready_ms": 3597.6,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    }
+  },
+  "performance_risk": {
+    "production_default_interpreter_timeout_seconds": 8,
+    "evaluation_timeout_seconds": 30,
+    "cold_first_inference_ms": {
+      "frozen30": 21859.4,
+      "development-v2": 21762.6
+    },
+    "assessment": "Compare measured cold first inference with the 8-second production default before any user or Pi trial."
+  },
+  "verification": {
+    "full_vision_tests": "198 passed, 5 skipped",
+    "node_conversation_ui": "passed",
+    "node_preview_loop": "passed",
+    "logs": [
+      "full-vision-tests.log",
+      "node-conversation-tests.log",
+      "node-preview-tests.log"
+    ]
+  },
+  "scope": [
+    "Windows PC text-only; pinned Qwen3.5-4B Q4_K_M and existing llama.cpp b11095.",
+    "Only conversation-eval.json and conversation-development-v2.json were evaluated, once each.",
+    "No Pi, camera runtime, physical device, flight control, or speech testing was performed in the model trial.",
+    "No prompt/code changes occurred between model runs.",
+    "Loopback server was stopped and port 8081 verified clear after each corpus."
+  ],
+  "review_file": "review.md",
+  "files": {
+    "bgd_vision/commands.py": {
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+      "bytes": 3519
+    },
+    "bgd_vision/conversation.py": {
+      "sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+      "bytes": 60886
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "bgd_vision/server.py": {
+      "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+      "bytes": 77178
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/test_benchmark_workload.py": {
+      "sha256": "f9552a65b9d2c1f8d13c7e64e2e5a77a7b89148bc602740e4b238ce9399e60fc",
+      "bytes": 1281
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "cb2207968e9d239952c73cdafe3bebe366b787dfd8c9e88fa01f3285c84ce56e",
+      "bytes": 55296
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_conversation_ui.cjs": {
+      "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+      "bytes": 11279
+    },
+    "tests/vision/test_enrollment.py": {
+      "sha256": "33ac9ecf7d1453e2b1515fe53778e94448e3f3c4bc47d7bc237e048c7114dcf3",
+      "bytes": 3574
+    },
+    "tests/vision/test_generic_object.py": {
+      "sha256": "1bc28bd923de40423da289853bab12b23a05ad71af920642fbbbd14d59904165",
+      "bytes": 16351
+    },
+    "tests/vision/test_mavlink_monitor.py": {
+      "sha256": "833d788d35a25a9127bc841d795f07ba4241dbb11114d93040bb381d93bd8f2a",
+      "bytes": 2976
+    },
+    "tests/vision/test_open_vocabulary.py": {
+      "sha256": "0b4674333f2dc27c89686286f2b3e9c47a0f39e0fd6762d77e87d903436dd660",
+      "bytes": 1712
+    },
+    "tests/vision/test_preview_loop.cjs": {
+      "sha256": "66ceaff6da0f0c7db1f9ba428ff77659bdef646c5125f1af1c66aae924afab06",
+      "bytes": 4797
+    },
+    "tests/vision/test_selection.py": {
+      "sha256": "28888c19396b7a6664bda7efb131a56128db06b653445b75f9460fa3b0881504",
+      "bytes": 29522
+    },
+    "tests/vision/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    },
+    "tests/vision/test_speech.py": {
+      "sha256": "8da8eda3dd15c161d624a072ebf80ec6f0ccafba29698d6085f2d6a4d6281875",
+      "bytes": 2697
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+      "bytes": 7144
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/build_manifest.py": {
+      "sha256": "0bfbc8c22276cab31560fc1ba3982c7507ec0f8d976ac2f6cc7e7a3b1637cddd",
+      "bytes": 7209
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/conversation-revision6.py": {
+      "sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+      "bytes": 60886
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-raw.jsonl": {
+      "sha256": "34df692d6a03212fe74bc13bf34f0f4168b9de77b172fb744ab92c274e9c72c0",
+      "bytes": 78660
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-results.json": {
+      "sha256": "fb36ca43daa8713e055cd55fb07432e736c00b0a1a8dad2d423aa1a91376d2ea",
+      "bytes": 30515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-run.log": {
+      "sha256": "d28841124e5996e1695452a86c52f67a58188e9e24fa40e3df554d814555b81b",
+      "bytes": 17756
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-server-ready.json": {
+      "sha256": "da2c2dbfad03e66725926752bbe911c7f15957e90cf6642ac70eaf802daf9cbc",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-server-stop.json": {
+      "sha256": "f73d9612f42531be7268900d7cb576080740767f653d212069b06b4a299638d8",
+      "bytes": 203
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-server.pid": {
+      "sha256": "3ec68777600069c8afb8e11e215664cccb181723376fd541df30c44b9a35290e",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-server.stderr.log": {
+      "sha256": "dc96a6c6e627f11a2cd663ad9982f2398d991ac693d5572232b976d77a943eec",
+      "bytes": 5058
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/development-v2-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/evaluate.py": {
+      "sha256": "9d2cf8840cc7feeef578455d72a4be9aaaf68e54f215c5a92999d60ca0bd6d9e",
+      "bytes": 14088
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-raw.jsonl": {
+      "sha256": "41e094490e9f4d7d9bf24e7abe7f9a1654a4e9f9f631da42ed2d25d9737578c7",
+      "bytes": 37256
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-results.json": {
+      "sha256": "7e981dffa90ea6570d1902852e41dc7b0ffd4c030ca1455cc4c268f5236c68db",
+      "bytes": 16931
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-run.log": {
+      "sha256": "dd8ff86eea3c861eb31a1f448f0fab51bd9b4615ec7f6f0dea57eb41f10bd268",
+      "bytes": 10157
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-server-ready.json": {
+      "sha256": "1d062e20fbf4840eabca5578a257c5e08414b1d6c0ef0b73f3ea44bee200f63e",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-server-stop.json": {
+      "sha256": "cd71114988588165c7478fbbeb7f55f7919626d7ddd2d37a0a792aeca0b9c2e9",
+      "bytes": 203
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-server.pid": {
+      "sha256": "6c8eaf219904f42194e138cdb35a5d58d2f4a3a18d2bea780d08b2b7e89118aa",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-server.stderr.log": {
+      "sha256": "591dd22921cc14f1c0589f6f2276675fa9677f9d3c86c9556a309e7ea1ca8e42",
+      "bytes": 3438
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/frozen30-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/full-vision-tests.log": {
+      "sha256": "304fb9f90318805fd1a538ba309395c278a69d68a91ccd04e5b7d0ae637abea1",
+      "bytes": 315
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/node-conversation-tests.log": {
+      "sha256": "c2e88cf9aacf3de798ebd387a54ad5d0c95254631d3db5d70cad7322580e0107",
+      "bytes": 162
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/node-preview-tests.log": {
+      "sha256": "f2c33fb3b33e82955d414b47a463efc883eda03d726f3895e1edac2c99c7349b",
+      "bytes": 269
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/pre-purpose/conversation.py": {
+      "sha256": "89f33ca0bc674cf556353c88144fa951dc06df2ba6eb6cff4b9f62b38c6042cf",
+      "bytes": 58661
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/pre-purpose/test_conversation.py": {
+      "sha256": "33548ecba467ed9bec4c09712792c2a0a494a67ed9d37d2b430c17af3d29c248",
+      "bytes": 52210
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/prepare_artifacts.py": {
+      "sha256": "f15e6596d297e118b3be37808f153d0480698ce02e30e7f2e964d518ea3940c4",
+      "bytes": 5666
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/profile.json": {
+      "sha256": "78dfd3dc024baa9abab24acef2c615508bb9f60226309f6a5118162c3dc194a5",
+      "bytes": 3039
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/purpose-repair/conversation.py": {
+      "sha256": "5c13cabdf44c79b41b09874b73da5e9eaf9d5ad01222c68d71e5e8b936a63b42",
+      "bytes": 60743
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/purpose-repair/test_conversation.py": {
+      "sha256": "940e54b052de52634f140f584c27127c67a7236e5423ed2ebb5c009514ca8d0c",
+      "bytes": 54154
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/review.md": {
+      "sha256": "0212f75127303868fe9fdc17ed22db0d6b08ed66a7f6e7734ae4907d825c616e",
+      "bytes": 5791
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/run-lock.json": {
+      "sha256": "99e0deb6042311f87e6f62daa58cf5076d8cbc401bdaf143bda487348ec4c47c",
+      "bytes": 7004
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/schema.json": {
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+      "bytes": 1016
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/score_results.py": {
+      "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+      "bytes": 3601
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/scout-intent/conversation.py": {
+      "sha256": "646eba6ec4f73e70d99843ec53847bf86e646d70d18cb73d32c5097a10b193e8",
+      "bytes": 60886
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/scout-intent/test_conversation.py": {
+      "sha256": "cb2207968e9d239952c73cdafe3bebe366b787dfd8c9e88fa01f3285c84ce56e",
+      "bytes": 55296
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/start_server.py": {
+      "sha256": "9ec062249b4f1c5e3d6eb7e149e53b79b6bd3b4b2fd7f39f3455c3a7de06c408",
+      "bytes": 2163
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation.py": {
+      "sha256": "cb2207968e9d239952c73cdafe3bebe366b787dfd8c9e88fa01f3285c84ce56e",
+      "bytes": 55296
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation_ui.cjs": {
+      "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+      "bytes": 11279
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev6/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    }
+  }
+}

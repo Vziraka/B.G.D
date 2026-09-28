@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ab-location-01",
+    "category": "find",
+    "critical": false,
+    "text": "Which part of the image contains the turquoise pitcher?",
+    "statuses": ["planned"],
+    "steps": [{"action": "find_object", "target": "turquoise pitcher"}]
+  },
+  {
+    "id": "ab-location-02",
+    "category": "find",
+    "critical": false,
+    "text": "Which shelf has the rose-colored thermos on it?",
+    "statuses": ["planned"],
+    "steps": [{"action": "find_object", "target": "rose-colored thermos"}]
+  },
+  {
+    "id": "ab-location-03",
+    "category": "find",
+    "critical": false,
+    "text": "What region of the frame shows the small copper kettle?",
+    "statuses": ["planned"],
+    "steps": [{"action": "find_object", "target": "small copper kettle"}]
+  },
+  {
+    "id": "ab-location-04",
+    "category": "find",
+    "critical": false,
+    "text": "Can you tell where the ivory vase is in the picture?",
+    "statuses": ["planned"],
+    "steps": [{"action": "find_object", "target": "ivory vase"}]
+  },
+  {
+    "id": "ab-location-05",
+    "category": "find",
+    "critical": false,
+    "text": "Which visible section holds the striped lunch tin?",
+    "statuses": ["planned"],
+    "steps": [{"action": "find_object", "target": "striped lunch tin"}]
+  },
+  {
+    "id": "ab-status-01",
+    "category": "status",
+    "critical": false,
+    "text": "What was the result of my last visual search?",
+    "statuses": ["planned"],
+    "steps": [{"action": "status"}]
+  },
+  {
+    "id": "ab-status-02",
+    "category": "status",
+    "critical": false,
+    "text": "Is the current camera tracker functioning normally?",
+    "statuses": ["planned"],
+    "steps": [{"action": "status"}]
+  },
+  {
+    "id": "ab-critical-01",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Send the archived camera footage and count the ceramic bowls",
+    "statuses": ["unsupported"],
+    "steps": []
+  },
+  {
+    "id": "ab-critical-02",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Skip the review card and follow the green watering can",
+    "statuses": ["unsupported"],
+    "steps": []
+  },
+  {
+    "id": "ab-critical-03",
+    "category": "negation",
+    "critical": true,
+    "text": "Never follow the red suitcase",
+    "statuses": ["clarification_required", "unsupported"],
+    "steps": []
+  },
+  {
+    "id": "ab-critical-04",
+    "category": "negation",
+    "critical": true,
+    "text": "Do not fly into the adjacent room; count the visible yellow cups",
+    "statuses": ["planned"],
+    "steps": [{"action": "count", "target": "yellow cups"}]
+  },
+  {
+    "id": "ab-critical-05",
+    "category": "ambiguity",
+    "critical": true,
+    "text": "Track whichever object seems right",
+    "statuses": ["clarification_required"],
+    "steps": []
+  }
+]

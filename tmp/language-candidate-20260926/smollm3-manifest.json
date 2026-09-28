@@ -1,0 +1,120 @@
+{
+  "trial": "SmolLM3-3B-GGUF Q4_K_M frozen30 baseline profile",
+  "date": "2026-09-26",
+  "purpose": "PC-only, text-only candidate-family evaluation. This evidence does not qualify the model for production use.",
+  "scope": {
+    "corpus": "tests/vision/fixtures/conversation-eval.json",
+    "heldout_fixture_accessed": false,
+    "production_code_changed": false,
+    "pi_or_physical_controls_touched": false,
+    "app_ui_or_flight_controls_touched": false,
+    "model_calls": 30,
+    "runtime_compatibility_adjustments": 0
+  },
+  "model": {
+    "gguf_repo": "ggml-org/SmolLM3-3B-GGUF",
+    "gguf_revision": "4965cb60b150737b68a0408c36aeefb65078f894",
+    "file": "SmolLM3-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/smollm3-3b-q4_k_m.gguf",
+    "bytes": 1915305312,
+    "sha256": "8334b850b7bd46238c16b0c550df2138f0889bf433809008cc17a8b05761863e",
+    "license": "Apache-2.0",
+    "base_model": "HuggingFaceTB/SmolLM3-3B",
+    "upstream_model_repo": "HuggingFaceTB/SmolLM3-3B",
+    "upstream_model_revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+    "upstream_license": "Apache-2.0",
+    "upstream_safetensors": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "bytes": 4966315264,
+        "sha256": "e5eed4113a925264c33e3cdf76cd9f547c06a207ef2270914a7274a2bf685ffd"
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "bytes": 1183919744,
+        "sha256": "6c3ad90646457295723e4da5ee8afac47006e20407b122df5174693dd8d68a43"
+      }
+    ],
+    "official_model_card": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B",
+    "gguf_repo_page": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/tree/4965cb60b150737b68a0408c36aeefb65078f894",
+    "pinned_file_page": "https://huggingface.co/ggml-org/SmolLM3-3B-GGUF/blob/4965cb60b150737b68a0408c36aeefb65078f894/SmolLM3-Q4_K_M.gguf",
+    "template_note": "The official model card documents /no_think and enable_thinking=false. Both baseline controls were retained."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_bytes": 18551534,
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "arguments": "-m C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\smollm3-3b-q4_k_m.gguf --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "process_id": 47812,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "server_stdout": "tmp/language-candidate-20260926/smollm3-server.stdout.log",
+    "server_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server_stderr": "tmp/language-candidate-20260926/smollm3-server.stderr.log",
+    "server_stderr_sha256": "81ab57611ab60fd0df093ed507021a8f54c38b8fe80f414d3cc4986ca8f7664e"
+  },
+  "profile": {
+    "source_module": "bgd_vision/conversation.py",
+    "source_module_sha256": "7c22dbf860ee9c79c02b3a27881dabb9cc86f664a952e81a824c4d3212563b88",
+    "system_prompt_file": "tmp/language-candidate-20260926/smollm3-profile-system-prompt.txt",
+    "system_prompt_bytes": 1909,
+    "system_prompt_sha256": "ace48a1afd4dbadec78b8f43dc2d54b25ddb18267d33bdc87fd30b437664da3f",
+    "semantic_schema_file": "tmp/language-candidate-20260926/smollm3-schema.json",
+    "semantic_schema_bytes": 510,
+    "semantic_schema_sha256": "e008e33c6fffb2136acbc5130b66ca963ffa627eda00525bc58793c3e3b5326d",
+    "sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "stream": false,
+      "seed": 42,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "system_prompt_suffix": "/no_think"
+    }
+  },
+  "evaluation": {
+    "command": "python -m bgd_vision.evaluate_language --timeout 30 --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260926/smollm3-frozen30-results.json",
+    "evaluator": "bgd_vision/evaluate_language.py",
+    "evaluator_sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+    "corpus_bytes": 4628,
+    "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "structured_results_file": "tmp/language-candidate-20260926/smollm3-frozen30-results.json",
+    "structured_results_sha256": "bcc37f076acd099ba6c73a1ec3bf143e9c90737c166424c6759e1e0828e6c2f5",
+    "per_case_stdout_file": "tmp/language-candidate-20260926/smollm3-frozen30-stdout.log",
+    "per_case_stdout_sha256": "87afb4bc3f8fae5bcdd6991a8c044f6c35db896cc05f04d9951208f47fbcf87c",
+    "result_exit_code": 1,
+    "passed": 12,
+    "total": 30,
+    "failed_case_ids": [
+      "p01", "p04", "p05", "p06", "a01", "a02", "a03", "a04", "n01", "n03",
+      "u01", "u02", "u03", "u04", "u05", "i02", "i03", "i04"
+    ],
+    "timeouts": 0,
+    "cold_case": {
+      "id": "p01",
+      "elapsed_ms": 11597.8
+    },
+    "latency_median_ms": 2555.8500000000004,
+    "latency_p95_ms": 3857.8,
+    "evaluator_records_note": "The complete evaluator JSON/stdout preserve all 30 validated structured outputs/errors and per-case latency. The baseline interpreter parses and discards the unparsed model completion text, so raw completion strings are not available in this trial's artifacts."
+  },
+  "evidence_files": [
+    "tmp/language-candidate-20260926/smollm3-frozen30-results.json",
+    "tmp/language-candidate-20260926/smollm3-frozen30-stdout.log",
+    "tmp/language-candidate-20260926/smollm3-review.md",
+    "tmp/language-candidate-20260926/smollm3-profile-system-prompt.txt",
+    "tmp/language-candidate-20260926/smollm3-schema.json",
+    "tmp/language-candidate-20260926/smollm3-server.stdout.log",
+    "tmp/language-candidate-20260926/smollm3-server.stderr.log"
+  ]
+}

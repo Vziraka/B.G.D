@@ -1,0 +1,119 @@
+{
+  "trial_id": "clause-accountable-rev12",
+  "status": "frozen-before-inference",
+  "inference_performed": false,
+  "run_lock": {
+    "path": "tmp/language-candidate-20260927/clause-accountable-rev12/run-lock.json",
+    "bytes": 9229,
+    "sha256": "3fc7b1ebe34225846837b022e60845f006a61d5c5d1afd7d0b7356e7dcb2f6cc"
+  },
+  "files": {
+    "bgd_vision/conversation.py": {
+      "bytes": 78756,
+      "sha256": "517908a4c014247189d6e9ea6dfb5c177e047a6bf122d50b446abfb3d0eed1cd"
+    },
+    "bgd_vision/commands.py": {
+      "bytes": 3519,
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1"
+    },
+    "bgd_vision/evaluate_language.py": {
+      "bytes": 2515,
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066"
+    },
+    "tests/vision/test_conversation.py": {
+      "bytes": 101613,
+      "sha256": "3652e79c713c4877b1193cabfb4982a448a8c7a2ed8bd74b57993411763be860"
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "bytes": 4628,
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b"
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "bytes": 9345,
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299"
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "bytes": 7144,
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33"
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "bytes": 3013027808,
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983"
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "bytes": 9216,
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/evaluate.py": {
+      "bytes": 14823,
+      "sha256": "e31e59e20eb61e2a7a37f74374e299f4494f819514f39b90b22813082e68a43e"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/make_prompt_candidate.py": {
+      "bytes": 1208,
+      "sha256": "179a303f5e2a5983f7e7d0d5cee1a245f788b555645ba89d9c653ef02e3d455b"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/prepare_artifacts.py": {
+      "bytes": 11800,
+      "sha256": "b4e296e9d8ca329cbfe83f7f901838f52e0707b26a4bc7ccd711a634186175ee"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/start_server.py": {
+      "bytes": 2153,
+      "sha256": "b4f4982f4d5ff2a18e254054be93cf1182d36b23a719313c604764ae88b4c7c0"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/stop_server.ps1": {
+      "bytes": 1318,
+      "sha256": "f33e4f06b6a2f9217b6343fbe1bb669dd6702e1f6b0709c80a088bc7cb73cdb8"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-baseline.txt": {
+      "bytes": 2813,
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-candidate.txt": {
+      "bytes": 3382,
+      "sha256": "fe67cf87851ba0b5b2a55dde89c9b7bef595840916ecf03a3d18f12f47a4e645"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/schema.json": {
+      "bytes": 1016,
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/settings.json": {
+      "bytes": 1110,
+      "sha256": "d919c2dffe2462f1f69cd03e61025be58db3890fc44843a419e96e61bfc1f852"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/ab-selection-rule.md": {
+      "bytes": 936,
+      "sha256": "c938c01a99312cc708c8ce921a119ed8c51344da4c042ff1272cccc9ee4f7faa"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-ab-rev12.json": {
+      "bytes": 2776,
+      "sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/worker53-open.json": {
+      "bytes": 9044,
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/root35-open.json": {
+      "bytes": 5888,
+      "sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/open-development-rev12.json": {
+      "bytes": 10772,
+      "sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504"
+    }
+  },
+  "model_sha256_verified": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+  "runtime_sha256_verified": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+  "baseline_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "candidate_prompt_sha256": "fe67cf87851ba0b5b2a55dde89c9b7bef595840916ecf03a3d18f12f47a4e645",
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "open_fixture_sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504",
+  "prompt_ab_fixture_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+  "open_route_counts": {
+    "policy_prepass": 14,
+    "source_fast_path": 20,
+    "model_fallback": 24
+  },
+  "open_ordinary_model_fallback_cases": 23,
+  "selection_rule": "ab-selection-rule.md",
+  "next_action": "Root independently checks Rev12 open fixture overlap before model server starts."
+}

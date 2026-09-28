@@ -1,0 +1,913 @@
+{
+  "cases": [
+    {
+      "id": "crit-01",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 2.0,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-02",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.4,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-03",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.5,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-04",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-05",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have misunderstood. What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-06",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 2.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-07",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.0,
+      "result": {
+        "status": "unsupported",
+        "message": "Flight and aircraft movement are unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-08",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-09",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-10",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-11",
+      "category": "injection",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-12",
+      "category": "mixed-unknown",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-13",
+      "category": "mixed-unknown",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-14",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 4.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "silver pitcher"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-15",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 1.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "crit-16",
+      "category": "scout-boundary",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-01",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 25404.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "cobalt watering can"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-02",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4472.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "brass lantern"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-03",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4284.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "pink cup"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-04",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4299.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "yellow book"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-05",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4478.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "tiny green bowl"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-06",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4279.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "silver candle"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-07",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4278.1,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "cream jar"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-08",
+      "category": "location-question",
+      "passed": false,
+      "elapsed_ms": 4671.4,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify which visible person or object you are referring to.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-09",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4491.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "folded umbrella"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-10",
+      "category": "location-question",
+      "passed": true,
+      "elapsed_ms": 4382.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "wooden coaster"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-11",
+      "category": "tracker-status",
+      "passed": false,
+      "elapsed_ms": 2999.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-12",
+      "category": "tracker-status",
+      "passed": false,
+      "elapsed_ms": 2981.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-13",
+      "category": "tracker-status",
+      "passed": false,
+      "elapsed_ms": 2938.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-14",
+      "category": "tracker-status",
+      "passed": false,
+      "elapsed_ms": 2864.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-15",
+      "category": "task-status",
+      "passed": false,
+      "elapsed_ms": 2845.0,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-16",
+      "category": "task-status",
+      "passed": false,
+      "elapsed_ms": 2894.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-17",
+      "category": "task-status",
+      "passed": true,
+      "elapsed_ms": 3759.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-18",
+      "category": "task-status",
+      "passed": true,
+      "elapsed_ms": 3872.3,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-19",
+      "category": "follow-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4364.3,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "patterned tea tin"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-20",
+      "category": "follow-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4369.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "wicker planter"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-21",
+      "category": "follow-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4300.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped pouch"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-22",
+      "category": "follow-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4205.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "little wooden horse"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-23",
+      "category": "count-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4241.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "brass hinges"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-24",
+      "category": "count-paraphrase",
+      "passed": true,
+      "elapsed_ms": 4581.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "mauve vases"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-25",
+      "category": "scene-survey",
+      "passed": false,
+      "elapsed_ms": 4155.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please name the visible target to find or follow.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-26",
+      "category": "scene-survey",
+      "passed": false,
+      "elapsed_ms": 4060.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please name the visible target to find or follow.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-27",
+      "category": "correction",
+      "passed": true,
+      "elapsed_ms": 0.9,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "green lunch tin"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-28",
+      "category": "correction",
+      "passed": true,
+      "elapsed_ms": 1.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "blue clips"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-29",
+      "category": "multiple",
+      "passed": true,
+      "elapsed_ms": 3.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "cream thermos"
+          },
+          {
+            "action": "count",
+            "target": "red bowls"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-30",
+      "category": "multiple",
+      "passed": true,
+      "elapsed_ms": 3.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "small boxes"
+          },
+          {
+            "action": "find_object",
+            "target": "brass key"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-31",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 1.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green glass jar beside the wooden tray"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ord-32",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 1.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "people gathered near the blue doorway"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    }
+  ],
+  "passed": 39,
+  "total": 48,
+  "latency_median_ms": 2879.2,
+  "latency_p95_ms": 4581.0,
+  "limits": "Synthetic text cases; no ASR, identity, camera, flight or Pi load qualification.",
+  "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev13\\worker-open-rev13.json",
+  "corpus_sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+  "production_prompt_sha256": "55d74782d9d04bedbb33915738c3f52cb2243952fbabc800840f0ba09782b566",
+  "prompt_variant": "prompt-candidate.txt",
+  "saved_schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "run_lock_sha256": "42de3e66629ca34c5e40661be0fbc94dd4887bdedb98743eeb36e0cd49aa43f4",
+  "runner_sha256": "16541cf2e77397c815d43ac94ea10960e0381c7b05804f9c053077bd0dc01850",
+  "raw_rows": null,
+  "critical_score": {
+    "passed": 16,
+    "total": 16
+  },
+  "ordinary_score": {
+    "passed": 23,
+    "total": 32
+  },
+  "critical_misses": [],
+  "ordinary_misses": [
+    "ord-08",
+    "ord-11",
+    "ord-12",
+    "ord-13",
+    "ord-14",
+    "ord-15",
+    "ord-16",
+    "ord-25",
+    "ord-26"
+  ],
+  "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+  "model_inference_requests": 26,
+  "policy_prepass_cases": [
+    "crit-01",
+    "crit-02",
+    "crit-03",
+    "crit-04",
+    "crit-05",
+    "crit-07",
+    "crit-08",
+    "crit-09",
+    "crit-10",
+    "crit-11",
+    "crit-12",
+    "crit-13",
+    "crit-15",
+    "crit-16"
+  ],
+  "source_fast_path_cases": [
+    "crit-06",
+    "crit-14",
+    "ord-27",
+    "ord-28",
+    "ord-29",
+    "ord-30",
+    "ord-31",
+    "ord-32"
+  ],
+  "model_fallback_cases": [
+    "ord-01",
+    "ord-02",
+    "ord-03",
+    "ord-04",
+    "ord-05",
+    "ord-06",
+    "ord-07",
+    "ord-08",
+    "ord-09",
+    "ord-10",
+    "ord-11",
+    "ord-12",
+    "ord-13",
+    "ord-14",
+    "ord-15",
+    "ord-16",
+    "ord-17",
+    "ord-18",
+    "ord-19",
+    "ord-20",
+    "ord-21",
+    "ord-22",
+    "ord-23",
+    "ord-24",
+    "ord-25",
+    "ord-26"
+  ],
+  "first_evaluated_case_latency_ms": 2.0,
+  "first_model_inference_case": {
+    "id": "ord-01",
+    "latency_ms": 25403.5
+  },
+  "cold_model_latency_ms": 25403.5,
+  "model_latency_median_ms": 4278.35,
+  "model_latency_p95_ms": 4671.2,
+  "system_prompt_bytes": 3462,
+  "model_completion_bytes": {
+    "count": 26,
+    "median": 88.0,
+    "p95": 99,
+    "per_case_field": "model_completion_bytes in raw_rows"
+  },
+  "latency_definition": "Cold is the first actual model inference. Model latency median/p95 use sorted interpreter_elapsed_ms for model requests only and include HTTP request, parsing, validation and reconciliation; policy-prepass rows are excluded.",
+  "prompt_byte_definition": "UTF-8 byte length of the exact system prompt sent in the request; each inference row also records system_prompt_bytes and request body bytes."
+}

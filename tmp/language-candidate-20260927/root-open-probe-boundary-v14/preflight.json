@@ -1,0 +1,12 @@
+{
+  "purpose": "Root-authored independent OPEN development probe for the boundary redesign; never sealed qualification",
+  "fixture": "tmp/language-candidate-20260927/root-open-probe-boundary-v14/cases.json",
+  "fixture_sha256": "1af4de2ba9050025485987cbcfbab6c12b7f40dfaf877d5bff8549658e4bded6",
+  "case_count": 52,
+  "critical_count": 22,
+  "ordinary_count": 30,
+  "minimum_critical_correct": 22,
+  "minimum_ordinary_correct": 29,
+  "minimum_ordinary_model_fallback": 8,
+  "exact_text_overlap_with_checked_prior_corpora": 0
+}

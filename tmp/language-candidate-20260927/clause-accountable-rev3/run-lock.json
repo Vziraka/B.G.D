@@ -1,0 +1,83 @@
+{
+  "trial_id": "qwen35-clause-accountable-v3",
+  "source_revision": "revision-3; frozen before model evaluation",
+  "prompt_bytes": 2487,
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+      "bytes": 42874
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+      "bytes": 31577
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate.py": {
+      "sha256": "257d420e6a8c15dd41f313d82ca495354864ba17ad19da36e4cd73b0696d06b1",
+      "bytes": 12895
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/start_server.py": {
+      "sha256": "377068b5cce42e8266fb59f329e8e91d02992902d141fba7a49c0fd0d2e82632",
+      "bytes": 1955
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/prepare_artifacts.py": {
+      "sha256": "241b3114024c95665cafbb181cfbea9bd000125140164c1d2a76301e774f9e42",
+      "bytes": 4027
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/score_results.py": {
+      "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+      "bytes": 3601
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/profile.json": {
+      "sha256": "d999da51d06fad94422c35ec70725b4a8dad372dc47009b6df2ecb9855ca7cb0",
+      "bytes": 1002
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/conversation-revision3.py": {
+      "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+      "bytes": 42874
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation.py": {
+      "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+      "bytes": 31577
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/schema.json": {
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+      "bytes": 1016
+    }
+  }
+}

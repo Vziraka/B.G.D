@@ -1,0 +1,69 @@
+{
+  "profile_id": "qwen35-clause-accountable-rev6",
+  "enabled_by_default": false,
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "upstream_model_files": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "host": "127.0.0.1",
+    "port": 8081,
+    "threads": 2,
+    "batch_threads": 2,
+    "context": 2048,
+    "parallel": 1,
+    "jinja": true,
+    "web_ui": false
+  },
+  "request": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 1.5,
+    "max_tokens": 300,
+    "seed": 42,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "response_format": "strict JSON schema",
+    "production_interpreter_timeout_seconds": 8,
+    "evaluation_timeout_seconds": 30
+  },
+  "authority": "simulator-only; local PC text interpretation; no execution",
+  "prompt_file": "system-prompt.txt",
+  "schema_file": "schema.json",
+  "prompt_bytes": 2487,
+  "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+}

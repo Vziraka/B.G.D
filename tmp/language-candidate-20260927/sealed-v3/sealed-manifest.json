@@ -1,0 +1,37 @@
+{
+  "purpose": "One newly sealed PC text-meaning trial; not a release or Pi qualification",
+  "server_ready_ms": 4147.1,
+  "evaluation_exit_code": 1,
+  "server_port": 8082,
+  "server_arguments": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8082",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ],
+  "inputs": {
+    "tests\\vision\\fixtures\\conversation-heldout-20260927-v3.json": "02befce4589624c66d5fcead0fae5aa53c1a07fb84ffcf4c7ed76fb2fe9c6574",
+    "tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "tmp\\language-candidate-20260927\\clause-accountable-rev7\\conversation-revision7.py": "f471605b09b2af77476db890de5dce6311deb589946c64310aec47610b5fb297",
+    "tmp\\language-candidate-20260927\\clause-accountable-rev7\\run-lock.json": "3d3a613c0833be14a83db9faff0066fb7ee17698d895e2ee911c44338baceeed",
+    "tmp\\language-candidate-20260927\\sealed-v3\\evaluate.py": "83731d5a246269c4bc8f92390ddb1997ead25d0a7db71748578fcc6a9f1c3890"
+  },
+  "outputs": {
+    "sealed-results.json": "d9b3e477c30913cc2505bf2ca032db84bf086a70ae1b39652199c003f9fbbd83",
+    "sealed-raw.jsonl": "d90d2b4af483b60fda055277cead237766cd8e9366fbb05075d1791a8eb41ecc"
+  },
+  "server_stopped": true
+}

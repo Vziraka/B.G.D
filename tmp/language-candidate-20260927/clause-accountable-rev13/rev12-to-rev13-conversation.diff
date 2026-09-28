@@ -1,0 +1,289 @@
+diff --git "a/C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\rev12-conversation.py" "b/C:\\Users\\zvent\\Downloads\\B.G.D\\bgd_vision\\conversation.py"
+index 759d3d7..a911b7b 100644
+--- "a/C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\rev12-conversation.py"
++++ "b/C:\\Users\\zvent\\Downloads\\B.G.D\\bgd_vision\\conversation.py"
+@@ -55,6 +55,10 @@ _STATUS_REQUEST_VERB = re.compile(
+ _TRACKING_STATUS_QUESTION = re.compile(
+     r"^\s*how\s+(?:is|are|was|were|has|have)\s+.{0,60}\b(?:tracking|following)\s+"
+     r"(?:going|doing|progressing)\s*\??\s*$", re.IGNORECASE)
++_TRACKING_PROGRESS_STATUS_CUE = re.compile(
++    r"\b(?:how|what)\s+(?:is|are|was|were)\s+(?:(?:the|current|camera|object|person)\s+)*"
++    r"(?:tracking|following)(?:\s+(?:of|for)\s+[^,;!?]{1,60})?\s+"
++    r"(?:going|doing|progressing|working)\b", re.IGNORECASE)
+ _TRACKING_STATUS_PHRASE = re.compile(
+     r"\b(?:(?:your|our|the|current)\s+){0,3}(?:(?:camera|person|object)\s+)?"
+     r"tracking\s+status\b", re.IGNORECASE)
+@@ -62,6 +66,7 @@ _PURE_TRACKING_STATUS_REQUEST = re.compile(
+     r"^\s*(?:please\s+)?(?:(?:show|tell|give|report)\s+(?:me\s+)?|"
+     r"what\s+is\s+)(?:(?:your|our|the|current)\s+){0,3}"
+     r"(?:(?:camera|person|object)\s+)?tracking\s+status"
++    r"(?:\s+(?:for|of|about)\s+(?!and\b)[^,;!?]+)?"
+     r"(?:\s+please)?[.!?]?\s*$", re.IGNORECASE)
+ _PAST_TASK_REFERENCE = (
+     r"(?:(?:my|our|the|that)\s+)?"
+@@ -175,7 +180,7 @@ _UNAVAILABLE_ACTIONS = (
+ )
+ _SUPPORTED_ACTION_WORDS = {
+     "follow": re.compile(r"\b(?:maintain(?:ing)?\s+watch\s+over|keep\s+watch\s+over|watch(?:ing)?\s+over|"
+-                          r"keep\s+track\s+of|keep\s+up\s+with|eyes\s+on|follow|tail(?!\s+(?:of|light|lights)\b)|tailing(?!\s+of\b)|track(?:ing)?|watch|keep\s+(?:tabs|an\s+eye)\s+on|stay\s+with|"
++                          r"keep\s+track\s+of|keep\s+up\s+with|keep\s+pace\s+with|eyes\s+on|follow|tail(?!\s+(?:of|light|lights)\b)|tailing(?!\s+of\b)|track(?:ing)?|watch|keep\s+(?:tabs|an\s+eye)\s+on|stay\s+with|"
+                           r"keep\s+.{1,80}\s+in\s+(?:the\s+)?view)\b",
+                          re.IGNORECASE),
+     "find": re.compile(r"\b(?:find|locate|look\s+for|point\s+out|show\s+me|where\s+(?:is|are))\b",
+@@ -189,7 +194,8 @@ _SUPPORTED_ACTION_WORDS = {
+                           r"awaiting\s+(?:confirmation|review|approval)|"
+                           r"camera\s+freshness|(?:person|object)\s+tracker\s+state|"
+                           r"how\s+(?:is|are|was|were|has|have)\s+.{0,60}\b(?:tracking|following)\s+"
+-                          r"(?:going|doing|progressing))\b",
++                          r"(?:going|doing|progressing)|"
++                          + _TRACKING_PROGRESS_STATUS_CUE.pattern + r")\b",
+                           re.IGNORECASE),
+ }
+ _SOURCE_CLAUSE_BOUNDARY = re.compile(
+@@ -267,16 +273,53 @@ _GENERIC_REFERENT_HEAD = re.compile(
+     rf"(?:(?:{_TARGET_MODIFIER})\s+)*(?:one|ones|thing|things|item|items|object|objects|"
+     r"someone|somebody|anyone|anybody)$",
+     re.IGNORECASE)
++_MENTALLY_SPECIFIED_GENERIC_TARGET = re.compile(
++    rf"^(?:(?:the|this|that|these|those|my|your|our|their)\s+)?"
++    rf"(?:(?:{_TARGET_MODIFIER})\s+)*(?:one|ones|thing|things|item|items|object|objects|"
++    r"person|people|target|what)\s+(?:(?:that|who)\s+)?(?:"
++    r"(?:i|we)\s+(?:have|had)\s+in\s+mind|"
++    r"(?:i|we)\s+(?:am|are|was|were)\s+(?:imagining|envisioning|thinking\s+of|picturing)|"
++    r"(?:i|we)\s+(?:imagine|imagined|envision|envisioned|picture|pictured)|"
++    r"(?:only\s+)?(?:i|we)\s+(?:know|intend|intended|want|wanted)|"
++    r"(?:you|i|we)\s+(?:mean|meant|have\s+in\s+mind|had\s+in\s+mind|"
++    r"are\s+referring\s+to|were\s+referring\s+to|am\s+talking\s+about|"
++    r"are\s+talking\s+about|were\s+talking\s+about|am\s+thinking\s+of|"
++    r"are\s+thinking\s+of|were\s+thinking\s+of)|"
++    r"(?:in|inside)\s+(?:my|our)\s+(?:head|mind|imagination))\b",
++    re.IGNORECASE)
+ _SCENE_RELATION_TAIL = re.compile(
+     r"\s+(?:(?:over\s+)?(?:by|near|nearby|beside|next\s+to|adjacent\s+to|close\s+to)|"
+     r"in\s+front\s+of|behind|above|below|beneath|under(?:neath)?|over|"
+     r"across\s+from|to\s+the\s+(?:left|right|side)\s+of|"
+     r"on\s+(?:the\s+)?(?:left|right|side|top|bottom)\s+of|on\s+top\s+of|"
+-    r"(?:at|in|on|to)\s+(?:the\s+)?(?:left|right|side|corner|edge|top|bottom|front|back)"
++    r"(?:at|in|on|to)\s+(?:the\s+)?(?:far\s+)?(?:left|right|side|corner|edge|top|bottom|front|back)"
+     r"(?:\s+side)?(?:\s+of)?|"
+     r"(?:in|inside|within)\s+(?:the|a|an|my|your|this|that|these|those)\s+)"
+     r"(?:\s+.+)?$",
+     re.IGNORECASE)
++_SCENE_SURVEY_INTENT = re.compile(
++    r"\b(?:scout|survey|scan|inspect|review|assess|overview|sweep|outline|describe|"
++    r"show\s+me|tell\s+me|give(?:\s+me)?|provide|look\s+over|take\s+(?:stock|in)|"
++    r"what\s+(?:the\s+)?(?:camera|lens)\s+sees|everything\s+(?:that\s+is\s+)?visible)\b",
++    re.IGNORECASE)
++_SCENE_SCOPE_PHRASE = re.compile(
++    r"\b(?:(?:whole|entire|full|overall|current|present|live|this|the|a|an)\s+)*"
++    r"(?:(?:camera|lens)(?:['’]s)?\s+)?(?:view|frame|scene|picture|image|area|surroundings|environment)\b|"
++    r"\b(?:camera|lens)(?:['’]s)?\s+(?:(?:whole|entire|full|overall|current|present|live)\s+)?"
++    r"(?:view|frame|scene|picture|image|area|surroundings|environment)\b|"
++    r"\bwhat\s+(?:the\s+)?(?:camera|lens)\s+(?:currently\s+)?sees\b|"
++    r"\beverything\s+(?:that\s+is\s+)?visible\s+(?:in\s+)?(?:(?:the|this)\s+)?"
++    r"(?:(?:whole|entire|full|overall|current|present|live)\s+)?(?:camera\s+)?"
++    r"(?:view|frame|area|scene|picture|image)\b",
++    re.IGNORECASE)
++_SCENE_SURVEY_GRAMMAR = re.compile(
++    r"\b(?:please|kindly|can|could|would|you|i|we|give|provide|tell|show|me|an?|the|"
++    r"of|in|on|what|is|are|currently|whole|entire|full|overall|current|present|live|"
++    r"view|frame|scene|picture|image|area|surroundings|environment|everything|"
++    r"visible|all|objects?|things?|items?|visual|wide|overview|sweep|scout|survey|scan|"
++    r"inspect|review|assess|outline|describe|look|over|take|stock|that|sees|seen|"
++    r"it|them|this|those|these|here|there|right|now|today)\b",
++    re.IGNORECASE)
+ _TARGET_ONLY_CORRECTION = re.compile(
+     r"^(?:(?:no|actually|instead)\s*[,;:]?\s+)?"
+     r"(?:(?:switch|change)\s+to|use|go\s+with|make\s+(?:that|it))\s+(.+)$|"
+@@ -535,6 +578,40 @@ def _connector_starts_action(text, connector_start, suffix_start):
+     return bool(_REVIEW_BYPASS_ACTION.match(suffix))
+ 
+ 
++def _tracking_match_is_status_noun(text, match):
++    """Do not turn a nominal tracking/status phrase into a track action."""
++    if match.group().casefold() not in {"tracking", "following"}:
++        return False
++    for cue in _TRACKING_PROGRESS_STATUS_CUE.finditer(text):
++        if cue.start() <= match.start() < cue.end():
++            return True
++    for cue in _TRACKING_STATUS_QUESTION.finditer(text):
++        if cue.start() <= match.start() < cue.end():
++            return True
++    for status in _TRACKING_STATUS_PHRASE.finditer(text):
++        if status.start() <= match.start() < status.end():
++            return True
++        if status.end() >= match.start():
++            continue
++        complement = text[status.end():match.start()]
++        if (re.match(r"\s+(?:of|for|about)\b", complement, re.IGNORECASE)
++                and not re.search(r"\b(?:and|but|then)\b|[;:!?.,]", complement,
++                                  re.IGNORECASE)):
++            return True
++    return False
++
++
++def _show_me_is_tracking_status(text, match):
++    if match.group().casefold() != "show me":
++        return False
++    tail = text[match.end():match.end() + 70]
++    status = _TRACKING_STATUS_PHRASE.search(tail)
++    if not status:
++        return False
++    between = tail[:status.start()]
++    return not re.search(r"\b(?:and|but|then)\b|[;:!?.,]", between, re.IGNORECASE)
++
++
+ def _supported_action_occurrences(text):
+     occurrences = []
+     for action, pattern in _SUPPORTED_ACTION_WORDS.items():
+@@ -542,12 +619,9 @@ def _supported_action_occurrences(text):
+             if (action == "find" and match.group().casefold() == "show me"
+                     and _explicit_targetless_survey_request(text)):
+                 continue
+-            clause_start, clause_end = _clause_bounds(text, match)
+-            tracking_status = _TRACKING_STATUS_PHRASE.search(text[clause_start:clause_end])
+-            if (tracking_status and action == "find" and match.group().casefold() == "show me"):
++            if action == "find" and _show_me_is_tracking_status(text, match):
+                 continue
+-            if action == "follow" and match.group().casefold() in {"tracking", "following"} \
+-                    and (tracking_status or _TRACKING_STATUS_QUESTION.fullmatch(text)):
++            if action == "follow" and _tracking_match_is_status_noun(text, match):
+                 continue
+             target = "" if action == "scout" else _action_target(text, match)
+             if action == "follow":
+@@ -659,8 +733,16 @@ def _normalize_source_target(value):
+                    r"evening|night|bedtime|weekend|weekday|holiday|recess|afternoon|"
+                    r"today|tomorrow|tonight)(?:\s+(?:today|tomorrow|tonight|this\s+week|"
+                    r"next\s+week))?\s*$", "", value)
+-    value = re.sub(r"\b(?:as\s+it\s+moves?|as\s+they\s+move|for\s+me|please)\s*$", "", value)
++    value = re.sub(
++        r"\b(?:as|while)\s+(?:it|they)\s+(?:is\s+)?"
++        r"(?:moving|moves?|rolling|rolls?|walking|walks?|running|runs?|turning|turns?|"
++        r"shifting|shifts?|drifting|drifts?|traveling|travels?|travelling|travels?)\s*$",
++        "", value)
++    value = re.sub(r"\b(?:for\s+me|please)\s*$", "", value)
+     value = re.sub(r"\b(?:right\s+now|currently)\s*$", "", value)
++    value = re.sub(r"\b(?:is|are|was|were)\s+(?:currently\s+)?"
++                   r"(?:sitting|located|standing|placed)\s*$", "", value)
++    value = re.sub(r"\b(?:located|positioned|situated)\s*$", "", value)
+     value = re.sub(r"\b(?:is|are|was|were)\s*$", "", value)
+     # “Can” is also an ordinary object noun, so only trim auxiliaries whose
+     # noun readings cannot leave a plausible visible target behind.
+@@ -687,6 +769,8 @@ def _source_target_is_ambiguous(action, target):
+     normalized = " ".join(normalized.split())
+     if normalized == "this object":
+         return False
++    if _MENTALLY_SPECIFIED_GENERIC_TARGET.match(normalized):
++        return True
+     normalized = re.sub(r"^(?:the|a|an|my|your)\s+", "", normalized)
+     referent_head = _SCENE_RELATION_TAIL.sub("", normalized).strip()
+     referent_head = _VIEW_ONLY_QUALIFIER.sub(" ", referent_head)
+@@ -868,7 +952,7 @@ _SCENE_ONLY_QUALIFIER = re.compile(
+     r"\b(?:over\s+there|right\s+there|over\s+here|right\s+here|"
+     r"on\s+(?:the\s+)?screen|here|there)\b", re.IGNORECASE)
+ _INVERTED_ACTION_TARGET = re.compile(
+-    r"\b(?:let|make|treat|regard|consider)\s+(?P<target>.+?)\s+(?:"
++    r"\b(?:let|make|treat|regard|consider|use)\s+(?P<target>.+?)\s+(?:"
+     r"(?:(?:(?:be|remain)\s+)?(?:the\s+)?(?:object|person|thing|target|one|item)\s+"
+     r"(?:(?:that|which)\s+)?(?:you|we|i)\s+(?:(?:continue|keep)\s+)?"
+     r"(?:to\s+)?(?:watch|follow|track|stay\s+with))|"
+@@ -877,25 +961,7 @@ _INVERTED_ACTION_TARGET = re.compile(
+     r"(?:(?:your|the)\s+tracking\s+subject)|"
+     r"as\s+(?:the\s+)?(?:tracking\s+)?subject)\b",
+     re.IGNORECASE)
+-_EXPLICIT_TARGETLESS_SURVEY = re.compile(
+-    r"^(?:(?:please|kindly)\s+)?(?:(?:(?:can|could|would)\s+you|"
+-    r"(?:i|we)\s+(?:want|need)\s+you\s+to)\s+)?(?:"
+-    r"(?:scout|survey)(?:\s+(?:(?:the|this|a|an)\s+)?"
+-    r"(?:(?:whole|entire|full|overall|current|present|live)\s+)?"
+-    r"(?:camera(?:['’]s)?\s+)?(?:view|frame|area|scene|picture|image))?|"
+-    r"(?:survey|scan|inspect|review|assess|look\s+over|take\s+stock|take\s+in|"
+-    r"show\s+me|tell\s+me|describe|give\s+(?:me\s+)?(?:an?\s+)?overview)\s+(?:of\s+)?(?:"
+-    r"(?:(?:the|this|a|an)\s+)?(?:(?:whole|entire|full|overall|current|present|live)\s+)?"
+-    r"(?:camera(?:['’]s)?\s+)?(?:view|frame|area|scene|picture|image)|"
+-    r"what\s+(?:the\s+)?camera\s+(?:currently\s+)?sees|"
+-    r"what\s+(?:is\s+)?(?:currently\s+)?visible\s+(?:in\s+)?(?:(?:the|this)\s+)?"
+-    r"(?:(?:whole|entire|full|overall|current|present|live)\s+)?(?:camera\s+)?"
+-    r"(?:view|frame|area|scene|picture|image)|"
+-    r"everything\s+(?:that\s+is\s+)?visible\s+(?:in\s+)?(?:(?:the|this)\s+)?"
+-    r"(?:(?:whole|entire|full|overall|current|present|live)\s+)?(?:camera\s+)?"
+-    r"(?:view|frame|area|scene|picture|image)))"
+-    r"(?:\s+(?:right\s+now|currently|today|please))?[.!?]?$",
+-    re.IGNORECASE)
++_BARE_SURVEY_COMMAND = re.compile(r"^(?:(?:please|kindly)\s+)?(?:scout|survey)$", re.IGNORECASE)
+ 
+ 
+ def _inverted_target_for_action(text, item):
+@@ -908,16 +974,32 @@ def _inverted_target_for_action(text, item):
+ 
+ 
+ def _explicit_targetless_survey_request(text):
+-    for clause in re.split(
+-            r"(?<!\d),(?!\d)|[;:!?]|(?<!\d)\.(?!\d)|\b(?:and|then|but)\b",
+-            text, flags=re.IGNORECASE):
+-        if _EXPLICIT_TARGETLESS_SURVEY.fullmatch(clause.strip()):
++    """Accept broad scene surveys while refusing a named-target scout substitution."""
++    clauses = re.split(
++        r"(?<!\d),(?!\d)|[;:!?]|(?<!\d)\.(?!\d)|\b(?:and|then|but)\b",
++        text, flags=re.IGNORECASE)
++    for clause in clauses:
++        clause = clause.strip().strip(" .?!")
++        if _BARE_SURVEY_COMMAND.fullmatch(clause):
++            return True
++        if not (_SCENE_SURVEY_INTENT.search(clause)
++                and _SCENE_SCOPE_PHRASE.search(clause)):
++            continue
++        # Remove survey and whole-view grammar, then check whether any concrete
++        # referent remains. This permits flexible wording without treating a
++        # named-object survey as a targetless scene request.
++        remainder = _SCENE_SCOPE_PHRASE.sub(" ", clause)
++        remainder = _SCENE_SURVEY_INTENT.sub(" ", remainder)
++        remainder = _SCENE_SURVEY_GRAMMAR.sub(" ", remainder)
++        remainder = " ".join(remainder.strip(" .?!,;:'\"“”‘’").split())
++        if not remainder:
+             return True
+     return False
+ 
+ 
+ def _target_content_tokens(value):
+     """Keep identity and relation words while ignoring grammar around the action."""
++    value = _normalize_source_target(value)
+     value = _VIEW_ONLY_LOCATION.sub(" ", value.casefold())
+     value = _VIEW_ONLY_QUALIFIER.sub(" ", value)
+     value = re.sub(r"^(?:of|for|from\s+among)\s+", "", value.strip())
+@@ -961,12 +1043,8 @@ def _source_target_for_reconciliation(item, context, text):
+     """Recover a target that precedes a clear action in a copular request frame."""
+     inverted = _inverted_target_for_action(text, item)
+     if inverted:
+-        target = inverted
+-    else:
+-        target = _context_resolved_target(item, context, text)
+-    if item["action"] == "find":
+-        return _normalize_action_target("find", target)
+-    return target
++        return inverted
++    return _context_resolved_target(item, context, text)
+ 
+ 
+ def _relative_identity_tokens(value):
+@@ -1298,6 +1376,20 @@ class LocalSemanticInterpreter:
+             self.last_diagnostic["completion"] = (completion if isinstance(completion, str)
+                                                     else repr(completion)[:32768])
+             value = json.loads(completion)
++            invalid_scout_target = (
++                isinstance(value, dict) and value.get("status") == "planned"
++                and isinstance(value.get("steps"), list)
++                and any(isinstance(step, dict) and step.get("action") == "scout"
++                        and isinstance(step.get("target"), str) and bool(step["target"].strip())
++                        for step in value["steps"]))
++            if invalid_scout_target:
++                result = _clarification(
++                    "A scene survey has no object target. Please ask about the whole current view "
++                    "or name an object to find or follow.")
++                self.last_diagnostic["error"] = {
++                    "type": "ValueError", "message": "Scout actions must have an empty target"}
++                self.last_diagnostic["validated_status"] = result["status"]
++                return result
+             if (isinstance(value, dict) and set(value) == {"status", "message", "steps"}
+                     and value["status"] == "planned" and isinstance(value["message"], str)
+                     and len(value["message"]) <= 300 and value["steps"] == []):

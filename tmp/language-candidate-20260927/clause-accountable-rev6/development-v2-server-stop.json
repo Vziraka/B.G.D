@@ -1,0 +1,8 @@
+{
+  "pid": 40532,
+  "process_stopped": true,
+  "loopback_listener_remaining": false,
+  "checked_port": 8081,
+  "checked_host": "127.0.0.1",
+  "stop_verified_utc": "2026-09-27T09:39:11.8548932Z"
+}

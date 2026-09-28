@@ -1,0 +1,21 @@
+{
+  "purpose": "Same-source Q4_K_M versus Q6_K precision comparison on an already-open development corpus; never sealed qualification",
+  "source_snapshot_sha256": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+  "corpus_sha256": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+  "server_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+  "model_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+  "model_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+  "models": {
+    "q4": {
+      "path": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "q6": {
+      "path": "tmp/language-candidate-20260927/q6-comparison/Qwen_Qwen3.5-4B-Q6_K.gguf",
+      "sha256": "5a5bc7a3f9375b395e9f81fb69109038cf160c84606b8192f13cbb8355ca59f2",
+      "bytes": 3805358048
+    }
+  },
+  "acceptance": "Development comparison only: Q6 must have no consequential regression, at least one additional ordinary exact response versus Q4, and no new invalid model completion to justify further testing. Neither artifact advances without a new sealed trial and Pi load evidence."
+}

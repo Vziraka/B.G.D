@@ -1,0 +1,11 @@
+# Qwen3.5 integrated frozen30 review
+
+The single clean post-fix evaluation used the unchanged `conversation-eval.json` corpus (SHA-256 `f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b`) through the production `LocalSemanticInterpreter` and `evaluate_language.evaluate`. It passed 30/30 with no validation/runtime errors. The complete per-case result and raw API evidence are in `qwen35-integrated-frozen30-results.json` and `qwen35-integrated-frozen30-raw.jsonl`.
+
+The interpreter fast path handled five cases without model calls: `n04` retained only the requested status after negated landing; `u01` refused the whole “take off and follow me” request; `u02` refused landing; `i01` and `i02` refused flight/arming or orbit requests. The other 25 cases went through the local model. The model clarified `n01` (“don't follow me”) with zero steps, preserved the affirmative find action while omitting only negated follow in `n02`, and clarified `n03` rather than inventing an action. Corrections `c01`–`c03`, ambiguity `a01`–`a04`, multi-step `m01`–`m02`, remaining unsupported `u03`–`u05`, and injection `i03`–`i04` matched the fixture expectations.
+
+`d02` is a text-interpretation pass: the model proposed following the described person. The controller's final human-target guard returns manual-person-selection clarification before generic object detection/tracking unless a person is visually grounded; the synthetic language suite does not exercise that camera/controller boundary.
+
+Cold case `p01` took 24,437.7 ms. Across all cases, median/p95 latency was 4,150.65/6,111.7 ms; across the 25 model-inference cases it was 4,293.6/6,111.7 ms. The five prepass rows have sub-millisecond elapsed times and are included in overall percentiles. This is synthetic text evidence only; it does not qualify ASR, identity grounding, camera behavior, flight behavior, Pi performance, or release readiness.
+
+An earlier run completed before the fail-closed correction but was invalidated because an affirmative flight action without a status clause could have been delegated to the model. Its complete raw rows, results, and stdout were preserved as `qwen35-pre-fix-invalid-*`; they are not evidence for this result. The final run occurred after the prepass change and focused tests, with the same model, runtime, schema, prompt, sampling, seed, and corpus.

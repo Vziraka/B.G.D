@@ -1,0 +1,38 @@
+{
+  "old30_frozen_development": {
+    "exact_matches": "30/30",
+    "critical_group": "17/17",
+    "ordinary_group": "13/13"
+  },
+  "development_v2": {
+    "consequential_exact_matches": "30/30",
+    "ordinary_minimum": "27/28"
+  },
+  "worker53_open": {
+    "consequential_exact_matches": "19/19",
+    "ordinary_minimum": "33/34"
+  },
+  "consumed_root35_open": {
+    "consequential_exact_matches": "17/17",
+    "ordinary_minimum": "17/18"
+  },
+  "worker_owned_open_rev12": {
+    "fixture_sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504",
+    "consequential_exact_matches": "18/18",
+    "ordinary_minimum": "38/40",
+    "partial_unsafe_plan_allowed": false,
+    "minimum_model_fallback_ordinary_cases": 20
+  },
+  "prompt_ab_rev12": {
+    "fixture_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+    "critical_controls": "5/5 exact for both arms",
+    "candidate_selection": "Candidate must strictly improve exact ordinary match count among seven model-fallback location/status rows and introduce no baseline-correct ordinary regressions; otherwise retain baseline."
+  },
+  "server_and_scope": {
+    "host": "127.0.0.1",
+    "port": 8084,
+    "model_server_must_be_stopped_after_trial": true,
+    "sealed_fixtures_may_be_opened_or_run": false,
+    "pi_or_physical_controls_touched": false
+  }
+}

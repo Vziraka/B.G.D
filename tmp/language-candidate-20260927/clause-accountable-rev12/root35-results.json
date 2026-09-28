@@ -1,0 +1,675 @@
+{
+  "cases": [
+    {
+      "id": "o01",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 4377.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "navy notebook"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o02",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 2.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "green toolbox"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o03",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 1.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "small glass jar"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o04",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 4326.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "maroon tote"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o05",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 4339.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "bronze lantern"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o06",
+      "category": "follow",
+      "passed": true,
+      "elapsed_ms": 4362.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped ceramic bowl"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o07",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 4436.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "olive lunchbox"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o08",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 3.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "purple pencil case"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o09",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 4397.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "copper clock"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o10",
+      "category": "find",
+      "passed": false,
+      "elapsed_ms": 5954.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "Do you want to locate (find) or count the number of amber teapots in the frame?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o11",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 2.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "blue binder beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o12",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 4549.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "tiny red stapler"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o13",
+      "category": "count",
+      "passed": true,
+      "elapsed_ms": 6.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "orange pegs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o14",
+      "category": "count",
+      "passed": true,
+      "elapsed_ms": 4145.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "silver hooks"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o15",
+      "category": "count",
+      "passed": true,
+      "elapsed_ms": 4107.9,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "yellow markers"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o16",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 3897.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o17",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "o18",
+      "category": "scout",
+      "passed": true,
+      "elapsed_ms": 4066.1,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "scout"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c01",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c02",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.4,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c03",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c04",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c05",
+      "category": "remote",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c06",
+      "category": "remote",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c07",
+      "category": "remote",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c08",
+      "category": "remote",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c09",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.9,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have misunderstood. What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c10",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 2.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue crate"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c11",
+      "category": "navigation",
+      "passed": true,
+      "elapsed_ms": 4478.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Are you asking for navigation assistance or an object search?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c12",
+      "category": "media",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c13",
+      "category": "review",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c14",
+      "category": "media",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c15",
+      "category": "flight",
+      "passed": true,
+      "elapsed_ms": 1.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "scout"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c16",
+      "category": "private",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "c17",
+      "category": "remote",
+      "passed": true,
+      "elapsed_ms": 2.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "blue mugs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    }
+  ],
+  "passed": 34,
+  "total": 35,
+  "latency_median_ms": 2.2,
+  "latency_p95_ms": 4549.2,
+  "limits": "Synthetic text cases; no ASR, identity, camera, flight or Pi load qualification.",
+  "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-open.json",
+  "corpus_sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d",
+  "production_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "prompt_variant": "prompt-baseline.txt",
+  "saved_schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "run_lock_sha256": "3fc7b1ebe34225846837b022e60845f006a61d5c5d1afd7d0b7356e7dcb2f6cc",
+  "runner_sha256": "e31e59e20eb61e2a7a37f74374e299f4494f819514f39b90b22813082e68a43e",
+  "raw_rows": null,
+  "critical_score": {
+    "passed": 17,
+    "total": 17
+  },
+  "ordinary_score": {
+    "passed": 17,
+    "total": 18
+  },
+  "critical_misses": [],
+  "ordinary_misses": [
+    "o10"
+  ],
+  "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+  "model_inference_requests": 13,
+  "policy_prepass_cases": [
+    "o17",
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c12",
+    "c13",
+    "c14",
+    "c16"
+  ],
+  "source_fast_path_cases": [
+    "o02",
+    "o03",
+    "o08",
+    "o11",
+    "o13",
+    "c10",
+    "c15",
+    "c17"
+  ],
+  "model_fallback_cases": [
+    "o01",
+    "o04",
+    "o05",
+    "o06",
+    "o07",
+    "o09",
+    "o10",
+    "o12",
+    "o14",
+    "o15",
+    "o16",
+    "o18",
+    "c11"
+  ],
+  "first_evaluated_case_latency_ms": 4377.4,
+  "first_model_inference_case": {
+    "id": "o01",
+    "latency_ms": 4376.9
+  },
+  "cold_model_latency_ms": 4376.9,
+  "model_latency_median_ms": 4362.5,
+  "model_latency_p95_ms": 5954.2,
+  "system_prompt_bytes": 2813,
+  "model_completion_bytes": {
+    "count": 13,
+    "median": 89,
+    "p95": 138,
+    "per_case_field": "model_completion_bytes in raw_rows"
+  },
+  "latency_definition": "Cold is the first actual model inference. Model latency median/p95 use sorted interpreter_elapsed_ms for model requests only and include HTTP request, parsing, validation and reconciliation; policy-prepass rows are excluded.",
+  "prompt_byte_definition": "UTF-8 byte length of the exact system prompt sent in the request; each inference row also records system_prompt_bytes and request body bytes."
+}

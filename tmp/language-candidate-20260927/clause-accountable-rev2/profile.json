@@ -1,0 +1,35 @@
+{
+  "profile_id": "qwen35-clause-accountable-v2",
+  "enabled_by_default": false,
+  "model_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8081,
+    "threads": 2,
+    "batch_threads": 2,
+    "context": 2048,
+    "parallel": 1,
+    "jinja": true,
+    "web_ui": false
+  },
+  "request": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 1.5,
+    "max_tokens": 300,
+    "seed": 42,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "response_format": "strict JSON schema"
+  },
+  "authority": "simulator-only; local text interpretation only",
+  "prompt_file": "system-prompt.txt",
+  "schema_file": "schema.json",
+  "prompt_bytes": 2435,
+  "prompt_sha256": "d8dea525fd490d4f1a1b464720a405006273ca4bb9a94b47e995bbaf24e43e6e",
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+}

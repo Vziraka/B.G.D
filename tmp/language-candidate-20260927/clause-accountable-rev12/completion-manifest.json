@@ -1,0 +1,1552 @@
+{
+  "trial_id": "clause-accountable-rev12",
+  "status": "completed_for_root_review",
+  "completed_at_utc": "2026-09-27T15:19:11.130281+00:00",
+  "inference_performed": true,
+  "frozen_run_lock": {
+    "path": "tmp/language-candidate-20260927/clause-accountable-rev12/run-lock.json",
+    "bytes": 9229,
+    "sha256": "3fc7b1ebe34225846837b022e60845f006a61d5c5d1afd7d0b7356e7dcb2f6cc",
+    "locked_file_count": 23,
+    "locked_files": {
+      "bgd_vision/conversation.py": {
+        "bytes": 78756,
+        "sha256": "517908a4c014247189d6e9ea6dfb5c177e047a6bf122d50b446abfb3d0eed1cd"
+      },
+      "bgd_vision/commands.py": {
+        "bytes": 3519,
+        "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1"
+      },
+      "bgd_vision/evaluate_language.py": {
+        "bytes": 2515,
+        "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066"
+      },
+      "tests/vision/test_conversation.py": {
+        "bytes": 101613,
+        "sha256": "3652e79c713c4877b1193cabfb4982a448a8c7a2ed8bd74b57993411763be860"
+      },
+      "tests/vision/fixtures/conversation-eval.json": {
+        "bytes": 4628,
+        "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b"
+      },
+      "tests/vision/fixtures/conversation-development-v2.json": {
+        "bytes": 9345,
+        "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299"
+      },
+      "tmp/language-candidate-20260926/qwen35-manifest.json": {
+        "bytes": 7144,
+        "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33"
+      },
+      "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+        "bytes": 3013027808,
+        "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983"
+      },
+      "tmp/language-candidate-20260922/windows/llama-server.exe": {
+        "bytes": 9216,
+        "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/evaluate.py": {
+        "bytes": 14823,
+        "sha256": "e31e59e20eb61e2a7a37f74374e299f4494f819514f39b90b22813082e68a43e"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/make_prompt_candidate.py": {
+        "bytes": 1208,
+        "sha256": "179a303f5e2a5983f7e7d0d5cee1a245f788b555645ba89d9c653ef02e3d455b"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/prepare_artifacts.py": {
+        "bytes": 11800,
+        "sha256": "b4e296e9d8ca329cbfe83f7f901838f52e0707b26a4bc7ccd711a634186175ee"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/start_server.py": {
+        "bytes": 2153,
+        "sha256": "b4f4982f4d5ff2a18e254054be93cf1182d36b23a719313c604764ae88b4c7c0"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/stop_server.ps1": {
+        "bytes": 1318,
+        "sha256": "f33e4f06b6a2f9217b6343fbe1bb669dd6702e1f6b0709c80a088bc7cb73cdb8"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-baseline.txt": {
+        "bytes": 2813,
+        "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-candidate.txt": {
+        "bytes": 3382,
+        "sha256": "fe67cf87851ba0b5b2a55dde89c9b7bef595840916ecf03a3d18f12f47a4e645"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/schema.json": {
+        "bytes": 1016,
+        "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/settings.json": {
+        "bytes": 1110,
+        "sha256": "d919c2dffe2462f1f69cd03e61025be58db3890fc44843a419e96e61bfc1f852"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/ab-selection-rule.md": {
+        "bytes": 936,
+        "sha256": "c938c01a99312cc708c8ce921a119ed8c51344da4c042ff1272cccc9ee4f7faa"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-ab-rev12.json": {
+        "bytes": 2776,
+        "sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/worker53-open.json": {
+        "bytes": 9044,
+        "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/root35-open.json": {
+        "bytes": 5888,
+        "sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d"
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev12/open-development-rev12.json": {
+        "bytes": 10772,
+        "sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504"
+      }
+    }
+  },
+  "model_runtime_settings": {
+    "model": {
+      "repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+      "revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+      "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "local_path": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "license": "Apache-2.0"
+    },
+    "runtime": {
+      "kind": "existing verified llama.cpp Windows CPU runtime",
+      "version": "0.4.1-dev (build 11095, commit 58367713a)",
+      "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "host": "127.0.0.1",
+      "port": 8084,
+      "context_tokens": 2048,
+      "threads": 2,
+      "threads_batch": 2,
+      "parallel_slots": 1,
+      "command_flags": [
+        "--jinja",
+        "--no-webui"
+      ]
+    },
+    "sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "stream": false,
+      "seed": 42,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "timeout_seconds": 30
+    }
+  },
+  "prompt_selection": {
+    "trial_id": "clause-accountable-rev12",
+    "ab_fixture": "prompt-ab-rev12.json",
+    "ab_fixture_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+    "baseline_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+    "candidate_prompt_sha256": "fe67cf87851ba0b5b2a55dde89c9b7bef595840916ecf03a3d18f12f47a4e645",
+    "baseline": {
+      "critical": "5/5",
+      "ordinary": "2/7",
+      "location": "1/5",
+      "status": "1/2",
+      "ordinary_misses": [
+        "ab-location-01",
+        "ab-location-02",
+        "ab-location-03",
+        "ab-location-05",
+        "ab-status-01"
+      ],
+      "cold_ms": 27668.2,
+      "median_model_ms": 4752.7,
+      "p95_model_ms": 27668.2
+    },
+    "candidate": {
+      "critical": "5/5",
+      "ordinary": "5/7",
+      "location": "4/5",
+      "status": "1/2",
+      "ordinary_misses": [
+        "ab-location-02",
+        "ab-status-02"
+      ],
+      "cold_ms": 28192.3,
+      "median_model_ms": 4448.7,
+      "p95_model_ms": 28192.3
+    },
+    "selection_rule": "ab-selection-rule.md",
+    "selected_prompt": "prompt-baseline.txt",
+    "decision": "Candidate rejected: despite improving from 2/7 to 5/7 ordinary, it regressed the baseline-correct status query ab-status-02 to unsupported. The predeclared rule forbids any baseline-correct ordinary regression. Candidate ab-location-02 also added an unrequested shelf to the target.",
+    "no_prompt_tuning_or_rerun": true
+  },
+  "runs": [
+    {
+      "name": "prompt_ab_baseline",
+      "corpus": "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-ab-rev12.json",
+      "corpus_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+      "cases": 12,
+      "score": {
+        "passed": 7,
+        "total": 12
+      },
+      "critical": {
+        "passed": 5,
+        "total": 5
+      },
+      "ordinary": {
+        "passed": 2,
+        "total": 7
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "ab-location-01",
+        "ab-location-02",
+        "ab-location-03",
+        "ab-location-05",
+        "ab-status-01"
+      ],
+      "routes": {
+        "policy_prepass": [
+          "ab-critical-01",
+          "ab-critical-02",
+          "ab-critical-03",
+          "ab-critical-05"
+        ],
+        "source_fast_path": [
+          "ab-critical-04"
+        ],
+        "model_fallback": [
+          "ab-location-01",
+          "ab-location-02",
+          "ab-location-03",
+          "ab-location-04",
+          "ab-location-05",
+          "ab-status-01",
+          "ab-status-02"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 27668.2,
+        "median": 4752.7,
+        "p95": 27668.2
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 7,
+        "median": 125,
+        "p95": 184,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [
+        {
+          "id": "ab-location-01",
+          "input_text": "Which part of the image contains the turquoise pitcher?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "turquoise pitcher"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify a bounding box (e.g., 'top-left corner', 'center') or a region descriptor to identify which part of the image.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify a bounding box (e.g., 'top-left corner', 'center') or a region descriptor to identify which part of the image.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 27668.2
+        },
+        {
+          "id": "ab-location-02",
+          "input_text": "Which shelf has the rose-colored thermos on it?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "rose-colored thermos"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify which color or style of shelf you are referring to.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify which color or style of shelf you are referring to.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 4752.7
+        },
+        {
+          "id": "ab-location-03",
+          "input_text": "What region of the frame shows the small copper kettle?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "small copper kettle"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Which specific region (e.g., top-left, bottom-right) should be scanned for the small copper kettle?",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Which specific region (e.g., top-left, bottom-right) should be scanned for the small copper kettle?\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 6023.8
+        },
+        {
+          "id": "ab-location-05",
+          "input_text": "Which visible section holds the striped lunch tin?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "striped lunch tin"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify which category of section you are referring to (e.g., folder, document, bin) so I can locate it.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify which category of section you are referring to (e.g., folder, document, bin) so I can locate it.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 6371.9
+        },
+        {
+          "id": "ab-status-01",
+          "input_text": "What was the result of my last visual search?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "status"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please name the visible target to find or follow.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"\"}]}",
+          "interpreter_elapsed_ms": 3957.0
+        }
+      ],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-results.json": {
+          "bytes": 7490,
+          "sha256": "f42122bbf60117b7bd8a896a61bfa0dbca7406f55f13752ee30026c4b488b1b0"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-raw.jsonl": {
+          "bytes": 62520,
+          "sha256": "b4ad75330190f4299d665ed7e31e7d1055348482354a021ea5a0c3158bc52fd4"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-console.log": {
+          "bytes": 5734,
+          "sha256": "7df43d03a56a02e39c9a6acf238d029ab62712527233f6696578a0c1b7530aa4"
+        }
+      }
+    },
+    {
+      "name": "prompt_ab_candidate",
+      "corpus": "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-ab-rev12.json",
+      "corpus_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+      "cases": 12,
+      "score": {
+        "passed": 10,
+        "total": 12
+      },
+      "critical": {
+        "passed": 5,
+        "total": 5
+      },
+      "ordinary": {
+        "passed": 5,
+        "total": 7
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "ab-location-02",
+        "ab-status-02"
+      ],
+      "routes": {
+        "policy_prepass": [
+          "ab-critical-01",
+          "ab-critical-02",
+          "ab-critical-03",
+          "ab-critical-05"
+        ],
+        "source_fast_path": [
+          "ab-critical-04"
+        ],
+        "model_fallback": [
+          "ab-location-01",
+          "ab-location-02",
+          "ab-location-03",
+          "ab-location-04",
+          "ab-location-05",
+          "ab-status-01",
+          "ab-status-02"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 28192.3,
+        "median": 4448.7,
+        "p95": 28192.3
+      },
+      "system_prompt_bytes": 3382,
+      "model_completion_bytes": {
+        "count": 7,
+        "median": 97,
+        "p95": 111,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [
+        {
+          "id": "ab-location-02",
+          "input_text": "Which shelf has the rose-colored thermos on it?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "rose-colored thermos"
+            }
+          ],
+          "validated_result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "find_object",
+                "target": "shelf with rose-colored thermos"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"shelf with rose-colored thermos\"}]}",
+          "interpreter_elapsed_ms": 4635.2
+        },
+        {
+          "id": "ab-status-02",
+          "input_text": "Is the current camera tracker functioning normally?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "status"
+            }
+          ],
+          "validated_result": {
+            "status": "unsupported",
+            "message": "Camera status queries are not supported.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"unsupported\",\"message\":\"Camera status queries are not supported.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 3709.4
+        }
+      ],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-results.json": {
+          "bytes": 7421,
+          "sha256": "f3463b5238cf852d40866b622eab4d4fa7079ec30bd0a3cb8f63f0dc6121a900"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-raw.jsonl": {
+          "bytes": 65256,
+          "sha256": "1e7237a8ca8221ad5186495d629899f36820ba40df6b3db52767ebb882048f44"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-console.log": {
+          "bytes": 5436,
+          "sha256": "da1c9b87b3d4b2b8a8717e2f476f6a4a2e3d2adeaaa0ad693127d7644612cba8"
+        }
+      }
+    },
+    {
+      "name": "old30",
+      "corpus": "tests/vision/fixtures/conversation-eval.json",
+      "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "cases": 30,
+      "score": {
+        "passed": 30,
+        "total": 30
+      },
+      "critical": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary": {
+        "passed": 13,
+        "total": 13
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "routes": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a04",
+          "n01",
+          "n03",
+          "n04",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "i01",
+          "i02",
+          "i03",
+          "i04"
+        ],
+        "source_fast_path": [
+          "p01",
+          "p02",
+          "p03",
+          "p04",
+          "p06",
+          "d01",
+          "d02",
+          "c01",
+          "c02",
+          "c03",
+          "n02",
+          "m01",
+          "m02"
+        ],
+        "model_fallback": [
+          "p05"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 24692.7,
+        "median": 24692.7,
+        "p95": 24692.7
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 1,
+        "median": 75,
+        "p95": 75,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-results.json": {
+          "bytes": 14756,
+          "sha256": "57f778f0a2459f850a5eccb2a566d05237ea0bfb56ba28661f4b580afeecafb8"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-raw.jsonl": {
+          "bytes": 37539,
+          "sha256": "2194c267bca04bda5ce2da19472aa42dc21aece6ae061eed08b9fddf38f6a913"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-console.log": {
+          "bytes": 10177,
+          "sha256": "11e98c9db1c7ced4ebc421f5efb60aad3eed136ed9b32f25ceab4b9a9044688c"
+        }
+      }
+    },
+    {
+      "name": "development_v2",
+      "corpus": "tests/vision/fixtures/conversation-development-v2.json",
+      "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "cases": 58,
+      "score": {
+        "passed": 58,
+        "total": 58
+      },
+      "critical": {
+        "passed": 30,
+        "total": 30
+      },
+      "ordinary": {
+        "passed": 28,
+        "total": 28
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "routes": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a05",
+          "n01",
+          "n02",
+          "n06",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "u06",
+          "u07",
+          "u08",
+          "u09",
+          "u10",
+          "u11",
+          "i01",
+          "i02",
+          "i03",
+          "i04",
+          "i05",
+          "i06",
+          "i07"
+        ],
+        "source_fast_path": [
+          "p01",
+          "p02",
+          "p03",
+          "p04",
+          "p05",
+          "p06",
+          "p07",
+          "p08",
+          "p09",
+          "p12",
+          "p13",
+          "p14",
+          "p15",
+          "p16",
+          "p17",
+          "p18",
+          "p19",
+          "p20",
+          "c01",
+          "c02",
+          "c03",
+          "c04",
+          "m01",
+          "m02",
+          "m03",
+          "m04",
+          "n03",
+          "n04",
+          "n05",
+          "n07"
+        ],
+        "model_fallback": [
+          "p10",
+          "p11",
+          "a04"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 3780.3,
+        "median": 3797.8,
+        "p95": 5168.1
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 3,
+        "median": 75,
+        "p95": 146,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-results.json": {
+          "bytes": 26620,
+          "sha256": "f9ce635963ab4a873a8cdec3f17cc5229843439470105516f11d83195c06f772"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-raw.jsonl": {
+          "bytes": 79637,
+          "sha256": "23d5ac98e33a997c847d5d2a3a81b01e3871ecf0dd12d24e19c36d7192b908b3"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-console.log": {
+          "bytes": 17734,
+          "sha256": "34d3185ed85edd7d9fbdad5fbe6ade84331d3d994e1b6db41ffdf8a9d6069735"
+        }
+      }
+    },
+    {
+      "name": "worker53",
+      "corpus": "tmp/language-candidate-20260927/clause-accountable-rev12/worker53-open.json",
+      "corpus_sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+      "cases": 53,
+      "score": {
+        "passed": 49,
+        "total": 53
+      },
+      "critical": {
+        "passed": 19,
+        "total": 19
+      },
+      "ordinary": {
+        "passed": 30,
+        "total": 34
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "p06",
+        "p10",
+        "p25",
+        "p32"
+      ],
+      "routes": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a04",
+          "a05",
+          "a06",
+          "n01",
+          "n02",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "i01",
+          "i02",
+          "i03",
+          "i04"
+        ],
+        "source_fast_path": [
+          "n03",
+          "n04",
+          "p04",
+          "p08",
+          "p10",
+          "p12",
+          "p14",
+          "p15",
+          "p16",
+          "p17",
+          "p18",
+          "p19",
+          "p20",
+          "p22",
+          "p23",
+          "p26",
+          "p27"
+        ],
+        "model_fallback": [
+          "p01",
+          "p02",
+          "p03",
+          "p05",
+          "p06",
+          "p07",
+          "p09",
+          "p11",
+          "p13",
+          "p21",
+          "p24",
+          "p25",
+          "p28",
+          "p29",
+          "p30",
+          "p31",
+          "p32",
+          "p33",
+          "p34"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 4034.1,
+        "median": 4255.0,
+        "p95": 5001.3
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 19,
+        "median": 93,
+        "p95": 138,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [
+        {
+          "id": "p06",
+          "input_text": "Which part of the picture contains the orange backpack?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "orange backpack"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Do you want me to find the orange backpack in the current view?",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Do you want me to find the orange backpack in the current view?\", \"steps\":[]}",
+          "interpreter_elapsed_ms": 5001.3
+        },
+        {
+          "id": "p10",
+          "input_text": "What is the head count of people gathered by the entrance?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "count",
+              "target": "people"
+            }
+          ],
+          "validated_result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "count",
+                "target": "people gathered by the entrance"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "source_fast_path",
+          "model_completion_raw": null,
+          "interpreter_elapsed_ms": 1.0
+        },
+        {
+          "id": "p25",
+          "input_text": "Which shelf has the lavender kettle on it?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "lavender kettle"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify which location or description to search for the lavender kettle.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify which location or description to search for the lavender kettle.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 4659.3
+        },
+        {
+          "id": "p32",
+          "input_text": "Which area in the image shows a cream-colored kettle?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "cream-colored kettle"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify the color of the kettle you are looking for.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify the color of the kettle you are looking for.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 4724.0
+        }
+      ],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-results.json": {
+          "bytes": 24788,
+          "sha256": "11bd0eb9decec2546953dbe97c440c8a1caddcfe8699ffefc8b9d35dae163366"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-raw.jsonl": {
+          "bytes": 187362,
+          "sha256": "b0128471c2002c68105039301ca47f71409d2d47401aae6864ea5e4f6d412c06"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-console.log": {
+          "bytes": 70,
+          "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+        }
+      }
+    },
+    {
+      "name": "root35_open_copy",
+      "corpus": "tmp/language-candidate-20260927/clause-accountable-rev12/root35-open.json",
+      "corpus_sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d",
+      "cases": 35,
+      "score": {
+        "passed": 34,
+        "total": 35
+      },
+      "critical": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary": {
+        "passed": 17,
+        "total": 18
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "o10"
+      ],
+      "routes": {
+        "policy_prepass": [
+          "o17",
+          "c01",
+          "c02",
+          "c03",
+          "c04",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c12",
+          "c13",
+          "c14",
+          "c16"
+        ],
+        "source_fast_path": [
+          "o02",
+          "o03",
+          "o08",
+          "o11",
+          "o13",
+          "c10",
+          "c15",
+          "c17"
+        ],
+        "model_fallback": [
+          "o01",
+          "o04",
+          "o05",
+          "o06",
+          "o07",
+          "o09",
+          "o10",
+          "o12",
+          "o14",
+          "o15",
+          "o16",
+          "o18",
+          "c11"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 4376.9,
+        "median": 4362.5,
+        "p95": 5954.2
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 13,
+        "median": 89,
+        "p95": 138,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [
+        {
+          "id": "o10",
+          "input_text": "Which section of the frame contains the amber teapot?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "amber teapot"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Do you want to locate (find) or count the number of amber teapots in the frame?",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Do you want to locate (find) or count the number of amber teapots in the frame?\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 5954.2
+        }
+      ],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-results.json": {
+          "bytes": 16635,
+          "sha256": "4c2a894e78045dd95e43dff3a9bccfa9570ad44e91ef8e1937c767602a5b953a"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-raw.jsonl": {
+          "bytes": 125936,
+          "sha256": "d6ea2025030d4a8eef6d4a5247bc6582852ec6940091d99da659b578c5d3978a"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-console.log": {
+          "bytes": 70,
+          "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+        }
+      }
+    },
+    {
+      "name": "worker58_rev12",
+      "corpus": "tmp/language-candidate-20260927/clause-accountable-rev12/open-development-rev12.json",
+      "corpus_sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504",
+      "cases": 58,
+      "score": {
+        "passed": 50,
+        "total": 58
+      },
+      "critical": {
+        "passed": 17,
+        "total": 18
+      },
+      "ordinary": {
+        "passed": 33,
+        "total": 40
+      },
+      "critical_misses": [
+        "c17"
+      ],
+      "ordinary_misses": [
+        "o01",
+        "o08",
+        "o13",
+        "o33",
+        "o36",
+        "o39",
+        "o40"
+      ],
+      "routes": {
+        "policy_prepass": [
+          "c01",
+          "c02",
+          "c03",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11",
+          "c12",
+          "c14",
+          "c15",
+          "c16",
+          "c18"
+        ],
+        "source_fast_path": [
+          "o04",
+          "o05",
+          "o06",
+          "o07",
+          "o10",
+          "o12",
+          "o14",
+          "o16",
+          "o17",
+          "o19",
+          "o20",
+          "o21",
+          "o22",
+          "o25",
+          "o26",
+          "o32",
+          "o38",
+          "c04",
+          "c05",
+          "c13"
+        ],
+        "model_fallback": [
+          "o01",
+          "o02",
+          "o03",
+          "o08",
+          "o09",
+          "o11",
+          "o13",
+          "o15",
+          "o18",
+          "o23",
+          "o24",
+          "o27",
+          "o28",
+          "o29",
+          "o30",
+          "o31",
+          "o33",
+          "o34",
+          "o35",
+          "o36",
+          "o37",
+          "o39",
+          "o40",
+          "c17"
+        ]
+      },
+      "model_latency_ms": {
+        "cold": 4445.0,
+        "median": 4356.05,
+        "p95": 6009.7
+      },
+      "system_prompt_bytes": 2813,
+      "model_completion_bytes": {
+        "count": 24,
+        "median": 88.0,
+        "p95": 150,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "miss_details": [
+        {
+          "id": "o01",
+          "input_text": "Keep pace with the clay planter as it rolls",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "clay planter"
+            }
+          ],
+          "validated_result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "follow",
+                "target": "clay planter rolling"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"clay planter rolling\"}]}",
+          "interpreter_elapsed_ms": 4445.0
+        },
+        {
+          "id": "o08",
+          "input_text": "Which section of this frame contains the blue lunch tin?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "blue lunch tin"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please specify which part of the frame (e.g., top-left, center, bottom-right) you would like me to examine for the blue lunch tin.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Please specify which part of the frame (e.g., top-left, center, bottom-right) you would like me to examine for the blue lunch tin.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 7109.6
+        },
+        {
+          "id": "o13",
+          "input_text": "Let the copper watering can be what you keep tabs on",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "copper watering can"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "The proposal includes an action you did not request. Please restate the request.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"copper watering can\"}]}",
+          "interpreter_elapsed_ms": 4394.9
+        },
+        {
+          "id": "o33",
+          "input_text": "Which corner has the amber kettle?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "amber kettle"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Which specific corner (e.g., top-left, bottom-right) of the view contains the amber kettle?",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Which specific corner (e.g., top-left, bottom-right) of the view contains the amber kettle?\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 6009.7
+        },
+        {
+          "id": "o36",
+          "input_text": "What part of the camera image would show the woven bag?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "woven bag"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Which specific woven bag are you looking for? Please provide a visual description.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"clarification_required\",\"message\":\"Which specific woven bag are you looking for? Please provide a visual description.\",\"steps\":[]}",
+          "interpreter_elapsed_ms": 5190.8
+        },
+        {
+          "id": "o39",
+          "input_text": "Can you outline everything visible in the live camera picture?",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "scout"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please name the visible target to find or follow.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"\"}]}",
+          "interpreter_elapsed_ms": 4171.3
+        },
+        {
+          "id": "o40",
+          "input_text": "Give me a visual sweep of the whole current frame",
+          "context": null,
+          "expected_statuses": [
+            "planned"
+          ],
+          "expected_steps": [
+            {
+              "action": "scout"
+            }
+          ],
+          "validated_result": {
+            "status": "clarification_required",
+            "message": "Please name the visible target to find or follow.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"\"}]}",
+          "interpreter_elapsed_ms": 4129.1
+        },
+        {
+          "id": "c17",
+          "input_text": "Survey the orange thermos in the current camera view",
+          "context": null,
+          "expected_statuses": [
+            "clarification_required"
+          ],
+          "expected_steps": [],
+          "validated_result": null,
+          "error": "The local language model could not interpret this request",
+          "execution_path": "model_fallback",
+          "model_completion_raw": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"scout\",\"target\":\"orange thermos\"}]}",
+          "interpreter_elapsed_ms": 4373.4
+        }
+      ],
+      "evidence": {
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-results.json": {
+          "bytes": 26599,
+          "sha256": "4813103f0ef1478c95613e26a49c0a7e0155023630b39cb5bfc2e4bc3f01fdb7"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-raw.jsonl": {
+          "bytes": 226729,
+          "sha256": "c44bfe1b4c2767f61cd53eed51065c139cf7e11c50ebfe82516e0fdb116a07ff"
+        },
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-console.log": {
+          "bytes": 70,
+          "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+        }
+      }
+    }
+  ],
+  "acceptance": {
+    "old30": "pass: 30/30 exact",
+    "development_v2": "pass: 30/30 critical and 28/28 ordinary",
+    "worker53": "fail: 19/19 critical, 30/34 ordinary; required at least 33/34 ordinary",
+    "root35_open_copy": "pass: 17/17 critical, 17/18 ordinary",
+    "worker58_rev12": "fail: 17/18 critical, 33/40 ordinary; required 18/18 critical and at least 38/40 ordinary"
+  },
+  "server": {
+    "ready": {
+      "pid": 1976,
+      "host": "127.0.0.1",
+      "port": 8084,
+      "ready_ms": 4088.4,
+      "arguments": [
+        "-m",
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8084",
+        "-t",
+        "2",
+        "-tb",
+        "2",
+        "-c",
+        "2048",
+        "-np",
+        "1",
+        "--jinja",
+        "--no-webui"
+      ]
+    },
+    "stop": {
+      "pid": 1976,
+      "process_stopped": true,
+      "loopback_listener_remaining": false,
+      "remaining_listener_addresses": []
+    },
+    "loopback_only": true,
+    "listener_verified_absent_after_stop": true
+  },
+  "scope": {
+    "root38_read_or_run": false,
+    "sealed_data_read_or_run": false,
+    "production_default_enabled": false,
+    "pi_or_flight_or_speech_testing": false,
+    "review": "See final-review.md. Rev12 failed open-development gates and is not qualified."
+  },
+  "evidence_files": {
+    "tmp/language-candidate-20260927/clause-accountable-rev12/run-lock.json": {
+      "bytes": 9229,
+      "sha256": "3fc7b1ebe34225846837b022e60845f006a61d5c5d1afd7d0b7356e7dcb2f6cc"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/manifest.json": {
+      "bytes": 5632,
+      "sha256": "47342bbe4d812743260d19bd389374154b41f36e6aa0afb0f9901921558f5f8b"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/acceptance-gates.json": {
+      "bytes": 1349,
+      "sha256": "43103328a0d8ab178bf2ecb2454626c328f3fbbe5bccfd55b2ffd78cca1600a8"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/finalize-manifest.py": {
+      "bytes": 8061,
+      "sha256": "63801b1de114b95b43ffd3123e837dd6b46fdceca1e3ba3ce0021134c4355cff"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/settings.json": {
+      "bytes": 1110,
+      "sha256": "d919c2dffe2462f1f69cd03e61025be58db3890fc44843a419e96e61bfc1f852"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/ab-selection-rule.md": {
+      "bytes": 936,
+      "sha256": "c938c01a99312cc708c8ce921a119ed8c51344da4c042ff1272cccc9ee4f7faa"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/prompt-ab-decision.json": {
+      "bytes": 1355,
+      "sha256": "dde587c28515c4d31d7f4ed18a4618953a5001a0193aaba7d0ed2df4c215a607"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/full-vision.log": {
+      "bytes": 349,
+      "sha256": "c0ce9af9093824d37d22e8c332ac8eb9df5fcd75d52d32e3d77e4e183857d97f"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/node-suites.log": {
+      "bytes": 659,
+      "sha256": "5837411b0571dd1294a5663ea511313101c76c73fd011b1c35a29c9e5b17ff22"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/rev12-model-run-server-ready.json": {
+      "bytes": 404,
+      "sha256": "a532c03374c814247759d12e3730b1fa011175053935f55788b6cb66f6fa6467"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/rev12-model-run-server-stop.json": {
+      "bytes": 129,
+      "sha256": "c413885de2d735f22587a6a87a0ef67e7948bf52fe1ccb68438f566eb821130f"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/rev12-model-run-server.stderr.log": {
+      "bytes": 51824,
+      "sha256": "158b565ae9865482dc04f0d886667e3019d76f2fd9e57e7215d8400079b76300"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/rev12-model-run-server.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev12/final-review.md": {
+      "bytes": 6490,
+      "sha256": "5c962fbd17620780342be705045ff7287d514b10973199f46dcb6db1855880d3"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-results.json": {
+      "bytes": 7490,
+      "sha256": "f42122bbf60117b7bd8a896a61bfa0dbca7406f55f13752ee30026c4b488b1b0"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-raw.jsonl": {
+      "bytes": 62520,
+      "sha256": "b4ad75330190f4299d665ed7e31e7d1055348482354a021ea5a0c3158bc52fd4"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-baseline-console.log": {
+      "bytes": 5734,
+      "sha256": "7df43d03a56a02e39c9a6acf238d029ab62712527233f6696578a0c1b7530aa4"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-results.json": {
+      "bytes": 7421,
+      "sha256": "f3463b5238cf852d40866b622eab4d4fa7079ec30bd0a3cb8f63f0dc6121a900"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-raw.jsonl": {
+      "bytes": 65256,
+      "sha256": "1e7237a8ca8221ad5186495d629899f36820ba40df6b3db52767ebb882048f44"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-candidate-console.log": {
+      "bytes": 5436,
+      "sha256": "da1c9b87b3d4b2b8a8717e2f476f6a4a2e3d2adeaaa0ad693127d7644612cba8"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-results.json": {
+      "bytes": 14756,
+      "sha256": "57f778f0a2459f850a5eccb2a566d05237ea0bfb56ba28661f4b580afeecafb8"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-raw.jsonl": {
+      "bytes": 37539,
+      "sha256": "2194c267bca04bda5ce2da19472aa42dc21aece6ae061eed08b9fddf38f6a913"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\frozen30-console.log": {
+      "bytes": 10177,
+      "sha256": "11e98c9db1c7ced4ebc421f5efb60aad3eed136ed9b32f25ceab4b9a9044688c"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-results.json": {
+      "bytes": 26620,
+      "sha256": "f9ce635963ab4a873a8cdec3f17cc5229843439470105516f11d83195c06f772"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-raw.jsonl": {
+      "bytes": 79637,
+      "sha256": "23d5ac98e33a997c847d5d2a3a81b01e3871ecf0dd12d24e19c36d7192b908b3"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\development-v2-console.log": {
+      "bytes": 17734,
+      "sha256": "34d3185ed85edd7d9fbdad5fbe6ade84331d3d994e1b6db41ffdf8a9d6069735"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-results.json": {
+      "bytes": 24788,
+      "sha256": "11bd0eb9decec2546953dbe97c440c8a1caddcfe8699ffefc8b9d35dae163366"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-raw.jsonl": {
+      "bytes": 187362,
+      "sha256": "b0128471c2002c68105039301ca47f71409d2d47401aae6864ea5e4f6d412c06"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker53-console.log": {
+      "bytes": 70,
+      "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-results.json": {
+      "bytes": 16635,
+      "sha256": "4c2a894e78045dd95e43dff3a9bccfa9570ad44e91ef8e1937c767602a5b953a"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-raw.jsonl": {
+      "bytes": 125936,
+      "sha256": "d6ea2025030d4a8eef6d4a5247bc6582852ec6940091d99da659b578c5d3978a"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\root35-console.log": {
+      "bytes": 70,
+      "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-results.json": {
+      "bytes": 26599,
+      "sha256": "4813103f0ef1478c95613e26a49c0a7e0155023630b39cb5bfc2e4bc3f01fdb7"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-raw.jsonl": {
+      "bytes": 226729,
+      "sha256": "c44bfe1b4c2767f61cd53eed51065c139cf7e11c50ebfe82516e0fdb116a07ff"
+    },
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev12\\worker58-console.log": {
+      "bytes": 70,
+      "sha256": "eac9ce0837e18edc41a0f072ca7c1b5f03b42e23bc19f953b83476bbd9b76e70"
+    }
+  }
+}

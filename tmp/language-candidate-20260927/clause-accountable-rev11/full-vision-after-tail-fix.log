@@ -1,0 +1,28 @@
+.......................................................................................................s.........s..ss...s.........................................................................................E.............
+======================================================================
+ERROR: test_reject_rebinding_and_cross_origin_controls (test_server.LocalServerTests.test_reject_rebinding_and_cross_origin_controls)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\zvent\Downloads\B.G.D\tests\vision\test_server.py", line 41, in test_reject_rebinding_and_cross_origin_controls
+    self.assertEqual(self.request('POST', '/clear', {})[0], 403)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zvent\Downloads\B.G.D\tests\vision\test_server.py", line 34, in request
+    response = connection.getresponse()
+  File "C:\Users\zvent\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1450, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\zvent\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\zvent\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\zvent\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+----------------------------------------------------------------------
+Ran 225 tests in 8.016s
+
+FAILED (errors=1, skipped=5)

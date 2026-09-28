@@ -1,0 +1,281 @@
+{
+  "trial_id": "clause-accountable-rev13-preselection",
+  "trial_date": "2026-09-27",
+  "status": "frozen-before-inference",
+  "inference_performed": false,
+  "files": {
+    "bgd_vision/conversation.py": {
+      "bytes": 83684,
+      "sha256": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2"
+    },
+    "bgd_vision/commands.py": {
+      "bytes": 3519,
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1"
+    },
+    "bgd_vision/evaluate_language.py": {
+      "bytes": 2515,
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066"
+    },
+    "tests/vision/test_conversation.py": {
+      "bytes": 113514,
+      "sha256": "9721cb68a27fe002a3e64739862c264f33a96ce1c8e000c4ef29f9a10fc90468"
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "bytes": 4628,
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b"
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "bytes": 9345,
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299"
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "bytes": 7144,
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33"
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "bytes": 3013027808,
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983"
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "bytes": 9216,
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/evaluate_rev13.py": {
+      "bytes": 15771,
+      "sha256": "16541cf2e77397c815d43ac94ea10960e0381c7b05804f9c053077bd0dc01850"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/prepare_rev13.py": {
+      "bytes": 11571,
+      "sha256": "5c9a9e5f0471044307fe61fcbc0b5722055881dc585a783b0042313c75f758e3"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/start_server.py": {
+      "bytes": 2194,
+      "sha256": "e773b012414f45597bb783b387ea5f1b2a06603b9427ab4cae6ec948f6c238e3"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/stop_server.ps1": {
+      "bytes": 1318,
+      "sha256": "f33e4f06b6a2f9217b6343fbe1bb669dd6702e1f6b0709c80a088bc7cb73cdb8"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/prompt-baseline.txt": {
+      "bytes": 2813,
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/prompt-candidate.txt": {
+      "bytes": 3462,
+      "sha256": "55d74782d9d04bedbb33915738c3f52cb2243952fbabc800840f0ba09782b566"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/prompt-delta.md": {
+      "bytes": 857,
+      "sha256": "7c238200cb8991b77af594dde07552cd79433aa7d6a195db42d571452967678a"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/schema.json": {
+      "bytes": 1016,
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/settings.json": {
+      "bytes": 1110,
+      "sha256": "d919c2dffe2462f1f69cd03e61025be58db3890fc44843a419e96e61bfc1f852"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/ab-selection-rule.md": {
+      "bytes": 865,
+      "sha256": "47b2b61f2943dcadbf6a87faf15568cf971ad56e97ca23ba27653b8eb9810797"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/worker53-open.json": {
+      "bytes": 9044,
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/root35-open.json": {
+      "bytes": 5888,
+      "sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/open-development-rev12.json": {
+      "bytes": 10772,
+      "sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/root38-open.json": {
+      "bytes": 6692,
+      "sha256": "c65412c1a277817e06f120f773283384ba40be5ede601a3affa74f3fc481acdb"
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/worker-open-rev13.json": {
+      "bytes": 13586,
+      "sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2"
+    }
+  },
+  "prompt_variants": {
+    "prompt-baseline.txt": {
+      "bytes": 2813,
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117"
+    },
+    "prompt-candidate.txt": {
+      "bytes": 3462,
+      "sha256": "55d74782d9d04bedbb33915738c3f52cb2243952fbabc800840f0ba09782b566"
+    }
+  },
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "upstream_model_files": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_bytes": 18551534,
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "arguments": "-m C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "process_id": 29144,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "server_stdout": "tmp/language-candidate-20260926/qwen35-server.stdout.log",
+    "server_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server_stderr": "tmp/language-candidate-20260926/qwen35-server.stderr.log",
+    "server_stderr_sha256": "44aebdc1463ab624e760325d556410b80a716200e406f8120e620c1c9d3c4ce0",
+    "host": "127.0.0.1",
+    "port": 8084,
+    "threads": 2,
+    "threads_batch": 2,
+    "context_tokens": 2048,
+    "parallel_slots": 1,
+    "flags": [
+      "--jinja",
+      "--no-webui"
+    ]
+  },
+  "sampling": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "presence_penalty": 1.5,
+    "max_tokens": 300,
+    "stream": false,
+    "seed": 42,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "timeout_seconds": 30
+  },
+  "ab_fixture": {
+    "path": "tmp/language-candidate-20260927/clause-accountable-rev13/worker-open-rev13.json",
+    "sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+    "cases": 48,
+    "critical": 16,
+    "ordinary": 32,
+    "prompt_focus_location_status": 18,
+    "exact_overlap_with_prior_open_corpora": [],
+    "static_route_counts": {
+      "policy_prepass": 14,
+      "source_fast_path": 8,
+      "model_fallback": 26
+    },
+    "ordinary_model_fallback_cases": 26,
+    "static_routes_by_case": {
+      "crit-01": "policy_prepass",
+      "crit-02": "policy_prepass",
+      "crit-03": "policy_prepass",
+      "crit-04": "policy_prepass",
+      "crit-05": "policy_prepass",
+      "crit-06": "source_fast_path",
+      "crit-07": "policy_prepass",
+      "crit-08": "policy_prepass",
+      "crit-09": "policy_prepass",
+      "crit-10": "policy_prepass",
+      "crit-11": "policy_prepass",
+      "crit-12": "policy_prepass",
+      "crit-13": "policy_prepass",
+      "crit-14": "source_fast_path",
+      "crit-15": "policy_prepass",
+      "crit-16": "policy_prepass",
+      "ord-01": "model_fallback",
+      "ord-02": "model_fallback",
+      "ord-03": "model_fallback",
+      "ord-04": "model_fallback",
+      "ord-05": "model_fallback",
+      "ord-06": "model_fallback",
+      "ord-07": "model_fallback",
+      "ord-08": "model_fallback",
+      "ord-09": "model_fallback",
+      "ord-10": "model_fallback",
+      "ord-11": "model_fallback",
+      "ord-12": "model_fallback",
+      "ord-13": "model_fallback",
+      "ord-14": "model_fallback",
+      "ord-15": "model_fallback",
+      "ord-16": "model_fallback",
+      "ord-17": "model_fallback",
+      "ord-18": "model_fallback",
+      "ord-19": "model_fallback",
+      "ord-20": "model_fallback",
+      "ord-21": "model_fallback",
+      "ord-22": "model_fallback",
+      "ord-23": "model_fallback",
+      "ord-24": "model_fallback",
+      "ord-25": "model_fallback",
+      "ord-26": "model_fallback",
+      "ord-27": "source_fast_path",
+      "ord-28": "source_fast_path",
+      "ord-29": "source_fast_path",
+      "ord-30": "source_fast_path",
+      "ord-31": "source_fast_path",
+      "ord-32": "source_fast_path"
+    }
+  },
+  "corpora": {
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "cases": 30
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "cases": 58
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/worker53-open.json": {
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+      "cases": 53
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/root35-open.json": {
+      "sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d",
+      "cases": 35
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/open-development-rev12.json": {
+      "sha256": "2787d20b6381cfa79dd122567863be84d6c3f1753f94f5171cdfe4730d5fc504",
+      "cases": 58
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/root38-open.json": {
+      "sha256": "c65412c1a277817e06f120f773283384ba40be5ede601a3affa74f3fc481acdb",
+      "cases": 38
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev13/worker-open-rev13.json": {
+      "sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+      "cases": 48
+    }
+  },
+  "selection_rule": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-selection-rule.md"
+}

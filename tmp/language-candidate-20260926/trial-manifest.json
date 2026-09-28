@@ -1,0 +1,104 @@
+{
+  "trial": "PC text interpretation trial for Qwen3-4B-Instruct-2507",
+  "date": "2026-09-26 local",
+  "scope": "Offline text-only frozen30 evaluation on the Windows development PC; no Pi, camera service, UI, or physical/flight controls involved.",
+  "candidate": {
+    "repository": "bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "ae44f08e1392f39c0e474af10c3ff8355c8b6688",
+    "file": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "bytes": 2497280736,
+    "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+    "local_sha256_matches_hub_metadata": true,
+    "license": "Apache-2.0 from the upstream model; the pinned GGUF repository metadata identifies the source but its cardData license field is empty.",
+    "metadata_source": "https://huggingface.co/api/models/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF?blobs=true"
+  },
+  "upstream": {
+    "repository": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "license": "Apache-2.0",
+    "weight_shards_from_hub_metadata": [
+      {
+        "file": "model-00001-of-00003.safetensors",
+        "bytes": 3957900840,
+        "sha256": "75311d91bb08cf0b882913da464a1e722a31fb44db35208663487efb7a3d8ed6"
+      },
+      {
+        "file": "model-00002-of-00003.safetensors",
+        "bytes": 3987450520,
+        "sha256": "0b48adbb1f60e901153d91907ba11ce63bd4b8b584482e730f48808d055dfba1"
+      },
+      {
+        "file": "model-00003-of-00003.safetensors",
+        "bytes": 99630640,
+        "sha256": "7dd39ccca5e4de123c74c14af44c9bf2eb75df33b4614382af0134528e060d5d"
+      }
+    ],
+    "model_card": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507"
+  },
+  "quantization": {
+    "format": "Q4_K_M",
+    "quantized_by": "bartowski",
+    "quantizer": "llama.cpp release b6096",
+    "method_note": "Pinned conversion card says the quants use an importance matrix and names the upstream Qwen model.",
+    "card_at_candidate_revision": "https://huggingface.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF/blob/ae44f08e1392f39c0e474af10c3ff8355c8b6688/README.md"
+  },
+  "chat_template": {
+    "runtime_uses_embedded_gguf_template": true,
+    "llama_cpp_jinja_enabled": true,
+    "conversion_card_format": "<|im_start|>system\\n{system_prompt}<|im_end|>\\n<|im_start|>user\\n{prompt}<|im_end|>\\n<|im_start|>assistant",
+    "official_upstream_mode": "Instruct-2507 is non-thinking only; the upstream card says enable_thinking=False is no longer required.",
+    "request_parameter_retained_from_existing_client": "chat_template_kwargs.enable_thinking=false"
+  },
+  "runtime": {
+    "source": "Existing verified llama.cpp Windows CPU x64 archive; no runtime installed or rebuilt.",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "server_binary": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "server_binary_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "server_args": "--host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "load_warning": "llama.cpp logged that GGUF token ID 128247 ('</s>') was not marked as a control token; model load and all 30 requests completed."
+  },
+  "evaluation": {
+    "command": "python -m bgd_vision.evaluate_language --timeout 30 --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260926/frozen30-results.json",
+    "stdout_capture": "tmp/language-candidate-20260926/frozen30-stdout.log",
+    "raw_results": "tmp/language-candidate-20260926/frozen30-results.json",
+    "raw_results_sha256": "2d98aa755a6a09272ebb2f4486b298b1c9cf4eadfe262869fc44e0b2bfb8d9ab",
+    "stdout_sha256": "c66d0069298ca862d2dc94247b8dd3a4f79bbf98b9fe68e4a02003482b68a0ba",
+    "corpus": "tests/vision/fixtures/conversation-eval.json",
+    "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "prompt_sha256": "ace48a1afd4dbadec78b8f43dc2d54b25ddb18267d33bdc87fd30b437664da3f",
+    "sampling": {
+      "seed": 42,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "timeout_seconds": 30
+    },
+    "result": {
+      "passed": 23,
+      "total": 30,
+      "cold_first_inference_ms": 14312.1,
+      "latency_median_ms": 3023.45,
+      "latency_p95_ms": 4013.4,
+      "timed_out": 0,
+      "strict_failures": ["c03", "a02", "n01", "n03", "u01", "u03", "i03"]
+    },
+    "all_outputs": {
+      "executable": false,
+      "authority": "DIAGNOSTIC_ONLY"
+    }
+  },
+  "changes": {
+    "source_or_evaluator_compatibility_changes": false,
+    "fixture_changes": false,
+    "production_or_pi_changes": false,
+    "heldout_fixture_read": false,
+    "server_pid": 35792,
+    "server_stopped": true,
+    "port_8081_listener_after_cleanup": false
+  }
+}

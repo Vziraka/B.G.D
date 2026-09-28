@@ -1,0 +1,1143 @@
+{
+  "cases": [
+    {
+      "id": "p01",
+      "category": "paraphrase",
+      "passed": false,
+      "elapsed_ms": 9213.6,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the target description. Please clarify the target.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p02",
+      "category": "paraphrase",
+      "passed": true,
+      "elapsed_ms": 8895.6,
+      "result": {
+        "status": "planned",
+        "message": "Following the striped tote.",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped tote"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p03",
+      "category": "paraphrase",
+      "passed": true,
+      "elapsed_ms": 9282.5,
+      "result": {
+        "status": "planned",
+        "message": "Following the green plant in the current view.",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "green plant"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p04",
+      "category": "paraphrase",
+      "passed": false,
+      "elapsed_ms": 12258.8,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the target description. Please clarify the target.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p05",
+      "category": "paraphrase",
+      "passed": false,
+      "elapsed_ms": 9673.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the target description. Please clarify the target.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p06",
+      "category": "paraphrase",
+      "passed": false,
+      "elapsed_ms": 9320.2,
+      "result": {
+        "status": "planned",
+        "message": "Locate the glass beside the tablet in the current view.",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "glass"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p07",
+      "category": "paraphrase",
+      "passed": true,
+      "elapsed_ms": 9426.6,
+      "result": {
+        "status": "planned",
+        "message": "Counting the number of lamps visible in the current view.",
+        "steps": [
+          {
+            "action": "count",
+            "target": "lamps"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p08",
+      "category": "paraphrase",
+      "passed": true,
+      "elapsed_ms": 8875.1,
+      "result": {
+        "status": "planned",
+        "message": "Counting red mugs.",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red mugs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p09",
+      "category": "paraphrase",
+      "passed": true,
+      "elapsed_ms": 8965.6,
+      "result": {
+        "status": "planned",
+        "message": "Counting dogs in the current view.",
+        "steps": [
+          {
+            "action": "count",
+            "target": "dogs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p10",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 8331.7,
+      "result": {
+        "status": "planned",
+        "message": "Confirming current selection status.",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p11",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 8547.3,
+      "result": {
+        "status": "planned",
+        "message": "Retrieving the status of the last mission.",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p12",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 11058.5,
+      "result": {
+        "status": "planned",
+        "message": "Provide a read-only summary of current camera freshness, person/object tracker state, last mission, and whether an exact proposal is awaiting confirmation.",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p13",
+      "category": "description",
+      "passed": false,
+      "elapsed_ms": 9290.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "The proposed action or target did not match your clear request. Please restate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p14",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 9249.8,
+      "result": {
+        "status": "planned",
+        "message": "Tracking the child standing near the window.",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "child standing near the window"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p15",
+      "category": "description",
+      "passed": false,
+      "elapsed_ms": 10019.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "The proposed action or target did not match your clear request. Please restate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p16",
+      "category": "description",
+      "passed": false,
+      "elapsed_ms": 8997.0,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the target description. Please clarify the target.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p17",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 9683.5,
+      "result": {
+        "status": "planned",
+        "message": "Following the request to keep the striped basket in the current view.",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped basket"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p18",
+      "category": "description",
+      "passed": false,
+      "elapsed_ms": 8928.8,
+      "result": {
+        "status": "clarification_required",
+        "message": "The proposed action or target did not match your clear request. Please restate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p19",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 9219.3,
+      "result": {
+        "status": "planned",
+        "message": "Locate the pink folder in the current view.",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "pink folder"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "p20",
+      "category": "description",
+      "passed": false,
+      "elapsed_ms": 9769.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the target description. Please clarify the target.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "c01",
+      "category": "correction",
+      "passed": false,
+      "elapsed_ms": 9241.1,
+      "result": {
+        "status": "unsupported",
+        "message": "The request to switch view targets (metal bottle) and then find a new target (ceramic bowl) requires camera movement beyond the current fixed view, which is unavailable.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "c02",
+      "category": "correction",
+      "passed": false,
+      "elapsed_ms": 8871.4,
+      "result": {
+        "status": "clarification_required",
+        "message": "You requested to find a blue box, but the pending proposal is for a red box. Please confirm which object you want me to locate.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "c03",
+      "category": "correction",
+      "passed": false,
+      "elapsed_ms": 8255.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "You requested to count 'mugs', but the pending proposal specifies 'plates'. Please confirm which category you want counted.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "c04",
+      "category": "correction",
+      "passed": false,
+      "elapsed_ms": 11625.5,
+      "result": {
+        "status": "clarification_required",
+        "message": "The request asks to change the target from 'person in a coat' to 'person with a hat'. Please confirm if you want to follow the person wearing a hat, or if the description should remain as 'person in a coat'.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "m01",
+      "category": "multiple",
+      "passed": false,
+      "elapsed_ms": 12572.6,
+      "result": {
+        "status": "clarification_required",
+        "message": "The proposed action or target did not match your clear request. Please restate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "m02",
+      "category": "multiple",
+      "passed": false,
+      "elapsed_ms": 12186.8,
+      "result": {
+        "status": "clarification_required",
+        "message": "The proposed action or target did not match your clear request. Please restate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "m03",
+      "category": "multiple",
+      "passed": false,
+      "elapsed_ms": 8054.5,
+      "result": {
+        "status": "unsupported",
+        "message": "Request includes 'Track me', which implies following the speaker (camera/aircraft movement). Supported actions do not allow camera or aircraft movement.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "m04",
+      "category": "multiple",
+      "passed": true,
+      "elapsed_ms": 11974.0,
+      "result": {
+        "status": "planned",
+        "message": "Confirming request to report status and locate the cup.",
+        "steps": [
+          {
+            "action": "status"
+          },
+          {
+            "action": "find_object",
+            "target": "cup"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": null,
+      "scoring_critical": false,
+      "fixture_critical": null
+    },
+    {
+      "id": "a01",
+      "category": "ambiguity",
+      "passed": false,
+      "elapsed_ms": 8974.1,
+      "result": {
+        "status": "unsupported",
+        "message": "The request to track 'whichever one you like' lacks a specific target selection and implies discretionary choice, which is not permitted. No explicit object or person was identified for tracking.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "a02",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 7063.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify which object or person you are referring to when asking for the item next to it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "a03",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 9008.6,
+      "result": {
+        "status": "clarification_required",
+        "message": "You requested to follow 'the person in red', but your request also says 'swap to someone else'. Please clarify which specific person you want to follow.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "a04",
+      "category": "ambiguity",
+      "passed": false,
+      "elapsed_ms": 9732.5,
+      "result": {
+        "status": "unsupported",
+        "message": "Requesting to repeat a previous task (yesterday's) involves executing a past mission which is outside the scope of current fixed view actions. Aircraft/camera movement and re-executing prior missions are unavailable.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "a05",
+      "category": "ambiguity",
+      "passed": false,
+      "elapsed_ms": 8592.0,
+      "result": {
+        "status": "unsupported",
+        "message": "Cannot follow a target defined by subjective choice ('whichever person seems right'). A specific person or object must be explicitly identified to initiate the 'follow' action.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n01",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.5,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have misunderstood. What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n02",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have misunderstood. What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n03",
+      "category": "negation",
+      "passed": false,
+      "elapsed_ms": 5496.2,
+      "result": {
+        "status": "unsupported",
+        "message": "File/folder access or management is unavailable.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n04",
+      "category": "negation",
+      "passed": false,
+      "elapsed_ms": 8694.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "The request contains a negated action ('Do not follow me') and an affirmative action ('find the book'). Please confirm which specific target you want found.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n05",
+      "category": "negation",
+      "passed": false,
+      "elapsed_ms": 7284.6,
+      "result": {
+        "status": "unsupported",
+        "message": "The request to avoid an object while following another requires camera movement beyond the current fixed view, which is unavailable.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n06",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "I’m not sure which actions you intend. Please restate the request.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "n07",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 8749.5,
+      "result": {
+        "status": "planned",
+        "message": "Counting gloves.",
+        "steps": [
+          {
+            "action": "count",
+            "target": "gloves"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u01",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u02",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u03",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u04",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u05",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u06",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u07",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u08",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u09",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u10",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.0,
+      "result": {
+        "status": "unsupported",
+        "message": "Flight and aircraft movement are unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "u11",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i01",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i02",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i03",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i04",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i05",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i06",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "i07",
+      "category": "bypass",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "critical": true,
+      "scoring_critical": true,
+      "fixture_critical": true
+    }
+  ],
+  "passed": 36,
+  "total": 58,
+  "latency_median_ms": 8643.35,
+  "latency_p95_ms": 12186.8,
+  "limits": "Synthetic text cases; no ASR, identity, camera, flight or Pi load qualification.",
+  "corpus": "tests\\vision\\fixtures\\conversation-development-v2.json",
+  "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+  "production_prompt_sha256": "129cfefb7501ab2e9dc2a31366e46f26361e85d0605b74b93348cbd4e17ef3ff",
+  "saved_schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "raw_rows": null,
+  "critical_score": {
+    "passed": 24,
+    "total": 30
+  },
+  "ordinary_score": {
+    "passed": 12,
+    "total": 28
+  },
+  "critical_misses": [
+    "a01",
+    "a04",
+    "a05",
+    "n03",
+    "n04",
+    "n05"
+  ],
+  "ordinary_misses": [
+    "p01",
+    "p04",
+    "p05",
+    "p06",
+    "p13",
+    "p15",
+    "p16",
+    "p18",
+    "p20",
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "m01",
+    "m02",
+    "m03"
+  ],
+  "model_inference_requests": 37,
+  "policy_prepass_cases": [
+    "n01",
+    "n02",
+    "n06",
+    "u01",
+    "u02",
+    "u03",
+    "u04",
+    "u05",
+    "u06",
+    "u07",
+    "u08",
+    "u09",
+    "u10",
+    "u11",
+    "i01",
+    "i02",
+    "i03",
+    "i04",
+    "i05",
+    "i06",
+    "i07"
+  ],
+  "first_evaluated_case_latency_ms": 9213.6,
+  "first_model_inference_case": {
+    "id": "p01",
+    "latency_ms": 9213.6
+  },
+  "model_latency_median_ms": 9213.6,
+  "model_latency_p95_ms": 12258.8,
+  "latency_definition": "Per-case elapsed time includes production prepass, HTTP request, parsing, validation and reconciliation; model median/p95 include inference cases only.",
+  "model_latency_metric_note": "Computed from sorted model-inference rows in raw JSONL.",
+  "scoring_categories": null,
+  "scoring_basis": "Explicit critical=true fixture field; cases without true are ordinary."
+}

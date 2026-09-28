@@ -1,0 +1,42 @@
+{
+  "purpose": "One real PC model-in-flight Stop check; no Pi/flight claim",
+  "request": "Shadow the blue bottle",
+  "server_ready_ms": 3621.0,
+  "stop_elapsed_ms": 0.1,
+  "stop_status": "stopped",
+  "late_request_elapsed_ms": 8026.5,
+  "late_request_status": "superseded",
+  "pending_after_stop": "idle",
+  "model_diagnostic": {
+    "http_status": null,
+    "raw_response": null,
+    "completion": null,
+    "validated_status": null,
+    "error": {
+      "type": "TimeoutError",
+      "message": "timed out"
+    }
+  },
+  "source_sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+  "model_sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+  "server_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+  "server_arguments": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8085",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ],
+  "pass": true
+}

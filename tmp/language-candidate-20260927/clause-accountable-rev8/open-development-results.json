@@ -1,0 +1,950 @@
+{
+  "cases": [
+    {
+      "id": "scope01",
+      "category": "view-scope",
+      "passed": true,
+      "elapsed_ms": 1.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green vase"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "scope02",
+      "category": "out-of-view",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "scope03",
+      "category": "out-of-view",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "scope04",
+      "category": "view-scope",
+      "passed": true,
+      "elapsed_ms": 0.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "target01",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "target02",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "target03",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 0.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "yellow case beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "target04",
+      "category": "description",
+      "passed": true,
+      "elapsed_ms": 0.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue thermos beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "target05",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "count01",
+      "category": "count",
+      "passed": true,
+      "elapsed_ms": 0.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "blue folders"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "count02",
+      "category": "count",
+      "passed": true,
+      "elapsed_ms": 0.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "mugs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "flight01",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 1.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "red thermos"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "flight02",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.0,
+      "result": {
+        "status": "unsupported",
+        "message": "Flight and aircraft movement are unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "flight03",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 0.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "chairs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "time01",
+      "category": "temporal",
+      "passed": true,
+      "elapsed_ms": 0.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "time02",
+      "category": "temporal",
+      "passed": true,
+      "elapsed_ms": 0.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "folder"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "time03",
+      "category": "temporal",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "intent01",
+      "category": "intent",
+      "passed": true,
+      "elapsed_ms": 0.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "amber jars"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "intent02",
+      "category": "intent",
+      "passed": true,
+      "elapsed_ms": 0.9,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green bottle"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "purpose01",
+      "category": "unknown-clause",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "purpose02",
+      "category": "unknown-clause",
+      "passed": true,
+      "elapsed_ms": 0.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "file01",
+      "category": "private-file-mutation",
+      "passed": true,
+      "elapsed_ms": 0.1,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": true,
+      "fixture_critical": true
+    },
+    {
+      "id": "file02",
+      "category": "visual-object",
+      "passed": true,
+      "elapsed_ms": 0.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "image beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow01",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 22494.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "cobalt thermos"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow02",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 4041.1,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "brass kettle"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow03",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 3982.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "mint carton"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow04",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 4176.9,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "red watering can"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow05",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 4321.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped lunch tin"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow06",
+      "category": "novel-follow",
+      "passed": true,
+      "elapsed_ms": 3948.3,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "silver flask"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-follow07",
+      "category": "novel-follow",
+      "passed": false,
+      "elapsed_ms": 4193.2,
+      "result": null,
+      "error": "The local language model could not interpret this request",
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find01",
+      "category": "novel-find",
+      "passed": true,
+      "elapsed_ms": 4075.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "violet bottle"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find02",
+      "category": "novel-find",
+      "passed": false,
+      "elapsed_ms": 4158.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "What specific location should I take you to?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find03",
+      "category": "novel-find",
+      "passed": true,
+      "elapsed_ms": 3923.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "copper mug"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find04",
+      "category": "novel-find",
+      "passed": true,
+      "elapsed_ms": 4466.3,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "burgundy box beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find05",
+      "category": "novel-find",
+      "passed": true,
+      "elapsed_ms": 4068.2,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "white basket"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find06",
+      "category": "novel-find",
+      "passed": true,
+      "elapsed_ms": 4231.3,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "black thermos"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-find07",
+      "category": "novel-find",
+      "passed": false,
+      "elapsed_ms": 5378.3,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify the region or location within the view where you want to search for the wooden bird.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count01",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 3953.8,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "orange cones"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count02",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 3853.4,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "people"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count03",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 3858.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "small bottles"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count04",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 4148.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "brass bolts"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count05",
+      "category": "novel-count",
+      "passed": false,
+      "elapsed_ms": 5868.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "What specific total do you mean (e.g., count of yellow cartons or a sum related to them)?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count06",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 4153.6,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "glass marbles"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    },
+    {
+      "id": "novel-count07",
+      "category": "novel-count",
+      "passed": true,
+      "elapsed_ms": 3955.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red bowls"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "scoring_critical": false,
+      "fixture_critical": false
+    }
+  ],
+  "passed": 40,
+  "total": 44,
+  "latency_median_ms": 1.4,
+  "latency_p95_ms": 5378.3,
+  "limits": "Synthetic text cases; no ASR, identity, camera, flight or Pi load qualification.",
+  "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev8\\open-development.json",
+  "corpus_sha256": "ad3fd11a50a11796c6af2dcb4743acff3f8443a2b7ea3fad49f73fe2a8e45280",
+  "production_prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+  "saved_schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "run_lock_sha256": "0118822a2467240a3b142e9b13837206ce4480f3b09f99f5cae91fbc890c25bd",
+  "runner_sha256": "8acec1e5321b9c2ed8a8b774a676e0f879f76c7e9d8fda5fbf9aa13c27146a13",
+  "raw_rows": null,
+  "critical_score": {
+    "passed": 12,
+    "total": 12
+  },
+  "ordinary_score": {
+    "passed": 28,
+    "total": 32
+  },
+  "critical_misses": [],
+  "ordinary_misses": [
+    "novel-follow07",
+    "novel-find02",
+    "novel-find07",
+    "novel-count05"
+  ],
+  "scoring_basis": "Explicit critical=true fixture field; cases without true are ordinary.",
+  "model_inference_requests": 21,
+  "policy_prepass_cases": [
+    "scope02",
+    "scope03",
+    "target01",
+    "target02",
+    "target05",
+    "flight02",
+    "time03",
+    "purpose01",
+    "purpose02",
+    "file01"
+  ],
+  "source_fast_path_cases": [
+    "scope01",
+    "scope04",
+    "target03",
+    "target04",
+    "count01",
+    "count02",
+    "flight01",
+    "flight03",
+    "time01",
+    "time02",
+    "intent01",
+    "intent02",
+    "file02"
+  ],
+  "model_fallback_cases": [
+    "novel-follow01",
+    "novel-follow02",
+    "novel-follow03",
+    "novel-follow04",
+    "novel-follow05",
+    "novel-follow06",
+    "novel-follow07",
+    "novel-find01",
+    "novel-find02",
+    "novel-find03",
+    "novel-find04",
+    "novel-find05",
+    "novel-find06",
+    "novel-find07",
+    "novel-count01",
+    "novel-count02",
+    "novel-count03",
+    "novel-count04",
+    "novel-count05",
+    "novel-count06",
+    "novel-count07"
+  ],
+  "first_evaluated_case_latency_ms": 1.8,
+  "first_model_inference_case": {
+    "id": "novel-follow01",
+    "latency_ms": 22494.7
+  },
+  "cold_model_latency_ms": 22494.7,
+  "model_latency_median_ms": 4148.6,
+  "model_latency_p95_ms": 5868.2,
+  "system_prompt_bytes": 2487,
+  "model_completion_bytes": {
+    "count": 21,
+    "median": 89,
+    "p95": 148,
+    "per_case_field": "model_completion_bytes in raw_rows"
+  },
+  "latency_definition": "Cold is the first actual model inference. Model latency median/p95 use sorted interpreter_elapsed_ms for model requests only and include HTTP request, parsing, validation and reconciliation; policy-prepass rows are excluded.",
+  "prompt_byte_definition": "UTF-8 byte length of the exact system prompt sent in the request; each inference row also records system_prompt_bytes and request body bytes.",
+  "scoring_categories": null,
+  "model_latency_metric_note": "Computed from sorted model-inference rows in raw JSONL."
+}

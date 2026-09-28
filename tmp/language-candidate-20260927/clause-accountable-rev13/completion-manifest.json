@@ -1,0 +1,267 @@
+{
+  "trial_id": "clause-accountable-rev13-completed",
+  "inference_performed": true,
+  "preselection_lock": {
+    "path": "tmp/language-candidate-20260927/clause-accountable-rev13/run-lock-preselection.json",
+    "bytes": 12148,
+    "sha256": "42de3e66629ca34c5e40661be0fbc94dd4887bdedb98743eeb36e0cd49aa43f4"
+  },
+  "production_source_sha256": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2",
+  "selected_prompt": "prompt-baseline.txt",
+  "selected_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "model_sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+  "runtime_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+  "selection_rule": {
+    "candidate_qualifies": false,
+    "candidate_critical_exact": true,
+    "candidate_focus_improved": true,
+    "candidate_total_ordinary_improved": true,
+    "baseline_correct_ordinary_regressions": [
+      "ord-11",
+      "ord-12",
+      "ord-13",
+      "ord-14",
+      "ord-15"
+    ],
+    "selected": "baseline"
+  },
+  "prompt_ab": {
+    "baseline": {
+      "total": 48,
+      "passed": 38,
+      "critical": {
+        "passed": 16,
+        "total": 16
+      },
+      "ordinary": {
+        "passed": 22,
+        "total": 32
+      },
+      "prompt_focus": {
+        "passed": 10,
+        "total": 18,
+        "misses": [
+          "ord-01",
+          "ord-02",
+          "ord-05",
+          "ord-06",
+          "ord-08",
+          "ord-10",
+          "ord-16",
+          "ord-18"
+        ]
+      },
+      "misses": [
+        "ord-01",
+        "ord-02",
+        "ord-05",
+        "ord-06",
+        "ord-08",
+        "ord-10",
+        "ord-16",
+        "ord-18",
+        "ord-25",
+        "ord-26"
+      ],
+      "cold_ms": 25106.2,
+      "median_ms": 4267.25,
+      "p95_ms": 5149.2
+    },
+    "candidate": {
+      "total": 48,
+      "passed": 39,
+      "critical": {
+        "passed": 16,
+        "total": 16
+      },
+      "ordinary": {
+        "passed": 23,
+        "total": 32
+      },
+      "prompt_focus": {
+        "passed": 11,
+        "total": 18,
+        "misses": [
+          "ord-08",
+          "ord-11",
+          "ord-12",
+          "ord-13",
+          "ord-14",
+          "ord-15",
+          "ord-16"
+        ]
+      },
+      "misses": [
+        "ord-08",
+        "ord-11",
+        "ord-12",
+        "ord-13",
+        "ord-14",
+        "ord-15",
+        "ord-16",
+        "ord-25",
+        "ord-26"
+      ],
+      "cold_ms": 25403.5,
+      "median_ms": 4278.35,
+      "p95_ms": 4671.2
+    }
+  },
+  "selected_profile_runs": {
+    "old30": {
+      "passed": 30,
+      "total": 30,
+      "critical": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary": {
+        "passed": 13,
+        "total": 13
+      },
+      "misses": [],
+      "model_calls": 1,
+      "first_model_latency_ms": 23788.0,
+      "note": "The first actual model request on this server; it includes cold model startup."
+    },
+    "development_v2": {
+      "passed": 58,
+      "total": 58,
+      "critical": {
+        "passed": 30,
+        "total": 30
+      },
+      "ordinary": {
+        "passed": 28,
+        "total": 28
+      },
+      "misses": [],
+      "model_calls": 3,
+      "first_model_latency_ms": 3710.3,
+      "median_ms": 3710.3,
+      "p95_ms": 5092.5,
+      "note": "Same server after old30 warmed the model; this is first-request-in-corpus latency, not a cold start."
+    }
+  },
+  "server_cleanup": {
+    "pid": 23628,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "remaining_listener_addresses": []
+  },
+  "other_prior_corpora": "Not inferred; verify-only route counts were 18, 13, 23 and 11 model fallbacks for worker53, root35, worker58 and root38 respectively, so these were not treated as fast follow-up runs.",
+  "evidence_files": [
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-results.json",
+      "bytes": 22999,
+      "sha256": "cd4d7b1e65e6a1bcae574c5956671b02f5547b5b0bdd2c65f6d4f511c16a2e0e"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-raw.jsonl",
+      "bytes": 231524,
+      "sha256": "1869965bc574225b646906cf85a22863d9c519dee7bab919b982f2d62ed6c781"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-console.log",
+      "bytes": 15773,
+      "sha256": "ad2b35eacdd977e6f37fcdc23d2fd49a8424ccd036a7c7c2e26d941024c308cd"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-candidate-results.json",
+      "bytes": 22936,
+      "sha256": "3589f8bb0a1b7127330a7259dbfaa6a4d30aad71397fe0cc75752b67b54e09bd"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-candidate-raw.jsonl",
+      "bytes": 246486,
+      "sha256": "307f4c94225d5c8067ac8c55ec38073d76dbc4b73c0f76d74a7191bdf8d40c7d"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-candidate-console.log",
+      "bytes": 15663,
+      "sha256": "3fcb0db8a67d1cfefbc6c37c621e97635f2c4a71c40854e275293283ffd0d754"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-results.json",
+      "bytes": 14756,
+      "sha256": "397fa077e1d649b69b696bd241a3f1d5670d21b4f791eef97509d7d78dcc8ed2"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-raw.jsonl",
+      "bytes": 37533,
+      "sha256": "5721a9ca691b56b7dc593355ad8dd5d25643e64bfbb825fcfbc202e3466c6976"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-console.log",
+      "bytes": 10177,
+      "sha256": "6a6e20d42acc55dff573874858ed2a3034c0dd5cc5b7aa944322e20544e47115"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-results.json",
+      "bytes": 26619,
+      "sha256": "ae7d0550a39607c33db6fe2ee596c6895aae31315104fa20ebf47405d7293f1c"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-raw.jsonl",
+      "bytes": 79671,
+      "sha256": "e6fb74461b15a501f1906ea25756bafc9d98186427587d901c6bc8cfc98a8bd5"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-console.log",
+      "bytes": 17733,
+      "sha256": "e57ef49d6819f573394105f3c2953733c78b534514930bc3b0662a243bdd1385"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-ab-baseline-server-ready.json",
+      "bytes": 405,
+      "sha256": "b0281fa2a8dc995fdc0fd5e1cc3137807cb6eaab3f7542288057d37606d83357"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-ab-baseline-server.pid",
+      "bytes": 5,
+      "sha256": "0a0ce3fd8c4da2691b7cb8e979b4a89346bf20204b12f3f227c9293454671508"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-ab-baseline-server.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-ab-baseline-server.stderr.log",
+      "bytes": 45674,
+      "sha256": "5e92f9149b5e1d9130735c5a21976e4803921ac987f7ec29257e37a8c70f2e0c"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-ab-server-stop.json",
+      "bytes": 130,
+      "sha256": "8ec567fae24973124b0fc93362941a4904f07cb2c3f5064de7cb43d5087aa914"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-selected-server-ready.json",
+      "bytes": 405,
+      "sha256": "fe40b42f067fe7cfea5b2fd1556f2b53a74bac716265e599b828ce2a780b23bd"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-selected-server.pid",
+      "bytes": 5,
+      "sha256": "40bc328c2125ed8d4b7a64e42bb80dbc1a757392ade59a0f2af4b43d140b4a90"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-selected-server.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-selected-server.stderr.log",
+      "bytes": 6014,
+      "sha256": "862d52aecae960089d73d106973bbe1bf479b1b4dad44324275e67a27b56f202"
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev13/rev13-selected-server-stop.json",
+      "bytes": 130,
+      "sha256": "ae1dd7b5b7b59c1e51413517f42d82a7995449d6c8fb777586c50a2aaa46012f"
+    }
+  ],
+  "sealed_or_independent_probe_used": false
+}

@@ -1,0 +1,8 @@
+{
+  "sample_utc": "2026-09-27T12:56:17.8978154Z",
+  "pid": 44488,
+  "working_set_bytes": 4148527104,
+  "peak_working_set_bytes": 4189589504,
+  "private_bytes": 924106752,
+  "cpu_seconds": 171.375
+}

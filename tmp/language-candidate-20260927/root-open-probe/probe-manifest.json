@@ -1,0 +1,37 @@
+{
+  "purpose": "Additional open development probe, not sealed qualification",
+  "server_ready_ms": 4106.9,
+  "evaluation_exit_code": 1,
+  "server_port": 8082,
+  "server_arguments": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8082",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ],
+  "inputs": {
+    "tests\\vision\\fixtures\\conversation-open-probe-20260927.json": "b741f7038cb9de1dcfd73375576eb928ea6d76b89753f2d88154d04938992e9c",
+    "tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "tmp\\language-candidate-20260927\\clause-accountable-rev5\\conversation-revision5.py": "246859d9560658d3355b61c6b25b483dd8734e808a72a2124ea5655267e9fbd2",
+    "tmp\\language-candidate-20260927\\clause-accountable-rev5\\run-lock.json": "f2df5654feefd6daf55231f8d562d970716e7badad9b8f8c91d4b91ea516387c",
+    "tmp\\language-candidate-20260927\\root-open-probe\\evaluate.py": "8c5c09b4705dd0a9e4ee0e0500435dcd2e1acf93c16b68cc5c6132b7002bfda3"
+  },
+  "outputs": {
+    "open-probe-results.json": "042856ff0fab9f76df772ec8640a4776e923c6c32eabc3c404c44ce624bdb759",
+    "open-probe-raw.jsonl": "7be60adedc67021d6480acfaf335fd2698afdd86b5dc27f05f3f8711f1314332"
+  },
+  "server_stopped": true
+}

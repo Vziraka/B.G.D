@@ -1,0 +1,18 @@
+{
+  "source_sha256": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2",
+  "corpus_sha256": {
+    "tests\\vision\\fixtures\\conversation-eval.json": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "tests\\vision\\fixtures\\conversation-development-v2.json": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299"
+  },
+  "rounds": 100,
+  "case_count": 88,
+  "call_count": 8800,
+  "route_counts": {
+    "policy": 4100,
+    "source": 4300,
+    "model": 400
+  },
+  "median_ms": 0.18135,
+  "p95_ms": 0.9657,
+  "p99_ms": 1.1796
+}

@@ -1,0 +1,12 @@
+Conversation UI: permission cleanup, superseded audio, exact confirmation, response ordering, manual intent retirement, safe text and face-overlay races passed.
+✔ tests\vision\test_conversation_ui.cjs (127.5242ms)
+{"normal":{"frames":150,"strokes":149,"fps":30,"display":"30.0 fps","state":"Tracking"},"stale":{"frames":150,"strokes":0,"fps":30,"display":"30.0 fps","state":"Lost"},"interrupted":{"frames":1,"strokes":1,"fps":null,"display":"—","state":"Connection interrupted"}}
+✔ tests\vision\test_preview_loop.cjs (115.8872ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.3251

@@ -1,0 +1,36 @@
+{
+  "server_ready_ms": 4121.2,
+  "server_stopped": true,
+  "server_arguments": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8083",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ],
+  "inputs": {
+    "tmp\\language-candidate-20260927\\root-open-probe-rev10\\cases.json": "ab39951ed8161ac8e70cc74a77c2982661b6d97df87a0086c39289f821d406d3",
+    "tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "bgd_vision\\conversation.py": "3e672a107fecf46e3460ab68c19c83a50836dbaddc38cf96ec366c593b178b81",
+    "tmp\\language-candidate-20260927\\root-open-probe-rev10\\preflight.json": "cec7f432d5fe4d6afe9e8def0bb19745726e1aac58a154996b62a700a3ddd827",
+    "tmp\\language-candidate-20260927\\root-open-probe-rev10\\run_probe.py": "5888a34c2f46a03abf536e231120d553e3b0bef33f86bbe717a050ea331a6a8a"
+  },
+  "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "9de5c144f1c14a30520e6c9b37f61cd3555db1a0dfa9bae4ded9e2f41f4b692c",
+  "outputs": {
+    "probe-results.json": "20a039a7dac218c94220ea36048e06723168c8039310eacf26c50737f5cae488",
+    "probe-raw.jsonl": "6e09ae79adb85167912019b15554812564416a489cb80e3925ef3335d7b11d31"
+  }
+}

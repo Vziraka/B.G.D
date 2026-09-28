@@ -1,0 +1,75 @@
+{
+  "trial": "One bounded candidate-profile revision for Qwen3-4B-Instruct-2507",
+  "date": "2026-09-26 local",
+  "scope": "PC text-only evaluation on the same frozen30 development corpus. No heldout fixture, Pi, production service, UI, or physical/flight control was read or changed.",
+  "candidate": {
+    "repository": "bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "ae44f08e1392f39c0e474af10c3ff8355c8b6688",
+    "file": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "bytes": 2497280736,
+    "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+    "upstream_repository": "Qwen/Qwen3-4B-Instruct-2507",
+    "upstream_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "upstream_license": "Apache-2.0",
+    "quantization": "Q4_K_M; bartowski conversion using llama.cpp b6096"
+  },
+  "runtime": {
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "server_binary": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "server_binary_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "server_args": "--host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "api": "http://127.0.0.1:8081/v1/chat/completions",
+    "hidden_background_process": true,
+    "server_pid": 36472,
+    "server_stopped": true,
+    "listener_8081_after_cleanup": false,
+    "load_warning": "The same GGUF token-type warning appeared for token ID 128247 ('</s>'); the model loaded and served all requests."
+  },
+  "profile_revision": {
+    "script": "tmp/language-candidate-20260926/revision1-evaluate.py",
+    "script_sha256": "c9ea142bcf5746f29715a96103be997c161e1144bf2dec004ab0eb13d76c37ef",
+    "prompt_file": "tmp/language-candidate-20260926/revision1-prompt.txt",
+    "prompt_sha256_utf8_exact_payload": "cf2339e51d8f425d1f89ad09cd56d4b2191e2412ed97574cc2b5c5b4051d1cf3",
+    "schema_source": "bgd_vision.conversation.SEMANTIC_SCHEMA",
+    "schema_sha256_canonical_sorted_compact_json": "e008e33c6fffb2136acbc5130b66ca963ffa627eda00525bc58793c3e3b5326d",
+    "removed_legacy_nonthinking_controls": [
+      "SYSTEM_PROMPT /no_think suffix",
+      "chat_template_kwargs.enable_thinking=false"
+    ],
+    "only_http_payload_differences_from_baseline": [
+      "system message content replaced with the revision1 candidate prompt",
+      "chat_template_kwargs.enable_thinking=false removed"
+    ],
+    "payload_controls_kept": [
+      "same user content serialization and context",
+      "same imported SEMANTIC_SCHEMA and strict JSON response format",
+      "temperature 0.7, top_p 0.8, top_k 20, min_p 0, presence_penalty 1.5",
+      "max_tokens 300, stream false, seed 42",
+      "same local endpoint, timeout, model, runtime, threads, and context"
+    ]
+  },
+  "evaluation": {
+    "command": "python tmp/language-candidate-20260926/revision1-evaluate.py --timeout 30 --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260926/revision1-results.json",
+    "stdout_capture": "tmp/language-candidate-20260926/revision1-stdout.log",
+    "raw_results": "tmp/language-candidate-20260926/revision1-results.json",
+    "raw_results_sha256": "c576bd7273bbee767d55132d83ffed301a5033086837f17907f1f67510b79b86",
+    "stdout_sha256": "192c980fa3a9d3b59e0551a36afde8864070219ea6cd7e351ff60b12119ac466",
+    "corpus": "tests/vision/fixtures/conversation-eval.json",
+    "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "passed": 20,
+    "total": 30,
+    "strict_failures": ["p01", "p02", "p05", "p06", "d01", "d02", "c01", "c02", "c03", "n04"],
+    "timeouts": 0,
+    "cold_first_inference_ms": 22997.6,
+    "latency_median_ms": 7204.25,
+    "latency_p95_ms": 10681.2
+  },
+  "result": "Not accepted for advancing the profile. No further tuning was performed.",
+  "changes": {
+    "production_source_or_evaluator_changed": false,
+    "fixture_changed": false,
+    "heldout_fixture_accessed": false,
+    "model_server_left_running": false,
+    "commit_or_push": false
+  }
+}

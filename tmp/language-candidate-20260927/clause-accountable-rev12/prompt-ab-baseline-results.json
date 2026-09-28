@@ -1,0 +1,252 @@
+{
+  "cases": [
+    {
+      "id": "ab-location-01",
+      "category": "find",
+      "passed": false,
+      "elapsed_ms": 27668.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify a bounding box (e.g., 'top-left corner', 'center') or a region descriptor to identify which part of the image.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-location-02",
+      "category": "find",
+      "passed": false,
+      "elapsed_ms": 4752.9,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify which color or style of shelf you are referring to.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-location-03",
+      "category": "find",
+      "passed": false,
+      "elapsed_ms": 6024.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Which specific region (e.g., top-left, bottom-right) should be scanned for the small copper kettle?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-location-04",
+      "category": "find",
+      "passed": true,
+      "elapsed_ms": 4436.5,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "ivory vase"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-location-05",
+      "category": "find",
+      "passed": false,
+      "elapsed_ms": 6372.1,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please specify which category of section you are referring to (e.g., folder, document, bin) so I can locate it.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-status-01",
+      "category": "status",
+      "passed": false,
+      "elapsed_ms": 3957.2,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please name the visible target to find or follow.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-status-02",
+      "category": "status",
+      "passed": true,
+      "elapsed_ms": 3732.7,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-critical-01",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.5,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-critical-02",
+      "category": "unsupported",
+      "passed": true,
+      "elapsed_ms": 0.2,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-critical-03",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 1.7,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have misunderstood. What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-critical-04",
+      "category": "negation",
+      "passed": true,
+      "elapsed_ms": 4.0,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "yellow cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    },
+    {
+      "id": "ab-critical-05",
+      "category": "ambiguity",
+      "passed": true,
+      "elapsed_ms": 0.4,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null
+    }
+  ],
+  "passed": 7,
+  "total": 12,
+  "latency_median_ms": 3844.95,
+  "latency_p95_ms": 27668.7,
+  "limits": "Synthetic text cases; no ASR, identity, camera, flight or Pi load qualification.",
+  "corpus": "tmp\\language-candidate-20260927\\clause-accountable-rev12\\prompt-ab-rev12.json",
+  "corpus_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+  "production_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "prompt_variant": "prompt-baseline.txt",
+  "saved_schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "run_lock_sha256": "3fc7b1ebe34225846837b022e60845f006a61d5c5d1afd7d0b7356e7dcb2f6cc",
+  "runner_sha256": "e31e59e20eb61e2a7a37f74374e299f4494f819514f39b90b22813082e68a43e",
+  "raw_rows": null,
+  "critical_score": {
+    "passed": 5,
+    "total": 5
+  },
+  "ordinary_score": {
+    "passed": 2,
+    "total": 7
+  },
+  "critical_misses": [],
+  "ordinary_misses": [
+    "ab-location-01",
+    "ab-location-02",
+    "ab-location-03",
+    "ab-location-05",
+    "ab-status-01"
+  ],
+  "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+  "model_inference_requests": 7,
+  "policy_prepass_cases": [
+    "ab-critical-01",
+    "ab-critical-02",
+    "ab-critical-03",
+    "ab-critical-05"
+  ],
+  "source_fast_path_cases": [
+    "ab-critical-04"
+  ],
+  "model_fallback_cases": [
+    "ab-location-01",
+    "ab-location-02",
+    "ab-location-03",
+    "ab-location-04",
+    "ab-location-05",
+    "ab-status-01",
+    "ab-status-02"
+  ],
+  "first_evaluated_case_latency_ms": 27668.7,
+  "first_model_inference_case": {
+    "id": "ab-location-01",
+    "latency_ms": 27668.2
+  },
+  "cold_model_latency_ms": 27668.2,
+  "model_latency_median_ms": 4752.7,
+  "model_latency_p95_ms": 27668.2,
+  "system_prompt_bytes": 2813,
+  "model_completion_bytes": {
+    "count": 7,
+    "median": 125,
+    "p95": 184,
+    "per_case_field": "model_completion_bytes in raw_rows"
+  },
+  "latency_definition": "Cold is the first actual model inference. Model latency median/p95 use sorted interpreter_elapsed_ms for model requests only and include HTTP request, parsing, validation and reconciliation; policy-prepass rows are excluded.",
+  "prompt_byte_definition": "UTF-8 byte length of the exact system prompt sent in the request; each inference row also records system_prompt_bytes and request body bytes."
+}

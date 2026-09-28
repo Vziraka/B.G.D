@@ -1,0 +1,23 @@
+{
+  "corpus_sha256": "3bfd94400c5277bf60496f3bbb33dd6ce55e1288f850cf3f4bc626fc4c89a014",
+  "case_count": 38,
+  "route_counts": {
+    "policy": 13,
+    "source": 15,
+    "model": 10
+  },
+  "model_fallback_case_ids": [
+    "crit-12",
+    "ord-04",
+    "ord-05",
+    "ord-14",
+    "ord-15",
+    "ord-16",
+    "ord-17",
+    "ord-18",
+    "ord-19",
+    "ord-20"
+  ],
+  "deterministic_mismatch_case_ids": [],
+  "model_inference_performed": false
+}

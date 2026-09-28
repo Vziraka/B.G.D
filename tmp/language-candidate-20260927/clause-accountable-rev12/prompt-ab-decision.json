@@ -1,0 +1,31 @@
+{
+  "trial_id": "clause-accountable-rev12",
+  "ab_fixture": "prompt-ab-rev12.json",
+  "ab_fixture_sha256": "8b4e171abd52c2d9afc6030e90a5c1a4dcc9321463a1bbbd028b3993f0cbfd84",
+  "baseline_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "candidate_prompt_sha256": "fe67cf87851ba0b5b2a55dde89c9b7bef595840916ecf03a3d18f12f47a4e645",
+  "baseline": {
+    "critical": "5/5",
+    "ordinary": "2/7",
+    "location": "1/5",
+    "status": "1/2",
+    "ordinary_misses": ["ab-location-01", "ab-location-02", "ab-location-03", "ab-location-05", "ab-status-01"],
+    "cold_ms": 27668.2,
+    "median_model_ms": 4752.7,
+    "p95_model_ms": 27668.2
+  },
+  "candidate": {
+    "critical": "5/5",
+    "ordinary": "5/7",
+    "location": "4/5",
+    "status": "1/2",
+    "ordinary_misses": ["ab-location-02", "ab-status-02"],
+    "cold_ms": 28192.3,
+    "median_model_ms": 4448.7,
+    "p95_model_ms": 28192.3
+  },
+  "selection_rule": "ab-selection-rule.md",
+  "selected_prompt": "prompt-baseline.txt",
+  "decision": "Candidate rejected: despite improving from 2/7 to 5/7 ordinary, it regressed the baseline-correct status query ab-status-02 to unsupported. The predeclared rule forbids any baseline-correct ordinary regression. Candidate ab-location-02 also added an unrequested shelf to the target.",
+  "no_prompt_tuning_or_rerun": true
+}

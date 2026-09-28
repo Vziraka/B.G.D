@@ -1,0 +1,6 @@
+{
+  "case_count": 12,
+  "passed": 12,
+  "failed": [],
+  "matrix_path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\boundary-redesign-rev14\\partial-plan-matrix.jsonl"
+}

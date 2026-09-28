@@ -1,0 +1,393 @@
+{
+  "purpose": "No partial plan for a mixed supported/unavailable request",
+  "source_sha256": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2",
+  "cases": 64,
+  "passed": 64,
+  "failed": [],
+  "rows": [
+    {
+      "request": "Follow the blue bag and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Follow the blue bag and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the yellow cup and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the green boxes and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Watch the orange bottle and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Locate the striped tote and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Count the silver hooks and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Track the red notebook and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and save the camera feed",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and upload a photo",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and open the saved logs",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and use the terminal",
+      "status": "clarification_required",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and skip the confirmation card",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and launch the drone",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and scan inside the next room",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    },
+    {
+      "request": "Find the wooden bowl and send the image to my friend",
+      "status": "unsupported",
+      "proposal_id_present": false,
+      "pass": true
+    }
+  ]
+}

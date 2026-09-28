@@ -1,0 +1,1543 @@
+{
+  "model": "q4",
+  "purpose": "Same-source Q4_K_M versus Q6_K precision comparison on an already-open development corpus; never sealed qualification",
+  "total": 49,
+  "passed": 47,
+  "critical_total": 19,
+  "critical_passed": 19,
+  "ordinary_total": 30,
+  "ordinary_passed": 28,
+  "model_requests": 31,
+  "cold_model_ms": 25728.8,
+  "model_median_ms": 4193.1,
+  "model_p95_ms": 9726.5,
+  "server_ready_ms": 3628.3,
+  "misses": [
+    "d03",
+    "d05"
+  ],
+  "rows": [
+    {
+      "id": "f01",
+      "text": "Keep the green thermos under continuous observation",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "green thermos"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "green thermos"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 25728.8,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"green thermos\\\"}]}\"}}],\"created\":1790513529,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-ZlPaDMUR600Dfiwl1SWohR8GT1hsuvQv\",\"timings\":{\"cache_n\":0,\"prompt_n\":628,\"prompt_ms\":22957.972,\"prompt_per_token_ms\":36.55728025477707,\"prompt_per_second\":27.354332516826833,\"predicted_n\":22,\"predicted_ms\":2764.665,\"predicted_per_token_ms\":131.6507142857143,\"predicted_per_second\":7.595857002566314}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"green thermos\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f02",
+      "text": "Maintain visual attention on the copper kettle",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "copper kettle"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "copper kettle"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4180.1,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"copper kettle\\\"}]}\"}}],\"created\":1790513533,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-qzG2jWlth9uk1MuLFdX2OZtkhQ50W6HQ\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1403.028,\"prompt_per_token_ms\":43.844625,\"prompt_per_second\":22.807812816280215,\"predicted_n\":22,\"predicted_ms\":2747.705,\"predicted_per_token_ms\":130.84309523809523,\"predicted_per_second\":7.642741851836351}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"copper kettle\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f03",
+      "text": "Retain attention on the striped lunchbox",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "striped lunchbox"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped lunchbox"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4421.3,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"striped lunchbox\\\"}]}\"}}],\"created\":1790513538,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":23,\"prompt_tokens\":628,\"total_tokens\":651,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-Uqr0bd4ZUklGo9qWBtv0ZzIcxl76MK0L\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1488.98,\"prompt_per_token_ms\":46.530625,\"prompt_per_second\":21.49122217894129,\"predicted_n\":23,\"predicted_ms\":2903.287,\"predicted_per_token_ms\":131.9675909090909,\"predicted_per_second\":7.577618058428258}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"striped lunchbox\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f04",
+      "text": "Continue observing the yellow cup",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "yellow cup"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "yellow cup"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4009.3,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"yellow cup\\\"}]}\"}}],\"created\":1790513542,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":21,\"prompt_tokens\":625,\"total_tokens\":646,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-9e0y4fsjJk1YxOKHrlC8TOaR4pJ9T4OS\",\"timings\":{\"cache_n\":596,\"prompt_n\":29,\"prompt_ms\":1349.102,\"prompt_per_token_ms\":46.520758620689655,\"prompt_per_second\":21.495780155985237,\"predicted_n\":21,\"predicted_ms\":2654.498,\"predicted_per_token_ms\":132.7249,\"predicted_per_second\":7.53438126530892}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"yellow cup\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f05",
+      "text": "Stay visually locked on the blue suitcase",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "blue suitcase"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue suitcase"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4075.1,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"blue suitcase\\\"}]}\"}}],\"created\":1790513546,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":21,\"prompt_tokens\":627,\"total_tokens\":648,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-aIOgb7EjnvcICIdsYyB9jD54TxnafT6A\",\"timings\":{\"cache_n\":596,\"prompt_n\":31,\"prompt_ms\":1454.795,\"prompt_per_token_ms\":46.928870967741936,\"prompt_per_second\":21.308844201416694,\"predicted_n\":21,\"predicted_ms\":2615.061,\"predicted_per_token_ms\":130.75305,\"predicted_per_second\":7.64800515169627}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"blue suitcase\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f06",
+      "text": "Keep the spotted vase in your visual focus",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "spotted vase"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "spotted vase"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4175.5,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"spotted vase\\\"}]}\"}}],\"created\":1790513550,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-UWRbCxefqvb0HvDW4SjDAyq5onrEKQq8\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1423.462,\"prompt_per_token_ms\":44.4831875,\"prompt_per_second\":22.48040341083921,\"predicted_n\":22,\"predicted_ms\":2724.994,\"predicted_per_token_ms\":129.76161904761906,\"predicted_per_second\":7.706438986654648}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"spotted vase\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f07",
+      "text": "Maintain a steady gaze on the brass bell",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "brass bell"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "brass bell"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4273.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"brass bell\\\"}]}\"}}],\"created\":1790513554,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":629,\"total_tokens\":651,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-rYQSPjoTFMHwmAUPRJdEg9BalZyeRD0D\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1498.759,\"prompt_per_token_ms\":45.416939393939394,\"prompt_per_second\":22.018216404371884,\"predicted_n\":22,\"predicted_ms\":2744.091,\"predicted_per_token_ms\":130.671,\"predicted_per_second\":7.652807432406579}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"brass bell\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "f08",
+      "text": "Keep visual attention on the wooden bird",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "wooden bird"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "wooden bird"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4213.9,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"follow\\\",\\\"target\\\":\\\"wooden bird\\\"}]}\"}}],\"created\":1790513558,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":627,\"total_tokens\":649,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-oxQvzsLrZpJLJCMY5h0t5AWoN4tOzNfY\",\"timings\":{\"cache_n\":596,\"prompt_n\":31,\"prompt_ms\":1448.727,\"prompt_per_token_ms\":46.73312903225807,\"prompt_per_second\":21.39809639773401,\"predicted_n\":22,\"predicted_ms\":2759.225,\"predicted_per_token_ms\":131.39166666666665,\"predicted_per_second\":7.6108327519502765}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"follow\",\"target\":\"wooden bird\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "fn01",
+      "text": "Do not maintain visual attention on the green thermos",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 3009.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513561,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":12,\"prompt_tokens\":630,\"total_tokens\":642,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-tUQzbo36GvuHHAnyzxEJUbjC99bkhTK3\",\"timings\":{\"cache_n\":596,\"prompt_n\":34,\"prompt_ms\":1561.988,\"prompt_per_token_ms\":45.940823529411766,\"prompt_per_second\":21.76713265402807,\"predicted_n\":12,\"predicted_ms\":1441.907,\"predicted_per_token_ms\":131.08245454545454,\"predicted_per_second\":7.628786045147156}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    },
+    {
+      "id": "fn02",
+      "text": "Never continue observing the yellow cup",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "What would you like me to do?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 2861.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513564,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":12,\"prompt_tokens\":626,\"total_tokens\":638,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-o20CLKpdabJi2EDWG8hrvFb07hPnDLqP\",\"timings\":{\"cache_n\":596,\"prompt_n\":30,\"prompt_ms\":1407.601,\"prompt_per_token_ms\":46.920033333333336,\"prompt_per_second\":21.312857834002674,\"predicted_n\":12,\"predicted_ms\":1448.549,\"predicted_per_token_ms\":131.68627272727272,\"predicted_per_second\":7.593805939598867}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    },
+    {
+      "id": "d01",
+      "text": "Tell me the location of the brown camera case",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "brown camera case"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "brown camera case"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4468.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"brown camera case\\\"}]}\"}}],\"created\":1790513569,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":23,\"prompt_tokens\":629,\"total_tokens\":652,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-S8xD7oVpMov1sRSmB6gBn8LIfZiJBBfv\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1529.2,\"prompt_per_token_ms\":46.33939393939394,\"prompt_per_second\":21.579911064608947,\"predicted_n\":23,\"predicted_ms\":2907.865,\"predicted_per_token_ms\":132.1756818181818,\"predicted_per_second\":7.5656882283049605}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"brown camera case\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "d02",
+      "text": "Identify the position of the glass jar",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "glass jar"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "glass jar"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4193.1,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"glass jar\\\"}]}\"}}],\"created\":1790513573,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-PoM8Eihduc79oR9REGEHjEtv8M6hWtK3\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1451.853,\"prompt_per_token_ms\":45.37040625,\"prompt_per_second\":22.040798896306995,\"predicted_n\":22,\"predicted_ms\":2735.269,\"predicted_per_token_ms\":130.25090476190476,\"predicted_per_second\":7.677489855659535}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"glass jar\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "d03",
+      "text": "What place contains the red umbrella",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "red umbrella"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": false,
+      "result": {
+        "status": "clarification_required",
+        "message": "Do you mean which location in the scene contains the red umbrella? Please specify a visible area (e.g., 'the balcony', 'the garden').",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 7068.3,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"clarification_required\\\",\\\"message\\\":\\\"Do you mean which location in the scene contains the red umbrella? Please specify a visible area (e.g., 'the balcony', 'the garden').\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513580,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":44,\"prompt_tokens\":626,\"total_tokens\":670,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-6uG219GHBcg79MgRGSVUIFqQIeUXzxtU\",\"timings\":{\"cache_n\":596,\"prompt_n\":30,\"prompt_ms\":1381.998,\"prompt_per_token_ms\":46.0666,\"prompt_per_second\":21.707701458323385,\"predicted_n\":44,\"predicted_ms\":5656.751,\"predicted_per_token_ms\":131.5523488372093,\"predicted_per_second\":7.6015366417931425}}",
+        "completion": "{\"status\":\"clarification_required\",\"message\":\"Do you mean which location in the scene contains the red umbrella? Please specify a visible area (e.g., 'the balcony', 'the garden').\",\"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    },
+    {
+      "id": "d04",
+      "text": "Describe where the orange basket is",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "orange basket"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "orange basket"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4154.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"orange basket\\\"}]}\"}}],\"created\":1790513584,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":626,\"total_tokens\":648,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-ABW5b7yw71neGa9k7grxW7ESphi7Oj4h\",\"timings\":{\"cache_n\":596,\"prompt_n\":30,\"prompt_ms\":1361.128,\"prompt_per_token_ms\":45.37093333333333,\"prompt_per_second\":22.04054284387655,\"predicted_n\":22,\"predicted_ms\":2787.354,\"predicted_per_token_ms\":132.73114285714286,\"predicted_per_second\":7.534026894323435}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"orange basket\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "d05",
+      "text": "Which spot holds the purple thermos",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "purple thermos"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": false,
+      "result": {
+        "status": "clarification_required",
+        "message": "Clarify: are you looking for a specific location or object that resembles a 'spot'?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 5590.3,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"clarification_required\\\",\\\"message\\\":\\\"Clarify: are you looking for a specific location or object that resembles a 'spot'?\\\", \\\"steps\\\":[]}\"}}],\"created\":1790513590,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":33,\"prompt_tokens\":627,\"total_tokens\":660,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-KJbi6tzbKiXOpY6YYjTqekWTjQzBuRXf\",\"timings\":{\"cache_n\":596,\"prompt_n\":31,\"prompt_ms\":1384.798,\"prompt_per_token_ms\":44.67090322580645,\"prompt_per_second\":22.385936432606055,\"predicted_n\":33,\"predicted_ms\":4199.634,\"predicted_per_token_ms\":131.2385625,\"predicted_per_second\":7.619711622489008}}",
+        "completion": "{\"status\":\"clarification_required\",\"message\":\"Clarify: are you looking for a specific location or object that resembles a 'spot'?\", \"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    },
+    {
+      "id": "d06",
+      "text": "Name where the blue folder rests",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "blue folder"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "blue folder"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4126.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"blue folder\\\"}]}\"}}],\"created\":1790513594,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":626,\"total_tokens\":648,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-Mq8kSqU8mlsfFeZOrrFZDWvKScXuyERw\",\"timings\":{\"cache_n\":596,\"prompt_n\":30,\"prompt_ms\":1375.458,\"prompt_per_token_ms\":45.848600000000005,\"prompt_per_second\":21.81091680007677,\"predicted_n\":22,\"predicted_ms\":2745.858,\"predicted_per_token_ms\":130.75514285714286,\"predicted_per_second\":7.647882738291637}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"blue folder\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "d07",
+      "text": "Tell me the position of the teal bottle beside the printer",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "teal bottle beside the printer"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "teal bottle beside the printer"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4709.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"teal bottle beside the printer\\\"}]}\"}}],\"created\":1790513598,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":26,\"prompt_tokens\":631,\"total_tokens\":657,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-MVJCf47SeQrNxZyx3jo1XZrbHSrG8KTG\",\"timings\":{\"cache_n\":596,\"prompt_n\":35,\"prompt_ms\":1531.108,\"prompt_per_token_ms\":43.74594285714286,\"prompt_per_second\":22.85926270387197,\"predicted_n\":26,\"predicted_ms\":3171.947,\"predicted_per_token_ms\":126.87788,\"predicted_per_second\":7.8815944907023985}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"teal bottle beside the printer\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "d08",
+      "text": "Indicate the place where the white cup rests",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "white cup"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "white cup"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4101.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"find_object\\\",\\\"target\\\":\\\"white cup\\\"}]}\"}}],\"created\":1790513603,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":629,\"total_tokens\":651,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-JxKwYhmaAH51a4RXKZTkJP7uVBCfhN8h\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1430.562,\"prompt_per_token_ms\":43.35036363636363,\"prompt_per_second\":23.067857247711043,\"predicted_n\":22,\"predicted_ms\":2645.666,\"predicted_per_token_ms\":125.98409523809525,\"predicted_per_second\":7.93750987464026}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"find_object\",\"target\":\"white cup\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "dn01",
+      "text": "Do not identify the position of the glass jar",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "The request asks to avoid identifying a specific object ('glass jar'). To proceed with an action (like follow or find), we need a positive instruction. Would you like me to ignore the glass jar while tracking another subject, or is there a different action intended?",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 9726.5,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"clarification_required\\\",\\\"message\\\":\\\"The request asks to avoid identifying a specific object ('glass jar'). To proceed with an action (like follow or find), we need a positive instruction. Would you like me to ignore the glass jar while tracking another subject, or is there a different action intended?\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513612,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":66,\"prompt_tokens\":629,\"total_tokens\":695,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-tvElvxhIigbo3e3nQo2NNHmCtBHyysNK\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1433.835,\"prompt_per_token_ms\":43.44954545454546,\"prompt_per_second\":23.015200493780664,\"predicted_n\":66,\"predicted_ms\":8272.207,\"predicted_per_token_ms\":127.26472307692308,\"predicted_per_second\":7.857637024798824}}",
+        "completion": "{\"status\":\"clarification_required\",\"message\":\"The request asks to avoid identifying a specific object ('glass jar'). To proceed with an action (like follow or find), we need a positive instruction. Would you like me to ignore the glass jar while tracking another subject, or is there a different action intended?\",\"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    },
+    {
+      "id": "dn02",
+      "text": "Never tell me the location of the red umbrella",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "Camera cannot be instructed to hide or refuse to provide information.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4330.8,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"unsupported\\\",\\\"message\\\":\\\"Camera cannot be instructed to hide or refuse to provide information.\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513617,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":23,\"prompt_tokens\":629,\"total_tokens\":652,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-pUyVzRcW8cuf2F7riLN0FNWC3rVBOtlI\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1454.485,\"prompt_per_token_ms\":44.075303030303026,\"prompt_per_second\":22.688442988411705,\"predicted_n\":23,\"predicted_ms\":2848.238,\"predicted_per_token_ms\":129.46536363636363,\"predicted_per_second\":7.72407362025224}}",
+        "completion": "{\"status\":\"unsupported\",\"message\":\"Camera cannot be instructed to hide or refuse to provide information.\",\"steps\":[]}",
+        "validated_status": "unsupported",
+        "error": null
+      }
+    },
+    {
+      "id": "c01",
+      "text": "What quantity of green cartons can be seen",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "green cartons"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "green cartons"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4186.3,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"green cartons\\\"}]}\"}}],\"created\":1790513621,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":629,\"total_tokens\":651,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-DX7VCaret4foVD8cXcdhkXLhSW3x1VEY\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1482.985,\"prompt_per_token_ms\":44.93893939393939,\"prompt_per_second\":22.25241657872467,\"predicted_n\":22,\"predicted_ms\":2674.043,\"predicted_per_token_ms\":127.33538095238096,\"predicted_per_second\":7.8532768545606775}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"green cartons\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c02",
+      "text": "Give the overall total for yellow canisters",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "yellow canisters"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "yellow canisters"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4139.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"yellow canisters\\\"}]}\"}}],\"created\":1790513625,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-M2JxD9WNAy1BeXDOfgFlJM1756tiZe18\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1431.009,\"prompt_per_token_ms\":44.71903125,\"prompt_per_second\":22.361843985607358,\"predicted_n\":22,\"predicted_ms\":2702.973,\"predicted_per_token_ms\":128.713,\"predicted_per_second\":7.769223000007769}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"yellow canisters\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c03",
+      "text": "Tell me the visible amount of ceramic bowls",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "ceramic bowls"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "ceramic bowls"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4208.7,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"ceramic bowls\\\"}]}\"}}],\"created\":1790513629,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-Q0jHHhdYVJL3D0NW5GvEscGWD2FYuQce\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1465.281,\"prompt_per_token_ms\":45.79003125,\"prompt_per_second\":21.83881453455003,\"predicted_n\":22,\"predicted_ms\":2717.884,\"predicted_per_token_ms\":129.42304761904762,\"predicted_per_second\":7.726599074868537}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"ceramic bowls\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c04",
+      "text": "What is the total for small red pails",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "small red pails"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "small red pails"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4303.9,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"small red pails\\\"}]}\"}}],\"created\":1790513633,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":23,\"prompt_tokens\":629,\"total_tokens\":652,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-b8GIrJ98Y4MFN0crbnIahpfKUb3clDrX\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1475.406,\"prompt_per_token_ms\":44.709272727272726,\"prompt_per_second\":22.3667248201512,\"predicted_n\":23,\"predicted_ms\":2810.912,\"predicted_per_token_ms\":127.76872727272726,\"predicted_per_second\":7.8266413178356355}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"small red pails\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c05",
+      "text": "I need the overall number for blue lunchboxes",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "blue lunchboxes"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "blue lunchboxes"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4234.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"blue lunchboxes\\\"}]}\"}}],\"created\":1790513638,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":629,\"total_tokens\":651,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-cONGc1Acc4QDft1M0zfQ3ddTe4WV6YGM\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1467.384,\"prompt_per_token_ms\":44.466181818181816,\"prompt_per_second\":22.489000834137485,\"predicted_n\":22,\"predicted_ms\":2735.96,\"predicted_per_token_ms\":130.28380952380954,\"predicted_per_second\":7.675550812146376}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"blue lunchboxes\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c06",
+      "text": "What quantity of orange flashlights are present",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "orange flashlights"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "orange flashlights"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4147.9,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"orange flashlights\\\"}]}\"}}],\"created\":1790513642,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":22,\"prompt_tokens\":628,\"total_tokens\":650,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-dtv0P2J0jild8LBFKMSAx1CdiM17NWwa\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1428.843,\"prompt_per_token_ms\":44.65134375,\"prompt_per_second\":22.395742569337568,\"predicted_n\":22,\"predicted_ms\":2693.739,\"predicted_per_token_ms\":128.27328571428572,\"predicted_per_second\":7.795855500477217}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"orange flashlights\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c07",
+      "text": "Return a visible total for the white cups",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "white cups"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "white cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 3976.6,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"white cups\\\"}]}\"}}],\"created\":1790513646,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":21,\"prompt_tokens\":628,\"total_tokens\":649,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-B5yogGbKS2Rd3xuoghB5atFkgPm5qpLw\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1395.741,\"prompt_per_token_ms\":43.61690625,\"prompt_per_second\":22.926889730974445,\"predicted_n\":21,\"predicted_ms\":2575.7,\"predicted_per_token_ms\":128.785,\"predicted_per_second\":7.764879450246536}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"white cups\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "c08",
+      "text": "Provide the amount of purple candles",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "purple candles"
+        }
+      ],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "purple candles"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 3886.1,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"planned\\\",\\\"message\\\":\\\"\\\",\\\"steps\\\":[{\\\"action\\\":\\\"count\\\",\\\"target\\\":\\\"purple candles\\\"}]}\"}}],\"created\":1790513650,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":21,\"prompt_tokens\":626,\"total_tokens\":647,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-X7M7MHreKLbsPnw6r6mJ7WZASDFcG6cC\",\"timings\":{\"cache_n\":596,\"prompt_n\":30,\"prompt_ms\":1344.089,\"prompt_per_token_ms\":44.80296666666666,\"prompt_per_second\":22.319950538989605,\"predicted_n\":21,\"predicted_ms\":2536.549,\"predicted_per_token_ms\":126.82745,\"predicted_per_second\":7.884728424327699}}",
+        "completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[{\"action\":\"count\",\"target\":\"purple candles\"}]}",
+        "validated_status": "planned",
+        "error": null
+      }
+    },
+    {
+      "id": "cn01",
+      "text": "Do not report the quantity of green cartons",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "Negated actions are not supported.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 3595.1,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"unsupported\\\",\\\"message\\\":\\\"Negated actions are not supported.\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513653,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":18,\"prompt_tokens\":629,\"total_tokens\":647,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-qS5Sd8RVJvHspVETLKpb5HIosCFWVRyT\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1422.36,\"prompt_per_token_ms\":43.10181818181818,\"prompt_per_second\":23.200877415000424,\"predicted_n\":18,\"predicted_ms\":2152.424,\"predicted_per_token_ms\":126.61317647058823,\"predicted_per_second\":7.898072127053035}}",
+        "completion": "{\"status\":\"unsupported\",\"message\":\"Negated actions are not supported.\",\"steps\":[]}",
+        "validated_status": "unsupported",
+        "error": null
+      }
+    },
+    {
+      "id": "cn02",
+      "text": "Never give me a total for yellow canisters",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "This request cannot be executed; camera actions are limited to observation and counting visible objects.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 4892.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"unsupported\\\",\\\"message\\\":\\\"This request cannot be executed; camera actions are limited to observation and counting visible objects.\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513658,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":28,\"prompt_tokens\":629,\"total_tokens\":657,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-TOrkHWre0nx2TxYajP3pEkIt4bLJL4C0\",\"timings\":{\"cache_n\":596,\"prompt_n\":33,\"prompt_ms\":1427.796,\"prompt_per_token_ms\":43.26654545454546,\"prompt_per_second\":23.112545489691804,\"predicted_n\":28,\"predicted_ms\":3459.097,\"predicted_per_token_ms\":128.11470370370373,\"predicted_per_second\":7.805505309622713}}",
+        "completion": "{\"status\":\"unsupported\",\"message\":\"This request cannot be executed; camera actions are limited to observation and counting visible objects.\",\"steps\":[]}",
+        "validated_status": "unsupported",
+        "error": null
+      }
+    },
+    {
+      "id": "b01",
+      "text": "Please report camera freshness",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "status"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.2,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b02",
+      "text": "Count those red cups",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "red cups"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.2,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b03",
+      "text": "How many of these red cups are visible",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "red cups"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red cups"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.3,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b04",
+      "text": "Follow that blue backpack",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "follow",
+          "target": "blue backpack"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue backpack"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.4,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b05",
+      "text": "Find this glass jar beside the lamp",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "glass jar beside the lamp"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "glass jar beside the lamp"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.3,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b06",
+      "text": "Find the brass bell in the room",
+      "critical": false,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "find_object",
+          "target": "brass bell in the room"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "brass bell in the room"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.3,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b07",
+      "text": "Count those",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.1,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b08",
+      "text": "Follow that one",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.1,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b09",
+      "text": "Find that thing beside it",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "Please identify a distinct visible person or object with a clear description.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.1,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b10",
+      "text": "Find the brass bell beyond this room",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.0,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b11",
+      "text": "Find the orange basket in the next room",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.0,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b12",
+      "text": "Land the aircraft and count red mugs",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "Flight and aircraft movement are unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.0,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b13",
+      "text": "Do not land; count red mugs",
+      "critical": true,
+      "expected_statuses": [
+        "planned"
+      ],
+      "expected_steps": [
+        {
+          "action": "count",
+          "target": "red mugs"
+        }
+      ],
+      "route": "source_fast_path",
+      "passed": true,
+      "result": {
+        "status": "planned",
+        "message": "",
+        "steps": [
+          {
+            "action": "count",
+            "target": "red mugs"
+          }
+        ],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.3,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b14",
+      "text": "Rename the saved folder and count red cups",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.2,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b15",
+      "text": "Follow the blue thermos while streaming footage",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.1,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b16",
+      "text": "Count cups so you can archive footage",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.2,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b17",
+      "text": "Keep the green bowl in view and shred the records",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "I may have missed part of the request. Please restate each action clearly.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.2,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b18",
+      "text": "Follow the red thermos and send photos to my phone",
+      "critical": true,
+      "expected_statuses": [
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "policy_prepass",
+      "passed": true,
+      "result": {
+        "status": "unsupported",
+        "message": "That request requires a capability unavailable in this fixed desk test.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 0.1,
+      "model_diagnostic": null
+    },
+    {
+      "id": "b19",
+      "text": "Could you guide me to the teal vase",
+      "critical": true,
+      "expected_statuses": [
+        "clarification_required",
+        "unsupported"
+      ],
+      "expected_steps": [],
+      "route": "model_fallback",
+      "passed": true,
+      "result": {
+        "status": "clarification_required",
+        "message": "What specific location should I use to navigate to the teal vase? Navigation commands are not supported; please provide a visual description for finding or following.",
+        "steps": [],
+        "executable": false,
+        "authority": "DIAGNOSTIC_ONLY"
+      },
+      "error": null,
+      "elapsed_ms": 6695.0,
+      "model_diagnostic": {
+        "http_status": 200,
+        "raw_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"status\\\":\\\"clarification_required\\\",\\\"message\\\":\\\"What specific location should I use to navigate to the teal vase? Navigation commands are not supported; please provide a visual description for finding or following.\\\",\\\"steps\\\":[]}\"}}],\"created\":1790513665,\"model\":\"C:\\\\Users\\\\zvent\\\\Downloads\\\\B.G.D\\\\tmp\\\\language-candidate-20260926\\\\qwen35-4b-q4_k_m.gguf\",\"system_fingerprint\":\"b11095-58367713a\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":42,\"prompt_tokens\":628,\"total_tokens\":670,\"prompt_tokens_details\":{\"cached_tokens\":596}},\"id\":\"chatcmpl-N8KTqePiwJIEBR6n3My7NK3lUW5FpqHC\",\"timings\":{\"cache_n\":596,\"prompt_n\":32,\"prompt_ms\":1406.262,\"prompt_per_token_ms\":43.9456875,\"prompt_per_second\":22.75536137647181,\"predicted_n\":42,\"predicted_ms\":5282.3,\"predicted_per_token_ms\":128.83658536585367,\"predicted_per_second\":7.761770440906423}}",
+        "completion": "{\"status\":\"clarification_required\",\"message\":\"What specific location should I use to navigate to the teal vase? Navigation commands are not supported; please provide a visual description for finding or following.\",\"steps\":[]}",
+        "validated_status": "clarification_required",
+        "error": null
+      }
+    }
+  ]
+}

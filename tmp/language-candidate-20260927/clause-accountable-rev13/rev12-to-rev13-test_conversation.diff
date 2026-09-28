@@ -1,0 +1,219 @@
+diff --git "a/C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\rev12-test_conversation.py" "b/C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\test_conversation.py"
+index 6bf2171..1a0cee0 100644
+--- "a/C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\rev12-test_conversation.py"
++++ "b/C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\test_conversation.py"
+@@ -1751,10 +1751,213 @@ class LocalModelTests(unittest.TestCase):
+             with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
+                 connection.return_value.getresponse.return_value = Response()
+                 result = dialog.propose("Keep the orange spool under observation")
+-        self.assertEqual(result["status"], "unavailable")
++        self.assertEqual(result["status"], "clarification_required")
+         self.assertNotIn("proposal_id", result)
+         self.assertEqual(client.last_diagnostic["completion"], json.dumps(malformed))
+         self.assertEqual(client.last_diagnostic["error"]["type"], "ValueError")
++        self.assertEqual(client.last_diagnostic["validated_status"], "clarification_required")
++
++
++    def test_mentally_specified_generic_target_stays_ambiguous_with_location_tail(self):
++        calls = []
++        dialog = Conversation(interpreter=lambda text, context: calls.append(text) or
++                              validate_semantic_result(proposed("follow", "thing at the far left")))
++        result = dialog.propose("Follow the thing I have in mind over at the far left")
++        self.assertEqual(result["status"], "clarification_required")
++        self.assertNotIn("proposal_id", result)
++        self.assertEqual(calls, [])
++
++        for request in ["Find the one you mean near the window",
++                        "Count the item I am talking about on the left",
++                        "Follow the one I imagine near the red cabinet",
++                        "Count the object in my imagination on the left",
++                        "Find the thing only I know about by the lamp"]:
++            with self.subTest(request=request):
++                result = Conversation(interpreter=lambda *_: validate_semantic_result(
++                    proposed("find_object", "item near the window"))).propose(request)
++                self.assertEqual(result["status"], "clarification_required")
++                self.assertNotIn("proposal_id", result)
++
++        # A unique pending action still grounds a correction, and named targets retain
++        # their spatial relation instead of being mistaken for a mental placeholder.
++        corrected = Conversation(interpreter=LocalSemanticInterpreter())
++        corrected.propose("follow metal bottle")
++        result = corrected.propose("No, the green bottle at the far left")
++        self.assertEqual(result["status"], "confirmation_required")
++        self.assertEqual(result["interpretation"]["steps"], [
++            {"action": "follow", "target": "green bottle at the far left"}])
++
++        with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++            described = LocalSemanticInterpreter()("Follow the green lantern beside the bookshelf")
++            connection.assert_not_called()
++        self.assertEqual(described["steps"], [
++            {"action": "follow", "target": "green lantern beside the bookshelf"}])
++
++    def test_tracking_status_nouns_do_not_become_track_commands(self):
++        pure_status = [
++            "What is the tracking status for the blue thermos?",
++            "How is tracking of the orange kettle going?",
++            "What is the tracking status of the person following the cart?",
++        ]
++        for request in pure_status:
++            with self.subTest(request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    result = LocalSemanticInterpreter()(request)
++                    connection.assert_not_called()
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], [{"action": "status"}])
++
++        mixed = LocalSemanticInterpreter()
++        for request, expected in [
++                ("Show the tracking status and follow the red cup", [
++                    {"action": "status"}, {"action": "follow", "target": "red cup"}]),
++                ("What is the tracking status and count blue bowls", [
++                    {"action": "status"}, {"action": "count", "target": "blue bowls"}]),
++                ("Track the red cup and count blue bowls", [
++                    {"action": "follow", "target": "red cup"},
++                    {"action": "count", "target": "blue bowls"}]),
++        ]:
++            with self.subTest(mixed_request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    result = mixed(request)
++                    connection.assert_not_called()
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], expected)
++
++    def test_nonrestrictive_question_and_motion_tails_are_removed_from_targets(self):
++        cases = [
++            ("Keep pace with the clay planter as it rolls", "follow", "clay planter"),
++            ("Where is the yellow kettle located in the current frame?", "find_object", "yellow kettle"),
++            ("How many red mugs do you see on the screen?", "count", "red mugs"),
++            ("Find the green vase that you can see in the image", "find_object", "green vase"),
++            ("Count people gathered by the entrance", "count", "people gathered by the entrance"),
++            ("Find the stapler beside the lamp", "find_object", "stapler beside the lamp"),
++            ("Follow the person moving left", "follow", "person moving left"),
++        ]
++        for request, action, target in cases:
++            with self.subTest(request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    result = LocalSemanticInterpreter()(request)
++                    connection.assert_not_called()
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], [{"action": action, "target": target}])
++
++    def test_model_scout_is_allowed_for_general_scene_scope_not_named_or_remote_targets(self):
++        def completion(value):
++            class Response:
++                status = 200
++                def read(self, limit):
++                    body = {"choices": [{"finish_reason": "stop", "message": {
++                        "content": json.dumps(value)}}]}
++                    return json.dumps(body).encode()
++            return Response()
++
++        for request in ["Please provide an overview of the current camera scene",
++                        "Give me a visual sweep of the whole frame",
++                        "Outline everything visible in this camera image",
++                        "Give me an overview of the camera's whole view",
++                        "Take in the lens's entire view"]:
++            with self.subTest(scene=request):
++                client = LocalSemanticInterpreter()
++                with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++                    with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                        connection.return_value.getresponse.return_value = completion(proposed("scout", ""))
++                        result = client(request)
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], [{"action": "scout"}])
++
++        for request in ["Survey the orange thermos in the current view",
++                        "Give me a visual sweep of the kettle in the frame",
++                        "Survey the camera in the current view"]:
++            with self.subTest(named_target=request):
++                client = LocalSemanticInterpreter()
++                with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++                    with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                        connection.return_value.getresponse.return_value = completion(proposed("scout", ""))
++                        result = client(request)
++                self.assertEqual(result["status"], "clarification_required")
++                self.assertEqual(result["steps"], [])
++
++        with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++            remote = LocalSemanticInterpreter()("Survey the whole scene in the next room")
++            connection.assert_not_called()
++        self.assertEqual(remote["status"], "unsupported")
++
++    def test_use_as_tracking_subject_inverted_frame_reconciles_exact_target(self):
++        def completion(value):
++            class Response:
++                status = 200
++                def read(self, limit):
++                    body = {"choices": [{"finish_reason": "stop", "message": {
++                        "content": json.dumps(value)}}]}
++                    return json.dumps(body).encode()
++            return Response()
++
++        exact = proposed("follow", "bronze watering can")
++        client = LocalSemanticInterpreter()
++        with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++            with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                connection.return_value.getresponse.return_value = completion(exact)
++                result = client("Use the bronze watering can as the tracking subject")
++        self.assertEqual(result["status"], "planned")
++        self.assertEqual(result["steps"], [
++            {"action": "follow", "target": "bronze watering can"}])
++
++        mixed_request = "Use the bronze watering can as the tracking subject and count red mugs"
++        two_steps = {"status": "planned", "message": "", "steps": [
++            {"action": "follow", "target": "bronze watering can"},
++            {"action": "count", "target": "red mugs"},
++        ]}
++        with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++            with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                connection.return_value.getresponse.return_value = completion(two_steps)
++                result = LocalSemanticInterpreter()(mixed_request)
++        self.assertEqual(result["status"], "planned")
++        self.assertEqual(result["steps"], two_steps["steps"])
++
++        invented = {"status": "planned", "message": "", "steps": [
++            {"action": "follow", "target": "bronze watering can"},
++            {"action": "find_object", "target": "bronze watering can"},
++        ]}
++        with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++            with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                connection.return_value.getresponse.return_value = completion(invented)
++                result = LocalSemanticInterpreter()(
++                    "Use the bronze watering can as the tracking subject")
++        self.assertEqual(result["status"], "clarification_required")
++
++    def test_invalid_named_scout_and_named_target_scout_substitution_are_user_clarifications(self):
++        def completion(value):
++            raw = json.dumps(value)
++            class Response:
++                status = 200
++                def read(self, limit):
++                    body = {"choices": [{"finish_reason": "stop", "message": {
++                        "content": raw}}]}
++                    return json.dumps(body).encode()
++            return raw, Response()
++
++        cases = [
++            (proposed("scout", "orange thermos"),
++             "Survey the orange thermos in the current view"),
++            (proposed("scout", ""),
++             "Find the orange thermos in the current view"),
++        ]
++        for model_value, request in cases:
++            with self.subTest(request=request):
++                client = LocalSemanticInterpreter()
++                dialog = Conversation(interpreter=client)
++                raw, response = completion(model_value)
++                with patch("bgd_vision.conversation._source_grounded_plan", return_value=None):
++                    with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                        connection.return_value.getresponse.return_value = response
++                        result = dialog.propose(request)
++                self.assertEqual(result["status"], "clarification_required")
++                self.assertNotIn("proposal_id", result)
++                self.assertEqual(result["interpretation"]["steps"], [])
++                self.assertEqual(client.last_diagnostic["completion"], raw)
++                self.assertEqual(client.last_diagnostic["validated_status"],
++                                 "clarification_required")
+ 
+ 
+ if __name__ == "__main__":

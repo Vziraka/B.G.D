@@ -1,0 +1,702 @@
+{
+  "corpus_sha256": "3bfd94400c5277bf60496f3bbb33dd6ce55e1288f850cf3f4bc626fc4c89a014",
+  "case_count": 38,
+  "route_counts": {
+    "policy": 13,
+    "source": 15,
+    "model": 10
+  },
+  "model_fallback_case_ids": [
+    "crit-12",
+    "ord-04",
+    "ord-05",
+    "ord-14",
+    "ord-15",
+    "ord-16",
+    "ord-17",
+    "ord-18",
+    "ord-19",
+    "ord-20"
+  ],
+  "deterministic_mismatch_case_ids": [],
+  "rows": [
+    {
+      "id": "crit-01",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-02",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-03",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-04",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-05",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-06",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "ivory bowl"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "ivory bowl"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-07",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "amber clips"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "amber clips"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-08",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "gray lunch tin"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "gray lunch tin"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-09",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "coral tray"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "coral tray"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-10",
+      "route": "policy",
+      "actual": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "expected": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-11",
+      "route": "policy",
+      "actual": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "expected": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-12",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "crit-13",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-14",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-15",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-16",
+      "route": "policy",
+      "actual": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "expected": {
+        "status": "clarification_required",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-17",
+      "route": "policy",
+      "actual": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "expected": {
+        "status": "unsupported",
+        "steps": []
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "crit-18",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "teal pitcher"
+          },
+          {
+            "action": "count",
+            "target": "square napkins"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "teal pitcher"
+          },
+          {
+            "action": "count",
+            "target": "square napkins"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-01",
+      "route": "policy",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-02",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          },
+          {
+            "action": "count",
+            "target": "bronze cups"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          },
+          {
+            "action": "count",
+            "target": "bronze cups"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-03",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "status"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-04",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "scout"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-05",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "scout"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-06",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green vase"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green vase"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-07",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "small paperweight beside the blue notebook"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "small paperweight beside the blue notebook"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-08",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "tan bottles"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "tan bottles"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-09",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "ceramic bowls grouped near the lamp"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "ceramic bowls grouped near the lamp"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-10",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue portfolio"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "blue portfolio"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-11",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped pouch"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "striped pouch"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-12",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "amber labels"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "amber labels"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-13",
+      "route": "source",
+      "actual": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "copper jar"
+          }
+        ]
+      },
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "copper jar"
+          }
+        ]
+      },
+      "deterministic_match": true
+    },
+    {
+      "id": "ord-14",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "white watering can"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-15",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "green watering can"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-16",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "find_object",
+            "target": "striped saucer"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-17",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "people wearing blue caps"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-18",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "coral case"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-19",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "count",
+            "target": "bronze staples on the mat"
+          }
+        ]
+      },
+      "deterministic_match": null
+    },
+    {
+      "id": "ord-20",
+      "route": "model",
+      "actual": null,
+      "expected": {
+        "status": "planned",
+        "steps": [
+          {
+            "action": "follow",
+            "target": "little basket with the red rim"
+          }
+        ]
+      },
+      "deterministic_match": null
+    }
+  ],
+  "model_inference_performed": false
+}

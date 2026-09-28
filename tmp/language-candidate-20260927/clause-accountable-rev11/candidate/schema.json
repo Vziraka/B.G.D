@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status",
+    "message",
+    "steps"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "clarification_required",
+        "unsupported"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "steps": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "action",
+          "target"
+        ],
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "count",
+              "find_object",
+              "find_person",
+              "follow",
+              "scout",
+              "status"
+            ]
+          },
+          "target": {
+            "type": "string",
+            "maxLength": 160
+          }
+        }
+      }
+    }
+  }
+}

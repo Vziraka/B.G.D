@@ -1,0 +1,12 @@
+{
+  "purpose": "Root-authored independent OPEN development probe for frozen rev11; never sealed qualification",
+  "fixture": "tmp/language-candidate-20260927/root-open-probe-rev11/cases.json",
+  "fixture_sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d",
+  "case_count": 35,
+  "critical_count": 17,
+  "ordinary_count": 18,
+  "minimum_critical_correct": 17,
+  "minimum_ordinary_correct": 17,
+  "minimum_ordinary_model_fallback": 8,
+  "exact_text_overlap_with_prior_corpora": 0
+}

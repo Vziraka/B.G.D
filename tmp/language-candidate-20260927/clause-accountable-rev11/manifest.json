@@ -1,0 +1,534 @@
+{
+  "trial_id": "qwen35-clause-accountable-rev11-current-prompt",
+  "status": "inference complete; frozen30 and development-v2 pass; worker OPEN ordinary gate fails; no tuning followed",
+  "profile": {
+    "profile_id": "qwen35-clause-accountable-rev11-current-prompt",
+    "enabled_by_default": false,
+    "model": {
+      "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+      "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+      "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+      "bytes": 3013027808,
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "license": "Apache-2.0",
+      "quant_repo_base_model": "Qwen/Qwen3.5-4B",
+      "upstream_model_repo": "Qwen/Qwen3.5-4B",
+      "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "upstream_license": "Apache-2.0",
+      "upstream_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+      "pinned_file_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/blob/4168f45a16a1290d65a4ec0fa312ae917a4c15d6/Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+      "upstream_model_files": [
+        {
+          "file": "model.safetensors-00001-of-00002.safetensors",
+          "bytes": 5329398688,
+          "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+        },
+        {
+          "file": "model.safetensors-00002-of-00002.safetensors",
+          "bytes": 3990429408,
+          "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+        }
+      ],
+      "official_template_note": "The official Qwen3.5 card says /think and /nothink soft switches are unsupported and documents enable_thinking=false for non-thinking responses. The production prompt's final /no_think suffix was removed; chat_template_kwargs.enable_thinking=false was retained."
+    },
+    "runtime": {
+      "kind": "existing verified llama.cpp Windows CPU runtime",
+      "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+      "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+      "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "host": "127.0.0.1",
+      "port": 8084,
+      "threads": 2,
+      "batch_threads": 2,
+      "context": 2048,
+      "parallel": 1,
+      "jinja": true,
+      "web_ui": false
+    },
+    "request": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "seed": 42,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "response_format": "strict JSON schema",
+      "production_interpreter_timeout_seconds": 8,
+      "evaluation_timeout_seconds": 30
+    },
+    "authority": "simulator-only; local PC text interpretation; no execution",
+    "prompt_file": "system-prompt.txt",
+    "prompt_bytes": 2813,
+    "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+    "schema_file": "schema.json",
+    "schema_sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3"
+  },
+  "model_manifest_sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+  "production_source_sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+  "tests_sha256": "26c09be40d871ac81edeab3ae83946ce0268d88f0a6ada0e6ebbfe5f19a7d191",
+  "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+  "corpora": [
+    {
+      "path": "tests/vision/fixtures/conversation-eval.json",
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628,
+      "case_count": 30
+    },
+    {
+      "path": "tests/vision/fixtures/conversation-development-v2.json",
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345,
+      "case_count": 58
+    },
+    {
+      "path": "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11.json",
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+      "bytes": 9044,
+      "case_count": 53
+    }
+  ],
+  "model_server": {
+    "host": "127.0.0.1",
+    "port": 8084,
+    "background_window": "hidden",
+    "loopback_only": true,
+    "process_id": 26924,
+    "process_stopped": true,
+    "loopback_listener_remaining": false
+  },
+  "run_lock_sha256": "23a363df3253e8ab39a19cc257c6cba1c53f8c9971606e7bf088e8b0af31066a",
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+      "bytes": 75053
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "bgd_vision/commands.py": {
+      "sha256": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+      "bytes": 3519
+    },
+    "bgd_vision/server.py": {
+      "sha256": "0183afed1a37c4f637a71851053ec97d866ba31597b43f1c5f5eee08aa9dcf8e",
+      "bytes": 77178
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "26c09be40d871ac81edeab3ae83946ce0268d88f0a6ada0e6ebbfe5f19a7d191",
+      "bytes": 90846
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_server.py": {
+      "sha256": "887724a041b96e0eac3ce8a681e348a8a53a9bc2fb789aa6b0af34d9eb2884b9",
+      "bytes": 50758
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11.json": {
+      "sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+      "bytes": 9044
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260926/qwen35-manifest.json": {
+      "sha256": "28bf71d9922d3803d44b368cf521cd8e56f1fa8cff926b572f2a24dd05931c33",
+      "bytes": 7144
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/evaluate.py": {
+      "sha256": "8d62303f7c0cdadb6e51f6ef191da7fdc8962f491d9614427d4224b7403592af",
+      "bytes": 14617
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/start_server.py": {
+      "sha256": "3c5c429cece747acad8fc973ad52282925a874ae564fa6127a091b7edd313bd8",
+      "bytes": 2152
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/stop_server.ps1": {
+      "sha256": "f2d19cdd7eba31eea1bbd3cfb4ee0551c18a6d57c2ec9ec8d3f1bf2f0fb147f2",
+      "bytes": 1317
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/prepare_artifacts.py": {
+      "sha256": "b0371fa3c0e6b41b55256c86bd4d288527a42920f9d300b7b9c10ed7837f8113",
+      "bytes": 7049
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/conversation-revision11.py": {
+      "sha256": "6730d060144c8406feabfdccc795e7dda742b6f7f1e242bd6a625f6bbb99201f",
+      "bytes": 75053
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/evaluate-language-revision11.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/test-conversation-revision11.py": {
+      "sha256": "26c09be40d871ac81edeab3ae83946ce0268d88f0a6ada0e6ebbfe5f19a7d191",
+      "bytes": 90846
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/system-prompt.txt": {
+      "sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+      "bytes": 2813
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/schema.json": {
+      "sha256": "d41a791de2fd7a608f4037fb87c01c20467f91b9f3afc2c99100bc2fa6a725b3",
+      "bytes": 964
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/candidate/profile.json": {
+      "sha256": "30e3ff85a16251284060abd8cf1bc92fec97470fbbb53e77f620a3cfa16a9c60",
+      "bytes": 3055
+    }
+  },
+  "open_overlap_check": {
+    "worker_corpus_sha256": "28a9edfb540f28586a549fba4c00bac51c734a8ffa4c6984a541bd8e85ee01a5",
+    "root_probe_sha256": "71a2e251cdeeea4c15b67af9eee9631e43c9c46f472d7c252760a2cc882cca3d",
+    "exact_text_overlaps": [],
+    "checked_by": "root before inference",
+    "exact_overlaps_with_frozen30_and_v2": []
+  },
+  "evaluation_runs": {
+    "frozen30": {
+      "command": "python tmp/language-candidate-20260927/clause-accountable-rev11/evaluate.py --port 8084 --timeout 30 --profile candidate --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-results.json --raw-jsonl tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-raw.jsonl",
+      "result_file": "tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-results.json",
+      "result_sha256": "8250e64c446aeae818a63720c009913b7b2da79cfcb6da391441bbd144231929",
+      "raw_file": "tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-raw.jsonl",
+      "raw_sha256": "89f088cd3b5ea86afb16ef7954be6b3c5a166ab4dc5cd1cf2cc7e9ed9e451da1",
+      "total": 30,
+      "passed": 30,
+      "critical_score": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary_score": {
+        "passed": 13,
+        "total": 13
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "execution_path_ids": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a04",
+          "n01",
+          "n03",
+          "n04",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "i01",
+          "i02",
+          "i03",
+          "i04"
+        ],
+        "source_fast_path": [
+          "p01",
+          "p02",
+          "p03",
+          "p04",
+          "p06",
+          "d01",
+          "d02",
+          "c01",
+          "c02",
+          "c03",
+          "n02",
+          "m01",
+          "m02"
+        ],
+        "model_fallback": [
+          "p05"
+        ]
+      },
+      "model_inference_requests": 1,
+      "cold_or_first_model_latency_ms": 23813.6,
+      "model_latency_median_ms": 23813.6,
+      "model_latency_p95_ms": 23813.6,
+      "model_completion_bytes": {
+        "count": 1,
+        "median": 75,
+        "p95": 75,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      }
+    },
+    "development_v2": {
+      "command": "python tmp/language-candidate-20260927/clause-accountable-rev11/evaluate.py --port 8084 --timeout 30 --profile candidate --corpus tests/vision/fixtures/conversation-development-v2.json --output tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-results.json --raw-jsonl tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-raw.jsonl",
+      "result_file": "tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-results.json",
+      "result_sha256": "5364ad64c21dba0fbac0298ed4ffcbb18d929686610b146bc569d045e2ba27c9",
+      "raw_file": "tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-raw.jsonl",
+      "raw_sha256": "03ca3c526ac2bb9a61398ff451e78115fad2bed676fbf9f5529a4cbe4df2bfbf",
+      "total": 58,
+      "passed": 58,
+      "critical_score": {
+        "passed": 30,
+        "total": 30
+      },
+      "ordinary_score": {
+        "passed": 28,
+        "total": 28
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "execution_path_ids": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a05",
+          "n01",
+          "n02",
+          "n06",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "u06",
+          "u07",
+          "u08",
+          "u09",
+          "u10",
+          "u11",
+          "i01",
+          "i02",
+          "i03",
+          "i04",
+          "i05",
+          "i06",
+          "i07"
+        ],
+        "source_fast_path": [
+          "p01",
+          "p02",
+          "p03",
+          "p04",
+          "p05",
+          "p06",
+          "p07",
+          "p08",
+          "p09",
+          "p12",
+          "p13",
+          "p14",
+          "p15",
+          "p16",
+          "p17",
+          "p18",
+          "p19",
+          "p20",
+          "c01",
+          "c02",
+          "c03",
+          "c04",
+          "m01",
+          "m02",
+          "m03",
+          "m04",
+          "n03",
+          "n04",
+          "n05",
+          "n07"
+        ],
+        "model_fallback": [
+          "p10",
+          "p11",
+          "a04"
+        ]
+      },
+      "model_inference_requests": 3,
+      "cold_or_first_model_latency_ms": 3701.4,
+      "model_latency_median_ms": 3776.9,
+      "model_latency_p95_ms": 5164.4,
+      "model_completion_bytes": {
+        "count": 3,
+        "median": 75,
+        "p95": 146,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      }
+    },
+    "worker_open_rev11": {
+      "command": "python tmp/language-candidate-20260927/clause-accountable-rev11/evaluate.py --port 8084 --timeout 30 --profile candidate --corpus tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11.json --output tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-results.json --raw-jsonl tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-raw.jsonl",
+      "result_file": "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-results.json",
+      "result_sha256": "86502f00bf53bdcd0b3ea0593f04093f8e5c6db15eb518814255e21be0724a51",
+      "raw_file": "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-raw.jsonl",
+      "raw_sha256": "5558b0c036a30031a250c7b40c739a38678071faa03c4fba70f3ca445a399bf4",
+      "total": 53,
+      "passed": 45,
+      "critical_score": {
+        "passed": 19,
+        "total": 19
+      },
+      "ordinary_score": {
+        "passed": 26,
+        "total": 34
+      },
+      "critical_misses": [],
+      "ordinary_misses": [
+        "p04",
+        "p06",
+        "p08",
+        "p10",
+        "p15",
+        "p25",
+        "p26",
+        "p32"
+      ],
+      "execution_path_ids": {
+        "policy_prepass": [
+          "a01",
+          "a02",
+          "a03",
+          "a04",
+          "a05",
+          "a06",
+          "n01",
+          "n02",
+          "u01",
+          "u02",
+          "u03",
+          "u04",
+          "u05",
+          "i01",
+          "i02",
+          "i03",
+          "i04"
+        ],
+        "source_fast_path": [
+          "n03",
+          "n04",
+          "p04",
+          "p08",
+          "p10",
+          "p12",
+          "p14",
+          "p17",
+          "p18",
+          "p19",
+          "p20",
+          "p22",
+          "p23",
+          "p26",
+          "p27"
+        ],
+        "model_fallback": [
+          "p01",
+          "p02",
+          "p03",
+          "p05",
+          "p06",
+          "p07",
+          "p09",
+          "p11",
+          "p13",
+          "p15",
+          "p16",
+          "p21",
+          "p24",
+          "p25",
+          "p28",
+          "p29",
+          "p30",
+          "p31",
+          "p32",
+          "p33",
+          "p34"
+        ]
+      },
+      "model_inference_requests": 21,
+      "cold_or_first_model_latency_ms": 4101.5,
+      "model_latency_median_ms": 4228.8,
+      "model_latency_p95_ms": 4666.9,
+      "model_completion_bytes": {
+        "count": 21,
+        "median": 93,
+        "p95": 123,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      }
+    }
+  },
+  "postrun_files": {
+    "tmp/language-candidate-20260927/clause-accountable-rev11/review.md": {
+      "sha256": "25105f50c2ce2a2d2036a64ab3b335ff4813b475625ca7783ca77561ca978771",
+      "bytes": 6893
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/full-vision-after-tail-fix.log": {
+      "sha256": "9472cbe998df1333450a598dbf4aee45dd7b0387a20e0be3bbdf1f32ec65b7ab",
+      "bytes": 1929
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/node-suites.log": {
+      "sha256": "d5514af74f07d1e94f55d72734e107c4c3b41e96a0f9018b9f6a2dad32547298",
+      "bytes": 661
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/rev11-open-run-server-ready.json": {
+      "sha256": "d0c79eeffda368fb465baf1bdaa9923c866c2fb3fdce70d7a238238ee1fe382c",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/rev11-open-run-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/rev11-open-run-server.stderr.log": {
+      "sha256": "647db308ce979d5122ec3fed5fe33d4e678beed703f34c166112266f01ba36ee",
+      "bytes": 23144
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/rev11-open-run-server-stop.json": {
+      "sha256": "21dd65adbba884b9e89d628e34a954b0739ca67b0beeb66b02d8c475e690ffa6",
+      "bytes": 186
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-results.json": {
+      "sha256": "8250e64c446aeae818a63720c009913b7b2da79cfcb6da391441bbd144231929",
+      "bytes": 14713
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/frozen30-raw.jsonl": {
+      "sha256": "89f088cd3b5ea86afb16ef7954be6b3c5a166ab4dc5cd1cf2cc7e9ed9e451da1",
+      "bytes": 37538
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-results.json": {
+      "sha256": "5364ad64c21dba0fbac0298ed4ffcbb18d929686610b146bc569d045e2ba27c9",
+      "bytes": 26590
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/development-v2-raw.jsonl": {
+      "sha256": "03ca3c526ac2bb9a61398ff451e78115fad2bed676fbf9f5529a4cbe4df2bfbf",
+      "bytes": 79645
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-results.json": {
+      "sha256": "86502f00bf53bdcd0b3ea0593f04093f8e5c6db15eb518814255e21be0724a51",
+      "bytes": 24834
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev11/open-development-rev11-raw.jsonl": {
+      "sha256": "5558b0c036a30031a250c7b40c739a38678071faa03c4fba70f3ca445a399bf4",
+      "bytes": 201196
+    }
+  },
+  "commands": {
+    "start": "python tmp/language-candidate-20260927/clause-accountable-rev11/start_server.py --label rev11-open-run",
+    "stop": "powershell -NoProfile -File tmp/language-candidate-20260927/clause-accountable-rev11/stop_server.ps1 -Label rev11-open-run",
+    "listener_check": "Get-NetTCPConnection -State Listen -LocalPort 8084 -ErrorAction SilentlyContinue; result: no listener",
+    "focused_tests": "python -m unittest discover -s tests/vision -p test_conversation.py",
+    "full_vision_tests": "python -m unittest discover -s tests/vision",
+    "node_tests": "node --test tests/vision/test_preview_loop.cjs tests/vision/test_conversation_ui.cjs"
+  }
+}

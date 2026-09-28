@@ -1,0 +1,120 @@
+diff --git a/tmp/language-candidate-20260927/clause-accountable-rev8/test_conversation.py b/tests/vision/test_conversation.py
+index 6b617ad..d732432 100644
+--- a/tmp/language-candidate-20260927/clause-accountable-rev8/test_conversation.py
++++ b/tests/vision/test_conversation.py
+@@ -6,7 +6,7 @@ from unittest.mock import patch
+ 
+ from bgd_vision.conversation import (Conversation, LocalSemanticInterpreter, SYSTEM_PROMPT,
+                                      is_described_human_target, is_stop_command,
+-                                     validate_semantic_result)
++                                     validate_semantic_result, _source_grounded_plan)
+ 
+ 
+ def proposed(action="follow", target="bottle"):
+@@ -483,8 +483,11 @@ class LocalModelTests(unittest.TestCase):
+              [{"action": "count", "target": "cups"}]),
+             ("Find the glass in the picture", "planned",
+              [{"action": "find_object", "target": "glass"}]),
++            ("Find the vase in the room", "planned", None),
+             ("Find the green vase beyond the current view", "unsupported", []),
+             ("Count mugs outside the current room", "unsupported", []),
++            ("Find the vase beyond this room", "unsupported", []),
++            ("Find the vase outside this room", "unsupported", []),
+         ]
+         for request, status, expected_steps in cases:
+             with self.subTest(request=request):
+@@ -492,11 +495,14 @@ class LocalModelTests(unittest.TestCase):
+                     result = LocalSemanticInterpreter()(request)
+                     connection.assert_not_called()
+                 self.assertEqual(result["status"], status)
+-                self.assertEqual(result["steps"], expected_steps)
++                if expected_steps is not None:
++                    self.assertEqual(result["steps"], expected_steps)
+ 
+     def test_unanchored_deictic_and_relational_targets_require_clarification(self):
+         for request in ["Count the one you mean", "Follow the one you mean",
+-                        "Find the one you have in mind", "Count whichever one you mean"]:
++                        "Find the one you have in mind", "Count whichever one you mean",
++                        "How many of these are visible?", "Count from among those",
++                        "Find that person"]:
+             with self.subTest(request=request):
+                 with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
+                     result = LocalSemanticInterpreter()(request)
+@@ -504,6 +510,31 @@ class LocalModelTests(unittest.TestCase):
+                 self.assertEqual(result["status"], "clarification_required")
+                 self.assertEqual(result["steps"], [])
+ 
++        with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++            grounded = LocalSemanticInterpreter()("How many red mugs are visible?")
++            connection.assert_not_called()
++        self.assertEqual(grounded["steps"], [{"action": "count", "target": "red mugs"}])
++
++    def test_descriptive_demonstratives_remain_grounded_for_count_follow_and_find(self):
++        cases = [
++            ("Count those red cups", [{"action": "count", "target": "red cups"}]),
++            ("How many of these red cups are visible?",
++             [{"action": "count", "target": "red cups"}]),
++            ("Follow that blue backpack", [{"action": "follow", "target": "blue backpack"}]),
++            ("Find this glass jar beside the lamp",
++             [{"action": "find_object", "target": "glass jar beside the lamp"}]),
++        ]
++        for request, expected_steps in cases:
++            with self.subTest(request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    result = LocalSemanticInterpreter()(request)
++                    connection.assert_not_called()
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], expected_steps)
++                proposal = Conversation(interpreter=lambda text, context:
++                    _source_grounded_plan(text, context)).propose(request)
++                self.assertEqual(proposal["status"], "confirmation_required")
++
+     def test_named_count_normalization_removes_existential_tail(self):
+         for request, target in [("How many cups are there?", "cups"),
+                                 ("How many blue folders are there?", "blue folders"),
+@@ -585,6 +616,45 @@ class LocalModelTests(unittest.TestCase):
+         self.assertEqual(interpreter.last_diagnostic["error"]["type"], "ValueError")
+         self.assertIn("Invalid language-model step", interpreter.last_diagnostic["error"]["message"])
+ 
++    def test_busy_call_does_not_overwrite_active_model_diagnostic(self):
++        entered, release = threading.Event(), threading.Event()
++        response_body = json.dumps({"choices": [{"finish_reason": "stop", "message": {
++            "content": json.dumps({"status": "planned", "message": "", "steps": [
++                {"action": "follow", "target": "blue bottle"}]})}}]}).encode()
++
++        class Response:
++            status = 200
++            def read(self, limit):
++                entered.set()
++                if not release.wait(2):
++                    raise TimeoutError("test response was not released")
++                return response_body
++
++        class Connection:
++            def request(self, *args, **kwargs):
++                pass
++            def getresponse(self):
++                return Response()
++            def close(self):
++                pass
++
++        interpreter = LocalSemanticInterpreter()
++        results = []
++        with patch("bgd_vision.conversation.http.client.HTTPConnection", return_value=Connection()):
++            worker = threading.Thread(target=lambda: results.append(interpreter("Shadow the blue bottle")))
++            worker.start()
++            self.assertTrue(entered.wait(1))
++            diagnostic_before_busy = dict(interpreter.last_diagnostic)
++            with self.assertRaisesRegex(ValueError, "busy"):
++                interpreter("Shadow the green bottle")
++            self.assertEqual(interpreter.last_diagnostic, diagnostic_before_busy)
++            release.set()
++            worker.join(2)
++        self.assertFalse(worker.is_alive())
++        self.assertEqual(results[0]["steps"], [{"action": "follow", "target": "blue bottle"}])
++        self.assertEqual(interpreter.last_diagnostic["completion"],
++                         json.loads(response_body)["choices"][0]["message"]["content"])
++
+     def test_purpose_splitter_preserves_negative_intent_and_correction_frames(self):
+         for request in ["No need to find my hat; count gloves",
+                         "I don't need to find my hat; count gloves"]:

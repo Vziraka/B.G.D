@@ -1,0 +1,77 @@
+diff --git a/tmp/language-candidate-20260927/clause-accountable-rev6/conversation-revision6.py b/bgd_vision/conversation.py
+index 1157a97..4bfda45 100644
+--- a/tmp/language-candidate-20260927/clause-accountable-rev6/conversation-revision6.py
++++ b/bgd_vision/conversation.py
+@@ -68,11 +68,17 @@ _MEDIA_ACTION = re.compile(
+ _PRIVATE_ACCESS_ACTION = re.compile(
+     r"\b(?:access|open|read|write|edit(?:s|ed|ing)?|delet(?:e|es|ed|ing)|"
+     r"eras(?:e|es|ed|ing)|remove|wip(?:e|es|ed|ing)|retrieve|reveal|expose|"
+-    r"share|send|upload|download|export|print|display|show|provide|give|get|run|execute|"
++    r"return|hand|share|send|upload|download|export|print|display|show|provide|give|get|run|execute|"
+     r"type|enter|connect|browse|visit|chang(?:e|es|ed|ing))\b[^,;!?]{0,80}\b(?:files?|folders?|directories|logs?|"
+     r"terminal|shell|commands?|scripts?|code|secrets?|tokens?|passwords?|credentials?|"
+     r"api\s+keys?|private\s+keys?|saved\s+profiles?|profiles?|faceprints?|identity(?:\s+data)?|"
+     r"enrollment|network|internet|online\s+accounts?|databases?)\b", re.IGNORECASE)
++_STORED_MEDIA_DISCLOSURE_ACTION = re.compile(
++    r"\b(?:return|retrieve|reveal|hand\s+(?:me|us|over)|give|send|share|provide|copy|"
++    r"download|export|email|upload|transmit)\b[^,;!?]{0,80}\b"
++    r"(?:saved|stored|recorded|captured|archived|private|personal)\b[^,;!?]{0,50}\b"
++    r"(?:face\s+)?(?:photos?|pictures?|images?|videos?|clips?|recordings?|footage|snapshots?)\b",
++    re.IGNORECASE)
+ _PURCHASE_ACTION = re.compile(
+     r"\b(?:buy|purchase|pay|spend|shop\s+for|place\s+(?:an?\s+)?order\s+for)\b",
+     re.IGNORECASE)
+@@ -119,8 +125,11 @@ _REVIEW_BYPASS_WITHOUT = re.compile(
+ _REVIEW_BYPASS_HIDDEN = re.compile(
+     r"\b(?:don't|do\s+not|dont|never)\s+(?:show|display|ask\s+for|request|require)\b"
+     r"[^,;!?]{0,50}\b(?:review(?:\s+card)?|confirmation|approval)\b", re.IGNORECASE)
+-_UNAVAILABLE_ACTIONS = (_MEDIA_ACTION, _PRIVATE_ACCESS_ACTION, _PURCHASE_ACTION,
+-                        _IDENTITY_CHANGE_ACTION, _CAMERA_MOVEMENT_ACTION, _OUT_OF_VIEW_ACTION)
++_UNAVAILABLE_ACTIONS = (
++    _MEDIA_ACTION, _PRIVATE_ACCESS_ACTION, _STORED_MEDIA_DISCLOSURE_ACTION,
++    _PURCHASE_ACTION, _IDENTITY_CHANGE_ACTION, _CAMERA_MOVEMENT_ACTION,
++    _OUT_OF_VIEW_ACTION,
++)
+ _SUPPORTED_ACTION_WORDS = {
+     "follow": re.compile(r"\b(?:keep\s+track\s+of|keep\s+up\s+with|eyes\s+on|follow|tail(?!\s+(?:of|light|lights)\b)|tailing(?!\s+of\b)|track(?:ing)?|watch|keep\s+(?:tabs|an\s+eye)\s+on|stay\s+with|"
+                           r"keep\s+.{1,80}\s+in\s+(?:the\s+)?view)\b",
+@@ -152,6 +161,17 @@ _INTENT_FRAME_PREFIX = re.compile(
+     r"^(?:(?:i|we)\s+(?:(?:want|need)|(?:(?:do\s+not|don't|dont|never)\s+want))"
+     r"(?:\s+you)?|(?:i|we)(?:'d|’d|\s+would)\s+like(?:\s+you)?)$",
+     re.IGNORECASE)
++_NEGATIVE_INTENT_TO_PREFIX = re.compile(
++    r"^(?:(?:there\s+(?:is|was)|(?:i|we)\s+(?:have|had))\s+)?"
++    r"no\s+(?:need|reason)(?:\s+for\s+(?:me|you|us|them))?$|"
++    r"^(?:i|we)\s+(?:do\s+not|don't|dont)\s+need$",
++    re.IGNORECASE)
++_CORRECTION_TO_PREFIX = re.compile(
++    r"^(?:change|switch)\s+(?:that|this|it|the\s+(?:target|action))$",
++    re.IGNORECASE)
++_FOLLOWING_CORRECTION_ACTION = re.compile(
++    r"\b(?:change|switch)\s+(?:that|this|it|the\s+(?:target|action))\s+to\s+following\b",
++    re.IGNORECASE)
+ _PURPOSE_TO_RELATION_PREFIX = re.compile(
+     r"\b(?:next|closest|nearest|near|close|adjacent|attached|connected|tied|similar|related|"
+     r"belonging|leading|prior|opposite|relative|parallel)\s+$",
+@@ -327,6 +347,10 @@ def _is_purpose_to_boundary(text, match):
+     prefix = text[:match.start()].strip()
+     if _INTENT_FRAME_PREFIX.fullmatch(prefix):
+         return False
++    if _NEGATIVE_INTENT_TO_PREFIX.fullmatch(prefix):
++        return False
++    if _CORRECTION_TO_PREFIX.fullmatch(prefix):
++        return False
+     if _AFFIRMATIVE_NEGATION_IDIOM.fullmatch(prefix + " to"):
+         return False
+     if _PURPOSE_TO_RELATION_PREFIX.search(text[:match.start()]):
+@@ -435,6 +459,10 @@ def _supported_action_occurrences(text):
+             occurrences.append({"action": action, "match": match,
+                                 "target": target,
+                                 "polarity": _match_polarity(text, match)})
++    for match in _FOLLOWING_CORRECTION_ACTION.finditer(text):
++        occurrences.append({"action": "follow", "match": match,
++                            "target": _action_target(text, match),
++                            "polarity": _match_polarity(text, match)})
+     for pattern in (_AVOID_FOLLOW_TARGET, _UNTRACKED_TARGET):
+         for match in pattern.finditer(text):
+             occurrences.append({"action": "follow", "match": match,

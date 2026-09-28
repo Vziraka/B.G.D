@@ -1,0 +1,80 @@
+diff --git a/tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation.py b/tests/vision/test_conversation.py
+index 56b929b..8a96be2 100644
+--- a/tmp/language-candidate-20260927/clause-accountable-rev6/test_conversation.py
++++ b/tests/vision/test_conversation.py
+@@ -73,6 +73,30 @@ class ConversationTests(unittest.TestCase):
+                 self.assertNotIn("proposal_id", result)
+         self.assertEqual(calls, [])
+ 
++    def test_stored_media_and_private_artifact_disclosure_is_unsupported(self):
++        calls = []
++        dialog = Conversation(interpreter=lambda text, context: calls.append(text) or
++                              validate_semantic_result(proposed("count", "mugs")))
++        requests = [
++            "Return the saved face images and authentication token",
++            "Retrieve the saved face images",
++            "Hand me the saved face images",
++            "Return the password and count mugs",
++            "Reveal the archived footage and count mugs",
++            "Reveal the archived footage; count mugs",
++            "Reveal the archived footage then count mugs",
++            "Reveal the archived footage and follow the bottle",
++            "Reveal the archived footage; follow the bottle",
++            "Reveal the archived footage then follow the bottle",
++        ]
++        for text in requests:
++            with self.subTest(text=text):
++                result = dialog.propose(text)
++                self.assertEqual(result["status"], "unsupported")
++                self.assertEqual(result["interpretation"]["steps"], [])
++                self.assertNotIn("proposal_id", result)
++        self.assertEqual(calls, [])
++
+     def test_policy_guard_distinguishes_negative_actions_and_confirmation_questions(self):
+         calls = []
+         def model(text, context):
+@@ -436,6 +460,44 @@ class ConversationTests(unittest.TestCase):
+ 
+ 
+ class LocalModelTests(unittest.TestCase):
++    def test_purpose_splitter_preserves_negative_intent_and_correction_frames(self):
++        for request in ["No need to find my hat; count gloves",
++                        "I don't need to find my hat; count gloves"]:
++            with self.subTest(request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    negative = LocalSemanticInterpreter()(request)
++                    connection.assert_not_called()
++                self.assertEqual(negative["status"], "planned")
++                self.assertEqual(negative["steps"], [{"action": "count", "target": "gloves"}])
++
++        context = [{"action": "follow", "target": "person in a coat"}]
++        with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++            correction = LocalSemanticInterpreter()(
++                "Change that to following the person with a hat", context)
++            connection.assert_not_called()
++        self.assertEqual(correction["status"], "planned")
++        self.assertEqual(correction["steps"], [{"action": "follow", "target": "person with a hat"}])
++
++    def test_visual_find_for_an_image_stays_a_scene_request(self):
++        for request, target in [
++                ("Find the image beside the lamp", "image beside the lamp"),
++                ("Find the saved photo beside the lamp", "saved photo beside the lamp")]:
++            with self.subTest(request=request):
++                with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++                    result = LocalSemanticInterpreter()(request)
++                    connection.assert_not_called()
++                self.assertEqual(result["status"], "planned")
++                self.assertEqual(result["steps"], [
++                    {"action": "find_object", "target": target}])
++
++    def test_following_as_a_location_modifier_does_not_add_a_follow_step(self):
++        with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
++            result = LocalSemanticInterpreter()("Find a person following the stairs")
++            connection.assert_not_called()
++        self.assertEqual(result["status"], "planned")
++        self.assertEqual(result["steps"], [
++            {"action": "find_person", "target": "person following the stairs"}])
++
+     def test_scout_and_count_are_recognized_by_source_accounting_without_model_use(self):
+         with patch("bgd_vision.conversation.http.client.HTTPConnection") as connection:
+             result = LocalSemanticInterpreter()("Scout the area and count people")

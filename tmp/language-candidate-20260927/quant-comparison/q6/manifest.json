@@ -1,0 +1,33 @@
+{
+  "model": "q6",
+  "server_stopped": true,
+  "command": [
+    "-m",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\q6-comparison\\Qwen_Qwen3.5-4B-Q6_K.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8084",
+    "-t",
+    "2",
+    "-tb",
+    "2",
+    "-c",
+    "2048",
+    "-np",
+    "1",
+    "--jinja",
+    "--no-webui"
+  ],
+  "inputs": {
+    "tmp\\language-candidate-20260927\\clause-accountable-rev9\\conversation-revision9.py": "e6c28e542dedcaf7021d7e6cb75e1c7ac27fe848ca8de2662ff8f9a186276503",
+    "tmp\\language-candidate-20260927\\clause-accountable-rev9\\open-development.json": "3a3b0adb41ced8384f82c8c28bb8d3ba3875869e5bb5a3573ce28e23e2e7b598",
+    "tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "tmp\\language-candidate-20260927\\q6-comparison\\Qwen_Qwen3.5-4B-Q6_K.gguf": "5a5bc7a3f9375b395e9f81fb69109038cf160c84606b8192f13cbb8355ca59f2",
+    "tmp\\language-candidate-20260927\\quant-comparison\\preflight.json": "f5c3e01feed724d250dc48a86f3e9999fdd761106d7288e41ff0bf98038c34ea",
+    "tmp\\language-candidate-20260927\\quant-comparison\\run.py": "15df4d96b58c1a8aa4dcb36dac665233688a5199b4795be4793fdb23dca6770a"
+  },
+  "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "9de5c144f1c14a30520e6c9b37f61cd3555db1a0dfa9bae4ded9e2f41f4b692c",
+  "results_sha256": "a7e51b54e482d7edb33572b555da527d4e4d48daf80fc97712d9198ea4c55303"
+}

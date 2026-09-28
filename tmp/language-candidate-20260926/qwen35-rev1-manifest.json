@@ -1,0 +1,141 @@
+{
+  "trial": "Qwen3.5-4B Q4_K_M profile revision 1, frozen30",
+  "date": "2026-09-27",
+  "purpose": "One bounded PC-only text evaluation of a model-specific prompt revision. Evidence only; model qualification remains the owner's decision.",
+  "scope": {
+    "corpus": "tests/vision/fixtures/conversation-eval.json",
+    "heldout_fixture_accessed": false,
+    "production_source_changed": false,
+    "pi_or_physical_controls_touched": false,
+    "app_ui_or_flight_controls_touched": false,
+    "actual_inference_requests": 30,
+    "prompt_tuning_or_reruns_after_run": false,
+    "runtime_compatibility_adjustments": 0
+  },
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "official_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "pinned_gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "upstream_safetensors": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "template_note": "The official card states /think and /nothink soft switches are unsupported and documents chat_template_kwargs.enable_thinking=false. The revised prompt omits /no_think and the request keeps enable_thinking=false."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8",
+    "arguments": "-m C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "process_id": 46468,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "server_stdout": "tmp/language-candidate-20260926/qwen35-rev1-server.stdout.log",
+    "server_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "server_stderr": "tmp/language-candidate-20260926/qwen35-rev1-server.stderr.log",
+    "server_stderr_sha256": "e4fb1b81772c10cbe9c32e87ccbec5118300da31d6a3bfe702cc8e9c51328b44"
+  },
+  "profile": {
+    "production_module": "bgd_vision/conversation.py",
+    "production_module_sha256": "7c22dbf860ee9c79c02b3a27881dabb9cc86f664a952e81a824c4d3212563b88",
+    "temporary_runner": "tmp/language-candidate-20260926/qwen35-rev1-evaluate.py",
+    "temporary_runner_bytes": 8357,
+    "temporary_runner_sha256": "c72b9823030ad4930af1acc77347372cd2e2681c50f1bb9b5f57b9e6def015ca",
+    "system_prompt_file": "tmp/language-candidate-20260926/qwen35-rev1-profile-system-prompt.txt",
+    "system_prompt_bytes": 2849,
+    "system_prompt_sha256": "44a458cf75f1c476d622850c89d85f0a6d15d4c168ac5c566684e1d5e4c3e66a",
+    "prompt_delta": "Baseline production SYSTEM_PROMPT with only the final ' /no_think' suffix removed and four general interpretation rules inserted immediately before Examples.",
+    "inserted_rules": [
+      "Propose only explicitly requested actions; do not add find_person/find_object prerequisites to follow.",
+      "Pending proposal text alone does not ground another/different person or object; ask for clarification unless available request/context provides a unique visual identity.",
+      "Classify clauses as affirmative or negated, never emit a negated action, clarify with zero steps when no affirmative supported action remains absent an affirmative unsupported request, and retain affirmative supported clauses when another clause is only negated.",
+      "An affirmative request requiring camera/aircraft movement or observation beyond the fixed current view makes the entire request unsupported; do not omit that scope."
+    ],
+    "semantic_schema_file": "tmp/language-candidate-20260926/qwen35-rev1-schema.json",
+    "semantic_schema_bytes": 510,
+    "semantic_schema_sha256": "e008e33c6fffb2136acbc5130b66ca963ffa627eda00525bc58793c3e3b5326d",
+    "sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "stream": false,
+      "seed": 42,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "server_context_tokens": 2048,
+    "server_threads": 2,
+    "server_threads_batch": 2,
+    "server_parallel_slots": 1,
+    "validator": "bgd_vision.conversation.validate_semantic_result; unchanged",
+    "payload_note": "The custom temporary client preserves the baseline HTTP payload fields and validation behavior; it adds response capture after generation and before JSON parsing."
+  },
+  "evaluation": {
+    "command": "python tmp/language-candidate-20260926/qwen35-rev1-evaluate.py --timeout 30 --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260926/qwen35-rev1-frozen30-results.json --raw-jsonl tmp/language-candidate-20260926/qwen35-rev1-frozen30-raw.jsonl",
+    "baseline_evaluator_module": "bgd_vision/evaluate_language.py",
+    "baseline_evaluator_sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+    "corpus_bytes": 4628,
+    "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "results_file": "tmp/language-candidate-20260926/qwen35-rev1-frozen30-results.json",
+    "results_bytes": 58542,
+    "results_sha256": "11d9bd54c71291b423ca67d8da4ca14c96978aba73432b78594a84d8fe1f8a12",
+    "raw_per_case_jsonl": "tmp/language-candidate-20260926/qwen35-rev1-frozen30-raw.jsonl",
+    "raw_per_case_jsonl_bytes": 49758,
+    "raw_per_case_jsonl_sha256": "a5c3ca9ac7589c547d3fb3a1b04acb1964f61c9aca769dc963e6efbd038c007c",
+    "stdout_capture": "tmp/language-candidate-20260926/qwen35-rev1-frozen30-stdout.log",
+    "stdout_capture_sha256": "d54a952d7463f192417297cacce26d5d2a9c4591c02daf1fc04da89372e39928",
+    "result_exit_code": 1,
+    "passed": 28,
+    "total": 30,
+    "failed_case_ids": [
+      "n01",
+      "n04"
+    ],
+    "timeouts": 0,
+    "cold_case": {
+      "id": "p01",
+      "elapsed_ms": 23794.0
+    },
+    "latency_median_ms": 4097.45,
+    "latency_p95_ms": 5905.9,
+    "raw_capture_note": "Every per-case record includes exact message.content before parsing, parsed completion when valid JSON, independent validator result or error, HTTP status, finish_reason, complete raw API response body, and evaluator latency."
+  },
+  "n01_diagnostic": {
+    "raw_completion": "{\"status\":\"planned\",\"message\":\"\",\"steps\":[]}",
+    "http_status": 200,
+    "finish_reason": "stop",
+    "error_stage": "semantic_validation",
+    "validator_error": "Invalid language-model plan",
+    "interpretation": "No action step was emitted, but status=planned with zero steps violates the validator; the case failed without producing a structured result."
+  },
+  "review": {
+    "file": "tmp/language-candidate-20260926/qwen35-rev1-review.md",
+    "bytes": 5738,
+    "sha256": "c7a2aea48147c42ee426142358e47206dcb39688b2c0c9c1c3b4248f578df92a"
+  }
+}

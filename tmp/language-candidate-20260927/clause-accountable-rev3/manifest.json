@@ -1,0 +1,518 @@
+{
+  "trial_id": "qwen35-clause-accountable-v3",
+  "status": "completed; pending root review of critical and ordinary results",
+  "parent_trial_manifest_sha256": "98ba6b84c1cfc941089064df84ad248685c347cb7d2cec54f20d752de12d399b",
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "official_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "pinned_gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "upstream_safetensors": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "template_note": "The official card states /think and /nothink soft switches are unsupported and documents chat_template_kwargs.enable_thinking=false. The revised prompt omits /no_think and the request keeps enable_thinking=false."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8"
+  },
+  "profile": {
+    "profile_id": "qwen35-clause-accountable-v3",
+    "enabled_by_default": false,
+    "model_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "server": {
+      "host": "127.0.0.1",
+      "port": 8081,
+      "threads": 2,
+      "batch_threads": 2,
+      "context": 2048,
+      "parallel": 1,
+      "jinja": true,
+      "web_ui": false
+    },
+    "request": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "seed": 42,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "response_format": "strict JSON schema"
+    },
+    "authority": "simulator-only; local text interpretation only",
+    "prompt_file": "system-prompt.txt",
+    "schema_file": "schema.json",
+    "prompt_bytes": 2487,
+    "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+    "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c"
+  },
+  "pinned_inputs": {
+    "trial_id": "qwen35-clause-accountable-v3",
+    "source_revision": "revision-3; frozen before model evaluation",
+    "prompt_bytes": 2487,
+    "files": {
+      "bgd_vision/conversation.py": {
+        "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+        "bytes": 42874
+      },
+      "bgd_vision/evaluate_language.py": {
+        "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+        "bytes": 2515
+      },
+      "tests/vision/test_conversation.py": {
+        "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+        "bytes": 31577
+      },
+      "tests/vision/test_conversation_http.py": {
+        "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+        "bytes": 15549
+      },
+      "tests/vision/fixtures/conversation-eval.json": {
+        "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+        "bytes": 4628
+      },
+      "tests/vision/fixtures/conversation-development-v2.json": {
+        "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+        "bytes": 9345
+      },
+      "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+        "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+        "bytes": 3013027808
+      },
+      "tmp/language-candidate-20260922/windows/llama-server.exe": {
+        "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+        "bytes": 9216
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate.py": {
+        "sha256": "257d420e6a8c15dd41f313d82ca495354864ba17ad19da36e4cd73b0696d06b1",
+        "bytes": 12895
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/start_server.py": {
+        "sha256": "377068b5cce42e8266fb59f329e8e91d02992902d141fba7a49c0fd0d2e82632",
+        "bytes": 1955
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/prepare_artifacts.py": {
+        "sha256": "241b3114024c95665cafbb181cfbea9bd000125140164c1d2a76301e774f9e42",
+        "bytes": 4027
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/score_results.py": {
+        "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+        "bytes": 3601
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/profile.json": {
+        "sha256": "d999da51d06fad94422c35ec70725b4a8dad372dc47009b6df2ecb9855ca7cb0",
+        "bytes": 1002
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/conversation-revision3.py": {
+        "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+        "bytes": 42874
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate_language.py": {
+        "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+        "bytes": 2515
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation.py": {
+        "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+        "bytes": 31577
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation_http.py": {
+        "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+        "bytes": 15549
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/system-prompt.txt": {
+        "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+        "bytes": 2487
+      },
+      "tmp/language-candidate-20260927/clause-accountable-rev3/schema.json": {
+        "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+        "bytes": 1016
+      }
+    }
+  },
+  "prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+  "prompt_bytes": 2487,
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "schema_bytes": 1016,
+  "evaluation_source": {
+    "production_conversation_sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+    "frozen_snapshot": "conversation-revision3.py",
+    "snapshot_sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+    "production_evaluator_sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+    "runner_sha256": "257d420e6a8c15dd41f313d82ca495354864ba17ad19da36e4cd73b0696d06b1"
+  },
+  "evaluation": {
+    "frozen30": {
+      "result_file": "frozen30-results.json",
+      "raw_file": "frozen30-raw.jsonl",
+      "corpus": "tests/vision/fixtures/conversation-eval.json",
+      "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "cases": 30,
+      "passed": 30,
+      "critical_score": {
+        "passed": 17,
+        "total": 17
+      },
+      "ordinary_score": {
+        "passed": 13,
+        "total": 13
+      },
+      "critical_misses": [],
+      "ordinary_misses": [],
+      "scoring_basis": "Fixture has no critical field. Critical categories are ambiguity, negation, unsupported, and injection (IDs a/n/u/i); paraphrase, description, correction, and multiple are ordinary (IDs p/d/c/m).",
+      "model_inference_requests": 18,
+      "policy_prepass_cases": [
+        "a02",
+        "a04",
+        "n01",
+        "n03",
+        "n04",
+        "u01",
+        "u02",
+        "u04",
+        "u05",
+        "i01",
+        "i02",
+        "i03"
+      ],
+      "cold_first_inference_ms": 22515.3,
+      "median_model_latency_ms": 4281.4,
+      "p95_model_latency_ms": 22515.3,
+      "completion_bytes": {
+        "count": 18,
+        "median": 86.0,
+        "p95": 136,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "server": {
+        "pid": 36312,
+        "ready_ms": 4083.3,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    },
+    "development-v2": {
+      "result_file": "development-v2-results.json",
+      "raw_file": "development-v2-raw.jsonl",
+      "corpus": "tests/vision/fixtures/conversation-development-v2.json",
+      "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "cases": 58,
+      "passed": 51,
+      "critical_score": {
+        "passed": 28,
+        "total": 30
+      },
+      "ordinary_score": {
+        "passed": 23,
+        "total": 28
+      },
+      "critical_misses": [
+        "n04",
+        "n05"
+      ],
+      "ordinary_misses": [
+        "p01",
+        "p03",
+        "p07",
+        "p14",
+        "c01"
+      ],
+      "scoring_basis": "Explicit fixture critical=true field; cases without true are ordinary.",
+      "model_inference_requests": 36,
+      "policy_prepass_cases": [
+        "a03",
+        "n01",
+        "n02",
+        "n06",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07"
+      ],
+      "cold_first_inference_ms": 22426.4,
+      "median_model_latency_ms": 4392.25,
+      "p95_model_latency_ms": 6430.4,
+      "completion_bytes": {
+        "count": 36,
+        "median": 97.0,
+        "p95": 172,
+        "per_case_field": "model_completion_bytes in raw_rows"
+      },
+      "server": {
+        "pid": 23168,
+        "ready_ms": 4115.8,
+        "host": "127.0.0.1",
+        "port": 8081,
+        "arguments": [
+          "-m",
+          "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "8081",
+          "-t",
+          "2",
+          "-tb",
+          "2",
+          "-c",
+          "2048",
+          "-np",
+          "1",
+          "--jinja",
+          "--no-webui"
+        ],
+        "process_stopped": true,
+        "loopback_listener_remaining": false
+      }
+    }
+  },
+  "performance_risk": {
+    "production_default_interpreter_timeout_seconds": 8,
+    "evaluation_timeout_seconds": 30,
+    "cold_first_inference_ms": {
+      "frozen30": 22515.3,
+      "development-v2": 22426.4
+    },
+    "assessment": "Production's default timeout is shorter than both cold first inferences; assess measured warmup or timeout behavior before any user or Pi trial."
+  },
+  "verification": {
+    "python": "41 conversation and authenticated HTTP tests passed",
+    "node": "conversation UI regression suite passed",
+    "python_log": "focused-python-tests.log",
+    "node_log": "focused-node-tests.log"
+  },
+  "scope": [
+    "PC text-only; fixed Qwen3.5-4B Q4_K_M and llama.cpp b11095.",
+    "Only the two named open development fixtures were evaluated.",
+    "No Pi, camera service, UI runtime, physical device, flight controls, or heldout corpus was used.",
+    "No prompt/code tuning occurred between the two model runs.",
+    "Loopback model server stopped after each run; no listener remains on 127.0.0.1:8081."
+  ],
+  "review_file": "review.md",
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+      "bytes": 42874
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+      "bytes": 31577
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_conversation_ui.cjs": {
+      "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+      "bytes": 11279
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/build_manifest.py": {
+      "sha256": "2cb6feda1a11338104283a96b3f4dd38491168965b49e99d10293a644ee725e6",
+      "bytes": 6233
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/conversation-revision3.py": {
+      "sha256": "1c17af72d214c6ab04a9697010cc0039b9872178efb5ddc18dadc9d6b352b880",
+      "bytes": 42874
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-raw.jsonl": {
+      "sha256": "65b754ad32154a7cf01a73a001c60797c659aefff65eb38ebc1172b9a9b8717c",
+      "bytes": 298076
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-results.json": {
+      "sha256": "4c2cd0f7a34756fa6fb323aa143984961cc0cfc6040b0db59b8d5ed335d86c1e",
+      "bytes": 26078
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-server-ready.json": {
+      "sha256": "a024855aa0b44bf9c8dd2741d9c441cf21eea90487508f370a7b6d442f51d068",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-server.pid": {
+      "sha256": "8952bd064765035888375095489ebfb199a33d8106706186ef51dc7ed65ddc73",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-server.stderr.log": {
+      "sha256": "fcfdc03239e9e1fb87f36f0850418612451867cd2b727e28569a01253e9cb476",
+      "bytes": 31980
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/development-v2-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate.py": {
+      "sha256": "257d420e6a8c15dd41f313d82ca495354864ba17ad19da36e4cd73b0696d06b1",
+      "bytes": 12895
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/focused-node-tests.log": {
+      "sha256": "c2e88cf9aacf3de798ebd387a54ad5d0c95254631d3db5d70cad7322580e0107",
+      "bytes": 162
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/focused-python-tests.log": {
+      "sha256": "44b5f05b16bc5d3787b9010dcc4334e4be53b5c0b8c8ce1db4ba3f7d7a4b3c77",
+      "bytes": 149
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-raw.jsonl": {
+      "sha256": "ae6e5135b68a5762610c56a7cff2164d5c8871062ad603c1a48012af8a731d0d",
+      "bytes": 149640
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-results.json": {
+      "sha256": "a89caf67c73fede17845d999500996a187cc25d6cfbd87fbcbdec58e4d9cff04",
+      "bytes": 14486
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-server-ready.json": {
+      "sha256": "37eca4b7d71a696d53f6c35e6e2d8fcd0f11ed6e5b25f2d4a011a2026f164c4e",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-server.pid": {
+      "sha256": "ab71ea3e686ccda03d2de7aa5a28b203b694400a28bb525aed012c0bde13007b",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-server.stderr.log": {
+      "sha256": "eeff47879c1fced952e73b5f5e3bc650eef9103ba382b6e461a6a543c10faeda",
+      "bytes": 17286
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/frozen30-server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/prepare_artifacts.py": {
+      "sha256": "241b3114024c95665cafbb181cfbea9bd000125140164c1d2a76301e774f9e42",
+      "bytes": 4027
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/profile.json": {
+      "sha256": "d999da51d06fad94422c35ec70725b4a8dad372dc47009b6df2ecb9855ca7cb0",
+      "bytes": 1002
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/review.md": {
+      "sha256": "2c79cef4e5812fcaee8b2a02e18f953a78edcea2bb527796989f464db4aaffd4",
+      "bytes": 4935
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/run-lock.json": {
+      "sha256": "b4c93b79c10a3b56964a42e6a02fbde575edb1d480dc632b8d37096e6d5420bc",
+      "bytes": 3695
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/schema.json": {
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+      "bytes": 1016
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/score_results.py": {
+      "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+      "bytes": 3601
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/server-ready.json": {
+      "sha256": "a024855aa0b44bf9c8dd2741d9c441cf21eea90487508f370a7b6d442f51d068",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/server.pid": {
+      "sha256": "8952bd064765035888375095489ebfb199a33d8106706186ef51dc7ed65ddc73",
+      "bytes": 5
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/server.stderr.log": {
+      "sha256": "fcfdc03239e9e1fb87f36f0850418612451867cd2b727e28569a01253e9cb476",
+      "bytes": 31980
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/start_server.py": {
+      "sha256": "377068b5cce42e8266fb59f329e8e91d02992902d141fba7a49c0fd0d2e82632",
+      "bytes": 1955
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation.py": {
+      "sha256": "9d588fec25c5ee88f04f72c2eb9c43ffb15b5edbc2023337d421cf1d35f30282",
+      "bytes": 31577
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev3/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    }
+  }
+}

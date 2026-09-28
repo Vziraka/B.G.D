@@ -1,0 +1,335 @@
+{
+  "trial_id": "qwen35-clause-accountable-v1",
+  "status": "rejected; preserved before revision 2",
+  "model": {
+    "gguf_repo": "bartowski/Qwen_Qwen3.5-4B-GGUF",
+    "gguf_revision": "4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "file": "Qwen_Qwen3.5-4B-Q4_K_M.gguf",
+    "local_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "bytes": 3013027808,
+    "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "license": "Apache-2.0",
+    "upstream_model_repo": "Qwen/Qwen3.5-4B",
+    "upstream_model_revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+    "upstream_license": "Apache-2.0",
+    "official_model_card": "https://huggingface.co/Qwen/Qwen3.5-4B",
+    "pinned_gguf_repo_page": "https://huggingface.co/bartowski/Qwen_Qwen3.5-4B-GGUF/tree/4168f45a16a1290d65a4ec0fa312ae917a4c15d6",
+    "upstream_safetensors": [
+      {
+        "file": "model.safetensors-00001-of-00002.safetensors",
+        "bytes": 5329398688,
+        "sha256": "26a93f066e1916adb13453dae5a0c707c0fbc71299ed98779571a907b8e74c61"
+      },
+      {
+        "file": "model.safetensors-00002-of-00002.safetensors",
+        "bytes": 3990429408,
+        "sha256": "cb544bd9bfae93dc59b0f22b292f5933573854a7f9b97835c67060d7d910e188"
+      }
+    ],
+    "template_note": "The official card states /think and /nothink soft switches are unsupported and documents chat_template_kwargs.enable_thinking=false. The revised prompt omits /no_think and the request keeps enable_thinking=false."
+  },
+  "runtime": {
+    "kind": "existing verified llama.cpp Windows CPU runtime",
+    "version": "0.4.1-dev (build 11095, commit 58367713a), Windows x86_64",
+    "executable": "tmp/language-candidate-20260922/windows/llama-server.exe",
+    "executable_bytes": 9216,
+    "executable_sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "archive": "tmp/language-candidate-20260922/llama-b11095-bin-win-cpu-x64.zip",
+    "archive_sha256": "170b23e0a52c4bee7afc26912472c9b64c891382fd0d78fd9a8fafe310d571f8"
+  },
+  "runtime_run": {
+    "arguments": "-m <pinned GGUF> --host 127.0.0.1 --port 8081 -t 2 -tb 2 -c 2048 -np 1 --jinja --no-webui",
+    "startup_ms": 4618.2,
+    "process_id": 43116,
+    "process_stopped": true,
+    "loopback_listener_remaining": false,
+    "creation": "CREATE_NO_WINDOW"
+  },
+  "profile": {
+    "profile_id": "qwen35-clause-accountable-v2",
+    "enabled_by_default": false,
+    "model_file": "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf",
+    "server": {
+      "host": "127.0.0.1",
+      "port": 8081,
+      "threads": 2,
+      "batch_threads": 2,
+      "context": 2048,
+      "parallel": 1,
+      "jinja": true,
+      "web_ui": false
+    },
+    "request": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "max_tokens": 300,
+      "seed": 42,
+      "stream": false,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "response_format": "strict JSON schema"
+    },
+    "authority": "simulator-only; local text interpretation only",
+    "prompt_file": "system-prompt.txt",
+    "schema_file": "schema.json"
+  },
+  "prompt_sha256": "129cfefb7501ab2e9dc2a31366e46f26361e85d0605b74b93348cbd4e17ef3ff",
+  "schema_sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+  "evaluation": {
+    "script": "tmp/language-candidate-20260927/clause-accountable/evaluate.py",
+    "scoring_postprocessor": "tmp/language-candidate-20260927/clause-accountable/score_results.py",
+    "implementation": "bgd_vision.LocalSemanticInterpreter through bgd_vision.evaluate_language.evaluate",
+    "capture": "request body/headers, HTTP response status, raw response UTF-8 and base64, unparsed and parsed completion, validated result/error, latency, prepass result and execution path",
+    "p95": "sorted raw inference latencies"
+  },
+  "verification": {
+    "python_conversation_tests": "23 passed",
+    "python_http_tests": "13 passed",
+    "browser_ui_test": "passed",
+    "commands": [
+      "python -m unittest discover -s tests/vision -p test_conversation.py",
+      "python -m unittest discover -s tests/vision -p test_conversation_http.py",
+      "node tests/vision/test_conversation_ui.cjs"
+    ]
+  },
+  "runs": {
+    "frozen30": {
+      "command": "python tmp/language-candidate-20260927/clause-accountable/evaluate.py --timeout 30 --corpus tests/vision/fixtures/conversation-eval.json --output tmp/language-candidate-20260927/clause-accountable/frozen30-results.json --raw-jsonl tmp/language-candidate-20260927/clause-accountable/frozen30-raw.jsonl",
+      "corpus": "tests\\vision\\fixtures\\conversation-eval.json",
+      "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "passed": 22,
+      "total": 30,
+      "critical_score": {
+        "passed": 16,
+        "total": 17
+      },
+      "ordinary_score": {
+        "passed": 6,
+        "total": 13
+      },
+      "scoring_basis": "Fixture has no critical flag. Critical categories are ambiguity, negation, unsupported, and injection (IDs a/n/u/i); paraphrase, description, correction, and multiple are ordinary (IDs p/d/c/m).",
+      "critical_misses": [
+        "n02"
+      ],
+      "ordinary_misses": [
+        "p06",
+        "d01",
+        "d02",
+        "c01",
+        "c02",
+        "c03",
+        "m02"
+      ],
+      "policy_prepass_cases": [
+        "a04",
+        "n01",
+        "n03",
+        "n04",
+        "u01",
+        "u02",
+        "u04",
+        "u05",
+        "i01",
+        "i02",
+        "i03"
+      ],
+      "model_inference_requests": 19,
+      "first_evaluated_case_latency_ms": 29137.1,
+      "first_model_inference_case": {
+        "id": "p01",
+        "latency_ms": 29137.1
+      },
+      "model_latency_median_ms": 9154.4,
+      "model_latency_p95_ms": 29137.1,
+      "raw_jsonl": "tmp/language-candidate-20260927/clause-accountable/frozen30-raw.jsonl",
+      "results_json": "tmp/language-candidate-20260927/clause-accountable/frozen30-results.json"
+    },
+    "development-v2": {
+      "command": "python tmp/language-candidate-20260927/clause-accountable/evaluate.py --timeout 30 --corpus tests/vision/fixtures/conversation-development-v2.json --output tmp/language-candidate-20260927/clause-accountable/development-v2-results.json --raw-jsonl tmp/language-candidate-20260927/clause-accountable/development-v2-raw.jsonl",
+      "corpus": "tests\\vision\\fixtures\\conversation-development-v2.json",
+      "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "passed": 36,
+      "total": 58,
+      "critical_score": {
+        "passed": 24,
+        "total": 30
+      },
+      "ordinary_score": {
+        "passed": 12,
+        "total": 28
+      },
+      "scoring_basis": "Explicit critical=true fixture field; cases without true are ordinary.",
+      "critical_misses": [
+        "a01",
+        "a04",
+        "a05",
+        "n03",
+        "n04",
+        "n05"
+      ],
+      "ordinary_misses": [
+        "p01",
+        "p04",
+        "p05",
+        "p06",
+        "p13",
+        "p15",
+        "p16",
+        "p18",
+        "p20",
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "m01",
+        "m02",
+        "m03"
+      ],
+      "policy_prepass_cases": [
+        "n01",
+        "n02",
+        "n06",
+        "u01",
+        "u02",
+        "u03",
+        "u04",
+        "u05",
+        "u06",
+        "u07",
+        "u08",
+        "u09",
+        "u10",
+        "u11",
+        "i01",
+        "i02",
+        "i03",
+        "i04",
+        "i05",
+        "i06",
+        "i07"
+      ],
+      "model_inference_requests": 37,
+      "first_evaluated_case_latency_ms": 9213.6,
+      "first_model_inference_case": {
+        "id": "p01",
+        "latency_ms": 9213.6
+      },
+      "model_latency_median_ms": 9213.6,
+      "model_latency_p95_ms": 12258.8,
+      "raw_jsonl": "tmp/language-candidate-20260927/clause-accountable/development-v2-raw.jsonl",
+      "results_json": "tmp/language-candidate-20260927/clause-accountable/development-v2-results.json"
+    }
+  },
+  "review": "tmp/language-candidate-20260927/clause-accountable/review.md",
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "2e3993ef0991714bb8ff3c56971baaaa5b0fcef6478b03e2ded0b0c2f9c51314",
+      "bytes": 37617
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "b6bbf634d635af25d9d48b04276bb6cc6a56f60b428beee5b7511937787b045d",
+      "bytes": 21802
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260927/clause-accountable/conversation-v1.py": {
+      "sha256": "2e3993ef0991714bb8ff3c56971baaaa5b0fcef6478b03e2ded0b0c2f9c51314",
+      "bytes": 37617
+    },
+    "tmp/language-candidate-20260927/clause-accountable/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable/test_conversation-v1.py": {
+      "sha256": "b6bbf634d635af25d9d48b04276bb6cc6a56f60b428beee5b7511937787b045d",
+      "bytes": 21802
+    },
+    "tmp/language-candidate-20260927/clause-accountable/test_conversation_http-v1.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tmp/language-candidate-20260927/clause-accountable/evaluate.py": {
+      "sha256": "38d75ebe819fae4866f1d7d55a35c99a907e1935821a35c426b865d47d78d3ea",
+      "bytes": 8675
+    },
+    "tmp/language-candidate-20260927/clause-accountable/score_results.py": {
+      "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+      "bytes": 3601
+    },
+    "tmp/language-candidate-20260927/clause-accountable/start_server.py": {
+      "sha256": "377068b5cce42e8266fb59f329e8e91d02992902d141fba7a49c0fd0d2e82632",
+      "bytes": 1955
+    },
+    "tmp/language-candidate-20260927/clause-accountable/profile.json": {
+      "sha256": "9abf14c052ed9f1fd05ae6a285170bf78cb819003b473afc2a9d68c2c264245a",
+      "bytes": 801
+    },
+    "tmp/language-candidate-20260927/clause-accountable/system-prompt.txt": {
+      "sha256": "129cfefb7501ab2e9dc2a31366e46f26361e85d0605b74b93348cbd4e17ef3ff",
+      "bytes": 3010
+    },
+    "tmp/language-candidate-20260927/clause-accountable/schema.json": {
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+      "bytes": 1016
+    },
+    "tmp/language-candidate-20260927/clause-accountable/server-ready.json": {
+      "sha256": "8d5cf1eb122a90601c651d756d8f8b68d9a7ea84a4fad689b583e3e0709bf8f9",
+      "bytes": 405
+    },
+    "tmp/language-candidate-20260927/clause-accountable/server.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "tmp/language-candidate-20260927/clause-accountable/server.stderr.log": {
+      "sha256": "1554d33af87e4a90e40e44e291c61bd23128c77316a9f9e3e026a8ac92ec782a",
+      "bytes": 48760
+    },
+    "tmp/language-candidate-20260927/clause-accountable/frozen30-results.json": {
+      "sha256": "f8a5b8ff92c290d347c45e614e93dffebe18be5a163e90ea7636bb3db614b349",
+      "bytes": 17542
+    },
+    "tmp/language-candidate-20260927/clause-accountable/frozen30-raw.jsonl": {
+      "sha256": "6687dea0eacde99c5796e6e143dc859c120eff509036bc4dea5e84f34160fce5",
+      "bytes": 164097
+    },
+    "tmp/language-candidate-20260927/clause-accountable/development-v2-results.json": {
+      "sha256": "41e28c2f37ef0daddb44b89af8805892ddd1ed646ffcdff9ab9a0fa4553791b0",
+      "bytes": 32211
+    },
+    "tmp/language-candidate-20260927/clause-accountable/development-v2-raw.jsonl": {
+      "sha256": "57e72f2abbd8420d636b2f5699335ddfee3a74c82a7a5be9717aae3effca5b9c",
+      "bytes": 319927
+    },
+    "tmp/language-candidate-20260927/clause-accountable/review.md": {
+      "sha256": "6ff8373af6f4a9d3ea55d80a5525c7ab3c25671bb701417c17343cc241609500",
+      "bytes": 17082
+    }
+  },
+  "scope": "Windows PC local text only. No Pi, production service, browser implementation, physical/flight controls, cloud inference, or fixture writes. Each open development corpus was run once; no held-out corpus was opened or run."
+}

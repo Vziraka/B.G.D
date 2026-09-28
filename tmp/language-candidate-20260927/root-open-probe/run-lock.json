@@ -1,0 +1,107 @@
+{
+  "trial_id": "qwen35-source-grounded-rev5",
+  "source_revision": "revision-5; frozen before model evaluation",
+  "prompt_bytes": 2487,
+  "files": {
+    "bgd_vision/conversation.py": {
+      "sha256": "246859d9560658d3355b61c6b25b483dd8734e808a72a2124ea5655267e9fbd2",
+      "bytes": 53657
+    },
+    "bgd_vision/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tests/vision/test_conversation.py": {
+      "sha256": "69f86fca97c87377bf92aa8d5190af8f80652c1d51be71db9104a33c1f6793b4",
+      "bytes": 43446
+    },
+    "tests/vision/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tests/vision/test_conversation_ui.cjs": {
+      "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+      "bytes": 11279
+    },
+    "tests/vision/fixtures/conversation-eval.json": {
+      "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+      "bytes": 4628
+    },
+    "tests/vision/fixtures/conversation-development-v2.json": {
+      "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+      "bytes": 9345
+    },
+    "tmp/language-candidate-20260926/qwen35-4b-q4_k_m.gguf": {
+      "sha256": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+      "bytes": 3013027808
+    },
+    "tmp/language-candidate-20260922/windows/llama-server.exe": {
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+      "bytes": 9216
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/evaluate.py": {
+      "sha256": "303b10d9e7638c6a1ad140539b28d100e319173e226740d2709dd9f19f3e2b42",
+      "bytes": 13533
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/start_server.py": {
+      "sha256": "377068b5cce42e8266fb59f329e8e91d02992902d141fba7a49c0fd0d2e82632",
+      "bytes": 1955
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/prepare_artifacts.py": {
+      "sha256": "59ccf3e9eaebac27d383d6ac57de739792fdfaf6ab8c4a19c5ebe36d9161fb81",
+      "bytes": 4357
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/build_manifest.py": {
+      "sha256": "03fe8d8af95df4f66b2eaebf95ec1c0a558ee696958034f46475faa28a9823e3",
+      "bytes": 6405
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/score_results.py": {
+      "sha256": "bbba7daab2f674cf99109128b7075948e38003ddcf2e4124e6f61adeb5db09b0",
+      "bytes": 3601
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/profile.json": {
+      "sha256": "a65349da77edd2250b207e03295ba66fd8c7d8cbdc31925b90d4dff7e1da7eab",
+      "bytes": 1001
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/conversation-revision5.py": {
+      "sha256": "246859d9560658d3355b61c6b25b483dd8734e808a72a2124ea5655267e9fbd2",
+      "bytes": 53657
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/evaluate_language.py": {
+      "sha256": "5b35c6421ce2d4f0f10c5885c1429e96319f109fc3d3b51f2117e0476b484066",
+      "bytes": 2515
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/test_conversation.py": {
+      "sha256": "69f86fca97c87377bf92aa8d5190af8f80652c1d51be71db9104a33c1f6793b4",
+      "bytes": 43446
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/test_conversation_http.py": {
+      "sha256": "1031eeb5ca15cfafe35a021ec7295c4e7ed9e672c48378f50223f539c58493d8",
+      "bytes": 15549
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/test_conversation_ui.cjs": {
+      "sha256": "d8350e2f476ab71151720b4bb7414b0965a656136454d3c636b16e2713f0917d",
+      "bytes": 11279
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/focused-python-tests.log": {
+      "sha256": "47889d7627ab32a6338dcc8d18c3222950538af2dcddb66d48863320ed64d27b",
+      "bytes": 145
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/focused-node-tests.log": {
+      "sha256": "c2e88cf9aacf3de798ebd387a54ad5d0c95254631d3db5d70cad7322580e0107",
+      "bytes": 162
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/system-prompt.txt": {
+      "sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+      "bytes": 2487
+    },
+    "tmp/language-candidate-20260927/clause-accountable-rev5/schema.json": {
+      "sha256": "907be6346e3c6e815ac4b0e2f2cb42c75e1629fa3b8c9d682e6e764609fbf39c",
+      "bytes": 1016
+    },
+    "tests/vision/fixtures/conversation-open-probe-20260927.json": {
+      "sha256": "b741f7038cb9de1dcfd73375576eb928ea6d76b89753f2d88154d04938992e9c",
+      "bytes": 4231
+    }
+  }
+}

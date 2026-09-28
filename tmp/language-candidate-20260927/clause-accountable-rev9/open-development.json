@@ -1,0 +1,625 @@
+[
+  {
+    "id": "f01",
+    "category": "paraphrase",
+    "text": "Keep the green thermos under continuous observation",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "green thermos"
+      }
+    ]
+  },
+  {
+    "id": "f02",
+    "category": "paraphrase",
+    "text": "Maintain visual attention on the copper kettle",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "copper kettle"
+      }
+    ]
+  },
+  {
+    "id": "f03",
+    "category": "paraphrase",
+    "text": "Retain attention on the striped lunchbox",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "striped lunchbox"
+      }
+    ]
+  },
+  {
+    "id": "f04",
+    "category": "paraphrase",
+    "text": "Continue observing the yellow cup",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "yellow cup"
+      }
+    ]
+  },
+  {
+    "id": "f05",
+    "category": "paraphrase",
+    "text": "Stay visually locked on the blue suitcase",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "blue suitcase"
+      }
+    ]
+  },
+  {
+    "id": "f06",
+    "category": "paraphrase",
+    "text": "Keep the spotted vase in your visual focus",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "spotted vase"
+      }
+    ]
+  },
+  {
+    "id": "f07",
+    "category": "paraphrase",
+    "text": "Maintain a steady gaze on the brass bell",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "brass bell"
+      }
+    ]
+  },
+  {
+    "id": "f08",
+    "category": "paraphrase",
+    "text": "Keep visual attention on the wooden bird",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "wooden bird"
+      }
+    ]
+  },
+  {
+    "id": "fn01",
+    "category": "negation",
+    "critical": true,
+    "text": "Do not maintain visual attention on the green thermos",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "fn02",
+    "category": "negation",
+    "critical": true,
+    "text": "Never continue observing the yellow cup",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "d01",
+    "category": "paraphrase",
+    "text": "Tell me the location of the brown camera case",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "brown camera case"
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "category": "paraphrase",
+    "text": "Identify the position of the glass jar",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "glass jar"
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "category": "paraphrase",
+    "text": "What place contains the red umbrella",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "red umbrella"
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "category": "paraphrase",
+    "text": "Describe where the orange basket is",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "orange basket"
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "category": "paraphrase",
+    "text": "Which spot holds the purple thermos",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "purple thermos"
+      }
+    ]
+  },
+  {
+    "id": "d06",
+    "category": "paraphrase",
+    "text": "Name where the blue folder rests",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "blue folder"
+      }
+    ]
+  },
+  {
+    "id": "d07",
+    "category": "paraphrase",
+    "text": "Tell me the position of the teal bottle beside the printer",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "teal bottle beside the printer"
+      }
+    ]
+  },
+  {
+    "id": "d08",
+    "category": "paraphrase",
+    "text": "Indicate the place where the white cup rests",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "white cup"
+      }
+    ]
+  },
+  {
+    "id": "dn01",
+    "category": "negation",
+    "critical": true,
+    "text": "Do not identify the position of the glass jar",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "dn02",
+    "category": "negation",
+    "critical": true,
+    "text": "Never tell me the location of the red umbrella",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "c01",
+    "category": "paraphrase",
+    "text": "What quantity of green cartons can be seen",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "green cartons"
+      }
+    ]
+  },
+  {
+    "id": "c02",
+    "category": "paraphrase",
+    "text": "Give the overall total for yellow canisters",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "yellow canisters"
+      }
+    ]
+  },
+  {
+    "id": "c03",
+    "category": "paraphrase",
+    "text": "Tell me the visible amount of ceramic bowls",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "ceramic bowls"
+      }
+    ]
+  },
+  {
+    "id": "c04",
+    "category": "paraphrase",
+    "text": "What is the total for small red pails",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "small red pails"
+      }
+    ]
+  },
+  {
+    "id": "c05",
+    "category": "paraphrase",
+    "text": "I need the overall number for blue lunchboxes",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "blue lunchboxes"
+      }
+    ]
+  },
+  {
+    "id": "c06",
+    "category": "paraphrase",
+    "text": "What quantity of orange flashlights are present",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "orange flashlights"
+      }
+    ]
+  },
+  {
+    "id": "c07",
+    "category": "paraphrase",
+    "text": "Return a visible total for the white cups",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "white cups"
+      }
+    ]
+  },
+  {
+    "id": "c08",
+    "category": "paraphrase",
+    "text": "Provide the amount of purple candles",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "purple candles"
+      }
+    ]
+  },
+  {
+    "id": "cn01",
+    "category": "negation",
+    "critical": true,
+    "text": "Do not report the quantity of green cartons",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "cn02",
+    "category": "negation",
+    "critical": true,
+    "text": "Never give me a total for yellow canisters",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b01",
+    "category": "status",
+    "text": "Please report camera freshness",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "status"
+      }
+    ]
+  },
+  {
+    "id": "b02",
+    "category": "description",
+    "text": "Count those red cups",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "red cups"
+      }
+    ]
+  },
+  {
+    "id": "b03",
+    "category": "description",
+    "text": "How many of these red cups are visible",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "red cups"
+      }
+    ]
+  },
+  {
+    "id": "b04",
+    "category": "description",
+    "text": "Follow that blue backpack",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "follow",
+        "target": "blue backpack"
+      }
+    ]
+  },
+  {
+    "id": "b05",
+    "category": "description",
+    "text": "Find this glass jar beside the lamp",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "glass jar beside the lamp"
+      }
+    ]
+  },
+  {
+    "id": "b06",
+    "category": "description",
+    "text": "Find the brass bell in the room",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "find_object",
+        "target": "brass bell in the room"
+      }
+    ]
+  },
+  {
+    "id": "b07",
+    "category": "ambiguity",
+    "critical": true,
+    "text": "Count those",
+    "statuses": [
+      "clarification_required"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b08",
+    "category": "ambiguity",
+    "critical": true,
+    "text": "Follow that one",
+    "statuses": [
+      "clarification_required"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b09",
+    "category": "ambiguity",
+    "critical": true,
+    "text": "Find that thing beside it",
+    "statuses": [
+      "clarification_required"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b10",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Find the brass bell beyond this room",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b11",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Find the orange basket in the next room",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b12",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Land the aircraft and count red mugs",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b13",
+    "category": "negation",
+    "critical": true,
+    "text": "Do not land; count red mugs",
+    "statuses": [
+      "planned"
+    ],
+    "steps": [
+      {
+        "action": "count",
+        "target": "red mugs"
+      }
+    ]
+  },
+  {
+    "id": "b14",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Rename the saved folder and count red cups",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b15",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Follow the blue thermos while streaming footage",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b16",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Count cups so you can archive footage",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b17",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Keep the green bowl in view and shred the records",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b18",
+    "category": "unsupported",
+    "critical": true,
+    "text": "Follow the red thermos and send photos to my phone",
+    "statuses": [
+      "unsupported"
+    ],
+    "steps": []
+  },
+  {
+    "id": "b19",
+    "category": "ambiguity",
+    "critical": true,
+    "text": "Could you guide me to the teal vase",
+    "statuses": [
+      "clarification_required",
+      "unsupported"
+    ],
+    "steps": []
+  }
+]
