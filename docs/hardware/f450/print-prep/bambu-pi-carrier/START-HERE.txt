@@ -1,0 +1,49 @@
+BGD PI CARRIER - FIRST PETG FIT PRINT
+Prepared in Bambu Studio 02.08.02.61, September 24, 2026
+
+OPEN THIS FILE: pi-carrier-x1e-petg.3mf
+This is the editable project, containing the model and its print settings.
+The package contains only the Pi carrier. It does not contain a runnable
+pre-sliced G-code file. No print has been sent or started.
+
+ON THE OTHER COMPUTER
+1. Extract this ZIP into a folder. Open pi-carrier-x1e-petg.3mf in Bambu
+   Studio as a PROJECT, retaining its saved settings (not geometry only).
+   Using Bambu Studio 02.08.02.61 matches the verified version.
+2. Check printer Bambu Lab X1E, standard 0.4 mm hardened-steel nozzle,
+   Textured PEI Plate, and the saved BGD Polymaker PETG provisional profile.
+   The owner confirms gold Textured PEI and PETG physically in AMS slot 4.
+   Printer login/connection and physical AMS assignments are local setup;
+   transferring this file does not configure them.
+3. Slice plate and inspect Preview. Expected size is 57 x 78 x 10.2 mm,
+   with feet down and one carrier. Prior verified estimate: 1h 2m 52s and
+   13.17 g including supports/brim. Versions/calibration may alter estimates.
+4. Before sending, map PROJECT FILAMENT 1 to PHYSICAL AMS SLOT 4 (PETG).
+   The project filament number is not the physical AMS slot number.
+   Verify the spool's actual material and the correct physical X1E.
+   STOP BEFORE SEND/PRINT. The owner explicitly requires manual approval.
+   Filament loading and this file transfer are not approval to print.
+
+EXPECTED SAVED SETTINGS
+PETG nozzle 250 C / textured bed 65 C; chamber target 0; auxiliary fan 0.
+0.20 mm layers, 4 walls, 5 top/bottom layers, 30% gyroid infill.
+Outer walls 40 mm/s, inner walls 60 mm/s, first layer 20 mm/s;
+maximum material flow 8 mm3/s; cooling 20-60%.
+Normal/grid supports FROM BUILD PLATE ONLY, top gap 0.2 mm, XY gap 0.4 mm.
+Outer brim 3 mm, brim separation 0.2 mm. Do not rotate or scale the model.
+The standard X1E start sequence includes a brief hotter purge; the saved
+250 C setting is the part-printing temperature.
+
+VERIFICATION AND LIMITS
+Model vertices match source to 0.001 mm. Bambu slice had no warnings.
+Generated supports do not enter the four tie tunnels. critical-layers.png
+shows five checked heights; review.json records digital checks.
+Actual adhesion, support removal, tie/standoff fit and strength are not
+physically tested. After an approved first print, cool and remove supports,
+then check flat rails, clear tie tunnels and standoff seating without force.
+This is a fit prototype, not a flight-qualified part.
+
+The original computer's Bambu cloud connection failed (-6020). That does
+not corrupt the saved project or establish that the other computer will
+have the same problem. The other computer still needs a working printer
+connection or the lab's normal local transfer method.

@@ -1,0 +1,48 @@
+{
+  "preserved_on": "2026-09-09",
+  "status": "Historical inputs only; not a runnable current-aircraft model",
+  "files": [
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\bgd-propulsion-model.py",
+      "archived_file": "bgd-propulsion-model.py.txt",
+      "sha256": "28923007e7c584d4ac512e525086a2d708cbdd96b2555bc55d5cfb968cf67f17",
+      "bytes": 1599,
+      "hash_found_in_final_report": false
+    },
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\bgd-model-5s.py",
+      "archived_file": "bgd-model-5s.py.txt",
+      "sha256": "f57ad684a0233ccdacfc4821c0384f2df14d86a2054d03aeb835f7c8232b0471",
+      "bytes": 3392,
+      "hash_found_in_final_report": true
+    },
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\bgd-model-5s3p.py",
+      "archived_file": "bgd-model-5s3p.py.txt",
+      "sha256": "36f8ae57be53374abfecaad8446f73dfee5d3d3b1bfea81549e657ff1b890b74",
+      "bytes": 3004,
+      "hash_found_in_final_report": true
+    },
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\bgd-model-6s3p.py",
+      "archived_file": "bgd-model-6s3p.py.txt",
+      "sha256": "8994a613be0df785b1dfe01a64be5f55b6ee0d2fcbd589d53f894833f2ad08d0",
+      "bytes": 1431,
+      "hash_found_in_final_report": true
+    },
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\bgd-apc7x4E.dat",
+      "archived_file": "bgd-apc7x4E.dat",
+      "sha256": "da962147f34cddec145e8159b33c51080c6754f3443ccc4cad281dabbf01c53c",
+      "bytes": 198744,
+      "hash_found_in_final_report": true
+    },
+    {
+      "original_path": "C:\\Users\\zvent\\AppData\\Local\\Temp\\fresh-p50b.pdf",
+      "archived_file": "fresh-p50b.pdf",
+      "sha256": "867a4873b71a7c5b758be83f8371daf5ca5cb624675ac85b405dc227504df20c",
+      "bytes": 393656,
+      "hash_found_in_final_report": true
+    }
+  ]
+}

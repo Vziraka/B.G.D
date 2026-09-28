@@ -1,0 +1,131 @@
+[
+  {
+    "part": "pi-carrier-core-draft",
+    "layers": 63,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 13.25,
+    "time": "50m 11s; total estimated time: 59m 23s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.091,
+      "Support": 2.039,
+      "Outer wall": 1.348,
+      "Inner wall": 3.39,
+      "Internal solid infill": 2.77,
+      "Sparse infill": 0.478,
+      "Support interface": 0.96,
+      "Overhang wall": 0.157,
+      "Bridge": 0.37,
+      "Gap infill": 0.177,
+      "Internal Bridge": 0.524,
+      "Top surface": 0.608
+    },
+    "support_in_functional_openings": []
+  },
+  {
+    "part": "camera-bracket",
+    "layers": 153,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 4.27,
+    "time": "26m 2s; total estimated time: 35m 14s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.074,
+      "Support": 0.373,
+      "Outer wall": 0.812,
+      "Inner wall": 1.606,
+      "Gap infill": 0.056,
+      "Bottom surface": 0.058,
+      "Internal solid infill": 0.589,
+      "Sparse infill": 0.135,
+      "Internal Bridge": 0.077,
+      "Top surface": 0.125,
+      "Overhang wall": 0.007,
+      "Support interface": 0.012
+    },
+    "support_in_functional_openings": []
+  },
+  {
+    "part": "forward-depth-bracket",
+    "layers": 152,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 3.41,
+    "time": "19m 38s; total estimated time: 28m 50s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.058,
+      "Support": 0.414,
+      "Outer wall": 0.545,
+      "Inner wall": 1.091,
+      "Gap infill": 0.048,
+      "Bottom surface": 0.053,
+      "Internal solid infill": 0.543,
+      "Sparse infill": 0.083,
+      "Internal Bridge": 0.084,
+      "Support interface": 0.056,
+      "Top surface": 0.085,
+      "Overhang wall": 0.003
+    },
+    "support_in_functional_openings": []
+  },
+  {
+    "part": "battery-end-stops",
+    "layers": 90,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 9.06,
+    "time": "34m 31s; total estimated time: 43m 43s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.333,
+      "Outer wall": 2.585,
+      "Inner wall": 4.335,
+      "Gap infill": 1.191,
+      "Bottom surface": 0.004,
+      "Internal solid infill": 0.109,
+      "Top surface": 0.155
+    },
+    "support_in_functional_openings": []
+  },
+  {
+    "part": "electronics-stack-adapter",
+    "layers": 30,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 6.85,
+    "time": "26m 16s; total estimated time: 35m 28s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.2,
+      "Outer wall": 0.849,
+      "Inner wall": 2.503,
+      "Gap infill": 0.057,
+      "Bottom surface": 0.182,
+      "Internal solid infill": 1.701,
+      "Sparse infill": 0.286,
+      "Internal Bridge": 0.316,
+      "Overhang wall": 0.003,
+      "Top surface": 0.41
+    },
+    "support_in_functional_openings": []
+  },
+  {
+    "part": "electronics-flow-support",
+    "layers": 27,
+    "warnings": [],
+    "printable_mesh_matches_source_to_0_001_mm": true,
+    "total_slicer_filament_g": 4.56,
+    "time": "18m 22s; total estimated time: 27m 34s",
+    "extrusion_g_by_feature": {
+      "Brim": 0.128,
+      "Outer wall": 0.689,
+      "Inner wall": 1.52,
+      "Gap infill": 0.203,
+      "Bottom surface": 0.113,
+      "Internal solid infill": 0.987,
+      "Sparse infill": 0.138,
+      "Internal Bridge": 0.179,
+      "Top surface": 0.264,
+      "Overhang wall": 0.001
+    },
+    "support_in_functional_openings": []
+  }
+]

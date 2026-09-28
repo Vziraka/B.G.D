@@ -1,0 +1,108 @@
+[
+  {
+    "file": "fc-ports.webp",
+    "url": "https://micoair.com/wp-content/uploads/2024/04/MicoAir743_Ports2-jpg.webp",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "fc-top.webp",
+    "url": "https://micoair.com/wp-content/uploads/2024/04/MicoAir743_TopView-jpg.webp",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "bec.jpg",
+    "url": "https://www.mateksys.com/wp-content/uploads/2022/10/BEC12S-PRO_1.jpg",
+    "sha256": "6131d95010507aa3040b79a567e7fd9099ab007866749f49d051eb728ab3e887",
+    "bytes": 300922,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "quad-x.svg",
+    "url": "https://ardupilot.org/copter/_images/m_01_01_quad_x1.svg",
+    "sha256": "04efd33b878d1bb1e0df15ddbf12a83ac9ee92f34107554d146df56621f65001",
+    "bytes": 6067,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "motor-test.png",
+    "url": "https://ardupilot.org/copter/_images/MissionPlanner_MotorTest.png",
+    "sha256": "83e612f7e728d965c95656986e06adf04738d4d90877346ca4ad808c09343749",
+    "bytes": 27516,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "accel-setup.png",
+    "url": "https://ardupilot.org/copter/_images/mp_accelerometer_calibration.png",
+    "sha256": "333fff2c44535b560112815ae5ed3eb5047ee4d859fd73c5bd146a140fa5e39e",
+    "bytes": 92923,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "accel-positions.jpg",
+    "url": "https://ardupilot.org/copter/_images/accel-calib-positions-e1376083327116.jpg",
+    "sha256": "adfdcc71c0fb6ca1de2e66ad83a0a67ec245c26347c7b3f275a0fa363531b782",
+    "bytes": 30756,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "radio-calibration.png",
+    "url": "https://ardupilot.org/copter/_images/mp_radio_calibration.png",
+    "sha256": "ca6daa175b1c102b966d87f795adc570a62f8fcf20404a63d8b9fd02f17256a3",
+    "bytes": 47818,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "compass.png",
+    "url": "https://ardupilot.org/copter/_images/CompassCalibration_Onboard.png",
+    "sha256": "b827f4fa445e49f50b657bc7d9a0510fb60bd3caa14b49a1a2a48d2c1c5ce19b",
+    "bytes": 55267,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "dfu-device.png",
+    "url": "https://ardupilot.org/copter/_images/loading-firmware-device-manager.png",
+    "sha256": "e35dc4081b53525947578fde174673ced7aadb031ffdfb8d40cc7b0988330077",
+    "bytes": 23798,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "flash.png.jpg",
+    "url": "https://ardupilot.org/copter/_images/STM32CubeProgrammer2.jpg",
+    "sha256": "6c0d165b71d4d6f010c0295d5aca9fc2763d7003b7456b3a13f3325a5d0160c2",
+    "bytes": 67543,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "literadio-config.jpg",
+    "url": "https://cdn.shopify.com/s/files/1/1778/6615/files/LiteRadio_4_Radio_Transmitter_-_BETAFPV_Configurator.jpg?v=1747809945",
+    "sha256": "8a29c4b07a3334aacece5c123558d535e779072ccb3915e8b1f63217de1b4097",
+    "bytes": 226210,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "literadio-manual.pdf",
+    "url": "https://support.betafpv.com/hc/en-us/article_attachments/50934796027673",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "m450-manual.pdf",
+    "url": "https://download.toolkitrc.com/wp-content/uploads/2024/09/M450-Manual-V1.1-.pdf",
+    "sha256": "08541f07d92ea8de66e213973a61837194a320e5157eab11f40bb501692a0380",
+    "bytes": 982498,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "camera-mechanical.pdf",
+    "url": "https://datasheets.raspberrypi.com/camera/camera-module-3-standard-mechanical-drawing.pdf",
+    "sha256": "bde27f5ab38dd46aa05713bbb17c6e8acc4cb1d48ff9109df511256f6fbc66ac",
+    "bytes": 949985,
+    "retrieved": "2026-09-22"
+  },
+  {
+    "file": "pi-mechanical.pdf",
+    "url": "https://datasheets.raspberrypi.com/rpi5/raspberry-pi-5-mechanical-drawing.pdf",
+    "sha256": "5dd680d6c1f5e7aa9c7b020695e315d04aac862df82ff01d4e9041cd0668d7f2",
+    "bytes": 174949,
+    "retrieved": "2026-09-22"
+  }
+]

@@ -2,7 +2,11 @@
 
 Date: 2026-09-10
 
-Status: accepted
+Status: accepted with September 10 product-reset amendment; the owner-only command/enrollment scope is superseded by the [current interaction contract](../phone-drone/interaction-contract.md).
+
+## September 10 amendment
+
+Retain the separation of launch, face/liveness-backed command and independent manual authority. Command authority now applies equally to every trusted person enrolled through the unlocked paired phone while landed/disarmed; separate guest permissions and administrator roles are not required. Device pairing, revocation/recovery, request binding and airborne recovery remain necessary. Natural phone requests may contain multiple supported mission actions, with essential operation offline and optional online interpretation. The completed simulator below covers the earlier owner-only slice, not these extensions. Historical references to an “owner command session” mean that older scope; use “enrolled-user command session” for new work.
 
 ## Context
 
@@ -24,4 +28,4 @@ All phone/aircraft interaction crosses one versioned session-protocol seam. The 
 - A stolen paired device may request launch within the admitted physical envelope but cannot gain an owner command session without onboard face/liveness. Device revocation and recovery therefore remain required.
 - Authentication loss denies new mission commands but never becomes an airborne motor-stop command.
 - Historical PC acceptance and face-plus-voice all-arming requirements remain evidence only and must not be copied into current firmware or tests.
-- The first simulator can exercise the full product state contract without an iPhone build, biometric model or actuator output.
+- The first simulator can exercise the original bounded slice of the product state contract without an iPhone build, biometric model or actuator output.

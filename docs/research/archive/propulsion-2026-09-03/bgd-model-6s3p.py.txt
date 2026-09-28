@@ -1,0 +1,25 @@
+exec(open(r'C:\Users\zvent\AppData\Local\Temp\bgd-model-5s3p.py').read().split('M=2138.251')[0])
+M=2347.251
+def energy6(target,curve='10',cells=18,derate=.95):return energy(target,curve,cells,derate)
+def coupled6(vcurve_pack,massg,baselineI=30,Iaux=4,Rstep=.0384,kv=.95*800,R=1.3*.1293,I0=1.5,cp=1.15,ct=.9):
+ V=vcurve_pack
+ for _ in range(1000):
+  f=full(V,kv,R,I0,cp,ct);new=vcurve_pack-(f['I4']+Iaux-baselineI)*Rstep
+  if abs(new-V)<1e-12:break
+  V=(V+new)/2
+ f=full(V,kv,R,I0,cp,ct);f.update(vcurve_pack=vcurve_pack,massg=massg,ratio=f['thrust_g4']/massg,totalA=f['I4']+Iaux);return f
+print('mass',M)
+h=hover(M);print('central',h)
+peak=full(25.2,840,.1293*.75,1.5,1.15);print('peak',peak,'total',peak['I4']+4,'req',1.25*(peak['I4']+4))
+for cv in [3.8,3.7,3.6,3.55,3.5,3.45,3.4,3.35,3.3]:
+ j=coupled6(cv*6,M); aa,E,EU=energy6(cv); mins=60*(EU-4-h['reserve'])/h['P'];print('end',cv,j,'Ah',aa,'E',E,'EU',EU,'mins',mins)
+cases=[
+ ('fav',dict(I0=.5,k=1.05,aux=15)),('central',dict()),
+ ('moderate',dict(I0=1.25,R=.1293*1.15,cp=1.05,k=1.12,aux=25)),
+ ('stacked',dict(I0=1.5,R=.1293*1.25,cp=1.1,ct=.95,k=1.15,aux=25)),
+ ('adverse',dict(I0=2,R=.1293*1.4,cp=1.15,ct=.9,k=1.2,aux=30))]
+for name,kw in cases:
+ x=hover(M,**kw);print('case',name,x)
+ for eu in [195,190,185,180,175]:print(eu,60*(eu-4-x['reserve'])/x['P'])
+ML=M+420;print('loaded',ML,hover(ML))
+for cv in [4.0,3.9,3.8,3.7,3.6]:print('lend',cv,coupled6(cv*6,ML,baselineI=36))

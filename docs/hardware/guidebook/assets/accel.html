@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accelerometer Calibration &mdash; Copter  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/ardupilot.css?v=ae9666d5" />
+      <link rel="stylesheet" type="text/css" href="../_static/common_theme_override.css?v=01d3cdd0" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon_copter.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/./useralerts.js?v=3014f84e"></script>
+        <script data-domain="ardupilot.org" defer="defer" src="https://plausible.ardupilot.org/js/script.outbound-links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compass Calibration" href="common-compass-calibration-in-mission-planner.html" />
+    <link rel="prev" title="Radio Control Calibration" href="common-radio-control-calibration.html" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2980b9" />
+  <link rel="apple-touch-icon" href="/apple-icon.png" />
+  <script src="/js/pwa.js" defer="defer"></script> 
+</head>
+
+<body class="wy-body-for-nav">    
+    <div id='cssmenu'>
+        <ul>
+           <li><a href='/ardupilot/index.html'>Home</a>
+              <ul>
+                 <li><a href='/copter/index.html'>Copter</a></li>
+                 <li><a href='/plane/index.html'>Plane</a></li>
+                 <li><a href='/rover/index.html'>Rover</a></li>
+                 <li><a href='/blimp/index.html'>Blimp</a></li>
+                 <li><a href='/sub/index.html'>Sub</a></li>
+                 <li><a href='/antennatracker/index.html'>AntennaTracker</a></li>
+                 <li><a href='/planner/index.html'>Mission Planner</a></li>
+                 <li><a href='/planner2/index.html'>APM Planner 2</a></li>
+                 <li><a href='/mavproxy/index.html'>MAVProxy</a></li>
+                 <li><a href='/dev/docs/companion-computers.html'>Companion Computers</a></li>
+                 <li><a href='/dev/index.html'>Developer</a></li>
+              </ul>
+           </li>
+           
+          
+           
+           <li><a href='https://firmware.ardupilot.org/'>Downloads</a>
+              <ul>
+                <li><a href='https://firmware.ardupilot.org/Tools/MissionPlanner/'>Mission Planner</a></li>
+                <li><a href='https://firmware.ardupilot.org/Tools/APMPlanner/'>APM Planner 2</a></li>
+                   <li><a title="Advanced User Tools" href="common-downloads_advanced_user_tools.html">Advanced User Tools</a></li>
+                   <li><a title="Developer Tools" href="common-downloads_developer_tools.html">Developer Tools</a></li>
+                   <li><a title="Firmware" href="common-downloads_firmware.html">Firmware</a></li>
+                </ul>
+           </li>
+           
+           <li><a href='https://discuss.ardupilot.org' />Community</a>
+              <ul>
+                 <li><a href='https://discuss.ardupilot.org/'>Support Forums</a></li>
+                 <li><a href='https://www.facebook.com/groups/ArduPilot.org'>Facebook</a></li>
+                 <li><a href='https://ardupilot.org/discord'>Developer Chat (Discord)</a></li>
+                 <li><a href='https://ardupilot.org/discord'>Developer Voice (Discord)</a></li>
+				 <li><a href='https://ardupilot.org/dev/docs/common-contact-us.html'>Contact us</a></li>
+				 <li><a href='https://ardupilot.org/dev/index.html#getting-involved'>Getting involved</a></li>
+                   <li><a title="Commercial Support" href="common-commercial-support.html">Commercial Support</a></li>
+                   <li><a title="Dev Team" href="common-team.html">Development Team</a></li>
+                   <li><a title="Training Centers" href="common-training-centers.html">UAS Training Centers</a></li>
+              </ul>
+           </li>
+             <li><a title="Stores" href="common-stores.html">Stores</a></li>
+
+
+           
+                        <li><a title="About" href="../index.html">About</a>
+               <ul>
+                   <li><a title="Project News" href="project-news.html">News</a></li>
+                   <li><a title="History of ArduPilot" href="common-history-of-ardupilot.html">History</a></li>
+                   <li><a href='https://ardupilot.org/dev/docs/license-gplv3.html'>License</a></li>
+                   <li><a href='https://ardupilot.org/dev/docs/trademark.html'>Trademark</a></li>
+                   <li><a title="Acknowledgments" href="common-acknowledgments.html">Acknowledgments</a></li>
+                   <li><a title="Wiki Editing Guide" href="common-wiki_editing_guide.html">Wiki Editing Guide</a></li>
+                   <li><a title="Partners Program" href="common-partners.html">Partners Program</a></li>
+               </ul>
+             </li>
+             <li><a title="Offline" href="common-offline.html">Offline</a></li>
+        </ul>
+        
+
+</div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Copter
+              <img src="../_static/ardupilot_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="copter-introduction.html">Introduction to Copter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-autopilots.html">Choosing an Autopilot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-GCS.html">Ground Control Stations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initial-setup.html">First Time Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flying-arducopter.html">First Flight and Tuning</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="traditional-helicopters.html">Traditional Helicopters</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="traditional-helicopter-first-time-setup.html">First Time Setup</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="common-install-gcs.html">Install Ground Station Software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traditional-helicopter-autopilot-assembly-instructions.html">Autopilot System Assembly</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-loading-firmware.html">Loading Firmware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-connect-mission-planner-autopilot.html">Connect Mission Planner to AutoPilot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="traditional-heli-parts-list.html">Suggested Parts List</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="traditional-helicopter-configuring-hardware.html">Configuration</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="common-basic-operation.html">Basic System Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="frame-type-configuration.html">Frame Type Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-parameter-list.html">Helicopter Parameter List at a Glance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-connecting-apm.html">Configuring Servo, Motor, and RC Connections with the autopilot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-rc-calibration.html">Radio Control Calibration</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Accelerometer Calibration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common-compass-calibration-in-mission-planner.html">Compass Calibration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common-rc-transmitter-flight-mode-configuration.html">RC Transmitter Mode Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-esc-calibration.html">ESC Calibration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-swashplate-setup.html">Swashplate Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-tailrotor-setup.html">Tailrotor Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-rsc-setup.html">Rotor Speed Control Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="traditional-helicopter-internal-rsc-governor.html">Internal Rotor Speed Governor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="failsafe-landing-page.html">Failsafe Mechanisms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flight-modes.html">Flight Modes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="traditional-helicopter-first-flight.html">First Flights and Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="copter-flight-features.html">Flight Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dual-helicopter.html">Dual Helicopters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heliquads.html">HeliQuads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="traditional-helicopter-tips.html">Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="traditional-helicopter-configuration.html">ArduPilot Helicopter Ground School</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="common-mission-planning.html">Mission Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-when-problems-arise.html">If A Problem Arises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-advanced-configuration.html">Advanced Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-optional-hardware.html">Peripheral Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional-information.html">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-user-alerts.html">User Alerts</a></li>
+</ul>
+
+          <!-- add paypal and dronecode logos -->        <div style="margin: auto; padding-left:20px; padding-right:20px; width=100%">
+
+        <hr />
+        <form style="margin:auto;" action="https://ardupilot.org/donate">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" />
+        </form>
+        <br>
+        <a href="common-donation.html">Individual</a>
+        <a href="common-partners.html">Partners</a>
+        <a href="https://ardupilot.org/shop">SWAG Shop</a>
+
+        <hr />
+        </div>
+          <!-- endadd paypal and dronecode logos -->
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Copter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="initial-setup.html">First Time Setup</a></li>
+          <li class="breadcrumb-item"><a href="configuring-hardware.html">Mandatory Hardware Configuration</a></li>
+      <li class="breadcrumb-item active">Accelerometer Calibration</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ArduPilot/ardupilot_wiki/blob/master/common/source/docs/common-accelerometer-calibration.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="accelerometer-calibration">
+<span id="common-accelerometer-calibration"></span><h1>Accelerometer Calibration<a class="headerlink" href="#accelerometer-calibration" title="Link to this heading">¶</a></h1>
+<p>This article shows how to perform basic accelerometer calibration (using
+<em>Mission Planner</em>). The accelerometers in the autopilot must be calibrated to correct for their bias offsets in all three axes, as well as any off-axis variations.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Accelerometer calibration is mandatory in ArduPilot.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Accelerometer calibration cannot be performed while the vehicle is armed.</p>
+</div>
+<section id="calibration-steps">
+<h2>Calibration steps<a class="headerlink" href="#calibration-steps" title="Link to this heading">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the board is mounted in a non-standard orientation (i.e. arrow is not pointing forward) then please ensure the <a class="reference internal" href="parameters.html#ahrs-orientation"><span class="std std-ref">AHRS_ORIENTATION</span></a>  is properly set before doing the accelerometer calibration.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For very large vehicles, this may be done on the bench, after the orientation is set for how it will be mounted in the vehicle and the calibration orientations are done as fit in the vehicle. Then be sure to use the <strong>Calibrate Level</strong> step in the following instructions once mounted.</p>
+</div>
+<ul>
+<li><p>Under <strong>Setup | Mandatory Hardware</strong>, select <strong>Accel Calibration</strong> from the left-side menu.</p>
+<blockquote>
+<div><figure class="align-default" id="id1">
+<a class="reference external image-reference" href="../_images/mp_accelerometer_calibration.png"><img alt="../_images/mp_accelerometer_calibration.png" src="../_images/mp_accelerometer_calibration.png" /></a>
+<figcaption>
+<p><span class="caption-text">Mission Planner: Calibrate Acceleration</span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+<li><p>Click <strong>Calibrate Accel</strong> to start the full 3-axis calibration.</p>
+<blockquote>
+<div><p><em>Mission Planner</em> will prompt you to place the vehicle on each axis during the calibration. Press any key to indicate that the autopilot is in position and then proceed to the next orientation.</p>
+<p>The calibration positions are: level, right side, left side, nose down, nose up, and on its back.</p>
+<figure class="align-default" id="id2">
+<a class="reference external image-reference" href="../_images/accel-calib-positions-e1376083327116.jpg"><img alt="../_images/accel-calib-positions-e1376083327116.jpg" src="../_images/accel-calib-positions-e1376083327116.jpg" /></a>
+<figcaption>
+<p><span class="caption-text">Accelerometer Calibration Positions (Copter)</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The vehicle must be kept still immediately after pressing the key for each step. This is more important than getting the angle exactly right, ie. left being 90deg to horizontal, etc. Except for the first “LEVEL”, the positions can be within 20 degrees of being exact. <strong>Being still in each position as you press the key is much more important.</strong>.  Do not hold the vehicle when doing this step, find some way to pose the vehicle (e.g. lie on the ground or put it in a jig).</p>
+<ul class="simple">
+<li><p>You should calibrate the board mounted in the vehicle if possible.</p></li>
+<li><p>However, you may need to calibrate the board before it is mounted if the size/shape of the vehicle makes this difficult.</p></li>
+<li><p>The level position is the most important to get right as this will be the attitude that your controller considers level while flying.</p></li>
+<li><p>You can recalibrate this Level position using Mission Planner after you have installed the autopilot and are ready to fly. Place the vehicle in its level flying attitude and use the <strong>Calibrate Level</strong> button.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>this <strong>Calibrate Level</strong> operation can only correct up to a 10 degree difference between the initial calibration and the final position in the vehicle, and only corrects pitch and roll differences, not yaw.</p>
+</div>
+<ul>
+<li><p>Proceed through the required positions, using the <strong>Click when Done</strong> button once each position is reached and held still.</p></li>
+<li><p>When you have completed the calibration process, Mission Planner will display “Calibration Successful!” as shown below.</p>
+<blockquote>
+<div><figure class="align-default" id="id3">
+<a class="reference external image-reference" href="../_images/mp_calibration_successful.png"><img alt="../_images/mp_calibration_successful.png" src="../_images/mp_calibration_successful.png" /></a>
+<figcaption>
+<p><span class="caption-text">Mission Planner: Calibration Successful</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your autopilot has a built-in IMU heater, then it is recommended that the <a class="reference internal" href="common-imutempcal.html#common-imutempcal"><span class="std std-ref">IMU Temperature Calibration</span></a> also be done. Some autopilots have this calibration done at the factory in which case, this calibration need not be done.</p>
+</div>
+</section>
+<section id="simple-calibration">
+<h2>Simple Calibration<a class="headerlink" href="#simple-calibration" title="Link to this heading">¶</a></h2>
+<p>Sometimes, for very large vehicles, it’s not easy to do the full 3-axis calibration. In this case, the <strong>Simple Accel Cal</strong> can be done with the vehicle held still and in a level attitude. This only calibrates the main offsets of the accelerometers, not the minor off-axis variations, so it’s not ideal in terms of optimal performance, but is sometimes an acceptable compromise.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is <strong>NOT</strong> the same as the <strong>Calibrate Level</strong> function. To use that function, either a full 3-axis or simple calibration must be done first!</p>
+</div>
+</section>
+<section id="video-demonstration-copter">
+<h2>Video demonstration (Copter)<a class="headerlink" href="#video-demonstration-copter" title="Link to this heading">¶</a></h2>
+<p>Video demonstration of accelerometer calibration. This is for an older
+version of Copter/Mission Planner, but is useful as an example of how
+you might hold a Copter.</p>
+<div class="video_wrapper" style="">
+<iframe loading="lazy" allowfullscreen="true" src="https://player.vimeo.com/video/56224615" style="border: 0; height: 430px; width: 400px">
+</iframe></div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="common-radio-control-calibration.html" class="btn btn-neutral float-left" title="Radio Control Calibration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="common-compass-calibration-in-mission-planner.html" class="btn btn-neutral float-right" title="Compass Calibration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+    Questions, issues, and suggestions about this page can be raised on the <a href="https://discuss.ardupilot.org">forums</a>. Issues and suggestions may be posted on the forums or the <a href="https://github.com/ArduPilot/ardupilot_wiki/issues/new?title=Accelerometer Calibration&amp;body=[Accelerometer Calibration](https://ardupilot.org/copter/docs/common-accelerometer-calibration.html)%20-%20Describe%20the%20issue/suggestion%20and%20improve%20the%20title.%20Please%20keep%20a%20link%20to%20the%20original%20article%20if%20relevant.&amp;labels=docs">Github Issue Tracker</a>.
+    <hr/>
+
+  <div role="contentinfo">
+    <p><a style="float:right;" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>&#169; Copyright 2024, ArduPilot Dev Team.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

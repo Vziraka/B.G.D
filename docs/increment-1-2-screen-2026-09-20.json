@@ -1,0 +1,152 @@
+{
+  "selected_revision": "2026-09-20 F450 domestic suppliers",
+  "cap": 1100,
+  "paid": 288.22,
+  "merchandise": 650.56,
+  "shipping": 61.14,
+  "tariff_reserve": 1,
+  "tax_reserve": 39.1,
+  "remaining_purchase_estimate": 751.8,
+  "complete_estimate": 1040.02,
+  "unspent_margin": 59.98,
+  "vendors": [
+    {
+      "vendor": "Amazon",
+      "goods": 37.73,
+      "shipping": 0
+    },
+    {
+      "vendor": "SunnySky USA",
+      "goods": 69.94,
+      "shipping": 6.53
+    },
+    {
+      "vendor": "CNHL US",
+      "goods": 59.99,
+      "shipping": 12.99
+    },
+    {
+      "vendor": "Pyrodrone",
+      "goods": 176.97,
+      "shipping": 15.43
+    },
+    {
+      "vendor": "RaceDayQuads",
+      "goods": 192.41,
+      "shipping": 6.49
+    },
+    {
+      "vendor": "ProgressiveRC",
+      "goods": 18.96,
+      "shipping": 7.76
+    },
+    {
+      "vendor": "Pololu",
+      "goods": 35.05,
+      "shipping": 6.95
+    },
+    {
+      "vendor": "DigiKey",
+      "goods": 7.32,
+      "shipping": 4.99
+    },
+    {
+      "vendor": "LEDSupply",
+      "goods": 52.19,
+      "shipping": 0
+    }
+  ],
+  "delivery_zip": "22180",
+  "quotes_are_not_orders": true,
+  "ready_to_fly_mass_allocation_g": 1707,
+  "energy_model": {
+    "nominal_Wh": 88.8,
+    "usable_fraction": 0.8,
+    "propulsion_penalty": 1.2,
+    "electronics_W": 40,
+    "recovery_equivalent_minutes": 2.45,
+    "formula": "P=1.2*4*(56+(mass_g/4-400)*0.18)+40; useful_minutes=0.8*88.8/P*60-2.45",
+    "physical_validation": false
+  },
+  "historical_seven_inch_screen": {
+    "paid": 288.22,
+    "cap": 1000,
+    "rows": {
+      "frame": 49.06,
+      "motors": 95.96,
+      "prop": 4.99,
+      "battery": 65.99,
+      "stack": 109.99,
+      "radio": 64.99,
+      "receiver": 18.99,
+      "cells": 11.99,
+      "gps": 28.99,
+      "charger": 59.99,
+      "bag": 9.99,
+      "chargeLead": 6.99,
+      "balanceLead": 3.99,
+      "bec": 22.99,
+      "branchSensor": 14.95,
+      "petg": 19.99,
+      "padding": 5,
+      "harnessMount": 40
+    },
+    "newSubtotal": 634.8400000000001,
+    "shippingScenarios": [
+      40,
+      70
+    ],
+    "taxAssumption": 0.06,
+    "fc": "Flywoo FW19004432 conditional",
+    "battery": "CNHL 500706EC5 US",
+    "date": "2026-09-20",
+    "status": "Conditional cost and energy screen; not a purchase-ready cart or complete product estimate",
+    "assumptions": [
+      "Prices unreserved; exact checkout shipping and taxes not obtained.",
+      "6% tax on all new costs is conservative and may double-count Flywoo included taxes; never tax the $288.22 paid total again.",
+      "GPS $28.99 is a retailer category price pending exact checkout; balance lead $3.99 reference, padding $5 and harness/mount $40 are allowances.",
+      "INA228 branch sensor is provisionally included; omit only if whole-battery measurement is established without it.",
+      "No complete obstacle/darkness/navigation/phone delivery cost established."
+    ],
+    "energy": {
+      "source": "https://cdn.shopify.com/s/files/1/0469/7358/3518/files/7-ECOII-2807-1300KV_25.2V_V1.0_-03.jpg?v=1602852152",
+      "motor": "EMAX ECO II 2807 1300KV",
+      "prop": "HQ7x3.5x3 original, not V1S",
+      "testVoltage": 25.2,
+      "pointsPerMotor": [
+        {
+          "thrustGrams": 300,
+          "watts": 52.92
+        },
+        {
+          "thrustGrams": 500,
+          "watts": 100.8
+        }
+      ],
+      "installedPowerMultiplier": 1.2,
+      "electronicsWatts": 20,
+      "usableEnergyFraction": 0.8,
+      "batteryNominalWh": 111,
+      "overheadEquivalentMinutes": 2.45,
+      "overhead": "30s takeoff at1.3P plus90s return/approach/descent at1.2P. 100m return about3m/s; assumption, not tested policy.",
+      "rows": [
+        {
+          "kg": 1.479,
+          "modeledWatts": 354.16712,
+          "usefulMinutes": 12.593745449888178
+        },
+        {
+          "kg": 1.579,
+          "modeledWatts": 382.89511999999996,
+          "usefulMinutes": 11.465037621790536
+        },
+        {
+          "kg": 1.679,
+          "modeledWatts": 411.62312,
+          "usefulMinutes": 10.493879342831864
+        }
+      ]
+    }
+  },
+  "mass_target_g": 1710
+}

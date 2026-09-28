@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_32x32-f40058cd34e1fec5906522ec0c9eb39b303192067c0e353a30796e859ce41106.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_192x192-52532413e1c353491bfa0a2dd977aacf020e8ca4104064094121739bad21c4bf.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_96x96-fcf7f6d6568f76d479e5ae1822ded335e0bbd75ab7efd0de7e010bb41fd83e41.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_16x16-13632635dc6dd0e11ba9a38071e8218d26d62e71f8ebafacd9929c3136117372.png" sizes="16x16" />
+<link rel="apple-touch-icon" type="image/png" href="https://a.pololu-files.com/assets/favicon_96x96-fcf7f6d6568f76d479e5ae1822ded335e0bbd75ab7efd0de7e010bb41fd83e41.png" />
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' integrity='sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=' media='all' rel='stylesheet'>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css' integrity='sha256-2RdmDD1veq0y68SwASxtC7hKE+IBoBLjNLzKS59Ghsk=' media='all' rel='stylesheet'>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css' integrity='sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=' media='all' rel='stylesheet'>
+<link rel="stylesheet" crossorigin="anonymous" href="https://a.pololu-files.com/assets/application-e635e160a355d4b2b19403e60b42c30abb9ae25ace89aaf7631693e2034b8c9f.css" media="all" integrity="sha256-RyjKAGsMQf/lcOuc4ZBHf+4fcBjG1BkZ+QGNQM70/3c=" />
+<script crossorigin='anonymous' integrity='sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=' src='https://a.pololu-files.com/mirror/code.jquery.com/jquery-1.12.4.min.js'></script>
+<script crossorigin='anonymous' integrity='sha256-4Cr335oZDYg4Di3OwgUOyqSTri0jUm2+7Gf2kH3zp1I=' src='https://a.pololu-files.com/mirror/cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+<script crossorigin='anonymous' integrity='sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=' src='https://a.pololu-files.com/mirror/code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
+<link crossorigin='anonymous' href='https://a.pololu-files.com/mirror/code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css' integrity='sha256-RPilbUJ5F7X6DdeTO6VFZ5vl5rO5MJnmSk4pwhWfV8A' media='all' rel='stylesheet'>
+<script class='braintree-gateway' src='https://js.braintreegateway.com/web/3.88.4/js/client.min.js'></script>
+<script class='braintree-gateway' src='https://js.braintreegateway.com/web/3.88.4/js/hosted-fields.min.js'></script>
+<script src="https://a.pololu-files.com/assets/application-e7b04321302c7b1cd29ca6232c9f00526fecf7e6f46a7ac51612c2f93c60ac63.js" crossorigin="anonymous" integrity="sha256-BU4VCJxbUORyOkyc5zk/oZBh8QNcA9rlggAmD7jCqkE="></script>
+<script type="importmap" data-turbo-track="reload">{
+  "integrity":
+{"https://a.pololu-files.com/assets/application_module-765f0f526c59caa9c9857c01889e68833710c17121ab6f9093f3a0a809af7bd4.js":"sha256-s+WZHcA06TsuXtPz2xeDSGgG6j+QSXvT2ghPYhJLLow=","https://a.pololu-files.com/assets/price_notification-f64b0ae30b1bb595d10d8954f34036fbff24e2c81e1c7a9e581f03692cc149c3.js":"sha256-nL1KwUBafy6EPV1yoK+yXM1O5GODfiG083pcMsXgCxs=","https://a.pololu-files.com/assets/stock_notification-87bb320c31885d5b381c69e4a05013db3f11fb479d693729b0e5de58ae356892.js":"sha256-yqOxxloFhGTJ98f3K+XH50QttcrJOBxnARzUT78kLCc=","https://a.pololu-files.com/assets/email_verification_send_handler-a8152312cb0b8ea95a9d73c5d15345bb848ee545397c39f9d2ee08ed32ef63dc.js":"sha256-msHQsFHof9YOIfSrsYxwjZiTfGqW4WzRfO9RqwP+1P8=","https://a.pololu-files.com/assets/payment_handler-49a20512068cb88565bc275464d6002af52baec06430fbdc9480f530a2c5b9a7.js":"sha256-PmVdEt5BorGjsZxOo7BfGw8aes3BCxnDQvw55paraHo="},
+  "imports": {
+    "application": "https://a.pololu-files.com/assets/application_module-765f0f526c59caa9c9857c01889e68833710c17121ab6f9093f3a0a809af7bd4.js",
+    "price_notification": "https://a.pololu-files.com/assets/price_notification-f64b0ae30b1bb595d10d8954f34036fbff24e2c81e1c7a9e581f03692cc149c3.js",
+    "stock_notification": "https://a.pololu-files.com/assets/stock_notification-87bb320c31885d5b381c69e4a05013db3f11fb479d693729b0e5de58ae356892.js",
+    "email_verification_send_handler": "https://a.pololu-files.com/assets/email_verification_send_handler-a8152312cb0b8ea95a9d73c5d15345bb848ee545397c39f9d2ee08ed32ef63dc.js",
+    "payment_handler": "https://a.pololu-files.com/assets/payment_handler-49a20512068cb88565bc275464d6002af52baec06430fbdc9480f530a2c5b9a7.js",
+    "braintree": "https://js.braintreegateway.com/web/dropin/1.46.1/js/dropin.js"
+  }
+}</script>
+
+<script type="module">import "application"</script>
+<script>
+  if(document.domain.indexOf("pololu-files.com") == -1) {
+    $.ajax({
+    url: "https://www.googletagmanager.com/gtag/js?id=G-G4ENPJ5RV1",
+    dataType: "script"
+    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', "G-G4ENPJ5RV1");
+  }
+</script>
+
+<link rel="stylesheet" href="https://a.pololu-files.com/assets/print-ac5d562ac93a31ac3e5c942e261bf17032bf5da61b940dea46300fe83f1e72dc.css" media="print" />
+
+<title>Pololu - ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V</title>
+
+<meta name="description" content="This is the compact version of a simple carrier for Allegro’s ACS37220LEZATR-100B5 Hall effect-based, electrically isolated current sensor, which offers an extra-low-resistance (~0.1 mΩ) IC current path, a 150 kHz bandwidth with &lt;4 µs response time, and an overcurrent fault output with a user-configurable threshold.
+
+	
+		Part Suffix
+		Range
+		Supply Voltage
+		Sensitivity
+		Zero Point
+		Size
+		PCB layers
+	
+	
+		100B5
+		±100 A (bidirectional)
+		4.5 V to 5.5 V
+		20 mV/A
+		2.5 V
+		0.7″×0.8″
+		2
+	
+" />
+<meta name="keywords" content="Pololu,robotics,robot electronics,robot kits,robot parts,ir beacon,servo controller,motor controller,robot sensors,robot chassis,robot gearboxes,robot tires, ball casters, tamiya parts,elenco kits" />
+<meta property="og:url" content="https://www.pololu.com/product/5292" />
+<meta property="og:title" content="Pololu - ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V" />
+<meta property="og:description" content="This is the compact version of a simple carrier for Allegro’s ACS37220LEZATR-100B5 Hall effect-based, electrically isolated current sensor, which offers an extra-low-resistance (~0.1 mΩ) IC current path, a 150 kHz bandwidth with &lt;4 µs response time, and an overcurrent fault output with a user-configurable threshold.
+
+	
+		Part Suffix
+		Range
+		Supply Voltage
+		Sensitivity
+		Zero Point
+		Size
+		PCB layers
+	
+	
+		100B5
+		±100 A (bidirectional)
+		4.5 V to 5.5 V
+		20 mV/A
+		2.5 V
+		0.7″×0.8″
+		2
+	
+" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:image" content="https://a.pololu-files.com/picture/0J12600.1200x627.jpg?1bd05e26d3d0435a56e4f7008dba5110" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Pololu" />
+<meta name="twitter:title" content="Pololu - ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V" />
+<meta name="twitter:description" content="This is the compact version of a simple carrier for Allegro’s ACS37220LEZATR-100B5 Hall effect-based, electrically isolated current sensor, which offers an extra-low-resistance (~0.1 mΩ) IC current path, a 150 kHz bandwidth with &lt;4 µs response time, and an overcurrent fault output with a user-configurable threshold.
+
+	
+		Part Suffix
+		Range
+		Supply Voltage
+		Sensitivity
+		Zero Point
+		Size
+		PCB layers
+	
+	
+		100B5
+		±100 A (bidirectional)
+		4.5 V to 5.5 V
+		20 mV/A
+		2.5 V
+		0.7″×0.8″
+		2
+	
+" />
+<meta name="twitter:image" content="https://a.pololu-files.com/picture/0J12600.1200x627.jpg?1bd05e26d3d0435a56e4f7008dba5110" />
+<script class='structured_data' type='application/ld+json'>
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Current Sensors","item":"https://www.pololu.com/category/118/current-sensors"},{"@type":"ListItem","position":2,"name":"ACS37220 Current Sensor Carriers","item":"https://www.pololu.com/category/318/acs37220-current-sensor-carriers"},{"@type":"ListItem","position":3,"name":"ACS37220 Current Sensor Compact Carriers","item":"https://www.pololu.com/category/319/acs37220-current-sensor-compact-carriers"}]}
+</script>
+<script class='structured_data' type='application/ld+json'>
+{"@context":"https://schema.org","@type":"Product","image":"https://a.pololu-files.com/picture/0J12600.600x480.jpg?1bd05e26d3d0435a56e4f7008dba5110","name":"ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V","description":"This is the compact version of a simple carrier for Allegro’s ACS37220LEZATR-100B5 Hall effect-based, electrically isolated current sensor, which offers an extra-low-resistance (~0.1 mΩ) IC current path, a 150 kHz bandwidth with \u003c4 µs response time, and an overcurrent fault output with a user-configurable threshold.\n\n\t\n\t\tPart Suffix\n\t\tRange\n\t\tSupply Voltage\n\t\tSensitivity\n\t\tZero Point\n\t\tSize\n\t\tPCB layers\n\t\n\t\n\t\t100B5\n\t\t±100 A (bidirectional)\n\t\t4.5 V to 5.5 V\n\t\t20 mV/A\n\t\t2.5 V\n\t\t0.7″×0.8″\n\t\t2\n\t\n","sku":5292,"brand":"Pololu","offers":{"@type":"Offer","price":"6.95","priceCurrency":"USD","URL":"https://www.pololu.com/product/5292","availability":"InStock"}}
+</script>
+
+<script src="https://a.pololu-files.com/assets/syntaxhighlight-91017fb9868118fd42306075e0164112dd3d3e16331dc462f55ad4497e7fca3d.js" defer="defer"></script>
+</head>
+
+<body class='math_ignore' onload='externalLinksNewWindow(); if(document.onLoadHandler){document.onLoadHandler();}  productInit(&#39;/product/5292&#39;);'>
+
+<div id='main'>
+<h2 id="breadcrumbs"><a href="/category/118/current-sensors">Current Sensors</a> &raquo; <a href="/category/318/acs37220-current-sensor-carriers">ACS37220 Current Sensor Carriers</a> &raquo; <a href="/category/319/acs37220-current-sensor-compact-carriers">ACS37220 Current Sensor Compact Carriers</a> &raquo;</h2>
+<h1 id="page_title">ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V</h1>
+<div data-url='/product/5292' id='contents'>
+<!-- CONTENTS_BEGIN /product/5292 -->
+<div data-javascript-not-loaded-message='&lt;!-- javascript_not_loaded_message --&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Your browser failed to load our JavaScript files, which are required for checkout.  Please check that you are not blocking or disabling our scripts and &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you are still unable to proceed.' id='javascript_not_loaded_message' style='display:none;'></div>
+<div data-braintree-not-loaded-message='&lt;!-- braintree_not_loaded_message --&gt;&lt;p&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Your browser failed to connect to our secure payment processor, Braintree Payments.  You will be unable to enter your credit card information at  the payment step of checkout unless this is fixed.&lt;/p&gt;
+&lt;p&gt;Some things to try:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Check for network problems or things like script blockers that could be blocking &lt;a href=&quot;https://js.braintreegateway.com/web/3.58.0/js/client.min.js&quot;&gt;this file&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;Try completing checkout on a device on a different network, such as a phone with Wi-Fi disabled.&lt;/li&gt;
+	&lt;li&gt;Select the option to pay with PayPal and enter your credit card on their site. (You don&amp;#8217;t need a PayPal account.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please &lt;a href=&quot;/contact&quot;&gt;contact us&lt;/a&gt; if you continue to have trouble with checkout!&lt;/p&gt;' id='braintree_not_loaded_message' style='display:none;'></div>
+
+<div class='product_top'><span class='product_top_pictures'>
+<div>
+<a class="noscript-fallback" href="https://a.pololu-files.com/picture/0J12600.1200.jpg?1bd05e26d3d0435a56e4f7008dba5110"><img alt="" title="Click to zoom" id="main_picture_img" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12600&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12600.98x98.jpg?1bd05e26d3d0435a56e4f7008dba5110&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12600.600x480.jpg?1bd05e26d3d0435a56e4f7008dba5110&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12600.1200.jpg?1bd05e26d3d0435a56e4f7008dba5110&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12599&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12599.98x98.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12599.600x480.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12599.1200.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12604&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier pinout.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12604.98x98.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12604.600x480.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12604.1200.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12608&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V, bottom view.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12608.98x98.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12608.600x480.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12608.1200.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12598&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier (top) and Large Carrier (bottom) size comparison.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12598.98x98.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12598.600x480.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12598.1200.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12603&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier basic hole dimensions.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12603.98x98.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12603.600x480.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12603.1200.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12602&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier, top view.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12602.98x98.jpg?41435eb3e92659c8e0266f5e69fb70c3&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12602.600x480.jpg?41435eb3e92659c8e0266f5e69fb70c3&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12602.1200.jpg?41435eb3e92659c8e0266f5e69fb70c3&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12605&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Carrier schematic diagram.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12605.98x98.jpg?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12605.600x480.jpg?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12605.1200.png?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12618&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires soldered directly to the board and header pins soldered for use with a breadboard.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12618.98x98.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12618.600x480.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12618.1200.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12619&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires soldered directly to the board and header pins soldered for use with a breadboard.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12619.98x98.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12619.600x480.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12619.1200.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12620&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires connected via solderless ring terminals.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12620.98x98.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12620.600x480.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12620.1200.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;longest_side&quot;:1200},{&quot;id&quot;:&quot;0J12621&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires connected via solderless ring terminals.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12621.98x98.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12621.600x480.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12621.1200.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12600" data-picture-longest-side="1200" data-gallery-id="main-pictures" src="https://a.pololu-files.com/picture/0J12600.600x480.jpg?1bd05e26d3d0435a56e4f7008dba5110" /></a>
+<div id='related_pictures_gallery'></div>
+</div>
+
+</span><span class='order_form_section'>
+<div class='order_form_with_price_notification'>
+<form action='/cart/add' data-product-id='5292' data-product-ui='short_order_form' enctype='multipart/form-data' method='post'>
+<fieldset class='hidden'>
+<input type="hidden" name="session_id" value="12bb7534dbe5121a1329cf4725f89380" />
+<input name='product[id]' type='hidden' value='5292'>
+</fieldset>
+<div>
+<div>
+<span data-product-ui='short_order_form_on_sale' style='display: none'></span>
+<span class='message_positive' data-product-ui='short_order_form_new' style='display: none'>
+<!-- product_recently_added_to_website -->New!
+</span>
+</div>
+<table class='part_number_and_stock text_left'>
+<tr>
+<td class='part_number' style='white-space: nowrap'>
+<span class='label'>Pololu item #:</span>
+<span class='value'>5292</span>
+</td>
+<td class="td_right" data-product-ui="order_form_stock"><span></span></td>
+</tr>
+<tr>
+<td style='white-space: nowrap'>
+<span class='label'>Brand:</span>
+<span class='value'><a href="/brands/pololu">Pololu</a></span>
+</td>
+<td class='td_right'>
+<a data-lightbox-link="true" data-lightbox-height="25rem" data-lightbox-width="34rem" href="/product/5292/supply-outlook">supply outlook</a>
+</td>
+</tr>
+<tr>
+<td colspan='2'>
+<div class='stock-notification-display-div'>
+<div class='stock-notification-label-and-button-div' data-available-stock='231' data-product-id='0J5292'>
+<span class='label'>
+</span>
+<button class='enable-stock-notification-button btn-small btn-link' data-logged-in='false' type='button'>
+Get stock notification
+</button>
+<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/ordering/stock-notifications"></a>
+</div>
+</div>
+
+<tr>
+<td colspan='2'>
+<div class='stock-notification-form-div' style='display: none;'>
+<hr>
+<div class='spaced-row'>
+<div>
+<label>Notify me when stock is at least</label>
+<input class='stock_quantity' name='wishlist_product[notify_stock_quantity]' size='2' type='text'>
+</div>
+<button class='disable-stock-notification-button btn-small btn-link' style='display: none; margin-left: 8px;' type='button'>Cancel</button>
+</div>
+<div>
+<label>Optional: desired quantity</label>
+<input class='desired_quantity' name='wishlist_product[quantity_desired]' size='2' type='text'>
+</div>
+<div class='spaced-row'>
+<div>
+<button class='remove-stock-notification-button btn-small btn-red' type='button'>Remove</button>
+</div>
+<button class='save-stock-notification-button btn-small btn-green' type='button'>Save</button>
+</div>
+<hr>
+</div>
+
+</td>
+</tr>
+
+</td>
+</tr>
+<tr>
+<td colspan='2'>
+<span class='label'>Status:</span>
+<span class='value'>Active and Preferred&nbsp;<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/product-status-overview"></a></span>
+</td>
+</tr>
+<tr>
+<td>
+<a title="RoHS 3 compliant" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/compliance/rohs3-compliant"><img style="width: 76px; height: 16px; min-width: 76px;" alt="RoHS 3 compliant" src="https://a.pololu-files.com/assets/rohs3_compliant_yes-cde9d1a22538fcb174660dfa52f6fb93f93fcdfcf99e282ad9cf792ffa8f3124.png" /></a>
+</td>
+<td class='td_right'></td>
+</tr>
+<tr class='free_shipping_info' style='display: none'>
+<td colspan='2'>
+<a class="shipping_info_popup_link " title="Free add-on shipping in USA" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/free-add-on-shipping-usa"><img style="width: 16px; height: 16px; min-width: 16px;" alt="" src="https://a.pololu-files.com/assets/free_add_on_shipping_usa-6090726d172668d9cb8985f6e646312e37d8bde4dafc6dddbdc77aff8069a03a.png" /></a>&nbsp;Free add-on shipping in USA&nbsp;<a class="shipping_info_popup_link " title="Free add-on shipping in USA" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/free-add-on-shipping-usa"><span class="fa fa-question-circle" /></a>
+</td>
+</tr>
+
+<tr class='free_shipping_info' style='display: none'>
+<td colspan='2'>
+<a class="shipping_info_popup_link " title="This item could qualify for free shipping" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/potential-free-shipping-usa"><img style="width: 16px; height: 11px; min-width: 16px;" alt="This item could qualify for free shipping" src="https://a.pololu-files.com/assets/free_shipping_usa_gray-7c9ae1b4621ead73c8493cff1b11345529bb7604d4584577749f53b7c7a0628f.png" /></a>&nbsp;Free shipping in USA over $75&nbsp;<a class="shipping_info_popup_link " title="This item could qualify for free shipping" data-lightbox-link="true" data-lightbox-height="17rem" data-lightbox-width="25rem" href="/ordering/potential-free-shipping-usa"><span class="fa fa-question-circle" /></a>
+</td>
+</tr>
+
+</table>
+
+
+</div>
+<hr>
+<table class='pricing'>
+<tr>
+<th>
+Price break
+</th>
+<th>
+Unit price (US$)
+</th>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td class=''>
+6.95
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td class=''>
+6.39
+</td>
+</tr>
+<tr>
+<td>
+25
+</td>
+<td class=''>
+5.88
+</td>
+</tr>
+<tr>
+<td>
+100
+</td>
+<td class=''>
+5.41
+</td>
+</tr>
+</table>
+<hr>
+
+<table class='add_to_cart'>
+<tr>
+<td class='add_to_cart'>
+<label for='product_quantity'>Quantity:</label>
+<input id='product_quantity' name='product[quantity]' size='2' type='text' value='1'>
+<br>
+<span class='allow_backorders'><!-- allow_backorders --><a href="/ordering#backorders">backorders</a> allowed</span>
+</td>
+<td class='td_right'>
+<div>
+<button alt="Add to cart" name="submit" value="add_to_cart" title="Adds ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V to your cart." data-add-to-cart="true" data-freeze-cart="false" class="btn-medium btn-green">Add to cart</button><br/>
+<button alt="Add to list" name="submit" value="add_to_list" title="Adds ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V to your list." class="btn-small btn-link">Add to list</button>
+</div>
+</td>
+
+</tr>
+</table>
+</form>
+<div>
+<div class='price-notification-container'>
+<div class='price-notification-display-div' style='display: flex; align-items: center;
+margin-top: 0.3em; margin-bottom: 0.3em;'>
+<span class='label price-notification-label'>
+</span>
+<span class='right-span'>
+<button class='enable-price-notification-button btn-small btn-link' data-logged-in='false' type='button'>
+Get price notification
+</button>
+<a class="fa fa-question-circle" data-lightbox-link="true" data-lightbox-height="21rem" data-lightbox-width="27rem" href="/ordering/price-change-notifications"></a>
+</span>
+</div>
+<div class='price-notification-form-div' style='display: none;'>
+<form action='https://www.pololu.com/wishlist_product/set_price_notification' enctype='multipart/form-data' method='post' style='width: 100%'>
+<input type="hidden" name="wishlist_product[id]" id="wishlist_product_id" autocomplete="off" />
+<input type="hidden" name="product_id" id="product_id" value="0J5292" autocomplete="off" />
+<input type="hidden" name="session_id" value="12bb7534dbe5121a1329cf4725f89380" />
+<hr>
+<div class='spaced-row'>
+<label>Notify me</label>
+<button class='disable-price-notification-button btn-small btn-link' type='button'>Cancel</button>
+</div>
+<div class='align-center indent-radio'>
+<input checked class='notify-any-price-change' id='notify-any-price-change' name='wishlist_product[price_notification]' type='radio' value='notify-any-price-change'>
+<label for='notify-any-price-change'>&nbspon any price change</label>
+</div>
+<div class='align-center indent-radio'>
+<input class='notify-any-price-drop' id='notify-any-price-drop' name='wishlist_product[price_notification]' type='radio' value='notify-any-price-drop'>
+<label for='notify-any-price-drop'>&nbspon any price drop</label>
+</div>
+<div class='align-center indent-radio'>
+<input class='notify-at-target-price' id='notify-at-target-price' name='wishlist_product[price_notification]' type='radio' value='notify-at-target-price'>
+<label for='notify-at-target-price'>&nbspat or below $</label>
+<input class='target-price' name='wishlist_product[target_price]' placeholder='price' size='3' type='text' value=''>
+<label for='notify-at-target-price'>&nbspat qty&nbsp</label>
+<input class='quantity' name='wishlist_product[target_quantity]' placeholder='qty' size='2' type='text' value=''>
+</div>
+<div class='spaced-row'>
+<div>
+</div>
+<button class='save-price-notification-button btn-small btn-green' type='submit'>Save</button>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+<script type='module'>
+import {PriceNotification} from 'price_notification'
+new PriceNotification();
+import {StockNotification} from 'stock_notification'
+new StockNotification();
+</script>
+
+</span>
+<div id='short_description'>
+<p>This is the compact version of a simple carrier for Allegro&#8217;s <strong>ACS37220LEZATR-100B5</strong> Hall effect-based, electrically isolated current sensor, which offers an extra-low-resistance (~0.1&nbsp;mΩ) IC current path, a 150&nbsp;kHz bandwidth with &lt;4&nbsp;&micro;s response time, and an overcurrent fault output with a user-configurable threshold.</p>
+<table style="margin-bottom:1.5em;" class="active_controller_comparison">
+	<tr>
+		<th class="center">Part Suffix</th>
+		<th>Range</th>
+		<th>Supply Voltage</th>
+		<th>Sensitivity</th>
+		<th>Zero Point</th>
+		<th>Size</th>
+		<th>PCB layers</th>
+	</tr>
+	<tr>
+		<td>100B5</td>
+		<td>±100&nbsp;A (bidirectional)</td>
+		<td>4.5&nbsp;V to 5.5&nbsp;V</td>
+		<td>20&nbsp;mV/A</td>
+		<td>2.5&nbsp;V</td>
+		<td>0.7″×0.8″</td>
+		<td>2</td>
+	</tr>
+</table>
+
+</div>
+<p>Alternatives available with variations in these parameter(s):
+<a class="select_by_specification_link" data-lightbox-link="true" data-lightbox-height="20rem" data-lightbox-width="50rem" href="/catalog/select-by-specification?parameters=0J209%2C0J8&amp;product=5292&amp;products=5290%2C5295"><span class='select_by_specification_parameter'>current range</span> <span class='select_by_specification_parameter'>size</span>
+<span class="select_by_specification_main_link">Select variant&#8230;</span>
+</a></p><p class='compare_link'>
+<span class="compare"><a href="/search/compare/319"><img alt="" src="https://a.pololu-files.com/assets/compare-cd658e4a1effbb8bf041401c86b9bef3949f6946b740d13b04703d381ec5594b.png" /></a><a title="Compare all products in ACS37220 Current Sensor Compact Carriers" href="/search/compare/319">Compare all products in ACS37220 Current Sensor Compact Carriers</a></span>.
+</p></div>
+
+<a name="tabs"></a><table class="tabs"><tr><td>&nbsp;</td><th class="selected "><span id="name">Description</span></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/5292/specs&#39;);" href="/product/5292/specs"><span id="name">Specs</span> <span id="count">(12)</span></a></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/5292/pictures&#39;);" href="/product/5292/pictures"><span id="name">Pictures</span> <span id="count">(12)</span></a></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/5292/resources&#39;);" href="/product/5292/resources"><span id="name">Resources</span> <span id="count">(5)</span></a></th><td>&nbsp;</td><th class="empty"><span id="name">FAQs</span> <span id="count">(0)</span></th><td>&nbsp;</td><th class="empty"><span id="name">On the blog</span> <span id="count">(0)</span></th><td>&nbsp;</td><th class=""><a onclick="saveScrollPosition(&#39;/product/5292/distributors&#39;);" href="/product/5292/distributors"><span id="name">Distributors</span> <span id="count">(46)</span></a></th><td class="last">&nbsp;</td></tr></table><div class="tab_page"><h2>Overview</h2>
+<table class="picture_with_caption right"><tr><td><img alt="" class="" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12515&quot;,&quot;caption&quot;:&quot;\u003cp\u003eAllegro logo.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12515.98x98.jpg?b144daf35821d378f7d5ebc55e9705ae&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12515.600x480.jpg?b144daf35821d378f7d5ebc55e9705ae&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12515.1200.png?b144daf35821d378f7d5ebc55e9705ae&quot;,&quot;longest_side&quot;:1198}]" data-picture-id="0J12515" data-picture-longest_side="1198" src="https://a.pololu-files.com/picture/0J12515.300.jpg?b144daf35821d378f7d5ebc55e9705ae" /></td><p></tr></table>
+<table class="picture_with_caption right"><tr><td style="max-width: 300px"><a href="https://a.pololu-files.com/picture/0J12598.1200.jpg?131db6a6f68b063fc7863aafb8dcd865" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12598&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier (top) and Large Carrier (bottom) size comparison.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12598.98x98.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12598.600x480.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12598.1200.jpg?131db6a6f68b063fc7863aafb8dcd865&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12598" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12598.300.jpg?131db6a6f68b063fc7863aafb8dcd865" /></a></td></tr><tr><th style="max-width: 300px"><p>ACS37220 Current Sensor Compact Carrier (top) and Large Carrier (bottom) size comparison.</p></th></tr></table></p>
+<p>We are offering these breakout boards with support from Allegro Microsystems as an easy way to use or evaluate their ACS37220 Hall effect-based, electrically isolated current sensors with user-configurable overcurrent fault output; we therefore recommend careful reading of the <a href="https://www.allegromicro.com/~/media/files/datasheets/acs37220-datasheet.pdf">ACS37220 datasheet</a> before using this product.  The following list details some of the sensor&#8217;s key features:</p>
+<ul>
+	<li>Hall effect-based sensor with electrically isolated current path allows the sensor to be inserted anywhere along the current path and to be used in applications that require electrical isolation.</li>
+	<li>Extra-low primary current path resistance of 0.1&nbsp;mΩ in the sensor IC for higher efficiency.</li>
+	<li>Differential Hall sensing rejects common-mode fields, so the orientation of the sensor relative to uniform external magnetic fields (e.g. the Earth&#8217;s magnetic field) has less effect on the measurement.</li>
+	<li>150&nbsp;kHz bandwidth analog output voltage proportional to AC or DC currents.</li>
+	<li>Less than 4&nbsp;&micro;s response time.</li>
+	<li>Output is <ins>not</ins> ratiometric (i.e. the zero point and sensitivity are independent of the actual supply voltage), which provides immunity from noisy supplies.</li>
+	<li>User-configurable overcurrent fault output with 3&nbsp;&micro;s response time indicates when the current magnitude exceeds the set threshold and can be used for fast short-circuit detection.</li>
+	<li>Integrated digital temperature compensation circuitry allows improved accuracy over the full operating temperature range.</li>
+	<li>Automotive-grade operating temperature range of -40°C to 150°C.</li>
+	<li>Carrier boards, available in compact and large sizes, offer a variety of ways to insert it into the current path along with  0.1″-pitch (breadboard-compatible) power, ground, and output pins.</li>
+	<li>The PCB is made with 2-layer (compact versions) or 6-layer (large versions) 2-oz copper, so very little power is lost in the module.</li>
+	<li>3.3V and 5V versions available.</li>
+</ul>
+<p>The connection points are labeled on the silkscreen, which is on the bottom side of the compact versions and on both sides of the large versions.  The bottom silkscreen also shows the direction that is interpreted as positive current flow via the <b>+i</b> arrow.</p>
+<style type="text/css">
+table.active_controller_comparison td.spacer {border: none; background: white;}
+table.active_controller_comparison td.white {background: white;}
+</style>
+<p>The following table lists the available ACS37220 carrier options:</p>
+<table style="margin-bottom:1.5em;" class="active_controller_comparison center">
+	<tr>
+		<td class="spacer"></td>
+		<th class="center">Pololu<br>Item #</th>
+		<th>Part Suffix</th>
+		<th>Supply Voltage<br>(V)</th>
+		<th>Current<br>Range</th>
+		<th>Sensitivity<br>(mV/A)</th>
+		<th>Zero Point</th>
+		<th>Size</th>
+		<th>PCB<br>Details</th>
+		<th class="price">Price</th>
+	</tr>
+	<tr>
+		<td class="spacer" colspan="9"></td>
+	</tr>
+	<tr>
+		<td class="spacer" colspan="9"></td>
+	</tr>
+	<tr>
+		<td class="white" rowspan="5"><a href="/category/320/acs37220-current-sensor-large-carriers"><img src="https://a.pololu-files.com/picture/0J12593.90.jpg?b32b48bef84180a4bb3bb98ae8a13d43" alt="" /></a><br><strong>Large Carrier</strong></td>
+		<td><a href="/product/5295">#5295</a></td>
+		<td>100B3</td>
+		<td rowspan="2">3.15 to 3.45<br>(3.3 nominal)</td>
+		<td><a href="/product/5295">±100&nbsp;A</a></td>
+		<td>13.2</td>
+		<td rowspan="2">1.65&nbsp;V</td>
+		<td rowspan="5">1.4″×1.2″</td>
+		<td rowspan="5">6&nbsp;layers,<br>2-oz copper</td>
+		<td class="price" rowspan="5"><span class="price">$10.95</span></td>
+	</tr>
+	<tr>
+		<td><a href="/product/5296">#5296</a></td>
+		<td>150B3</td>
+		<td><a href="/product/5296">±150&nbsp;A</a></td>
+		<td>8.8</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5297">#5297</a></td>
+		<td>100B5</td>
+		<td class="white" rowspan="3">4.5 to 5.5<br>(5 nominal)</td>
+		<td><a href="/product/5297">±100&nbsp;A</a></td>
+		<td>20</td>
+		<td class="white" rowspan="3">2.5&nbsp;V</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5298">#5298</a></td>
+		<td>150B5</td>
+		<td><a href="/product/5298">±150&nbsp;A</a></td>
+		<td>13.3</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5299">#5299</a></td>
+		<td>200B5</td>
+		<td><a href="/product/5299">±200&nbsp;A</a></td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td class="spacer" colspan="9"></td>
+	</tr>
+	<tr>
+		<td class="white" rowspan="5"><a href="/category/319/acs37220-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J12602.60.jpg?41435eb3e92659c8e0266f5e69fb70c3" alt="" /></a><br><strong>Compact Carrier</strong></td>
+		<td><a href="/product/5290">#5290</a></td>
+		<td>100B3</td>
+		<td rowspan="2">3.15 to 3.45<br>(3.3 nominal)</td>
+		<td><a href="/product/5290">±100&nbsp;A</a></td>
+		<td>13.2</td>
+		<td rowspan="2">1.65&nbsp;V</td>
+		<td class="white" rowspan="5">0.7″×0.8″</td>
+		<td class="white" rowspan="5">2&nbsp;layers,<br>2-oz copper</td>
+		<td class="price white" rowspan="5"><span class="price">$6.95</span></td>
+	</tr>
+	<tr>
+		<td><a href="/product/5291">#5291</a></td>
+		<td>150B3</td>
+		<td><a href="/product/5291">±150&nbsp;A</a></td>
+		<td>8.8</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5292">#5292</a></td>
+		<td>100B5</td>
+		<td class="white" rowspan="3">4.5 to 5.5<br>(5 nominal)</td>
+		<td><a href="/product/5292">±100&nbsp;A</a></td>
+		<td>20</td>
+		<td class="white" rowspan="3">2.5&nbsp;V</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5293">#5293</a></td>
+		<td>150B5</td>
+		<td><a href="/product/5293">±150&nbsp;A</a></td>
+		<td>13.3</td>
+	</tr>
+	<tr>
+		<td><a href="/product/5294">#5294</a></td>
+		<td>200B5</td>
+		<td><a href="/product/5294">±200&nbsp;A</a></td>
+		<td>10</td>
+	</tr>
+</table>
+<p>Alternatives available with variations in these parameter(s):
+<a class="select_by_specification_link" data-lightbox-link="true" data-lightbox-height="20rem" data-lightbox-width="50rem" href="/catalog/select-by-specification?parameters=0J209%2C0J8&amp;product=5292&amp;products=5290%2C5295"><span class='select_by_specification_parameter'>current range</span> <span class='select_by_specification_parameter'>size</span>
+<span class="select_by_specification_main_link">Select variant&#8230;</span>
+</a></p>
+<h2>
+Details for item #5292
+</h2>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 250px"><a href="https://a.pololu-files.com/picture/0J12608.1200.jpg?ce4a4c9624d061dccc0ce5886f16cc89" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12608&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V, bottom view.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12608.98x98.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12608.600x480.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12608.1200.jpg?ce4a4c9624d061dccc0ce5886f16cc89&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12608" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12608.250.jpg?ce4a4c9624d061dccc0ce5886f16cc89" /></a></td></tr><tr><th style="max-width: 250px"><p>ACS37220LEZATR-100B5 Current Sensor Compact Carrier -100A to +100A, 5V, bottom view.</p></th></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td style="max-width: 385px"><a href="https://a.pololu-files.com/picture/0J12599.1200.jpg?c9c2d72fe76e0e0edffdae4d047c2e03" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12599&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12599.98x98.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12599.600x480.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12599.1200.jpg?c9c2d72fe76e0e0edffdae4d047c2e03&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12599" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12599.385.jpg?c9c2d72fe76e0e0edffdae4d047c2e03" /></a></td></tr><tr><th style="max-width: 385px"><p>ACS37220 Current Sensor Compact Carrier.</p></th></tr></table></td>
+	</tr>
+</table>
+<p>This compact carrier features the ACS37220LEZATR-100B5, which is intended for nominal 5&nbsp;V operation and is designed for bidirectional input current from -100&nbsp;A to +100&nbsp;A.  This version can be visually distinguished from the other versions by the &#8220;5V B10&#8221; printed on the bottom side, as shown in the left picture above.</p>
+<table style="margin-bottom:1.5em;" class="active_controller_comparison center">
+	<tr>
+		<th class="center">Part Suffix</th>
+		<th>Range</th>
+		<th>Supply Voltage</th>
+		<th>Sensitivity</th>
+		<th>Zero Point</th>
+		<th>Size</th>
+		<th>PCB layers</th>
+	</tr>
+	<tr>
+		<td>100B5</td>
+		<td>±100&nbsp;A (bidirectional)</td>
+		<td>4.5&nbsp;V to 5.5&nbsp;V</td>
+		<td>20&nbsp;mV/A</td>
+		<td>2.5&nbsp;V</td>
+		<td>0.7″×0.8″</td>
+		<td>2</td>
+	</tr>
+</table>
+<p>A <a href="/product/5297"><strong>larger carrier</strong></a> with a 6-layer PCB is also available for this sensor IC with room for larger connectors and thicker wires for the high-current path, offering different ways to use or evaluate this current sensor.</p>
+<h2>Using the sensor</h2>
+<table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12604.1200.jpg?3e885d430babd7e1ef1d46f7745e6534" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12604&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier pinout.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12604.98x98.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12604.600x480.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12604.1200.jpg?3e885d430babd7e1ef1d46f7745e6534&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12604" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12604.400.jpg?3e885d430babd7e1ef1d46f7745e6534" /></a></td><p></tr></table></p>
+<p>This sensor has five required connections: the input current (IP+ and IP-), logic power (VDD and GND), and the sensor output (VOUT).</p>
+<p>The sensor requires a supply voltage of 4.5&nbsp;V to 5.5&nbsp;V to be connected across the VDD and GND pads, which are labeled on the bottom silkscreen.  The sensor outputs an analog voltage on VOUT that is centered at 2.5&nbsp;V and changes by 20&nbsp;mV per amp of input current, with positive current increasing the output voltage and negative current decreasing the output voltage:</p>
+<p class="math center">``V_&quot;OUT&quot; = 2.5 text(V) + 0.020 text(V)/text(A) * I_&quot;P&quot;``</p>
+<p class="math center">``I_&quot;P&quot; = (V_&quot;OUT&quot;  &#8211; 2.5 text(V)) / (0.020 text(V)/text(A)) = (V_&quot;OUT&quot; &#8211; 2.5 text(V)) * 50 text(A)/text(V)``</p>
+<p>The output is <ins>not</ins> ratiometric, so the zero point and sensitivity are independent of the actual supply voltage.</p>
+<h3>Setting the overcurrent fault threshold</h3>
+<p>The optional VOC pin can be used to set the overcurrent fault threshold.  An on-board 205&nbsp;kΩ resistor between VOC and GND sets the default overcurrent fault threshold to approximately 200% of the nominal sensing range, and an external resistor can be added in parallel between VOC and GND to lower this threshold to between 50% and 200%.  The following equation gives the value of this parallel resistor, R<sub>OC</sub>, in kΩ as a function of overcurrent fault threshold percentage P:</p>
+<p class="math center">``R_&quot;OC&quot; = (205 text(kΩ) * P) / (205% &#8211; P)``</p>
+<p>So for example, to set the overcurrent fault limit to 50% of the nominal sensing range, a 66&nbsp;kΩ external resistor can be added between VOC and GND:</p>
+<p class="math center">``R_&quot;OC&quot; = (205 text(kΩ) * 50%) / (205% &#8211; 50%) ~~ 66 text(kΩ)``</p>
+<p>As a shortcut, VOC can be connected directly to ground to set the overcurrent fault limit to 100% of the nominal sensing range.</p>
+<p>Alternatively, the on-board resistor can be replaced, or a low-impedance voltage source can be applied directly to the VOC pin as described in the <a href="https://www.allegromicro.com/~/media/files/datasheets/acs37220-datasheet.pdf">ACS37220 datasheet</a>.</p>
+<p>The optional <span style="text-decoration:overline;">FAULT</span> pin is normally at VDD and is pulled low when the IP current magnitude exceeds the set overcurrent fault threshold in either direction.  This pin only asserts while the fault condition is present (it is <strong>not</strong> latched).</p>
+<p class="note">We manufacture these boards in-house at our Las Vegas facility, which gives us the flexibility to make these current sensors with custom default overcurrent fault thresholds.  If you are interested in customization, please <a href="/contact">contact us</a>.</p>
+<h3>Making connections to the board</h3>
+<table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12603.1200.jpg?5b6102ffe908f933bfe340988f0ed97f" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12603&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier basic hole dimensions.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12603.98x98.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12603.600x480.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12603.1200.jpg?5b6102ffe908f933bfe340988f0ed97f&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12603" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12603.500.jpg?5b6102ffe908f933bfe340988f0ed97f" /></a></td><p></tr></table></p>
+<p>You can insert the board into your current path in a variety of ways.  For typical high-current applications, you can solder wires directly to the through-holes that best match your wires, or you can use solderless ring terminal connectors, as shown in the pictures below.  The largest through-holes are big enough for 10&nbsp;AWG wires or #6 or M3.5 screws, and the second-largest through-holes (and mounting holes) are sized for 14&nbsp;AWG wires or #2 or M2 screws.  Holes with 0.1″, 3.5&nbsp;mm, and 5&nbsp;mm spacing are also available as shown in the diagram above for connecting <a href="/product/965">male header pins</a> or <a href="/category/117/terminal-blocks">terminal blocks</a>, but please note that these connection options will generally not be suitable for the kinds of high currents intended for this sensor.</p>
+<table class="side_by_side_pics">
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12620.1200.jpg?e4ff1288fa51cadadd99a0545ce2a952" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12620&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires connected via solderless ring terminals.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12620.98x98.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12620.600x480.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12620.1200.jpg?e4ff1288fa51cadadd99a0545ce2a952&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12620" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12620.250.jpg?e4ff1288fa51cadadd99a0545ce2a952" /></a></td></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12618.1200.jpg?bf0a22368b6e2f39287a3850baf8892f" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12618&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires soldered directly to the board and header pins soldered for use with a breadboard.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12618.98x98.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12618.600x480.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12618.1200.jpg?bf0a22368b6e2f39287a3850baf8892f&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12618" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12618.250.jpg?bf0a22368b6e2f39287a3850baf8892f" /></a></td></tr></table></td>
+	</tr>
+	<tr>
+		<td><table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12621.1200.jpg?e64b29cba0630292665f25699ea65d2a" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12621&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires connected via solderless ring terminals.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12621.98x98.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12621.600x480.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12621.1200.jpg?e64b29cba0630292665f25699ea65d2a&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12621" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12621.250.jpg?e64b29cba0630292665f25699ea65d2a" /></a></td></tr></table></td>
+		<td><table class="picture_with_caption center"><tr><td><a href="https://a.pololu-files.com/picture/0J12619.1200.jpg?1fafa519cfaa527c49d2b47c7f73e844" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12619&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Compact Carrier with wires soldered directly to the board and header pins soldered for use with a breadboard.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12619.98x98.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12619.600x480.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12619.1200.jpg?1fafa519cfaa527c49d2b47c7f73e844&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12619" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12619.250.jpg?1fafa519cfaa527c49d2b47c7f73e844" /></a></td></tr></table></td>
+	</tr>
+</table>
+<p>The <span style="text-decoration:overline;">FAULT</span>, VOUT, VDD, GND, and VOC pins work with <a href="/product/965">0.1″-pitch header pins</a> and are compatible with standard <a href="/category/28/solderless-breadboards">solderless breadboards</a></p>
+<p class="note_warning"><font color="red"><strong>Warning:</strong></font> This product is intended for use below 30&nbsp;V.  Working with higher voltages can be extremely dangerous and should only be attempted by qualified individuals with appropriate equipment and experience.</p>
+<h2>Schematic and dimension diagrams</h2>
+<table class="picture_with_caption center wide"><tr><td style="max-width: 800px"><a href="https://a.pololu-files.com/picture/0J12605.1200.png?5cd079d6358a7f00b8b44a4f3b39ef99" class="noscript-fallback"><img alt="" class="wide zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12605&quot;,&quot;caption&quot;:&quot;\u003cp\u003eACS37220 Current Sensor Carrier schematic diagram.\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12605.98x98.jpg?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12605.600x480.jpg?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12605.1200.png?5cd079d6358a7f00b8b44a4f3b39ef99&quot;,&quot;longest_side&quot;:1200}]" data-picture-id="0J12605" data-picture-longest_side="1200" src="https://a.pololu-files.com/picture/0J12605.800x470.jpg?5cd079d6358a7f00b8b44a4f3b39ef99" /></a></td><p></tr><tr><th style="max-width: 800px"><p>ACS37220 Current Sensor Carrier schematic diagram.</p></th></tr></table></p>
+<p>The dimension diagram is available as a <a href="/file/0J2054/acs37220-current-sensor-carriers-dimension.pdf"><strong>downloadable PDF</strong></a> (403k pdf).</p>
+<h2>Real-world power dissipation considerations</h2>
+<table class="picture_with_caption left"><tr><td style="max-width: 270px"><a href="https://a.pololu-files.com/picture/0J12693.1200.jpg?8782a4c18fcc485e8d1476c97002729b" class="noscript-fallback"><img alt="" class="zoomable" data-gallery-pictures="[{&quot;id&quot;:&quot;0J12693&quot;,&quot;caption&quot;:&quot;\u003cp\u003eThermal image of a high-current test of a Pololu current sensor carrier (not necessarily this product).\u003c/p\u003e&quot;,&quot;url_tiny&quot;:&quot;https://a.pololu-files.com/picture/0J12693.98x98.jpg?8782a4c18fcc485e8d1476c97002729b&quot;,&quot;url_medium&quot;:&quot;https://a.pololu-files.com/picture/0J12693.600x480.jpg?8782a4c18fcc485e8d1476c97002729b&quot;,&quot;url_full&quot;:&quot;https://a.pololu-files.com/picture/0J12693.1200.jpg?8782a4c18fcc485e8d1476c97002729b&quot;,&quot;longest_side&quot;:640}]" data-picture-id="0J12693" data-picture-longest_side="640" src="https://a.pololu-files.com/picture/0J12693.270.jpg?8782a4c18fcc485e8d1476c97002729b" /></a></td><p></tr><tr><th style="max-width: 270px"><p>Thermal image of a high-current test of a Pololu current sensor carrier (not necessarily this product).</p></th></tr></table></p>
+<p>Depending on the version, the ACS37220 can measure up to ±200&nbsp;A. However, the sensor chip can overheat at lower currents. In our tests, we found that our ACS37220 carrier boards could conduct 60&nbsp;A continuously while staying well below the thermal limit for the IC.  Our tests were conducted at approximately 25°C ambient temperature with no forced air flow.</p>
+<p>The actual current you can pass through the sensor will depend on how well you can keep it cool. The carrier&#8217;s printed circuit board is designed to help with this by drawing heat out of the sensor chip. Solid connections to the current path pins (such as with thick soldered wires or large, tightly-secured lugs) can also help reduce heat build-up in the sensor and carrier board.</p>
+<p class="note_warning"><strong>Warning:</strong> Exceeding temperature or current limits can cause <strong><font color="red">permanent damage</font></strong> to the sensor. If you are measuring an average continuous current greater than 50&nbsp;A, we strongly recommend that you monitor the sensor&#8217;s temperature and look into additional cooling if necessary.<br><br>This product can get <strong><span style="color:red;">hot</span></strong> enough to burn you long before the chip overheats. Take care when handling this product and other components connected to it.</p>
+<h2 class="clear">Comparison of the Pololu current sensor carriers</h2>
+<p>We have a variety of current sensors available with different ranges, sensitivities, and features.  The table below summarizes our selection of active and preferred options:</p>
+<style type="text/css">
+table.active_controller_comparison td.spacer {border: none; background: white;}
+table.active_controller_comparison td.white {background: white;}
+table.active_controller_comparison td.gray {background: #eeeeee;}
+tr.no_top_border th {vertical-align:top; border-top: none; background: white;}
+tr.no_bot_border th {vertical-align:bottom; border-bottom: none; background: white;}
+tr.extra_top_bottom_padding td {padding-top: 1.5em; padding-bottom: 1.5em;}
+table.freeze_first_col tr>*:first-child {position: sticky; left: 0;}
+table.freeze_first_col tr>*:first-child:not(.spacer) {border-left: none; border-right: none; box-shadow: inset 1px 0 #aaa, inset -1px 0 #aaa;}
+table.freeze_first_col tr>*:not(.spacer)+*:nth-child(2) {border-left: none;}
+table.freeze_first_col tr:nth-child(odd)>*:first-child:not(.spacer) {background: white;}
+table.freeze_first_col tr:nth-child(even)>*:first-child:not(.spacer) {background: #eeeeee;}
+</style>
+
+<! to be inserted before 5441: "±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A":/product/5440 -->
+<! to be inserted before 5445: "±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A":/product/5444 -->
+
+<div style="width: min-content; max-width: 100%; margin: 0 auto; margin-bottom: 1em;">
+<div style="max-width: 100%; overflow: auto;">
+<table style="min-width: 600px; margin-bottom: 0.5em;" class="active_controller_comparison freeze_first_col">
+	<tr class="no_bot_border">
+		<td class="spacer"></td>
+		<th><a href="/category/352/ct220-contactless-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J13388.100.jpg?0d96fcfdee702dd844602cc11a779979" alt="" /></a><br></th>
+		<th><a href="/category/338/acs37041-current-sensor-micro-carriers"><img src="https://a.pololu-files.com/picture/0J13186.50.jpg?3dc557c8fa8d3f7fba81015421304979" alt="" /></a><br></th>
+		<th><a href="/category/339/acs37041-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J13187.100.jpg?9f0275689ecad767eae37a1c05d4c24b" alt="" /></a></th>
+		<th><a href="/category/315/acs711-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J12196.100.jpg?82f79b3aecf0bb5cf5435e91e6a5a5c9" alt="" /></a></th>
+		<th><a href="/category/312/acs71240-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J12505.100.jpg?918d32ea64a9cc9c4c76d152aa6ac6fe" alt="" /></a></th>
+		<th><a href="/category/265/acs724-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J12198.100.jpg?286a03bc2cbd664ab046c4d338281ba4" alt="" /></a></th>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14131.125.jpg?6e918f1505452df2e5effd3d6be37b1b" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J13020.100.jpg?c9afe8c13d133dd4e53232705a76800c" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14132.125.jpg?6b0b71b57a867cc51e4329ed7f8e8f68" alt="" /></a></th>
+		<th><a href="/category/323/ct432-ct433-tmr-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J12691.125.jpg?34ade41fb2836145a44ece7a7a2a9953" alt="" /></a></th>
+	</tr>
+	<tr class="no_top_border">
+		<td class="spacer"></td>
+		<th><a href="/category/352/ct220-contactless-current-sensor-carriers"><span style="text-wrap: nowrap;">CT220 Contactless</span><br>Current Sensor<br>Carriers</a></th>
+		<th><a href="/category/337/acs3704x-current-sensor-carriers">ACS3704x<br>Current Sensor<br>Micro Carriers</a></th>
+		<th><a href="/category/337/acs3704x-current-sensor-carriers">ACS3704x<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/315/acs711-current-sensor-carriers">ACS711 Current<br>Sensor Carriers</a></th>
+		<th><a href="/category/312/acs71240-current-sensor-carriers">ACS71240&nbsp;Current<br>Sensor Carriers</a></th>
+		<th><a href="/category/265/acs724-current-sensor-carriers">ACS724 Current<br>Sensor Carriers</a></th>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers">ACS37100&nbsp;TMR<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030LZ<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030MY<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/323/ct432-ct433-tmr-current-sensor-compact-carriers">CT432/CT433&nbsp;TMR<br>Current Sensor<br>Compact Carriers</a></th>
+	</tr>
+	<tr>
+		<th>Allegro Sensor</th>
+		<td>CT220xMV-HS5</td>
+		<td colspan="2">ACS3704x</td>
+		<td>ACS711KEXT</td>
+		<td>ACS71240</td>
+		<td>ACS724LLCTR</td>
+		<td>ACS37100</td>
+		<td>ACS37030LLZ</td>
+		<td>ACS37030LMY</td>
+		<td>CT432/CT433</td>
+	</tr>
+	<tr>
+		<th>Sensing technology</th>
+		<td>XtremeSense™<br>TMR (tunneling magnetoresistance)</td>
+		<td colspan="2">Hall effect</td>
+		<td>Hall effect</td>
+		<td>Hall effect</td>
+		<td>Hall effect</td>
+		<td>XtremeSense™<br>TMR (tunneling magnetoresistance)</td>
+		<td colspan="2">Hall effect + inductive coil</td>
+		<td>XtremeSense™<br>TMR (tunneling magnetoresistance)</td>
+	</tr>
+	<tr>
+		<th>Logic&nbsp;voltage range</th>
+		<td>2.7&ndash;5.5&nbsp;V</td>
+		<td colspan="2">3.3V versions: 3.0&ndash;3.6&nbsp;V<br>5V versions: 4.75&ndash;5.5&nbsp;V</td>
+		<td>3.0&ndash;5.5&nbsp;V</td>
+		<td><span style="text-wrap: nowrap;">3.3V ver: 3.0&ndash;3.6&nbsp;V</span><br>5V ver: 4.5&ndash;5.5&nbsp;V</td>
+		<td>4.5&ndash;5.5&nbsp;V</td>
+		<td>3.0&ndash;3.6&nbsp;V</td>
+		<td colspan="2">3.0&ndash;3.6&nbsp;V</td>
+		<td><span style="text-wrap: nowrap;">3.3V ver: 3.0&ndash;3.6&nbsp;V</span><br>5V ver: 4.75&ndash;5.5&nbsp;V</td>
+	</tr>
+	<tr>
+		<th>Family current range</th>
+		<td>10&ndash;800&nbsp;A</td>
+		<td colspan="2">10&ndash;30&nbsp;A</td>
+		<td>15.5&ndash;31&nbsp;A</td>
+		<td>10&ndash;50&nbsp;A</td>
+		<td>2.5&ndash;50&nbsp;A</td>
+		<td>25&ndash;50&nbsp;A</td>
+		<td colspan="2">20&ndash;65&nbsp;A</td>
+		<td>20&ndash;70&nbsp;A</td>
+	</tr>
+	<tr class="extra_top_bottom_padding">
+		<th>Range/sensitivity of individual versions</th>
+		<td><sup><strong>(2)</strong></sup><br><a href="/product/5352">±1.5&nbsp;mT&nbsp;/&nbsp;1500&nbsp;mV/mT</a><br><a href="/product/5355">±15&nbsp;mT&nbsp;/&nbsp;150&nbsp;mV/mT</a></td>
+		<td>ACS37041:<br><br>3.3V Bidirectional:<br><a href="/product/5440">±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A</a><br><a href="/product/5441">±30&nbsp;A&nbsp;/&nbsp;44&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5442">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/5443">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a><br><br><hr style="margin-left: 1em; margin-right: 1em">ACS37042:<br><br>3.3V Bidirectional:<br><a href="/product/5450">±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A</a><br><a href="/product/5451">±30&nbsp;A&nbsp;/&nbsp;44&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5452">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/5453">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a></td>
+		<td>ACS37041:<br><br>3.3V Bidirectional:<br><a href="/product/5444">±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A</a><br><a href="/product/5445">±30&nbsp;A&nbsp;/&nbsp;44&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5446">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/5447">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a><br><br><hr style="margin-left: 1em; margin-right: 1em">ACS37042:<br><br>3.3V Bidirectional:<br><a href="/product/5454">±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A</a><br><a href="/product/5455">±30&nbsp;A&nbsp;/&nbsp;44&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5456">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/5457">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a></td>
+		<td>Bidirectional:<sup><strong>(1)</strong></sup><br><a href="/product/2452">±15.5&nbsp;A&nbsp;/&nbsp;90&nbsp;mV/A</a><br><a href="/product/2453">±31&nbsp;A&nbsp;/&nbsp;45&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5240">±10&nbsp;A&nbsp;/&nbsp;132&nbsp;mV/A</a><br><a href="/product/5241">±30&nbsp;A&nbsp;/&nbsp;44&nbsp;mV/A</a><br><a href="/product/5242">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5243">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/5244">±30&nbsp;A&nbsp;/&nbsp;66&nbsp;mV/A</a><br><a href="/product/5245">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><br>5V Unidirectional:<br><a href="/product/5246">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a></td>
+		<td><span style="text-wrap: nowrap;">5V Bidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/4040">±2.5&nbsp;A&nbsp;/&nbsp;800&nbsp;mV/A</a><br><a href="/product/4041">±5&nbsp;A&nbsp;/&nbsp;400&nbsp;mV/A</a><br><a href="/product/4043">±10&nbsp;A&nbsp;/&nbsp;200&nbsp;mV/A</a><br><a href="/product/4045">±20&nbsp;A&nbsp;/&nbsp;100&nbsp;mV/A</a><br><a href="/product/4047">±30&nbsp;A&nbsp;/&nbsp;66&nbsp;mV/A</a><br><a href="/product/4049">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a> <br><br> <span style="text-wrap: nowrap;">5V Unidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/4048">0&ndash;&#8288;5&nbsp;A&nbsp;/&nbsp;800&nbsp;mv/A</a><br><a href="/product/4042">0&ndash;&#8288;10&nbsp;A&nbsp;/&nbsp;400&nbsp;mv/A</a><br><a href="/product/4044">0&ndash;&#8288;20&nbsp;A&nbsp;/&nbsp;200&nbsp;mv/A</a><br><a href="/product/4046">0&ndash;&#8288;30&nbsp;A&nbsp;/&nbsp;133&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5476">±25&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mV/A</a><br><a href="/product/5477">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5230">±20&nbsp;A&nbsp;/&nbsp;66&nbsp;mV/A</a><br><a href="/product/5231">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5232">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5694">±20&nbsp;A&nbsp;/&nbsp;66&nbsp;mV/A</a><br><a href="/product/5695">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5696">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5310">±20&nbsp;A&nbsp;/&nbsp;50&nbsp;mV/A</a><br><a href="/product/5311">±30&nbsp;A&nbsp;/&nbsp;33.3&nbsp;mV/A</a><br><a href="/product/5313">±50&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5315">±70&nbsp;A&nbsp;/&nbsp;14.3&nbsp;mV/A</a><br><br>3.3V Unidirectional:<br><a href="/product/5316">0&ndash;&#8288;20&nbsp;A&nbsp;/&nbsp;100&nbsp;mv/A</a><br><a href="/product/5317">0&ndash;&#8288;30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mv/A</a><br><a href="/product/5318">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;40&nbsp;mv/A</a><br><a href="/product/5319">0&ndash;&#8288;65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mv/A</a><br><br>5V Bidirectional:<br><a href="/product/5300">±20&nbsp;A&nbsp;/&nbsp;100&nbsp;mV/A</a><br><a href="/product/5301">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a><br><a href="/product/5302">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><a href="/product/5303">±65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mV/A</a><br><br>5V Unidirectional:<br><a href="/product/5304">0&ndash;&#8288;20&nbsp;A&nbsp;/&nbsp;200&nbsp;mv/A</a><br><a href="/product/5305">0&ndash;&#8288;30&nbsp;A&nbsp;/&nbsp;133.3&nbsp;mv/A</a><br><a href="/product/5306">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a><br><a href="/product/5308">0&ndash;&#8288;70&nbsp;A&nbsp;/&nbsp;57.1&nbsp;mv/A</a></td>
+	</tr>
+	<tr>
+		<th>Max bandwidth</th>
+		<td>30&nbsp;kHz</td>
+		<td colspan="2">150&nbsp;kHz</td>
+		<td>100&nbsp;kHz</td>
+		<td>120&nbsp;kHz</td>
+		<td>120&nbsp;kHz<sup><strong>(3)</strong></sup></td>
+		<td>10&nbsp;MHz</td>
+		<td colspan="2">5&nbsp;MHz</td>
+		<td>1&nbsp;MHz</td>
+	</tr>
+	<tr>
+		<th>IC&nbsp;current&nbsp;path resistance</th>
+		<td>N/A (contactless)</td>
+		<td colspan="2">1.6&nbsp;mΩ</td>
+		<td>0.6&nbsp;mΩ</td>
+		<td>0.6&nbsp;mΩ</td>
+		<td>0.6&nbsp;mΩ</td>
+		<td>1.2&nbsp;mΩ</td>
+		<td>0.7&nbsp;mΩ</td>
+		<td>0.9&nbsp;mΩ</td>
+		<td>1&nbsp;mΩ</td>
+	</tr>
+	<tr>
+		<th>IC isolation rating<sup><strong>(6)</strong></sup></th>
+		<td>N/A (contactless)</td>
+		<td colspan="2">ACS37041:&nbsp;100&nbsp;V<sub>RMS</sub><br>ACS37042:&nbsp;285&nbsp;V<sub>RMS</sub></td>
+		<td>100&nbsp;V<sub>pk</sub></td>
+		<td>100&nbsp;V<sub>pk</sub></td>
+		<td>297&nbsp;V<sub>RMS</sub></td>
+		<td>1097&nbsp;V<sub>RMS</sub></td>
+		<td>840&nbsp;V<sub>RMS</sub></td>
+		<td>1000&nbsp;V<sub>RMS</sub></td>
+		<td>1100&nbsp;V<sub>RMS</sub></td>
+	</tr>
+	<tr>
+		<th>Minimum PCB creepage<sup><strong>(7)</strong></sup></th>
+		<td>N/A (contactless)</td>
+		<td>ACS37041:&nbsp;1.6&nbsp;mm<br>ACS37042:&nbsp;2.0&nbsp;mm</td>
+		<td>ACS37041:&nbsp;1.6&nbsp;mm<br>ACS37042:&nbsp;3.0&nbsp;mm</td>
+		<td>0.75&nbsp;mm</td>
+		<td>0.75&nbsp;mm</td>
+		<td>1.1&nbsp;mm</td>
+		<td>9.3&nbsp;mm</td>
+		<td>4.1&nbsp;mm</td>
+		<td>11.7&nbsp;mm</td>
+		<td>8&nbsp;mm</td>
+	</tr>
+	<tr>
+		<th>PCB</th>
+		<td>N/A (contactless)</td>
+		<td>2 layers,<br>1-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>2 layers,<br><span style="text-wrap: nowrap">2- or 4-oz copper<sup><strong>(4)</strong></sup></span></td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td colspan="2">2 layers,<br>2-oz copper</td>
+		<td>2 or 4 layers<sup><strong>(5)</strong></sup>,<br>2-oz copper</td>
+	</tr>
+	<tr>
+		<th>Size</th>
+		<td>0.4″&nbsp;×&nbsp;0.62″</td>
+		<td>0.3″&nbsp;×&nbsp;0.4″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+	</tr>
+	<tr>
+		<th>Overcurrent<br>fault output</th>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td> </td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i> (configurable threshold)</td>
+		<td colspan="2"></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+	</tr>
+	<tr>
+		<th>Common-mode field rejection</th>
+		<td> </td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+	</tr>
+	<tr>
+		<th>Nonratiometric output</th>
+		<td> </td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td> </td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td><i class="fa fa-check fa-lg" style="color: green"></i></td>
+	</tr>
+	<tr class="price">
+		<th>1-piece price</th>
+		<td><span class="price">$4.95</span></td>
+		<td><span class="price">$4.15</span> &#8211; <span class="price">$4.69</span></td>
+		<td><span class="price">$4.45</span> &#8211; <span class="price">$4.99</span></td>
+		<td><span class="price">$4.85</span></td>
+		<td><span class="price">$5.25</span></td>
+		<td><span class="price">$9.95</span> &#8211; <span class="price">$11.49</span></td>
+		<td><span class="price">$14.95</span></td>
+		<td><span class="price">$8.95</span></td>
+		<td><span class="price">$12.95</span></td>
+		<td><span class="price">$12.95</span></td>
+	</tr>
+</table>
+</div>
+<p><small>
+<strong>Note 1:</strong> Sensitivity when Vcc = 3.3&nbsp;V; actual sensitivity is ratiometric (i.e. it is proportional to Vcc).<br>
+<strong>Note 2:</strong> Sensitivity when Vcc = 5&nbsp;V; actual sensitivity is ratiometric (i.e. it is proportional to Vcc).<br>
+<strong>Note 3:</strong> Bandwidth can be reduced by adding a filter capacitor.<br>
+<strong>Note 4:</strong> 50A version of this carrier uses 4-oz copper PCB; all other versions of this carrier use 2-oz copper.<br>
+<strong>Note 5:</strong> 50A and higher versions of this carrier use a 4-layer PCB; all other versions of this carrier use a 2-layer PCB.<br>
+<strong>Note 6:</strong> IC component rating per manufacturer datasheet.<br>
+<strong>Note 7:</strong> Minimum creepage along PCB surface based on layout design only. Other creepage distances, e.g. along the body of the component, may be lower.<br>
+</small></p>
+</div>
+<div style="width: min-content; max-width: 100%; margin: 0 auto; margin-bottom: 1em;">
+<div style="max-width: 100%; overflow: auto;">
+<table style="min-width: 600px; margin-bottom: 0.5em;" class="active_controller_comparison freeze_first_col">
+	<tr class="no_bot_border">
+		<td class="spacer"></td>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14131.125.jpg?6e918f1505452df2e5effd3d6be37b1b" alt="" /></a></th>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14248.130.jpg?1f5eacfa0a470ab46dec866da2abccf4" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J13020.100.jpg?c9afe8c13d133dd4e53232705a76800c" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J13019.130.jpg?47706a3ab872d5a6970023be33e1a50b" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14132.125.jpg?6b0b71b57a867cc51e4329ed7f8e8f68" alt="" /></a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14174.130.jpg?477ad270531bf484a7e4382c4d74d5fb" alt="" /></a></th>
+		<th><a href="/category/323/ct432-ct433-tmr-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J12691.125.jpg?34ade41fb2836145a44ece7a7a2a9953" alt="" /></a></th>
+		<th><a href="/category/324/ct432-ct433-tmr-current-sensor-large-carriers"><img src="https://a.pololu-files.com/picture/0J12692.130.jpg?2aa715b4c7aa9fb22e2b576c5842dd6b" alt="" /></a></th>
+		<th><a href="/category/316/acs72981-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J12530.100.jpg?1c67d29dcaa3ac2d414247da0545fb86" alt="" /></a></th>
+		<th><a href="/category/317/acs72981-current-sensor-large-carriers"><img src="https://a.pololu-files.com/picture/0J12576.130.jpg?030ae143efbb8acee46a4557654c61d4" alt="" /></a></th>
+		<th><a href="/category/319/acs37220-current-sensor-compact-carriers"><img src="https://a.pololu-files.com/picture/0J12601.100.jpg?ed4e59458e220062312b1b8110a97434" alt="" /></a></th>
+		<th><a href="/category/320/acs37220-current-sensor-large-carriers"><img src="https://a.pololu-files.com/picture/0J12594.130.jpg?af8ac55899fb5cd61b9036fc9ee3ea17" alt="" /></a></th>
+		<th><a href="/category/380/acs37200-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14195.125.jpg?e9d042a4e9b8fe383c0339fb7b56a56f" alt="" /></a></th>
+		<th><a href="/category/380/acs37200-current-sensor-carriers"><img src="https://a.pololu-files.com/picture/0J14236.130.jpg?630d08af5c9b3507e31f32b8f50b3570" alt="" /></a></th>
+	</tr>
+	<tr class="no_top_border">
+		<td class="spacer"></td>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers">ACS37100<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/377/acs37100-tmr-current-sensor-carriers">ACS37100<br>Current Sensor<br>Large&nbsp;Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030LZ<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030LZ<br>Current Sensor<br>Large Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030MY<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/332/acs37030-current-sensor-carriers">ACS37030MY<br>Current Sensor<br>Large&nbsp;Carriers</a></th>
+		<th><a href="/category/323/ct432-ct433-tmr-current-sensor-compact-carriers">CT432/CT433&nbsp;TMR<br>Current Sensor<br>Compact Carriers</a></th>
+		<th><a href="/category/324/ct432-ct433-tmr-current-sensor-large-carriers">CT432/CT433&nbsp;TMR<br>Current Sensor<br>Large Carriers</a></th>
+		<th><a href="/category/316/acs72981-current-sensor-compact-carriers">ACS72981<br>Current Sensor<br>Compact Carriers</a></th>
+		<th><a href="/category/317/acs72981-current-sensor-large-carriers">ACS72981<br>Current Sensor<br>Large Carriers</a></th>
+		<th><a href="/category/319/acs37220-current-sensor-compact-carriers">ACS37220<br>Current Sensor<br>Compact Carriers</a></th>
+		<th><a href="/category/320/acs37220-current-sensor-large-carriers">ACS37220<br>Current Sensor<br>Large Carriers</a></th>
+		<th><a href="/category/380/acs37200-current-sensor-carriers">ACS37200<br>Current Sensor<br>Compact&nbsp;Carriers</a></th>
+		<th><a href="/category/380/acs37200-current-sensor-carriers">ACS37200<br>Current Sensor<br>Large&nbsp;Carriers</a></th>
+	</tr>
+	<tr>
+		<th>Allegro Sensor</th>
+		<td colspan="2">ACS37100</td>
+		<td colspan="2">ACS37030LLZ</td>
+		<td colspan="2">ACS37030LMY</td>
+		<td colspan="2">CT432/CT433</td>
+		<td colspan="2">ACS72981xLR</td>
+		<td colspan="2">ACS37220</td>
+		<td colspan="2">ACS37200</td>
+	</tr>
+	<tr>
+		<th>Sensing technology</th>
+		<td colspan="2">XtremeSense™ TMR<br>(tunneling magnetoresistance)</td>
+		<td colspan="4">Hall effect + inductive coil</td>
+		<td colspan="2">XtremeSense™ TMR<br>(tunneling magnetoresistance)</td>
+		<td colspan="2">Hall effect</td>
+		<td colspan="4">Hall effect</td>
+	</tr>
+	<tr>
+		<th>Logic&nbsp;voltage range</th>
+		<td colspan="2">3.0&ndash;3.6&nbsp;V</td>
+		<td colspan="4">3.0&ndash;3.6&nbsp;V</td>
+		<td colspan="2">3.3V versions: 3.0&ndash;3.6&nbsp;V<br>5V versions: 4.75&ndash;5.5&nbsp;V</td>
+		<td colspan="2">3.3V versions: 3.0&ndash;3.6&nbsp;V<br>5V versions: 4.5&ndash;5.5&nbsp;V</td>
+		<td colspan="4">3.3V versions: 3.15&ndash;3.45&nbsp;V<br>5V versions: 4.5&ndash;5.5&nbsp;V</td>
+	</tr>
+	<tr>
+		<th>Family current range</th>
+		<td colspan="2">25&ndash;50&nbsp;A</td>
+		<td colspan="4">20&ndash;65&nbsp;A</td>
+		<td colspan="2">20&ndash;70&nbsp;A</td>
+		<td colspan="2">50&ndash;200&nbsp;A</td>
+		<td colspan="4">100&ndash;200&nbsp;A</td>
+	</tr>
+	<tr class="extra_top_bottom_padding">
+		<th>Range/sensitivity of individual versions</th>
+		<td>3.3V Bidirectional:<br><a href="/product/5476">±25&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mV/A</a><br><a href="/product/5477">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5478">±25&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mV/A</a><br><a href="/product/5479">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5230">±20&nbsp;A&nbsp;/&nbsp;66&nbsp;mV/A</a><br><a href="/product/5231">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5232">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5234">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5235">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5694">±25&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mV/A</a><br><a href="/product/5695">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5696">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5698">±40&nbsp;A&nbsp;/&nbsp;33&nbsp;mV/A</a><br><a href="/product/5699">±65&nbsp;A&nbsp;/&nbsp;20.3&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5310">±20&nbsp;A&nbsp;/&nbsp;50&nbsp;mV/A</a><br><a href="/product/5311">±30&nbsp;A&nbsp;/&nbsp;33.3&nbsp;mV/A</a><br><a href="/product/5313">±50&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5315">±70&nbsp;A&nbsp;/&nbsp;14.3&nbsp;mV/A</a><br><br>3.3V Unidirectional:<br><a href="/product/5316">0&ndash;&#8288;20&nbsp;A&nbsp;/&nbsp;100&nbsp;mv/A</a><br><a href="/product/5317">0&ndash;&#8288;30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mv/A</a><br><a href="/product/5318">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;40&nbsp;mv/A</a><br><a href="/product/5319">0&ndash;&#8288;65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mv/A</a><br><br>5V Bidirectional:<br><a href="/product/5300">±20&nbsp;A&nbsp;/&nbsp;100&nbsp;mV/A</a><br><a href="/product/5301">±30&nbsp;A&nbsp;/&nbsp;66.7&nbsp;mV/A</a><br><a href="/product/5302">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><a href="/product/5303">±65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mV/A</a><br><br>5V Unidirectional:<br><a href="/product/5304">0&ndash;&#8288;20&nbsp;A&nbsp;/&nbsp;200&nbsp;mv/A</a><br><a href="/product/5305">0&ndash;&#8288;30&nbsp;A&nbsp;/&nbsp;133.3&nbsp;mv/A</a><br><a href="/product/5306">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a><br><a href="/product/5308">0&ndash;&#8288;70&nbsp;A&nbsp;/&nbsp;57.1&nbsp;mv/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5333">±50&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5335">±70&nbsp;A&nbsp;/&nbsp;14.3&nbsp;mV/A</a><br><br>3.3V Unidirectional:<br><a href="/product/5338">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;40&nbsp;mv/A</a><br><a href="/product/5339">0&ndash;&#8288;65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mv/A</a><br><br>5V Bidirectional:<br><a href="/product/5322">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><a href="/product/5323">±65&nbsp;A&nbsp;/&nbsp;30.8&nbsp;mV/A</a><br><br>5V Unidirectional:<br><a href="/product/5326">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a><br><a href="/product/5328">0&ndash;&#8288;70&nbsp;A&nbsp;/&nbsp;57.1&nbsp;mv/A</a></td>
+		<td> <span style="text-wrap: nowrap;">3.3V Bidirectional:<sup><strong>(1)</strong></sup></span><br><a href="/product/5250">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a><br><a href="/product/5253">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5257">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><a href="/product/5261">±200&nbsp;A&nbsp;/&nbsp;6.6&nbsp;mV/A</a><br><br> <span style="text-wrap: nowrap;">3.3V Unidirectional:<sup><strong>(1)</strong></sup></span><br><a href="/product/5252">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mv/A</a><br><a href="/product/5255">0&ndash;&#8288;100&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mv/A</a><br><a href="/product/5259">0&ndash;&#8288;150&nbsp;A&nbsp;/&nbsp;17.6&nbsp;mv/A</a><br><a href="/product/5263">0&ndash;&#8288;200&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mv/A</a><br><br> <span style="text-wrap: nowrap;">5V Bidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/5251">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><a href="/product/5254">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5258">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5262">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a><br><br> <span style="text-wrap: nowrap;">5V Unidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/5264">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a><br><a href="/product/5256">0&ndash;&#8288;100&nbsp;A&nbsp;/&nbsp;40&nbsp;mv/A</a><br><a href="/product/5260">0&ndash;&#8288;150&nbsp;A&nbsp;/&nbsp;26.7&nbsp;mv/A</a></td>
+		<td><span style="text-wrap: nowrap;">3.3V Bidirectional:<sup><strong>(1)</strong></sup></span><br><a href="/product/5270">±50&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mV/A</a><br><a href="/product/5273">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5277">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><a href="/product/5281">±200&nbsp;A&nbsp;/&nbsp;6.6&nbsp;mV/A</a><br><br> <span style="text-wrap: nowrap;">3.3V Unidirectional:<sup><strong>(1)</strong></sup></span><br><a href="/product/5272">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;52.8&nbsp;mv/A</a><br><a href="/product/5275">0&ndash;&#8288;100&nbsp;A&nbsp;/&nbsp;26.4&nbsp;mv/A</a><br><a href="/product/5279">0&ndash;&#8288;150&nbsp;A&nbsp;/&nbsp;17.6&nbsp;mv/A</a><br><a href="/product/5283">0&ndash;&#8288;200&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mv/A</a><br><br> <span style="text-wrap: nowrap;">5V Bidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/5271">±50&nbsp;A&nbsp;/&nbsp;40&nbsp;mV/A</a><br><a href="/product/5274">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5278">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5282">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a><br><br> <span style="text-wrap: nowrap;">5V Unidirectional:<sup><strong>(2)</strong></sup></span><br><a href="/product/5284">0&ndash;&#8288;50&nbsp;A&nbsp;/&nbsp;80&nbsp;mv/A</a><br><a href="/product/5276">0&ndash;&#8288;100&nbsp;A&nbsp;/&nbsp;40&nbsp;mv/A</a><br><a href="/product/5280">0&ndash;&#8288;150&nbsp;A&nbsp;/&nbsp;26.7&nbsp;mv/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5290">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5291">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5292">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5293">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5294">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5295">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5296">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5297">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5298">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5299">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5780">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5781">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><a href="/product/5782">±200&nbsp;A&nbsp;/&nbsp;6.6&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5783">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5784">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5785">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a></td>
+		<td>3.3V Bidirectional:<br><a href="/product/5790">±100&nbsp;A&nbsp;/&nbsp;13.2&nbsp;mV/A</a><br><a href="/product/5791">±150&nbsp;A&nbsp;/&nbsp;8.8&nbsp;mV/A</a><br><a href="/product/5792">±200&nbsp;A&nbsp;/&nbsp;6.6&nbsp;mV/A</a><br><br>5V Bidirectional:<br><a href="/product/5793">±100&nbsp;A&nbsp;/&nbsp;20&nbsp;mV/A</a><br><a href="/product/5794">±150&nbsp;A&nbsp;/&nbsp;13.3&nbsp;mV/A</a><br><a href="/product/5795">±200&nbsp;A&nbsp;/&nbsp;10&nbsp;mV/A</a></td>
+	</tr>
+	<tr>
+		<th>Max bandwidth</th>
+		<td colspan="2">10&nbsp;MHz</td>
+		<td colspan="4">5&nbsp;MHz</td>
+		<td colspan="2">1&nbsp;MHz</td>
+		<td colspan="2">250&nbsp;kHz</td>
+		<td colspan="4">150&nbsp;kHz</td>
+	</tr>
+	<tr>
+		<th>IC&nbsp;current&nbsp;path resistance</th>
+		<td colspan="2">1.2&nbsp;mΩ</td>
+		<td colspan="2">0.7&nbsp;mΩ</td>
+		<td colspan="2">0.9&nbsp;mΩ</td>
+		<td colspan="2">1&nbsp;mΩ</td>
+		<td colspan="2">0.2&nbsp;mΩ</td>
+		<td colspan="2">0.1&nbsp;mΩ</td>
+		<td colspan="2">0.05&nbsp;mΩ</td>
+	</tr>
+	<tr>
+		<th>IC isolation rating<sup><strong>(4)</strong></sup></th>
+		<td colspan="2">1097&nbsp;V<sub>RMS</sub></td>
+		<td colspan="2">840&nbsp;V<sub>RMS</sub></td>
+		<td colspan="2">1000&nbsp;V<sub>RMS</sub></td>
+		<td colspan="2">1100&nbsp;V<sub>RMS</sub></td>
+		<td colspan="2">100&nbsp;V<sub>pk</sub></td>
+		<td colspan="2">100&nbsp;V<sub>RMS</sub></td>
+		<td colspan="2">1097&nbsp;V<sub>RMS</sub></td>
+	</tr>
+	<tr>
+		<th>Minimum PCB creepage<sup><strong>(5)</strong></sup></th>
+		<td>9.3&nbsp;mm</td>
+		<td>10.1&nbsp;mm</td>
+		<td colspan="2">4.1&nbsp;mm</td>
+		<td>11.7&nbsp;mm</td>
+		<td>11.9&nbsp;mm</td>
+		<td colspan="2">8&nbsp;mm</td>
+		<td colspan="2">1.1&nbsp;mm</td>
+		<td colspan="2">1.0&nbsp;mm</td>
+		<td>10.1&nbsp;mm</td>
+		<td>10.4&nbsp;mm</td>
+	</tr>
+	<tr>
+		<th>PCB</th>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>2 or 4 layers<sup><strong>(3)</strong></sup>,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+		<td>2 layers,<br>2-oz copper</td>
+		<td>6 layers,<br>2-oz copper</td>
+	</tr>
+	<tr>
+		<th>Size</th>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.7″&nbsp;×&nbsp;0.8″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+		<td>0.8″&nbsp;×&nbsp;1.1″</td>
+		<td>1.4″&nbsp;×&nbsp;1.2″</td>
+	</tr>
+	<tr>
+		<th>Overcurrent<br>fault output</th>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i> (configurable threshold)</td>
+		<td colspan="4"></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"></td>
+		<td colspan="4"><i class="fa fa-check fa-lg" style="color: green"></i> (configurable threshold)</td>
+	</tr>
+	<tr>
+		<th>Common-mode field rejection</th>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="4"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="4"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+	</tr>
+	<tr>
+		<th>Nonratiometric output</th>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="4"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+		<td colspan="2"></td>
+		<td colspan="4"><i class="fa fa-check fa-lg" style="color: green"></i></td>
+	</tr>
+	<tr class="price">
+		<th>1-piece price</th>
+		<td><span class="price">$14.95</span></td>
+		<td><span class="price">$19.95</span></td>
+		<td><span class="price">$8.95</span></td>
+		<td><span class="price">$11.95</span></td>
+		<td><span class="price">$12.95</span></td>
+		<td><span class="price">$17.95</span></td>
+		<td><span class="price">$12.95</span></td>
+		<td><span class="price">$16.95</span></td>
+		<td><span class="price">$13.95</span></td>
+		<td><span class="price">$16.95</span></td>
+		<td><span class="price">$6.95</span></td>
+		<td><span class="price">$10.95</span></td>
+		<td><span class="price">$19.95</span></td>
+		<td><span class="price">$24.95</span></td>
+	</tr>
+</table>
+</div>
+<p><small>
+<strong>Note 1:</strong> Sensitivity when Vcc = 3.3&nbsp;V; actual sensitivity is ratiometric (i.e. it is proportional to Vcc).<br>
+<strong>Note 2:</strong> Sensitivity when Vcc = 5&nbsp;V; actual sensitivity is ratiometric (i.e. it is proportional to Vcc).<br>
+<strong>Note 3:</strong> 50A and higher versions of this carrier use a 4-layer PCB; all other versions of this carrier use a 2-layer PCB.<br>
+<strong>Note 4:</strong> IC component rating per manufacturer datasheet.<br>
+<strong>Note 5:</strong> Minimum creepage along PCB surface based on layout design only. Other creepage distances, e.g. along the body of the component, may be lower.<br>
+</small></p>
+</div>
+<p>You can also use the following selection box to see these options sorted by current range:</p>
+<p>Alternatives available with variations in these parameter(s):
+<a class="select_by_specification_link" data-lightbox-link="true" data-lightbox-height="20rem" data-lightbox-width="50rem" href="/catalog/select-by-specification?parameters=0J209&amp;product=5292&amp;products=2452%2C4041%2C5230%2C5235%2C5240%2C5250%2C5270%2C5290%2C5295%2C5300%2C5323%2C5352%2C5440%2C5444%2C5476%2C5478%2C5694%2C5698%2C5782%2C5792"><span class='select_by_specification_parameter'>current range</span>
+<span class="select_by_specification_main_link">Select variant&#8230;</span>
+</a></p>
+
+</div>
+
+
+<div id="small_related_items"><div><h2>Related products</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/product/965"><img alt="" src="https://a.pololu-files.com/picture/0J6370.50x40.jpg?a0299347159567689cbc426a68c01988" /></a>
+</td>
+<td><a href="/product/965">0.100&quot; (2.54 mm) Breakaway Male Header: 1×40-Pin, Straight, Black</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/967"><img alt="" src="https://a.pololu-files.com/picture/0J1037.50x40.jpg?cb3f097a4f281bd2c172d433d16eba62" /></a>
+</td>
+<td><a href="/product/967">0.100&quot; (2.54 mm) Breakaway Male Header: 1×40-Pin, Right Angle</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/1015"><img alt="" src="https://a.pololu-files.com/picture/0J882.50x40.jpg?dda1afec386533fa148b2e2d4ccb8c43" /></a>
+</td>
+<td><a href="/product/1015">0.100&quot; (2.54 mm) Female Header: 1x5-Pin, Straight</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/1904"><img alt="" src="https://a.pololu-files.com/picture/0J1600.50x40.jpg?8353bd810db0a1268020789eaca369bd" /></a>
+</td>
+<td><a href="/product/1904">0.1&quot; (2.54mm) Crimp Connector Housing: 1x5-Pin 10-Pack</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/925"><img alt="" src="https://a.pololu-files.com/picture/0J437.50x40.jpg?6cfd817fbbd7f28d688c50fe9da1ce99" /></a>
+</td>
+<td><a href="/product/925">T Connector Male-Female Pair</a></td>
+</tr>
+</table>
+</div>
+</div><div><h2>Related categories</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/category/319/acs37220-current-sensor-compact-carriers"><img alt="" src="https://a.pololu-files.com/picture/0J12600.50x40.jpg?1bd05e26d3d0435a56e4f7008dba5110" /></a>
+</td>
+<td><a href="/category/319/acs37220-current-sensor-compact-carriers">ACS37220 Current Sensor Compact Carriers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/320/acs37220-current-sensor-large-carriers"><img alt="" src="https://a.pololu-files.com/picture/0J12592.50x40.jpg?c44ed8887a695446a4a814699ce4358a" /></a>
+</td>
+<td><a href="/category/320/acs37220-current-sensor-large-carriers">ACS37220 Current Sensor Large Carriers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/117/terminal-blocks"><img alt="" src="https://a.pololu-files.com/picture/0J3611.50x40.jpg?e1df0ea2c95506e10d8eebba7ed1a020" /></a>
+</td>
+<td><a href="/category/117/terminal-blocks">Terminal Blocks</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/65/premium-jumper-wires"><img alt="" src="https://a.pololu-files.com/picture/0J11599.50x40.jpg?7f829c2badab1ad82f4da395e4a46cb8" /></a>
+</td>
+<td><a href="/category/65/premium-jumper-wires">Premium Jumper Wires</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/71/wires-with-pre-crimped-terminals"><img alt="" src="https://a.pololu-files.com/picture/0J11614.50x40.jpg?0c44e46f7c16b54a162ac2f0a59b3c6f" /></a>
+</td>
+<td><a href="/category/71/wires-with-pre-crimped-terminals">Wires with Pre-Crimped Terminals</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/134/0.1-2.54-mm-male-headers"><img alt="" src="https://a.pololu-files.com/picture/0J6364.50x40.jpg?b92e2c6bfb49aca0b3331cce41b7f230" /></a>
+</td>
+<td><a href="/category/134/0.1-2.54-mm-male-headers">0.1″ (2.54 mm) Male Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/14/electronics-prototyping"><img alt="" src="https://a.pololu-files.com/picture/0J3419.50x40.jpg?29ae73a645bffe503602e75f1b22031d" /></a>
+</td>
+<td><a href="/category/14/electronics-prototyping">Electronics Prototyping</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/9/motion-control-modules"><img alt="" src="https://a.pololu-files.com/picture/0J10510.50x40.jpg?639c0d9ef788f54dd8cc07c953822f09" /></a>
+</td>
+<td><a href="/category/9/motion-control-modules">Motion Control Modules</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/22/motors-and-gearboxes"><img alt="" src="https://a.pololu-files.com/picture/0J8348.50x40.jpg?1d211f9e19afc82fd4b9dd789c8605b7" /></a>
+</td>
+<td><a href="/category/22/motors-and-gearboxes">Motors and Gearboxes</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/23/rc-servos"><img alt="" src="https://a.pololu-files.com/picture/0J7755.50x40.jpg?57885345014cbe011e191dd12ce1eca6" /></a>
+</td>
+<td><a href="/category/23/rc-servos">RC Servos</a></td>
+</tr>
+</table>
+</div>
+</div></div>
+<script>
+product_ui.update();
+</script>
+
+
+<!-- CONTENTS_END -->
+<div id='footer'>
+<p class='share'>
+<span class="image_text_link"><a href="/product/5292?print=1"><img alt="" src="https://a.pololu-files.com/assets/printer-448cebb2a5016700db2565421ada6e98f90fabe5885d8cd3cca1a3854748e146.png" /></a><a href="/product/5292?print=1">Print</a></span>
+<span class="image_text_link"><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292&amp;subject"><img alt="" src="https://a.pololu-files.com/assets/email-f2957b324fa09a7d81ed64679a6b9454647ad40514cd7b1ce501aefd946f5593.png" /></a><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292&amp;subject">Email a friend</a></span>
+<span class="image_text_link"><a href="/feeds"><img alt="" src="https://a.pololu-files.com/assets/feed-icon-12x12-ad0e7f1965647f9414a76a1f32fb46dc73c1b2d295201b0abb56f2b2cf88bfb2.png" /></a><a href="/feeds">Feeds</a></span>
+</p>
+<p class='links'>
+<a href="/">Home</a>
+|
+<a href="https://forum.pololu.com/">Forum</a>
+|
+<a href="/blog">Blog</a>
+|
+<a href="/support">Support</a>
+|
+<a href="/ordering">Ordering Information</a>
+|
+<a href="/list">Lists</a>
+|
+<a href="/distributors">Distributors</a>
+|
+<a href="/catalog/bigorderform">BIG Order Form</a>
+|
+<a href="/about">About</a>
+|
+<a href="/contact">Contact</a>
+</p>
+<p id='copyright'>&copy; 2001<a rel="nofollow" style="text-decoration: none; color: inherit;" href="/pot/0?from=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292">–</a>2026 Pololu Corporation</p>
+</div>
+</div>
+</div>
+<div id='right_col'>
+<div class='menu' data-my-quotes='1'></div>
+<script>quote.display_list()</script>
+<div class='menu' data-mini-cart='1'></div>
+<script>cart.display_mini_cart_content()</script>
+<div><h2>Related Products</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/product/965"><img alt="" src="https://a.pololu-files.com/picture/0J6370.50x40.jpg?a0299347159567689cbc426a68c01988" /></a>
+</td>
+<td><a href="/product/965">0.100&quot; (2.54 mm) Breakaway Male Header: 1×40-Pin, Straight, Black</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/967"><img alt="" src="https://a.pololu-files.com/picture/0J1037.50x40.jpg?cb3f097a4f281bd2c172d433d16eba62" /></a>
+</td>
+<td><a href="/product/967">0.100&quot; (2.54 mm) Breakaway Male Header: 1×40-Pin, Right Angle</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/1015"><img alt="" src="https://a.pololu-files.com/picture/0J882.50x40.jpg?dda1afec386533fa148b2e2d4ccb8c43" /></a>
+</td>
+<td><a href="/product/1015">0.100&quot; (2.54 mm) Female Header: 1x5-Pin, Straight</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/1904"><img alt="" src="https://a.pololu-files.com/picture/0J1600.50x40.jpg?8353bd810db0a1268020789eaca369bd" /></a>
+</td>
+<td><a href="/product/1904">0.1&quot; (2.54mm) Crimp Connector Housing: 1x5-Pin 10-Pack</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/product/925"><img alt="" src="https://a.pololu-files.com/picture/0J437.50x40.jpg?6cfd817fbbd7f28d688c50fe9da1ce99" /></a>
+</td>
+<td><a href="/product/925">T Connector Male-Female Pair</a></td>
+</tr>
+</table>
+</div>
+</div><div><h2>Related Categories</h2>
+<div>
+<table class='linkable_item_list'>
+<tr>
+<td class='img'>
+<a href="/category/319/acs37220-current-sensor-compact-carriers"><img alt="" src="https://a.pololu-files.com/picture/0J12600.50x40.jpg?1bd05e26d3d0435a56e4f7008dba5110" /></a>
+</td>
+<td><a href="/category/319/acs37220-current-sensor-compact-carriers">ACS37220 Current Sensor Compact Carriers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/320/acs37220-current-sensor-large-carriers"><img alt="" src="https://a.pololu-files.com/picture/0J12592.50x40.jpg?c44ed8887a695446a4a814699ce4358a" /></a>
+</td>
+<td><a href="/category/320/acs37220-current-sensor-large-carriers">ACS37220 Current Sensor Large Carriers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/117/terminal-blocks"><img alt="" src="https://a.pololu-files.com/picture/0J3611.50x40.jpg?e1df0ea2c95506e10d8eebba7ed1a020" /></a>
+</td>
+<td><a href="/category/117/terminal-blocks">Terminal Blocks</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/65/premium-jumper-wires"><img alt="" src="https://a.pololu-files.com/picture/0J11599.50x40.jpg?7f829c2badab1ad82f4da395e4a46cb8" /></a>
+</td>
+<td><a href="/category/65/premium-jumper-wires">Premium Jumper Wires</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/71/wires-with-pre-crimped-terminals"><img alt="" src="https://a.pololu-files.com/picture/0J11614.50x40.jpg?0c44e46f7c16b54a162ac2f0a59b3c6f" /></a>
+</td>
+<td><a href="/category/71/wires-with-pre-crimped-terminals">Wires with Pre-Crimped Terminals</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/134/0.1-2.54-mm-male-headers"><img alt="" src="https://a.pololu-files.com/picture/0J6364.50x40.jpg?b92e2c6bfb49aca0b3331cce41b7f230" /></a>
+</td>
+<td><a href="/category/134/0.1-2.54-mm-male-headers">0.1″ (2.54 mm) Male Headers</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/14/electronics-prototyping"><img alt="" src="https://a.pololu-files.com/picture/0J3419.50x40.jpg?29ae73a645bffe503602e75f1b22031d" /></a>
+</td>
+<td><a href="/category/14/electronics-prototyping">Electronics Prototyping</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/9/motion-control-modules"><img alt="" src="https://a.pololu-files.com/picture/0J10510.50x40.jpg?639c0d9ef788f54dd8cc07c953822f09" /></a>
+</td>
+<td><a href="/category/9/motion-control-modules">Motion Control Modules</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/22/motors-and-gearboxes"><img alt="" src="https://a.pololu-files.com/picture/0J8348.50x40.jpg?1d211f9e19afc82fd4b9dd789c8605b7" /></a>
+</td>
+<td><a href="/category/22/motors-and-gearboxes">Motors and Gearboxes</a></td>
+</tr>
+<tr>
+<td class='img'>
+<a href="/category/23/rc-servos"><img alt="" src="https://a.pololu-files.com/picture/0J7755.50x40.jpg?57885345014cbe011e191dd12ce1eca6" /></a>
+</td>
+<td><a href="/category/23/rc-servos">RC Servos</a></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+<div id='lightbox_holder'>
+<div id='lightbox_gray_screen'></div>
+<div id='lightbox'>
+<div id='lightbox_gallery'></div>
+<div id='lightbox_content'></div>
+<div id='lightbox_right'><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+<div id='lightbox_left'><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+<div id='lightbox_close'>
+<a href='#' title='Close'><i class="fa fa-times" aria-hidden="true"></i></a>
+</div>
+<div id='lightbox_full'>
+<a href='#' title='View image'><i class="fa fa-expand" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+
+<div id='header_small_top'>
+<!-- / this has to go first since it takes up 100% of the width and would block clicking on other parts -->
+<div id='header_center_right'>
+<span data-login-ui='login'>
+<a href="/account/login?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292">Log In</a>
+</span>
+<span data-login-ui='my_account'>
+<a title="My account" data-login-ui="my_account_link" href="/account"></a>
+</span>
+
+</div>
+<div id='header_small_left'>
+<a href="/"><img width="118" height="30" alt="Pololu Robotics &amp; Electronics" class="logo_pololu_only" src="https://a.pololu-files.com/assets/header_pololu_only-fff6349c8769e6b2e59624d6dceacac4422156c5ac8b8b23532f0e93678bb981.png" /></a>
+</div>
+<div id='header_small_right'>
+<a href="/cart"><img width="30" height="30" alt="Shopping cart" src="https://a.pololu-files.com/assets/cart-bf4bf66669c9b9288e6e972718067855ecdcdfc80622cfea29ac04b29478f873.png" /></a>
+</div>
+</div>
+<div id='header_small_bottom'>
+<div id='header_small_right'>
+(702) 262-6648<br/>
+<a href="/ordering">Same-day shipping, worldwide</a>
+</div>
+<div id='header_small_left'>
+<a id="menu_button" onclick="return false;" href="/catalog/menu"><img width="30" height="30" alt="Menu" src="https://a.pololu-files.com/assets/menu-2023bba099d8fd2a25d8e1803c5bdf0aa0a024d9d585000ff9aec2c8a436b29a.png" /></a>
+</div>
+</div>
+<div id='header_small_menu'>
+<div class='header_small_menu_columns'>
+<a href="/catalog/menu">Shop</a>
+<a href="/blog">Blog</a>
+<a href="https://forum.pololu.com/">Forum</a>
+<a href="/support">Support</a>
+</div>
+<!-- / specify local variable id to set an id for the form, mainly for use with testing -->
+<form action='/search' id='header_small_search'>
+<div class='search'><input autocomplete='off' class='search_input mini_search_input' data-autocomplete-search='true' id='header_small_search_input' name='query' placeholder='Search' type='text'><input alt='' class='search_button' src='https://a.pololu-files.com/assets/magglass-d28c6b7b9d1f35858a702b71e13b678bfdee962d795c7ad2426ed9b19ccac5e8.png' type='image' value='go'>
+</div>
+</form>
+
+<a title="My account" href="/account">My account</a>
+<a data-feedback="true" href="/feedback/new?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292">Comments or questions?</a>
+<a href="/about">About Pololu</a>
+<a href="/contact">Contact</a>
+<a href="/ordering">Ordering information</a>
+<a href="/distributors">Distributors</a>
+</div>
+<div id='gray_screen'></div>
+<script>
+menuInit();
+</script>
+
+<div id='header_holder'>
+<table id='header'>
+<tr id='header_top'>
+<td id='header_logo' rowspan='2'>
+<a href="/"><img width="219" height="69" alt="Pololu Robotics and Electronics" class="logo" style="max-width: 230px;" src="https://a.pololu-files.com/assets/header_pololu_no_padding-e37eb899d2ec2ded9153a53ad9e0e6e12861f762e2c3bafb4ca40e79a85d149e.png" /></a>
+</td>
+<td colspan='16' id='header_address'>
+<div id='header_account_links'>
+<span data-login-ui='login'>
+<a href="/account/login?account%5Burl%5D=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292">Log In</a>
+</span>
+<span data-login-ui='my_account'>
+<a title="My account" data-login-ui="my_account_link" href="/account"></a>
+|
+<a href="/account">My Account</a>
+|
+</span>
+<div data-login-ui='logout'>
+<form data-login-ui="logout" action="https://www.pololu.com/account/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="session_id" value="**SESSION_ID_STUB**" /><button class="btn-link" name="log-out-button">Log Out</button></form>
+</div>
+
+|
+<a href="/cart">Shopping Cart <img width="16" height="16" alt="" src="https://a.pololu-files.com/assets/cart-bf4bf66669c9b9288e6e972718067855ecdcdfc80622cfea29ac04b29478f873.png" /></a>
+<script>dynamic_user_login.init()</script>
+</div>
+<p class='phone_number'>
+US toll free: 1-877-7-POLOLU ~
+(702) 262-6648<br/>
+<a href="/ordering">Same-day shipping, worldwide</a>
+</p>
+</td>
+</tr>
+<tr id='header_links'>
+<th class='selected'>
+<a href="/">Catalog</a>
+</th>
+<td>&nbsp;</td>
+<th>
+<a href="https://forum.pololu.com/">Forum</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/blog">Blog</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/support">Support</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/ordering">Ordering</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/distributors">Distributors</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/about">About</a>
+</th>
+<td>&nbsp;</td>
+<th class=''>
+<a href="/contact">Contact</a>
+</th>
+<td class='last'></td>
+</tr>
+</table>
+</div>
+<div id='left_col'>
+<div class='menu' id='menu_search'>
+<div>
+<!-- / specify local variable id to set an id for the form, mainly for use with testing -->
+<form action='/search' id='sidebar_search'>
+<div class='search'><input autocomplete='off' class='search_input mini_search_input' data-autocomplete-search='true' id='sidebar_search_input' name='query' placeholder='Search' type='text'><input alt='' class='search_button' src='https://a.pololu-files.com/assets/magglass-d28c6b7b9d1f35858a702b71e13b678bfdee962d795c7ad2426ed9b19ccac5e8.png' type='image' value='go'>
+</div>
+</form>
+
+</div>
+</div>
+<div class='menu'>
+<h2><a data-feedback="true" href="">Feedback</a></h2>
+<div>
+<a class="menu_visible_link" data-feedback="true" href="">Comments or questions?</a>
+</div>
+</div>
+<div class='menu'>
+<h2><a href="/category/31/services">Services</a></h2>
+<div>
+<ul>
+<li>
+<a href="/product/749">Custom Laser Cutting</a>
+</li>
+<li>
+<a href="/product/446">SMT Stencils</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='menu'>
+<h2><a href="/">Products</a></h2>
+<div>
+<!-- sidebar_categories --><h3><a href="/category/42/new-products">New Products</a></h3>
+<h3><span class="specials_category"><a href="/specials">Specials!</a></span></h3>
+<hr />
+<h3><a href="/category/2/robot-kits">Robots</a></h3>
+<ul>
+	<li><a href="/category/76/3pi-robots-and-accessories">3pi</a></li>
+	<li><a href="/category/210/balboa-robot-and-accessories">Balboa</a></li>
+	<li><a href="/category/327/collaborative-robots">Cobot</a></li>
+	<li><a href="/category/202/romi-chassis-and-accessories">Romi</a></li>
+	<li><a href="/category/129/zumo-robots-and-accessories">Zumo</a></li>
+	<li><a href="/category/3/robot-kits-with-soldering">Kits, Soldering</a></li>
+	<li><a href="/category/4/robot-kits-without-soldering">Kits, No Soldering</a></li>
+</ul>
+<h3><a href="/category/6/electronics">Electronics</a></h3>
+<ul>
+	<li><a href="/category/125/arduino-compatible">Arduino</a></li>
+	<li><a href="/category/39/cables-and-wire">Cables and Wires</a></li>
+	<li><a href="/category/13/computer-interface">Computer Interface</a></li>
+	<li><a href="/category/19/connectors">Connectors</a></li>
+	<li><a href="/category/64/development-boards-programmable-controllers">Development Boards</a></li>
+	<li><a href="/category/334/isolation">Isolation</a></li>
+	<li><a href="/category/20/leds">LEDs</a></li>
+	<li><a href="/category/9/motion-control-modules">Motor Control</a></li>
+	<li><a href="/category/321/power">Power</a></li>
+	<li><a href="/category/14/electronics-prototyping">Prototyping</a></li>
+	<li><a href="/category/150/raspberry-pi">Raspberry Pi</a></li>
+	<li><a href="/category/135/relay-modules">Relays</a></li>
+	<li><a href="/category/7/sensors">Sensors</a></li>
+	<li><a href="/category/102/maestro-usb-servo-controllers">Servo Control</a></li>
+	<li><a href="/category/136/voltage-regulators">Voltage Regulators</a></li>
+</ul>
+<h3><a href="/category/21/mechanical-components">Mechanical</a></h3>
+<ul>
+	<li><a href="/category/231/ball-casters">Ball Casters</a></li>
+	<li><a href="/category/230/brackets">Brackets</a></li>
+	<li><a href="/category/26/chassis">Chassis</a></li>
+	<li><a href="/category/25/hardware">Hardware</a></li>
+	<li><a href="/category/127/linear-actuators">Linear Actuators</a></li>
+	<li><a href="/category/22/motors-and-gearboxes">Motors</a></li>
+	<li><a href="/category/179/motor-shaft-adapters">Motor Shaft Adapters</a></li>
+	<li><a href="/category/205/servos">Servos</a></li>
+	<li><a href="/category/87/stepper-motors">Stepper Motors</a></li>
+	<li><a href="/category/61/tamiya-products">Tamiya Products</a></li>
+	<li><a href="/category/5/tools">Tools</a></li>
+	<li><a href="/category/232/tracks">Tracks</a></li>
+	<li><a href="/category/234/wheels">Wheels</a></li>
+</ul>
+<h3><a href="/category/109/shirts">Shirts</a></h3>
+<ul>
+	<li><a href="/category/237/pololu-balboa-t-shirts">Balboa T-Shirts</a></li>
+	<li><a href="/category/194/pololu-zumo-t-shirts">Zumo T-Shirts</a></li>
+	<li><a href="/category/193/pololu-circuit-logo-t-shirts">Logo T-Shirts</a></li>
+</ul>
+</div>
+</div>
+
+<div class='menu'>
+<h2>Community</h2>
+<div>
+<ul>
+<li>
+<a data-lightbox-link="true" data-lightbox-height="34rem" data-lightbox-width="36rem" href="/account/communication-preferences">Mailing list</a>
+</li>
+<li>
+<a href="/blog">Pololu Blog</a>
+</li>
+<li>
+<a href="/blog/engage-your-brain">Engage Your Brain</a>
+</li>
+<li>
+<a href="/blog/community-projects">Community Projects</a>
+</li>
+<li>
+<span class="image_text_link"><a href="/feeds"><img alt="" src="https://a.pololu-files.com/assets/feed-icon-12x12-ad0e7f1965647f9414a76a1f32fb46dc73c1b2d295201b0abb56f2b2cf88bfb2.png" /></a><a href="/feeds">Feeds</a></span>
+</li>
+<li>
+<span class="image_text_link"><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292&amp;subject"><img alt="" src="https://a.pololu-files.com/assets/email-f2957b324fa09a7d81ed64679a6b9454647ad40514cd7b1ce501aefd946f5593.png" /></a><a href="mailto:?body=https%3A%2F%2Fwww.pololu.com%2Fproduct%2F5292&amp;subject">Email a friend</a></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='mathjax'></div>
+</body>
+</html>

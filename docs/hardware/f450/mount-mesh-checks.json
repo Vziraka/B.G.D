@@ -1,0 +1,132 @@
+{
+  "parts": [
+    {
+      "name": "pi-carrier-core-draft",
+      "triangles": 1024,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -28.5,
+          28.5
+        ],
+        [
+          -39.0,
+          39.0
+        ],
+        [
+          0.0,
+          10.2
+        ]
+      ],
+      "volume_mm3": 8731.0,
+      "solid_petg_g_at_1_3": 11.35
+    },
+    {
+      "name": "camera-bracket",
+      "triangles": 2228,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -15.0,
+          15.0
+        ],
+        [
+          -3.0,
+          30.0
+        ],
+        [
+          0.0,
+          30.5
+        ]
+      ],
+      "volume_mm3": 2995.68,
+      "solid_petg_g_at_1_3": 3.89
+    },
+    {
+      "name": "forward-depth-bracket",
+      "triangles": 1252,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -11.0,
+          11.0
+        ],
+        [
+          -3.0,
+          26.0
+        ],
+        [
+          0.0,
+          20.5
+        ]
+      ],
+      "volume_mm3": 2188.64,
+      "solid_petg_g_at_1_3": 2.85
+    },
+    {
+      "name": "battery-end-stops",
+      "triangles": 1272,
+      "components": 2,
+      "bounds_mm": [
+        [
+          -34.0,
+          34.0
+        ],
+        [
+          -3.0,
+          60.0
+        ],
+        [
+          0.0,
+          18.0
+        ]
+      ],
+      "volume_mm3": 7083.09,
+      "solid_petg_g_at_1_3": 9.21
+    },
+    {
+      "name": "electronics-stack-adapter",
+      "triangles": 1056,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -24.0,
+          24.0
+        ],
+        [
+          -32.0,
+          32.0
+        ],
+        [
+          0.0,
+          6.0
+        ]
+      ],
+      "volume_mm3": 5352.27,
+      "solid_petg_g_at_1_3": 6.96
+    },
+    {
+      "name": "electronics-flow-support",
+      "triangles": 284,
+      "components": 1,
+      "bounds_mm": [
+        [
+          29.0,
+          81.0
+        ],
+        [
+          -19.0,
+          19.0
+        ],
+        [
+          0.0,
+          5.5
+        ]
+      ],
+      "volume_mm3": 3433.46,
+      "solid_petg_g_at_1_3": 4.46
+    }
+  ],
+  "total_solid_petg_g": 38.72,
+  "scope": "One of each STL; battery file contains two stops. No hardware, unmodeled mounts or flight qualification."
+}

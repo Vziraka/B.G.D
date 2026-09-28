@@ -1,0 +1,13 @@
+{
+  "triangles": 1272,
+  "components": 2,
+  "all_edges_shared_twice": true,
+  "print_pair_bounds_mm": [
+    68.0,
+    63.0,
+    18.0
+  ],
+  "volume_mm3": 7083.09,
+  "solid_petg_mass_g_at_1_3": 9.21,
+  "limits": "Geometry checks only; no physical fit or strength validation"
+}

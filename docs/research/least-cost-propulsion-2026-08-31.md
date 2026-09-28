@@ -1,5 +1,7 @@
 # Lower-cost seven-inch propulsion and endurance redesign
 
+**Later owner amendment — September 10:** Q74 is now **11 useful minutes plus unchanged independent reserve**, same fully equipped no-extra-cargo configuration and workload proportions. The fifteen-/twenty-minute requirements and numerical pass/fail comparisons below are historical. Refer to the [current pre-purchase report](../prepurchase-decision-2026-09-10.md) and revised V26 acceptance; no automatic eleven-minute loaded-cargo requirement applies. Original component data/calculations remain historical evidence, not a revised aircraft qualification.
+
 Date: 2026-08-31. Status: engineering candidate for review, not an approved shopping list, validated aircraft, battery-building guide or flight procedure. No purchase, supplier contact, installation or powered test was performed. This subtask changes only this report.
 
 ## Finding

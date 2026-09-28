@@ -1,0 +1,77 @@
+{
+    "error_string": "Success.",
+    "export_time": 406,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 78,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 67.64014434814453,
+                "Bridge": 81.80516052246094,
+                "Brim": 89.02151489257813,
+                "Custom": 538.311279296875,
+                "Flush": 29.0,
+                "Gap infill": 12.623345375061035,
+                "Inner wall": 493.04461669921875,
+                "Internal solid infill": 352.3062744140625,
+                "Outer wall": 257.8244323730469,
+                "Overhang wall": 1.1520018577575684,
+                "Sparse infill": 60.90575408935547,
+                "Top surface": 120.55038452148438,
+                "Travel": 125.28460693359375,
+                "Undefined": 109.98368835449219
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "GFG99",
+                    "id": 1,
+                    "main_used_g": 6.86434268951416,
+                    "total_used_g": 6.86434268951416
+                }
+            ],
+            "generate_support_material_time": 6,
+            "id": 1,
+            "infill_time": 63,
+            "layer_filament_change": 0,
+            "main_predication": 1633.1060791015625,
+            "make_perimeters_time": 32,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 64.0,
+                        "height": 6.0,
+                        "width": 48.0,
+                        "x": 104.0,
+                        "y": 96.0,
+                        "z": 0.0
+                    },
+                    "id": 5,
+                    "name": "electronics-stack-adapter.stl",
+                    "triangle_count": 1056
+                }
+            ],
+            "sliced_time": 306,
+            "sliced_time_with_cache": 189,
+            "total_predication": 2214.08642578125,
+            "triangle_count": 1056,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 30.0,
+    "upward_compatible_machine": [
+        "Bambu Lab P1S 0.4 nozzle",
+        "Bambu Lab P1P 0.4 nozzle",
+        "Bambu Lab X1 0.4 nozzle",
+        "Bambu Lab X1 Carbon 0.4 nozzle",
+        "Bambu Lab A1 0.4 nozzle",
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

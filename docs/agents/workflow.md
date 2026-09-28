@@ -2,10 +2,10 @@
 
 ## Sources of truth
 
-- [CLAUDE.md](../../CLAUDE.md) holds shared project rules; [AGENTS.md](../../AGENTS.md) routes Codex there. Keep project policy here or in `docs/agents/`, rather than installing it into every skill.
-- The [map](../../.scratch/biometric-guard-drone/map.md) is a short starting index. Tickets hold current checkpoints and dated decisions; linked artifacts hold evidence. Later explicit user decisions supersede earlier recommendations. An agent suggestion is not approval.
-- [CONTEXT.md](../../CONTEXT.md) is the glossary; use [domain rules](domain.md) for terminology and architectural decisions. [Project Idea](../../Project%20Idea.md) and [Gemini recommendations](../../Gemini_recommendation_and_how.md) preserve original intent, alongside later decisions.
-- [Research](../research/README.md) has dates and provenance. Historical proposals do not override confirmed choices. Recheck changing facts before installation, purchase or operational use.
+- [CLAUDE.md](../../CLAUDE.md) holds shared project rules for Claude Code, Codex, and Cursor; [AGENTS.md](../../AGENTS.md) routes Codex there. Keep project policy here or in `docs/agents/`, rather than installing it into every skill.
+- Live index: [CURRENT.md](../CURRENT.md) and the [increment 1+2 BOM](../increment-1-2-bom.md). The [map](../../.scratch/biometric-guard-drone/map.md) is workstream status. Tickets hold dated decisions. An agent suggestion is not approval.
+- [CONTEXT.md](../../CONTEXT.md) is the glossary; use [domain rules](domain.md) for terminology.
+- `docs/research/`, leftover `cad/` / `electronics/`, and `Gemini_recommendation_and_how.md` are historical. Open them only to recover a named dated claim. Recheck changing facts before purchase or flight.
 
 ## Context and task continuity
 
@@ -16,6 +16,12 @@ Before compaction or handoff when possible, refresh the existing ticket's short 
 After compaction or a fresh start, read the checkpoint and relevant current files. Recheck source evidence before consequential decisions. Summaries do not prove an assumption, test or permission exists. Recover missing context or state the gap while continuing independent work.
 
 ## Shared skills on Windows
+
+### Build coaching
+
+The project [build-coach skill](../../.agents/skills/build-coach/SKILL.md) reads the live index and existing ticket checkpoint, chooses the next available build/test step, reviews the result and records progress there. It uses the owner's separately installed `step-by-step-coach` for concise novice guidance. It stores no second parts list or plan. On the owner's Codex host, `~/.codex/skills/build-coach` points to this repository skill so it can also be invoked from a projectless task; the teaching skill stays reusable outside B.G.D. The current checkpoint pointer is maintained in CURRENT.md.
+
+### Shared project skill files
 
 On this checkout, `.claude/skills/` folders are junctions to `.agents/skills/`: both paths address the same files. Maintain `.agents/skills/` and preserve local modifications. Git records both paths as ordinary files, so other checkouts may contain independent copies.
 

@@ -1,0 +1,61 @@
+# Electrical precheckout review — 20 September 2026
+
+Dated evidence for the current F450 selection, not a second live shopping list. Source checkout: `main`, base `e760b7bdc83cf45f6089ea291b026856ad717557`; reviewed uncommitted `docs/increment-1-2-bom.md`, SHA256 `A1614219B4C511C887521A40CEC7DE0C45EEE7A080DF71C20451C3930BDA1C76`. No cart mutation, purchase, firmware flash or physical test performed in this review.
+
+## Result
+
+No documented electrical incompatibility requires replacing the selected controller, regulator, sensors, receiver or charger. There are two concrete setup corrections: the LiteRadio4 has manufacturer firmware fixes affecting RF power, and Pi5 GPIO UART needs explicit Pi5 configuration. The lighting retention and power harness remain engineered assemblies, not plug-and-play accessories. Neither this source review nor previous desk tests establish aircraft readiness.
+
+### Radio firmware: consequential manufacturer update
+
+BETAFPV's [LiteRadio4 support bulletin](https://support.betafpv.com/hc/en-us/articles/36869017436953-LiteRadio-4), updated May7 2026, supplies RF module `TX_LR4_Series_ELRS3_v1.0.6_20260428_7c25dae.bin` to correct low RF output power. Its March12 predecessor fixes PA oversaturation and excess power consumption. The mainboard file is `LiteRadio_4_ELRS_v1.1.3_20251204_b5994e3.bin`. BETAFPV specifies Configurator2.0.1 and recalibration after flashing. Updated startup behavior leaves RF inactive until throttle moves high-to-low; binding is unavailable while RF is inactive. Perform that activation with the aircraft disarmed/props removed, not as an airborne recovery procedure.
+
+**Required assembly change, $0:** inspect installed versions; use the exact official LiteRadio4 files and procedure, recalibrate sticks, then verify all channels, manual takeover, failsafe and installed range. Do not blindly install a newer generic ELRS major on the receiver. The [Nano receiver manufacturer page](https://betafpv.com/products/elrs-nano-receiver) identifies CRSF output and currently describes ELRS3.3.0 stock; it includes the external T antenna, four30AWG wires and heatshrink. Keep TX/RX on a mutually supported major, regulatory domain and packet mode. The [radio specification](https://betafpv.com/products/literadio-4-radio-transmitter) supports ten channels and 2.4GHz ELRS, with 25/50/100mW choices. Confirm left-throttle Mode2 before opening or modifying the unit; manufacturer conversion can involve gimbal relocation. These are configuration dependencies, not evidence that a different receiver is required.
+
+### Pi5 GPIO UART and power
+
+The [LiteRadio4 package list](https://betafpv.com/products/literadio-4-radio-transmitter) includes a USB Type-C cable for both standard and Twilight versions; the same page describes USB data configuration/simulator use. The FC also has USB-C. Plan to reuse the radio's included cable for sequential PC setup of radio and FC; verify enumeration on receipt, rather than assuming the HP charger cable carries data. A second purchased USB cable is not presently justified.
+
+Pi5 defaults its primary UART to the dedicated debug connector, unlike older Pi instructions. The official [configuration documentation](https://www.raspberrypi.com/documentation/computers/configuration.html) and [kernel overlay README](https://raw.githubusercontent.com/raspberrypi/linux/rpi-6.12.y/arch/arm/boot/dts/overlays/README) identify `dtoverlay=uart0-pi5` for GPIO14/15 (physical8/10). **Required assembly change, $0:** enable that overlay, remove serial login/kernel/debug use of those pins, verify the resulting device mapping on the installed OS, and test bidirectional MAVLink before enabling commands. Do not assume `/dev/serial0` points at the wired pins. No USB/UART adapter is inherently required.
+
+[Matek BEC12S-Pro](https://www.mateksys.com/?portfolio=bec12s-pro) specifies 9–55V input, default5.2V, 5A continuous, 9A peak, thermal shutdown and overcurrent recovery. It explicitly lacks reverse-input protection; a fuse does not turn it into a reverse-polarity-protected supply. A four-cell pack fits its input range. Retain the separately fused input branch and verify output before plugging the Pi in. Short-circuit tolerance is only two seconds, so do not intentionally short-test it.
+
+The [Samtec SSW drawing](https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf) and [catalog](https://suddendocs.samtec.com/catalog_english/ssw_th.pdf) establish a solder-tail receptacle, not a crimp-wire plug. The selected02 tail is4.93mm. Direct soldered harness construction is feasible, but individual tail insulation and a retained/keyed printed shell are needed. Keep two separate5V conductors and two grounds to physical2/4 and6/9. The header section also carries3.3V/I2C/UART, so a one-row or one-column insertion offset can destroy equipment. A nominal contact rating does not qualify the completed harness. Its covered height includes socket body, tails, bends and strain relief; do not budget only the bare connector body. No mandatory replacement identified; qualify voltage drop and heating at the actual workload with the final harness.
+
+### Whole-battery current and controller interfaces
+
+[Pololu5292](https://www.pololu.com/product/5292) is the5V ±100A version: output2.5V at zero and20mV/A, non-ratiometric. Two equal10k resistors yield nominal1.25V zero and10mV/A. At100A the divided output is2.25V, within a3.3V ADC range. Power this sensor from FC5V, not the Pi branch. The largest main-current holes accept10AWG, so selected12AWG is mechanically compatible. Pololu's carrier test supports60A continuous at25°C without forced airflow; it does not establish100A continuous operation. Monitor temperature for sustained loads above50A.
+
+The released [ArduCopter4.7.1 MicoAir743 hardware definition](https://raw.githubusercontent.com/ArduPilot/ardupilot/Copter-4.7.1/libraries/AP_HAL_ChibiOS/hwdef/MicoAir743/hwdef.dat) confirms BMI088/BMI270, DPS310, serial order and analog current pin11. UART6 is `SERIAL5`, not SERIAL6. The proposed Pi/UART1, GPS/UART3, flow/UART4 and CRSF/UART6 assignments do not overlap. Replacing the ESC current output requires disconnecting that competing signal and recalibrating: the firmware default40.2A/V is not the new sensor's nominal100A/V. Board input loading and any intervening components must be included in measured calibration. Keep voltage sensing.
+
+Use the original MicoAir743 firmware target and exact original50A Bluejay stack, not Lite/v2. [Manufacturer board documentation](https://micoair.com/flightcontroller_micoair743/) and the released definition are the relevant board sources. Factory Betaflight defaults do not establish ArduCopter setup; motor direction/order and DShot setup remain props-off tests.
+
+### Navigation sensors
+
+[SEQURE's manufacturer table](https://sequremall.com/products/sequre-gps-small-size-fast-positioning-racing-drone-fpv-return-qmc5883-compass) identifies M10-182Q as18×18×8.2mm, nominal8g,3.3–5V, M10050 plus QMC5883L and an included cable. The Q suffix matters:182 withoutQ omits compass. The included GPS harness must be mapped to the FC; a matching six-pin shell does not establish pin compatibility.
+
+Keep [MTF-01P](https://micoair.com/optical_range_sensor_mtf-01p/), not similarly named MT-01P, which is a range-only product. The [ArduPilot integration guide](https://ardupilot.org/copter/docs/common-mtf-01.html) supports MAVLink optical flow/range. Retain MAVLink_APM and FC serial passthrough setup; avoid copying MSP examples into the selected firmware. Flow texture/light requirements remain physical limits.
+
+[Pololu3418](https://www.pololu.com/product/3418) accepts2.5–5.5V but shifts I2C to its VIN level. Therefore retain Pi3.3V supply, not5V. It draws approximately100mA active with150mA peaks and includes straight/right-angle headers; direct soldering is also supported. No separate level shifter or mounting header purchase is necessary. Its maximum3.5m is favorable-condition performance, not a guaranteed obstacle-detection distance outdoors.
+
+### M450 charging and storage are supported
+
+The [current ToolkitRC M450 page](https://www.toolkitrc.com/m450/) explicitly describes automatic charge **or discharge** to3.85V/cell in storage mode. The [manufacturer manual](https://download.toolkitrc.com/wp-content/uploads/2024/09/M450-Manual-V1.1-.pdf) confirms2–4S,50W,200mA balance and the3.85V storage selection; its filename saysV1.1 while the title page saysV1.0. No discharge-power rating was established, so do not promise a quick full-to-storage cycle. No external DC power supply is needed; an AC cord is included.
+
+The [RDQ listing](https://www.racedayquads.com/products/toolkitrc-m450-2-4s-50w-5a-mini-balance-charger) is the selected unit. Retain the [ProgressiveRC EC5 charge cable](https://www.progressiverc.com/products/ec5-charge-cable) in the **XT60** option and the4S/five-wire balance extension. Charging requires both main and balance connections. At16.8V the50W limit permits at most2.98A (calculated), regardless of a5A selection; the6000mAh pack is compatible, but this is roughly0.5C near full voltage. No charger upgrade or separate discharger is justified by the documentation.
+
+### Lamps: compatible parts, unfinished retention/thermal proof
+
+[LEDSupply's XM-L2 star](https://www.ledsupply.com/leds/cree-xlamp-xm-l2-leds) explicitly lists [10734](https://www.ledsupply.com/led-optics/10734-carclo-lens-holder) and [10140](https://www.ledsupply.com/led-optics/10140-carclo-lens-frosted-wide-spot-led-optic) as compatible. At700mA typical forward voltage is2.85V, maximum3.5V: two in series require about5.7V typical/7V maximum. The [BuckPuck](https://www.ledsupply.com/led-drivers/buckpuck-dc-led-drivers) requires voltage overhead, and4S provides it. Use the non-dimming700mA part; do not parallel the two LEDs or attach them directly to battery. The non-dimming version leaves them on while its branch is powered; the energy budget already includes them.
+
+The [HS13137](https://www.ledsupply.com/led-heatsinks/heatsink-finned-with-adhesive-tape) is35.052×35.052×18.009mm with supplied adhesive. No thermal-resistance curve or installed temperature was established. Budget the full35mm square envelope, star, optic/holder and wire exits. Keep fins exposed. PETG must not replace the metal heat path or depend on an unmeasured hot interface for load-bearing retention.
+
+The optic snaps into10734, but10734 is specified to be adhered to the star. Existing printed lips/clips are a proposed alternate retention method, not a tested equivalent. Complete a captive holder design and hot vibration/pull test before flight; otherwise use a qualified compatible adhesive or mechanically retained metal housing. Do not buy arbitrary silicone solely because it is inexpensive. No extra thermal tape is needed for the included heatsinks. Keep driver input leads below18in to avoid invoking the manufacturer's additional input-capacitor recommendation; the compact central layout permits this without new parts.
+
+## Purchase implications and remaining limits
+
+- **Mandatory electrical purchase change: none established.** Preserve the approximately$60 margin for measured fit/thermal corrections rather than speculative upgrades.
+- A second identical5A fuse is a reasonable optional$0.44 spare if included with the existing DigiKey order; it is not required to complete the circuit and is not flight mass.
+- Exact cool-white LED stock needs the selected-variant UI. Generic web text mixes unavailable-option templates with stock counts; it is not reliable evidence that the cart's selected color is out of stock.
+- Inspect identity and dimensions while parts remain returnable, then construct the harness, map connectors and qualify supply voltage, current calibration, heat, sensor data, failsafe and manual control before mounting propellers. Opening/soldering may end change-of-mind return eligibility; this is why source compatibility and dimensional checks precede modification.
+- Mechanical clearance, all-up weight, radio/video range, endurance and mission behavior are outside a paper electrical pass. This report does not convert any of them into verified results.

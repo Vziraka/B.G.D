@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800">
+<title>B.G.D Pi carrier core — preliminary CAD plan</title>
+<desc>57 by 66 millimetre open carrier core, 2.5 thick, 49 by 58 mounting centers. Four slots 2.8 wide by 4.8 long allow plus or minus 1 millimetre longitudinal adjustment. Frame attachments absent. Not a print release.</desc>
+<rect width="1000" height="800" fill="#f5f7fa"/>
+<g font-family="Arial,sans-serif" fill="#182737">
+<text x="50" y="52" font-size="29" font-weight="bold">Pi 5 carrier core</text>
+<text x="50" y="84" font-size="18">FIT PROTOTYPE • OpenSCAD source • dimensions in mm</text>
+<g transform="translate(290 390) scale(7)">
+<path d="M-28.5,-33 H28.5 V33 H-28.5 Z M-20.5,-25 V25 H20.5 V-25 Z" fill="#49939b" fill-rule="evenodd" stroke="#173a42" stroke-width=".3"/>
+<g fill="#f5f7fa" stroke="#173a42" stroke-width=".25">
+<rect x="-25.9" y="-31.4" width="2.8" height="4.8" rx="1.4"/>
+<rect x="23.1" y="-31.4" width="2.8" height="4.8" rx="1.4"/>
+<rect x="-25.9" y="26.6" width="2.8" height="4.8" rx="1.4"/>
+<rect x="23.1" y="26.6" width="2.8" height="4.8" rx="1.4"/>
+</g>
+<g stroke="#7d8999" stroke-width=".2" stroke-dasharray="1,1" fill="none">
+<path d="M-24.5,-29 H24.5 V29 H-24.5 Z M0,-36 V36 M-31.5,0 H31.5"/>
+</g>
+</g>
+<g stroke="#46596c" stroke-width="1.5" fill="none">
+<path d="M90.5,143 V119 H489.5 V143 M90.5,114 V124 M489.5,114 V124"/>
+<path d="M70,159 H55 V621 H70 M50,159 H60 M50,621 H60"/>
+</g>
+<text x="290" y="112" text-anchor="middle" font-size="18">57 overall</text>
+<text transform="translate(37 390) rotate(-90)" text-anchor="middle" font-size="18">66 overall</text>
+<text x="290" y="380" text-anchor="middle" font-size="21">OPEN CENTER</text>
+<text x="290" y="411" text-anchor="middle" font-size="18">41 × 50</text>
+<g transform="translate(565 163)" font-size="19">
+<text y="0" font-size="22" font-weight="bold">Documented interface</text>
+<text y="35">Pi hole centers: 49 × 58</text>
+<text y="68">Origin: hole-pattern center</text>
+<text y="135" font-size="22" font-weight="bold">Draft choices</text>
+<text y="170">Rail width: 8</text>
+<text y="203">Thickness: 2.5</text>
+<text y="236">Slots: 2.8 × 4.8</text>
+<text y="269">Adjustment: ±1 along Y</text>
+<text y="302">Calculated solid PETG: ~5.4 g</text>
+<text y="370" font-size="22" font-weight="bold">Not yet included</text>
+<text y="405">Frame anchoring tabs/fasteners</text>
+<text y="438">Standoffs, Pi and cooler</text>
+</g>
+<text x="50" y="693" font-size="18">Slotted corners accept the four Pi standoffs. Final clamp hardware and fit remain to be checked.</text>
+<text x="50" y="725" font-size="18">This view does not imply support from a square frame plate. Actual frame slots are unmeasured.</text>
+<text x="50" y="767" font-size="18" font-weight="bold" fill="#9a4324">PRELIMINARY — no print, strength, thermal or flight qualification</text>
+</g>
+</svg>

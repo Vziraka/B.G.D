@@ -1,0 +1,22 @@
+{
+  "name": "pi-carrier-core-draft",
+  "triangles": 1024,
+  "components": 1,
+  "bounds_mm": [
+    [
+      -28.5,
+      28.5
+    ],
+    [
+      -39.0,
+      39.0
+    ],
+    [
+      0.0,
+      10.2
+    ]
+  ],
+  "volume_mm3": 8731.0,
+  "solid_petg_g_at_1_3": 11.35,
+  "physical_fit_verified": false
+}

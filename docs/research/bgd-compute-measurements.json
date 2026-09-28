@@ -1,0 +1,179 @@
+{
+  "date": "2026-09-15",
+  "scope": "Windows CPU-only repeated component test; all three models remain resident; not a complete app or Raspberry Pi performance test",
+  "machine": {
+    "cpu": "Intel Core Ultra 7 255H",
+    "installed_memory_gib": 31.4,
+    "gpu_used": false,
+    "os": "Windows-11-10.0.26200-SP0"
+  },
+  "versions": {
+    "python": "3.13.12",
+    "opencv": "4.12.0",
+    "numpy": "2.2.6",
+    "psutil": "7.0.0"
+  },
+  "configuration": {
+    "opencv_threads": 4,
+    "object_model": "YOLOX-s 2022nov float32",
+    "object_input": [
+      640,
+      640
+    ],
+    "face_model": "YuNet 2023mar + SFace 2021dec float32",
+    "face_input": [
+      512,
+      512
+    ],
+    "image_buffers": 8,
+    "buffer_shape": [
+      720,
+      1280,
+      3
+    ],
+    "tracking": "100 image points, synthetic 2x1 pixel translation, OpenCV Lucas-Kanade optical flow",
+    "encoding": "JPEG quality80; no network or H264 encoding",
+    "measured_loops": 24,
+    "seconds": 8.743018699984532
+  },
+  "checks": {
+    "detected_objects": 5,
+    "detected_people": 4,
+    "face_count": 1,
+    "tracked_points": 100,
+    "jpeg_bytes": 205715
+  },
+  "memory_bytes": {
+    "baseline": {
+      "rss": 22958080,
+      "vms": 12111872,
+      "num_page_faults": 24031,
+      "peak_wset": 61652992,
+      "wset": 22958080,
+      "peak_paged_pool": 185552,
+      "paged_pool": 185376,
+      "peak_nonpaged_pool": 14336,
+      "nonpaged_pool": 13728,
+      "pagefile": 12111872,
+      "peak_pagefile": 50892800,
+      "private": 12111872
+    },
+    "after_warmup": {
+      "rss": 430239744,
+      "vms": 917430272,
+      "num_page_faults": 223984,
+      "peak_wset": 436523008,
+      "wset": 430239744,
+      "peak_paged_pool": 403720,
+      "paged_pool": 400136,
+      "peak_nonpaged_pool": 35080,
+      "nonpaged_pool": 34944,
+      "pagefile": 917430272,
+      "peak_pagefile": 924483584,
+      "private": 917430272
+    },
+    "final": {
+      "rss": 433713152,
+      "vms": 920408064,
+      "num_page_faults": 1550936,
+      "peak_wset": 453132288,
+      "wset": 433713152,
+      "peak_paged_pool": 403720,
+      "paged_pool": 400136,
+      "peak_nonpaged_pool": 35624,
+      "nonpaged_pool": 34944,
+      "pagefile": 920408064,
+      "peak_pagefile": 939933696,
+      "private": 920408064
+    },
+    "eight_raw_buffers": 22118400
+  },
+  "local_component_latency_ms": {
+    "detect": {
+      "median": 326.5975500107743,
+      "max": 347.51589997904375
+    },
+    "face": {
+      "median": 31.43230002024211,
+      "max": 34.16139999171719
+    },
+    "track": {
+      "median": 2.073700015898794,
+      "max": 2.7729999856092036
+    },
+    "jpeg": {
+      "median": 1.9941999926231802,
+      "max": 2.4855000083334744
+    }
+  },
+  "excluded": [
+    "real camera and Linux camera buffers",
+    "actual streaming server and phone decoder",
+    "liveness or spoof detection",
+    "description-based object selection",
+    "search planning or indoor navigation",
+    "flight transport and controller",
+    "accuracy validation on representative drone footage",
+    "Pi operating system and other processes",
+    "sustained thermal/power measurements"
+  ],
+  "assets": {
+    "opencv_zoo_commit": "47534e27c9851bb1128ccc0102f1145e27f23f98",
+    "assets": [
+      {
+        "file": "yolox.onnx",
+        "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/object_detection_yolox/object_detection_yolox_2022nov.onnx",
+        "bytes": 35858002,
+        "sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063"
+      },
+      {
+        "file": "yunet.onnx",
+        "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+        "bytes": 232589,
+        "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+      },
+      {
+        "file": "sface.onnx",
+        "url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/face_recognition_sface_2021dec.onnx",
+        "bytes": 38696353,
+        "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
+      },
+      {
+        "file": "yolox.py",
+        "url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/object_detection_yolox/yolox.py",
+        "bytes": 3216,
+        "sha256": "c99d8f103d93d27d0fb1807c7b91cb32d2d6c4959326cb88c801f17d00468f84"
+      },
+      {
+        "file": "yolox-LICENSE",
+        "url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/object_detection_yolox/LICENSE",
+        "bytes": 11371,
+        "sha256": "0ec3668d3274bcf29e8a29e9576d5a2cd96fc78d3c5bec4387355a796e5d9088"
+      },
+      {
+        "file": "yunet-LICENSE",
+        "url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/LICENSE",
+        "bytes": 1085,
+        "sha256": "c83b8120c50ccbd4c4f96edf53141bdd566ebb8f8e9227e415326aa1b1aba958"
+      },
+      {
+        "file": "sface-LICENSE",
+        "url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/LICENSE",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "file": "bus.jpg",
+        "url": "https://raw.githubusercontent.com/ultralytics/ultralytics/main/ultralytics/assets/bus.jpg",
+        "bytes": 137419,
+        "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63"
+      },
+      {
+        "file": "face.jpg",
+        "url": "https://raw.githubusercontent.com/opencv/opencv/4.12.0/samples/data/lena.jpg",
+        "bytes": 91814,
+        "sha256": "7de7ed51a1594fff247f4cae2301eceacf5313d6011e37b4a4c8733f7bb72c07"
+      }
+    ]
+  }
+}

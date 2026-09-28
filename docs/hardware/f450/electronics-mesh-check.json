@@ -1,0 +1,46 @@
+{
+  "electronics-stack-adapter": {
+    "triangles": 1056,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -24.0,
+        24.0
+      ],
+      [
+        -32.0,
+        32.0
+      ],
+      [
+        0.0,
+        6.0
+      ]
+    ],
+    "volume_mm3": 5352.27,
+    "solid_petg_mass_g_at_1_3": 6.96,
+    "physical_fit_verified": false
+  },
+  "electronics-flow-support": {
+    "triangles": 284,
+    "connected_components": 1,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        29.0,
+        81.0
+      ],
+      [
+        -19.0,
+        19.0
+      ],
+      [
+        0.0,
+        5.5
+      ]
+    ],
+    "volume_mm3": 3433.46,
+    "solid_petg_mass_g_at_1_3": 4.46,
+    "physical_fit_verified": false
+  }
+}

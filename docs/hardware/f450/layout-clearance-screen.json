@@ -1,0 +1,12 @@
+{
+  "plan_clearance_mm": {
+    "reserved_pi_and_restrained_wires": 38.18,
+    "camera_and_forward_depth": 23.72,
+    "battery_and_end_stops": 26.43,
+    "stack_adapter": 65.49,
+    "downward_sensor_and_support": 40.4,
+    "rear_restrained_connector_corridor": 32.23
+  },
+  "flow_to_battery_margin_mm": 6.72,
+  "assumptions": "450 mm square-X diagonal wheelbase, 240 mm prop disks, reserved rectangular envelopes; rigid nominal geometry only. No flex, legs, cables outside corridors, thermal or measured-fit qualification."
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect ESCs and Motors &mdash; Copter  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/ardupilot.css?v=ae9666d5" />
+      <link rel="stylesheet" type="text/css" href="../_static/common_theme_override.css?v=01d3cdd0" />
+      <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+
+  
+    <link rel="shortcut icon" href="../_static/favicon_copter.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=7f41d439"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/./useralerts.js?v=3014f84e"></script>
+        <script data-domain="ardupilot.org" defer="defer" src="https://plausible.ardupilot.org/js/script.outbound-links.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="UBlox GPS + Compass Module" href="common-installing-3dr-ublox-gps-compass-module.html" />
+    <link rel="prev" title="Vibration Damping" href="common-vibration-damping.html" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2980b9" />
+  <link rel="apple-touch-icon" href="/apple-icon.png" />
+  <script src="/js/pwa.js" defer="defer"></script> 
+</head>
+
+<body class="wy-body-for-nav">    
+    <div id='cssmenu'>
+        <ul>
+           <li><a href='/ardupilot/index.html'>Home</a>
+              <ul>
+                 <li><a href='/copter/index.html'>Copter</a></li>
+                 <li><a href='/plane/index.html'>Plane</a></li>
+                 <li><a href='/rover/index.html'>Rover</a></li>
+                 <li><a href='/blimp/index.html'>Blimp</a></li>
+                 <li><a href='/sub/index.html'>Sub</a></li>
+                 <li><a href='/antennatracker/index.html'>AntennaTracker</a></li>
+                 <li><a href='/planner/index.html'>Mission Planner</a></li>
+                 <li><a href='/planner2/index.html'>APM Planner 2</a></li>
+                 <li><a href='/mavproxy/index.html'>MAVProxy</a></li>
+                 <li><a href='/dev/docs/companion-computers.html'>Companion Computers</a></li>
+                 <li><a href='/dev/index.html'>Developer</a></li>
+              </ul>
+           </li>
+           
+          
+           
+           <li><a href='https://firmware.ardupilot.org/'>Downloads</a>
+              <ul>
+                <li><a href='https://firmware.ardupilot.org/Tools/MissionPlanner/'>Mission Planner</a></li>
+                <li><a href='https://firmware.ardupilot.org/Tools/APMPlanner/'>APM Planner 2</a></li>
+                   <li><a title="Advanced User Tools" href="common-downloads_advanced_user_tools.html">Advanced User Tools</a></li>
+                   <li><a title="Developer Tools" href="common-downloads_developer_tools.html">Developer Tools</a></li>
+                   <li><a title="Firmware" href="common-downloads_firmware.html">Firmware</a></li>
+                </ul>
+           </li>
+           
+           <li><a href='https://discuss.ardupilot.org' />Community</a>
+              <ul>
+                 <li><a href='https://discuss.ardupilot.org/'>Support Forums</a></li>
+                 <li><a href='https://www.facebook.com/groups/ArduPilot.org'>Facebook</a></li>
+                 <li><a href='https://ardupilot.org/discord'>Developer Chat (Discord)</a></li>
+                 <li><a href='https://ardupilot.org/discord'>Developer Voice (Discord)</a></li>
+				 <li><a href='https://ardupilot.org/dev/docs/common-contact-us.html'>Contact us</a></li>
+				 <li><a href='https://ardupilot.org/dev/index.html#getting-involved'>Getting involved</a></li>
+                   <li><a title="Commercial Support" href="common-commercial-support.html">Commercial Support</a></li>
+                   <li><a title="Dev Team" href="common-team.html">Development Team</a></li>
+                   <li><a title="Training Centers" href="common-training-centers.html">UAS Training Centers</a></li>
+              </ul>
+           </li>
+             <li><a title="Stores" href="common-stores.html">Stores</a></li>
+
+
+           
+                        <li><a title="About" href="../index.html">About</a>
+               <ul>
+                   <li><a title="Project News" href="project-news.html">News</a></li>
+                   <li><a title="History of ArduPilot" href="common-history-of-ardupilot.html">History</a></li>
+                   <li><a href='https://ardupilot.org/dev/docs/license-gplv3.html'>License</a></li>
+                   <li><a href='https://ardupilot.org/dev/docs/trademark.html'>Trademark</a></li>
+                   <li><a title="Acknowledgments" href="common-acknowledgments.html">Acknowledgments</a></li>
+                   <li><a title="Wiki Editing Guide" href="common-wiki_editing_guide.html">Wiki Editing Guide</a></li>
+                   <li><a title="Partners Program" href="common-partners.html">Partners Program</a></li>
+               </ul>
+             </li>
+             <li><a title="Offline" href="common-offline.html">Offline</a></li>
+        </ul>
+        
+
+</div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Copter
+              <img src="../_static/ardupilot_logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="copter-introduction.html">Introduction to Copter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-autopilots.html">Choosing an Autopilot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-GCS.html">Ground Control Stations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="initial-setup.html">First Time Setup</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="common-install-gcs.html">Install Ground Station Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="autopilot-assembly-instructions.html">Autopilot System Assembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common-loading-firmware.html">Loading Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common-connect-mission-planner-autopilot.html">Connect Mission Planner to AutoPilot</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="configuring-hardware.html">Configuration</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="common-basic-operation.html">Basic System Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frame-type-configuration.html">Frame Type Configuration</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Motor Numbering and Direction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#motor-order-diagrams">Motor order diagrams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#testing-motor-spin-directions">Testing motor spin directions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#checking-the-motor-numbering-with-the-mission-planner-motor-test">Checking the motor numbering with the Mission Planner Motor test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-a-power-distribution-board">Using a Power Distribution Board</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kde-and-other-opto-isolated-escs">KDE (and other) Opto Isolated ESCs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pixhawk-esc-issues">Pixhawk ESC issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="common-radio-control-calibration.html">Radio Control Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-accelerometer-calibration.html">Accelerometer Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-compass-calibration-in-mission-planner.html">Compass Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="common-rc-transmitter-flight-mode-configuration.html">RC Transmitter Mode Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="esc-calibration.html">ESC Calibration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set-motor-range.html">Configure Motor Range (optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="failsafe-landing-page.html">Failsafe Mechanisms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="flight-modes.html">Flight Modes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flying-arducopter.html">First Flight and Tuning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traditional-helicopters.html">Traditional Helicopters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-mission-planning.html">Mission Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-when-problems-arise.html">If A Problem Arises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-advanced-configuration.html">Advanced Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-optional-hardware.html">Peripheral Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional-information.html">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="common-user-alerts.html">User Alerts</a></li>
+</ul>
+
+          <!-- add paypal and dronecode logos -->        <div style="margin: auto; padding-left:20px; padding-right:20px; width=100%">
+
+        <hr />
+        <form style="margin:auto;" action="https://ardupilot.org/donate">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate" />
+        </form>
+        <br>
+        <a href="common-donation.html">Individual</a>
+        <a href="common-partners.html">Partners</a>
+        <a href="https://ardupilot.org/shop">SWAG Shop</a>
+
+        <hr />
+        </div>
+          <!-- endadd paypal and dronecode logos -->
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Copter</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="initial-setup.html">First Time Setup</a></li>
+          <li class="breadcrumb-item"><a href="autopilot-assembly-instructions.html">Autopilot System Assembly Instructions</a></li>
+      <li class="breadcrumb-item active">Connect ESCs and Motors</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/ArduPilot/ardupilot_wiki/blob/master/copter/source/docs/connect-escs-and-motors.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="connect-escs-and-motors">
+<span id="id1"></span><h1>Connect ESCs and Motors<a class="headerlink" href="#connect-escs-and-motors" title="Link to this heading">¶</a></h1>
+<p>This article explains how to connect the ESCs, motors and propellers to an autopilot.  The Pixhawk is used as an example but other autopilots are connected in a similar way.</p>
+<p>Connect the power (+), ground (-), and signal (s) wires for each ESC to
+the autopilot’s main output pins by motor number. Find your frame type
+below to determine the assigned order of the motors.</p>
+<figure class="align-default" id="id2">
+<a class="reference external image-reference" href="../_images/Pixhwak_outputs.jpg"><img alt="../_images/Pixhwak_outputs.jpg" src="../_images/Pixhwak_outputs.jpg" /></a>
+<figcaption>
+<p><span class="caption-text">Pixhawk output pins (numbered). First 4 pins are colour-coded for connecting a Quadframe</span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="motor-order-diagrams">
+<h2>Motor order diagrams<a class="headerlink" href="#motor-order-diagrams" title="Link to this heading">¶</a></h2>
+<p>The diagrams below show motor order for each frame type.
+Propeller direction is shown in green (clockwise, CW) or blue (counter-clockwise, CCW).
+The letters shown in red indicate which motor should turn when using Mission Planner’s <strong>Motor Test</strong> feature found under its SETUP-&gt;Optional Hardware tab.</p>
+<figure class="align-default" id="id3">
+<a class="reference external image-reference" href="../_images/MOTORS_CW_CCWLegend.jpg"><img alt="../_images/MOTORS_CW_CCWLegend.jpg" src="../_images/MOTORS_CW_CCWLegend.jpg" /></a>
+<figcaption>
+<p><span class="caption-text">Legend for motor-order diagrams</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="quad-frames">
+<h3>QUAD FRAMES<a class="headerlink" href="#quad-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_01_00_quad_plus.svg"><img alt="QUAD PLUS" height="321" src="../_images/m_01_00_quad_plus.svg" width="321" /></a>
+<a class="reference external image-reference" href="../_images/m_01_01_quad_x.svg"><img alt="QUAD X" height="296" src="../_images/m_01_01_quad_x1.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_02_quad_v.svg"><img alt="QUAD V" height="302" src="../_images/m_01_02_quad_v.svg" width="302" /></a>
+<a class="reference external image-reference" href="../_images/m_01_03_quad_h.svg"><img alt="QUAD H" height="296" src="../_images/m_01_03_quad_h.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_04_quad_v_tail.svg"><img alt="QUAD V TAIL" height="288" src="../_images/m_01_04_quad_v_tail.svg" width="288" /></a>
+<a class="reference external image-reference" href="../_images/m_01_05_quad_a_tail.svg"><img alt="QUAD A TAIL" height="288" src="../_images/m_01_05_quad_a_tail.svg" width="288" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Quad A Tail and V Tail frames do not use the front motors for yaw control (NYT). The direction of motor rotation is not critical for basic operation, but unless the front motors spin in opposite directions, roll and pitch inputs will result in adverse yaw, resulting in less dynamic range of the yaw control.</p>
+</div>
+<a class="reference external image-reference" href="../_images/m_01_06_quad_plus_rev.svg"><img alt="QUAD PLUS (REVERSED)" height="321" src="../_images/m_01_06_quad_plus_rev.svg" width="321" /></a>
+<a class="reference external image-reference" href="../_images/m_01_12_quad_x_bf.svg"><img alt="QUAD X (BETAFLIGHT)" height="296" src="../_images/m_01_12_quad_x_bf.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_13_quad_x_dji.svg"><img alt="QUAD X (DJI)" height="296" src="../_images/m_01_13_quad_x_dji.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_14_quad_x_cw.svg"><img alt="QUAD X (CLOCKWISE)" height="296" src="../_images/m_01_14_quad_x_cw.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_16_quad_plus_nyt.svg"><img alt="QUAD PLUS (NO YAW TORQUE)" height="321" src="../_images/m_01_16_quad_plus_nyt.svg" width="321" /></a>
+<a class="reference external image-reference" href="../_images/m_01_17_quad_x_nyt.svg"><img alt="QUAD X (NO YAW TORQUE)" height="296" src="../_images/m_01_17_quad_x_nyt.svg" width="296" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Quad ‘No Yaw Torque’ (NYT) frames are primarily intended for <a class="reference external" href="https://ardupilot.org/plane/docs/guide-tailsitter.html#guide-tailsitter" title="(in Plane)"><span class="xref std std-ref">VTOL Tailsitter</span></a> configurations with large control surfaces. Motor rotation direction does not matter for these motors, but unless the motor’s spin directions are setup as any kind of normal QUAD frame, roll and pitch inputs will result in adverse yaw, resulting in less dynamic range of the yaw control of the fixed wing control surfaces.</p>
+</div>
+<a class="reference external image-reference" href="../_images/m_01_18_quad_x_bf_rev.svg"><img alt="QUAD X (BF REVERSED)" height="296" src="../_images/m_01_18_quad_x_bf_rev.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_01_19_quad_y4a.svg"><img alt="QUAD Y4A" height="351" src="../_images/m_01_19_quad_y4a.svg" width="351" /></a>
+</section>
+<section id="hexa-frames">
+<h3>HEXA FRAMES<a class="headerlink" href="#hexa-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_02_00_hexa_plus.svg"><img alt="HEXA PLUS" height="331" src="../_images/m_02_00_hexa_plus.svg" width="331" /></a>
+<a class="reference external image-reference" href="../_images/m_02_01_hexa_x.svg"><img alt="HEXA X" height="311" src="../_images/m_02_01_hexa_x.svg" width="311" /></a>
+<a class="reference external image-reference" href="../_images/m_02_03_hexa_h.svg"><img alt="HEXA H" height="297" src="../_images/m_02_03_hexa_h.svg" width="297" /></a>
+<a class="reference external image-reference" href="../_images/m_02_13_hexa_x_dji.svg"><img alt="HEXA X (DJI)" height="311" src="../_images/m_02_13_hexa_x_dji.svg" width="311" /></a>
+<a class="reference external image-reference" href="../_images/m_02_14_hexa_x_cw.svg"><img alt="HEXA X (CLOCKWISE)" height="311" src="../_images/m_02_14_hexa_x_cw.svg" width="311" /></a>
+</section>
+<section id="octo-frames">
+<h3>OCTO FRAMES<a class="headerlink" href="#octo-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_03_00_octo_plus.svg"><img alt="OCTO PLUS" height="316" src="../_images/m_03_00_octo_plus.svg" width="316" /></a>
+<a class="reference external image-reference" href="../_images/m_03_01_octo_x.svg"><img alt="OCTO X" height="320" src="../_images/m_03_01_octo_x.svg" width="320" /></a>
+<a class="reference external image-reference" href="../_images/m_03_02_octo_v.svg"><img alt="OCTO V" height="330" src="../_images/m_03_02_octo_v.svg" width="330" /></a>
+<a class="reference external image-reference" href="../_images/m_03_03_octo_h.svg"><img alt="OCTO H" height="291" src="../_images/m_03_03_octo_h.svg" width="291" /></a>
+<a class="reference external image-reference" href="../_images/m_03_13_octo_x_dji.svg"><img alt="OCTO X (DJI)" height="320" src="../_images/m_03_13_octo_x_dji.svg" width="320" /></a>
+<a class="reference external image-reference" href="../_images/m_03_14_octo_x_cw.svg"><img alt="OCTO X (CLOCKWISE)" height="320" src="../_images/m_03_14_octo_x_cw.svg" width="320" /></a>
+<a class="reference external image-reference" href="../_images/m_03_15_octo_i.svg"><img alt="OCTO I" height="343" src="../_images/m_03_15_octo_i.svg" width="343" /></a>
+</section>
+<section id="octo-quad-frames">
+<h3>OCTO QUAD FRAMES<a class="headerlink" href="#octo-quad-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_04_00_octo_quad_plus.svg"><img alt="OCTO QUAD PLUS" height="292" src="../_images/m_04_00_octo_quad_plus.svg" width="292" /></a>
+<a class="reference external image-reference" href="../_images/m_04_01_octo_quad_x.svg"><img alt="OCTO QUAD X" height="293" src="../_images/m_04_01_octo_quad_x.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_04_02_octo_quad_v.svg"><img alt="OCTO QUAD V" height="293" src="../_images/m_04_02_octo_quad_v.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_04_03_octo_quad_h.svg"><img alt="OCTO QUAD H" height="293" src="../_images/m_04_03_octo_quad_h.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_04_12_octo_quad_x_bf.svg"><img alt="OCTO QUAD X (BETAFLIGHT)" height="293" src="../_images/m_04_12_octo_quad_x_bf.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_04_14_octo_quad_x_cw.svg"><img alt="OCTO QUAD X (CLOCKWISE)" height="293" src="../_images/m_04_14_octo_quad_x_cw.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_04_18_octo_quad_x_bf_rev.svg"><img alt="OCTO QUAD X (BF REVERSED)" height="293" src="../_images/m_04_18_octo_quad_x_bf_rev.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_17_01_corotating_x.svg"><img alt="COROTATING X" height="293" src="../_images/m_17_01_corotating_x.svg" width="293" /></a>
+<a class="reference external image-reference" href="../_images/m_17_14_corotating_x_cw.svg"><img alt="COROTATING X (CW)" height="293" src="../_images/m_17_14_corotating_x_cw.svg" width="293" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Corotating X and X (CW) frames must be configured using FRAME_CLASS 17, and the autopilot must run the <a class="reference external" href="https://github.com/ArduPilot/ardupilot/libraries/AP_Scripting/examples/X8-corotating.lua">X8-corotating.lua script</a>.</p>
+</div>
+</section>
+<section id="y6-frames">
+<h3>Y6 FRAMES<a class="headerlink" href="#y6-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_05_00_y6_a.svg"><img alt="Y6 A" height="298" src="../_images/m_05_00_y6_a.svg" width="298" /></a>
+<a class="reference external image-reference" href="../_images/m_05_10_y6_b.svg"><img alt="Y6 B" height="298" src="../_images/m_05_10_y6_b.svg" width="298" /></a>
+<a class="reference external image-reference" href="../_images/m_05_11_y6_f.svg"><img alt="Y6 F" height="298" src="../_images/m_05_11_y6_f.svg" width="298" /></a>
+</section>
+<section id="tricopter-frames">
+<h3>TRICOPTER FRAMES<a class="headerlink" href="#tricopter-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_07_00_tricopter.svg"><img alt="TRICOPTER" height="294" src="../_images/m_07_00_tricopter.svg" width="294" /></a>
+<a class="reference external image-reference" href="../_images/m_07_06_tricopter_pitch_rev.svg"><img alt="TRICOPTER PITCH REVERSED" height="294" src="../_images/m_07_06_tricopter_pitch_rev.svg" width="294" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since the tail (or nose) servo is used for yaw control, Tricopter motor rotation direction is not critical for basic operation, but unless the front motors spin in opposite directions, roll and pitch inputs will result in adverse yaw, resulting in less dynamic range of the yaw control. If the direction of your tail (or nose) servo is going the wrong way in response to yaw then either the <code class="docutils literal notranslate"><span class="pre">RCn_REVERSE</span></code> RC input direction or the tilt servo’s <code class="docutils literal notranslate"><span class="pre">SERVOn_REVERSE</span></code> parameter should be set to 1 (from 0), See <a class="reference internal" href="tricopter.html#tricopter"><span class="std std-ref">TriCopter setup page</span></a> for details.</p>
+</div>
+</section>
+<section id="bicopter-frames">
+<h3>BICOPTER FRAMES<a class="headerlink" href="#bicopter-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_10_00_bicopter.svg"><img alt="BICOPTER" height="281" src="../_images/m_10_00_bicopter.svg" width="281" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If desired, Bicopter motors may rotate opposite the directions shown (e.g., CW left, CCW right).</p>
+</div>
+</section>
+<section id="dodecahexa-frames">
+<h3>DODECAHEXA FRAMES<a class="headerlink" href="#dodecahexa-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_12_00_dodecahexa_plus.svg"><img alt="DODECAHEXA PLUS" height="296" src="../_images/m_12_00_dodecahexa_plus.svg" width="296" /></a>
+<a class="reference external image-reference" href="../_images/m_12_01_dodecahexa_x.svg"><img alt="DODECAHEXA X" height="296" src="../_images/m_12_01_dodecahexa_x.svg" width="296" /></a>
+</section>
+<section id="deca-frames">
+<h3>DECA FRAMES<a class="headerlink" href="#deca-frames" title="Link to this heading">¶</a></h3>
+<a class="reference external image-reference" href="../_images/m_14_00_deca_plus.svg"><img alt="DECA PLUS" height="317" src="../_images/m_14_00_deca_plus.svg" width="317" /></a>
+<a class="reference external image-reference" href="../_images/m_14_01_deca_x_and_cw_x.svg"><img alt="DECA X (and CW X)" height="313" src="../_images/m_14_01_deca_x_and_cw_x.svg" width="313" /></a>
+</section>
+<section id="custom-frames">
+<span id="connect-escs-and-motors-attach-propellers"></span><h3>Custom Frames<a class="headerlink" href="#custom-frames" title="Link to this heading">¶</a></h3>
+<p>It is possible to configure custom frame types using up-to 12 motors using <a class="reference internal" href="common-lua-scripts.html#common-lua-scripts"><span class="std std-ref">lua scripting</span></a>. The roll, pitch and yaw factors for each motor must be calculated and loaded from a script.
+This is enabled by setting <a class="reference internal" href="parameters.html#frame-class"><span class="std std-ref">FRAME_CLASS</span></a> to 15 - Scripting Matrix. See: <a class="reference external" href="https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_Scripting/examples/MotorMatrix_setup.lua">plus quad example</a>
+and <a class="reference external" href="https://github.com/ArduPilot/ardupilot/blob/master/libraries/AP_Scripting/examples/MotorMatrix_fault_tolerant_hex.lua">fault tolerant hex example</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Not all autopilots support scripting see: <a class="reference internal" href="common-limited-firmware.html#common-limited-firmware"><span class="std std-ref">firmware limitations</span></a>.</p>
+</div>
+</section>
+<section id="recognizing-clockwise-and-counterclockwise-propellers">
+<h3>Recognizing clockwise and counterclockwise propellers<a class="headerlink" href="#recognizing-clockwise-and-counterclockwise-propellers" title="Link to this heading">¶</a></h3>
+<p>The diagrams above show two types of propellers: clockwise (called pushers) and counterclockwise (called pullers). The most reliable to recognize the correct propeller type by its shape as shown below. The thicker edge is the leading edge which moves in the direction of rotation. The trailing edge is more radical scalloped and usually thinner. <a class="reference external" href="../_images/prop-direction.png"><img alt="prop_direction" src="../_images/prop-direction.png" style="width: 450px;" /></a></p>
+</section>
+</section>
+<section id="testing-motor-spin-directions">
+<span id="connect-escs-and-motors-testing-motor-spin-directions"></span><h2>Testing motor spin directions<a class="headerlink" href="#testing-motor-spin-directions" title="Link to this heading">¶</a></h2>
+<p>If you have completed the <a class="reference internal" href="common-radio-control-calibration.html#common-radio-control-calibration"><span class="std std-ref">Radio</span></a>
+and <a class="reference internal" href="esc-calibration.html#esc-calibration"><span class="std std-ref">ESC calibration</span></a>, you can check that your
+motors are spinning in the correction direction:</p>
+<ol class="arabic">
+<li><p>Make sure there are no propellers on your copter!</p></li>
+<li><p>Turn transmitter on and ensure the flight mode switch is set to
+Stabilize.</p></li>
+<li><p>Connect battery.</p></li>
+<li><p>Arm copter by holding the throttle down and rudder right for five
+seconds.</p></li>
+<li><p>If it fails to Arm with the throttle down and to the right and the
+motors will not spin, it has probably failed the  Pre-Arm Safety
+Check.</p>
+<ul class="simple">
+<li><p>Pre-Arm safety check failure is also indicated by the red arming
+light double flashing and then repeating.</p></li>
+<li><p>If the Pre-Arm check fails go to the <a class="reference internal" href="common-prearm-safety-checks.html#common-prearm-safety-checks"><span class="std std-ref">Prearm Safety Check Page</span></a> and correct the problem or disable
+the check before continuing.</p></li>
+</ul>
+</li>
+<li><p>When you can Arm successfully, apply a small amount of throttle, and
+observe and note spin direction of each motor. They should match
+directions shown in the images above for the frame you’ve chosen.</p></li>
+<li><p>Reverse any motor spinning in the wrong direction.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<dl class="simple">
+<dt>Motor Direction is reversed simply by interchanging two of the</dt><dd><p>three ESC to motor power leads.</p>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</section>
+<section id="checking-the-motor-numbering-with-the-mission-planner-motor-test">
+<h2>Checking the motor numbering with the Mission Planner Motor test<a class="headerlink" href="#checking-the-motor-numbering-with-the-mission-planner-motor-test" title="Link to this heading">¶</a></h2>
+<p>An alternative way to check that the motors have been hooked up
+correctly is to use the “Motors” test in the Mission Planner Initial
+Setup menu.</p>
+<figure class="align-default" id="id4">
+<a class="reference external image-reference" href="../_images/MissionPlanner_MotorTest.png"><img alt="../_images/MissionPlanner_MotorTest.png" src="../_images/MissionPlanner_MotorTest.png" /></a>
+<figcaption>
+<p><span class="caption-text">Mission Planner: Motor Test</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>When connected to the vehicle via MAVLink, you can click on the green
+buttons shown above and the corresponding motor should spin for five
+seconds. Letters correspond to motor numbers as shown in the example
+below.</p>
+<ul class="simple">
+<li><p>Take off your props first!</p></li>
+<li><p>If no motors turn, raise the “Throttle %” to 10% and try again. If
+that doesn’t work, try 15%</p></li>
+</ul>
+<p>The first motor to spin will be the one located directly forward in the
+case of + configuration, or the first motor to the right of straight
+forward in the case of X configuration. The motor test will then proceed
+in a clockwise rotation.</p>
+<a class="reference external image-reference" href="../_images/APM_2_5_MOTORS_QUAD_enc.jpg"><img alt="../_images/APM_2_5_MOTORS_QUAD_enc.jpg" src="../_images/APM_2_5_MOTORS_QUAD_enc.jpg" /></a>
+<p>In the case of X8, it will spin the top front-right motor first, then
+the bottom front-right, and proceed around with the same pattern.</p>
+<p>OctoV will spin the front-right motor first, and then again, proceed
+clock-wise until reaching the front left motor.</p>
+</section>
+<section id="using-a-power-distribution-board">
+<h2>Using a Power Distribution Board<a class="headerlink" href="#using-a-power-distribution-board" title="Link to this heading">¶</a></h2>
+<a class="reference external image-reference" href="../_images/3dr_power_distribution_board.jpg"><img alt="../_images/3dr_power_distribution_board.jpg" src="../_images/3dr_power_distribution_board.jpg" /></a>
+<p>There are two methods of connecting the motor outputs.  Either connect the
+electronic speed controllers (ESCs) directly to the autopilot OR use a power distribution board (PDB).</p>
+<p>When using a PDB, connect the power (+), ground (-), and signal (s)
+wires for each ESC to the PDB according to motor number. Find your frame
+type below to determine the assigned order of the motors. Then connect
+the signal wires from the PDB to the main output signal pins on the
+autopilot  (ensuring that the motor order numbers match the
+main output pin numbers on the controller). If you are using a power
+module, it is optional to connect the power and ground wires from the
+PDB to the autopilot board. If you would like to use these
+cables in addition to or instead of the power module or as a common
+point for low current servos, connect the ground (-) wire to a main
+output ground (-) pin and the power (+) wire to a main output power (+) pin.</p>
+</section>
+<section id="kde-and-other-opto-isolated-escs">
+<h2>KDE (and other) Opto Isolated ESCs<a class="headerlink" href="#kde-and-other-opto-isolated-escs" title="Link to this heading">¶</a></h2>
+<p>The KDEXF-UAS and KDEF-UASHV Series are opto-isolated and do not provide
+BEC power output for the peripheral equipment. They require +5V to power
+the opto-isolator and while the Pixhawk can be powered from the servo
+rail, it does not provide +5V to the servo rail. The ESCs must be
+powered by a BEC or with a jumper from an unused connector on the board.
+It is strongly recommended that you use a BEC to power the rail rather
+than a jumper.</p>
+<a class="reference external image-reference" href="../_images/Pixhawk-Correction-to-KDE-ESC2.png"><img alt="../_images/Pixhawk-Correction-to-KDE-ESC2.png" src="../_images/Pixhawk-Correction-to-KDE-ESC2.png" /></a>
+<p>The KDE ESCs have fixed PWM ranges so you must manually set the output
+range of each PWM signal so that RCx_MIN is 1100 and RCx_MAX is 1900us
+using the Advanced Parameter or Full Parameter Settings Page in the
+planner.</p>
+</section>
+<section id="pixhawk-esc-issues">
+<h2>Pixhawk ESC issues<a class="headerlink" href="#pixhawk-esc-issues" title="Link to this heading">¶</a></h2>
+<p>Some ESCs have been reported as not working with Pixhawk.</p>
+<p>The Pixhawk should work with every ESC that works with a normal RC
+receiver (because it sends the same type of signal) but there is <a class="reference external" href="https://github.com/ArduPilot/ardupilot/issues/2094">one known exception, the EMAX ESC</a>.</p>
+<p>In most cases problems are due to incorrect wiring. Always connect signal and ground.
+Check your ESC type to decide how to connect the +5V line.
+For Pixhawk you must connect both the signal and the signal ground in order to make the ESC work.</p>
+<p>For more information see <a class="reference external" href="https://youtu.be/6C1YG1e2aTo">this video</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="common-vibration-damping.html" class="btn btn-neutral float-left" title="Vibration Damping" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="common-installing-3dr-ublox-gps-compass-module.html" class="btn btn-neutral float-right" title="UBlox GPS + Compass Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+    Questions, issues, and suggestions about this page can be raised on the <a href="https://discuss.ardupilot.org">forums</a>. Issues and suggestions may be posted on the forums or the <a href="https://github.com/ArduPilot/ardupilot_wiki/issues/new?title=Connect ESCs and Motors&amp;body=[Connect ESCs and Motors](https://ardupilot.org/copter/docs/connect-escs-and-motors.html)%20-%20Describe%20the%20issue/suggestion%20and%20improve%20the%20title.%20Please%20keep%20a%20link%20to%20the%20original%20article%20if%20relevant.&amp;labels=docs">Github Issue Tracker</a>.
+    <hr/>
+
+  <div role="contentinfo">
+    <p><a style="float:right;" rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a>&#169; Copyright 2024, ArduPilot Dev Team.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

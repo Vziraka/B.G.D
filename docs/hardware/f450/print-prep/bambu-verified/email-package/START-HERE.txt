@@ -1,0 +1,82 @@
+BGD - REMAINING FIVE PETG PRINT PROJECTS
+Verified September 26, 2026 with Bambu Studio 02.08.02.61.
+
+REQUESTED OUTPUT: SIX PHYSICAL PIECES
+One camera bracket, one forward-depth bracket, TWO battery end stops,
+one flight-stack adapter, one downward-sensor cradle.
+The battery file already contains both stops: print that project once.
+The Pi carrier is NOT included; it was provided in a separate package.
+
+MACHINE / MATERIAL
+These settings are for Bambu Lab X1E, standard 0.4 mm hardened-steel
+nozzle, gold Textured PEI Plate and 1.75 mm Polymaker PETG.
+Use the saved BGD Polymaker PETG provisional material profile.
+Do not substitute PLA or a different PETG formula without reviewing settings.
+On the owner's lab machine, PETG was loaded in AMS slot 4. On another
+machine, select the actual PETG slot there; do not assume slot 4 is PETG.
+Project filament 1 is a project label, not physical AMS slot 1.
+
+OPERATOR STEPS
+1. Extract the ZIP. Open ONE .3mf in Bambu Studio AS A PROJECT with its
+   settings. Bambu Studio 02.08.02.61 is the verification version.
+2. Retain the saved size, orientation, process and material settings.
+   Do not use geometry-only import, auto-orient, scaling or combine all
+   projects into a single project: their support settings differ.
+3. Slice plate locally. These are EDITABLE projects without embedded
+   runnable G-code, so a fresh slice is required. Confirm correct X1E,
+   0.4 mm nozzle, Textured PEI, PETG and no unresolved slice errors.
+4. Inspect preview, retaining the saved support blockers in the camera
+   and forward-depth projects. Map project filament 1 to physical PETG.
+5. Obtain the owner's explicit approval before sending/starting printing.
+   No print was sent or started during this verification.
+6. After printing, let the plate/part cool. Remove brim and supports
+   carefully, especially around small screw bosses and tie slots.
+   Deliver all six cleaned pieces. Physical fit and strength checks follow.
+
+SAVED ORIENTATIONS / SUPPORTS
+camera-bracket.3mf: base down; tree(auto), default style; four NONPRINTING
+  screw-hole support blockers. Small-overhang skipping OFF and bridge
+  support enabled so the projecting screw bosses receive supports.
+  Remove tree branches/feet from the base tie slots as well as the bosses.
+forward-depth-bracket.3mf: base down; normal/grid supports; two
+  NONPRINTING screw-hole support blockers.
+battery-end-stops.3mf: both stops feet down; supports OFF.
+electronics-stack-adapter.3mf: broad face down, feet upward; supports OFF.
+electronics-flow-support.3mf: flat ring/root down; supports OFF.
+
+COMMON SETTINGS
+0.20 mm layers; 4 walls; 5 top/bottom layers; 30% gyroid where applicable.
+250 C nozzle / 65 C textured bed; active chamber target 0; auxiliary fan0.
+Part fan20-60%; material flow limit8 mm3/s. Outer/inner walls40/60 mm/s;
+first layer20 mm/s. Outer brim3 mm with0.2 mm separation.
+Support top gap0.2 mm, XY gap0.4 mm where support is enabled.
+Standard machine startup may use a hotter purge than the part-printing
+nozzle setting. Machine start/end code has not been customized here.
+
+VERIFIED BAMBUSTUDIO ESTIMATES (five separate jobs)
+Camera bracket:       35m25s / 4.29g
+Forward depth:        28m58s / 3.40g
+Battery stops, pair:  45m39s / 9.05g
+Flight-stack adapter: 36m54s / 6.86g
+Downward cradle:      28m36s / 4.56g
+TOTAL: approximately2h56m /28.16g including temporary support/brim.
+Actual times/material depend on the machine and calibration.
+
+DIGITAL VERIFICATION
+All five sliced successfully in Bambu Studio with no recorded warnings.
+Original printable mesh preserved within0.001 mm after harmless centering,
+with saved orientations retained. Four camera and two depth screw-hole
+blockers preserved. No generated support paths inside those six bores.
+Critical extrusion layers inspected, including support under camera bosses.
+Evidence is in review.json and the five critical-layer PNGs.
+These are ready for prototype printing under this setup. Physical fit,
+adhesion, layer bonding, support removal and flight strength are not proven
+by slicing. Do not force screws through blocked or undersized openings.
+
+PROFILE PROVENANCE
+Original profiles derive from OrcaSlicer2.4.2 bundled BBL profiles:
+https://github.com/OrcaSlicer/OrcaSlicer/tree/v2.4.2/resources/profiles/BBL
+License included as ORCASLICER-LICENSE.txt (AGPL-3.0).
+Projects re-exported and sliced locally with BambuStudio02.08.02.61:
+https://github.com/bambulab/BambuStudio/wiki/Command-Line-Usage
+Mount geometry is original BGD CAD. No email has been sent by the agent.

@@ -1,0 +1,49 @@
+{
+  "status": "REVIEWED_Q74_OWNER_AMENDMENT_CIRCUIT_UNCHANGED",
+  "date": "2026-09-10",
+  "reviewed_input_changes": [
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.json",
+      "before_sha256": "3a5ef4d945e4daecf634ff9dfb73ab5adb9fc1eaf9de47aeaef923c06f7dd596",
+      "after_sha256": "63b1d04b0a2a97747c8f6ef2da69a56616883003437225ed2f35e70687ac0015"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/firmware-manifest.md",
+      "before_sha256": "b11e1b6296550f281d847ac5a9c4d87fb86824a3c0bf1442291c6e15c9962f30",
+      "after_sha256": "959edb624d52476de7c7ce616681a87688ca205f2d63ccb0ac717401a664a4d0"
+    },
+    {
+      "path": "docs/hardware/baseline-r1/safety-state-tables.md",
+      "before_sha256": "7e7d40489698dd593c30d49dc1edeb433e23fcc3e665d0f6ffd62ec5f26c8175",
+      "after_sha256": "0f79caf4d448ee4fae0941a02e73716098a047e41fbdcbcfa44d466c83c81388"
+    }
+  ],
+  "decision": "Latest owner decision supersedes 15 (formerly20) with at least11 useful minutes; reserve floor20Wh, multiplier1.5 and initial120-second recovery model unchanged; workload6.6/3.3/1.1minutes; no automatic loaded-cargo duration requirement.",
+  "assessment": "Acceptance/design-margin metadata and prose only. No selected component, net, pin, rail, wire, native schematic or loadable operating setting changed. Source review retains preceding15-minute amendment hashes as history. Model and V26/S11 evidence do not pass physical Q74.",
+  "native_sources_byte_identical": 18,
+  "physical_qualification": "NONE",
+  "prior_amendments": [
+    {
+      "date": "2026-09-10",
+      "decision": "Owner supersedes 20 with 15 useful minutes; reserve floor 20 Wh, multiplier 1.5 and initial 120-second recovery model unchanged; workload 9/4.5/1.5 minutes; no automatic 15-minute loaded-cargo claim.",
+      "reviewed_input_changes": [
+        {
+          "path": "docs/hardware/baseline-r1/firmware-manifest.json",
+          "before_sha256": "7c21a7930929facbf29bbf0925beb0b2bbfc9e7b16675010eb72e40fe12d2343",
+          "after_sha256": "3a5ef4d945e4daecf634ff9dfb73ab5adb9fc1eaf9de47aeaef923c06f7dd596"
+        },
+        {
+          "path": "docs/hardware/baseline-r1/safety-state-tables.md",
+          "before_sha256": "92e24cba9ef37dcd8738f85bb3089528f56da5fa4ffd65cab6c02dd4ec5dc8b5",
+          "after_sha256": "7e7d40489698dd593c30d49dc1edeb433e23fcc3e665d0f6ffd62ec5f26c8175"
+        },
+        {
+          "path": "docs/hardware/baseline-r1/firmware-manifest.md",
+          "before_sha256": "5a496182804c619e93dc4c38729db934acb0974ed22f064727400d6d7f1bfff7",
+          "after_sha256": "b11e1b6296550f281d847ac5a9c4d87fb86824a3c0bf1442291c6e15c9962f30"
+        }
+      ]
+    }
+  ],
+  "paper_design_target": "Provisional12.1 useful minutes under moderate model (10% duration headroom); separate from reserve and physical acceptance, not an uncertainty guarantee."
+}

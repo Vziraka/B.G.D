@@ -1,0 +1,105 @@
+[
+  {
+    "part": "battery-end-stops",
+    "slicer": "BambuStudio 02.08.02.61",
+    "mesh_matches_oriented_source_0_001mm_after_translation": true,
+    "source_translation": [
+      0.0,
+      28.5,
+      0.0
+    ],
+    "support_blockers": 0,
+    "support_in_functional_openings": [],
+    "warnings": [],
+    "seconds": 2739,
+    "grams": 9.05,
+    "layers": 90,
+    "support_type": "normal(auto)",
+    "support_style": "grid",
+    "supports_enabled": "0",
+    "physical_fit_verified": false
+  },
+  {
+    "part": "camera-bracket",
+    "slicer": "BambuStudio 02.08.02.61",
+    "mesh_matches_oriented_source_0_001mm_after_translation": true,
+    "source_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "support_blockers": 4,
+    "support_in_functional_openings": [],
+    "warnings": [],
+    "seconds": 2125,
+    "grams": 4.29,
+    "layers": 153,
+    "support_type": "tree(auto)",
+    "support_style": "default",
+    "supports_enabled": "1",
+    "physical_fit_verified": false,
+    "support_remove_small_overhang": "0",
+    "bridge_no_support": "0",
+    "support_correction": "Enable supports for small projecting bosses; keep four screw-hole blockers"
+  },
+  {
+    "part": "electronics-flow-support",
+    "slicer": "BambuStudio 02.08.02.61",
+    "mesh_matches_oriented_source_0_001mm_after_translation": true,
+    "source_translation": [
+      55.0,
+      0.0,
+      0.0
+    ],
+    "support_blockers": 0,
+    "support_in_functional_openings": [],
+    "warnings": [],
+    "seconds": 1716,
+    "grams": 4.56,
+    "layers": 27,
+    "support_type": "normal(auto)",
+    "support_style": "grid",
+    "supports_enabled": "0",
+    "physical_fit_verified": false
+  },
+  {
+    "part": "electronics-stack-adapter",
+    "slicer": "BambuStudio 02.08.02.61",
+    "mesh_matches_oriented_source_0_001mm_after_translation": true,
+    "source_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "support_blockers": 0,
+    "support_in_functional_openings": [],
+    "warnings": [],
+    "seconds": 2214,
+    "grams": 6.86,
+    "layers": 30,
+    "support_type": "normal(auto)",
+    "support_style": "grid",
+    "supports_enabled": "0",
+    "physical_fit_verified": false
+  },
+  {
+    "part": "forward-depth-bracket",
+    "slicer": "BambuStudio 02.08.02.61",
+    "mesh_matches_oriented_source_0_001mm_after_translation": true,
+    "source_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "support_blockers": 2,
+    "support_in_functional_openings": [],
+    "warnings": [],
+    "seconds": 1738,
+    "grams": 3.4,
+    "layers": 152,
+    "support_type": "normal(auto)",
+    "support_style": "grid",
+    "supports_enabled": "1",
+    "physical_fit_verified": false
+  }
+]

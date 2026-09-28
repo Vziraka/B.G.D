@@ -1,6 +1,19 @@
 # B.G.D research index
 
-Continue new-product planning at the [phone/onboard entry point](../phone-drone/README.md). It separates the simulated phone slice from parallel aircraft feasibility.
+**Current direction:** [Issue10 current requirements](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#current-checkpoint) supersede the former architecture, cargo and endurance requirements below. This index catalogs dated evidence; each numerical result applies only to its recorded configuration. Begin new work at the [project map](../../.scratch/biometric-guard-drone/map.md).
+
+## September20 F450 precheckout evidence
+
+- [September27 preliminary flight-speed estimate](flight-speed-estimate-2026-09-27.md): roughly 40 mph under assumed tilt/drag; illustrative 30–50 mph scenarios, not a measured maximum or guaranteed range.
+
+- [Mechanical fit and clearance](precheckout-mechanical-2026-09-20.md)
+- [Propulsion, exact prop identity and endurance sensitivity](precheckout-propulsion-2026-09-20.md)
+- [Electrical interfaces and manufacturer firmware updates](precheckout-electrical-2026-09-20.md)
+- [Owner buying-order output](../buying-order-2026-09-20.md); current selections remain in the [BOM](../increment-1-2-bom.md).
+
+## Previous-revision navigation and evidence
+
+Continue current work at the [coordinated pre-purchase decision report](../prepurchase-decision-2026-09-10.md) and [phone/onboard entry point](../phone-drone/README.md). The later September 10 owner amendment changes Q74 to **11 useful minutes plus unchanged independent reserve**, preserving the full no-extra-cargo configuration and workload proportions. Earlier twenty-minute requirements and their pass/fail conclusions in this evidence library are historical; calculations must use the current configuration and revised target. Loaded delivery has no automatic 11-minute target.
 
 **Latest scope amendment:** the [phone/onboard product direction](../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md#2026-09-10-pc-retirement-clarified-as-dormant-not-a-reference-workstream) makes the standalone PC app dormant history, not reference tooling to finish. Active work is Issue11 hardware feasibility/engineering and Issue12's phone/onboard simulator; manufacturing scope remains to be settled before dependent design release.
 
@@ -14,8 +27,13 @@ Reports consolidated on 2026-08-30 retain source branch/commit or uncommitted-so
 
 ## Current work and controlling evidence
 
+The [phone voice and autonomy connectivity assessment, September 10](phone-voice-autonomy-connectivity-2026-09-10.md) supports the ongoing owner requirements discussion: phone speech, onboard execution, optional online language assistance, and separate command-link assessment. It is research, not an implemented or qualified architecture.
+
 | Report | Reading status |
 | --- | --- |
+| [Object detection and tracking options, September18](object-detection-tracking-options-2026-09-18.md) | Primary-source comparison of single-object visual tracking, tracking-by-detection and open-vocabulary detection for the Pi desk. Recommends OpenCV Zoo ViTTrack first and keeps YOLOE as a later acquisition/reacquisition experiment; it is not flight qualification. |
+| [Current mass/cost/energy assessment](../hardware/prepurchase-2026-09-10/assessment.md) and [integration assessment](../hardware/prepurchase-2026-09-10/integration-assessment.md) | September 10 pre-purchase evidence against amended Q74; complete obligation ledgers, calculated endurance/CG and preliminary fit/manufacturing risks. No procurement or fabrication release. |
+| [Current iPhone route assessment](iphone-route-recheck-2026-09-10.md) | Remote Mac access is the expected native build direction; provider selection, purchase and actual-device validation remain pending. |
 | [PC face/voice capture assessment](pc-biometric-capture-assessment-2026-09-06.md) | Evaluation rationale after real rejection. The later [Ticket03 checkpoint](../../.scratch/pc-biometric-desk/issues/03-single-action-verification.md#current-checkpoint) controls implemented diagnostics, recording-readiness correction and pending consented study. No recognition improvement or acceptance is established. |
 | [PC biometric model evaluation](pc-biometric-model-evaluation-2026-09-06.md) | Primary-source evidence for Vosk segment/utterance limits, SFace capture/threshold transfer, ECAPA as a controlled speaker comparator and conditional face alternatives. No replacement selected or installed. |
 | [Source One V6 7-inch revision audit](source-one-v6-revision-audit-2026-09-05.md) | Source evidence retains the unresolved 2/2.5 mm discrepancy. The later [robust-design checkpoint](../../cad/robust-aio-review.md) permits digital work without correspondence; the inquiry must not be sent. Received measurements still gate sensitive fabrication. |
