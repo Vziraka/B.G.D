@@ -1,0 +1,148 @@
+{
+    "error_string": "Success.",
+    "export_time": 1112,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 111,
+    "return_code": 0,
+    "sliced_plates": [
+        {
+            "feature_type_times": {
+                "Bottom surface": 152.86459350585938,
+                "Bridge": 464.6305847167969,
+                "Brim": 394.9345703125,
+                "Custom": 538.6570434570313,
+                "Flush": 29.0,
+                "Gap infill": 309.62969970703125,
+                "Inner wall": 2725.17529296875,
+                "Internal solid infill": 1351.77099609375,
+                "Outer wall": 2066.48583984375,
+                "Overhang wall": 159.14743041992188,
+                "Sparse infill": 205.93331909179688,
+                "Support": 740.4541625976563,
+                "Support interface": 181.0196075439453,
+                "Support transition": 107.2781753540039,
+                "Top surface": 490.7561950683594,
+                "Travel": 889.31689453125,
+                "Undefined": 873.8504638671875
+            },
+            "filament_change_times": 0,
+            "filaments": [
+                {
+                    "filament_id": "",
+                    "id": 1,
+                    "main_used_g": 39.61945724487305,
+                    "total_used_g": 39.61946105957031
+                }
+            ],
+            "generate_support_material_time": 201,
+            "id": 1,
+            "infill_time": 429,
+            "layer_filament_change": 0,
+            "main_predication": 10211.9267578125,
+            "make_perimeters_time": 197,
+            "obj_cached_cnt": 0,
+            "objects": [
+                {
+                    "bbox": {
+                        "depth": 78.0,
+                        "height": 10.199999809265137,
+                        "width": 57.0,
+                        "x": 31.5,
+                        "y": 37.0,
+                        "z": -4.632568106899271e-09
+                    },
+                    "id": 5,
+                    "name": "pi-carrier-core-draft.stl",
+                    "triangle_count": 1024
+                },
+                {
+                    "bbox": {
+                        "depth": 63.0,
+                        "height": 18.0,
+                        "width": 68.0,
+                        "x": 113.0,
+                        "y": 36.5,
+                        "z": 0.0
+                    },
+                    "id": 9,
+                    "name": "battery-end-stops.stl",
+                    "triangle_count": 1272
+                },
+                {
+                    "bbox": {
+                        "depth": 29.0,
+                        "height": 20.5,
+                        "width": 22.0,
+                        "x": 200.0,
+                        "y": 55.5,
+                        "z": 0.0
+                    },
+                    "id": 13,
+                    "name": "forward-depth-bracket.stl",
+                    "triangle_count": 1252
+                },
+                {
+                    "bbox": {
+                        "depth": 64.0,
+                        "height": 6.0,
+                        "width": 48.0,
+                        "x": 38.0,
+                        "y": 144.0,
+                        "z": 0.0
+                    },
+                    "id": 17,
+                    "name": "electronics-stack-adapter.stl",
+                    "triangle_count": 1056
+                },
+                {
+                    "bbox": {
+                        "depth": 38.0,
+                        "height": 5.5,
+                        "width": 52.0,
+                        "x": 120.0,
+                        "y": 156.0,
+                        "z": 0.0
+                    },
+                    "id": 21,
+                    "name": "electronics-flow-support.stl",
+                    "triangle_count": 284
+                },
+                {
+                    "bbox": {
+                        "depth": 33.0,
+                        "height": 30.5,
+                        "width": 30.0,
+                        "x": 199.0,
+                        "y": 157.5,
+                        "z": 0.0
+                    },
+                    "id": 25,
+                    "name": "camera-bracket.stl",
+                    "triangle_count": 2228
+                }
+            ],
+            "sliced_time": 2358,
+            "sliced_time_with_cache": 1373,
+            "total_predication": 10793.0869140625,
+            "triangle_count": 7116,
+            "warning_message": ""
+        }
+    ],
+    "sparse_infill_density": 30.0,
+    "upward_compatible_machine": [
+        "Bambu Lab P1S 0.4 nozzle",
+        "Bambu Lab P1P 0.4 nozzle",
+        "Bambu Lab X1 0.4 nozzle",
+        "Bambu Lab X1 Carbon 0.4 nozzle",
+        "Bambu Lab A1 0.4 nozzle",
+        "Bambu Lab H2D 0.4 nozzle",
+        "Bambu Lab H2D Pro 0.4 nozzle",
+        "Bambu Lab H2S 0.4 nozzle",
+        "Bambu Lab P2S 0.4 nozzle",
+        "Bambu Lab H2C 0.4 nozzle",
+        "Bambu Lab X2D 0.4 nozzle",
+        "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 4
+}

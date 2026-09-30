@@ -2,7 +2,7 @@
 
 Prepared September 25, 2026. **Full-project deadline: September 30, 2026, 12:00 p.m. Eastern Daylight Time.** This is an instruction manual and release checklist, not a second progress log. Actual results belong in [Issue12](../../../.scratch/biometric-guard-drone/issues/12-phone-onboard-interaction.md); read [CURRENT](../../CURRENT.md) before each session. [Issue10](../../../.scratch/biometric-guard-drone/issues/10-milestone-ladder.md) controls product requirements, and the [live parts list](../../increment-1-2-bom.md) controls equipment selection.
 
-**Readiness:** the bare frame/legs are assembled by owner report. Motors, several wiring parts and the HOOVO battery are received, but fit and electrical operation are unqualified. Flight electronics are expected September 28. The Pi desk demonstration works; it does not control a qualified aircraft. The instructions below make the available preparation explicit. They do **not** make unfinished wiring design, flight setup or autonomous software executable. Those cards say **NOT RELEASED** and identify exactly what the agent must supply next. Never invent a missing value, substitute a similar-looking connector, or advance because the calendar says to.
+**Readiness, September 28:** the owner reports all ordered parts received, including the flight-controller/ESC stack, GPS and flow sensor; the prints are expected September 29 morning. Four motors are mounted and the battery has been dry-fitted by owner report, but actual variant, electrical operation and printed fit are unqualified. The Pi desk demonstration works; it does not control a qualified aircraft. Start the received-stack check with the [unpowered A5 card](stack-and-motor-route-dry-fit-2026-09-28.md); use the [print intake and fit order](print-intake-fit-2026-09-29.md) when the pieces arrive. The [USB-only board baseline](micoair743-usb-baseline-2026-09-28.md) is read-only and follows identification. The [C1 power map](c1-power-map-draft-2026-09-28.md) and [C2 charging card](c2-battery-charge-draft-2026-09-28.md) are engineering drafts, **not releases** for soldering, charging or aircraft power. Never invent a missing value, substitute a similar-looking connector, or advance because the calendar says to.
 
 ## How to follow this guide
 
@@ -71,6 +71,8 @@ There is no substantiated schedule for completing all remaining requirements by 
 ### A5. Stage the remaining mounts and incoming electronics
 
 **Status:** identification and unpowered layout only; final installation awaits exact-part review. **Power:** all disconnected, props off. **Have ready:** [mount reference](../f450/README.md), received parts and labeled fasteners.
+
+**Received-stack starting card:** [identify the original FC/50 A ESC and dry-fit one motor route without cutting](stack-and-motor-route-dry-fit-2026-09-28.md). Follow one check at a time. Its trial position must be repeated with the actual stack print before any motor-lead cut.
 
 ![The named mount prototypes, for identification rather than proof of physical fit](../f450/mount-set-preview.png)
 
@@ -164,11 +166,13 @@ Technique reference: heat the work so solder spreads over the intended surfaces 
 
 ## C — Engineering release and powered build
 
-**September27 narrow exception:** [LED-star lead preparation, revision 1](led-star-leads-2026-09-27.md) releases only the two disconnected white lighting boards' marked `+`/`−` pigtail joints. It does not release the BuckPuck, aircraft power, LED mounting, or any C1 harness joint. Owner may use that card now with received parts; no repeat practice assignment or routine photo is required.
+**September29 isolated pre-print assemblies:** [BETAFPV Nano receiver lead preparation](elrs-nano-receiver-harness-2026-09-29.md) conditionally releases its four mapped low-voltage solder joints after the actual cable/pad/route checks. [LED-star lead and heatsink preparation, revision 3](led-star-leads-2026-09-27.md) releases the two disconnected white lighting boards' marked `+`/`−` pigtail joints; a meter pass is required before bonding a checked star to its supplied taped heatsink. Neither card releases plugging the Nano into the FC, the BuckPuck, aircraft power, heatsink-to-aircraft retention or any C1 high-current harness joint. Owner reports both light-board pigtail pairs soldered and the Nano T antenna seated; neither has an electrical pass. No repeat practice assignment or routine photo is required.
 
 The following are detailed stage contracts. They tell the beginner what will be provided, what order to follow and how completion is checked. They are **not yet executable connection, charging, firmware or flight instructions**. The agent owns preparing and validating each missing package; the owner should not need to infer pin numbers, settings or acceptable readings from prose.
 
 ### C1. Receive the final wiring package — NOT RELEASED
+
+**Current supporting draft:** [C1 power and battery-monitor net map](c1-power-map-draft-2026-09-28.md). It resolves intended topology and source-checks key voltage/current interfaces, but lacks received-board orientation, final measured lengths, termination and meter acceptance. It does not release a joint. The isolated [GPS cable pin check](gps-cable-pin-check-2026-09-28.md) can identify a cable before connection.
 
 **Prerequisites/tools:** A5 actual parts/route inspection and B5 practice pass; wire, connectors, insulation, meter and solder tools. **Power:** everything disconnected, props off.
 
@@ -182,6 +186,8 @@ The following are detailed stage contracts. They tell the beginner what will be 
 **Expected:** checked drawing and matching tested assembly. **Stop/fix:** any ambiguous view, unexpected wire color, missing pin label or mismatched reading stops that connection. **Evidence:** drawing revision, joint images and full measurement table. **Known architecture only:** EC5 battery path → ACS37220 sensor → ESC branch plus separately fused Matek branch, later lamp branch downstream too. This arrow sequence is not a wiring diagram.
 
 ### C2. Prepare and charge the battery — NOT RELEASED
+
+**Current supporting draft:** [exact HOOVO/M450/ProgressiveRC first-charge card](c2-battery-charge-draft-2026-09-28.md). It cannot release charging until actual pack label/condition, lead polarity, voltage and supervised location are checked. The M450 can begin charging automatically when both battery connections match, so do not expect a guaranteed pre-start cell screen.
 
 **Prerequisites/tools:** A3 battery inspection; received M450 charger and exact charge/balance leads; charger/battery manuals and appropriate charging location. **Power:** aircraft unplugged; charger initially off.
 
@@ -210,6 +216,8 @@ The following are detailed stage contracts. They tell the beginner what will be 
 **Expected:** stable correct supplies, trustworthy monitoring and no overheating/faults. **Stop/fix:** unexpected reading, smell, smoke or heat means use the prepared disconnect procedure and diagnose unpowered. **Evidence:** test table, configuration, temperatures and duration. **Next:** C4.
 
 ### C4. Controller, radio and sensors — NOT RELEASED
+
+**Preparation only:** the [USB-only original MicoAir743 baseline](micoair743-usb-baseline-2026-09-28.md) and [LiteRadio 4 settings baseline](literadio4-usb-baseline-2026-09-28.md) permit identity/backup reads without firmware, parameter or flight changes. Neither is a complete C4 release.
 
 **Prerequisites/tools:** identified flight controller/radio/receiver/GPS/flow modules; supported USB lead, Windows setup software and C3 for battery-powered portions. **Power:** props off; USB-only and battery-powered sections must be labeled separately.
 

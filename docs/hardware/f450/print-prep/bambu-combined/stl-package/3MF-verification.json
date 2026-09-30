@@ -1,0 +1,65 @@
+{
+  "printer": "Bambu X1E 0.4 hardened steel",
+  "material": "Polymaker PETG",
+  "plate": "Textured PEI",
+  "total_seconds": 10793.6806640625,
+  "filament_g": 39.61946105957031,
+  "roundtrip_success": true,
+  "roundtrip_estimate_matches": true,
+  "generated_path_bounds_mm": [
+    [
+      28.786,
+      31.786
+    ],
+    [
+      231.714,
+      208.714
+    ]
+  ],
+  "warnings": [],
+  "parts": [
+    {
+      "name": "pi-carrier-core-draft",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 0,
+      "support_extrusion_mm": 947.958,
+      "support_in_functional_openings": []
+    },
+    {
+      "name": "battery-end-stops",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 0,
+      "support_extrusion_mm": 0,
+      "support_in_functional_openings": []
+    },
+    {
+      "name": "forward-depth-bracket",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 2,
+      "support_extrusion_mm": 139.594,
+      "support_in_functional_openings": []
+    },
+    {
+      "name": "electronics-stack-adapter",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 0,
+      "support_extrusion_mm": 0,
+      "support_in_functional_openings": []
+    },
+    {
+      "name": "electronics-flow-support",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 0,
+      "support_extrusion_mm": 0,
+      "support_in_functional_openings": []
+    },
+    {
+      "name": "camera-bracket",
+      "mesh_and_orientation_preserved": true,
+      "support_blockers": 4,
+      "support_extrusion_mm": 117.952,
+      "support_in_functional_openings": []
+    }
+  ],
+  "qualification": "Software prototype-print verification only; physical fit and strength not established."
+}

@@ -1,0 +1,53 @@
+BGD - ALL SEVEN PIECES ON ONE PLATE
+Verified September 28, 2026 with Bambu Studio 02.08.02.61.
+
+CONTENTS
+1 Pi carrier, 1 camera bracket, 1 forward-depth bracket, 2 battery end
+stops, 1 electronics-stack adapter, 1 electronics-flow support.
+Six models produce seven separate physical pieces in ONE print job.
+Do not print additional copies of the paired battery stops.
+
+PRINTER / MATERIAL
+Bambu Lab X1E, standard 0.4 mm hardened-steel nozzle, gold Textured PEI
+Plate, 1.75 mm Polymaker PETG. Saved settings: 250 C nozzle, 65 C bed,
+0.20 mm layers, 4 walls, 5 top/bottom layers, 30% gyroid, outer brim 3 mm.
+Chamber target 0; auxiliary fan off; part fan 20-60%; max flow 8 mm3/s.
+The standard X1E startup can use a hotter purge than the print temperature.
+
+HOW TO USE
+1. Extract this ZIP and open BGD-All-Parts-X1E-PETG.3mf in Bambu Studio
+   AS A PROJECT, keeping its settings. Do not import geometry only.
+2. Keep saved positions, orientation, scale, and per-object settings.
+   Global support is OFF; overrides correctly enable it for THREE parts.
+   Do not switch all support on/off or remove the six support blockers.
+   Print sequence is BY LAYER, so all pieces build together.
+3. Slice plate. Confirm X1E / 0.4 / Textured PEI / PETG and inspect preview.
+   Expected estimate is approximately 3 hours / 39.62 g including supports
+   and brims. Timing can vary with slicer version and printer calibration.
+4. Map project filament 1 to the actual PETG slot. On the owner's machine
+   PETG was reported in AMS slot 4; confirm it is still PETG. On another
+   machine use its actual PETG slot. Project filament 1 is NOT AMS slot 1.
+5. Obtain the owner's explicit manual approval BEFORE sending or starting.
+   This package does not constitute that approval. No job has been sent.
+6. Let parts cool, remove brims and temporary supports, and inspect.
+   Pi: remove support under the elevated ring, keeping four tie tunnels open.
+   Camera: remove tree branches/feet, including those in base tie slots;
+   protect the small screw bosses. Depth bracket: remove boss supports.
+   Battery stops, stack adapter and flow support have supports disabled.
+   Deliver all seven pieces; physical fit/strength checks still follow.
+
+VERIFICATION
+Saved meshes, orientation and support overrides match the prior checked
+projects. Six bore blockers retained. Combined job sliced successfully,
+then the editable export was reloaded and sliced again: same estimates
+within one second, all objects present, and no recorded slice warnings.
+Actual generated paths stay inside the bed; camera/depth bores and Pi tie
+tunnels have no support intrusion. Critical toolpath layers reviewed.
+The 3MF is editable with NO embedded runnable G-code: slice on destination.
+This is prototype-print preparation, not physical fit or flight validation.
+All parts on one plate simplify handling; a failed part can affect the job.
+
+Evidence: plate-layout.png, critical-layers/, verification.json.
+Original separate projects remain available for individual reprints.
+Profile derivation: OrcaSlicer 2.4.2 BBL presets, subsequently exported and
+sliced with Bambu Studio 02.08.02.61. License included.

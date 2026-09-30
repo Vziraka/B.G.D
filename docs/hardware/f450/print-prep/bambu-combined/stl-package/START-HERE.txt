@@ -1,0 +1,37 @@
+BGD - ONE STL, ALL SEVEN PIECES
+September 28, 2026
+
+BGD-All-Seven-Parts-One-Plate.stl contains the same six models / seven
+physical pieces and relative layout as the verified combined Bambu project.
+Two battery stops are already present. Import at 100% scale in MILLIMETERS.
+Overall occupied size: 197.5 x 171.5 x 30.5 mm.
+
+STL VERIFICATION
+7 closed manifold shells, consistent face winding, no degenerate triangles.
+7,116 triangles; all printable geometry matches the verified combined 3MF
+to better than 0.001 mm. No temporary supports or blocker cubes exported.
+Bambu Studio 02.08.02.61 imported and exported this actual STL successfully;
+its geometry and relative arrangement survived within 0.001 mm.
+
+IMPORTANT FOR PRINTING
+STL stores geometry only. It does NOT retain PETG settings, supports,
+support blockers, object names or AMS mapping. Import verification is not
+a verification of whatever settings are selected later in the slicer.
+For the easiest checked X1E/PETG print, open the INCLUDED
+BGD-All-Parts-X1E-PETG.3mf AS A PROJECT and follow 3MF-PRINT-INSTRUCTIONS.txt.
+It has the identical printable shapes plus the necessary support setup.
+Do not load both STL and 3MF onto the same plate: that duplicates the parts.
+
+If using the STL alone, an operator must split it to objects while retaining
+positions, enable appropriate supports for Pi/camera/depth only, and recreate
+the six camera/depth hole blockers by referring to the included 3MF. The
+camera needs tree supports with small-overhang skipping OFF and bridge
+support enabled. Pi needs normal/grid build-plate-only support. Depth needs
+normal/grid support. Other parts need no support. Re-slice and inspect all
+holes/tunnels and supported bosses before accepting that new setup.
+STL import may recenter the whole arrangement; relative spacing is retained.
+
+Included 3MF was sliced and re-sliced successfully for X1E / hardened 0.4 /
+gold Textured PEI / Polymaker PETG: about 3 hours and 39.62 g.
+Physical fit and strength remain to be tested after printing.
+No job has been sent or started. Owner manual approval is required first.
