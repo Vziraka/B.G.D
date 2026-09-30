@@ -43,13 +43,48 @@ State these whenever citing the numbers; they are why the conclusion below is na
 - Both readings are needed. Neither set alone decides this.
 - The single bare miss on the owner's commands is `"my backpack"` where the label says `"backpack"` — possessive serialization, not misunderstanding.
 
+## The per-check ledger, and why "narrow the layer" was also wrong
+
+Grouping the 50 saves and 12 losses by the branch that produced them gives a per-check ledger. Derive it yourself from `rev14_counterfactual.result.message` in the raw files; the message identifies the branch uniquely.
+
+| Check | Saves | Losses | Net |
+|---|---:|---:|---:|
+| `_unsupported()` on affirmative unavailable / bypass / flight | 18 | 0 | +18 |
+| `_source_grounded_plan` building an in-scope plan | 12 | 1 | +11 |
+| default `_clarification()` on negation without an affirmative action | 4 | 1 | +3 |
+| planned `status` after a negated flight or unavailable clause | 3 | 0 | +3 |
+| unconfident target-only correction | 3 | 0 | +3 |
+| `_relative_target_is_ungrounded` | 3 | 0 | +3 |
+| ambiguous action polarity | 1 | 0 | +1 |
+| `_has_unaccounted_explicit_clause` → "missed part of the request" | 5 | 7 | **−2** |
+| scout without `targetless_survey` | 1 | 2 | **−1** |
+| `_model_plan_adds_extra_step` / `_model_plan_matches_source_actions` | 0 | 1 | **−1** |
+
+Two things follow, and the second one was learned the hard way.
+
+**The plan builder earns its place.** `_source_grounded_plan` measures +11, so deleting it — the core of both the 28 September replacement and the first version of this handoff — is wrong. Nine of its twelve saves are a single behaviour: a negated unavailable clause followed by a valid request. "Never take off; find the blue bowl", "I don't want you to land; count people", "Don't fly beyond the doorway; count the visible red cups" — the bare model refuses the whole request because it sees the unavailable verb, or emits the negated action as positive, as in "Do not follow me; find the book" where it added `follow me`. Two more are corrections ("Switch to the ceramic bowl" → bare returns `unsupported`). Only two are the exact-match artifact: `green mug next to oak box` against the label's `next to the oak box` is pure article convention.
+
+**The corpus ledger systematically undercounts the layer.** Removing the three net-negative checks was attempted on 30 September and reverted. It fails 34 tests, and the most important failure is `test_proposal_boundary_rejects_unknown_compound_clauses_before_fake_interpreter`. That test drives a fake interpreter which always returns `count mugs`, and asserts that "Follow the bottle and archive footage", "Count mugs, archive footage", "Paint the wall. Follow the bottle" and "Scout the area and archive footage" must all clarify rather than return a partial plan. "archive footage", "paint the wall" and "shred records" match no `_UNAVAILABLE_ACTIONS` pattern, so `_has_unaccounted_explicit_clause` is the only check that catches them — and it is running inside `Conversation.propose` *before* any interpreter, which is what makes it hold against an injected or compromised one.
+
+That is precisely the hazard the owner's own safety rationale names: a silently dropped unavailable clause leaving a partial plan the owner confirms believing he was fully understood. The 260-row ledger scores it at −2 because the adversarial compound-clause cases live in the **test suite**, not in the scored corpora. Any ledger built only from those corpora will undervalue it.
+
+This is the same class of error as the label bias flagged above, in the opposite direction. Treat the ledger as one input, never as an authority, and **run the full conversation suite before believing any ledger-driven removal.**
+
 ## The change to make
 
-**Owner decision, 30 September: neither the full replacement nor a fifteenth regex revision. Narrow the deterministic layer so it decides boundaries, not plans.**
+**Do not remove `_has_unaccounted_explicit_clause`, the scout check, or the extra-step checks.** The losses they cause are real, but they are the price of a safety property, and the owner accepted honest over-refusal at this scope.
 
-The layer keeps its **detectors** and loses its **plan builder**. Today, when the prepass or source fast path concludes a request is an ordinary in-scope follow / find / scout / status, it constructs the plan itself with regular expressions. That is where all 12 losses come from and where almost none of the value is. After the change, when no detector fires, the sentence goes to the model and the model's validated plan is returned **unedited**.
+The seven losses attributed to `_has_unaccounted_explicit_clause` are not caused by the check being wrong in principle. They are caused by the **supported-action vocabulary being too small**: "Try to spot the green cap" (`spot` is an unrecognised find synonym), "Stay on the copper pot while it crosses this frame" (`stay on`), "Please keep the silver flask selected while it moves" (`keep … selected`), "Describe everything in the frame, please" (scene survey), "Let me know if the tracker is healthy right now" and "Did my previous visual request finish or is it still pending?" (status). The check correctly reports "I do not recognise this clause"; the fix is to make the clause recognisable, not to stop checking.
 
-Governing rule for the whole task: **no deterministic check survives without a measured save count.** Every retained check below cites one. Any check you cannot attribute to saves in `measurement-summary.json` is deleted, and any check you want to add must be justified by a measured miss, not by a hypothetical.
+So the remaining work is bounded vocabulary widening inside `_SUPPORTED_ACTION_WORDS`, `_SCENE_SCOPE_PHRASE` and the status cues, with the total-coverage check retained. This is revision-shaped, which the owner rejected on 28 September — but it is different in three ways that matter, and the owner should be told so plainly rather than have it presented as the old plan: it is bounded to the reduced scope instead of chasing open vocabulary, every addition is justified by a specific measured miss, and the safety check is kept rather than removed. Get that confirmed before spending hours on it.
+
+Governing rule, revised: **no deterministic check is removed without both a negative measured net save count and a green full test suite.** A check that measures negative on the corpora but guards a hazard named in the acceptance record stays, and its cost is recorded as an accepted limitation.
+
+### Already done on 30 September
+
+One loss is fixed and committed as `8fa1539`. `_AFFIRMATIVE_NEGATION_IDIOM` covered only "forget / hesitate / fail / neglect to", so "Don't lose sight of the blue suitcase" was read as a negated follow and clarified. The idiom body now also covers "lose sight / track of" and "stop following / tracking / watching", and is shared with `_NEGATED_CLAUSE_PREFIX` so both agree. Stop recognition is unchanged and the full suite passes at 97 tests and 343 subtests.
+
+A related defect is **not** fixed and is a known limitation: `_effective_action_negations` receives only the text before the matched action word, so an idiom straddling that boundary is invisible to it. "Never lose track of the red mug" still clarifies, because `track` matches the follow vocabulary and the prefix "Never lose " is too short to contain the idiom. Fixing it means passing the full clause, which touches the path that earns 13 negation saves — do not attempt it without re-running those rows.
 
 ### Retained detectors, with the saves that earn them
 
@@ -59,19 +94,19 @@ Governing rule for the whole task: **no deterministic check survives without a m
 - **Correction — 2 saves.** Keep resolving a clear correction against pending steps.
 - **Stop — required, not scored.** Lines 14–29 `STOP_COMMANDS`, `_NATURAL_STOP`, `_LEADING_STOP` and `is_stop_command`. Stop keeps bypassing the model entirely. Step 0 re-measured it at 0.0012 ms and 0.0019 ms median over 2,000 calls; that path is a requirement.
 
-### Delete
+### Delete nothing
 
-From lines 437–1433: the clause segmenter's plan construction, target normalisation, the source fast path's plan building, the scout/status/count routing heuristics, and `_reconcile_model_plan`'s meaning comparison. Reconciliation discarded 3 correct model plans and contributed 3 of the 12 losses; the only part of it that survives is the narrow negation downgrade above.
+No deletion in this file currently survives the test suite. The 1,695 lines stand. `_source_grounded_plan` measures +11, the three net-negative checks guard hazards the corpora do not score, and the attempted removal cost 34 tests. Treat every future deletion proposal as guilty until it is green.
 
-Keep `SEMANTIC_SCHEMA`, `ACTIONS`, `TARGET_ACTIONS`, `CONFIRM_COMMANDS`, `MANUAL_PERSON_MESSAGE`, `clean_text`, `is_described_human_target`, `_clarification`, `_unsupported`, `validate_semantic_result`. Keep `LocalSemanticInterpreter`'s transport — loopback-only connection, single-flight `busy` lock, size-bounded reads, `last_diagnostic` raw-completion capture — removing only its calls into deleted code. Keep the whole `Conversation` class: 45-second expiry, one-use confirmation, the generation counter that lets Stop supersede a late answer, and `snapshot`.
+Keep `SEMANTIC_SCHEMA`, `ACTIONS`, `TARGET_ACTIONS`, `CONFIRM_COMMANDS`, `MANUAL_PERSON_MESSAGE`, `clean_text`, `is_described_human_target`, `_clarification`, `_unsupported`, `validate_semantic_result`. Keep `LocalSemanticInterpreter`'s transport — loopback-only connection, single-flight `busy` lock, size-bounded reads, `last_diagnostic` raw-completion capture. Keep the whole `Conversation` class: 45-second expiry, one-use confirmation, the generation counter that lets Stop supersede a late answer, and `snapshot`.
 
-Do not reintroduce a source fast path or general clause accounting. If a failure seems to need one, report it rather than adding it.
+### What the remaining work can be worth
 
-### What this should score, and why that number is not a forecast
+Nine of the twelve losses are reachable by vocabulary widening: seven from `_has_unaccounted_explicit_clause` not recognising ordinary synonyms, and two from `_SCENE_SCOPE_PHRASE` not recognising "what the lens can see in front of it" and "an overview of what is visible through this camera" as whole-view survey scope. One is already fixed in `8fa1539`. That is at most 234 → 244 of 260, and 20/23 → 22/23 on the owner's commands.
 
-Every one of the 12 losses is by construction a row where the bare model already matched the label. A design that forwards those rows to the model and does not post-edit its plan therefore scores all 12 correct **on this data**, giving roughly 246/260 against today's 234 and the bare model's 196, and restoring 22/23 on the owner's commands.
+Two of the twelve are not worth chasing. "Can you tell me where the small amber lantern sits in this shot?" is a fast-path plan-construction error, and "Please keep the lime green crate as what you watch" is an inverted-frame reconciliation error; both sit in the machinery whose revision history is the reason the owner stopped this approach.
 
-That is an upper bound computed from the same rows that motivated the change, not a prediction. Report it as such. The residual 14 misses are the 13 `model_fallback` rows where neither the model nor the guard succeeded, plus 1 in the fast path — those are genuine model-semantics failures and are the only place prompt work pays.
+Treat 244 as a ceiling reached by many small measured edits, not a design win. The residual is 13 `model_fallback` rows where neither the model nor the guard succeeded, and those are the only place prompt work pays.
 
 ### Prompt
 
@@ -110,13 +145,13 @@ Do not push to `main` without explicit per-instance owner authorization.
 
 ## Resume in this order
 
-1. Read `measurement-summary.json` and the route decomposition above. Do not re-run Step 0; it is done and committed.
-2. Narrow the deterministic layer per *The change to make*: retained detectors intact, plan builder and meaning reconciliation deleted, in-scope requests forwarded to the model unedited, current sampling settings kept.
-3. Rewrite `tests/vision/test_conversation.py` to the behaviours in *Acceptance*, including the no-regression check on the 50 saves. Delete tests that pin literal-phrase behaviour of the removed plan builder; preserve lifecycle, Stop, confirmation, schema, negation and refusal coverage.
-4. Re-score the five Step 0 corpora with the new layer against the same committed completions where possible, and report saves and losses by route in the same format, so the change is directly comparable.
-5. Run the focused tests, the full vision suite, both Node UI checks, and the static latency replay. Preserve outputs and hashes.
-6. Record the outcome, the honest upper-bound caveat, and the 52-case re-designation in Issue 12 and `docs/CURRENT.md`.
+1. Read `measurement-summary.json`, the route decomposition and the per-check ledger above. Do not re-run Step 0; it is done and committed. Do not re-attempt the removals; that is done and reverted.
+2. **Confirm with the owner** that bounded vocabulary widening is authorised, given that he rejected further revision on 28 September. Present the three differences honestly — bounded scope, every edit tied to a measured miss, safety check retained — and accept a "no". If he declines, the language workstream stops at today's behaviour and the residual is recorded as an accepted limitation.
+3. If authorised, widen one vocabulary at a time: `_SUPPORTED_ACTION_WORDS` for `spot`, `stay on` and `keep … selected`; `_SCENE_SCOPE_PHRASE` for the two survey phrasings; the status cues for tracker-health and past-task-pending questions. After **each** edit run the full conversation suite. Stop at the first edit that cannot stay green.
+4. Re-score the five Step 0 corpora against the same committed completions and report saves and losses per check in the same table format, so the change is directly comparable. A widened vocabulary must not reduce the 18 unsupported saves or the 13 negation saves.
+5. Run the full vision suite, both Node UI checks, and the static latency replay. Preserve outputs and hashes.
+6. Record the outcome and the accepted limitations in Issue 12 and `docs/CURRENT.md`, including the `_effective_action_negations` prefix defect.
 7. Only then consider the prompt work, scoped to the 13 both-wrong rows.
 8. Stop there. Pi deployment, spoken testing, and enabling the model by default each need separate owner authorization.
 
-Report what fails. A partial honest result at the reduced scope is worth more than a fifteenth revision that scores well on its own examples.
+Report what fails. A partial honest result at the reduced scope is worth more than a fifteenth revision that scores well on its own examples — and note that the 30 September attempt to avoid a fifteenth revision produced a measurement that argued for one.
