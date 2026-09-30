@@ -1,5 +1,7 @@
 # Pi conversation work handoff — 28 September 2026
 
+> **Superseded on 30 September by [`pi-language-handoff-2026-09-30.md`](pi-language-handoff-2026-09-30.md).** Step 0 ran as this file required and refuted its central premise: the bare model scored 196/260 against the guard's 234/260 on identical completions, so *Target design*, *Two configuration defects to fix in Step 0* and *Resume in this order* below are **withdrawn**. The Rev1–Rev14 failure analysis and the owner's reduced scope still stand. Read the 30 September file for next actions.
+
 **This handoff supersedes the resume order in [`pi-language-handoff-2026-09-27.md`](pi-language-handoff-2026-09-27.md).** That file remains accurate as a record of the Rev1–Rev14 stop state; its five-step resume plan is withdrawn by owner decision on 28 September. Read it for evidence provenance, not for next actions.
 
 Start with [`CLAUDE.md`](../../CLAUDE.md), [`docs/CURRENT.md`](../CURRENT.md), and [Issue 12](../../.scratch/biometric-guard-drone/issues/12-phone-onboard-interaction.md). Issue 12 remains the live progress checkpoint.
