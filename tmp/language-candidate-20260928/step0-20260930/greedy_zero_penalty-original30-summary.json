@@ -1,0 +1,96 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 27,
+      "total": 30
+    },
+    "rev13_counterfactual": {
+      "passed": 29,
+      "total": 30,
+      "answered_before_model": 29,
+      "routes": {
+        "source_fast_path": 13,
+        "model_fallback": 1,
+        "policy_prepass": 16
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 29,
+      "total": 30,
+      "answered_before_model": 29,
+      "routes": {
+        "source_fast_path": 13,
+        "model_fallback": 1,
+        "policy_prepass": 16
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 21,
+      "total": 24
+    },
+    "rev13_counterfactual": {
+      "passed": 23,
+      "total": 24,
+      "answered_before_model": 23,
+      "routes": {
+        "source_fast_path": 13,
+        "model_fallback": 1,
+        "policy_prepass": 10
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 23,
+      "total": 24,
+      "answered_before_model": 23,
+      "routes": {
+        "source_fast_path": 13,
+        "model_fallback": 1,
+        "policy_prepass": 10
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 6,
+      "total": 6
+    },
+    "rev13_counterfactual": {
+      "passed": 6,
+      "total": 6,
+      "answered_before_model": 6,
+      "routes": {
+        "policy_prepass": 6
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 6,
+      "total": 6,
+      "answered_before_model": 6,
+      "routes": {
+        "policy_prepass": 6
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 3991.346,
+  "latency_p95_ms": 4973.855,
+  "transport_or_schema_errors": 1,
+  "misses": [
+    "p05",
+    "a02",
+    "n04"
+  ]
+}

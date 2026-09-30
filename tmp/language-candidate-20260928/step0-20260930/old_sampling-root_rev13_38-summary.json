@@ -1,0 +1,103 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 24,
+      "total": 38
+    },
+    "rev13_counterfactual": {
+      "passed": 25,
+      "total": 38,
+      "answered_before_model": 25,
+      "routes": {
+        "model_fallback": 13,
+        "policy_prepass": 17,
+        "source_fast_path": 8
+      },
+      "correct_model_discarded_by_reconciliation": 2,
+      "correct_model_replaced_with_wrong_prepass": 7
+    },
+    "rev14_counterfactual": {
+      "passed": 26,
+      "total": 38,
+      "answered_before_model": 26,
+      "routes": {
+        "model_fallback": 12,
+        "policy_prepass": 18,
+        "source_fast_path": 8
+      },
+      "correct_model_discarded_by_reconciliation": 2,
+      "correct_model_replaced_with_wrong_prepass": 6
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 24,
+      "total": 38
+    },
+    "rev13_counterfactual": {
+      "passed": 25,
+      "total": 38,
+      "answered_before_model": 25,
+      "routes": {
+        "model_fallback": 13,
+        "policy_prepass": 17,
+        "source_fast_path": 8
+      },
+      "correct_model_discarded_by_reconciliation": 2,
+      "correct_model_replaced_with_wrong_prepass": 7
+    },
+    "rev14_counterfactual": {
+      "passed": 26,
+      "total": 38,
+      "answered_before_model": 26,
+      "routes": {
+        "model_fallback": 12,
+        "policy_prepass": 18,
+        "source_fast_path": 8
+      },
+      "correct_model_discarded_by_reconciliation": 2,
+      "correct_model_replaced_with_wrong_prepass": 6
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 0,
+      "total": 0
+    },
+    "rev13_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 4382.727,
+  "latency_p95_ms": 5466.461,
+  "transport_or_schema_errors": 0,
+  "misses": [
+    "o07",
+    "o08",
+    "c03",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c14",
+    "c16",
+    "c17",
+    "c18"
+  ]
+}

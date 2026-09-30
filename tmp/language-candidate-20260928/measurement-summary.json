@@ -1,0 +1,2912 @@
+{
+  "purpose": "Complete descriptive measurement summary; no numeric qualification gate or source/prompt tuning.",
+  "sources": {
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\step0-20260930\\manifest-final.json": "0dac260053fa3421a03a8819b08df314784da0e722b63ccff57a62dd1f3f536a",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\owner-text-20260930\\manifest-final.json": "d2187ec7bdf5c1d3d688c816c9f32bf80e3d66c41b83e433c0eedd80aef6d3ac",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\corpus-audit\\scope.json": "a9fd3d695f4b40134a2d7db2a1e172d4b9d4177e92004a919ee62c93596db6db",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\owner-approved-commands-20260930.json": "6b68fffa29b0521908d0cc6f7f950e9f2d06cc0c59dabddfac0a5e6420a98b79",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\owner-text-20260930\\lifecycle-checks.log": "0f408053883b23fe882daa698da8dc52b1444cbcdb2ca74f7170248dea2b7b13",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\summarize_trial.py": "d1774d7d9d6bb3120a5fc55fedf984aa8175f70e7753d8dcafb976ca50cd7546"
+  },
+  "historical": {
+    "original30": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-results.json",
+      "overall": {
+        "passed": 30,
+        "total": 30
+      },
+      "reduced_scope": {
+        "passed": 24,
+        "total": 24
+      }
+    },
+    "development58": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-results.json",
+      "overall": {
+        "passed": 58,
+        "total": 58
+      },
+      "reduced_scope": {
+        "passed": 55,
+        "total": 55
+      }
+    },
+    "root_rev13_38": {
+      "source": "tmp/language-candidate-20260927/root-open-probe-rev13/probe-results.json",
+      "overall": {
+        "passed": 25,
+        "total": 38
+      },
+      "reduced_scope": {
+        "passed": 25,
+        "total": 38
+      }
+    },
+    "worker_rev13_48": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-results.json",
+      "overall": {
+        "passed": 38,
+        "total": 48
+      },
+      "reduced_scope": {
+        "passed": 38,
+        "total": 48
+      }
+    },
+    "sealed_v3_100": {
+      "source": "tmp/language-candidate-20260927/sealed-v3/sealed-results.json",
+      "overall": {
+        "passed": 88,
+        "total": 100
+      },
+      "reduced_scope": {
+        "passed": 83,
+        "total": 95
+      }
+    }
+  },
+  "profile_parameters": {
+    "old_sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "seed": 42
+    },
+    "greedy_zero_penalty": {
+      "temperature": 0,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "seed": 42
+    }
+  },
+  "input_hashes_verified": true,
+  "profiles": {
+    "old_sampling": {
+      "corpora": {
+        "original30": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 30,
+              "bare_exact": 27,
+              "guarded_exact": 30,
+              "guard_saved_wrong_bare_answer": 3,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 16
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "reduced_domain": {
+              "total": 24,
+              "bare_exact": 21,
+              "guarded_exact": 24,
+              "guard_saved_wrong_bare_answer": 3,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 10
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "required_plan_labels": {
+              "total": 15,
+              "bare_exact": 14,
+              "guarded_exact": 15,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 9,
+              "bare_exact": 7,
+              "guarded_exact": 9,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 9
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 1
+            },
+            "secondary_only": {
+              "total": 6,
+              "bare_exact": 6,
+              "guarded_exact": 6,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 6
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 30,
+              "bare_exact": 27,
+              "guarded_exact": 30,
+              "guard_saved_wrong_bare_answer": 3,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 16
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "reduced_domain": {
+              "total": 24,
+              "bare_exact": 21,
+              "guarded_exact": 24,
+              "guard_saved_wrong_bare_answer": 3,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 10
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "required_plan_labels": {
+              "total": 15,
+              "bare_exact": 14,
+              "guarded_exact": 15,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 9,
+              "bare_exact": 7,
+              "guarded_exact": 9,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 9
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 1
+            },
+            "secondary_only": {
+              "total": 6,
+              "bare_exact": 6,
+              "guarded_exact": 6,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 6
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "development58": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 58,
+              "bare_exact": 46,
+              "guarded_exact": 58,
+              "guard_saved_wrong_bare_answer": 12,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 25
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "reduced_domain": {
+              "total": 55,
+              "bare_exact": 43,
+              "guarded_exact": 55,
+              "guard_saved_wrong_bare_answer": 12,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 22
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "required_plan_labels": {
+              "total": 33,
+              "bare_exact": 28,
+              "guarded_exact": 33,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 2,
+                "policy_prepass": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 5
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 22,
+              "bare_exact": 15,
+              "guarded_exact": 22,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 21,
+                "model_fallback": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 5
+            },
+            "secondary_only": {
+              "total": 3,
+              "bare_exact": 3,
+              "guarded_exact": 3,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 58,
+              "bare_exact": 46,
+              "guarded_exact": 58,
+              "guard_saved_wrong_bare_answer": 12,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 25
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "reduced_domain": {
+              "total": 55,
+              "bare_exact": 43,
+              "guarded_exact": 55,
+              "guard_saved_wrong_bare_answer": 12,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 22
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "required_plan_labels": {
+              "total": 33,
+              "bare_exact": 28,
+              "guarded_exact": 33,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 2,
+                "policy_prepass": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 5
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 22,
+              "bare_exact": 15,
+              "guarded_exact": 22,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 21,
+                "model_fallback": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 5
+            },
+            "secondary_only": {
+              "total": 3,
+              "bare_exact": 3,
+              "guarded_exact": 3,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "root_rev13_38": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 38,
+              "bare_exact": 24,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 9,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 7,
+              "routes": {
+                "model_fallback": 13,
+                "policy_prepass": 17,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 14
+            },
+            "reduced_domain": {
+              "total": 38,
+              "bare_exact": 24,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 9,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 7,
+              "routes": {
+                "model_fallback": 13,
+                "policy_prepass": 17,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 14
+            },
+            "required_plan_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 12,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 10,
+                "policy_prepass": 4,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 16,
+              "bare_exact": 6,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 8,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 1,
+              "routes": {
+                "policy_prepass": 13,
+                "model_fallback": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 10
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 38,
+              "bare_exact": 24,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 12,
+                "policy_prepass": 18,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 14
+            },
+            "reduced_domain": {
+              "total": 38,
+              "bare_exact": 24,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 12,
+                "policy_prepass": 18,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 14
+            },
+            "required_plan_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 7,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 5,
+              "routes": {
+                "model_fallback": 9,
+                "policy_prepass": 5,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 16,
+              "bare_exact": 6,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 8,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 1,
+              "routes": {
+                "policy_prepass": 13,
+                "model_fallback": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 10
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "worker_rev13_48": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 48,
+              "bare_exact": 33,
+              "guarded_exact": 39,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14,
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 15
+            },
+            "reduced_domain": {
+              "total": 48,
+              "bare_exact": 33,
+              "guarded_exact": 39,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14,
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 15
+            },
+            "required_plan_labels": {
+              "total": 34,
+              "bare_exact": 24,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 10
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 14,
+              "bare_exact": 9,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14
+              },
+              "errors": {},
+              "valid_completion_nonexact": 5
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 48,
+              "bare_exact": 33,
+              "guarded_exact": 39,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 17,
+                "source_fast_path": 8,
+                "model_fallback": 23
+              },
+              "errors": {},
+              "valid_completion_nonexact": 15
+            },
+            "reduced_domain": {
+              "total": 48,
+              "bare_exact": 33,
+              "guarded_exact": 39,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 17,
+                "source_fast_path": 8,
+                "model_fallback": 23
+              },
+              "errors": {},
+              "valid_completion_nonexact": 15
+            },
+            "required_plan_labels": {
+              "total": 34,
+              "bare_exact": 24,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 8,
+                "model_fallback": 23,
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 10
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 14,
+              "bare_exact": 9,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14
+              },
+              "errors": {},
+              "valid_completion_nonexact": 5
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "sealed_v3_100": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 100,
+              "bare_exact": 79,
+              "guarded_exact": 95,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 28,
+                "policy_prepass": 45,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 20
+            },
+            "reduced_domain": {
+              "total": 95,
+              "bare_exact": 75,
+              "guarded_exact": 90,
+              "guard_saved_wrong_bare_answer": 18,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 41,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 19
+            },
+            "required_plan_labels": {
+              "total": 58,
+              "bare_exact": 51,
+              "guarded_exact": 53,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 4,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 6
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 37,
+              "bare_exact": 24,
+              "guarded_exact": 37,
+              "guard_saved_wrong_bare_answer": 13,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 37
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "secondary_only": {
+              "total": 5,
+              "bare_exact": 4,
+              "guarded_exact": 5,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 4,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 100,
+              "bare_exact": 79,
+              "guarded_exact": 95,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 46,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 20
+            },
+            "reduced_domain": {
+              "total": 95,
+              "bare_exact": 75,
+              "guarded_exact": 90,
+              "guard_saved_wrong_bare_answer": 18,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 26,
+                "policy_prepass": 42,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 19
+            },
+            "required_plan_labels": {
+              "total": 58,
+              "bare_exact": 51,
+              "guarded_exact": 53,
+              "guard_saved_wrong_bare_answer": 5,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 26,
+                "policy_prepass": 5,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 6
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 37,
+              "bare_exact": 24,
+              "guarded_exact": 37,
+              "guard_saved_wrong_bare_answer": 13,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 37
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "secondary_only": {
+              "total": 5,
+              "bare_exact": 4,
+              "guarded_exact": 5,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 4,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            }
+          }
+        }
+      },
+      "combined": {
+        "rev13_counterfactual": {
+          "overall": {
+            "total": 274,
+            "bare_exact": 209,
+            "guarded_exact": 247,
+            "guard_saved_wrong_bare_answer": 51,
+            "guard_lost_correct_bare_answer": 13,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 10,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 71,
+              "policy_prepass": 117
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 61
+          },
+          "reduced_domain": {
+            "total": 260,
+            "bare_exact": 196,
+            "guarded_exact": 233,
+            "guard_saved_wrong_bare_answer": 50,
+            "guard_lost_correct_bare_answer": 13,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 10,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 70,
+              "policy_prepass": 104
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 60
+          },
+          "required_plan_labels": {
+            "total": 162,
+            "bare_exact": 135,
+            "guarded_exact": 138,
+            "guard_saved_wrong_bare_answer": 15,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 66,
+              "policy_prepass": 10
+            },
+            "errors": {
+              "Invalid language-model plan": 1
+            },
+            "valid_completion_nonexact": 26
+          },
+          "required_clarification_and_refusal_labels": {
+            "total": 98,
+            "bare_exact": 61,
+            "guarded_exact": 95,
+            "guard_saved_wrong_bare_answer": 35,
+            "guard_lost_correct_bare_answer": 1,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 1,
+            "routes": {
+              "policy_prepass": 94,
+              "model_fallback": 4
+            },
+            "errors": {
+              "Invalid language-model plan": 3
+            },
+            "valid_completion_nonexact": 34
+          },
+          "secondary_only": {
+            "total": 14,
+            "bare_exact": 13,
+            "guarded_exact": 14,
+            "guard_saved_wrong_bare_answer": 1,
+            "guard_lost_correct_bare_answer": 0,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 0,
+            "routes": {
+              "policy_prepass": 13,
+              "model_fallback": 1
+            },
+            "errors": {},
+            "valid_completion_nonexact": 1
+          }
+        },
+        "rev14_counterfactual": {
+          "overall": {
+            "total": 274,
+            "bare_exact": 209,
+            "guarded_exact": 248,
+            "guard_saved_wrong_bare_answer": 51,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 66,
+              "policy_prepass": 122
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 61
+          },
+          "reduced_domain": {
+            "total": 260,
+            "bare_exact": 196,
+            "guarded_exact": 234,
+            "guard_saved_wrong_bare_answer": 50,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 65,
+              "policy_prepass": 109
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 60
+          },
+          "required_plan_labels": {
+            "total": 162,
+            "bare_exact": 135,
+            "guarded_exact": 139,
+            "guard_saved_wrong_bare_answer": 15,
+            "guard_lost_correct_bare_answer": 11,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 8,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 61,
+              "policy_prepass": 15
+            },
+            "errors": {
+              "Invalid language-model plan": 1
+            },
+            "valid_completion_nonexact": 26
+          },
+          "required_clarification_and_refusal_labels": {
+            "total": 98,
+            "bare_exact": 61,
+            "guarded_exact": 95,
+            "guard_saved_wrong_bare_answer": 35,
+            "guard_lost_correct_bare_answer": 1,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 1,
+            "routes": {
+              "policy_prepass": 94,
+              "model_fallback": 4
+            },
+            "errors": {
+              "Invalid language-model plan": 3
+            },
+            "valid_completion_nonexact": 34
+          },
+          "secondary_only": {
+            "total": 14,
+            "bare_exact": 13,
+            "guarded_exact": 14,
+            "guard_saved_wrong_bare_answer": 1,
+            "guard_lost_correct_bare_answer": 0,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 0,
+            "routes": {
+              "policy_prepass": 13,
+              "model_fallback": 1
+            },
+            "errors": {},
+            "valid_completion_nonexact": 1
+          }
+        }
+      }
+    },
+    "greedy_zero_penalty": {
+      "corpora": {
+        "original30": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 30,
+              "bare_exact": 27,
+              "guarded_exact": 29,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 16
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "reduced_domain": {
+              "total": 24,
+              "bare_exact": 21,
+              "guarded_exact": 23,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 10
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "required_plan_labels": {
+              "total": 15,
+              "bare_exact": 13,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 1
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 9,
+              "bare_exact": 8,
+              "guarded_exact": 9,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 9
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            },
+            "secondary_only": {
+              "total": 6,
+              "bare_exact": 6,
+              "guarded_exact": 6,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 6
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 30,
+              "bare_exact": 27,
+              "guarded_exact": 29,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 16
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "reduced_domain": {
+              "total": 24,
+              "bare_exact": 21,
+              "guarded_exact": 23,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 10
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 2
+            },
+            "required_plan_labels": {
+              "total": 15,
+              "bare_exact": 13,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 13,
+                "model_fallback": 1,
+                "policy_prepass": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 1
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 9,
+              "bare_exact": 8,
+              "guarded_exact": 9,
+              "guard_saved_wrong_bare_answer": 1,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 9
+              },
+              "errors": {},
+              "valid_completion_nonexact": 1
+            },
+            "secondary_only": {
+              "total": 6,
+              "bare_exact": 6,
+              "guarded_exact": 6,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 6
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "development58": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 58,
+              "bare_exact": 46,
+              "guarded_exact": 56,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 25
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "reduced_domain": {
+              "total": 55,
+              "bare_exact": 43,
+              "guarded_exact": 53,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 22
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "required_plan_labels": {
+              "total": 33,
+              "bare_exact": 25,
+              "guarded_exact": 31,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 2,
+                "policy_prepass": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 6
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 22,
+              "guard_saved_wrong_bare_answer": 4,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 21,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "secondary_only": {
+              "total": 3,
+              "bare_exact": 3,
+              "guarded_exact": 3,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 58,
+              "bare_exact": 46,
+              "guarded_exact": 56,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 25
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "reduced_domain": {
+              "total": 55,
+              "bare_exact": 43,
+              "guarded_exact": 53,
+              "guard_saved_wrong_bare_answer": 10,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 3,
+                "policy_prepass": 22
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 10
+            },
+            "required_plan_labels": {
+              "total": 33,
+              "bare_exact": 25,
+              "guarded_exact": 31,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 30,
+                "model_fallback": 2,
+                "policy_prepass": 1
+              },
+              "errors": {
+                "Invalid language-model plan": 2
+              },
+              "valid_completion_nonexact": 6
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 22,
+              "guard_saved_wrong_bare_answer": 4,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 21,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "secondary_only": {
+              "total": 3,
+              "bare_exact": 3,
+              "guarded_exact": 3,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "root_rev13_38": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 38,
+              "bare_exact": 25,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 9,
+              "guard_lost_correct_bare_answer": 9,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 7,
+              "routes": {
+                "model_fallback": 13,
+                "policy_prepass": 17,
+                "source_fast_path": 8
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 12
+            },
+            "reduced_domain": {
+              "total": 38,
+              "bare_exact": 25,
+              "guarded_exact": 25,
+              "guard_saved_wrong_bare_answer": 9,
+              "guard_lost_correct_bare_answer": 9,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 7,
+              "routes": {
+                "model_fallback": 13,
+                "policy_prepass": 17,
+                "source_fast_path": 8
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 12
+            },
+            "required_plan_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 12,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 10,
+                "policy_prepass": 4,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 16,
+              "bare_exact": 7,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 1,
+              "routes": {
+                "policy_prepass": 13,
+                "model_fallback": 3
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 8
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 38,
+              "bare_exact": 25,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 9,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 12,
+                "policy_prepass": 18,
+                "source_fast_path": 8
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 12
+            },
+            "reduced_domain": {
+              "total": 38,
+              "bare_exact": 25,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 9,
+              "guard_lost_correct_bare_answer": 8,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 6,
+              "routes": {
+                "model_fallback": 12,
+                "policy_prepass": 18,
+                "source_fast_path": 8
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 12
+            },
+            "required_plan_labels": {
+              "total": 22,
+              "bare_exact": 18,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 7,
+              "correct_model_discarded_by_reconciliation": 2,
+              "correct_model_replaced_by_prepass": 5,
+              "routes": {
+                "model_fallback": 9,
+                "policy_prepass": 5,
+                "source_fast_path": 8
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 16,
+              "bare_exact": 7,
+              "guarded_exact": 13,
+              "guard_saved_wrong_bare_answer": 7,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 1,
+              "routes": {
+                "policy_prepass": 13,
+                "model_fallback": 3
+              },
+              "errors": {
+                "This action needs a specific target": 1
+              },
+              "valid_completion_nonexact": 8
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "worker_rev13_48": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 48,
+              "bare_exact": 35,
+              "guarded_exact": 40,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14,
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "reduced_domain": {
+              "total": 48,
+              "bare_exact": 35,
+              "guarded_exact": 40,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14,
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "required_plan_labels": {
+              "total": 34,
+              "bare_exact": 25,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 8,
+                "model_fallback": 26
+              },
+              "errors": {},
+              "valid_completion_nonexact": 9
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 14,
+              "bare_exact": 10,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 4,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 48,
+              "bare_exact": 35,
+              "guarded_exact": 40,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 17,
+                "source_fast_path": 8,
+                "model_fallback": 23
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "reduced_domain": {
+              "total": 48,
+              "bare_exact": 35,
+              "guarded_exact": 40,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 17,
+                "source_fast_path": 8,
+                "model_fallback": 23
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "required_plan_labels": {
+              "total": 34,
+              "bare_exact": 25,
+              "guarded_exact": 26,
+              "guard_saved_wrong_bare_answer": 2,
+              "guard_lost_correct_bare_answer": 1,
+              "correct_model_discarded_by_reconciliation": 1,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "source_fast_path": 8,
+                "model_fallback": 23,
+                "policy_prepass": 3
+              },
+              "errors": {},
+              "valid_completion_nonexact": 9
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 14,
+              "bare_exact": 10,
+              "guarded_exact": 14,
+              "guard_saved_wrong_bare_answer": 4,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 14
+              },
+              "errors": {},
+              "valid_completion_nonexact": 4
+            },
+            "secondary_only": {
+              "total": 0,
+              "bare_exact": 0,
+              "guarded_exact": 0,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {},
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        },
+        "sealed_v3_100": {
+          "rev13_counterfactual": {
+            "overall": {
+              "total": 100,
+              "bare_exact": 77,
+              "guarded_exact": 93,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 28,
+                "policy_prepass": 45,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 22
+            },
+            "reduced_domain": {
+              "total": 95,
+              "bare_exact": 72,
+              "guarded_exact": 88,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 41,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 22
+            },
+            "required_plan_labels": {
+              "total": 58,
+              "bare_exact": 48,
+              "guarded_exact": 51,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 4,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 9
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 37,
+              "bare_exact": 24,
+              "guarded_exact": 37,
+              "guard_saved_wrong_bare_answer": 13,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 37
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "secondary_only": {
+              "total": 5,
+              "bare_exact": 5,
+              "guarded_exact": 5,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 4,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          },
+          "rev14_counterfactual": {
+            "overall": {
+              "total": 100,
+              "bare_exact": 77,
+              "guarded_exact": 93,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 27,
+                "policy_prepass": 46,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 22
+            },
+            "reduced_domain": {
+              "total": 95,
+              "bare_exact": 72,
+              "guarded_exact": 88,
+              "guard_saved_wrong_bare_answer": 19,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 26,
+                "policy_prepass": 42,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 22
+            },
+            "required_plan_labels": {
+              "total": 58,
+              "bare_exact": 48,
+              "guarded_exact": 51,
+              "guard_saved_wrong_bare_answer": 6,
+              "guard_lost_correct_bare_answer": 3,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 3,
+              "routes": {
+                "model_fallback": 26,
+                "policy_prepass": 5,
+                "source_fast_path": 27
+              },
+              "errors": {
+                "Invalid language-model plan": 1
+              },
+              "valid_completion_nonexact": 9
+            },
+            "required_clarification_and_refusal_labels": {
+              "total": 37,
+              "bare_exact": 24,
+              "guarded_exact": 37,
+              "guard_saved_wrong_bare_answer": 13,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 37
+              },
+              "errors": {},
+              "valid_completion_nonexact": 13
+            },
+            "secondary_only": {
+              "total": 5,
+              "bare_exact": 5,
+              "guarded_exact": 5,
+              "guard_saved_wrong_bare_answer": 0,
+              "guard_lost_correct_bare_answer": 0,
+              "correct_model_discarded_by_reconciliation": 0,
+              "correct_model_replaced_by_prepass": 0,
+              "routes": {
+                "policy_prepass": 4,
+                "model_fallback": 1
+              },
+              "errors": {},
+              "valid_completion_nonexact": 0
+            }
+          }
+        }
+      },
+      "combined": {
+        "rev13_counterfactual": {
+          "overall": {
+            "total": 274,
+            "bare_exact": 210,
+            "guarded_exact": 243,
+            "guard_saved_wrong_bare_answer": 46,
+            "guard_lost_correct_bare_answer": 13,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 10,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 71,
+              "policy_prepass": 117
+            },
+            "errors": {
+              "Invalid language-model plan": 4,
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 59
+          },
+          "reduced_domain": {
+            "total": 260,
+            "bare_exact": 196,
+            "guarded_exact": 229,
+            "guard_saved_wrong_bare_answer": 46,
+            "guard_lost_correct_bare_answer": 13,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 10,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 70,
+              "policy_prepass": 104
+            },
+            "errors": {
+              "Invalid language-model plan": 4,
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 59
+          },
+          "required_plan_labels": {
+            "total": 162,
+            "bare_exact": 129,
+            "guarded_exact": 134,
+            "guard_saved_wrong_bare_answer": 17,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 66,
+              "policy_prepass": 10
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 29
+          },
+          "required_clarification_and_refusal_labels": {
+            "total": 98,
+            "bare_exact": 67,
+            "guarded_exact": 95,
+            "guard_saved_wrong_bare_answer": 29,
+            "guard_lost_correct_bare_answer": 1,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 1,
+            "routes": {
+              "policy_prepass": 94,
+              "model_fallback": 4
+            },
+            "errors": {
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 30
+          },
+          "secondary_only": {
+            "total": 14,
+            "bare_exact": 14,
+            "guarded_exact": 14,
+            "guard_saved_wrong_bare_answer": 0,
+            "guard_lost_correct_bare_answer": 0,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 0,
+            "routes": {
+              "policy_prepass": 13,
+              "model_fallback": 1
+            },
+            "errors": {},
+            "valid_completion_nonexact": 0
+          }
+        },
+        "rev14_counterfactual": {
+          "overall": {
+            "total": 274,
+            "bare_exact": 210,
+            "guarded_exact": 244,
+            "guard_saved_wrong_bare_answer": 46,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 66,
+              "policy_prepass": 122
+            },
+            "errors": {
+              "Invalid language-model plan": 4,
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 59
+          },
+          "reduced_domain": {
+            "total": 260,
+            "bare_exact": 196,
+            "guarded_exact": 230,
+            "guard_saved_wrong_bare_answer": 46,
+            "guard_lost_correct_bare_answer": 12,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 9,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 65,
+              "policy_prepass": 109
+            },
+            "errors": {
+              "Invalid language-model plan": 4,
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 59
+          },
+          "required_plan_labels": {
+            "total": 162,
+            "bare_exact": 129,
+            "guarded_exact": 135,
+            "guard_saved_wrong_bare_answer": 17,
+            "guard_lost_correct_bare_answer": 11,
+            "correct_model_discarded_by_reconciliation": 3,
+            "correct_model_replaced_by_prepass": 8,
+            "routes": {
+              "source_fast_path": 86,
+              "model_fallback": 61,
+              "policy_prepass": 15
+            },
+            "errors": {
+              "Invalid language-model plan": 4
+            },
+            "valid_completion_nonexact": 29
+          },
+          "required_clarification_and_refusal_labels": {
+            "total": 98,
+            "bare_exact": 67,
+            "guarded_exact": 95,
+            "guard_saved_wrong_bare_answer": 29,
+            "guard_lost_correct_bare_answer": 1,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 1,
+            "routes": {
+              "policy_prepass": 94,
+              "model_fallback": 4
+            },
+            "errors": {
+              "This action needs a specific target": 1
+            },
+            "valid_completion_nonexact": 30
+          },
+          "secondary_only": {
+            "total": 14,
+            "bare_exact": 14,
+            "guarded_exact": 14,
+            "guard_saved_wrong_bare_answer": 0,
+            "guard_lost_correct_bare_answer": 0,
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_by_prepass": 0,
+            "routes": {
+              "policy_prepass": 13,
+              "model_fallback": 1
+            },
+            "errors": {},
+            "valid_completion_nonexact": 0
+          }
+        }
+      }
+    }
+  },
+  "owner": {
+    "old_sampling": {
+      "rev13_counterfactual": {
+        "overall": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "reduced_domain": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "required_plan_labels": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "required_clarification_and_refusal_labels": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        },
+        "secondary_only": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        }
+      },
+      "rev14_counterfactual": {
+        "overall": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "reduced_domain": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "required_plan_labels": {
+          "total": 23,
+          "bare_exact": 22,
+          "guarded_exact": 20,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 2,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 2,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {},
+          "valid_completion_nonexact": 1
+        },
+        "required_clarification_and_refusal_labels": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        },
+        "secondary_only": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        }
+      },
+      "mismatches": [
+        {
+          "id": "owner-03",
+          "text": "Watch my backpack.",
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "backpack"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "follow",
+                "target": "backpack"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-04",
+          "text": "Follow this object in the center.",
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "this object"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "follow",
+                "target": "this object"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "this object in the center"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "this object in the center"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-10",
+          "text": "Find my backpack.",
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "backpack"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "find_object",
+                "target": "my backpack"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "find_object",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "find_object",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        }
+      ]
+    },
+    "greedy_zero_penalty": {
+      "rev13_counterfactual": {
+        "overall": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "reduced_domain": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "required_plan_labels": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "required_clarification_and_refusal_labels": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        },
+        "secondary_only": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        }
+      },
+      "rev14_counterfactual": {
+        "overall": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "reduced_domain": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "required_plan_labels": {
+          "total": 23,
+          "bare_exact": 18,
+          "guarded_exact": 19,
+          "guard_saved_wrong_bare_answer": 2,
+          "guard_lost_correct_bare_answer": 1,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 1,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "errors": {
+            "Invalid language-model plan": 1
+          },
+          "valid_completion_nonexact": 4
+        },
+        "required_clarification_and_refusal_labels": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        },
+        "secondary_only": {
+          "total": 0,
+          "bare_exact": 0,
+          "guarded_exact": 0,
+          "guard_saved_wrong_bare_answer": 0,
+          "guard_lost_correct_bare_answer": 0,
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_by_prepass": 0,
+          "routes": {},
+          "errors": {},
+          "valid_completion_nonexact": 0
+        }
+      },
+      "mismatches": [
+        {
+          "id": "owner-03",
+          "text": "Watch my backpack.",
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "backpack"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "follow",
+                "target": "my backpack"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-04",
+          "text": "Follow this object in the center.",
+          "expected_steps": [
+            {
+              "action": "follow",
+              "target": "this object"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "follow",
+                "target": "this object"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "this object in the center"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "follow",
+                  "target": "this object in the center"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-10",
+          "text": "Find my backpack.",
+          "expected_steps": [
+            {
+              "action": "find_object",
+              "target": "backpack"
+            }
+          ],
+          "result": {
+            "status": "planned",
+            "message": "",
+            "steps": [
+              {
+                "action": "find_object",
+                "target": "my backpack"
+              }
+            ],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "find_object",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "find_object",
+                  "target": "my backpack"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-18",
+          "text": "What is your status?",
+          "expected_steps": [
+            {
+              "action": "status"
+            }
+          ],
+          "result": null,
+          "error": {
+            "type": "ValueError",
+            "message": "Invalid language-model plan"
+          },
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "status"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": true
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "status"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": true
+          }
+        },
+        {
+          "id": "owner-19",
+          "text": "Is anything selected?",
+          "expected_steps": [
+            {
+              "action": "status"
+            }
+          ],
+          "result": {
+            "status": "unsupported",
+            "message": "Camera status queries are not supported.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "model_fallback",
+            "result": {
+              "status": "unsupported",
+              "message": "Camera status queries are not supported.",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          },
+          "rev14_counterfactual": {
+            "route": "model_fallback",
+            "result": {
+              "status": "unsupported",
+              "message": "Camera status queries are not supported.",
+              "steps": [],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": false
+          }
+        },
+        {
+          "id": "owner-20",
+          "text": "Did the last mission finish?",
+          "expected_steps": [
+            {
+              "action": "status"
+            }
+          ],
+          "result": {
+            "status": "unsupported",
+            "message": "Mission status queries are not supported.",
+            "steps": [],
+            "executable": false,
+            "authority": "DIAGNOSTIC_ONLY"
+          },
+          "error": null,
+          "rev13_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "status"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": true
+          },
+          "rev14_counterfactual": {
+            "route": "source_fast_path",
+            "result": {
+              "status": "planned",
+              "message": "",
+              "steps": [
+                {
+                  "action": "status"
+                }
+              ],
+              "executable": false,
+              "authority": "DIAGNOSTIC_ONLY"
+            },
+            "passed": true
+          }
+        }
+      ]
+    }
+  },
+  "stop_bypass": [
+    {
+      "id": "owner-24",
+      "text": "Stop.",
+      "passed": true,
+      "model_calls": 0,
+      "calls": 1000,
+      "median_ms": 0.0012,
+      "p95_ms": 0.0014
+    },
+    {
+      "id": "owner-25",
+      "text": "Stop following me.",
+      "passed": true,
+      "model_calls": 0,
+      "calls": 1000,
+      "median_ms": 0.0019,
+      "p95_ms": 0.0022
+    }
+  ],
+  "lifecycle_checks": "4 passed; 17 subtests passed; 93 deselected, from unchanged conversation tests",
+  "limitations": [
+    "Consumed diagnostic examples and strict compatibility labels, not a new sealed qualification or acceptance bar.",
+    "Reduced-domain rubric was frozen before inference and includes clarification and mixed-request refusal cases. No wider row is omitted from overall reporting.",
+    "Required-plan versus clarification/refusal label subsets are uniform supplemental descriptive analysis, not a replacement scope or a new gate.",
+    "Owner approved agent-seeded wording, not independent or spoken samples. Target serialization differences count as strict label misses and need qualitative interpretation.",
+    "Historical sealed-v3 used Rev7; new guard replay uses frozen Rev13/current Rev14 with the same new completion as the bare model.",
+    "Greedy and zero presence penalty changed together; their individual effects were not isolated.",
+    "Small owner-text trial overlapped part of the old-settings PC pass. Timings are recorded durations, not a controlled latency comparison.",
+    "The full vision suite, Node checks and static replacement latency replay belong to implementation verification if Step0 justifies replacement; they are not claimed by these measurements."
+  ]
+}

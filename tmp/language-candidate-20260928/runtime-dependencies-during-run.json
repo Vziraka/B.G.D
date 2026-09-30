@@ -1,0 +1,46 @@
+{
+  "capture_stage": "During corrected profile, after old-profile completion",
+  "process_id": 41620,
+  "files": [
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama-server.exe",
+      "sha256": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama-server-impl.dll",
+      "sha256": "485067f437b32257aa0e5d38016343936ee32acab04af45336058c03c15fabd8"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama-common.dll",
+      "sha256": "02740016455f43573c3877f64cd733e42ac2ed3dff33c1d915acff543be25752"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama.dll",
+      "sha256": "15cf95d899018d027ea3fc1803990ad81b152ee1e2b5350b9f8e1b298276152a"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\mtmd.dll",
+      "sha256": "763e05468ae1ecf5c0a1b7cda100a8fcb2d065a85969d5cf40590958a1124637"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\ggml-base.dll",
+      "sha256": "45534fed46a6f0012916010a66cc0a74d4e55dd43da23e71f7e8dcd13c1d8bf7"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\ggml.dll",
+      "sha256": "9a77082af14eaaf1b9226f0129829c6c4f67cd26e5eaa61e0a6459253c9afcc9"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\libomp.dll",
+      "sha256": "a12116ba72d1d6820407cf30be23da04ce79d6bb8a71a5ee71759c5a1faa6f1c"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\ggml-rpc.dll",
+      "sha256": "a04f805012e2b3e8d4fe4946b243314f3a7f5d44dab3ce98648f06dcc7336fb8"
+    },
+    {
+      "path": "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\ggml-cpu-alderlake.dll",
+      "sha256": "7dfc7ead37c43d350c7c56f72e004687e7524519a95491180d679ce36f120c00"
+    }
+  ]
+}

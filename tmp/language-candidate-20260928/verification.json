@@ -1,0 +1,18 @@
+{
+  "captured_outputs_match_manifests": {
+    "step0-20260930": true,
+    "owner-text-20260930": true
+  },
+  "runtime_dependencies_match_during_run_capture": true,
+  "all_evaluation_servers_stopped_in_manifests": true,
+  "declared_inputs_unchanged_at_run_end": true,
+  "conversation_source_sha256": "b19406d279243da723ca83fd78c74a8caff3abc251a483963dd39a8da5dd23a8",
+  "conversation_test_sha256": "5a72f95306ba43fa22a00a810bc54a35b8b120efa71083dec6e999abbd384a3c",
+  "retired_probe_integration_lock_exists": false,
+  "evaluation_loopback_ports_connection_codes": {
+    "8085": 10035,
+    "8086": 10035
+  },
+  "evaluation_loopback_ports_closed": true,
+  "evaluation_port_verification_method": "Native Windows TCP listener table; short socket probes returned WSAEWOULDBLOCK and were inconclusive"
+}

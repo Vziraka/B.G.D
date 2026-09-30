@@ -1,0 +1,105 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 46,
+      "total": 58
+    },
+    "rev13_counterfactual": {
+      "passed": 58,
+      "total": 58,
+      "answered_before_model": 55,
+      "routes": {
+        "source_fast_path": 30,
+        "model_fallback": 3,
+        "policy_prepass": 25
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 58,
+      "total": 58,
+      "answered_before_model": 55,
+      "routes": {
+        "source_fast_path": 30,
+        "model_fallback": 3,
+        "policy_prepass": 25
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 43,
+      "total": 55
+    },
+    "rev13_counterfactual": {
+      "passed": 55,
+      "total": 55,
+      "answered_before_model": 52,
+      "routes": {
+        "source_fast_path": 30,
+        "model_fallback": 3,
+        "policy_prepass": 22
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 55,
+      "total": 55,
+      "answered_before_model": 52,
+      "routes": {
+        "source_fast_path": 30,
+        "model_fallback": 3,
+        "policy_prepass": 22
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 3,
+      "total": 3
+    },
+    "rev13_counterfactual": {
+      "passed": 3,
+      "total": 3,
+      "answered_before_model": 3,
+      "routes": {
+        "policy_prepass": 3
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 3,
+      "total": 3,
+      "answered_before_model": 3,
+      "routes": {
+        "policy_prepass": 3
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 4380.514999999999,
+  "latency_p95_ms": 5235.274,
+  "transport_or_schema_errors": 2,
+  "misses": [
+    "p03",
+    "c01",
+    "n01",
+    "n04",
+    "n05",
+    "n06",
+    "u01",
+    "u02",
+    "u11",
+    "i01",
+    "i04",
+    "i07"
+  ]
+}

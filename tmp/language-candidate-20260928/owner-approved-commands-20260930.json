@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "title": "Owner-approved 25-command language draft",
+  "date": "2026-09-30",
+  "provenance": {
+    "origin": "Agent-seeded draft approved by the owner",
+    "owner_approval_text": "its fine keep it",
+    "approval_scope": "The exact 25 user-visible commands below",
+    "independent_owner_authored_set": false,
+    "sealed_or_independent_qualification": false,
+    "spoken_qualification": false,
+    "numeric_acceptance_threshold": null,
+    "note": "Approval establishes that this draft is suitable for the owner-facing evaluation. It does not make these agent-seeded commands independent novel wording, measured spoken requests, or a passed language acceptance result."
+  },
+  "meaning_and_execution": {
+    "required_intents": ["follow", "find_person", "find_object", "scout_or_count"],
+    "additional_requests": ["status", "stop"],
+    "semantic_actions": ["follow", "find_person", "find_object", "count", "scout", "status"],
+    "note": "The semantic labels record intended meaning. Described-person selection, targetless scout, and ordered multi-step execution limits of the fixed desk are evaluated separately and do not change these semantic labels. Stop bypasses semantic inference and has separate cases below."
+  },
+  "test_setup_assumptions": {
+    "owner-21": "A pending follow-bottle proposal is provided so that the correction has a concrete previous target. This is routine fixture setup, not a reported owner session.",
+    "owner-22": "A pending follow-people proposal is provided so that the correction changes the action to count. This is routine fixture setup, not a reported owner session."
+  },
+  "semantic_cases": [
+    {
+      "id": "owner-01",
+      "number": 1,
+      "category": "follow",
+      "text": "Follow me.",
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "me"}]
+    },
+    {
+      "id": "owner-02",
+      "number": 2,
+      "category": "follow",
+      "text": "Keep track of the bottle.",
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "bottle"}]
+    },
+    {
+      "id": "owner-03",
+      "number": 3,
+      "category": "follow",
+      "text": "Watch my backpack.",
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "backpack"}]
+    },
+    {
+      "id": "owner-04",
+      "number": 4,
+      "category": "follow",
+      "text": "Follow this object in the center.",
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "this object"}]
+    },
+    {
+      "id": "owner-05",
+      "number": 5,
+      "category": "follow",
+      "text": "Follow the person wearing blue.",
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "person wearing blue"}]
+    },
+    {
+      "id": "owner-06",
+      "number": 6,
+      "category": "find_person",
+      "text": "Find me.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_person", "target": "me"}]
+    },
+    {
+      "id": "owner-07",
+      "number": 7,
+      "category": "find_person",
+      "text": "Find the person wearing red.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_person", "target": "person wearing red"}]
+    },
+    {
+      "id": "owner-08",
+      "number": 8,
+      "category": "find_object",
+      "text": "Find the white bottle beside the book.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "white bottle beside the book"}]
+    },
+    {
+      "id": "owner-09",
+      "number": 9,
+      "category": "find_object",
+      "text": "Where is the red chair?",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "red chair"}]
+    },
+    {
+      "id": "owner-10",
+      "number": 10,
+      "category": "find_object",
+      "text": "Find my backpack.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "backpack"}]
+    },
+    {
+      "id": "owner-11",
+      "number": 11,
+      "category": "find_object",
+      "text": "Find the cup next to the laptop.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "cup next to the laptop"}]
+    },
+    {
+      "id": "owner-12",
+      "number": 12,
+      "category": "find_object",
+      "text": "Find the yellow notebook.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "yellow notebook"}]
+    },
+    {
+      "id": "owner-13",
+      "number": 13,
+      "category": "count",
+      "text": "How many people are in view?",
+      "statuses": ["planned"],
+      "steps": [{"action": "count", "target": "people"}]
+    },
+    {
+      "id": "owner-14",
+      "number": 14,
+      "category": "count",
+      "text": "Count the red cups.",
+      "statuses": ["planned"],
+      "steps": [{"action": "count", "target": "red cups"}]
+    },
+    {
+      "id": "owner-15",
+      "number": 15,
+      "category": "count",
+      "text": "How many bottles can you see?",
+      "statuses": ["planned"],
+      "steps": [{"action": "count", "target": "bottles"}]
+    },
+    {
+      "id": "owner-16",
+      "number": 16,
+      "category": "scout",
+      "text": "Scout the area in view.",
+      "statuses": ["planned"],
+      "steps": [{"action": "scout"}]
+    },
+    {
+      "id": "owner-17",
+      "number": 17,
+      "category": "scout",
+      "text": "Give me an overview of what the camera sees.",
+      "statuses": ["planned"],
+      "steps": [{"action": "scout"}]
+    },
+    {
+      "id": "owner-18",
+      "number": 18,
+      "category": "status",
+      "text": "What is your status?",
+      "statuses": ["planned"],
+      "steps": [{"action": "status"}]
+    },
+    {
+      "id": "owner-19",
+      "number": 19,
+      "category": "status",
+      "text": "Is anything selected?",
+      "statuses": ["planned"],
+      "steps": [{"action": "status"}]
+    },
+    {
+      "id": "owner-20",
+      "number": 20,
+      "category": "status",
+      "text": "Did the last mission finish?",
+      "statuses": ["planned"],
+      "steps": [{"action": "status"}]
+    },
+    {
+      "id": "owner-21",
+      "number": 21,
+      "category": "correction",
+      "text": "Actually, follow the cup instead.",
+      "context": [{"action": "follow", "target": "bottle"}],
+      "statuses": ["planned"],
+      "steps": [{"action": "follow", "target": "cup"}]
+    },
+    {
+      "id": "owner-22",
+      "number": 22,
+      "category": "correction",
+      "text": "No, count the people instead.",
+      "context": [{"action": "follow", "target": "people"}],
+      "statuses": ["planned"],
+      "steps": [{"action": "count", "target": "people"}]
+    },
+    {
+      "id": "owner-23",
+      "number": 23,
+      "category": "multiple",
+      "text": "Find a cup, then follow me.",
+      "statuses": ["planned"],
+      "steps": [{"action": "find_object", "target": "cup"}, {"action": "follow", "target": "me"}]
+    }
+  ],
+  "stop_cases": [
+    {
+      "id": "owner-24",
+      "number": 24,
+      "category": "stop",
+      "text": "Stop.",
+      "expected": {
+        "is_stop_command": true,
+        "conversation_status": "stopped",
+        "command": "stop",
+        "model_calls": 0,
+        "pending_proposal_cleared": true,
+        "late_answer_cannot_restore_proposal": true,
+        "authority": "SIMULATION_ONLY",
+        "actuator_output": false
+      }
+    },
+    {
+      "id": "owner-25",
+      "number": 25,
+      "category": "stop",
+      "text": "Stop following me.",
+      "expected": {
+        "is_stop_command": true,
+        "conversation_status": "stopped",
+        "command": "stop",
+        "model_calls": 0,
+        "pending_proposal_cleared": true,
+        "late_answer_cannot_restore_proposal": true,
+        "authority": "SIMULATION_ONLY",
+        "actuator_output": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,2363 @@
+{
+  "purpose": "Consumed labeled corpora route counterfactual, not tuning and not qualification. No prompt/code changes in response to individual cases.",
+  "started_utc": "2026-09-30T07:57:07.433933+00:00",
+  "profiles": {
+    "old_sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "seed": 42
+    },
+    "greedy_zero_penalty": {
+      "temperature": 0,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "seed": 42
+    }
+  },
+  "scope": {
+    "rubric": [
+      "Include all required-action labeled plans including novel wording, corrections, descriptions, multi-step and negated-unavailable wording.",
+      "Include ordinary clarification, ambiguous referents, bare approval and negative-only required-domain commands.",
+      "Include every mixed required-intent plus unavailable, review-bypass, private, unknown, purchase, or code clause. No planned-only filter.",
+      "Exclude only standalone requests with no required-domain intent which ask solely for an unavailable capability or explicit role/instruction attack; keep these in overall and refusal-boundary scores.",
+      "Freeze cases before bare inference. Novel wording never excludes a case.",
+      "No labeled Stop requests exist in these five corpora. Score Stop bypass/lifecycle separately, outside the semantic schema."
+    ],
+    "corpora": {
+      "original30": {
+        "p01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "d01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "d02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u02": {
+          "in_reduced_scope": false,
+          "reason": "Standalone flight-only request; no required intent"
+        },
+        "u03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u04": {
+          "in_reduced_scope": false,
+          "reason": "Standalone purchase-only request; no required intent"
+        },
+        "u05": {
+          "in_reduced_scope": false,
+          "reason": "Standalone shell-only request; no required intent"
+        },
+        "i01": {
+          "in_reduced_scope": false,
+          "reason": "Explicit instruction-injection plus arming, with no required intent"
+        },
+        "i02": {
+          "in_reduced_scope": false,
+          "reason": "Explicit forged system message plus orbit, with no required intent"
+        },
+        "i03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i04": {
+          "in_reduced_scope": false,
+          "reason": "Standalone private-data disclosure; no required intent"
+        }
+      },
+      "development58": {
+        "p01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p17": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p19": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "p20": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "m04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "a05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "n07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u03": {
+          "in_reduced_scope": false,
+          "reason": "Standalone video-recording request; no required intent"
+        },
+        "u04": {
+          "in_reduced_scope": false,
+          "reason": "Standalone photo-transfer request; no required intent"
+        },
+        "u05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u09": {
+          "in_reduced_scope": false,
+          "reason": "Standalone camera-motion request; no required intent"
+        },
+        "u10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "u11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "i07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        }
+      },
+      "root_rev13_38": {
+        "o01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o17": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o19": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o20": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c17": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "c18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        }
+      },
+      "worker_rev13_48": {
+        "crit-01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "crit-16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-17": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-19": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-20": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-21": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-22": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-23": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-24": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-25": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-26": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-27": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-28": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-29": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-30": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-31": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "ord-32": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        }
+      },
+      "sealed_v3_100": {
+        "o01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o16": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o17": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o19": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o20": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o21": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o22": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o23": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o24": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o25": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o26": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o27": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o28": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o29": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o30": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o31": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o32": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o33": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o34": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o35": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o36": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o37": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o38": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o39": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o40": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o41": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o42": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o43": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o44": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o45": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o46": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o47": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o48": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o49": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "o50": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x01": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x02": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x03": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x04": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x05": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x06": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x07": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x08": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x09": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x10": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x11": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x12": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x13": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x14": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x15": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x16": {
+          "in_reduced_scope": false,
+          "reason": "Standalone video-recording request; no required intent"
+        },
+        "x17": {
+          "in_reduced_scope": false,
+          "reason": "Standalone photo-transfer request; no required intent"
+        },
+        "x18": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x19": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x20": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x21": {
+          "in_reduced_scope": false,
+          "reason": "Standalone stored-face disclosure; no required intent"
+        },
+        "x22": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x23": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x24": {
+          "in_reduced_scope": false,
+          "reason": "Standalone stored-face disclosure; no required intent"
+        },
+        "x25": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x26": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x27": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x28": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x29": {
+          "in_reduced_scope": false,
+          "reason": "Standalone stored-video upload; no required intent"
+        },
+        "x30": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x31": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x32": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x33": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x34": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x35": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x36": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x37": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x38": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x39": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x40": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x41": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x42": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x43": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x44": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x45": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x46": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x47": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x48": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x49": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        },
+        "x50": {
+          "in_reduced_scope": true,
+          "reason": "Required-domain plan, ordinary clarification, or mixed-request refusal boundary"
+        }
+      }
+    },
+    "inputs": {
+      "original30": {
+        "path": "tests/vision/fixtures/conversation-eval.json",
+        "sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+        "count": 30,
+        "reduced_count": 24
+      },
+      "development58": {
+        "path": "tests/vision/fixtures/conversation-development-v2.json",
+        "sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+        "count": 58,
+        "reduced_count": 55
+      },
+      "root_rev13_38": {
+        "path": "tmp/language-candidate-20260927/root-open-probe-rev13/cases.json",
+        "sha256": "641bde7b91bfd85baf25e58a1c91808360999239240202924f29f0f9215a47d8",
+        "count": 38,
+        "reduced_count": 38
+      },
+      "worker_rev13_48": {
+        "path": "tmp/language-candidate-20260927/clause-accountable-rev13/worker-open-rev13.json",
+        "sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+        "count": 48,
+        "reduced_count": 48
+      },
+      "sealed_v3_100": {
+        "path": "tests/vision/fixtures/conversation-heldout-20260927-v3.json",
+        "sha256": "02befce4589624c66d5fcead0fae5aa53c1a07fb84ffcf4c7ed76fb2fe9c6574",
+        "count": 100,
+        "reduced_count": 95
+      }
+    },
+    "purpose": "Descriptive route counterfactual, not acceptance qualification or tuning"
+  },
+  "inputs": {
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\measure_bare.py": "27e475ee9b06db864283f8d4fda560e4fa957091b13fbfd361c5a55f0c138536",
+    "tmp\\language-candidate-20260928\\corpus-audit\\scope.json": "a9fd3d695f4b40134a2d7db2a1e172d4b9d4177e92004a919ee62c93596db6db",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\bgd_vision\\conversation.py": "b19406d279243da723ca83fd78c74a8caff3abc251a483963dd39a8da5dd23a8",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\bgd_vision\\commands.py": "bedd6977d40c33582c50c6dfbbec32f386d9690e70e6532b8fdb647003ecdfb1",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\test_conversation.py": "5a72f95306ba43fa22a00a810bc54a35b8b120efa71083dec6e999abbd384a3c",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\boundary-v14-baseline\\rev13-conversation.py": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\fixtures\\conversation-eval.json": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\selected-old30-results.json": "397fa077e1d649b69b696bd241a3f1d5670d21b4f791eef97509d7d78dcc8ed2",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\fixtures\\conversation-development-v2.json": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\selected-v2-results.json": "ae7d0550a39607c33db6fe2ee596c6895aae31315104fa20ebf47405d7293f1c",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\root-open-probe-rev13\\cases.json": "641bde7b91bfd85baf25e58a1c91808360999239240202924f29f0f9215a47d8",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\root-open-probe-rev13\\probe-results.json": "cda3accd942cc4608566a17b19512c3989ed82c0b9dadc0f819492cb9ad01fd2",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\worker-open-rev13.json": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\clause-accountable-rev13\\ab-baseline-results.json": "cd4d7b1e65e6a1bcae574c5956671b02f5547b5b0bdd2c65f6d4f511c16a2e0e",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tests\\vision\\fixtures\\conversation-heldout-20260927-v3.json": "02befce4589624c66d5fcead0fae5aa53c1a07fb84ffcf4c7ed76fb2fe9c6574",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\sealed-v3\\sealed-results.json": "d9b3e477c30913cc2505bf2ca032db84bf086a70ae1b39652199c003f9fbbd83"
+  },
+  "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "schema_sha256": "9de5c144f1c14a30520e6c9b37f61cd3555db1a0dfa9bae4ded9e2f41f4b692c",
+  "limits": [
+    "PC text only; no Pi, speech, hardware or qualification claims.",
+    "Strict exact labels are retained even for wider phrasing. Honest clarification is not counted as exact fulfillment of a planned label.",
+    "Guarded counterfactuals replay the same raw completion through frozen code; they are not historical reruns.",
+    "Both decoding defects change together; this measures their combined effect, not either effect separately."
+  ],
+  "server_runs": [
+    {
+      "profile": "old_sampling",
+      "pid": 42872,
+      "arguments": [
+        "-m",
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8085",
+        "-t",
+        "2",
+        "-tb",
+        "2",
+        "-c",
+        "2048",
+        "-np",
+        "1",
+        "--jinja",
+        "--no-webui"
+      ],
+      "health_ready_ms": 4658.391,
+      "stopped": true,
+      "exit_code": 1
+    },
+    {
+      "profile": "greedy_zero_penalty",
+      "pid": 41620,
+      "arguments": [
+        "-m",
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8085",
+        "-t",
+        "2",
+        "-tb",
+        "2",
+        "-c",
+        "2048",
+        "-np",
+        "1",
+        "--jinja",
+        "--no-webui"
+      ],
+      "health_ready_ms": 4128.802,
+      "stopped": true,
+      "exit_code": 1
+    }
+  ],
+  "historical": {
+    "original30": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-results.json",
+      "overall": {
+        "passed": 30,
+        "total": 30
+      },
+      "reduced_scope": {
+        "passed": 24,
+        "total": 24
+      }
+    },
+    "development58": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-results.json",
+      "overall": {
+        "passed": 58,
+        "total": 58
+      },
+      "reduced_scope": {
+        "passed": 55,
+        "total": 55
+      }
+    },
+    "root_rev13_38": {
+      "source": "tmp/language-candidate-20260927/root-open-probe-rev13/probe-results.json",
+      "overall": {
+        "passed": 25,
+        "total": 38
+      },
+      "reduced_scope": {
+        "passed": 25,
+        "total": 38
+      }
+    },
+    "worker_rev13_48": {
+      "source": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-results.json",
+      "overall": {
+        "passed": 38,
+        "total": 48
+      },
+      "reduced_scope": {
+        "passed": 38,
+        "total": 48
+      }
+    },
+    "sealed_v3_100": {
+      "source": "tmp/language-candidate-20260927/sealed-v3/sealed-results.json",
+      "overall": {
+        "passed": 88,
+        "total": 100
+      },
+      "reduced_scope": {
+        "passed": 83,
+        "total": 95
+      }
+    }
+  },
+  "summaries": {
+    "old_sampling": {
+      "original30": {
+        "overall": {
+          "bare_model": {
+            "passed": 27,
+            "total": 30
+          },
+          "rev13_counterfactual": {
+            "passed": 30,
+            "total": 30,
+            "answered_before_model": 29,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 16
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 30,
+            "total": 30,
+            "answered_before_model": 29,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 16
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 21,
+            "total": 24
+          },
+          "rev13_counterfactual": {
+            "passed": 24,
+            "total": 24,
+            "answered_before_model": 23,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 10
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 24,
+            "total": 24,
+            "answered_before_model": 23,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 10
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 6,
+            "total": 6
+          },
+          "rev13_counterfactual": {
+            "passed": 6,
+            "total": 6,
+            "answered_before_model": 6,
+            "routes": {
+              "policy_prepass": 6
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 6,
+            "total": 6,
+            "answered_before_model": 6,
+            "routes": {
+              "policy_prepass": 6
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4089.7165,
+        "latency_p95_ms": 5193.068,
+        "transport_or_schema_errors": 1,
+        "misses": [
+          "a02",
+          "n01",
+          "n04"
+        ]
+      },
+      "development58": {
+        "overall": {
+          "bare_model": {
+            "passed": 46,
+            "total": 58
+          },
+          "rev13_counterfactual": {
+            "passed": 58,
+            "total": 58,
+            "answered_before_model": 55,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 25
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 58,
+            "total": 58,
+            "answered_before_model": 55,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 25
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 43,
+            "total": 55
+          },
+          "rev13_counterfactual": {
+            "passed": 55,
+            "total": 55,
+            "answered_before_model": 52,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 22
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 55,
+            "total": 55,
+            "answered_before_model": 52,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 22
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 3,
+            "total": 3
+          },
+          "rev13_counterfactual": {
+            "passed": 3,
+            "total": 3,
+            "answered_before_model": 3,
+            "routes": {
+              "policy_prepass": 3
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 3,
+            "total": 3,
+            "answered_before_model": 3,
+            "routes": {
+              "policy_prepass": 3
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4380.514999999999,
+        "latency_p95_ms": 5235.274,
+        "transport_or_schema_errors": 2,
+        "misses": [
+          "p03",
+          "c01",
+          "n01",
+          "n04",
+          "n05",
+          "n06",
+          "u01",
+          "u02",
+          "u11",
+          "i01",
+          "i04",
+          "i07"
+        ]
+      },
+      "root_rev13_38": {
+        "overall": {
+          "bare_model": {
+            "passed": 24,
+            "total": 38
+          },
+          "rev13_counterfactual": {
+            "passed": 25,
+            "total": 38,
+            "answered_before_model": 25,
+            "routes": {
+              "model_fallback": 13,
+              "policy_prepass": 17,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 7
+          },
+          "rev14_counterfactual": {
+            "passed": 26,
+            "total": 38,
+            "answered_before_model": 26,
+            "routes": {
+              "model_fallback": 12,
+              "policy_prepass": 18,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 6
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 24,
+            "total": 38
+          },
+          "rev13_counterfactual": {
+            "passed": 25,
+            "total": 38,
+            "answered_before_model": 25,
+            "routes": {
+              "model_fallback": 13,
+              "policy_prepass": 17,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 7
+          },
+          "rev14_counterfactual": {
+            "passed": 26,
+            "total": 38,
+            "answered_before_model": 26,
+            "routes": {
+              "model_fallback": 12,
+              "policy_prepass": 18,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 6
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 0,
+            "total": 0
+          },
+          "rev13_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4382.727,
+        "latency_p95_ms": 5466.461,
+        "transport_or_schema_errors": 0,
+        "misses": [
+          "o07",
+          "o08",
+          "c03",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c09",
+          "c10",
+          "c11",
+          "c14",
+          "c16",
+          "c17",
+          "c18"
+        ]
+      },
+      "worker_rev13_48": {
+        "overall": {
+          "bare_model": {
+            "passed": 33,
+            "total": 48
+          },
+          "rev13_counterfactual": {
+            "passed": 39,
+            "total": 48,
+            "answered_before_model": 22,
+            "routes": {
+              "policy_prepass": 14,
+              "source_fast_path": 8,
+              "model_fallback": 26
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 39,
+            "total": 48,
+            "answered_before_model": 25,
+            "routes": {
+              "policy_prepass": 17,
+              "source_fast_path": 8,
+              "model_fallback": 23
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 33,
+            "total": 48
+          },
+          "rev13_counterfactual": {
+            "passed": 39,
+            "total": 48,
+            "answered_before_model": 22,
+            "routes": {
+              "policy_prepass": 14,
+              "source_fast_path": 8,
+              "model_fallback": 26
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 39,
+            "total": 48,
+            "answered_before_model": 25,
+            "routes": {
+              "policy_prepass": 17,
+              "source_fast_path": 8,
+              "model_fallback": 23
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 0,
+            "total": 0
+          },
+          "rev13_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4419.759,
+        "latency_p95_ms": 5714.97,
+        "transport_or_schema_errors": 0,
+        "misses": [
+          "crit-03",
+          "crit-06",
+          "crit-08",
+          "crit-11",
+          "crit-12",
+          "crit-16",
+          "ord-01",
+          "ord-02",
+          "ord-05",
+          "ord-06",
+          "ord-08",
+          "ord-10",
+          "ord-16",
+          "ord-26",
+          "ord-32"
+        ]
+      },
+      "sealed_v3_100": {
+        "overall": {
+          "bare_model": {
+            "passed": 79,
+            "total": 100
+          },
+          "rev13_counterfactual": {
+            "passed": 95,
+            "total": 100,
+            "answered_before_model": 72,
+            "routes": {
+              "model_fallback": 28,
+              "policy_prepass": 45,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          },
+          "rev14_counterfactual": {
+            "passed": 95,
+            "total": 100,
+            "answered_before_model": 73,
+            "routes": {
+              "model_fallback": 27,
+              "policy_prepass": 46,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 75,
+            "total": 95
+          },
+          "rev13_counterfactual": {
+            "passed": 90,
+            "total": 95,
+            "answered_before_model": 68,
+            "routes": {
+              "model_fallback": 27,
+              "policy_prepass": 41,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          },
+          "rev14_counterfactual": {
+            "passed": 90,
+            "total": 95,
+            "answered_before_model": 69,
+            "routes": {
+              "model_fallback": 26,
+              "policy_prepass": 42,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 4,
+            "total": 5
+          },
+          "rev13_counterfactual": {
+            "passed": 5,
+            "total": 5,
+            "answered_before_model": 4,
+            "routes": {
+              "policy_prepass": 4,
+              "model_fallback": 1
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 5,
+            "total": 5,
+            "answered_before_model": 4,
+            "routes": {
+              "policy_prepass": 4,
+              "model_fallback": 1
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4443.424,
+        "latency_p95_ms": 5393.183,
+        "transport_or_schema_errors": 1,
+        "misses": [
+          "o19",
+          "o28",
+          "o32",
+          "o44",
+          "x03",
+          "x07",
+          "x08",
+          "x09",
+          "x13",
+          "x15",
+          "x16",
+          "x25",
+          "x27",
+          "x28",
+          "x33",
+          "x35",
+          "x39",
+          "x41",
+          "x43",
+          "x45",
+          "x48"
+        ]
+      }
+    },
+    "greedy_zero_penalty": {
+      "original30": {
+        "overall": {
+          "bare_model": {
+            "passed": 27,
+            "total": 30
+          },
+          "rev13_counterfactual": {
+            "passed": 29,
+            "total": 30,
+            "answered_before_model": 29,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 16
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 29,
+            "total": 30,
+            "answered_before_model": 29,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 16
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 21,
+            "total": 24
+          },
+          "rev13_counterfactual": {
+            "passed": 23,
+            "total": 24,
+            "answered_before_model": 23,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 10
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 23,
+            "total": 24,
+            "answered_before_model": 23,
+            "routes": {
+              "source_fast_path": 13,
+              "model_fallback": 1,
+              "policy_prepass": 10
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 6,
+            "total": 6
+          },
+          "rev13_counterfactual": {
+            "passed": 6,
+            "total": 6,
+            "answered_before_model": 6,
+            "routes": {
+              "policy_prepass": 6
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 6,
+            "total": 6,
+            "answered_before_model": 6,
+            "routes": {
+              "policy_prepass": 6
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 3991.346,
+        "latency_p95_ms": 4973.855,
+        "transport_or_schema_errors": 1,
+        "misses": [
+          "p05",
+          "a02",
+          "n04"
+        ]
+      },
+      "development58": {
+        "overall": {
+          "bare_model": {
+            "passed": 46,
+            "total": 58
+          },
+          "rev13_counterfactual": {
+            "passed": 56,
+            "total": 58,
+            "answered_before_model": 55,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 25
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 56,
+            "total": 58,
+            "answered_before_model": 55,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 25
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 43,
+            "total": 55
+          },
+          "rev13_counterfactual": {
+            "passed": 53,
+            "total": 55,
+            "answered_before_model": 52,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 22
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 53,
+            "total": 55,
+            "answered_before_model": 52,
+            "routes": {
+              "source_fast_path": 30,
+              "model_fallback": 3,
+              "policy_prepass": 22
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 3,
+            "total": 3
+          },
+          "rev13_counterfactual": {
+            "passed": 3,
+            "total": 3,
+            "answered_before_model": 3,
+            "routes": {
+              "policy_prepass": 3
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 3,
+            "total": 3,
+            "answered_before_model": 3,
+            "routes": {
+              "policy_prepass": 3
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4292.609,
+        "latency_p95_ms": 5002.457,
+        "transport_or_schema_errors": 2,
+        "misses": [
+          "p01",
+          "p03",
+          "p10",
+          "p11",
+          "c01",
+          "n04",
+          "n05",
+          "u01",
+          "u02",
+          "u11",
+          "i01",
+          "i07"
+        ]
+      },
+      "root_rev13_38": {
+        "overall": {
+          "bare_model": {
+            "passed": 25,
+            "total": 38
+          },
+          "rev13_counterfactual": {
+            "passed": 25,
+            "total": 38,
+            "answered_before_model": 25,
+            "routes": {
+              "model_fallback": 13,
+              "policy_prepass": 17,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 7
+          },
+          "rev14_counterfactual": {
+            "passed": 26,
+            "total": 38,
+            "answered_before_model": 26,
+            "routes": {
+              "model_fallback": 12,
+              "policy_prepass": 18,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 6
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 25,
+            "total": 38
+          },
+          "rev13_counterfactual": {
+            "passed": 25,
+            "total": 38,
+            "answered_before_model": 25,
+            "routes": {
+              "model_fallback": 13,
+              "policy_prepass": 17,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 7
+          },
+          "rev14_counterfactual": {
+            "passed": 26,
+            "total": 38,
+            "answered_before_model": 26,
+            "routes": {
+              "model_fallback": 12,
+              "policy_prepass": 18,
+              "source_fast_path": 8
+            },
+            "correct_model_discarded_by_reconciliation": 2,
+            "correct_model_replaced_with_wrong_prepass": 6
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 0,
+            "total": 0
+          },
+          "rev13_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4227.9055,
+        "latency_p95_ms": 5820.063,
+        "transport_or_schema_errors": 1,
+        "misses": [
+          "o07",
+          "o08",
+          "c03",
+          "c05",
+          "c06",
+          "c07",
+          "c08",
+          "c10",
+          "c11",
+          "c14",
+          "c16",
+          "c17",
+          "c18"
+        ]
+      },
+      "worker_rev13_48": {
+        "overall": {
+          "bare_model": {
+            "passed": 35,
+            "total": 48
+          },
+          "rev13_counterfactual": {
+            "passed": 40,
+            "total": 48,
+            "answered_before_model": 22,
+            "routes": {
+              "policy_prepass": 14,
+              "source_fast_path": 8,
+              "model_fallback": 26
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 40,
+            "total": 48,
+            "answered_before_model": 25,
+            "routes": {
+              "policy_prepass": 17,
+              "source_fast_path": 8,
+              "model_fallback": 23
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 35,
+            "total": 48
+          },
+          "rev13_counterfactual": {
+            "passed": 40,
+            "total": 48,
+            "answered_before_model": 22,
+            "routes": {
+              "policy_prepass": 14,
+              "source_fast_path": 8,
+              "model_fallback": 26
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 40,
+            "total": 48,
+            "answered_before_model": 25,
+            "routes": {
+              "policy_prepass": 17,
+              "source_fast_path": 8,
+              "model_fallback": 23
+            },
+            "correct_model_discarded_by_reconciliation": 1,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 0,
+            "total": 0
+          },
+          "rev13_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 0,
+            "total": 0,
+            "answered_before_model": 0,
+            "routes": {},
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4170.773999999999,
+        "latency_p95_ms": 5423.203,
+        "transport_or_schema_errors": 0,
+        "misses": [
+          "crit-03",
+          "crit-06",
+          "crit-08",
+          "crit-12",
+          "crit-16",
+          "ord-01",
+          "ord-02",
+          "ord-05",
+          "ord-08",
+          "ord-16",
+          "ord-18",
+          "ord-26",
+          "ord-32"
+        ]
+      },
+      "sealed_v3_100": {
+        "overall": {
+          "bare_model": {
+            "passed": 77,
+            "total": 100
+          },
+          "rev13_counterfactual": {
+            "passed": 93,
+            "total": 100,
+            "answered_before_model": 72,
+            "routes": {
+              "model_fallback": 28,
+              "policy_prepass": 45,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          },
+          "rev14_counterfactual": {
+            "passed": 93,
+            "total": 100,
+            "answered_before_model": 73,
+            "routes": {
+              "model_fallback": 27,
+              "policy_prepass": 46,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          }
+        },
+        "reduced_scope": {
+          "bare_model": {
+            "passed": 72,
+            "total": 95
+          },
+          "rev13_counterfactual": {
+            "passed": 88,
+            "total": 95,
+            "answered_before_model": 68,
+            "routes": {
+              "model_fallback": 27,
+              "policy_prepass": 41,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          },
+          "rev14_counterfactual": {
+            "passed": 88,
+            "total": 95,
+            "answered_before_model": 69,
+            "routes": {
+              "model_fallback": 26,
+              "policy_prepass": 42,
+              "source_fast_path": 27
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 3
+          }
+        },
+        "boundary_and_wider": {
+          "bare_model": {
+            "passed": 5,
+            "total": 5
+          },
+          "rev13_counterfactual": {
+            "passed": 5,
+            "total": 5,
+            "answered_before_model": 4,
+            "routes": {
+              "policy_prepass": 4,
+              "model_fallback": 1
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          },
+          "rev14_counterfactual": {
+            "passed": 5,
+            "total": 5,
+            "answered_before_model": 4,
+            "routes": {
+              "policy_prepass": 4,
+              "model_fallback": 1
+            },
+            "correct_model_discarded_by_reconciliation": 0,
+            "correct_model_replaced_with_wrong_prepass": 0
+          }
+        },
+        "latency_median_ms": 4023.1865,
+        "latency_p95_ms": 4788.452,
+        "transport_or_schema_errors": 1,
+        "misses": [
+          "o05",
+          "o19",
+          "o27",
+          "o28",
+          "o30",
+          "o32",
+          "o44",
+          "x03",
+          "x07",
+          "x08",
+          "x09",
+          "x10",
+          "x13",
+          "x15",
+          "x25",
+          "x27",
+          "x28",
+          "x33",
+          "x35",
+          "x39",
+          "x43",
+          "x45",
+          "x48"
+        ]
+      }
+    }
+  }
+}

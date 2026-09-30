@@ -1,0 +1,116 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 79,
+      "total": 100
+    },
+    "rev13_counterfactual": {
+      "passed": 95,
+      "total": 100,
+      "answered_before_model": 72,
+      "routes": {
+        "model_fallback": 28,
+        "policy_prepass": 45,
+        "source_fast_path": 27
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 3
+    },
+    "rev14_counterfactual": {
+      "passed": 95,
+      "total": 100,
+      "answered_before_model": 73,
+      "routes": {
+        "model_fallback": 27,
+        "policy_prepass": 46,
+        "source_fast_path": 27
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 3
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 75,
+      "total": 95
+    },
+    "rev13_counterfactual": {
+      "passed": 90,
+      "total": 95,
+      "answered_before_model": 68,
+      "routes": {
+        "model_fallback": 27,
+        "policy_prepass": 41,
+        "source_fast_path": 27
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 3
+    },
+    "rev14_counterfactual": {
+      "passed": 90,
+      "total": 95,
+      "answered_before_model": 69,
+      "routes": {
+        "model_fallback": 26,
+        "policy_prepass": 42,
+        "source_fast_path": 27
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 3
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 4,
+      "total": 5
+    },
+    "rev13_counterfactual": {
+      "passed": 5,
+      "total": 5,
+      "answered_before_model": 4,
+      "routes": {
+        "policy_prepass": 4,
+        "model_fallback": 1
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 5,
+      "total": 5,
+      "answered_before_model": 4,
+      "routes": {
+        "policy_prepass": 4,
+        "model_fallback": 1
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 4443.424,
+  "latency_p95_ms": 5393.183,
+  "transport_or_schema_errors": 1,
+  "misses": [
+    "o19",
+    "o28",
+    "o32",
+    "o44",
+    "x03",
+    "x07",
+    "x08",
+    "x09",
+    "x13",
+    "x15",
+    "x16",
+    "x25",
+    "x27",
+    "x28",
+    "x33",
+    "x35",
+    "x39",
+    "x41",
+    "x43",
+    "x45",
+    "x48"
+  ]
+}

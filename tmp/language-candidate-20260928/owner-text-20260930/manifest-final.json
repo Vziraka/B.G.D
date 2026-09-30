@@ -1,0 +1,298 @@
+{
+  "purpose": "Owner-approved agent-seeded text trial with old frozen prompt; no tuning, sealed/spoken/Pi qualification, or numeric gate.",
+  "started_utc": "2026-09-30T08:09:38.972023+00:00",
+  "inputs": {
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\owner-approved-commands-20260930.json": "6b68fffa29b0521908d0cc6f7f950e9f2d06cc0c59dabddfac0a5e6420a98b79",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\measure_owner.py": "6ab26608798f92915e438ec705f1bb69878c9834bf3fc3132783fda0a5a6679f",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260928\\measure_bare.py": "27e475ee9b06db864283f8d4fda560e4fa957091b13fbfd361c5a55f0c138536",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf": "13c16f426047e2de38cd075bdade4a7bcbc8c774384876f677740cda65f8a983",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260922\\windows\\llama-server.exe": "786eea5d9ca4a4257aa175f363338f90e0eb109360b139654c44333d4d129f23",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\bgd_vision\\conversation.py": "b19406d279243da723ca83fd78c74a8caff3abc251a483963dd39a8da5dd23a8",
+    "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260927\\boundary-v14-baseline\\rev13-conversation.py": "278e365c44643ad129c9358e5dba4f23534a3df2d5ad230c506fc9b0a7c9cbf2"
+  },
+  "prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+  "profiles": {
+    "old_sampling": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 1.5,
+      "seed": 42
+    },
+    "greedy_zero_penalty": {
+      "temperature": 0,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "seed": 42
+    }
+  },
+  "overlaps_step0_pc_run": true,
+  "timing_limit": "Separate two-thread processes may overlap on this 16-core PC. Times are actual durations, not a controlled latency comparison.",
+  "summaries": {
+    "old_sampling": {
+      "overall": {
+        "bare_model": {
+          "passed": 22,
+          "total": 23
+        },
+        "rev13_counterfactual": {
+          "passed": 20,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 2
+        },
+        "rev14_counterfactual": {
+          "passed": 20,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 2
+        }
+      },
+      "reduced_scope": {
+        "bare_model": {
+          "passed": 22,
+          "total": 23
+        },
+        "rev13_counterfactual": {
+          "passed": 20,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 2
+        },
+        "rev14_counterfactual": {
+          "passed": 20,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 2
+        }
+      },
+      "boundary_and_wider": {
+        "bare_model": {
+          "passed": 0,
+          "total": 0
+        },
+        "rev13_counterfactual": {
+          "passed": 0,
+          "total": 0,
+          "answered_before_model": 0,
+          "routes": {},
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 0
+        },
+        "rev14_counterfactual": {
+          "passed": 0,
+          "total": 0,
+          "answered_before_model": 0,
+          "routes": {},
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 0
+        }
+      },
+      "latency_median_ms": 4346.984,
+      "latency_p95_ms": 5163.321,
+      "transport_or_schema_errors": 0,
+      "misses": [
+        "owner-10"
+      ]
+    },
+    "greedy_zero_penalty": {
+      "overall": {
+        "bare_model": {
+          "passed": 18,
+          "total": 23
+        },
+        "rev13_counterfactual": {
+          "passed": 19,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 1
+        },
+        "rev14_counterfactual": {
+          "passed": 19,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 1
+        }
+      },
+      "reduced_scope": {
+        "bare_model": {
+          "passed": 18,
+          "total": 23
+        },
+        "rev13_counterfactual": {
+          "passed": 19,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 1
+        },
+        "rev14_counterfactual": {
+          "passed": 19,
+          "total": 23,
+          "answered_before_model": 21,
+          "routes": {
+            "source_fast_path": 21,
+            "model_fallback": 2
+          },
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 1
+        }
+      },
+      "boundary_and_wider": {
+        "bare_model": {
+          "passed": 0,
+          "total": 0
+        },
+        "rev13_counterfactual": {
+          "passed": 0,
+          "total": 0,
+          "answered_before_model": 0,
+          "routes": {},
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 0
+        },
+        "rev14_counterfactual": {
+          "passed": 0,
+          "total": 0,
+          "answered_before_model": 0,
+          "routes": {},
+          "correct_model_discarded_by_reconciliation": 0,
+          "correct_model_replaced_with_wrong_prepass": 0
+        }
+      },
+      "latency_median_ms": 4327.341,
+      "latency_p95_ms": 5002.186,
+      "transport_or_schema_errors": 1,
+      "misses": [
+        "owner-03",
+        "owner-10",
+        "owner-18",
+        "owner-19",
+        "owner-20"
+      ]
+    }
+  },
+  "server_runs": [
+    {
+      "profile": "old_sampling",
+      "pid": 46048,
+      "arguments": [
+        "-m",
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8086",
+        "-t",
+        "2",
+        "-tb",
+        "2",
+        "-c",
+        "2048",
+        "-np",
+        "1",
+        "--jinja",
+        "--no-webui"
+      ],
+      "health_ready_ms": 3105.612,
+      "stopped": true,
+      "exit_code": 1
+    },
+    {
+      "profile": "greedy_zero_penalty",
+      "pid": 36404,
+      "arguments": [
+        "-m",
+        "C:\\Users\\zvent\\Downloads\\B.G.D\\tmp\\language-candidate-20260926\\qwen35-4b-q4_k_m.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "8086",
+        "-t",
+        "2",
+        "-tb",
+        "2",
+        "-c",
+        "2048",
+        "-np",
+        "1",
+        "--jinja",
+        "--no-webui"
+      ],
+      "health_ready_ms": 3112.289,
+      "stopped": true,
+      "exit_code": 1
+    }
+  ],
+  "stop_bypass": [
+    {
+      "id": "owner-24",
+      "text": "Stop.",
+      "passed": true,
+      "model_calls": 0,
+      "calls": 1000,
+      "median_ms": 0.0012,
+      "p95_ms": 0.0014
+    },
+    {
+      "id": "owner-25",
+      "text": "Stop following me.",
+      "passed": true,
+      "model_calls": 0,
+      "calls": 1000,
+      "median_ms": 0.0019,
+      "p95_ms": 0.0022
+    }
+  ],
+  "finished_utc": "2026-09-30T08:13:50.754028+00:00",
+  "inputs_unchanged": true,
+  "outputs": {
+    "greedy_zero_penalty-raw.jsonl": "595676e5f8a4e92a961cfa76f0b00162c0fe8970b320f61ae0195417828b0498",
+    "greedy_zero_penalty-server.stderr.log": "be9e53acaccc9fe09680d2eca919e7220fa7e9e96e975e647a1d8f59e2fd88a0",
+    "greedy_zero_penalty-server.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "greedy_zero_penalty-summary.json": "86209529968245a70eea603b58feb2bb9e169e9770ad1c2767eb31c09c595c20",
+    "manifest-before.json": "adf9782a549d57636b5666b1e94361019c4831900888da260344b082359e1588",
+    "manifest-progress.json": "70158f967c0d85651904a5b1b38f6f9b5d950fbd91807bb46db07b2c64236bf6",
+    "old_sampling-raw.jsonl": "b57a72197390290663e431eecc793b098093e6aab5e8ea77083ae2c8cfdfe590",
+    "old_sampling-server.stderr.log": "8e49821fe148ccd65e9a4ffb13de581427fafbe48b99d599cfff6943f33fa426",
+    "old_sampling-server.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "old_sampling-summary.json": "5c4bad9e3a88c204e18cc6cecbd34c58fdedbd928d48c46ebdbe2d4dc60cbeb3"
+  }
+}

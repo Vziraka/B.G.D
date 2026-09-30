@@ -1,0 +1,104 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 33,
+      "total": 48
+    },
+    "rev13_counterfactual": {
+      "passed": 39,
+      "total": 48,
+      "answered_before_model": 22,
+      "routes": {
+        "policy_prepass": 14,
+        "source_fast_path": 8,
+        "model_fallback": 26
+      },
+      "correct_model_discarded_by_reconciliation": 1,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 39,
+      "total": 48,
+      "answered_before_model": 25,
+      "routes": {
+        "policy_prepass": 17,
+        "source_fast_path": 8,
+        "model_fallback": 23
+      },
+      "correct_model_discarded_by_reconciliation": 1,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 33,
+      "total": 48
+    },
+    "rev13_counterfactual": {
+      "passed": 39,
+      "total": 48,
+      "answered_before_model": 22,
+      "routes": {
+        "policy_prepass": 14,
+        "source_fast_path": 8,
+        "model_fallback": 26
+      },
+      "correct_model_discarded_by_reconciliation": 1,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 39,
+      "total": 48,
+      "answered_before_model": 25,
+      "routes": {
+        "policy_prepass": 17,
+        "source_fast_path": 8,
+        "model_fallback": 23
+      },
+      "correct_model_discarded_by_reconciliation": 1,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 0,
+      "total": 0
+    },
+    "rev13_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 4419.759,
+  "latency_p95_ms": 5714.97,
+  "transport_or_schema_errors": 0,
+  "misses": [
+    "crit-03",
+    "crit-06",
+    "crit-08",
+    "crit-11",
+    "crit-12",
+    "crit-16",
+    "ord-01",
+    "ord-02",
+    "ord-05",
+    "ord-06",
+    "ord-08",
+    "ord-10",
+    "ord-16",
+    "ord-26",
+    "ord-32"
+  ]
+}

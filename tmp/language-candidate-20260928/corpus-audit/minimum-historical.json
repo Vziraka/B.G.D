@@ -1,0 +1,219 @@
+[
+  {
+    "corpus_id": "original30",
+    "corpus_sha256": "f734fc1ab630a236a14b50f8b7e4031b0e92e0fa717130171589bcf28cc95a1b",
+    "result_path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-results.json",
+    "result_sha256": "397fa077e1d649b69b696bd241a3f1d5670d21b4f791eef97509d7d78dcc8ed2",
+    "raw_path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-old30-raw.jsonl",
+    "raw_sha256": "5721a9ca691b56b7dc593355ad8dd5d25643e64bfbb825fcfbc202e3466c6976",
+    "historical_overall_exact_match": {
+      "passed": 30,
+      "total": 30
+    },
+    "historical_reduced_domain_exact_match": {
+      "passed": 24,
+      "total": 24
+    },
+    "historical_unsupported_allowed_exact_match": {
+      "passed": 12,
+      "total": 12
+    },
+    "routes": {
+      "source_fast_path": 13,
+      "model_fallback": 1,
+      "policy_prepass": 16
+    },
+    "recorded_model_inference_count": 1,
+    "correct_recorded_raw_model_answer_ids": [
+      "p05"
+    ],
+    "correct_recorded_raw_model_answers_discarded_ids": [],
+    "recorded_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+    "comparison_limit": "Historical guarded run has its own revision/prompt and sampled completions. It is not the new bare run or a same-completion guard replay. Guarded no-inference rows have no observed model answer; discarded counts cannot extrapolate to them."
+  },
+  {
+    "corpus_id": "development-v2",
+    "corpus_sha256": "24bdbc4d4a1fd40bb17de28082a1c45fc2c9bbfd1fee840389d44fc6c269b299",
+    "result_path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-results.json",
+    "result_sha256": "ae7d0550a39607c33db6fe2ee596c6895aae31315104fa20ebf47405d7293f1c",
+    "raw_path": "tmp/language-candidate-20260927/clause-accountable-rev13/selected-v2-raw.jsonl",
+    "raw_sha256": "e6fb74461b15a501f1906ea25756bafc9d98186427587d901c6bc8cfc98a8bd5",
+    "historical_overall_exact_match": {
+      "passed": 58,
+      "total": 58
+    },
+    "historical_reduced_domain_exact_match": {
+      "passed": 55,
+      "total": 55
+    },
+    "historical_unsupported_allowed_exact_match": {
+      "passed": 20,
+      "total": 20
+    },
+    "routes": {
+      "source_fast_path": 30,
+      "model_fallback": 3,
+      "policy_prepass": 25
+    },
+    "recorded_model_inference_count": 3,
+    "correct_recorded_raw_model_answer_ids": [
+      "p10",
+      "p11",
+      "a04"
+    ],
+    "correct_recorded_raw_model_answers_discarded_ids": [],
+    "recorded_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+    "comparison_limit": "Historical guarded run has its own revision/prompt and sampled completions. It is not the new bare run or a same-completion guard replay. Guarded no-inference rows have no observed model answer; discarded counts cannot extrapolate to them."
+  },
+  {
+    "corpus_id": "rev13-root38",
+    "corpus_sha256": "641bde7b91bfd85baf25e58a1c91808360999239240202924f29f0f9215a47d8",
+    "result_path": "tmp/language-candidate-20260927/root-open-probe-rev13/probe-results.json",
+    "result_sha256": "cda3accd942cc4608566a17b19512c3989ed82c0b9dadc0f819492cb9ad01fd2",
+    "raw_path": "tmp/language-candidate-20260927/root-open-probe-rev13/probe-raw.jsonl",
+    "raw_sha256": "21edae0b1b1a88f3e536aad0cdcc3926106762f44e3b72e1dedf5c25b64d2374",
+    "historical_overall_exact_match": {
+      "passed": 25,
+      "total": 38
+    },
+    "historical_reduced_domain_exact_match": {
+      "passed": 25,
+      "total": 38
+    },
+    "historical_unsupported_allowed_exact_match": {
+      "passed": 8,
+      "total": 11
+    },
+    "routes": {
+      "model_fallback": 13,
+      "policy_prepass": 17,
+      "source_fast_path": 8
+    },
+    "recorded_model_inference_count": 13,
+    "correct_recorded_raw_model_answer_ids": [
+      "o01",
+      "o02",
+      "o03",
+      "o05",
+      "o06",
+      "o11",
+      "o17",
+      "o18",
+      "o20"
+    ],
+    "correct_recorded_raw_model_answers_discarded_ids": [
+      "o02",
+      "o18"
+    ],
+    "recorded_prompt_sha256": null,
+    "comparison_limit": "Historical guarded run has its own revision/prompt and sampled completions. It is not the new bare run or a same-completion guard replay. Guarded no-inference rows have no observed model answer; discarded counts cannot extrapolate to them."
+  },
+  {
+    "corpus_id": "rev13-worker48",
+    "corpus_sha256": "fea6b3d659bc333e3d0391bd83b79641135c78715b1f2648642cf190e8a16fc2",
+    "result_path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-results.json",
+    "result_sha256": "cd4d7b1e65e6a1bcae574c5956671b02f5547b5b0bdd2c65f6d4f511c16a2e0e",
+    "raw_path": "tmp/language-candidate-20260927/clause-accountable-rev13/ab-baseline-raw.jsonl",
+    "raw_sha256": "1869965bc574225b646906cf85a22863d9c519dee7bab919b982f2d62ed6c781",
+    "historical_overall_exact_match": {
+      "passed": 38,
+      "total": 48
+    },
+    "historical_reduced_domain_exact_match": {
+      "passed": 38,
+      "total": 48
+    },
+    "historical_unsupported_allowed_exact_match": {
+      "passed": 9,
+      "total": 9
+    },
+    "routes": {
+      "policy_prepass": 14,
+      "source_fast_path": 8,
+      "model_fallback": 26
+    },
+    "recorded_model_inference_count": 26,
+    "correct_recorded_raw_model_answer_ids": [
+      "ord-03",
+      "ord-04",
+      "ord-07",
+      "ord-09",
+      "ord-11",
+      "ord-12",
+      "ord-13",
+      "ord-14",
+      "ord-15",
+      "ord-17",
+      "ord-19",
+      "ord-20",
+      "ord-21",
+      "ord-22",
+      "ord-23",
+      "ord-24",
+      "ord-25"
+    ],
+    "correct_recorded_raw_model_answers_discarded_ids": [
+      "ord-25"
+    ],
+    "recorded_prompt_sha256": "baaa4ec9c5228fc98b16a2c70a59b972f8ac3dc5c10c2c720095d52b20ba4117",
+    "comparison_limit": "Historical guarded run has its own revision/prompt and sampled completions. It is not the new bare run or a same-completion guard replay. Guarded no-inference rows have no observed model answer; discarded counts cannot extrapolate to them."
+  },
+  {
+    "corpus_id": "sealed-v3",
+    "corpus_sha256": "02befce4589624c66d5fcead0fae5aa53c1a07fb84ffcf4c7ed76fb2fe9c6574",
+    "result_path": "tmp/language-candidate-20260927/sealed-v3/sealed-results.json",
+    "result_sha256": "d9b3e477c30913cc2505bf2ca032db84bf086a70ae1b39652199c003f9fbbd83",
+    "raw_path": "tmp/language-candidate-20260927/sealed-v3/sealed-raw.jsonl",
+    "raw_sha256": "d90d2b4af483b60fda055277cead237766cd8e9366fbb05075d1791a8eb41ecc",
+    "historical_overall_exact_match": {
+      "passed": 88,
+      "total": 100
+    },
+    "historical_reduced_domain_exact_match": {
+      "passed": 83,
+      "total": 95
+    },
+    "historical_unsupported_allowed_exact_match": {
+      "passed": 28,
+      "total": 30
+    },
+    "routes": {
+      "model_fallback": 31,
+      "policy_prepass": 43,
+      "source_fast_path": 26
+    },
+    "recorded_model_inference_count": 31,
+    "correct_recorded_raw_model_answer_ids": [
+      "o01",
+      "o02",
+      "o03",
+      "o06",
+      "o07",
+      "o08",
+      "o09",
+      "o10",
+      "o11",
+      "o12",
+      "o13",
+      "o14",
+      "o15",
+      "o16",
+      "o17",
+      "o20",
+      "o21",
+      "o22",
+      "o23",
+      "o24",
+      "o25",
+      "o27",
+      "o28",
+      "o29",
+      "o30",
+      "o40",
+      "x21"
+    ],
+    "correct_recorded_raw_model_answers_discarded_ids": [],
+    "recorded_prompt_sha256": "323f002df4f7ec380fe77c7035ba4def20bb154b553839d42466fcfa9e0d17c4",
+    "comparison_limit": "Historical guarded run has its own revision/prompt and sampled completions. It is not the new bare run or a same-completion guard replay. Guarded no-inference rows have no observed model answer; discarded counts cannot extrapolate to them."
+  }
+]

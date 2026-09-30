@@ -1,0 +1,90 @@
+{
+  "overall": {
+    "bare_model": {
+      "passed": 18,
+      "total": 23
+    },
+    "rev13_counterfactual": {
+      "passed": 19,
+      "total": 23,
+      "answered_before_model": 21,
+      "routes": {
+        "source_fast_path": 21,
+        "model_fallback": 2
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 1
+    },
+    "rev14_counterfactual": {
+      "passed": 19,
+      "total": 23,
+      "answered_before_model": 21,
+      "routes": {
+        "source_fast_path": 21,
+        "model_fallback": 2
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 1
+    }
+  },
+  "reduced_scope": {
+    "bare_model": {
+      "passed": 18,
+      "total": 23
+    },
+    "rev13_counterfactual": {
+      "passed": 19,
+      "total": 23,
+      "answered_before_model": 21,
+      "routes": {
+        "source_fast_path": 21,
+        "model_fallback": 2
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 1
+    },
+    "rev14_counterfactual": {
+      "passed": 19,
+      "total": 23,
+      "answered_before_model": 21,
+      "routes": {
+        "source_fast_path": 21,
+        "model_fallback": 2
+      },
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 1
+    }
+  },
+  "boundary_and_wider": {
+    "bare_model": {
+      "passed": 0,
+      "total": 0
+    },
+    "rev13_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    },
+    "rev14_counterfactual": {
+      "passed": 0,
+      "total": 0,
+      "answered_before_model": 0,
+      "routes": {},
+      "correct_model_discarded_by_reconciliation": 0,
+      "correct_model_replaced_with_wrong_prepass": 0
+    }
+  },
+  "latency_median_ms": 4327.341,
+  "latency_p95_ms": 5002.186,
+  "transport_or_schema_errors": 1,
+  "misses": [
+    "owner-03",
+    "owner-10",
+    "owner-18",
+    "owner-19",
+    "owner-20"
+  ]
+}
