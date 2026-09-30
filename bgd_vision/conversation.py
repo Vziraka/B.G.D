@@ -36,9 +36,12 @@ _ACTION_NEGATION = re.compile(
     r"cannot|can't|will\s+not|won't|would\s+not|wouldn't|no\s+need\s+to|"
     r"no\s+reason\s+to|avoid|refrain\s+from|instead\s+of|rather\s+than)\b",
     re.IGNORECASE)
+_AFFIRMATIVE_NEGATION_BODY = (
+    r"(?:forget|hesitate|fail|neglect)\s+to|lose\s+(?:sight|track)\s+of|"
+    r"stop\s+(?:following|tracking|watching)")
 _AFFIRMATIVE_NEGATION_IDIOM = re.compile(
     r"\b(?:do\s+not|don't|dont|never|cannot|can't|should\s+not|shouldn't|"
-    r"will\s+not|won't|would\s+not|wouldn't)\s+(?:forget|hesitate|fail|neglect)\s+to\b",
+    r"will\s+not|won't|would\s+not|wouldn't)\s+(?:" + _AFFIRMATIVE_NEGATION_BODY + r")\b",
     re.IGNORECASE)
 _POLICY_CLAUSE_BOUNDARY = re.compile(
     r"(?<!\d),(?!\d)|[;:!?]|(?<!\d)\.(?!\d)|"
@@ -266,7 +269,7 @@ _BENIGN_ANAPHORIC_PURPOSE = re.compile(
 _NEGATED_CLAUSE_PREFIX = re.compile(
     r"^\s*(?:(?:please|just)\s+)*(?:do\s+not|don't|dont|never|cannot|can't|"
     r"should\s+not|shouldn't|will\s+not|won't|would\s+not|wouldn't|avoid|refrain\s+from)\b"
-    r"(?!\s+(?:forget|hesitate|fail|neglect)\s+to\b)",
+    r"(?!\s+(?:" + _AFFIRMATIVE_NEGATION_BODY + r")\b)",
     re.IGNORECASE)
 _COORDINATED_TARGET_MODIFIERS = re.compile(
     rf"\b{_TARGET_MODIFIER}\s+and\s+{_TARGET_MODIFIER}\s+[a-z][a-z-]*\b",
