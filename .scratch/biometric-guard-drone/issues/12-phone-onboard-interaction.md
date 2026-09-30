@@ -8,7 +8,23 @@ Resolution scope: the original actuator-free simulator slice is the only part ev
 
 **September 30 — owner-requested bulk build cadence.** Owner says the per-step responses are too slow for the deadline and requests bulk work. Provide one complete motor/stack/disconnected-main-power batch and one combined report. First motor's three joins remain owner-reported only; visual wetting/geometry and gentle-tug self-check replace the mandatory photo gate. Individual splice insulation precedes powered tests and ESC-end soldering; outer bundling can wait. Use the new bulk section in the existing stack/motor card and C1 P1–P5. Neither current-limited supply nor smoke stopper is owned; C1 now contains a bounded temporary owned-5A-fuse idle-test method for later. No battery/USB/charger power, configuration, motor test, hover or full product pass is inferred. Earlier micro-step next actions are superseded; failed physical checks still stop the affected work.
 
-### September 30 — owner decision: narrow the deterministic layer, do not replace it
+### September 30 — language workstream stopped at current behaviour
+
+Owner decision: **stop language work here** and put the remaining hours into the aircraft. The interpretation layer ships as it stands. No further revision, replacement or vocabulary widening is authorised, and the prompt trial is not authorised.
+
+Delivered state: 234/260 on the reduced-scope labels and 20/23 on the owner-approved commands, with the bare model at 196/260 and 22/23. One loss is fixed in `8fa1539` ("Don't lose sight of the blue suitcase" was read as a negated follow). `bgd_vision/` and `tests/vision/` otherwise stand at their 27 September hashes. Full conversation suite passes at 97 tests and 343 subtests.
+
+Accepted limitations, recorded rather than fixed:
+
+- **Nine reachable losses left unfixed.** Seven come from `_has_unaccounted_explicit_clause` not recognising ordinary synonyms (`spot`, `stay on`, `keep … selected`, "describe everything in the frame", tracker-health and past-task-pending status questions); two from `_SCENE_SCOPE_PHRASE` not recognising "what the lens can see in front of it" and "an overview of what is visible through this camera" as whole-view survey scope. The ceiling if they were fixed was 244/260 and 22/23 — not judged worth the hours against the deadline.
+- **Two losses are machinery defects not worth chasing:** a fast-path plan-construction error on "Can you tell me where the small amber lantern sits in this shot?" and an inverted-frame reconciliation error on "Please keep the lime green crate as what you watch".
+- **`_effective_action_negations` prefix defect.** It receives only the text before the matched action word, so an idiom straddling that boundary is invisible. "Never lose track of the red mug" still clarifies, because `track` matches the follow vocabulary. Fixing it touches the path earning 13 negation saves and needs those rows re-run first.
+- **The owner's real acceptance set still does not exist.** The 25 commands in `owner-approved-commands-20260930.json` were approved, not authored, by him. No score in this repo represents the requirement.
+- **The three net-negative checks stay despite their ledger.** Removing `_has_unaccounted_explicit_clause`, the scout/`targetless_survey` check and the extra-step checks was attempted on 30 September and reverted: it fails 34 tests, including the fake-interpreter assertion that "Follow the bottle and archive footage" must clarify rather than return a partial plan. Their measured cost is the accepted price of that safety property.
+
+Method note worth keeping: the 260-row ledger **undercounts** the deterministic layer, because the adversarial compound-clause cases live in `tests/vision/test_conversation.py`, not in the scored corpora. Any future ledger-driven deletion must run the full suite before being believed. Details and the per-check ledger: [30 September handoff](../../../docs/agents/pi-language-handoff-2026-09-30.md).
+
+### September 30 — superseded: narrow the deterministic layer, do not replace it
 
 Step 0's aggregate result hides a sign flip, and the route decomposition in [`measurement-summary.json`](../../../tmp/language-candidate-20260928/measurement-summary.json) settles the design. On the 260 reduced-scope labels with identical completions, the Rev14 guard rescues **50** wrong model answers and destroys **12** correct ones: `policy_prepass` +37/−8, `source_fast_path` +12/−1, `model_fallback` +1/−3. **45 of the 50 saves are boundary behaviour** — negation 13, ambiguity 6, bypass/injection 7, unavailable capability 11, mixed unavailable-plus-valid 5, correction 2 — and only 5 are ordinary comprehension. All 12 losses are ordinary in-scope phrasings the layer grabbed and mis-planned, including "Don't lose sight of the blue suitcase", where the negation rule that earns 13 saves misfires.
 
